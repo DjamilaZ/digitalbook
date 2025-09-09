@@ -1,0 +1,302 @@
+{
+    "chapters": [
+        {
+            "title": "Introduction",
+            "number": 0,
+            "sections": [
+                {
+                    "title": "Introduction",
+                    "number": "0.1",
+                    "content": "Bienvenue dans ce e-book consacré aux opérations de levage chez TotalEnergies. Le levage joue un rôle crucial dans nos activités quotidiennes, qu'il s'agisse de soulever, descendre ou suspendre des charges de différentes tailles et masses. Bien que courantes, ces opérations présentent des risques importants pour le personnel, l'environnement et les installations. Il est essentiel de disposer de la formation et des compétences nécessaires pour effectuer ces opérations en toute sécurité. Cette norme d'élingage et de levage doit être respectée. Ce guide vise à fournir un aperçu des meilleures pratiques, des procédures et des normes en vigueur pour les opérations de levage au sein de notre entreprise. N’oubliez pas: S’il n’y a aucun CMU, aucun n° d’identification et/ou aucun CODE COULEUR, ne l’utilisez pas !",
+                    "images": [
+                        "extracted\\page1_img1.png",
+                        "extracted\\page1_img2.jpeg"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Glossaire",
+            "number": 1,
+            "sections": [
+                {
+                    "title": "Glossaire",
+                    "number": "1.0",
+                    "content": "Personne compétente : Personne dont les connaissances, l'expérience et les compétences, ainsi que la formation et l'autorisation de travail à un poste de levage défini ont été avérées. Charge utile (en anglais Working Load Limit WLL) : La charge maximale qu'un appareil de levage est conçu pour lever, abaisser ou suspendre. Cette charge maximale ne tient pas compte des conditions de service particulières qui peuvent modifier la capacité finale de l'équipement (voir CMU ci-dessous). Remarque: la charge utile déterminée par la personne compétente ne doit jamais être dépassée volontairement. Charge maximale utile (CMU) (en anglais Safe Working Load SWL) : La charge maximale (telle que certifiée par une personne compétente) qu'un appareil de levage est capable de lever, d'abaisser ou de tenir suspendue dans des conditions de service particulières. La CMU peut donc être inférieure à la charge utile. Remarque: la charge maximale utile déterminée par la personne compétente ne doit jamais être dépassée volontairement. Facteur de sécurité : Rapport entre la charge qui provoquerait la défaillance d'un élément d'un appareil de levage et la charge qui lui est imposée en service (c.-à-d la CMU qui permet de tenir compte de critères négatifs tels qu'usure, charges dynamiques, etc.). Code couleur : Méthode de marquage de l'équipement (normalement avec de la peinture) pour indiquer visuellement son statut en matière de certification.",
+                    "images": [],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Définitions et principes des équipements de levage",
+            "number": 2,
+            "sections": [
+                {
+                    "title": "Définitions et principes des équipements de levage",
+                    "number": "2.0",
+                    "content": "Ces équipements comprennent les appareils et l’équipement de levage. Ils sont définis comme suit: Appareils de levage : Tout dispositif mécanique capable de lever ou d’abaisser une charge. Ex: Grues, Chariots élévateurs, Nacelles suspendues, Palans, Poutre de levage, Treuils... Equipement de levage : Tout dispositif quel qu’il soit, utilisé et conçu pour être utilisé directement ou indirectement pour relier une charge à un appareil de levage et ne faisant pas partie de la charge. Ex: élingues à câble, chaîne ou fibre synthétique, crochets et accessoires, pivots, manilles, boulon à œil, ridoirs, attaches à coin, lève-tôles. Compétent(e) : Disposant des connaissances, des compétences, ainsi que de l’expérience nécessaire à la réalisation de tâches spécifiques. Abrasion : Usure de surfaces des brins d’un câble. Homologué : Conforme à la norme intérieur de l’entreprise. Chef de manœuvre : Individu clairement identifiable ayant la responsabilité partagée d’assurer un levage et une dépose de la charge en toute sécurité. Contrôle également l’opération de levage lors d’un levage en aveugle. Levage en aveugle : Lorsque l’utilisateur de l’appareil de levage n’a pas le chef de manœuvre, responsable de la charge, dans son champ visuel de manière continue. Agent de coordination du levage : Point de contact responsable du levage pour une installation particulière et personne compétente pour les opérations de levage. Résistance à la rupture (câble) : La charge mesurée requise pour briser un câble en tension.",
+                    "images": [],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Inspection d’appareils de levage",
+            "number": 3,
+            "sections": [
+                {
+                    "title": "Inspection d’appareils de levage",
+                    "number": "3.0",
+                    "content": "Ce chapitre décrit les inspections nécessaires pour garantir la sécurité des opérations de levage. Vérifications avant l'utilisation : Avant chaque utilisation, il est impératif d'examiner tous les composants de l'appareil de levage pour s'assurer qu'ils sont en bon état et sécurisés pour l'opération prévue. Attention! Ne rangez pas le matériel de levage dans des vestiaires ou coffres à outils, car il pourrait être oublié lors d'une inspection et ainsi ne plus être certifié. Trois éléments spécifiques à vérifier, en dehors de l'équipement, sont : I) La CMU requise. II) Le n° de l'installation/d'identification. III) Le bon code couleur (le code courant doit être affiché à un endroit bien en vue - pour le confirmer, vous adresser à votre superviseur). Remarque : Le code couleur n'indique pas l'aptitude à l'usage, mais simplement l'état de certification. Pour plus de détails sur les points à vérifier lors de ces inspections, consultez le chapitre 6 \"Améliorer la sécurité des opérations de levage\" de cette norme, les détails variant selon le type d'équipement.",
+                    "images": [],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Sélection d’un équipement de levage",
+            "number": 4,
+            "sections": [
+                {
+                    "title": "Sélection d’un équipement de levage",
+                    "number": "4.0",
+                    "content": "Avant de préparer le levage, il est crucial de déterminer le poids de la charge à soulever. Dans la plupart des cas, ce chiffre est déjà connu. Cependant, si ce n'est pas le cas, utilisez un dispositif de mesure du poids (voir exemples aux figures 4.1 à 5.3 ci-dessous). Vous pouvez également consulter le fabricant ou prendre des mesures et calculer le poids en utilisant le tableau de densité des matériaux à l'annexe 2. En cas de doute, n'hésitez pas à consulter votre agent de coordination du levage. Après avoir déterminé le poids de la charge, il est essentiel de vérifier la hauteur libre disponible, car elle influence les angles des élingues et la tension réelle sur les brins. Remarque: Le poids de l'élingage sélectionné doit être ajouté à celui de la charge, et le poids total doit être pris en compte lors du choix de l'appareil de levage. Vérifiez la compatibilité des différents composants, car les tailles varient selon le matériau utilisé pour la fabrication. Vérifiez bien que l'équipement retenu convient à la tâche spécifique et à son environnement, par exemple en cas d'utilisation sous l'eau (tous les types d'équipements ne conviennent pas pour une telle utilisation !). Une fois l'équipement sélectionné, il doit subir un examen \"pré-utilisation\" comme décrit dans les différents chapitres de cette norme. Si un élément échoue à l'examen visuel, il doit être immédiatement mis hors service et signalé à un superviseur ou à l'agent de coordination du levage.",
+                    "images": [
+                        "extracted\\page27_img1.png",
+                        "extracted\\page27_img2.png",
+                        "extracted\\page27_img3.jpeg"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Améliorer la sécurité des opérations de levage",
+            "number": 5,
+            "sections": [
+                {
+                    "title": "Améliorer la sécurité des opérations de levage",
+                    "number": "5.0",
+                    "content": "Ce chapitre présente les procédures correctes à suivre lors d'une opération de levage. Compétences du personnel : Toute personne utilisant un appareil ou équipement de levage doit être formée à son utilisation et posséder une expérience pratique de ses capacités et des défaillances potentielles. Ces connaissances sont également utiles lors de l'inspection avant utilisation. Ne jamais dépasser la charge maximale utile : Lors de toute opération de levage, il est impératif de s'assurer que la charge imposée à tout appareil de levage ou partie de celui-ci ne dépasse pas la CMU/CU. En cas de doute sur cette charge ou celle appliquée à un élément particulier de l'engin ou appareil de levage, il est recommandé d'utiliser des capteurs de charge. De plus, il est essentiel de veiller à ce que la charge reste stable à tous les stades de l'opération. En général, la charge pourrait être instable si son centre de gravité ne se trouve pas sous le crochet ou s'il est plus haut que le point de fixation des élingues à la charge. D'autres causes d'instabilité peuvent inclure un liquide s'agitant dans un récipient, etc. Utilisation correcte : L'équipement doit être utilisé uniquement pour l'usage spécifique pour lequel il a été conçu et ne doit pas être adapté à un autre type d'opération. Vérification du levage : Avant toute opération de levage, la charge doit d'abord être soulevée à une faible hauteur. Ce levage d'essai permet au grutier ou opérateur de vérifier qu'il a correctement estimé l'équilibre, la stabilité et la sécurité générale de la charge alors que celle-ci est encore dans une position relativement sûre. La charge devra être descendue et l'élingage modifié en cas de découverte de différences. Cette séquence de levage d'essai puis d'ajustement doit être répétée jusqu'à ce que l'opérateur soit satisfait de l'équilibrage, de la stabilité de la charge et de la sécurité du levage. Attention ! Ne vous tenez jamais sous une charge; gardez vos mains éloignées des élingues, etc. (conformément aux consignes de levage sans contact avec les mains § 28). Évitez de grimper sur les conteneurs et matériaux empilés; ne vous tenez jamais entre les charges et des murs ou parois de cales, etc.",
+                    "images": [
+                        "extracted\\page31_img1.png",
+                        "extracted\\page31_img2.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Norme et formulaire de contrôle et de récupération",
+            "number": 6,
+            "sections": [
+                {
+                    "title": "Norme et formulaire de contrôle et de récupération",
+                    "number": "6.0",
+                    "content": "Afin d’aider à créer des conditions de travail plus sûres et d’améliorer les procédures, il vous a été remis cette norme d’élingage et de levage destinée à vous guider et à vous aider à utiliser les équipements de levage en réduisant les risques lors de vos opérations de levage et d’élingage. Lorsque vous utiliserez l’un des équipements figurant dans l’index de cette norme, vous devrez vous référer aux chapitres le concernant. N’oubliez pas: Vous serez souvent responsable de la sécurité de vos collègues et leur vie pourrait un jour dépendre de votre aptitude à travailler sans créer de risques.",
+                    "images": [],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Grues",
+            "number": 7,
+            "sections": [
+                {
+                    "title": "Utilisation sécuritaire des grues",
+                    "number": "7.0",
+                    "content": "Seuls les grutiers dûment accrédités sont autorisés à opérer des grues. Les grutages constituent un élément majeur des processus industriels. En fait, dans le secteur offshore, les grues et portiques constituent l’un des équipements vitaux, car ils permettent de transférer les marchandises entre la terre et les navires. Etant donné les conséquences potentiellement catastrophique d’un accident de grue, ces derniers doivent être correctement entretenus et maintenus en excellent état de marche. De plus, ce personnel doit être capable d’effectuer les contrôles de sécurité journaliers, y compris de la précision des indicateurs de charge, ainsi que la maintenance préventive courante comme le graissage. Pour opérer une grue en toute sécurité, il est absolument essentiel que toutes les charges soient correctement élinguées et que toute cargaison soit correctement emballée, pesée et décrite dans les manifeste afin d’éviter toute surcharge possible.",
+                    "images": [
+                        "extracted\\page34_img1.png",
+                        "extracted\\page34_img2.png",
+                        "extracted\\page35_img1.png",
+                        "extracted\\page35_img2.png",
+                        "extracted\\page35_img3.png",
+                        "extracted\\page36_img1.png",
+                        "extracted\\page37_img1.png",
+                        "extracted\\page38_img1.png",
+                        "extracted\\page40_img1.png",
+                        "extracted\\page41_img1.png",
+                        "extracted\\page42_img1.png",
+                        "extracted\\page45_img1.png",
+                        "extracted\\page46_img1.png",
+                        "extracted\\page49_img1.png",
+                        "extracted\\page50_img1.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Palans à chaînes",
+            "number": 8,
+            "sections": [
+                {
+                    "title": "Utilisation sécuritaire des palans à chaînes",
+                    "number": "8.0",
+                    "content": "Pour sélectionner un palan, la première chose à considérer est la CMU / CU, qui doit être choisi selon la charge à soulever. Lorsque celle-ci est inconnue, on calcule son poids en ajoutant un certain pourcentage à titre de marge d’erreur. La sélection peut alors être effectuée. Attention ! Eviter de lever des charges de moins de 10 % de la capacité du treuil et NE JAMAIS lever des charges de moins de 5% de celle-ci, car elles pourraient ne pas être suffisantes pour activer le frein à friction. La seconde chose à considérer est la hauteur perdue minimum, étant donné que le manque d’espace vertical est souvent un problème dans les espaces confinés (p. ex. salles des machines ou ateliers avec palonniers bas). Cette hauteur varie selon le fabricant et/ou le modèle et peut influencer la sélection. La troisième chose à considérer est la hauteur libre sous crochet (hauteur de levage). Les palans à chaînes de levage ont généralement une HLSC standard de 3m (les chaînes de levage font généralement un demi-mètre de moins), mais il existe des modèles avec pratiquement n’importe quelle hauteur de levage de 1,5 - 1,8 m, mais peuvent également être équipés de chaînes plus longues si l’application le demande.",
+                    "images": [
+                        "extracted\\page58_img1.png",
+                        "extracted\\page59_img1.png",
+                        "extracted\\page59_img2.png",
+                        "extracted\\page60_img1.png",
+                        "extracted\\page61_img1.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Palans à câble (Tirfors)",
+            "number": 9,
+            "sections": [
+                {
+                    "title": "Utilisation sécuritaire des palans à câble (Tirfors)",
+                    "number": "9.0",
+                    "content": "Les palans à câble, disponibles en trois capacités, peuvent être utilisés pour lever des charges (avec un facteur de sécurité de 5/1), ainsi que pour tracter des charges (avec un facteur de sécurité d'environ 3,3/1) soit; CU (levage) Capacité (traction) 800 kg 1 200 kg 1 600 kg 2 500 kg 3 200 kg 5 000 kg. Il est crucial de distinguer entre l'utilisation de levage et l'utilisation de traction : Lors d'une utilisation de levage, la charge ne reste pas stationnaire en cas de défaillance du palan ou de l'un de ses accessoires. Lors d'une utilisation de traction, la charge reste stationnaire en cas de défaillance du palan ou de l'un de ses accessoires. Choisissez donc la capacité en tenant compte de cette caractéristique, ainsi que de la charge à déplacer (voir exemples 1 à 4). Un palan 3 t peut soulever une charge de 3 t (estimée), mais exercer une traction de 5 t, le facteur de sécurité étant réduit étant donné que l'opération est moins risquée.",
+                    "images": [
+                        "extracted\\page63_img1.png",
+                        "extracted\\page63_img2.png",
+                        "extracted\\page64_img1.png",
+                        "extracted\\page64_img2.png",
+                        "extracted\\page64_img3.png",
+                        "extracted\\page64_img4.png",
+                        "extracted\\page66_img1.png",
+                        "extracted\\page67_img1.png",
+                        "extracted\\page67_img2.png",
+                        "extracted\\page68_img1.png",
+                        "extracted\\page69_img1.png",
+                        "extracted\\page69_img2.png",
+                        "extracted\\page71_img1.png",
+                        "extracted\\page72_img1.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Poulies à chape ouverte / Moufles",
+            "number": 10,
+            "sections": [
+                {
+                    "title": "Utilisation sécuritaire des poulies à chape ouverte / moufles",
+                    "number": "10.0",
+                    "content": "Les moufles sont disponibles sous forme simple ou multiple avec un choix d’accessoires de suspension, les plus utilisées étant les émerillons simples ou émerillons à oeil ovale. Le principal fonction d’une moufle simple est de changer le sens de levage ou de traction d’une corde, tandis que les moufles multiples réduisent l’effort de traction requis sur le brin d’attaque pour soulever la charge.",
+                    "images": [
+                        "extracted\\page73_img1.png",
+                        "extracted\\page73_img2.png",
+                        "extracted\\page74_img1.png",
+                        "extracted\\page74_img2.png",
+                        "extracted\\page74_img3.png",
+                        "extracted\\page74_img4.png",
+                        "extracted\\page75_img1.png",
+                        "extracted\\page75_img2.png",
+                        "extracted\\page77_img1.png",
+                        "extracted\\page77_img2.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Treuils",
+            "number": 11,
+            "sections": [
+                {
+                    "title": "Utilisation sécuritaire des treuils",
+                    "number": "11.0",
+                    "content": "Les treuils peuvent être manuels ou motorisés, les plus courants sont les modèles pneumatiques. Lors de la sélection d’un treuil, l’élément le plus important est la traction requise. Si vous utilisez un mouflage multiple, consultez 11.4 de cette norme qui vous aideras pour les calculs. Ne pas oubliez que la majorité des chiffres indiqués sont basés sur les performances avec tambour à demi plein (la traction diminue quand le tambour se remplit).",
+                    "images": [
+                        "extracted\\page79_img1.png",
+                        "extracted\\page79_img2.png",
+                        "extracted\\page79_img3.png",
+                        "extracted\\page80_img1.png",
+                        "extracted\\page82_img1.png",
+                        "extracted\\page83_img1.png",
+                        "extracted\\page83_img2.png",
+                        "extracted\\page84_img1.png",
+                        "extracted\\page85_img1.png",
+                        "extracted\\page85_img2.png",
+                        "extracted\\page86_img1.png",
+                        "extracted\\page86_img2.png",
+                        "extracted\\page86_img3.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Elingues à câbles métalliques",
+            "number": 12,
+            "sections": [
+                {
+                    "title": "Utilisation sécuritaire des élingues à câbles métalliques",
+                    "number": "12.0",
+                    "content": "Les élingues en câbles métalliques sont souvent fabriquées avec ces terminaisons formées par épissure mécanique couramment appelées viroles, gaines ou manchons. Le œil de l’élingue peut être muni ou non de cosses en fonction de l’application. Les élingues à câbles sont les plus utilisées car elles sont très polyvalentes et relativement légères par rapport à leur résistance. Elles peuvent être simples (monobrin) ou à brins multiples.",
+                    "images": [
+                        "extracted\\page88_img1.png",
+                        "extracted\\page88_img2.png",
+                        "extracted\\page88_img3.png",
+                        "extracted\\page88_img4.png",
+                        "extracted\\page89_img1.png",
+                        "extracted\\page89_img2.png",
+                        "extracted\\page89_img3.png",
+                        "extracted\\page90_img1.png",
+                        "extracted\\page91_img1.png",
+                        "extracted\\page91_img2.png",
+                        "extracted\\page91_img3.png",
+                        "extracted\\page91_img4.png",
+                        "extracted\\page92_img1.png",
+                        "extracted\\page92_img2.png",
+                        "extracted\\page92_img3.png",
+                        "extracted\\page94_img1.png",
+                        "extracted\\page94_img2.png",
+                        "extracted\\page94_img3.png",
+                        "extracted\\page94_img4.png",
+                        "extracted\\page96_img1.png",
+                        "extracted\\page98_img1.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Elingues en fibres synthétiques",
+            "number": 13,
+            "sections": [
+                {
+                    "title": "Utilisation sécuritaire des élingues en fibres synthétiques",
+                    "number": "13.0",
+                    "content": "Il est essentiel de surveiller rigoureusement les conditions de stockage et de manipulation des élingues en fibres synthétiques afin de préserver leur intégrité et d’éviter toute contamination. En raison de leur conception, ces élingues peuvent perdre une grande partie de leur résistance en cas de coupure, de déchirure, d’effilochage ou de rupture des coutures. Si la gaine de protection présente des dommages ou des entailles, l’élingue doit être immédiatement mise hors service. De manière générale, les élingues en fibres synthétiques et les sangles doivent être retirées du service après un an d’utilisation, sauf dans le cas d’applications spécifiques. Pour ces dernières, une inspection rigoureuse est nécessaire pour prolonger leur usage au-delà de cette période.",
+                    "images": [
+                        "extracted\\page100_img1.png",
+                        "extracted\\page100_img2.png",
+                        "extracted\\page100_img3.png",
+                        "extracted\\page100_img4.png",
+                        "extracted\\page100_img5.png",
+                        "extracted\\page101_img1.png",
+                        "extracted\\page102_img1.png"
+                    ],
+                    "tables": [],
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

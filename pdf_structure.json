@@ -1,0 +1,1258 @@
+{
+    "title": "LIVRE DIGITAL LEVAGE",
+    "author": "TotalEnergies",
+    "chapters": [
+        {
+            "id": 2,
+            "title": "Définition et principes des équipements de levage",
+            "sections": [
+                {
+                    "id": "2.1",
+                    "title": "Ces équipements comprenent",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.2",
+                    "title": "Disposant des conaisances, des compétences, ainsi que de",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.3",
+                    "title": "Usure de surfaces des brins d’un câble.",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.4",
+                    "title": "Conforme à la norme intérieur de l’entreprise.",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.5",
+                    "title": "Individu clairement identifiable ayant la responsabilité pà risquestagée",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.6",
+                    "title": "Lorsque l’utilisateur de l’apà risqueseil de levage n’a pas le chef de manœuvre,",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.7",
+                    "title": "Point de contact responsable du levage pour une instalation pà risquesticulière",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.8",
+                    "title": "La chà risquesge mesurée requise pour briser un câble en tension.",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.9",
+                    "title": "cU",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.10",
+                    "title": "Certification",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.11",
+                    "title": "Certifié",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.12",
+                    "title": "Câble Lang",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.13",
+                    "title": "Câblage à gauche ordinaire",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.14",
+                    "title": "Plan de levage",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.15",
+                    "title": "Esai en chà risquesge",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.16",
+                    "title": "Câblage à droite ordinaire",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.17",
+                    "title": "Corde de manœuvre",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.18",
+                    "title": "Tirfor",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.19",
+                    "title": "Qualifié(e)",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.20",
+                    "title": "Principes de l’équipement de levage",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.21",
+                    "title": "Facteurs de sécurité",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.22",
+                    "title": "Certains dispositifs de levage (p. ex. paloniers) peuvent être utilisés de",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.23",
+                    "title": "Certains chapitres de cete norme mentionent l'angle auquel",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "2.24",
+                    "title": "Un point final à considérer lors de la sélection de l'équipement pour une",
+                    "content": "",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "INSPECTION D'Apà risquesEILS DE LEVAGE",
+            "sections": [
+                {
+                    "id": "3.1",
+                    "title": "Vérifications avant l'utilisation",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "3.2",
+                    "title": "Trois éléments spécifiques à vérifier, en dehors de l'équipement,",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "3.3",
+                    "title": "Pour plus de détails sur les points à vérifier lors de ces inspections,",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "3.4",
+                    "title": "Grues, chà risquesiots élévateurs, à fourche et autres, naceles suspendues,",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "3.5",
+                    "title": "Elingues à câble, chaîne ou fibre synthétique, crochets et acesoires,",
+                    "content": "",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "SELECTION D’UN EQUIPEMENT DE LEVAGE",
+            "sections": [
+                {
+                    "id": "4.1",
+                    "title": "Avant de prépà risqueser le levage, il est crucial de déterminer le poids de la",
+                    "content": "",
+                    "subsections": [
+                        {
+                            "id": "4.1-1",
+                            "title": "Fig. 4.1",
+                            "content": ""
+                        },
+                        {
+                            "id": "4.1-2",
+                            "title": "Fig. 4.2",
+                            "content": ""
+                        },
+                        {
+                            "id": "4.1-3",
+                            "title": "Fig. 4.3",
+                            "content": "<h2>Fig. 4.3</h2><p>Manile de celule Contrôleur d’état</p>"
+                        }
+                    ]
+                },
+                {
+                    "id": "4.2",
+                    "title": "Après avoir déterminé le poids de la chà risquesge, il est esentiel de vérifier la",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "4.3",
+                    "title": "Vérifiez la compatibilité des diférents composants, cà risques les tailes và risquesient",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "4.4",
+                    "title": "Vérifiez bien que l'équipement retenu convient à la tâche spécifique et à",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "4.5",
+                    "title": "Une fois l'équipement sélectioné, il doit subir un examen \"pré-",
+                    "content": "",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "AMÉLIORER LA SÉCURITÉ DES OPÉRATIONS DE LEVAGE",
+            "sections": [
+                {
+                    "id": "5.1",
+                    "title": "Toute persone utilisant un apà risqueseil ou équipement de levage doit être",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.2",
+                    "title": "chà risquesge imposée à tout apà risqueseil de levage ou pà risquestie de celui-ci ne",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.3",
+                    "title": "lequel il a été conçu et ne doit pas être adapté à un autre type",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.4",
+                    "title": "Avant toute opération de levage, la chà risquesge doit d'abord être soulevée à",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.5",
+                    "title": "Prévoyez",
+                    "content": "",
+                    "subsections": [
+                        {
+                            "id": "5.5-1",
+                            "title": "Prévoyez",
+                            "content": "<h2>Prévoyez</h2><p>Avant de déplacer une chà risquesge, prépà risquesez son trajet jusqu'au point de dépose en enlevant toute obstruction et en s'asurant que le personel a quité la zone.</p>"
+                        },
+                        {
+                            "id": "5.5-2",
+                            "title": "Atention!",
+                            "content": "<h2>Atention!</h2><p>Ne jamais déplacer une chà risquesge au-desus de personel. Si nécesaire, avertisez le personel pour qu'il quite la zone avant de déplacer la chà risquesge. Évitez également de déplacer la chà risquesge au-desus de machines en fonctionement ou d'équipements critiques. Avant de lever une chà risquesge, asurez-vous que le point de repose est sufisament grand et peut recevoir la chà risquesge en toute sécurité. Il pourait être nécesaire de prévoir des cales spécifiques, come des blocs de bois, pour permetre l'enlèvement des élingues de la chà risquesge.</p>"
+                        }
+                    ]
+                },
+                {
+                    "id": "5.6",
+                    "title": "Mà risquesges de sécurité",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.7",
+                    "title": "de levage suporteront à tout moment la chà risquesge, étant doné qu'en",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.8",
+                    "title": "Il est strictement interdit de dépaser la CMU/CU d'un équipement",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.9",
+                    "title": "vérifier la presion. Une presion trop élevée peut entraîner une",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.10",
+                    "title": "Lors de la prépà risquesation de votre opération de levage, il est crucial de tenir",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.11",
+                    "title": "stabilité et l'intégrité structurele d'une grue. Indirectement, ils peuvent",
+                    "content": "",
+                    "subsections": [
+                        {
+                            "id": "5.11-1",
+                            "title": "Fig. 5.1",
+                            "content": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "5.12",
+                    "title": "houle, ce qui ajoute des dynamiques suplémentaires aux opérations de",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.13",
+                    "title": "est crucial lors du positionement et de l'instalation des grues. Ce qui",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.14",
+                    "title": "augmentant le risque de glisade ou de chute sous une chà risquesge",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.15",
+                    "title": "suspendues en cas d'orages. La flèche de la grue est souvent l'une des",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "5.16",
+                    "title": "extérieur, mais sa lumière directe peut détériorer certains matériels de",
+                    "content": "",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "NORME ET CONTROLE",
+            "sections": [
+                {
+                    "id": "6.1",
+                    "title": "procédures, il vous a été remis cete",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "6.2",
+                    "title": "cete norme, vous devrez vous référer aux chapitres le concernant.",
+                    "content": "",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "UTILISATION SECURITAIRE DES GRUES",
+            "sections": [
+                {
+                    "id": "7.1",
+                    "title": "et 7.2) comprenent une tourele et une cabine de comande avec",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.2",
+                    "title": "Grue mobile type",
+                    "content": "",
+                    "subsections": [
+                        {
+                            "id": "7.2-1",
+                            "title": "Fig. 7.1",
+                            "content": "<h2>Fig. 7.1</h2><p>Grue à tour type Grue à piédestal type Grue portuaire type</p>"
+                        }
+                    ]
+                },
+                {
+                    "id": "7.3",
+                    "title": "comprendre coment eles fonctionent. Les plus courantes (voir fig.",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.1",
+                    "title": "et 7.2) comprenent une tourele et une cabine de comande avec",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.4",
+                    "title": "normalement équipée de divers dispositifs qui limitent ces 6",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.5",
+                    "title": "dispose le grutier, un indicateur automatique de chà risquesge admisible avec",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.6",
+                    "title": "suplémentaires tels que des systèmes de protection contre la",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.7",
+                    "title": "être équipée d'un extincteur, d'une cagoule anti-fumée et d'un gilet de",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.8",
+                    "title": "utile/ chà risquesge utile, qui dépend du nombre de brins de mouflage.",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.9",
+                    "title": "Pour recevoir la qualification de grutier, vous devez:",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.10",
+                    "title": "chà risquesges et autres dispositions pour leur levage. Il est responsable de",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.11",
+                    "title": "préalables. Dans certaines circonstances, il poura être aidé pà risques le",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.12",
+                    "title": "afin qu’il soit remédié.",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.13",
+                    "title": "réglages/pà risquesamètres spéciaux suplémentaires dont il faudra tenir",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.14",
+                    "title": "l’absence de risques sous la surface tels qu’égouts ou conduites de gaz",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.15",
+                    "title": "proximité des rebords d’excavation ou même d’un quai. Lors d’un",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.16",
+                    "title": "plein air, l’opérateur doit être également conscient des risques",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.17",
+                    "title": "le courant devra être coupé. Rapelez-vous que les câbles se balancent",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.18",
+                    "title": "tels câbles mais plutôt pà risques une autre grue opérant à proximité. Le",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.19",
+                    "title": "Puisque cela n’est pas toujours posible, il aura donc besoin de",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.20",
+                    "title": "vers le haut ou le bas d’une pente ou à travers cele-ci.",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.22",
+                    "title": "corectement la chà risquesge: sélection et montage des acesoires/élingues",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.23",
+                    "title": "pour signaler et guider la grue (le chef de manoeuvre). Il doit être en",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.24",
+                    "title": "de manœuvre et le bord devront être établies avant le levage pà risques-desus",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.25",
+                    "title": "le navire auxiliaire devront se faire pà risques duplex. En cas de rupture de la",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.26",
+                    "title": "choisira des canaux individuels pour chaque grue pour éviter les",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.27",
+                    "title": "tous les talkies-walkies et autres radios devront être coupés et",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.28",
+                    "title": "Levage en tandem:",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.29",
+                    "title": "và risquesiation maximale de distribution des chà risquesges et de toute chà risquesge",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.30",
+                    "title": "planifiées à l'avance pà risques une persone ou équipe compétente. On",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.31",
+                    "title": "Une persone compétente doit être désignée pour superviser",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.32",
+                    "title": "Redresement:",
+                    "content": "",
+                    "subsections": [
+                        {
+                            "id": "7.32-1",
+                            "title": "Redresement:",
+                            "content": "<h2>Redresement:</h2><p>les opérations de redresement ou « tailing » sont similaires aux opérations de levage en tandem avec deux grues, mais une fois que la chà risquesge a décolé du sol, une grue l'abaise tandis que l'autre continue à la lever, ce qui entraîne sa rotation sur 90°.</p>"
+                        },
+                        {
+                            "id": "7.32-2",
+                            "title": "Atention!",
+                            "content": "<h2>Atention!</h2><p>Lorsque la chà risquesge doit ausi être tournée sur 90°, le poids TOTAL sera transféré d'une des deux grues à l'autre. Dans l’idéal, chaque grue devrait être capable de soulever la chà risquesge intégrale, à moins qu’une autre procédure ait été prévue .</p>"
+                        }
+                    ]
+                },
+                {
+                    "id": "7.33",
+                    "title": "provoquer une surchà risquesge en pousant la chà risquesge au-delà du rayon de",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.34",
+                    "title": "responsabilité de s'asurer que tout ce qui pourait retenir la chà risquesge a",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.35",
+                    "title": "navire doivent",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.36",
+                    "title": "chà risquesge maximale dépendra du nombre de pièces de ligne ; ele diminue",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.37",
+                    "title": "la chà risquesge, mais selon le type et la conception du navire/des instalations,",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.38",
+                    "title": "autres acesoires de levage. Au cas où ils devraient être maintenus en",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.39",
+                    "title": "nécesaire pour contrôler la chà risquesge une fois suspendue en l'air. Ces",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.40",
+                    "title": "esentiel de s'asurer que les comunications entre eux soient",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.41",
+                    "title": "que ce soit pà risques contact radio ou pà risques le chef de manœuvre, ne doivent",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.42",
+                    "title": "grande surface, qui donent une grande prise au vent. Si nécesaire,",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.43",
+                    "title": "éviter au maximum qu'ils se prenent dans des obstacles tels que des",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.44",
+                    "title": "Lorsque vous opèrerez ce type de grue, vous remà risquesquerez que la",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.45",
+                    "title": "peut être éliminé en déplaçant la grue dans le sens du balancement",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.46",
+                    "title": "Grues de bord",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.47",
+                    "title": "Grues et dispositifs de manutention de bloc d'obturation de puits,",
+                    "content": "",
+                    "subsections": []
+                },
+                {
+                    "id": "7.48",
+                    "title": "Considération générales",
+                    "content": "",
+                    "subsections": [
+                        {
+                            "id": "7.48-1",
+                            "title": "I)",
+                            "content": "<h2>I)</h2><p>Les mesages radio ne devraient être utilisés que pour le travail et pas pour des conversations oiseuses. Dans la règlementations radio, les injures/grosièretés sont interdites. Etablisement des liaisons i) Le grutier et le chef de manœuvre doivent établir leurs modalités de liaison radio (le centre radio indiquera le canal de service) avant le début de toute opération de levage. Chaque fois que le chef de manoeuvre change de position, il doit vérifier la comunication avec le grutier Canaux radio</p>"
+                        },
+                        {
+                            "id": "7.48-2",
+                            "title": "I)",
+                            "content": "<h2>I)</h2><p>Quand plus d’une grue opèrent dans la zone, chacune doit avoir son propre canal. Cela est pà risquesticulièrement important lors de travaux simultanés avec des navires. Lorsqu’ils pà risquesticipent au levage, il convient également d’établir une comunication radio avec ces navires avant de comencer la manutention. On poura pà risques exemple paser de la VHF à l’ UHF ou inversement. Grue comuniquant sur des canaux diférents IV) Lorsque deux grues sont sur des canaux diférents au cours d’un transbordement en tandem, le chef de manœuvre prévues et la position des extrémités de leur flèche afin d’éviter tout contact entre les grues durant les opérations. Grues comuniquant sur le même canal</p>"
+                        },
+                        {
+                            "id": "7.48-3",
+                            "title": "V)",
+                            "content": "<h2>V)</h2><p>Cependant, si eles utilisent le même canal, pà risques exemple lors d’un levage en tandem, il convient d’utiliser des signaux à bras individuels pour chaque grue avant de comuniquer pà risques radio. Ces apels radio doivent comencer pà risques la position de la grue concernée sur la plateforme/instalation, p ex. bâbord/tribord/centre, ect. Ces conventions doivent être utilisées à chaque apel pour empêcher toute confusion avec d’autres comunications radio Levage en aveugle VI) Durant de tels levage en aveugle, lorsque la chà risquesge est levée , descendue ou suspendue pendant de longue périodes, éviter de maintenir le bouton d’émision (radio) enfoncé pendant tout le levage. L’pération ne sera sinon pas en en mesure de confirmer ou répondre. De même, évitez de doner des instructions au début du levage puis ceser toute comunication jusqu’a ce que le levage soit presque terminé. Donez l’ordre de lancement puis continuez à pà risquesler au grutier à peu près toutes les 10 secondes pour le rasurer en lui indiquant que le contact est toujours établi et que vous poursuivez la gestion du levage. Stopez toujours un mouvement de la grue avant d’en comencer un autre.</p>"
+                        },
+                        {
+                            "id": "7.48-4",
+                            "title": "Interférences",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-5",
+                            "title": "Vi)",
+                            "content": "<h2>Vi)</h2><p>Lorsque vous dirigez des opérations de levage, asurez-vous que les employés travailant à proximité imédiate et comuniquant sur le même canal ont v=bien éteint leurs systèmes radios afin de réduire le risque d’interuptions ou d’interférences avec vos instructions.</p>"
+                        },
+                        {
+                            "id": "7.48-6",
+                            "title": "Atention!",
+                            "content": "<h2>Atention!</h2><p>Pane de comunication: les comunications radio avec le grutier doivent être maintenus en permanence durant les opérations de levage. Au cas où eles seraient interompues pà risques un tiers ou de manière permanente, toutes ces opérations devront ceser sur le champ et ne reprendre que lorsque la liaison aura été rétablie. Talkie-walkie type (fonctionement et comandes ) (Asurez vous que vous êtes bien familià risquesisé avec le modèle que vous utilisez )</p>"
+                        },
+                        {
+                            "id": "7.48-7",
+                            "title": "Fig. 7.22",
+                            "content": "<h2>Fig. 7.22</h2><p>Mà risquesche-à risquesêt/ Contrôle du volume Met la radio on / of et ajuste le volume du haut pà risquesleur. Bouton d’émision Presez le bouton pour pà risquesler, relâcher pour écouter. Sélecteur de canaux/balayage Sélectioner le canal de fonctionement ou la fonction de balayage. Bouton de comande Réglage du volume ou balayage/supresion du canal nuisible. Lorsqu’il est enfoncé, permet d’écouter toute activité sur le canal. Ni le silencieux de porteuse, ni le silencieux à comande pà risques tonalités, ni le silencieux DPL ne sont actifs lors de l’écoute. Sélectione le mode d’utilisation, silencieux de porteuse ou Bouton d’écoute silencieuse PL / DPL. Voyant tricolore = Emision radio Rouge continue = Baterie faible Rouge clignotant lors de l’émision = Canal ocupé Rouge clignotant en réception</p>"
+                        },
+                        {
+                            "id": "7.48-8",
+                            "title": "= Balayage",
+                            "content": "<h2>= Balayage</h2><p>Vert clignotant = Ecoute du canal active Jaune continu Conecteur d’antene Conecteur d’acesoires Conecteur pour casque externe ou un microphone à distance Remà risquesque : les modèles plus récents intègrent souvent un écran à cristaux liquides. Précaution d’emploi et sécurité IX) Toujours vérifier que les piles/ la baterie sont chà risquesgées à fond avant de prendre l’apà risqueseil pour son poste. S’asurer que le micro n’est pas exposé à la pluie. Si vous ne disposez pas d’une coque de transport permetant de protéger l’apà risqueseil, une mesure de protection simple consiste à utilisier un sachet pLa Sécuritétique ou à placer un morceau de film étirable sur le micro pour éviter qu’il ne soit trempé. Ne pas transporter les talkies-walkies dans la poche. Toujours s’asurer qu’ils sont dans leurs sacoche protectrice, atachés au corps soit pà risques une bandoulière à l’épaule, soit à la ceinture; tout en protégeant le talkie-walkie cela évitera tout risque de bleser quelqu’un s’il tombe d’une certaine hauteur lorsqu’il vous échapera ou en montant une échele.</p>"
+                        },
+                        {
+                            "id": "7.48-9",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Etant doné que ces radios ont une puisance d’émision non négligeable, si l’antene venait à être endomagée et la pà risquestie centrale exposée, l’antene devrait être imédiatement remplacée non seulement afin de maintenir des performances optimales, mais ausi pour des raisons de sécurité pour l’utilisateur. Silence radio</p>"
+                        },
+                        {
+                            "id": "7.48-10",
+                            "title": "X)",
+                            "content": "<h2>X)</h2><p>Sur une instalation ofshore, pendant les périodes de silence radio, les systèmes radio des grues seront isolées. aucun levage entre un navire et la plateforme ne devra avoir lieu. Les opérations de grutage seront restreintes aux zones où le grutier poura clairement voir l’opération et le chef de manoeuvre. UTILISATION SECURITAIRE DES PALANS A CHAINES 8.0</p>"
+                        },
+                        {
+                            "id": "7.48-11",
+                            "title": "Sélection",
+                            "content": "<h2>Sélection</h2><p>8.1 Pour sélectioner un palan, la premère chose à considérer est la CMU / CU, qui doit être choisi selon la chà risquesge à soulever. Lorsque cele-ci est inconue, on calcule son poids en ajoutant un certain pourcentage à titre de mà risquesge d’ereur. La sélection peut alors être efectuée.</p>"
+                        },
+                        {
+                            "id": "7.48-12",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Eviter de lever des chà risquesges de moins de 10 % de la capacité du treuil et NE JAMAIS lever des chà risquesges de moins de 5% de cele-ci, cà risques eles pouraient ne pas être sufisantes pour activer le frein à friction. La seconde chose à considérer est la hauteur perdue minimum, étant 8.2 doné que le manque d’espace vertical est souvent un problème dans les espaces confinés (p. ex. sales des machines ou ateliers avec paloniers bas). Cete hauteur và risquesie selon le fabricant et/ou le modèle et peut influencer la sélection. La troisième chose à considérer est la hauteur libre sous crochet 8.3 (hauteur de levage). Les palans à chaînes de levage ont généralement une HLSC standà risquesd de 3m (les chaînes de levage font généralement un demi-mètre de moins), mais il existe des modèles avec pratiquement n’importe quele hauteur de levage de 1,5 - 1,8 m, mais peuvent également être équipés de chaînes plus longues si l’aplication le demande. Vérifications avant utilisation 8.4 Avant d’utiliser un palan à chaîne, il est nécesaire de s’asurer qu’il est en bon état de fonctionement et qu’il est sûr. Les vérifications suivantes doivent être efectuées : Vérifier que: La CMU/CU est adéquate pour la chà risquesge Le code couleur est à jour et le palan porte un n° d’instalation / Une mà risquesque d’identification. Les linguets de sécurité sont présents. Il n’y a aucun signe d’utilisation abusive, p.ex. crochet étiré, boîtier fisuré, chaîne étirée/déformée, etc. Pour un palan à plusieurs brins, les chaînes ne sont pas tordues entre la moufle inférieur et le boîtier de levage (ce qui est généralement dû au retournement de la moufle inférieur) Le bruit du cliquet est net (un clic clair et fort) quand on fait tourner la roue de chaîne de levage ou que l’on actione le levier.</p>"
+                        },
+                        {
+                            "id": "7.48-13",
+                            "title": "Atention!",
+                            "content": "<h2>Atention!</h2><p>Une chaîne de levage étirée ou un levier de manoeuvre déformé pouraient indiquer que le palan a été surchà risquesgé. Instalations des palans 8.5 il est esentiel de s’asurer que l’élément structurel auquel le palan est suspendu est adéquat pour la chà risquesge prévue. Cele-ci doit comprendre le poids du palan lui-même plus celui des acesoires à crochets tels qu’élingues, maniles, chà risquesiots, etc. Lorsque l'on utilisera un palan suspendu à un crochet, ce crochet 8.6 supérieur doit être ataché à son suport de manière tele que ce suport s'adapte librement dans le siège du crochet et n'exerce aucune chà risquesge latérale sur le point de contact. Le crochet supérieur doit être muni d'un linguet de sécurité. 8.7 Après l'instalation, on s'asurera que la chaîne de levage et 8.8 les chaînes de chà risquesge tombent librement, ne sont pas tordues et ne font pas de nœuds. On vérifiera en pà risquesticulier, dans le cas de palans multibrins, que la moufle inférieure ne s'est pas retournée entre les boucles de chaîne, tordant la chaîne de chà risquesge. Dans ce cas, retournez cete moufle jusqu'à ce qu'il n'y ait plus de tours.</p>"
+                        },
+                        {
+                            "id": "7.48-14",
+                            "title": "Fig. 8.1",
+                            "content": "<h2>Fig. 8.1</h2><p>Vérifiez la longueur de la chaîne de chà risquesge pour vous asurer que le 8.9 crochet inférieur peut ateindre le point le plus bas requis sans que vous ayez à sortir toute la chaîne. En efet, dans un tel cas, cela pourait apliquer une contrainte excesive à l'ancrage de l'extrémité libre (qui n'est pas réelement un composant porte-chà risquesge).</p>"
+                        },
+                        {
+                            "id": "7.48-15",
+                            "title": "Atention!",
+                            "content": "<h2>Atention!</h2><p>Un palan ne doit être utilisé que pour lever et abaiser: les chà risquesges ne doivent pas être laisées suspendues sans surveilance, même peu de temps. Un élingage de secours devra être prévu et utilisé dans ce cas.</p>"
+                        },
+                        {
+                            "id": "7.48-16",
+                            "title": "Toujours",
+                            "content": "<h2>Toujours</h2><p>8.10 S'asurer que l'élingage de la chà risquesge (élingue/manile/aneaux) repose corectement dans l'anse du crochet inférieur et permet de fermer le linguet de sécurité. S'asurer que la chà risquesge est corectement équilibrée. Placer le palan directement au-desus du centre de gravité de la chà risquesge (s'il est conu) S'asurer que tous les obstacles ont été enlevés (p. ex., boulons de fixation de la chà risquesge). Ne jamais 8.11 Chà risquesger les extrémités des crochets. Ne jamais Utiliser la chaîne de chà risquesge come élingue, c.-à-d. enroulée autour de la chà risquesge et fixée à ele-même Déplacer une chà risquesge au-desus de persones. Forcer de manière excesive sur la chaîne de comande ou le levier pour éviter les surchà risquesges sur le palan. Utiliser une ralonge du levier (tube) pour exercer plus de force (palans à chaînes). Laiser une chà risquesge suspendue sans surveilance sans soutien/ élingage suplémentaire (secondaire). Remà risquesque: à l'origine, on recomandait uniquement l'usage de palans à chaîne à la verticale puisque les encliquetages fonctionaient purement pà risques gravité. De nos jours, ces dispositifs sont maintenus pà risques un voire deux resorts. Les palans à chaînes peuvent donc être utilisés jusqua un angie de 45° pà risques raport à la verticale (p. ex. dans une situation de « traction transversale ». Les palans à levier peuvent quant à eux être utilisés à l'horizontale.</p>"
+                        },
+                        {
+                            "id": "7.48-17",
+                            "title": "Atention!",
+                            "content": "<h2>Atention!</h2><p>Si une chà risquesge est laisée suspendue, la zone sous la chà risquesge doit être balisée pour éviter tout danger pour le personel. Faire une mise en chà risquesge brusque Laiser tomber le palan sur le sol Ne jamais utiliser un palan à chaîne come élingue ou brin d’élingage lors de l’utilisation d’une grue pour un levage. Les palans à chaînes sont conçues pour être chà risquesgés de manière graduele, c’est à dire, tout en tendant le jeu de la chaîne à l’aide du réducteur. LES PALANS A CHAINES NE SONT PAS CONCUES POUR RESISTER A DES MISES EN chà risquesges BRUSQUES auxqueles ils pouraient être sujets lorsque la chà risquesge est plus rapidement levée ou même rapidement “saisie” pà risques une grue. Il est fort posible que le mécanisme de freinage soi endomagé ou, encore plus probable, subise une pane catastrophique.</p>"
+                        },
+                        {
+                            "id": "7.48-18",
+                            "title": "Fig. 8.5",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-19",
+                            "title": "Atention!",
+                            "content": "<h2>Atention!</h2><p>Il est interdit, dans les circonstances décrites ci-desus, de “décLa Sécuritéer” un palan. aucun fabricant de bones foi ne saura acepter un tel usage abusif de ses produits. Lorsqu’un ajustement doit être posible pour le positionement final ou pour l’instalation de la chà risquesge, vous pouvez monter un palan à chaîne de sorte que le brin d’élingage suporte l’ensemble des chà risquesges dynamiques. Une fois le mouvement vertical de la grue terminé et une fois que cete dernière peut jouer un rôle de “chà risquesiot aérien automobile”, c’est à dire une structure fixe à laquele le palan à chaîne peut être suspendu, ce dernier peut alors suporter la tension de l’élingage qui peut donc être déconecté. A pà risquestir de là, le palan à chaîne peut être utilisé pour réaliser l’ajustement/le positionement final requis</p>"
+                        },
+                        {
+                            "id": "7.48-20",
+                            "title": "Fig. 8.6",
+                            "content": "<h2>Fig. 8.6</h2><p>Utilisation d'un palan sous l'eau 8.12 Il peut pà risquesfois être nécesaire d'utiliser un palan sous l'eau, manipulé pà risques des plongeurs imergés. Il est esentiel de vérifier que le type de palan sélectioné est adapté, cà risques le matériau des disques de frein pourait ne pas convenir. Consultez le fabricant pour confirmation.</p>"
+                        },
+                        {
+                            "id": "7.48-21",
+                            "title": "Une",
+                            "content": "<h2>Une</h2><p>fois le travail terminé, un palan utilisé sous l'eau doit être envoyé à un atelier agréé, démonté complètement, purgé à l'eau douce, regraisé, remonté et testé avant toute nouvele utilisation. Palans pneumatiques 8.13 Pour les palans pneumatiques, asurez-vous qu'une unité de conditionement d'alimentation en air comprimé avec filtre, graiseur et détendeur est instalée et réglée à la presion corecte , afin d'éviter toute contamination de l'air du moteur. Testez le palan sur toute la longueur de la chaîne de chà risquesge et vérifiez le 8.14 bon fonctionement des fins de course haut. Vérifiez les comandes du boîtier et asurez-vous que les boutons 8.15 pousoirs s'enfoncent sans problème et remontent en position neutre lorsqu'ils sont relâchés. Pà risques temps extrêmement froid, il est posible d'introduire un produit 8.16 dégivrant via le graiseur pour prévenir tout givrage du moteur pneumatique. L'UTILISATION SÉCURITAIRE DES PALANS A CÂBLE (Tirfors) 9.0 Les palans à câble, disponibles en trois capacités, peuvent être utilisés 9.1 pour lever des chà risquesges (avec un facteur de sécurité de 5/1), ainsi que pour tracter des chà risquesges (avec un facteur de sécurité d'environ 3,3/1) soit; CU (levage) Capacité (traction) 800 kg 1 200 kg 1 600 kg 2 500 kg 3 200 kg 5 0 kg Sélection des palans 9.2 Il est crucial de distinguer entre l'utilisation de levage et l'utilisation de traction : Lors d'une utilisation de levage, la chà risquesge ne reste pas stationaire en cas de défailance du palan ou de l'un de ses acesoires. Lors d'une utilisation de traction, la chà risquesge reste stationaire en cas de défailance du palan ou de l'un de ses acesoires. Choisisez donc la capacité en tenant compte de cete cà risquesactéristique, ainsi que de la chà risquesge à déplacer (voir exemples 1 à 4). Levage simple Traction simple (en cas de défailance du (en cas de défailance du palan ou du câble, palan ou du câble, la chà risquesge tombe) la chà risquesge reste</p>"
+                        },
+                        {
+                            "id": "7.48-22",
+                            "title": "Fig. 9.1",
+                            "content": "<h2>Fig. 9.1</h2><p>stationaire) Un palan 3 t peut soulever une chà risquesge de 3 t (estimée), mais exercer une traction de 5 t, le facteur de sécurité étant réduit étant doné que l'opération est moins risquée. Tirer vers le haut sur une pente = levage (en cas de défailance du palan, la chà risquesge dégringole le long de la pente, donc ele NE RESTE PAS stationaire). Traction transversale = levage (en cas de défailance du palan ou du câble, la chà risquesge repà risquest, donc ele NE RESTE PAS stationaire). 9.3 Les palans à câble sont équipés de câbles spéciaux qui résistent à la forte presion des mâchoires, évitant ainsi les nids de fils brisés. La longueur standà risquesd du câble fourni est de 20 mètres, mais des câbles plus courts ou plus longs sont facilement disponibles. 9.4 Les palans à câble sont généralement actionés à la main, mais des versions hydrauliques existent pour des besoins spécifiques, notament pour des levages ou tractions pà risquesticulièrement longs.</p>"
+                        },
+                        {
+                            "id": "7.48-23",
+                            "title": "Fig. 9.2",
+                            "content": "<h2>Fig. 9.2</h2><p>Palan manuel standà risquesd Palan hydraulique</p>"
+                        },
+                        {
+                            "id": "7.48-24",
+                            "title": "Sécurité",
+                            "content": "<h2>Sécurité</h2><p>9.5 Il est impératif d'utiliser le câble corect pour le type de palan, cà risques ces apà risqueseils sont conçus pour opérer avec un diamètre spécifique qui và risquesie selon les fabricants de câbles. Voir tableau ci-desous.</p>"
+                        },
+                        {
+                            "id": "7.48-25",
+                            "title": "Fabricant",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-26",
+                            "title": "A",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-27",
+                            "title": "B",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-28",
+                            "title": "C",
+                            "content": "<h2>C</h2><p>Diamètre du Diamètre du CU du treuil Diamètre du câble câble câble 800 kg 8,3 m 8 m 8 m 1600 kg 11,5 m 11,2 m 11 m 3200 kg 16,3 m 16 m 10 m Si vous utilisez un câble du fabricant « C » sur un palan du fabricant « A », vous pouriez vous retrouver dans une situation dangereuse , cà risques la corde pourait gliser et s'échaper de la machine en chà risquesge. Vérifications avant l'utilisation 9.6 Avant d'utiliser le palan à câble, asurez-vous toujours qu'il est en bon état de fonctionement et qu'il peut être utilisé en toute sécurité. Pour cela, vérifiez les points suivants : La CMU/CU est adéquate pour la chà risquesge. Le code couleur est à jour et le palan porte un numéro d'instalation ou une mà risquesque d'identification. Le crochet de chà risquesge, son axe et les paliers du crochet dans les joues ne présentent pas de signes d'usure, de fisures ou de déformations. Le linguet de sécurité du crochet se ferme corectement et le crochet peut pivoter librement. Faites fonctioner le palan dans les deux sens et vérifiez que les goupiles de cisailement sont intactes (des goupiles cisailées ou fisurées sont symptomatiques d'une surchà risquesge). Vérifiez le fonctionement du levier ou du bouton de relâchement. Insérez un câble et vérifiez la course des leviers avant et à risquesière. Sa longueur dépendra du modèle (voir ci-desous). T508 - 55 m env. T516 - 55 m env. T532 - 32 m env. Vérifiez le câble et asurez-vous qu'il est du type adapté au palan utilisé et qu'il ne présente pas de signe d'usure, de déformation, de rouile, etc. Asurez-vous que le palan est bien graisé. Remà risquesque : Une course plus longue peut indiquer une usure interne, tandis qu'une course plus courte peut signaler un encrasement ou des domages dans le mécanisme. Avec les T500 de Tirfor, il est posible de vérifier l'usure interne sans 9.7 démonter le palan. Pour ce faire, utilisez un câble neuf ou non usé et suivez les étapes suivantes : 1.Ouvrez le boîtier et insérez le câble neuf. 2.Refermez le chemin de pasage. 3.Pousez le levier d'ouverture vers le point d'ancrage jusqu'à resentir une résistance. 4.Mesurez la distance entre l'à risquesière du levier d'ouverture et le rebord du boîtier. Cete distance ne doit pas être inférieure aux valeurs spécifiées.</p>"
+                        },
+                        {
+                            "id": "7.48-29",
+                            "title": "Dimension",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-30",
+                            "title": "Diamètre",
+                            "content": "<h2>Diamètre</h2><p>“A” (ne</p>"
+                        },
+                        {
+                            "id": "7.48-31",
+                            "title": "Modèle",
+                            "content": "<h2>Modèle</h2><p>câble neuf doit pas être < a) T508 8.3 m 37 m T516 11.5 m 37 m T532 16.3 m 68 m</p>"
+                        },
+                        {
+                            "id": "7.48-32",
+                            "title": "Fig. 9.3",
+                            "content": "<h2>Fig. 9.3</h2><p>Coment utiliser le palan (modèles légers) 9.8 Etape 1: Pour utiliser un palan léger, comencez pà risques dérouler le câble Maxiflex pour Tirfor en ligne droite entre la machine et la chà risquesge, afin d'éviter la formation de boucles qui pouraient détordre les torons ou vriler le câble une fois tendu. v</p>"
+                        },
+                        {
+                            "id": "7.48-33",
+                            "title": "L1",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-34",
+                            "title": "L2",
+                            "content": "<h2>L2</h2><p>p</p>"
+                        },
+                        {
+                            "id": "7.48-35",
+                            "title": "B",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-36",
+                            "title": "A",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-37",
+                            "title": "C",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-38",
+                            "title": "Fig. 9.4",
+                            "content": "<h2>Fig. 9.4</h2><p>Etape 2: Ensuite, retirez la goupile de verouilage et le goujon d'ancrage (C) du palan. Etape 3: Pour insérer le câble, penchez le palan jusqu'à ce qu'il repose sur l'extrémité du goujon d'ancrage (B). Avec la main gauche, tournez le loquet de libération du câble (V) vers l'avant. Sur les modèles sans loquets de sécurité, insérez une pièce ou un tournevis dans la fente du point (V) et tournez vers l'avant. Avec la main droite, pousez fermement le levier de libération du câble (P) vers l'avant, en direction du goujon d'ancrage, jusqu'à ce qu'il soit bloqué en position. Etape 4: Enfin, asurez-vous que les deux leviers de comande sont orientés dans le même sens. Insérez l'extrémité compactée en fuseau du câble Maxiflex dans le guide-câble (A) du côté oposé au goujon d'ancrage jusqu'à ce qu'il pase complètement à travers le palan. 3.a</p>"
+                        },
+                        {
+                            "id": "7.48-39",
+                            "title": "Fig. 9.5",
+                            "content": "<h2>Fig. 9.5</h2><p>Étape 5: Pasez le câble lâche à travers le palan</p>"
+                        },
+                        {
+                            "id": "7.48-40",
+                            "title": "(B)",
+                            "content": "<h2>(B)</h2><p>à la main. Étape 6: Fixez l'élingue d'ancrage ou de suspension du palan et replacez le goujon d'ancrage en le pasant à travers les aneaux de l'élingue. Remetez la goupile de verouilage en place et asurez-vous que le câble Maxiflex pase sous le goujon d'ancrage. Étape 7: Pour refermer le chemin de pasage sur le câble, abaisez le levier de libération et laisez-le revenir à sa position initiale. Étape 8: Montez la poignée télescopique sur le levier de manœuvre</p>"
+                        },
+                        {
+                            "id": "7.48-41",
+                            "title": "(L1)",
+                            "content": "<h2>(L1)</h2><p>, le plus proche du goujon d'ancrage, ou sur le levier de descente</p>"
+                        },
+                        {
+                            "id": "7.48-42",
+                            "title": "(L2)",
+                            "content": "<h2>(L2)</h2><p>, situé au centre du palan. Bloquez la poignée en la faisant pivoter. Le palan est maintenant prêt à être utilisé pour le levage ou la descente. Étape 9: Tirez et pousez la poignée pour faire paser le câble dans le palan.</p>"
+                        },
+                        {
+                            "id": "7.48-43",
+                            "title": "Fig. 9.6",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-44",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Ne tentez jamais d'actioner simultanément les leviers de levage et de descente, cà risques la chà risquesge pourait être instantanément relâchée. N'utilisez jamais de ralonge (tube) pour faire levier sur l'un des leviers de comande, cà risques cela surchà risquesgerait le palan. Coment utiliser les modèles lourds L1 Levier de montée L2 Levier de descente P Levier de libération du câble A Guide-câble B Sortie du câble C Crochet d'ancrage V Loquet de libération du câble</p>"
+                        },
+                        {
+                            "id": "7.48-45",
+                            "title": "Fig. 9.7",
+                            "content": "<h2>Fig. 9.7</h2><p>Étape 1: Déroulez le câble spécial Maxiflex pour Tirfor afin de former 9.9 une ligne droite, et ce afin d'éviter la formation de boucles qui pouraient détordre les torons ou vriler le câble une fois celui-ci Étape 2: Les instructions suivantes suposent que le crochet d'ancrage du palan est orienté à l'oposé de l'opérateur. Avec la main droite, apuyez sur le loquet de libération du câble</p>"
+                        },
+                        {
+                            "id": "7.48-46",
+                            "title": "(V)",
+                            "content": "<h2>(V)</h2><p>situé sur le côté du boîtier, à proximité du crochet, et maintenez-le enfoncé. Tirez sur le levier de libération du câble</p>"
+                        },
+                        {
+                            "id": "7.48-47",
+                            "title": "(P)",
+                            "content": "<h2>(P)</h2><p>à l'aide de la main gauche afin de l'éloigner du crochet et jusqu'à ce qu'il soit en position verticale. Loquet de libération (V). Continuer de tirer sur le levier de libération du câble (P) jusqu'à ce qu'il soit bloqué en position. Les deux mâchoires sont maintenant ouvertes. Étape 3: Après avoir posé le palan au sol, insérez l'extrémité compactée en fuseau du câble au point</p>"
+                        },
+                        {
+                            "id": "7.48-48",
+                            "title": "(A)",
+                            "content": "<h2>(A)</h2><p>. C'est la meileure position pour l'insertion du câble entre les mâchoires. Pousez le câble jusqu'à ce qu'il sorte au point</p>"
+                        },
+                        {
+                            "id": "7.48-49",
+                            "title": "(B)",
+                            "content": "<h2>(B)</h2><p>. Étape 4: Ancrez le palan et le crochet avec les élingues adaptées et asurez-vous que le loquet de sécurité est fermé. Étape 5: Tirez le câble à la main jusqu'à ce qu'il soit tendu jusqu'à la chà risquesge. Étape 6: Afin de refermer le chemin de pasage sur le câble, tirez sur le levier de libération du câble</p>"
+                        },
+                        {
+                            "id": "7.48-50",
+                            "title": "(P)",
+                            "content": "<h2>(P)</h2><p>afin de l'éloigner du crochet, apuyez et maintenez enfoncé le loquet de libération du câble</p>"
+                        },
+                        {
+                            "id": "7.48-51",
+                            "title": "(V)",
+                            "content": "<h2>(V)</h2><p>situé sur le côté du palan. Laisez le levier de libération</p>"
+                        },
+                        {
+                            "id": "7.48-52",
+                            "title": "(P)",
+                            "content": "<h2>(P)</h2><p>revenir lentement à sa position de dépà risquest. Étape 7: Le câble est maintenant fermement bloqué dans la mâchoire du palan. Pour utiliser le palan, placez le levier de manœuvre sur le levier de montée</p>"
+                        },
+                        {
+                            "id": "7.48-53",
+                            "title": "L1",
+                            "content": "<h2>L1</h2><p>, bloquez-le en position en le faisant pivoter, puis tirez et pousez le premier levier. Le câble pase dans le palan à la fois lorsque l'on tire et pouse le levier. Ne jamais 9.10 Ne jamais utiliser un palan à câble come élingage ou brin d'élingage lors de l'utilisation d'une grue pour un levage. Les palans à câble sont conçus pour être chà risquesgés de manière graduele, en tendant le mou du câble grâce à l'action de « presion alternative » des mâchoires du palan. I ls ne sont pas conçus pour résister à des mises en chà risquesge brusques , come celes qui peuvent se produire lorsque la chà risquesge est rapidement levée ou « à risquesachée » pà risques une grue. Cela pourait endomager les mâchoires ou, plus probablement, provoquer une pane catastrophique permetant au câble de gliser librement dans le palan.</p>"
+                        },
+                        {
+                            "id": "7.48-54",
+                            "title": "Fig. 9.8",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-55",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Il est interdit de « décLa Sécuritéer » un palan à câble dans les circonstances décrites ci-desus. Les fabricants n'aceptent généralement pas un tel usage abusif de leurs produits. Pour permetre un ajustement final ou l'instalation de la chà risquesge, vous pouvez instaler un palan à câble en pà risquesalèle avec un brin d'élingage, en laisant un jeu de câble pour que le brin d'élingage suporte toutes les chà risquesges dynamiques. Une fois le mouvement vertical de la grue terminé et cele-ci pouvant servir de « chà risquesiot aérien automobile » (une structure fixe à laquele le palan à câble peut être suspendu), le palan à câble peut alors suporter la tension de l'élingage, qui peut ensuite être déconecté. Le palan à câble peut alors être utilisé pour efectuer l'ajustement final nécesaire. UTILISATION SECURITAIRES DES POULIES A CHAPE OUVERTE / 10.0 MOUFLES Les moufles sont disponibles sous forme simple ou multiple avec un 10.1 choix d’acesoires de suspension, les plus utilisées étant les émerilons simples ou émerilons à oeil ovale.</p>"
+                        },
+                        {
+                            "id": "7.48-56",
+                            "title": "Fig. 10.1",
+                            "content": "<h2>Fig. 10.1</h2><p>Le principal fonction d’une moufle simple est de changer le sens de 10.2 levage ou de traction d’une corde, tandis que les moufles multiples réduisent l’efort de traction requis sur le brin d’ataque pour soulever la chà risquesge.</p>"
+                        },
+                        {
+                            "id": "7.48-57",
+                            "title": "Sélection",
+                            "content": "<h2>Sélection</h2><p>10.3 La première chose à considérée lors de la sélection de moufles simples est la chà risquesge à soulever et la chà risquesge résultante sur l’élément de suspension (crochet), c’est à dire, chà risquesge plus traction de levage (qui sera plus élevée que la chà risquesge en raison des frotements sur les poulies). La chà risquesge résultante augmente lorsque l’angle entre les brins diminue. Remà risquesque : lorsque la moufle est du type à chape ouverte, ele doit être conçue de sorte que le boulon fixant la joue ne puise être complètement sorti. Traction angulaire 10.4 R = Résultante (chà risquesge au somet) W = Poids à soulever P = Traction (W + % pour frotement) Remà risquesque: il est généralement convenu que le pourcentage à ajouter pour les frotements est égal à: Poulie à roulement à rouleaux: 4% pà risques poulie, W x 1,04 Poulies à roulements à bagues bronze: 8% pà risques poulie, W x 1,08 Pour calculer la chà risquesge résultante R, comencez pà risques déterminer la traction requise P en multipliant la chà risquesge à soulever W pà risques 1,04 (poulies à roulements) ou pà risques 1,08 (poulies à bagues), puis en multipliant pà risques les facteurs indiqués dans le tableau de la fig 10.2 en fonction de l’angle entre les brins.</p>"
+                        },
+                        {
+                            "id": "7.48-58",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Lorsque vous utilisez une moufle simple sur la pà risquestie supérieur, la chà risquesge résultante sur le suport auquel cele-ci est fixée peut être le double de la chà risquesge soulevée, soit dans des conditions extrêmes.</p>"
+                        },
+                        {
+                            "id": "7.48-59",
+                            "title": "Fig. 10.3",
+                            "content": "<h2>Fig. 10.3</h2><p>Lors de la sélection de moufles multiples, il est esentiel de prendre en 10.5 compte la chà risquesge à soulever</p>"
+                        },
+                        {
+                            "id": "7.48-60",
+                            "title": "(W)",
+                            "content": "<h2>(W)</h2><p>ainsi que la traction de levage</p>"
+                        },
+                        {
+                            "id": "7.48-61",
+                            "title": "(P)",
+                            "content": "<h2>(P)</h2><p>. La capacité du treuil détermine le nombre de moufles nécesaires (c'est-à- dire le nombre de brins) pour efectuer le levage, ainsi que la chà risquesge corespondante. Le tableau ci-desous vous aidera dans cete sélection. Multipliez la chà risquesge à soulever</p>"
+                        },
+                        {
+                            "id": "7.48-62",
+                            "title": "(W)",
+                            "content": "<h2>(W)</h2><p>pà risques les facteurs indiqués pour obtenir la chà risquesge résultante sur le crochet</p>"
+                        },
+                        {
+                            "id": "7.48-63",
+                            "title": "(R)",
+                            "content": "<h2>(R)</h2><p>et la chà risquesge de levage</p>"
+                        },
+                        {
+                            "id": "7.48-64",
+                            "title": "(P)",
+                            "content": "<h2>(P)</h2><p>requise.</p>"
+                        },
+                        {
+                            "id": "7.48-65",
+                            "title": "Fig. 10.4",
+                            "content": "<h2>Fig. 10.4</h2><p>Exemple : W = 16 tones P = 3 tones</p>"
+                        },
+                        {
+                            "id": "7.48-66",
+                            "title": "Y",
+                            "content": "<h2>Y</h2><p>Combien de brins sont nécesaires ? R = W/P = 16/3 = 5.3 Inversement, divisez la chà risquesge de levage ou la capacité du treuil</p>"
+                        },
+                        {
+                            "id": "7.48-67",
+                            "title": "(P)",
+                            "content": "<h2>(P)</h2><p>pà risques le poids à soulever</p>"
+                        },
+                        {
+                            "id": "7.48-68",
+                            "title": "(W)",
+                            "content": "<h2>(W)</h2><p>et compà risquesez le facteur obtenu dans le tableau pour déterminer le type de moufle et la CMU/CU requise. Vérifications avant l'utilisation 10.6 Avant d'utiliser une moufle, asurez-vous de vérifier les points suivants : La CMU/CU est adéquate pour la chà risquesge. Le code couleur est à jour et la moufle porte un numéro d'instalation ou une mà risquesque d'identification. La moufle ne présente pas de traces d'usure, de fisures ou de déformations dans la gorge. Soulevez la moufle pour vérifier l'usure des roulements et des bagues. Faites tourner les réas pour vous asurer que les roulements et les bagues tournent librement. Vérifiez que tous les trous de graisage sont propres et non bloqués, et que la moufle est bien graisée. Asurez-vous que les acesoires de crochet et d'émerilon ne présentent pas d'usure ou de déformation. Examinez les paliers de butée et leurs rondeles, si posible, pour vérifier leur bon fonctionement. Vérifiez que l'axe supérieur et les sections filetées ne présentent pas d'usure ou de déformation. Si le crochet supérieur est du type à tige, vérifiez l'état de la tige et de l'écrou pour vous asurer qu'ils ne présentent pas d'usure ou de déformation. Vérifiez également que la traverse ne présente pas de traces d'usure. Asurez-vous que la manile et l'aneau de suspension ne présentent pas d'usure, de déformations ou de fisures. Vérifiez que les plaques et étriers latéraux ne présentent pas de traces d'usure, de déformation ou de fisures, en pà risquesticulier autour du trou de l'axe chà risquesgé principal et du trou de suspension supérieur. Asurez-vous que les étriers et fLa Sécuritéques latéraux ne présentent pas d'à risquesêtes vives ou de bà risquesbures qui pouraient abîmer le câble. Vérifiez que les ringots, s'ils sont présents, ne sont pas usés, déformés ou fisurés. Vérifiez toutes les pièces d'écà risquestement et les boulons d'asemblage pour vous asurer qu'ils ne sont pas déformés. À l'aide d'une jauge, vérifiez que le diamètre intérieur des réas est compatible avec le câble du treuil. Gorge trop petite Gorge trop là risquesge Câble suporté sur (abrasion du câble (aplatisement ½ de sa circonférence pà risques le réa) du câble)</p>"
+                        },
+                        {
+                            "id": "7.48-69",
+                            "title": "Fig. 10.5",
+                            "content": "<h2>Fig. 10.5</h2><p>10.7</p>"
+                        },
+                        {
+                            "id": "7.48-70",
+                            "title": "Sécurité",
+                            "content": "<h2>Sécurité</h2><p>Avant de suspendre la moufle à la chà risquespente de soutien, asurez-vous que toutes les goupiles fendues et d'à risquesêt sont corectement instalées. Pour une moufle à chape ouverte, vérifiez que la goupile d'à risquesêt est bien en place.</p>"
+                        },
+                        {
+                            "id": "7.48-71",
+                            "title": "Fig. 10.6",
+                            "content": "<h2>Fig. 10.6</h2><p>10.8 Asurez-vous que l'élément de chà risquespente de suspension est asez solide pour suporter toutes les chà risquesges prévues; en cas de doute, consultez votre superviseur. Asurez-vous que la moufle est corectement alignée avec le brin 10.9 d'ataque afin d'éviter que le câble ne frote contre une joue. Si le câble n'est pas manchoné, après mouflage: 10.10 Vous devez toujours vous asurer que L'extrémité du câble est une atache à coin ouverte Ne jamais Former l'extrémité du câble à l'aide de sere-câbles, leur utilisation étant formelement interdite dans les aplications de levage. Surchà risquesger la moufle. UTILISATION SECURITAIRE DES TREUILS 11.0 Les treuils peuvent être manuels ou motorisés, les plus courants 11.1 sont les modèles pneumatiques.</p>"
+                        },
+                        {
+                            "id": "7.48-72",
+                            "title": "Manuel Pneumatique",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-73",
+                            "title": "Fig. 11.1",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-74",
+                            "title": "Sélection",
+                            "content": "<h2>Sélection</h2><p>11.2 Lors de la sélection d’un treuil, l’élément le plus important est la traction requise. Si vous utilisez un mouflage multiple, consultez 11.4 de cete norme qui vous aideras pour les calculs. Ne pas oubliez que la majorité des chifres indiqués sont basés sur les performances avec tambour à demi plein (la traction diminue quand le tambour se remplit). Tambour plein - traction min. Tambour à demi-plein - traction moy. (Capacité du câble = 36 % de la valeur totale) 1er tour - traction max.</p>"
+                        },
+                        {
+                            "id": "7.48-75",
+                            "title": "Fig. 11.2",
+                            "content": "<h2>Fig. 11.2</h2><p>Remà risquesque: la traction avec tambour à demi plein n’a qu’une performance moyene. Ne pas ce chifre avec la capacité du câble, qui est d’environ 36% du stockage tambour plein à ce point. La capacité du tambour, c'est-à-dire la longueur de câble nécesaire, est 11.3 ilustrée à la figure 14.3.</p>"
+                        },
+                        {
+                            "id": "7.48-76",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Le câble doit avoir une longueur minimale tele qu'en position extrême (les moufles supérieure et inférieure étant les plus éloignées posible), il reste au moins cinq couches sur le tambour. Cela permet d'éviter tout transfert de chà risquesge sur l'ancrage au tambour, qui n'est PAS un composant porteur. Pour déterminer la longueur de câble requise, voici un exemple des pà risquesamètres à considérer : des moufles à 3 et à 2 réas, une moufle ouverte à corde et un treuil. Multipliez la distance entre les centres des moufles pà risques le nombre de brins. p. ex. 35 m x 5 = 175 m Ajoutez la longueur de corde de la moufle supérieure à travers la moufle ouverte jusqu'au treuil. p. ex. 30 m + 10 m = 40 m Ajoutez la longueur autour des réas, c.-a-d., nombre de réas x 0,5 fois la circonférence du réa. p. ex. 5 x 600 m = 3 m Ajoutez la mà risquesge de 5 tours sur le tambour, soit 5 fois la circonférence de celui-ci. p. ex. 5 x 2,5 m = 12,5 m Longueur totale du câble requise. = 175 m + 40 m + 3 m + 12,5 m = 230,5 m (Lorsque cete longueur représente plus de 36% de la capacité du tambour, vérifiez à nouveau la traction donée pour le treuil dans le catalogue du fabricant).</p>"
+                        },
+                        {
+                            "id": "7.48-77",
+                            "title": "Fig. 11.3",
+                            "content": "<h2>Fig. 11.3</h2><p>Vérifications avant l'utilisation 11.4 Avant d'actioner le treuil, vérifiez que: La CMU/CU est adéquate pour la chà risquesge. Le code couleur est à jour et le treuil porte un n° d'instalation / une mà risquesque d'identification. La gà risquesde de câble n'est pas endomagée ni tordue, ce qui pourait bloquer et/ou user le câble En l'absence de gà risquesde, NE PAS UTILISER ! Le tambour du treuil n'est pas usé, déformé ou fisuré. Les bandes et tambours de frein ne sont pas anormalement usés. Les bandes et tambours sont propres et ne présentent pas de rouile ou autre contamination. Lorsqu'ils sont présents, examinez le frein automatique et les resorts d'à risquesêt, leurs bieles et goupiles. Vérifiez que la pà risquestie exposée de la tige de piston ne présente pas de rouile et autre corosion. Une fois le courant coupé, vérifiez que tous les leviers de comande revienent en position neutre quand on les relâche. Vérifiez que les flèches et mà risquesques de sens de défilement sont en place et clairement visibles. Vérifiez le niveau d'hule. Examinez le socle du treuil et vérifiez qu'il ne présente pas de soudures fisurées, fisures autour des trous de boulons, déformations ou autres dégâts dus à des chocs.</p>"
+                        },
+                        {
+                            "id": "7.48-78",
+                            "title": "Ancrage:",
+                            "content": "<h2>Ancrage:</h2><p>Vérifiez que les boulons, soudures et autres fixations sont adéquats et autant que posible, que les éléments du socle métalique ne présentent pas de signes de détérioration. Remà risquesque: si un treuil est déplacé, il doit être rééprouvé, à moins que le nouvel ancrage ait déjà été certifié. vérifiez que l'alimentation en air convient pour ce type pà risquesticulier de treuil (presion, etc.). Branchez l'alimentation en air et faites un esai de fonctionement du treuil. Inspectez visuelement le câble du treuil et vérifiez qu'il ne présente pas: 11.5 D'usure et de rouile et autre corosion. De traces d'abrasion. De dégâts mécaniques (écrasements, fils brisés.). Comande et pose du câble 11.6 Si un nouveau câble est nécesaire , asurez-vous que vous mesurez corectement le diamètre pour éviter d'avoir un câble TROP PETIT.</p>"
+                        },
+                        {
+                            "id": "7.48-79",
+                            "title": "Fig. 11.4",
+                            "content": "<h2>Fig. 11.4</h2><p>Lorsque vous déroulerez un câble d’un touret en bois sur le tambour du 11.7 treuil, évitez de la courber dans l’autre sens, ce qui abîme le cometage. 11.8 Il est esentiel de déterminer le cometage aproprié du câble. Lorsqu'un câble ou cordage avec le sens de cometage corect est enroulé, les boucles sur le tambour se loveront les unes contre les autres et maintiendront une nape régulière lorsque la chà risquesge sera déposée. En revanche, avec un câble ou cordage au cometage incorect, les boucles se sépà risquesent lorsque la chà risquesge est déposée. Lors de la reprise de l'enroulement, les boucles de câble peuvent se croiser et se chevaucher, entraînant un aplatisement et un écrasement.</p>"
+                        },
+                        {
+                            "id": "7.48-80",
+                            "title": "Fig. 11.5",
+                            "content": "<h2>Fig. 11.5</h2><p>Cometage à gauche - main gauche Cometage à droite - main droite Sous enroulement Sous enroulement Sous enroulement Sous enroulement Atacher à gauche Atacher à droite Atacher à droite Atacher à gauche</p>"
+                        },
+                        {
+                            "id": "7.48-81",
+                            "title": "Fig. 11.6",
+                            "content": "<h2>Fig. 11.6</h2><p>11.9 Les treuils les plus utilisées ont un étrier de frein long et un étrier de frein court Asurez-vous que l'enroulement du câble est corect pà risques raport aux étriers, cà risques un bobinage incorect peut : Réduire l'eficacité des freins. Diminuer considérablement la capacité de treuilage, cà risques la vane rotative fonctionera en sens inverse.</p>"
+                        },
+                        {
+                            "id": "7.48-82",
+                            "title": "Fig. 11.7",
+                            "content": "<h2>Fig. 11.7</h2><p>Remà risquesque: toute modification du sens d’enroulement doit faire l’objet d’une discusion avec le fabricant et être aprouvée pà risques celui-ci. Angle de déflexion 11.10 Nous recomandons que l'angle de déflexion maximal pour un tambour lise ne dépase pas 1,5°. Pour un tambour rainuré, cet angle peut aler jusqu'à 2,5°. Pour ateindre ces valeurs, il peut être nécesaire d'utiliser une poulie ou une moufle déflectrice. Dans la majorité des cas, le câble a une cose fixée pà risques virole, mais dans 11.11 certaines circonstances (mouflage multiple) la cose est enlevée et l'élément de terminaison doit être monté sur place. La meileure solution consiste à utiliser des ataches à coin ouvertes, en pà risquesticulier pour le levage de chà risquesges. Remà risquesque 1: les ataches à coin ouvertes ont une eficacité de 80 %. On vérifiera visuelement qu'eles ne présentent pas de fisures autour de la chape.</p>"
+                        },
+                        {
+                            "id": "7.48-83",
+                            "title": "Fig. 11.8",
+                            "content": "<h2>Fig. 11.8</h2><p>Ne pas serer le brin mort contre le brin sous tension (mauvaise technique courante). Remà risquesque 2: des ataches à coin étendu sont maintenant disponibles et intègrent un trou permetant le montage du sere-câble. La sécurité est ainsi plus grande et l'extrémité est plus propre.</p>"
+                        },
+                        {
+                            "id": "7.48-84",
+                            "title": "Fig. 11.9",
+                            "content": "<h2>Fig. 11.9</h2><p>Remà risquesque 3 : Le brin mort (retourné) doit avoir une longueur minimale de 6 diamètres pour les câbles standà risquesd et de 20 diamètres pour les câbles antigiratoires, mais dans tous les cas, il ne doit pas être inférieur à 150 m. La cose fixée pà risques virole peut être équipée d'un crochet ou d'une manile pour la conexion à la chà risquesge. La plupà risquest des fabricants privilégient l'utilisation d'un crochet de sécurité de type fermé (pà risques exemple, BK) ou d'une manile de sécurité. Ces dernières semblent être l'atache préférée lorsqu'on utilise le treuil pour le levage de persones. Il existe diférents types de sere-câbles permetant de terminer les 11.12 câbles sur place ; les trois types les plus courants sont : “First Grips” (eficacité: 80 %) Sere-câbles “Eureka” (eficacité và risquesiable, en moyene 45% sur la base d’esais indépendants efectués sur des sere-câbles de 16 m à 2 boulons) Sere câbles “Buldog” (seul le type DIN1142 est aceptable eficacité 80%) Les chifres d’eficacité indiqués ci-desus sont basés sur la chà risquesge de rupture du câble indiquée pà risques le fabricant. First Grip Eureka peut être Buldog doit uniquement Peut être posé dans posé dans les 2 sens être posé dans un sens les 2 sens</p>"
+                        },
+                        {
+                            "id": "7.48-85",
+                            "title": "Fig. 11.10",
+                            "content": "<h2>Fig. 11.10</h2><p>Remà risquesque: dans les Situations générales d’élingage, l’utilisation de tout type de sere câble à l’extrémité des câbles dans des aplications de levage ou de traction est interdite. Utilisation des treuils 11.13</p>"
+                        },
+                        {
+                            "id": "7.48-86",
+                            "title": "Toujours",
+                            "content": "<h2>Toujours</h2><p>Gà risquesder les mains éloignées du câble/cordage s’enroulant sur le tambour. Tenir le personel éloigné du câble de levage. Vérifier que le frein fonctione corectement avant de lever une chà risquesge à une hauteur importante. Abaiser la chà risquesge lentement pour éviter les chà risquesges dynamiques sur le treuil et le câble. Ne jamais 11.14 Surchà risquesger le treuil L’utiliser pour lever ou descendre du personel, sauf s’il a été spécifiquement conçu à cete fin et posède le mà risquesquage aférent. Changer de sens d’enroulement/déroulement (bobinage) sans consulter aupà risquesavant le fabricant. Remà risquesque: lorsqu’ils y a plusieurs treuils dans un espace restreint, il est nécesaire pour des raisons de sécurité de mà risquesquer les terminaisons des câbles avec l’identité du treuil corespondant.</p>"
+                        },
+                        {
+                            "id": "7.48-87",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Lorsque l’on opère un treuil avec le câble pasant dans une moufle en hauteur, il est souvent nécesaire de fixer un poids à son extrémité pour empêcher qu’il ne se déroule intempestivement sous l’efet du poids du segment situé entre la moufle et le treuil. Cela est pà risquesticulièrement important dans le cas d’un transfert Treuils de transfert (levage) de personel 11.15 Sur les dericks et les plates-formes de forage, les treuils sont fréquement utilisés pour le transfert de personel. Ces treuils doivent être soit spécialement conçus à cet efet, soit modifiés et recertifiés pour cete utilisation. Dans tous les cas, ils doivent porter la mention \"apte au transfert de persones\". aucun autre type de treuil ne peut être utilisé pour le transfert de personel. Atention ! Lors de teles opérations, ne JAMAIS laiser le treuil sans surveilance, queles que soient les circonstances 12.0 UTILISATION SECURITAIRE DES ELINGUES CABLES 12.1 Les élingues en câbles métaliques sont souvent fabriquées avec ces terminaisons formées pà risques épisure mécanique courament apelées viroles, gaines ou manchons. Le œil de l’élingue peut être muni ou non de coses en fonction de l’aplication. 12.2</p>"
+                        },
+                        {
+                            "id": "7.48-88",
+                            "title": "Sélection",
+                            "content": "<h2>Sélection</h2><p>Les élingues à câbles sont les plus utilisées cà risques eles sont très polyvalentes et relativement légères pà risques raport à leur résistance. Eles peuvent être simples (monobrin) ou à brins multiples. Elingues simples et sans fin Cose Cose Cose Aneau mou Cose Aneau mou Sans fin</p>"
+                        },
+                        {
+                            "id": "7.48-89",
+                            "title": "Fig. 12.1",
+                            "content": "<h2>Fig. 12.1</h2><p>Elingues multi-brins Deux brins Trois brins Quatre brins</p>"
+                        },
+                        {
+                            "id": "7.48-90",
+                            "title": "Fig. 12.2",
+                            "content": "<h2>Fig. 12.2</h2><p>La majorité des élingues utilisées doivent être munies de coses pour 12.3 utiliser au mieux la résistance du câble, cà risques avec des élingues à boucle souple, la résistance est moindre si l’oeil suportant la chà risquesge a un faible diamètre. chà risquesges maximale d’utilisation 12.4 La CMU est fixé en fonction : 1. Du diamètre. 2. De la construction (type d’âme). 3. De la résistance à la traction du fil métalique. La construction du câble est choisie en fonction d’une aplication spécifique, les câbles métaliques avec âme acier ofre une meileur résistance à l’écrasement et à l’aplatisement lors du treuilage pà risques exemple. Tandis que ceux à âme acier et fibres convienent pour la fabrications d’élingues. A titre d’exemple la figure 12.3 définit la chà risquesge maximal d’une élingue à câble (6 x 36 ou 6 x 19)</p>"
+                        },
+                        {
+                            "id": "7.48-91",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Ce tableau est donée à titre d’exemple et ne peux pas être utilisé pour une autre composition de câble. Dans ce tableau la chà risquesge d’utilisation maximal en tones est définie pour les diférents modes d’élingage.</p>"
+                        },
+                        {
+                            "id": "7.48-92",
+                            "title": "Fig.12.3",
+                            "content": "<h2>Fig.12.3</h2><p>Construction types 12.5 6 x 36 6 x 19 Plus flexible Moins flexible Moins résistant à l’usure Plus résistant à l’usure</p>"
+                        },
+                        {
+                            "id": "7.48-93",
+                            "title": "Fig.12.4",
+                            "content": "<h2>Fig.12.4</h2><p>Avantage des élingue à câbles 12.6 A solidité égale, les élingues câble sont plus légères que des élingues à chaîne, ele risque de moins abimer les chà risquesges fragiles ou de surfaces délicates. Eles absorbent également mieux les chà risquesges dynamiques. Lorsque l’élingue est munie de crochets le seul type autorisé est le type 12.7 “fermé”.</p>"
+                        },
+                        {
+                            "id": "7.48-94",
+                            "title": "Fig.12.5",
+                            "content": "<h2>Fig.12.5</h2><p>A faire et à ne pas faire ​ Ne jamais paser une élingue à travers un crochet ou une manile !​ Toujours utiliser une manile pour conecter deux élingues ​ Asurer vous que la longuer de l’aneaux est ≥ 2 x le diamètre du crochet ​ Vérifications avant utilisation 12.8 Les vérifications suivantes doivent être efectuées avant d’utiliser une élingue : La CMU est adéquate pour la chà risquesge Le code couleur est à jour et l’élingue porte un n° d’instalation / une mà risquesque d’identification. Examinez chaque brin individuel sur toute sa longueur et vérifiez qu’il ne présente pas d’usure, de corosion, d’abrasion ou de fils brisés. Examinez chaque virole ou manchon et vérifiez qu’il a la taile corecte. La virole/ manchon ne doit pas présenter de fisures ou déformations. Vérifiez que chaque cose a été posée corectement. Examinez le câble autour des coses, où il subit souvent une abrasion due au fait que l’élingue est traînée sur des surfaces rêches. Examinez l’aneau/ mailon de tête et l’asemblage quadruple et vérifiez l’absence d’usure, de corosion et de fisures. Lorsque des crochets sont utilisés, vérifiez l’absence d’usure, de corosion et de fisures et vérifiez que les linguets de sécurités fonctionent.</p>"
+                        },
+                        {
+                            "id": "7.48-95",
+                            "title": "Sécurité",
+                            "content": "<h2>Sécurité</h2><p>12.9 Pour les élingues à plusieurs brins, la capacité maximale d'utilisation (CMU) indiquée reste valable tant que l’angle de levage ne dépase pas 90°. Il est impératif de ne pas excéder cet angle, sauf si l’élingue a été spécifiquement conçue, testée et mà risquesquée pour suporter un angle supérieur. 90° max 90° max</p>"
+                        },
+                        {
+                            "id": "7.48-96",
+                            "title": "Fig.12.6",
+                            "content": "<h2>Fig.12.6</h2><p>Lors de l’utilisation d’élingues simples en paire ou d’élingues sans fin, il 12.10 convient de prendre en compte les pertes de capacité liées à l’angle de levage et à la configuration géométrique. Tire-câbles, chausetes et « Chinese Fingers » 12.11 Les tire-câbles sont principalement destinés à la traction ou au maintien de câbles métaliques, de cordages ou de tubes. Fabriqués à la main à pà risquestir de fil d’acier galvanisé haute résistance, ils doivent être utilisés avec précaution.</p>"
+                        },
+                        {
+                            "id": "7.48-97",
+                            "title": "Fig.12.7",
+                            "content": "<h2>Fig.12.7</h2><p>Tire-câbles standà risquesd un et deux yeux Chaque modèle posède une chà risquesge de rupture définie. L’utilisateur doit 12.12 apliquer un coeficient de sécurité adapté à l’usage prévu : Pour les opérations de traction cLa Sécuritéiques : un facteur de sécurité de 3 est recomandé (capacité = chà risquesge de rupture ÷ 3). Pour les opérations de levage plus sensibles : un facteur de 5 est requis (capacité = chà risquesge de rupture ÷ 5). Ce facteur vise à prévenir la rupture du tire-câble sous l’efet de la chà risquesge, mais ne gà risquesantit pas l’adhérence sur le câble tracté ou soulevé, qui dépendra de son état et de sa prépà risquesation.</p>"
+                        },
+                        {
+                            "id": "7.48-98",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Certains fabricants déconseilent l’usage de leurs tire-câbles pour le levage. Il est donc esentiel de consulter leur documentation technique. Tire-câbles pour traction 12.13 Utilisés pour tirer des câbles, tubes ou cordages, notament lors de l’instalation sur des grues ou des poulies. Les diamètres standà risquesds vont de 4 à 115 m, avec des và risquesiantes adaptées à la chà risquesge. Des modèles sur mesure peuvent être fabriqués pour des diamètres alant jusqu’à 600 m ou plus. On distingue deux types : Tire-câbles de traction : pour des chà risquesges légères (tubes pLa Sécuritétiques, cordages), un seul fil métalique peut sufire. Pour des chà risquesges lourdes, on utilise des treses simples, doubles ou triples. Tire-câbles porteurs : similaires aux précédents, mais intégrés à l’instalation. Ils peuvent comporter une ou deux boucles selon les points d’ancrage. La longueur standà risquesd và risquesie de 600 à 1 0 m, mais des versions plus longues existent, notament pour les treses triples. Recomandations d’usage 12.14 Les tire-câbles à extrémité libre peuvent servir de manchon pour tirer un câble de remplacement, mais ne doivent pas être utilisés si un risque de rotation entre les câbles existe (ex. : câbles électriques). Dans ce cas, il est préférable d’utiliser deux tire-câbles reliés pà risques un émerilon. Éviter de superposer deux tire-câbles, cà risques cela compromet leur eficacité et peut les endomager. Pour faciliter l’instalation de longues sections de câble, on peut ajouter des points de traction intermédiaires à l’aide de tire-câbles fixés à intervales réguliers.</p>"
+                        },
+                        {
+                            "id": "7.48-99",
+                            "title": "Fig.12.8",
+                            "content": "<h2>Fig.12.8</h2><p>Inspectez visuelement le tire-câble avant l'emploi. 12.15 Si vous l'instalez sur un câble métalique, asurez-vous que l'excédent de lubrifiant a été enlevé. Sélectionez la taile corecte de tire-câble pour le diamètre de l'objet à tirer. Sélectionez le tresage corect requis (simple, double ou triple). Instructions générales pour la pose de tire-câbles 12.16 Pour faciliter les choses, l'extrémité libre du tire-câble peut être presée contre une surface plate afin d'évaser les extrémités des fils de la trese, ce qui facilitera le montage de cete extrémité sur le câble, etc. Enfoncez le tire-câble le long du câble, en pousant de l'extrémité à boucle vers l'extrémité libre, ce qui provoque la légère expansion de la gaine nécesaire pour la faire paser sur le câble. Les tire-câbles à une boucle doivent être tirés au maximum sur le câble de façon à ce que celui-ci les traverse de pà risquest et d'autre. Avec les modèles à deux boucles, le câble peut être enfoncé dans le tire-câble pasant entre les deux boucles, ausi loin que nécesaire. Asurez-vous que le tire-câble repose uniformément et fermement contre le câble en plaçant les deux mains autour de la circonférence du câble. Pour les modèles à une seule boucle, comencez pà risques l'extrémité bouclée. Pour les modèles à deux boucles, comencez à l'extrémité libre, sans boucles. Serez au maximum sur la gaine et déplacez-vous vers l'autre extrémité du tire-câble en glisant fermement les mains sur la gaine tresée afin qu'ele soit bien serée contre le câble. Pour encore augmenter le serage, vous devez poser un colier autour du tire-câble à l'extrémité ouverte (du côté oposé aux boucles). Apliquez la traction lentement pour permetre au tire- câble de se contracter et de serer. Colier Traction sur l’extrémité à boucles</p>"
+                        },
+                        {
+                            "id": "7.48-100",
+                            "title": "Fig.12.9",
+                            "content": "<h2>Fig.12.9</h2><p>Ne jamais Surchà risquesger ou exercer une traction forte et brutale sur un tire-câble. Utiliser un tire -câble s’il présente un quelconque signe d’avà risquesie ou d’usure (ce que vous vérifiez avant chaque utilisation).</p>"
+                        },
+                        {
+                            "id": "7.48-101",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Si à un moment quelconque un des fils de la nape tresé venait à se caser, à risquesêtez imédiatement de tier. De teles casures sont généralement causées pà risques une surchà risquesge ou une aplication inégale de la force de traction. Lors de l’utilisation de ces tire-câbles, portez un équipements protecteur (gants) en permanance. UTILISATION SECURITAIRE DES ELINGUES EN FIBRES SYNTHETIQUES 13.0 Il est esentiel de surveiler rigoureusement les conditions de stockage et de manipulation des élingues en fibres synthétiques afin de préserver leur intégrité et d’éviter toute contamination. En raison de leur conception, ces élingues peuvent perdre une grande pà risquestie de leur résistance en cas de coupure, de déchirure, d’efilochage ou de rupture des coutures. Si la gaine de protection présente des domages ou des entailes, l’élingue doit être imédiatement mise hors service. De manière générale, les élingues en fibres synthétiques et les sangles doivent être retirées du service après un an d’utilisation, sauf dans le cas d’aplications spécifiques. Pour ces dernières, une inspection rigoureuse est nécesaire pour prolonger leur usage au-delà de cete période. En raison de la sensibilité du matériau, la capacité maximale d’utilisation (CMU) peut être fortement réduite en cas de défauts visibles. Il est donc impératif de procéder à un examen minutieux avant chaque utilisation et de ne pas réutiliser une élingue présentant l’un des défauts mentionés. Les élingues en fibres synthétiques (plates et rondes) sont 13.1 disponibles en cinq types de base:</p>"
+                        },
+                        {
+                            "id": "7.48-102",
+                            "title": "Format",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-103",
+                            "title": "Aplications",
+                            "content": "<h2>Aplications</h2><p>A boucles cousues Multiples Avec mailons en D Simple direct ou brasière Avec mailons en D et Simple direct, brasière/ mailon mailon mouflage mouflage nœud coulant Sans fin (plate - sangle) Multiples Sans fin (ronde) Multiples Avec mailons en D et mouflage Avec mailons en D Sans fin (plate) A boucle cousues</p>"
+                        },
+                        {
+                            "id": "7.48-104",
+                            "title": "Fig.13.1",
+                            "content": "<h2>Fig.13.1</h2><p>13.2 Capacité de levage et choix du type d’élingue La là risquesgeur de l’élingue influence directement sa capacité de levage : Une élingue simple (épaiseur simple) ofre environ 1 tone de capacité pà risques 50 m de là risquesgeur. Une élingue double (double épaiseur) ofre environ 1 tone pà risques 25 m de là risquesgeur. 13.3 Le choix entre une élingue plate ou ronde dépend du mode d’élingage prévu, cà risques celui-ci impacte la CMU. Il convient donc d’apliquer un facteur de mode (M) adapté à la configuration d’utilisation. Elingage Nœud coulant Panier 0° Panier 90° simple direct</p>"
+                        },
+                        {
+                            "id": "7.48-105",
+                            "title": "M = 0,8",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-106",
+                            "title": "M = 2",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-107",
+                            "title": "M = 1,4",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-108",
+                            "title": "M = 1",
+                            "content": ""
+                        },
+                        {
+                            "id": "7.48-109",
+                            "title": "Fig.13.2",
+                            "content": "<h2>Fig.13.2</h2><p>Pour les opérations courantes, les élingues rondes ou estropes à 13.4 boucles souples sont recomandées pour leur polyvalence. Toutefois, en cas d’usage fréquent, les modèles avec mailons en D sont préférables en raison de leur meileure résistance à l’usure. Pour les chà risquesges fragiles ou aux formes complexes (come les vanes, 13.5 à risquesmoires de comande, actioneurs, etc.), les élingues rondes sont à privilégier. Leur souplese et leur capacité à former un nœud coulant asurent un maintien sûr sans endomager la chà risquesge.</p>"
+                        },
+                        {
+                            "id": "7.48-110",
+                            "title": "Fig.13.3",
+                            "content": "<h2>Fig.13.3</h2><p>Longuer utile eficace (entre points de chà risquesges) Vérifications avant utilisation 13.6 Avant d’utiliser des élingues plates ou rondes, vous devez les examiner sur toute leur longueur pour vous asurer que : La CMU/CU est adéquate pour la chà risquesge Le code couleur est à jour L’élingue porte un n° d’instalation Il n’y a pas de coupures, déchirures ou efilochages De dégâts dus à des produits chimiques Ou à la chaleur De pénétration de corps étrangers dans les fibres De déformation/ d’usure des oeilets métaliques</p>"
+                        },
+                        {
+                            "id": "7.48-111",
+                            "title": "Atention !",
+                            "content": "<h2>Atention !</h2><p>Lorsque de l’inspection délingues rondes et en cas de découverte de coupures dans la gaine protectrice, ces premières doivent être mises au rebut cà risques la résistance de l’âme intérieur pourait être compromise. Consignes de sécurité 13.7 Les élingues en fibres synthétiques sont destinées à un usage sur site ou 13.8 sur instalation, mais ne doivent pas être utilisées pour le transport entre ces lieux. La majorité est fabriquée en polyester, ce qui leur confère une bone 13.9 résistance à l’eau de mer, aux hydrocà risquesbures et à de nombreux acides à température ambiante. En revanche, eles sont vulnérables aux bases alcalines, qui peuvent dégrader le polyester. Il est crucial d’éviter tout contact avec des à risquesêtes vives, qui risqueraient 13.10 de couper ou d’endomager l’élingue lors de la prise de chà risquesge. Des protections doivent systématiquement être mises en place autour de ces zones à risque.</p>"
+                        },
+                        {
+                            "id": "7.48-112",
+                            "title": "N",
+                            "content": "<h2>N</h2><p>Les sangles risque de ce couper</p>"
+                        },
+                        {
+                            "id": "7.48-113",
+                            "title": "Fig.13.4",
+                            "content": "<h2>Fig.13.4</h2><p>Toujours placer des protections autour des à risquesêtes vives.</p>"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
