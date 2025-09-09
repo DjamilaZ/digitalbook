@@ -1,34 +1,20 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-
-function Home() {
-  return (
-    <div className="container">
-      <h1>Bienvenue sur DigitalBook</h1>
-      <p>Votre application de gestion de livres numériques</p>
-    </div>
-  );
-}
+import Sidebar from './System Design/Sidebar';
+import Home from './pages/Home/Home';
+import Upload from './pages/Upload/Upload';
+import Documents from './pages/Documents/Documents';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <nav>
-          <ul>
-            <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/books">Livres</Link></li>
-            <li><Link to="/about">À propos</Link></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<div>À propos de DigitalBook</div>} />
-        </Routes>
-      </main>
+    <div className="flex bg-gray-50 min-h-screen">
+      <Sidebar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/upload" element={<Upload />} />
+        <Route path="/documents" element={<Documents />} />
+      </Routes>
     </div>
   );
 }

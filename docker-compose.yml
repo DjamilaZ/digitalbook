@@ -13,7 +13,9 @@ services:
       - "5432:5432"
 
   backend:
-    build: ./digitalbook
+    build: 
+      context: ./digitalbook
+      dockerfile: Dockerfile
     command: sh -c "python manage.py collectstatic --no-input && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./digitalbook:/app
