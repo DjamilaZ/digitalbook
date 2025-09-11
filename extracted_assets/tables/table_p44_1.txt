@@ -1,0 +1,37 @@
+7.24 Dans le cas d'un navire, les communications radio entre la grue, le chef
+de manœuvre et le bord devront être établies avant le levage par-dessus
+bord.
+7.25 Sur une installation offshore, toutes les liaisons radio entre le grutier et
+le navire auxiliaire devront se faire par duplex. En cas de rupture de la
+liaison, le levage devra être immédiatement interrompu et la charge
+stabilisée.
+7.26 Dans les cas où deux grues ou plus seront utilisées simultanément, on
+choisira des canaux individuels pour chaque grue pour éviter les
+confusions. Lorsqu'elles sont toutes sur le même canal, on utilisera des
+signaux à bras pour s'assurer que la bonne grue répond à un ordre
+particulier donné.
+7.27 Sur des installations offshores, durant les périodes de silence radio,
+tous les talkies-walkies et autres radios devront être coupés et
+aucune opération de levage avec des navires ne devra avoir lieu.
+Les levages seront restreints aux opérations sur la plateforme, là où le
+grutier pourra clairement voir le chef de manœuvre.
+7.28 Opérations de levage spéciales
+Levage en tandem: le levage d'une charge avec deux grues peut être
+dangereux et devra être évité au maximum. Lorsque les dimensions
+physiques ou le poids de la charge nécessitent l'emploi de 2 grues, cela
+est acceptable si l'opération est méticuleusement préparée. Le levage
+doit être supervisé par une personne compétente. Il est absolument
+vital d'évaluer avec précision la charge susceptible d'être imposée à
+chaque grue. Il est également nécessaire d'évaluer soigneusement
+comment et jusqu'où la répartition des charges peut varier au cas où la
+charge ne serait plus d'aplomb ou si l'une ou les 2 grues devaient
+abaisser ou relever leur flèche, se déplacer ou pivoter. Les câbles de
+levage ne seraient plus verticaux
+Si n'importe laquelle de ces circonstances venait à se produire, cela
+pourrait imposer une charge supplémentaire à l'une ou aux 2 grues, ce
+qui pourrait en compromettre la stabilité ou les endommager
+sérieusement.
+7.29 Un élingage spécial pourrait être nécessaire pour tenir compte de la
+variation maximale de distribution des charges et de toute charge
+angulaire qui pourrait apparaître durant l'opération en tandem.
+44

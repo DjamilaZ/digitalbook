@@ -1,0 +1,27 @@
+1.06 Numéro de l'installation/d'identification
+Numéro unique donné à un élément d'un appareil de levage à des fins
+d'enregistrement et pour en faciliter la traçabilité.
+1.07 Hauteur libre
+Distance verticale maximale entre l'élément à soulever et le point de
+suspension de l'appareil de levage, c.-a-d. entre les œils de levage et le
+dessous des poutres du chemin de roulement.
+1.08 Hauteur de levage
+Distance de déplacement possible entre les points de connexion
+supérieur et inférieur, c.-à-d. les crochets d'un appareil de levage.
+1.09 Dimension établie
+Distance minimum entre le niveau de suspension et la selle de crochet
+inférieure (aussi connu sous le nom de hauteur fermée).
+1.10 Capteurs de charge
+Élément d'équipement utilisé pour détecter les charges réelles à un
+point de fixation (p. ex. manille à capteur de charge, cale-étalon ou
+cellule dynamométrique en compression, etc.)
+1.11 Charge d'épreuve
+Charge appliquée en conditions d'essai supérieure à la CMU/CU afin de
+vérifier l'intégrité de l'équipement de levage.
+1.12 Personne compétente (pour l'inspection du matériel de levage)
+Individu ayant les connaissances et l'expérience requises, aussi bien
+théoriques que pratiques, sur le matériel et équipement considéré pour
+pouvoir certifier avec confiance que celui-ci ne présente pas de défaut
+évident et qu'il convient en tous points pour l'opération pour laquelle il
+sera utilisé.
+22

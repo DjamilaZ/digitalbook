@@ -1,0 +1,31 @@
+7.48 Procédures radio pour les opérations de levage
+I) Considération générales
+Les messages radio ne devraient être utilisés que pour le travail et pas
+pour des conversations oiseuses. Dans la règlementations radio, les
+injures/grossièretés sont interdites.
+II) Etablissement des liaisons
+Le grutier et le chef de manœuvre doivent établir leurs modalités de
+liaison radio (le centre radio indiquera le canal de service) avant le début
+de toute opération de levage. Chaque fois que le chef de manoeuvre
+change de position, il doit vérifier la communication avec le grutier
+III) Canaux radio
+Quand plus d’une grue opèrent dans la zone, chacune doit avoir son
+propre canal. Cela est particulièrement important lors de travaux
+simultanés avec des navires. Lorsqu’ils participent au levage, il convient
+également d’établir une communication radio avec ces navires avant de
+commencer la manutention. On pourra par exemple passer de la VHF à
+l’ UHF ou inversement.
+IV) Grue communiquant sur des canaux différents
+Lorsque deux grues sont sur des canaux différents au cours d’un
+transbordement en tandem, le chef de manœuvre prévues et la position
+des extrémités de leur flèche afin d’éviter tout contact entre les grues
+durant les opérations.
+V) Grues communiquant sur le même canal
+Cependant, si elles utilisent le même canal, par exemple lors d’un levage
+en tandem, il convient d’utiliser des signaux à bras individuels pour
+chaque grue avant de communiquer par radio. Ces appels radio doivent
+commencer par la position de la grue concernée sur la
+plateforme/installation, p ex. bâbord/tribord/centre, ect. Ces
+conventions doivent être utilisées à chaque appel pour empêcher toute
+confusion avec d’autres communications radio
+53

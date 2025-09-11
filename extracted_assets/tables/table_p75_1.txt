@@ -1,0 +1,19 @@
+Lors de la sélection de moufles multiples, il est essentiel de prendre en
+10.5
+compte la charge à soulever (W) ainsi que la traction de levage (P). La
+capacité du treuil détermine le nombre de moufles nécessaires (c'est-à-
+dire le nombre de brins) pour effectuer le levage, ainsi que la charge
+correspondante.
+Le tableau ci-dessous vous aidera dans cette sélection.
+Multipliez la charge à soulever (W) par les facteurs indiqués pour obtenir
+la charge résultante sur le crochet (R) et la charge de levage (P) requise.
+Fig. 10.4
+Exemple :
+W = 16 tonnes
+P = 3 tonnes Y
+Combien de brins sont nécessaires ?
+R = W/P = 16/3 = 5.3
+Inversement, divisez la charge de levage ou la capacité du treuil (P) par
+le poids à soulever (W) et comparez le facteur obtenu dans le tableau
+pour déterminer le type de moufle et la CMU/CU requise.
+75

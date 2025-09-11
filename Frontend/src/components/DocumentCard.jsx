@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Clock, MoreVertical, BookOpen, FileSearch } from 'lucide-react';
+import { FileText, Clock, MoreVertical, BookOpen, FileSearch, Download } from 'lucide-react';
 
 const DocumentCard = ({ 
   title, 
@@ -27,9 +27,9 @@ const DocumentCard = ({
               </div>
             </div>
           </div>
-          <button className="text-gray-400 hover:text-gray-600">
+          {/* <button className="text-gray-400 hover:text-gray-600">
             <MoreVertical size={18} />
-          </button>
+          </button> */}
         </div>
       </div>
       
@@ -40,22 +40,22 @@ const DocumentCard = ({
             className="px-3 py-1.5 text-sm font-medium text-blue-600 hover:bg-blue-50 rounded-md flex items-center gap-1.5"
           >
             <BookOpen size={16} />
-            Voir
+           Lire
           </button>
           <button 
             onClick={onAnalyze}
             className="px-3 py-1.5 text-sm font-medium text-purple-600 hover:bg-purple-50 rounded-md flex items-center gap-1.5"
           >
-            <FileSearch size={16} />
-            Analyser
+            <Download size={16} />
+            Télécharger PDF
           </button>
         </div>
-        <button 
+        {/* <button 
           onClick={onDelete}
           className="text-sm text-red-600 hover:text-red-800"
         >
           Supprimer
-        </button>
+        </button> */}
       </div>
     </div>
   );

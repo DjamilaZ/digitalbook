@@ -1,0 +1,20 @@
+12.9 Sécurité
+Pour les élingues à plusieurs brins, la capacité maximale d'utilisation
+(CMU) indiquée reste valable tant que l’angle de levage ne dépasse pas
+90°. Il est impératif de ne pas excéder cet angle, sauf si l’élingue a été
+spécifiquement conçue, testée et marquée pour supporter un angle
+supérieur.
+90° max
+90° max
+Fig.12.6
+12.10 Lors de l’utilisation d’élingues simples en paire ou d’élingues sans fin, il
+convient de prendre en compte les pertes de capacité liées à l’angle de
+levage et à la configuration géométrique.
+12.11 Tire-câbles, chaussettes et « Chinese Fingers »
+Les tire-câbles sont principalement destinés à la traction ou au maintien
+de câbles métalliques, de cordages ou de tubes. Fabriqués à la main à
+partir de fil d’acier galvanisé haute résistance, ils doivent être utilisés
+avec précaution.
+Fig.12.7
+94
+Tire-câbles standard un et deux yeux

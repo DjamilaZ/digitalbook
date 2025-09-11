@@ -1,0 +1,26 @@
+13.4 Pour les opérations courantes, les élingues rondes ou estropes à
+boucles souples sont recommandées pour leur polyvalence. Toutefois,
+en cas d’usage fréquent, les modèles avec maillons en D sont
+préférables en raison de leur meilleure résistance à l’usure.
+13.5 Pour les charges fragiles ou aux formes complexes (comme les vannes,
+armoires de commande, actionneurs, etc.), les élingues rondes sont à
+privilégier. Leur souplesse et leur capacité à former un nœud coulant
+assurent un maintien sûr sans endommager la charge.
+Fig.13.3
+Longuer utile efficace (entre points de charges)
+13.6 Vérifications avant utilisation
+Avant d’utiliser des élingues plates ou rondes, vous devez les examiner
+sur toute leur longueur pour vous assurer que :
+La CMU/CU est adéquate pour la charge
+Le code couleur est à jour
+L’élingue porte un n° d’installation
+Il n’y a pas de coupures, déchirures ou effilochages
+De dégâts dus à des produits chimiques
+Ou à la chaleur
+De pénétration de corps étrangers dans les fibres
+De déformation/ d’usure des oeillets métalliques
+Attention ! Lorsque de l’inspection délingues rondes et en cas de
+découverte de coupures dans la gaine protectrice, ces premières doivent
+être mises au rebut car la résistance de l’âme intérieur pourrait être
+compromise.
+101

@@ -11,14 +11,28 @@ const Documents = () => {
   
   const [documents, setDocuments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [totalCount, setTotalCount] = useState(0);
+  const [nextPage, setNextPage] = useState(null);
+  const [previousPage, setPreviousPage] = useState(null);
   const navigate = useNavigate();
 
-  // Charger les documents au montage du composant
+  // Charger les documents avec pagination et recherche
   useEffect(() => {
     const fetchDocuments = async () => {
       try {
-        const data = await bookService.getAllBooks();
-        setDocuments(data);
+        const data = await bookService.getAllBooks({ page: currentPage });
+        console.log('Données reçues de l\'API:', data);
+        console.log('Résultats (data.results):', data.results);
+        // L'API retourne une réponse paginée avec structure { count, next, previous, results }
+        setDocuments(data.results || []);
+        setTotalCount(data.count || 0);
+        setNextPage(data.next);
+        setPreviousPage(data.previous);
+        // Calculer le nombre total de pages
+        const pageSize = 10; // Django REST Framework par défaut
+        setTotalPages(Math.ceil((data.count || 0) / pageSize));
       } catch (error) {
         console.error('Erreur lors du chargement des documents:', error);
       } finally {
@@ -27,12 +41,71 @@ const Documents = () => {
     };
 
     fetchDocuments();
-  }, []);
+  }, [currentPage]);
 
-  // Filtrer les documents en fonction de la recherche
-  const filteredDocuments = documents.filter(doc =>
-    doc.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // Gérer la recherche avec debounce
+  useEffect(() => {
+    const debounceTimer = setTimeout(() => {
+      if (searchQuery.trim() === '') {
+        // Si la recherche est vide, recharger tous les documents
+        setCurrentPage(1);
+        const fetchDocuments = async () => {
+          try {
+            const data = await bookService.getAllBooks({ page: 1 });
+            setDocuments(data.results || []);
+            setTotalCount(data.count || 0);
+            setNextPage(data.next);
+            setPreviousPage(data.previous);
+            setTotalPages(Math.ceil((data.count || 0) / 10));
+          } catch (error) {
+            console.error('Erreur lors du chargement des documents:', error);
+          }
+        };
+        fetchDocuments();
+      } else {
+        // Sinon, effectuer la recherche
+        handleSearch();
+      }
+    }, 300); // 300ms de debounce
+
+    return () => clearTimeout(debounceTimer);
+  }, [searchQuery]);
+
+  const handleSearch = async () => {
+    if (searchQuery.trim() === '') return;
+    
+    setIsLoading(true);
+    try {
+      const data = await bookService.searchBooks(searchQuery, 1);
+      setDocuments(data.results || []);
+      setTotalCount(data.count || 0);
+      setNextPage(data.next);
+      setPreviousPage(data.previous);
+      setCurrentPage(1);
+      setTotalPages(Math.ceil((data.count || 0) / 10));
+    } catch (error) {
+      console.error('Erreur lors de la recherche:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Gestionnaires de pagination
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const handleNextPage = () => {
+    if (nextPage) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePreviousPage = () => {
+    if (previousPage) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
 
   // Gestionnaires d'événements
   const handleViewDocument = (docId) => {
@@ -44,7 +117,7 @@ const Documents = () => {
       await bookService.analyzeBook(docId);
       // Rafraîchir la liste des documents après analyse
       const updatedDocs = await bookService.getAllBooks();
-      setDocuments(updatedDocs);
+      setDocuments(updatedDocs.results || []);
     } catch (error) {
       console.error('Erreur lors de l\'analyse du document:', error);
     }
@@ -72,8 +145,8 @@ const Documents = () => {
         {/* En-tête avec titre et bouton */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">Mes Documents</h1>
-            <p className="text-gray-500">Gérez et consultez tous vos documents</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Mes Documents</h1>
+            <p className="text-gray-600 text-lg">Gérez et consultez tous vos documents</p>
           </div>
           <Button 
             variant="primary" 
@@ -111,20 +184,78 @@ const Documents = () => {
           <div className="flex justify-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
           </div>
-        ) : filteredDocuments.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredDocuments.map((doc) => (
-              <DocumentCard
-                key={doc.id}
-                title={doc.title}
-                date={new Date(doc.created_at).toLocaleDateString()}
-                sections={doc.chapters?.reduce((acc, chapter) => acc + (chapter.sections?.length || 0), 0) || 0}
-                onView={() => handleViewDocument(doc.id)}
-                onAnalyze={() => handleAnalyzeDocument(doc.id)}
-                onDelete={() => handleDeleteDocument(doc.id)}
-              />
-            ))}
-          </div>
+        ) : documents.length > 0 ? (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {documents.map((doc) => (
+                <DocumentCard
+                  key={doc.id}
+                  title={doc.title}
+                  sections={doc.sections}
+                  document={doc}
+                  onView={() => handleViewDocument(doc.id)}
+                  onAnalyze={() => handleAnalyzeDocument(doc.id)}
+                />
+              ))}
+            </div>
+            
+            {/* Contrôles de pagination */}
+            {totalPages > 1 && (
+              <div className="mt-8 flex justify-center items-center space-x-4">
+                <Button
+                  onClick={handlePreviousPage}
+                  disabled={!previousPage}
+                  variant="outline"
+                  className="flex items-center space-x-2"
+                >
+                  <span>Précédent</span>
+                </Button>
+                
+                <div className="flex items-center space-x-2">
+                  {Array.from({ length: Math.min(totalPages, 5) }, (_, i) => {
+                    let pageNum;
+                    if (totalPages <= 5) {
+                      pageNum = i + 1;
+                    } else if (currentPage <= 3) {
+                      pageNum = i + 1;
+                    } else if (currentPage >= totalPages - 2) {
+                      pageNum = totalPages - 4 + i;
+                    } else {
+                      pageNum = currentPage - 2 + i;
+                    }
+                    
+                    return (
+                      <Button
+                        key={pageNum}
+                        onClick={() => handlePageChange(pageNum)}
+                        variant={currentPage === pageNum ? "default" : "outline"}
+                        className="w-10 h-10"
+                      >
+                        {pageNum}
+                      </Button>
+                    );
+                  })}
+                </div>
+                
+                <Button
+                  onClick={handleNextPage}
+                  disabled={!nextPage}
+                  variant="outline"
+                  className="flex items-center space-x-2"
+                >
+                  <span>Suivant</span>
+                </Button>
+              </div>
+            )}
+            
+            {/* Information sur la pagination */}
+            {totalCount > 0 && (
+              <div className="mt-4 text-center text-sm text-gray-600">
+                Affichage de {documents.length} sur {totalCount} documents
+                {totalPages > 1 && ` (Page ${currentPage} sur ${totalPages})`}
+              </div>
+            )}
+          </>
         ) : (
           <div className="text-center py-12">
             <div className="mx-auto w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 mb-4">

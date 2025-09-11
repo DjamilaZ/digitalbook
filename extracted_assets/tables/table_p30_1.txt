@@ -1,0 +1,37 @@
+Autre possibilité, si la capacité est limitée, l'utilisation de capteurs de
+charge permet de mesurer en continu les charges sur l'équipement aux
+points de levage individuels au fur et à mesure du déroulement de
+l'opération. Une autre solution consiste à calculer soigneusement les
+charges qui seront imposées, mais il faudra veiller à ne pas faire de
+fausses hypothèses, en particulier en ce qui concerne le poids et la
+position du centre de gravité.
+Nous recommandons cependant, à moins d'utiliser des capteurs de
+charge, que la charge maximale utile de chaque point de levage et de
+son équipement associé ne soit pas inférieure à 1,5 fois la part de la
+charge qu'il est censé recevoir. Au fur et à mesure du déroulement de
+l'opération, on devra contrôler constamment les divers angles de
+l'équipement et les charges, qui indiquent comment le poids est
+distribué.
+5.7 Dans le cas de charges rigides, on devra déterminer combien de points
+de levage supporteront à tout moment la charge, étant donné qu'en
+pratique la majorité de celle-ci pourrait ne l'être que par 2 points. Dans
+un tel cas, la charge maximale utile de chaque point de levage et de son
+élingage ne devra pas être inférieure à la moitié de la charge totale.
+5.8 Mauvaise utilisation de l'équipement
+Il est strictement interdit de dépasser la CMU/CU d'un équipement
+de levage. Vous veillerez en particulier à éviter une surcharge, un
+mauvais élingage et un coinçage des élingues entre la charge et le sol.
+Ne jamais tenter de réparer un quelconque élément d'élingage ou de
+l'engin de levage, car toutes les réparations doivent être effectuées par
+du personnel qualifié formé aux procédures de réparation approuvées
+et disposant de la documentation de référence du fabricant. Au cas où
+vous remarqueriez que l'équipement est défectueux, signalez-le à votre
+superviseur qui prendra les mesures nécessaires.
+Attention! Toute réparation ou modification non autorisée d'un
+équipement de levage annule automatiquement sa certification. Cela
+s'applique également au démontage de toute partie intégrante d'un
+élingage/ensemble de levage.
+Ne jamais tenter de souder un accessoire de levage, qui sera
+généralement fabriqué avec des matériaux de haute qualité et nécessite
+un soudage spécial.
+30

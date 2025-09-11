@@ -12,29 +12,35 @@ def classify_line_by_pattern(line):
     Classe une ligne en fonction de son motif (chapitre, section, sous-section ou paragraphe).
     Retourne un tuple (niveau, contenu, numéro) où niveau est 'h1', 'h2', 'h3' ou 'p'.
     """
-    # Modèle pour les titres de chapitre (ex: "1. Introduction")
-    h1_pattern = re.compile(r'^(\d+)\.\s+(.+)$')
-    # Modèle pour les sections (ex: "1.1 Présentation")
-    h2_pattern = re.compile(r'^(\d+\.\d+)\s+(.+)$')
-    # Modèle pour les sous-sections (ex: "1.1.1 Objectifs")
+    # Modèle pour les sous-sections (ex: "1.1.1 Objectifs") - Le plus spécifique en premier
     h3_pattern = re.compile(r'^(\d+\.\d+\.\d+)\s+(.+)$')
-
-    # Vérifier les motifs dans l'ordre de spécificité (du plus précis au moins précis)
     h3_match = h3_pattern.match(line)
     if h3_match:
         return 'h3', h3_match.group(2).strip(), h3_match.group(1)
+
+    # Modèle générique pour les chapitres et sections (ex: "1.0", "1.1", "7.0")
+    hx_pattern = re.compile(r'^(\d+\.\d+)\s+(.+)$')
+    hx_match = hx_pattern.match(line)
+    if hx_match:
+        number_part = hx_match.group(1)
+        title_part = hx_match.group(2).strip()
+        parts = number_part.split('.')
+
+        # Si la partie après le point est "0", c'est un chapitre (h1)
+        if len(parts) == 2 and parts[1] == '0':
+            return 'h1', title_part, int(parts[0])
+        # Sinon, c'est une section (h2)
+        else:
+            return 'h2', title_part, number_part
     
-    h2_match = h2_pattern.match(line)
-    if h2_match:
-        return 'h2', h2_match.group(2).strip(), h2_match.group(1)
-    
-    h1_match = h1_pattern.match(line)
-    if h1_match:
-        return 'h1', h1_match.group(2).strip(), int(h1_match.group(1))
-    
+    # Modèle pour les chapitres simples (ex: "1. Introduction"), au cas où
+    h1_simple_pattern = re.compile(r'^(\d+)\.\s+(.+)$')
+    h1_simple_match = h1_simple_pattern.match(line)
+    if h1_simple_match:
+        return 'h1', h1_simple_match.group(2).strip(), int(h1_simple_match.group(1))
+
     # Si aucun motif ne correspond, c'est un paragraphe normal
     return 'p', line.strip(), None
-
 def extract_number(s):
     """Extrait le numéro d'une section (ex: '1.1' -> 1.1, '1.10' -> 1.1, '1.01' -> 1.01)"""
     # Recherche le motif numérique au début du titre
@@ -563,7 +569,7 @@ def main():
     structured_data = parse_pdf_to_structured_json(pdf_file)
     
     # Enregistrer la structure du texte
-    output_file = "ebook_structure_detailed.json"
+    output_file = "ebook_structure_detailed2.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(structured_data, f, ensure_ascii=False, indent=4)
     print(f"[SUCCES] La structure détaillée du PDF a été extraite dans '{output_file}'")

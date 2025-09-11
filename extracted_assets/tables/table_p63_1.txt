@@ -1,0 +1,28 @@
+9.0 L'UTILISATION SÉCURITAIRE DES PALANS A CÂBLE (Tirfors)
+9.1 Les palans à câble, disponibles en trois capacités, peuvent être utilisés
+pour lever des charges (avec un facteur de sécurité de 5/1), ainsi que
+pour tracter des charges (avec un facteur de sécurité d'environ 3,3/1)
+soit;
+CU (levage) Capacité (traction)
+800 kg 1 200 kg
+1 600 kg 2 500 kg
+3 200 kg 5 000 kg
+9.2 Sélection des palans
+Il est crucial de distinguer entre l'utilisation de levage et l'utilisation
+de traction :
+Lors d'une utilisation de levage, la charge ne reste pas stationnaire
+en cas de défaillance du palan ou de l'un de ses accessoires.
+Lors d'une utilisation de traction, la charge reste stationnaire en cas
+de défaillance du palan ou de l'un de ses accessoires.
+Choisissez donc la capacité en tenant compte de cette caractéristique,
+ainsi que de la charge à déplacer (voir exemples 1 à 4).
+Levage simple Traction simple
+(en cas de défaillance du (en cas de défaillance du
+palan ou du câble, palan ou du câble,
+la charge tombe) la charge reste
+Fig. 9.1
+stationnaire)
+Un palan 3 t peut soulever une charge de 3 t (estimée), mais exercer une
+traction de 5 t, le facteur de sécurité étant réduit étant donné que
+l'opération est moins risquée.
+63

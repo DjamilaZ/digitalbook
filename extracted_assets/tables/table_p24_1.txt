@@ -1,0 +1,34 @@
+2.9 CCU
+Unités de transport de marchandises (Cargo Carrying Unit), tout
+équipement utilisé pour contenir ou transférer une charge. Exemples:
+conteneurs, nacelles, râteliers à bouteilles de gaz, nacelles de transfert
+de personnel, bennes à déchets, ect.
+2.10 Certification
+La preuve (généralement sous forme de document papier) que le
+matériel est certifié.
+2.11 Certifié
+Prouve la réussite à un examen défini.
+2.12 Câble Lang
+Câble dont les fils composant les torons et ces derniers sont dans le
+même sens
+2.13 Câblage à gauche ordinaire
+Les fils sont enroulés vers la droite et les torons vers la gauche
+2.14 Plan de levage
+Une fois l’évaluation des risques terminée, un document écrit officiel est
+crée afin de détailler l’approche à suivre lors de l’opération de levage.
+Elle identifiera le personnel et l’équipement requis, ainsi que la méthode
+de levage.
+2.15 Essai en charge
+Essai de traction à un niveau prédéterminé et nouvelle inspection d’un
+élément de l’équipement.
+2.16 Câblage à droite ordinaire
+Les fils sont enroulés vers la gauche et les torons vers la droite
+2.17 Corde de manœuvre
+Une corde de type “anti-nœuds” attachés à une charge suspendue
+(généralement en bas) facilite la stabilisation de cette dernière et permet
+au membre de l’équipage tenant la corde de prévenir toute rotation et
+d’aider au guidage de la charge.
+2.18 Tirfor
+Mot anglais décrivant un treuil manuel utilisé pour déplacer/lever des
+objets lourds par tranches ou pour dérouler le câble.
+24

@@ -1,0 +1,24 @@
+Elingues multi-brins
+Deux brins Trois brins Quatre brins
+Fig. 12.2
+12.3 La majorité des élingues utilisées doivent être munies de cosses pour
+utiliser au mieux la résistance du câble, car avec des élingues à boucle
+souple, la résistance est moindre si l’oeil supportant la charge a un faible
+diamètre.
+12.4 Charges maximale d’utilisation
+La CMU est fixé en fonction :
+1. Du diamètre.
+2. De la construction (type d’âme).
+3. De la résistance à la traction du fil métallique.
+La construction du câble est choisie en fonction d’une application
+spécifique, les câbles métalliques avec âme acier offre une meilleur
+résistance à l’écrasement et à l’aplatissement lors du treuillage par
+exemple. Tandis que ceux à âme acier et fibres conviennent pour la
+fabrications d’élingues.
+A titre d’exemple la figure 12.3 définit la charge maximal d’une élingue à
+câble (6 x 36 ou 6 x 19)
+Attention ! Ce tableau est donnée à titre d’exemple et ne peux pas être
+utilisé pour une autre composition de câble. Dans ce tableau la charge
+d’utilisation maximal en tonnes est définie pour les différents modes
+d’élingage.
+89

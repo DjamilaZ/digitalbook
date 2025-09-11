@@ -17,7 +17,7 @@ class Book(models.Model):
         verbose_name="Créé par"
     )
     cover_image = models.ImageField(upload_to='books/covers/', null=True, blank=True, verbose_name="Image de couverture")
-    pdf_file = models.FileField(upload_to='books/pdfs/', null=True, blank=True, verbose_name="Fichier PDF")
+    pdf_url = models.URLField(max_length=1000, null=True, blank=True, verbose_name="URL du PDF")
     
     class Meta:
         verbose_name = "Livre"
@@ -36,6 +36,7 @@ class Chapter(models.Model):
         verbose_name="Livre"
     )
     title = models.CharField(max_length=255, verbose_name="Titre")
+    content = models.TextField(verbose_name="Contenu", blank=True)
     order = models.PositiveIntegerField(default=0, verbose_name="Ordre")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Date de création")
     

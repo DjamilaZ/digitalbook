@@ -1,0 +1,274 @@
+.content-display {
+  flex: 1;
+  min-height: calc(100vh - 70px);
+  overflow-y: auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #6c757d;
+  padding: 40px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 20px;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.content-header {
+  background: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 20px 30px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.breadcrumb-item {
+  color: #6c757d;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #adb5bd;
+}
+
+.content-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.type-icon {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.content-title h1 {
+  margin: 0;
+  color: #212529;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.content-number {
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: normal;
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.content-body {
+  flex: 1;
+  padding: 30px;
+  width: 100%;
+}
+
+.content-text {
+  line-height: 1.6;
+  color: #212529;
+  font-size: 16px;
+}
+
+.content-paragraph {
+  margin-bottom: 16px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.content-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.no-content {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.content-images {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #dee2e6;
+}
+
+.content-images h3 {
+  margin: 0 0 20px 0;
+  color: #495057;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.image-item {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-caption {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #6c757d;
+  background: #ffffff;
+}
+
+.content-tables {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #dee2e6;
+}
+
+.content-tables h3 {
+  margin: 0 0 20px 0;
+  color: #495057;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.table-item {
+  margin-bottom: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-item h4 {
+  margin: 0;
+  padding: 15px;
+  background: #f8f9fa;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table-content {
+  padding: 20px;
+  background: #ffffff;
+}
+
+.table-content pre {
+  margin: 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Scrollbar styling */
+.content-display::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content-display::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.content-display::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.content-display::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content-header {
+    padding: 15px 20px;
+  }
+  
+  .content-title h1 {
+    font-size: 20px;
+  }
+  
+  .content-body {
+    padding: 20px;
+  }
+  
+  .content-text {
+    font-size: 14px;
+  }
+  
+  .images-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .type-icon {
+    font-size: 20px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .content-display {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .content-header {
+    position: relative;
+    border-bottom: 2px solid #000;
+  }
+  
+  .breadcrumb {
+    display: none;
+  }
+  
+  .content-body {
+    max-width: none;
+    margin: 0;
+    padding: 20px;
+  }
+}

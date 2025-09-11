@@ -1,0 +1,28 @@
+11.3 La capacité du tambour, c'est-à-dire la longueur de câble nécessaire, est
+illustrée à la figure 14.3.
+Attention ! Le câble doit avoir une longueur minimale telle qu'en
+position extrême (les moufles supérieure et inférieure étant les plus
+éloignées possible), il reste au moins cinq couches sur le tambour. Cela
+permet d'éviter tout transfert de charge sur l'ancrage au tambour, qui
+n'est PAS un composant porteur.
+Pour déterminer la longueur de câble requise, voici un exemple des
+paramètres à considérer : des moufles à 3 et à 2 réas, une moufle
+ouverte à corde et un treuil.
+Multipliez la distance entre les centres des moufles par le nombre de
+brins. p. ex. 35 m x 5 = 175 m
+Ajoutez la longueur de corde de la moufle supérieure à travers la
+moufle ouverte jusqu'au treuil.
+p. ex. 30 m + 10 m = 40 m
+Ajoutez la longueur autour des réas, c.-a-d., nombre de réas x 0,5
+fois la circonférence du réa.
+p. ex. 5 x 600 mm = 3 m
+Ajoutez la marge de 5 tours sur le tambour, soit 5 fois la
+circonférence de celui-ci.
+p. ex. 5 x 2,5 m = 12,5 m
+Longueur totale du câble requise.
+= 175 m + 40 m + 3 m + 12,5 m = 230,5 m
+(Lorsque cette longueur représente plus de 36%
+de la capacité du tambour, vérifiez à nouveau la traction
+donnée pour le treuil dans le catalogue du fabricant).
+Fig. 11.3
+80

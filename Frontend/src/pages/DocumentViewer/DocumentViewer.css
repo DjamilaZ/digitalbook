@@ -1,0 +1,378 @@
+.document-viewer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  overflow: visible;
+}
+
+/* Header Styles */
+.viewer-header {
+  background: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid #dee2e6;
+  background: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: #495057;
+}
+
+.back-button:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+  color: #212529;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-mode-toggle-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-mode-toggle-btn:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+.sidebar-toggle-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle-btn:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
+
+.document-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.document-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.document-meta {
+  margin: 0;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid #dee2e6;
+  background: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: #495057;
+}
+
+.sidebar-toggle:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+  color: #212529;
+}
+
+/* Main Content Layout */
+.viewer-content {
+  flex: 1;
+  display: flex;
+  overflow: visible;
+}
+
+.viewer-sidebar {
+  width: 300px;
+  background: #ffffff;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+  flex-shrink: 0;
+  max-height: calc(100vh - 80px);
+  position: sticky;
+  top: 80px;
+}
+
+.viewer-main {
+  flex: 1;
+  overflow: visible;
+  transition: margin-left 0.3s ease;
+  min-height: calc(100vh - 80px);
+}
+
+.viewer-main.full-width {
+  margin-left: 0;
+}
+
+/* Loading State */
+.document-viewer.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.loading-container p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+/* Error State */
+.document-viewer.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 40px;
+}
+
+.error-container .h-16 {
+  width: 64px;
+  height: 64px;
+  color: #dc3545;
+  opacity: 0.7;
+}
+
+.error-message {
+  margin: 0;
+  color: #dc3545;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+.welcome-icon {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.welcome-message h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.welcome-message p {
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.view-mode-hint {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #e74c3c;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.view-mode-hint svg {
+  vertical-align: middle;
+  margin: 0 0.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .viewer-header {
+    padding: 12px 16px;
+  }
+  
+  .header-left {
+    gap: 12px;
+  }
+  
+  .document-title {
+    font-size: 16px;
+  }
+  
+  .document-meta {
+    font-size: 11px;
+  }
+  
+  .back-button,
+  .sidebar-toggle {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .viewer-sidebar {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 70px);
+    width: 280px;
+    z-index: 50;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .viewer-main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .viewer-header {
+    padding: 10px 12px;
+  }
+  
+  .document-title {
+    font-size: 14px;
+  }
+  
+  .document-meta {
+    font-size: 10px;
+  }
+  
+  .back-button,
+  .sidebar-toggle {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  
+  .viewer-sidebar {
+    width: 250px;
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .document-viewer {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .viewer-header {
+    display: none;
+  }
+  
+  .viewer-sidebar {
+    display: none;
+  }
+  
+  .viewer-main {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Animation */
+.viewer-sidebar {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .viewer-sidebar {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .viewer-sidebar.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Focus styles for accessibility */
+.back-button:focus,
+.sidebar-toggle:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .viewer-header {
+    border-bottom: 2px solid #000;
+  }
+  
+  .back-button,
+  .sidebar-toggle {
+    border: 2px solid #000;
+  }
+  
+  .viewer-sidebar {
+    border-right: 2px solid #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .viewer-sidebar,
+  .viewer-main,
+  .back-button,
+  .sidebar-toggle {
+    transition: none;
+  }
+}

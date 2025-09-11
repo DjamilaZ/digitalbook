@@ -1,0 +1,24 @@
+7.17 Si la grue doit ou pourrait s’approcher plus près d’un câble sous-tension,
+le courant devra être coupé. Rappelez-vous que les câbles se balancent
+quand le vent souffle et que les hautes tensions peuvent provoquer des
+arcs traversant les espaces importants.
+7.18 Le risque pour les grues offshore à piédestal est rarement posé par de
+tels câbles mais plutôt par une autre grue opérant à proximité. Le
+grutier devra donc en tenir compte lors du déplacement de charges sur
+le pont et être particulièrement vigilant.
+7.19 Dans l’idéal, il devra être en mesure de voir la charge en permanence.
+Puisque cela n’est pas toujours possible, il aura donc besoin de
+quelqu’un pour le guider et faire des signaux. Un chef de manoeuvre,
+qui ne sera pas l’élingueur, devra systématiquement être désigné.
+7.20 Enfin, il devra faire particulièrement attention lorsqu’il déplacera la grue
+vers le haut ou le bas d’une pente ou à travers celle-ci.
+Sol de niveaux: rayon correct
+Fonctionnement normal sur le sol de niveau
+Montée: la portée diminue
+Dans cet exemple, la grue pourrait basculer
+vers l’arrière lorsque la charge est descendue
+Descente: la portée augmente
+Dans cet exemple, la grue pourrait basculer
+vers l’avant lorsque la charge pivote hors de
+l’aire d’évolution.
+41

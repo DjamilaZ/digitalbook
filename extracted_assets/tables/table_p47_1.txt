@@ -1,0 +1,30 @@
+7.33 Conditions ambiantes: p. ex. vitesse du vent, rafales, etc. pouvant
+provoquer une surcharge en poussant la charge au-delà du rayon de
+travail. Lors d'un levage au-dessus d'un plan d'eau ou en mer, des vents
+violents peuvent réduire la capacité de levage d'une grue en raison des
+facteurs dynamiques causés par l'augmentation de la hauteur des
+vagues et par la houle. Des tableaux de charge/rayon de travail/état de
+la mer doivent être affichés dans la cabine pour connaître les réductions
+de charge applicables.
+7.34 Avant de commencer le levage, la personne qui le commande a la
+responsabilité de s'assurer que tout ce qui pourrait retenir la charge a
+été enlevé/démonté (arrimage sur pont, berceau de transport, supports,
+etc.) et que le crochet est directement au-dessus du centre de gravité
+(lorsqu'il est connu). Le ou les câbles de levage doivent être verticaux
+pour minimiser les mouvements de la charge lorsque l'on commence à
+la soulever.
+7.35 Lors d'un levage sur un navire, le grutier et l'équipage/commandant du
+navire doivent tous s'assurer que tous les arrimages ont été enlevés et
+que le levage est effectué en sûreté, avec le minimum de
+rotation/balancement et de charges par à-coups. (Lorsque le levage se
+fait entre deux navires flottants, les effets du tangage et du roulis sont
+plus importants car ils peuvent doubler les forces dynamiques
+normales)
+7.36 Lorsque l'on procèdera au levage de charges lourdes, la capacité de
+charge maximale dépendra du nombre de pièces de ligne ; elle diminue
+lorsque le rayon de travail augmente. Lors de la préparation d'un levage
+lourd, confirmez le poids de la charge, déterminez le rayon maximum
+requis pour sa préhension, son transfert et sa dépose, puis consultez
+l'abaque de charge/portée de la grue pour vous assurer que le mouflage
+est adéquat.
+47

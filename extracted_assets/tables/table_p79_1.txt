@@ -1,0 +1,20 @@
+11.0 UTILISATION SECURITAIRE DES TREUILS
+11.1 Les treuils peuvent être manuels ou motorisés, les plus courants
+sont les modèles pneumatiques.
+Manuel Pneumatique
+Fig. 11.1
+11.2 Sélection
+Lors de la sélection d’un treuil, l’élément le plus important est la traction
+requise. Si vous utilisez un mouflage multiple, consultez 11.4 de cette
+norme qui vous aideras pour les calculs. Ne pas oubliez que la majorité
+des chiffres indiqués sont basés sur les performances avec tambour à
+demi plein (la traction diminue quand le tambour se remplit).
+Tambour plein - traction min.
+Tambour à demi-plein - traction moy.
+(Capacité du câble = 36 % de la valeur totale)
+1er tour - traction max.
+Fig. 11.2
+Remarque: la traction avec tambour à demi plein n’a qu’une
+performance moyenne. Ne pas ce chiffre avec la capacité du câble, qui
+est d’environ 36% du stockage tambour plein à ce point.
+79

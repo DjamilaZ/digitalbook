@@ -1,0 +1,36 @@
+5.9 Lorsque vous utilisez un équipement pneumatique, il est essentiel de
+vérifier la pression. Une pression trop élevée peut entraîner une
+surcharge de la machine, tandis qu'une pression trop faible ne
+permettra pas de lever la CMU/CU. Il est recommandé d'installer une
+unité d'alimentation en air avec un régulateur de pression aussi près
+que possible de l'équipement.
+5.10 Conditions météorologiques
+Lors de la préparation de votre opération de levage, il est crucial de tenir
+compte des conditions météorologiques. Elles peuvent avoir un impact
+négatif sur la sécurité globale de l'opération pour plusieurs raisons.
+5.11 Vent: Les vents forts ou en rafales peuvent directement affecter la
+stabilité et l'intégrité structurelle d'une grue. Indirectement, ils peuvent
+déstabiliser une charge ou la faire sortir du rayon maximal de travail de
+la grue. Les vents peuvent également rendre la pose d'une charge plus
+dangereuse dans un espace restreint en la poussant et en la faisant se
+balancer, ce qui pourrait entraîner des collisions avec des équipements
+ou des employés. Des éléments lâches peuvent également tomber. Les
+constructeurs indiquent parfois les vitesses de vent maximales pour une
+utilisation sécurisée de leurs grues. Cependant, d'autres critères doivent
+être pris en compte, tels que la longueur de la flèche, le type de charge
+(les grandes surfaces peuvent agir comme une voile), le poids de la
+charge (les charges légères sont plus facilement soufflées), etc. La
+plupart des grues sont équipées d'un anémomètre affichant la vitesse
+du vent en temps réel. Sinon, des anémomètres portables peuvent être
+utilisés.
+Fig. 5.1
+Anémomètre
+5.12 Vents marins: Les vents marins peuvent provoquer des vagues et de la
+houle, ce qui ajoute des dynamiques supplémentaires aux opérations de
+levage de charges depuis un navire flottant à l'aide d'une grue montée
+sur une plateforme fixe. Par exemple, si le navire descend au moment
+où la charge est saisie, un effet d'« arrachage » se produit, augmentant
+ainsi la charge réelle et les contraintes sur la grue. Cela est encore plus
+problématique lorsque des charges sont transférées d'un navire à
+31
+l'autre, surtout si l'un des navires monte tandis que l'autre descend.

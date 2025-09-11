@@ -1,12 +1,30 @@
-import api, { fileApi } from './api';
+import api from './api';
 
 const bookService = {
   // Récupérer tous les livres
-  getAllBooks: async () => {
+  getAllBooks: async (params = {}) => {
     try {
-      return await api.get('/books/');
+      const response = await api.get('/books/', { params });
+      console.log('Réponse axios complète:', response);
+      console.log('Données de la réponse:', response.data);
+      return response.data;
     } catch (error) {
       console.error('Erreur lors de la récupération des livres:', error);
+      throw error;
+    }
+  },
+
+  // Rechercher des livres
+  searchBooks: async (query, page = 1) => {
+    try {
+      const params = {
+        search: query,
+        page: page
+      };
+      const response = await api.get('/books/', { params });
+      return response.data;
+    } catch (error) {
+      console.error('Erreur lors de la recherche des livres:', error);
       throw error;
     }
   },
@@ -14,7 +32,8 @@ const bookService = {
   // Récupérer un livre par son ID
   getBookById: async (id) => {
     try {
-      return await api.get(`/books/${id}/`);
+      const response = await api.get(`/books/${id}/`);
+      return response.data;
     } catch (error) {
       console.error(`Erreur lors de la récupération du livre ${id}:`, error);
       throw error;
@@ -37,8 +56,13 @@ const bookService = {
         formData.append('pdf_file', bookData.pdf_file);
       }
       
-      // Utiliser fileApi pour les requêtes avec des fichiers
-      return await fileApi.post('/books/', formData);
+      // Utiliser api pour les requêtes avec des fichiers
+      const response = await api.post('/books/', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+      return response.data;
     } catch (error) {
       console.error('Erreur lors de la création du livre:', error);
       throw error;
@@ -48,7 +72,8 @@ const bookService = {
   // Mettre à jour un livre
   updateBook: async (id, bookData) => {
     try {
-      return await api.patch(`/books/${id}/`, bookData);
+      const response = await api.patch(`/books/${id}/`, bookData);
+      return response.data;
     } catch (error) {
       console.error(`Erreur lors de la mise à jour du livre ${id}:`, error);
       throw error;
@@ -58,7 +83,8 @@ const bookService = {
   // Supprimer un livre
   deleteBook: async (id) => {
     try {
-      return await api.delete(`/books/${id}/`);
+      const response = await api.delete(`/books/${id}/`);
+      return response.data;
     } catch (error) {
       console.error(`Erreur lors de la suppression du livre ${id}:`, error);
       throw error;
@@ -68,7 +94,8 @@ const bookService = {
   // Analyser un livre (si vous avez un endpoint spécifique pour l'analyse)
   analyzeBook: async (id) => {
     try {
-      return await api.post(`/books/${id}/analyze/`);
+      const response = await api.post(`/books/${id}/analyze/`);
+      return response.data;
     } catch (error) {
       console.error(`Erreur lors de l'analyse du livre ${id}:`, error);
       throw error;

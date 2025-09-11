@@ -1,0 +1,28 @@
+12.12 Chaque modèle possède une charge de rupture définie. L’utilisateur doit
+appliquer un coefficient de sécurité adapté à l’usage prévu :
+Pour les opérations de traction classiques : un facteur de sécurité de 3
+est recommandé (capacité = charge de rupture ÷ 3).
+Pour les opérations de levage plus sensibles : un facteur de 5 est requis
+(capacité = charge de rupture ÷ 5).
+Ce facteur vise à prévenir la rupture du tire-câble sous l’effet de la
+charge, mais ne garantit pas l’adhérence sur le câble tracté ou soulevé,
+qui dépendra de son état et de sa préparation.
+Attention ! Certains fabricants déconseillent l’usage de leurs tire-câbles
+pour le levage. Il est donc essentiel de consulter leur documentation
+technique.
+12.13 Tire-câbles pour traction
+Utilisés pour tirer des câbles, tubes ou cordages, notamment lors de
+l’installation sur des grues ou des poulies. Les diamètres standards vont
+de 4 à 115 mm, avec des variantes adaptées à la charge. Des modèles
+sur mesure peuvent être fabriqués pour des diamètres allant jusqu’à
+600 mm ou plus.
+On distingue deux types :
+Tire-câbles de traction : pour des charges légères (tubes plastiques,
+cordages), un seul fil métallique peut suffire. Pour des charges
+lourdes, on utilise des tresses simples, doubles ou triples.
+Tire-câbles porteurs : similaires aux précédents, mais intégrés à
+l’installation. Ils peuvent comporter une ou deux boucles selon les
+points d’ancrage.
+La longueur standard varie de 600 à 1 000 mm, mais des versions plus
+longues existent, notamment pour les tresses triples.
+95

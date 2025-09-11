@@ -1,0 +1,37 @@
+Dans l'intérêt de la sécurité et pour aider le grutier, la grue est 7.4
+normalement équipée de divers dispositifs qui limitent ces 6
+mouvements pour éviter d'endommager la grue. Le cas échéant, ils
+comprennent:
+Lors du relevage de la flèche, une fin de course l'empêchant d'entrer
+en contact avec les butées arrière.
+Lors de l'abaissement de la flèche, une fin de course empêchant
+l'angle de flèche d'être inférieur à environ 15° par rapport à
+l'horizontale. (Cette fin de course peut être neutralisée pour
+permettre de garer la flèche sur son support)
+Lors du levage d'une charge, une fin de course empêche de tirer le
+crochet à travers le mouflage (voir fig. 7.4 ci-dessous).
+Lors de la descente de la charge, une fin de course empêche de
+perdre le câble, le crochet et éventuellement la charge.
+Des fins de course de rotation sont quelquefois installées, mais le
+grutier (et vous, si vous dirigez la grue) devra rester vigilant pour
+éviter que la flèche entre en contact avec des obstacles tels que
+d'autres grues, des bâtiments et autres structures. Dans un
+environnement offshore, vous aurez à éviter la tour de forage, les
+torchères, les mâts radio, l'helideck, etc.
+.xorppa
+.
+m4
+m2
+à
+eétimil
+.xorppa
+m5,0
+Fin de course
+al
+à
+.xorppa
+ruetuaH
+Moufle crochet
+m5,1
+Fig. 7.4
+37

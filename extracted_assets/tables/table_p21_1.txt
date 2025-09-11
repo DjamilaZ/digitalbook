@@ -1,0 +1,29 @@
+1.0 Glossaire
+1.1 Personne compétente
+Personne dont les connaissances, l'expérience et les compétences, ainsi
+que la formation et l'autorisation de travail à un poste de levage défini
+ont été avérées.
+1.2 Charge utile (en anglais Working Load Limit WLL)
+La charge maximale qu'un appareil de levage est conçu pour lever,
+abaisser ou suspendre. Cette charge maximale ne tient pas compte des
+conditions de service particulières qui peuvent modifier la capacité
+finale de l'équipement (voir CMU ci-dessous).
+Remarque: la charge utile déterminée par la personne compétente ne
+doit jamais être dépassée volontairement.
+1.3 Charge maximale utile (CMU) (en anglais Safe Working Load SWL)
+La charge maximale (telle que certifiée par une personne compétente)
+qu'un appareil de levage est capable de lever, d'abaisser ou de tenir
+suspendue dans des conditions de service particulières. La CMU peut
+donc être inférieure à la charge utile.
+Remarque: la charge maximale utile déterminée par la personne
+compétente ne doit jamais être dépassée volontairement.
+1.4 Facteur de sécurité
+Rapport entre la charge qui provoquerait la défaillance d'un élément
+d'un appareil de levage et la charge qui lui est imposée en service (c.-à-d
+la CMU qui permet de tenir compte de critères négatifs tels qu'usure,
+charges dynamiques, etc.).
+1.5 Code couleur
+Méthode de marquage de l'équipement (normalement avec de la
+peinture) pour indiquer visuellement son statut en matière de
+certification.
+21

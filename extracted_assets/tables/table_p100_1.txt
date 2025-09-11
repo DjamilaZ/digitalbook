@@ -1,0 +1,22 @@
+Avec mailons en D et mouflage
+Avec maillons en D
+Sans fin (plate)
+A boucle cousues
+Fig.13.1
+13.2
+Capacité de levage et choix du type d’élingue
+La largeur de l’élingue influence directement sa capacité de levage :
+Une élingue simple (épaisseur simple) offre environ 1 tonne de capacité
+par 50 mm de largeur.
+Une élingue double (double épaisseur) offre environ 1 tonne par 25 mm
+de largeur.
+13.3
+Le choix entre une élingue plate ou ronde dépend du mode d’élingage
+prévu, car celui-ci impacte la CMU. Il convient donc d’appliquer un
+facteur de mode (M) adapté à la configuration d’utilisation.
+Elingage Nœud coulant
+Panier 0° Panier 90°
+simple direct M = 0,8 M = 2 M = 1,4
+M = 1
+Fig.13.2
+100

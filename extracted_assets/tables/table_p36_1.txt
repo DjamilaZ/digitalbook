@@ -1,0 +1,25 @@
+7.3 Pour travailler sans risques avec des grues, il est important de
+comprendre comment elles fonctionnent. Les plus courantes (voir fig.
+7.1 et 7.2) comprennent une tourelle et une cabine de commande avec
+flèche pivotante, un cadre en A et deux treuils, un pour lever/abaisser la
+flèche et l’autre pour lever et abaisser la charge. Certaines grues
+intègrent un treuil supplémentaire dit auxiliaire permettant de lever plus
+rapidement des charges légères.
+Le mouvement pivotant dit aussi d’orientation est rendu possible par un
+pignon sous la grue qui entraîne une couronne fixe sur la tourelle.
+Les six mouvements d’une grue sont donc:
+1) Relevage de la flèche (pour réduire la portée)
+2) Descente de la flèche (pour augmenter la portée)
+3) Levage de la charge
+4) Descente de la charge
+5) Pivotement à gauche
+6) Pivotement à droite
+Pivotement
+Relevage de
+gauche
+la flèche
+Descente de Pivotement
+la flèche droite
+Lever
+Abaisser
+36

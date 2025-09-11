@@ -1,0 +1,17 @@
+Tirer vers le haut sur une pente = levage (en cas de défaillance du palan,
+la charge dégringole le long de la pente, donc elle NE RESTE PAS
+stationnaire).
+Traction transversale = levage (en cas de défaillance du palan ou du
+câble, la charge repart, donc elle NE RESTE PAS stationnaire).
+9.3
+Les palans à câble sont équipés de câbles spéciaux qui résistent à la
+forte pression des mâchoires, évitant ainsi les nids de fils brisés. La
+longueur standard du câble fourni est de 20 mètres, mais des câbles
+plus courts ou plus longs sont facilement disponibles.
+9.4
+Les palans à câble sont généralement actionnés à la main, mais des
+versions hydrauliques existent pour des besoins spécifiques,
+notamment pour des levages ou tractions particulièrement longs.
+Fig. 9.2
+64
+Palan manuel standard Palan hydraulique

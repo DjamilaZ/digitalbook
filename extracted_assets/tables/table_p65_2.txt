@@ -1,0 +1,7 @@
+Fabricant | A | B | C
+CU du treuil | Diamètre du câble | Diamètre du
+câble | Diamètre du
+câble
+800 kg | 8,3 mm | 8 mm | 8 mm
+1600 kg | 11,5 mm | 11,2 mm | 11 mm
+3200 kg | 16,3 mm | 16 mm | 10 mm

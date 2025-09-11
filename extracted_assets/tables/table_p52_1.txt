@@ -1,0 +1,17 @@
+L'entretien de routine des grues doit être effectué conformément aux
+documents de référence.
+Un carnet de bord de la grue doit être rempli par le grutier.
+7.47 Grues et dispositifs de manutention de bloc d'obturation de puits,
+grues de manutention de conduites, portiques et pont roulants
+Les grues et dispositifs de manutention de bloc d'obturation de puits,
+grues de manutention de conduites, portiques et pont roulants doivent
+intégrer:
+• Un dispositif d'arrêt d'urgence accessible au personnel à proximité
+• Un registre des collisions
+• Des butées d'arrêt pour rails/portiques/ponts
+• Un système de protection contre la surcharge
+Les grues se déplaçant sur des rails situés sur le pont (pont principal ou
+niveau supérieur) doivent intégrer un système d'avertissement sonore
+et visuel afin d'alerter le personnel travaillant à proximité lors de leur
+déplacement.
+52

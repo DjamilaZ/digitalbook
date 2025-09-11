@@ -1,0 +1,40 @@
+8.0 UTILISATION SECURITAIRE DES PALANS A CHAINES
+8.1 Sélection
+Pour sélectionner un palan, la premère chose à considérer est la CMU /
+CU, qui doit être choisi selon la charge à soulever. Lorsque celle-ci est
+inconnue, on calcule son poids en ajoutant un certain pourcentage à
+titre de marge d’erreur. La sélection peut alors être effectuée.
+Attention ! Eviter de lever des charges de moins de 10 % de la capacité
+du treuil et NE JAMAIS lever des charges de moins de 5% de celle-ci, car
+elles pourraient ne pas être suffisantes pour activer le frein à friction.
+8.2 La seconde chose à considérer est la hauteur perdue minimum, étant
+donné que le manque d’espace vertical est souvent un problème dans
+les espaces confinés (p. ex. salles des machines ou ateliers avec
+palonniers bas). Cette hauteur varie selon le fabricant et/ou le modèle et
+peut influencer la sélection.
+8.3 La troisième chose à considérer est la hauteur libre sous crochet
+(hauteur de levage). Les palans à chaînes de levage ont généralement
+une HLSC standard de 3m (les chaînes de levage font généralement un
+demi-mètre de moins), mais il existe des modèles avec pratiquement
+n’importe quelle hauteur de levage de 1,5 - 1,8 m, mais peuvent
+également être équipés de chaînes plus longues si l’application le
+demande.
+8.4 Vérifications avant utilisation
+Avant d’utiliser un palan à chaîne, il est nécessaire de s’assurer qu’il est
+en bon état de fonctionnement et qu’il est sûr. Les vérifications
+suivantes doivent être effectuées :
+Vérifier que:
+La CMU/CU est adéquate pour la charge
+Le code couleur est à jour et le palan porte un n° d’installation / Une
+marque d’identification.
+Les linguets de sécurité sont présents.
+Il n’y a aucun signe d’utilisation abusive, p.ex. crochet étiré, boîtier
+fissuré, chaîne étirée/déformée, etc.
+Pour un palan à plusieurs brins, les chaînes ne sont pas tordues
+entre la moufle inférieur et le boîtier de levage (ce qui est
+généralement dû au retournement de la moufle inférieur)
+Le bruit du cliquet est net (un clic clair et fort) quand on fait tourner
+la roue de chaîne de levage ou que l’on actionne le levier.
+57
+Attention! Une chaîne de levage étirée ou un levier de manoeuvre
+déformé pourraient indiquer que le palan a été surchargé.

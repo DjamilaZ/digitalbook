@@ -1,0 +1,22 @@
+8.12 Utilisation d'un palan sous l'eau
+Il peut parfois être nécessaire d'utiliser un palan sous l'eau, manipulé
+par des plongeurs immergés. Il est essentiel de vérifier que le type de
+palan sélectionné est adapté, car le matériau des disques de frein
+pourrait ne pas convenir. Consultez le fabricant pour confirmation. Une
+fois le travail terminé, un palan utilisé sous l'eau doit être envoyé à
+un atelier agréé, démonté complètement, purgé à l'eau douce,
+regraissé, remonté et testé avant toute nouvelle utilisation.
+8.13 Palans pneumatiques
+Pour les palans pneumatiques, assurez-vous qu'une unité de
+conditionnement d'alimentation en air comprimé avec filtre, graisseur et
+détendeur est installée et réglée à la pression correcte, afin d'éviter
+toute contamination de l'air du moteur.
+8.14 Testez le palan sur toute la longueur de la chaîne de charge et vérifiez le
+bon fonctionnement des fins de course haut.
+8.15 Vérifiez les commandes du boîtier et assurez-vous que les boutons
+poussoirs s'enfoncent sans problème et remontent en position neutre
+lorsqu'ils sont relâchés.
+8.16 Par temps extrêmement froid, il est possible d'introduire un produit
+dégivrant via le graisseur pour prévenir tout givrage du moteur
+pneumatique.
+62

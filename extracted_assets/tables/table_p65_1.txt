@@ -1,0 +1,30 @@
+9.5 Sécurité
+Il est impératif d'utiliser le câble correct pour le type de palan, car ces
+appareils sont conçus pour opérer avec un diamètre spécifique qui varie
+selon les fabricants de câbles. Voir tableau ci-dessous.
+Fabricant A B C
+Diamètre du Diamètre du
+CU du treuil Diamètre du câble
+câble câble
+800 kg 8,3 mm 8 mm 8 mm
+1600 kg 11,5 mm 11,2 mm 11 mm
+3200 kg 16,3 mm 16 mm 10 mm
+Si vous utilisez un câble du fabricant « C » sur un palan du fabricant « A
+», vous pourriez vous retrouver dans une situation dangereuse, car
+la corde pourrait glisser et s'échapper de la machine en charge.
+9.6 Vérifications avant l'utilisation
+Avant d'utiliser le palan à câble, assurez-vous toujours qu'il est en bon
+état de fonctionnement et qu'il peut être utilisé en toute sécurité. Pour
+cela, vérifiez les points suivants :
+La CMU/CU est adéquate pour la charge.
+Le code couleur est à jour et le palan porte un numéro d'installation
+ou une marque d'identification.
+Le crochet de charge, son axe et les paliers du crochet dans les joues
+ne présentent pas de signes d'usure, de fissures ou de déformations.
+Le linguet de sécurité du crochet se ferme correctement et le crochet
+peut pivoter librement.
+Faites fonctionner le palan dans les deux sens et vérifiez que les
+goupilles de cisaillement sont intactes (des goupilles cisaillées ou
+fissurées sont symptomatiques d'une surcharge).
+Vérifiez le fonctionnement du levier ou du bouton de relâchement.
+65

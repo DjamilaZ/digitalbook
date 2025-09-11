@@ -1,0 +1,36 @@
+7.46 Grues de bord
+Les grues de bord doivent être équipées de:
+• Systèmes de communication qui permettent:
+- D'attirer l'attention du personnel (tel qu'un avertisseur sonore)
+- Une communication verbale avec le personnel (tel qu'un système de
+haut-parleurs
+- Une communication avec l'équipage, les navires ravitailleurs et la salle
+de contrôle par radio bidirectionnelle
+- Une utilisation mains libres
+• Une cabine d'opérateur fixe doit être équipée d'une caméra de flèche
+• Abaques de charges
+• Indicateur de portée ou d'angle
+• Un dispositif de restriction de la hauteur maximum de la flèche afin
+d'empêcher cette dernière d'être entraînée contre les butées arrière
+• Un dispositif de restriction de la hauteur minimum de la flèche afin
+d'empêcher cette dernière d'être abaissée au-delà de la portée
+maximale admissible
+• Des disjoncteurs de limite supérieure afin d'empêcher les moufles
+d'être entrainées dans les réas
+• Un dispositif anti-rapprochement des moufles du treuil principal et de
+l'auxiliaire, ou système équivalent lorsqu'un tel dispositif ne peut être
+installé
+• Des instruments indiquant de manière continue la charge sur le
+crochet ainsi que la charge nominale pour chaque portée. L'indicateur
+automatique de charge doit produire un avertissement clair et continu
+lorsque la capacité nominale de la grue est
+• Dispositif d'arrêt d'urgence
+• Un extincteur portable adapté aux incendies de classes A, B et C
+• Cagoule anti-fumée
+• Gilet de sauvetage
+• Éclairage de sécurité
+• Un étiquetage clair en anglais et dans la langue locale dominante
+indiquant la fonction des commandes et lisible à toute heure du jour ou
+de la nuit.
+• Registre de collision de la grue
+51

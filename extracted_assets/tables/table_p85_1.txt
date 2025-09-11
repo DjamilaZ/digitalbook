@@ -1,0 +1,21 @@
+11.10 Angle de déflexion
+Nous recommandons que l'angle de déflexion maximal pour un
+tambour lisse ne dépasse pas 1,5°. Pour un tambour rainuré, cet angle
+peut aller jusqu'à 2,5°. Pour atteindre ces valeurs, il peut être nécessaire
+d'utiliser une poulie ou une moufle déflectrice.
+11.11 Dans la majorité des cas, le câble a une cosse fixée par virole, mais dans
+certaines circonstances (mouflage multiple) la cosse est enlevée et
+l'élément de terminaison doit être monté sur place. La meilleure
+solution consiste à utiliser des attaches à coin ouvertes, en particulier
+pour le levage de charges.
+Remarque 1: les attaches à coin ouvertes ont une efficacité de 80 %. On
+vérifiera visuellement qu'elles ne présentent pas de fissures autour de la
+chape.
+Fig. 11.8
+Ne pas serrer le brin mort contre le brin sous tension (mauvaise
+technique courante).
+Remarque 2: des attaches à coin étendu sont maintenant disponibles et
+intègrent un trou permettant le montage du serre-câble. La sécurité est
+ainsi plus grande et l'extrémité est plus propre.
+Fig. 11.9
+85

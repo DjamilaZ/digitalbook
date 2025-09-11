@@ -1,0 +1,36 @@
+4.0 SELECTION D’UN EQUIPEMENT DE LEVAGE
+4.1
+Avant de préparer le levage, il est crucial de déterminer le poids de la
+charge à soulever. Dans la plupart des cas, ce chiffre est déjà connu.
+Cependant, si ce n'est pas le cas, utilisez un dispositif de mesure du
+poids (voir exemples aux figures 4.1 à 5.3 ci-dessous). Vous pouvez
+également consulter le fabricant ou prendre des mesures et calculer le
+poids en utilisant le tableau de densité des matériaux à l'annexe 2. En
+cas de doute, n'hésitez pas à consulter votre agent de coordination du
+levage.
+Fig. 4.1 Fig. 4.2
+Fig. 4.3
+Manille de cellule Contrôleur d’état
+Dynamomètre
+dynamométrique de charge de grue
+4.2
+Après avoir déterminé le poids de la charge, il est essentiel de vérifier la
+hauteur libre disponible, car elle influence les angles des élingues et la
+tension réelle sur les brins.
+Remarque: Le poids de l'élingage sélectionné doit être ajouté à celui de
+la charge, et le poids total doit être pris en compte lors du choix de
+l'appareil de levage.
+4.3
+Vérifiez la compatibilité des différents composants, car les tailles varient
+selon le matériau utilisé pour la fabrication.
+4.4
+Vérifiez bien que l'équipement retenu convient à la tâche spécifique et à
+son environnement, par exemple en cas d'utilisation sous l'eau (tous les
+types d'équipements ne conviennent pas pour une telle utilisation !).
+4.5
+Une fois l'équipement sélectionné, il doit subir un examen "pré-
+utilisation" comme décrit dans les différents chapitres de cette norme. Si
+un élément échoue à l'examen visuel, il doit être immédiatement mis
+hors service et signalé à un superviseur ou à l'agent de coordination du
+levage.
+27

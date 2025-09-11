@@ -1,0 +1,14 @@
+7.30 Toutes les opérations de levage en tandem devront être soigneusement
+planifiées à l'avance par une personne ou équipe compétente. On
+utilisera autant que possible des grues de capacité égale et de
+caractéristiques similaires. On sélectionnera des grues et des élingages
+ayant une marge de capacité supérieure à celle nécessaire si la charge
+était levée par une seule grue. Il est recommandé, à moins d'utiliser des
+cellules dynamométriques, que chaque grue soit capable de soulever 75
+% de la charge totale à la portée et au rayon de travail requis. En cas
+d'utilisation de cellules dynamométriques, chaque grue devra
+uniquement être capable de soulever 25% de plus que sa part estimée
+de la charge.
+Chaque grue doit généralement être capable de soulever 75% de la charge totale
+Fig. 7.9
+45

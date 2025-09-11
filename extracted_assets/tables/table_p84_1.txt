@@ -1,0 +1,11 @@
+11.9 Les treuils les plus utilisées ont un étrier de frein long et un étrier de
+frein court
+Assurez-vous que l'enroulement du câble est correct par rapport aux
+étriers, car un bobinage incorrect peut :
+Réduire l'efficacité des freins.
+Diminuer considérablement la capacité de treuillage, car la vanne
+rotative fonctionnera en sens inverse.
+Fig. 11.7
+Remarque: toute modification du sens d’enroulement doit faire l’objet
+d’une discussion avec le fabricant et être approuvée par celui-ci.
+84

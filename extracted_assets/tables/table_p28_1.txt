@@ -1,0 +1,43 @@
+5.0 AMÉLIORER LA SÉCURITÉ DES OPÉRATIONS DE LEVAGE
+Ce chapitre présente les procédures correctes à suivre lors d'une
+opération de levage.
+Compétences du personnel
+5.1
+Toute personne utilisant un appareil ou équipement de levage doit être
+formée à son utilisation et posséder une expérience pratique de ses
+capacités et des défaillances potentielles. Ces connaissances sont
+également utiles lors de l'inspection avant utilisation.
+Ne jamais dépasser la charge maximale utile
+Lors de toute opération de levage, il est impératif de s'assurer que la
+5.2
+charge imposée à tout appareil de levage ou partie de celui-ci ne
+dépasse pas la CMU/CU. En cas de doute sur cette charge ou celle
+appliquée à un élément particulier de l'engin ou appareil de levage, il est
+recommandé d'utiliser des capteurs de charge. De plus, il est essentiel
+de veiller à ce que la charge reste stable à tous les stades de l'opération.
+En général, la charge pourrait être instable si son centre de gravité ne se
+trouve pas sous le crochet ou s'il est plus haut que le point de fixation
+des élingues à la charge. D'autres causes d'instabilité peuvent inclure un
+liquide s'agitant dans un récipient, etc.
+Utilisation correcte
+L'équipement doit être utilisé uniquement pour l'usage spécifique pour
+5.3
+lequel il a été conçu et ne doit pas être adapté à un autre type
+d'opération.
+Vérification du levage
+5.4
+Avant toute opération de levage, la charge doit d'abord être soulevée à
+une faible hauteur. Ce levage d'essai permet au grutier ou opérateur de
+vérifier qu'il a correctement estimé l'équilibre, la stabilité et la sécurité
+générale de la charge alors que celle-ci est encore dans une position
+relativement sûre. La charge devra être descendue et l'élingage modifié
+en cas de découverte de différences. Cette séquence de levage d'essai
+puis d'ajustement doit être répétée jusqu'à ce que l'opérateur soit
+satisfait de l'équilibrage, de la stabilité de la charge et de la sécurité du
+levage.
+Attention ! Ne vous tenez jamais sous une charge; gardez vos mains
+éloignées des élingues, etc. (conformément aux consignes de levage
+sans contact avec les mains § 28). Évitez de grimper sur les conteneurs
+et matériaux empilés; ne vous tenez jamais entre les charges et des
+murs ou parois de cales, etc.
+28

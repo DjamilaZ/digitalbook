@@ -1,0 +1,32 @@
+Insérez un câble et vérifiez la course des leviers avant et arrière. Sa
+longueur dépendra du modèle (voir ci-dessous).
+T508 - 55 mm env.
+T516 - 55 mm env.
+T532 - 32 mm env.
+Vérifiez le câble et assurez-vous qu'il est du type adapté au palan
+utilisé et qu'il ne présente pas de signe d'usure, de déformation, de
+rouille, etc.
+Assurez-vous que le palan est bien graissé.
+Remarque : Une course plus longue peut indiquer une usure interne,
+tandis qu'une course plus courte peut signaler un encrassement ou des
+dommages dans le mécanisme.
+9.7 Avec les T500 de Tirfor, il est possible de vérifier l'usure interne sans
+démonter le palan. Pour ce faire, utilisez un câble neuf ou non usé et
+suivez les étapes suivantes :
+1.Ouvrez le boîtier et insérez le câble neuf.
+2.Refermez le chemin de passage.
+3.Poussez le levier d'ouverture vers le point d'ancrage jusqu'à
+ressentir une résistance.
+4.Mesurez la distance entre l'arrière du levier d'ouverture et le rebord
+du boîtier. Cette distance ne doit pas être inférieure aux valeurs
+spécifiées.
+Dimension
+Diamètre “A” (ne
+Modèle
+câble neuf doit pas
+être < a)
+T508 8.3 mm 37 mm
+T516 11.5 mm 37 mm
+T532 16.3 mm 68 mm
+66
+Fig. 9.3

@@ -1,0 +1,29 @@
+Remarque 3 : Le brin mort (retourné) doit avoir une longueur minimale
+de 6 diamètres pour les câbles standard et de 20 diamètres pour les
+câbles antigiratoires, mais dans tous les cas, il ne doit pas être inférieur
+à 150 mm.
+La cosse fixée par virole peut être équipée d'un crochet ou d'une manille
+pour la connexion à la charge. La plupart des fabricants privilégient
+l'utilisation d'un crochet de sécurité de type fermé (par exemple, BK) ou
+d'une manille de sécurité. Ces dernières semblent être l'attache
+préférée lorsqu'on utilise le treuil pour le levage de personnes.
+11.12 Il existe différents types de serre-câbles permettant de terminer les
+câbles sur place ; les trois types les plus courants sont :
+“First Grips” (efficacité: 80 %)
+Serre-câbles “Eureka” (efficacité variable, en moyenne 45% sur la
+basse d’essais indépendants effectués sur des serre-câbles de 16
+mm à 2 boulons)
+Serre câbles “Bulldog” (seul le type DIN1142 est acceptable efficacité
+80%)
+Les chiffres d’efficacité indiqués ci-dessus sont basés sur la charge de
+rupture du câble indiquée par le fabricant.
+First Grip
+Eureka peut être Bulldog doit uniquement
+Peut être posé dans
+posé dans les 2 sens être posé dans un sens
+les 2 sens
+Fig. 11.10
+Remarque: dans les situations générales d’élingage, l’utilisation de tout
+type de serre câble à l’extrémité des câbles dans des applications de
+levage ou de traction est interdite.
+86

@@ -1,0 +1,15 @@
+9.10 Ne jamais
+Ne jamais utiliser un palan à câble comme élingage ou brin d'élingage
+lors de l'utilisation d'une grue pour un levage. Les palans à câble sont
+conçus pour être chargés de manière graduelle, en tendant le mou du
+câble grâce à l'action de « pression alternative » des mâchoires du palan.
+Ils ne sont pas conçus pour résister à des mises en charge brusques,
+comme celles qui peuvent se produire lorsque la charge est rapidement
+levée ou « arrachée » par une grue. Cela pourrait endommager les
+mâchoires ou, plus probablement, provoquer une panne catastrophique
+permettant au câble de glisser librement dans le palan.
+Fig. 9.8
+Attention ! Il est interdit de « déclasser » un palan à câble dans les
+circonstances décrites ci-dessus. Les fabricants n'acceptent
+généralement pas un tel usage abusif de leurs produits.
+71

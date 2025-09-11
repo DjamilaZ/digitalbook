@@ -1,0 +1,10 @@
+Pour permettre un ajustement final ou l'installation de la charge, vous
+pouvez installer un palan à câble en parallèle avec un brin d'élingage, en
+laissant un jeu de câble pour que le brin d'élingage supporte toutes les
+charges dynamiques. Une fois le mouvement vertical de la grue terminé
+et celle-ci pouvant servir de « chariot aérien automobile » (une structure
+fixe à laquelle le palan à câble peut être suspendu), le palan à câble peut
+alors supporter la tension de l'élingage, qui peut ensuite être
+déconnecté. Le palan à câble peut alors être utilisé pour effectuer
+l'ajustement final nécessaire.
+72

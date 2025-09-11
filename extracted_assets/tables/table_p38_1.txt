@@ -1,0 +1,33 @@
+7.5 En plus des fins de course, il existe un autre dispositif de sécurité dont
+dispose le grutier, un indicateur automatique de charge admissible avec
+alarme visuelles et sonores. Il indique à l'opérateur la portée (position
+du crochet), la CU de la grue à cette portée et la charge réelle sur le
+crochet. L'alarme visuelle est généralement réglée pour s'allumer à
+environ 90 % de la capacité de la grue, quelle que soit la portée, tandis
+que l'alarme sonore se déclenche à environ 100% de cette capacité, soit
+en état de surcharge.
+7.6 Certaines grues sont équipées de dispositifs de sécurité
+supplémentaires tels que des systèmes de protection contre la
+surcharge automatiques (AOPS) ou manuels (MOPS), des systèmes
+protections de dépassements majeurs (GOP) ou systèmes de protection
+ultime (UPS) et des indicateurs de vitesse du vent (anémomètres) ou de
+sa direction (manche à vent).
+7.7 Lorsque la grue est installée sur une plateforme offshore, la cabine doit
+être équipée d'un extincteur, d'une cagoule anti-fumée et d'un gilet de
+sauvetage.
+7.8 Comme tout appareil de levage, les grues ont une charge maximale
+utile/ charge utile, qui dépend du nombre de brins de mouflage.
+Évidemment, plus ce nombre est grand plus la capacité de levage est
+élevée, mais cela diminue la vitesse de levage. Dans le cas d'un levage
+depuis/vers un navire, cela peut créer un problème si la vitesse de
+levage est trop faible pour empêcher la charge de taper sur le pont, etc.
+lorsqu'il se soulève avec la vague suivante. La CMU/ CU baisse
+également lorsque la portée augmente (voir fig. 7.5 ci-dessous). Referez-
+vous toujours à l'abaque de charges, qui doit être affiché dans la cabine
+de la grue.
+Portée min.
+Portée max.
+Charge max.
+38
+Charge min.
+Fig. 7.5

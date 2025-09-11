@@ -1,0 +1,19 @@
+10.4 Traction angulaire
+R = Résultante (charge au sommet)
+W = Poids à soulever
+P = Traction (W + % pour frottement)
+Remarque: il est généralement convenu que le pourcentage à ajouter
+pour les frottements est égal à:
+Poulie à roulement à rouleaux: 4% par poulie, W x 1,04
+Poulies à roulements à bagues bronze: 8% par poulie, W x 1,08
+Pour calculer la charge résultante R, commencez par déterminer la
+traction requise P en multipliant la charge à soulever W par 1,04 (poulies
+à roulements) ou par 1,08 (poulies à bagues), puis en multipliant par les
+facteurs indiqués dans le tableau de la fig 10.2 en fonction de l’angle
+entre les brins.
+Attention ! Lorsque vous utilisez une moufle simple sur la partie
+supérieur, la charge résultante sur le support auquel celle-ci est fixée
+peut être le double de la charge soulevée, soit dans des conditions
+extrêmes.
+Fig. 10.3
+74

@@ -1,0 +1,552 @@
+{
+  "chapters": [
+    {
+      "title": "Glossaire",
+      "number": 1,
+      "order": 0,
+      "sections": [
+        {
+          "title": "Personne compétente",
+          "number": "1.1",
+          "order": 0,
+          "subsections": [],
+          "content": "Personne dont les connaissances, l'expérience et les compétences, ainsi que la formation et l'autorisation de travail à un poste de levage défini ont été avérées.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Charge utile (en anglais Working Load Limit WLL)",
+          "number": "1.2",
+          "order": 1,
+          "subsections": [],
+          "content": "La charge maximale qu'un appareil de levage est conçu pour lever, abaisser ou suspendre. Cette charge maximale ne tient pas compte des conditions de service particulières qui peuvent modifier la capacité finale de l'équipement (voir CMU ci-dessous). Remarque: la charge utile déterminée par la personne compétente ne doit jamais être dépassée volontairement.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Charge maximale utile (CMU) (en anglais Safe Working Load SWL)",
+          "number": "1.3",
+          "order": 2,
+          "subsections": [],
+          "content": "La charge maximale (telle que certifiée par une personne compétente) qu'un appareil de levage est capable de lever, d'abaisser ou de tenir suspendue dans des conditions de service particulières. La CMU peut donc être inférieure à la charge utile. Remarque: la charge maximale utile déterminée par la personne compétente ne doit jamais être dépassée volontairement.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Facteur de sécurité",
+          "number": "1.4",
+          "order": 3,
+          "subsections": [],
+          "content": "Rapport entre la charge qui provoquerait la défaillance d'un élément d'un appareil de levage et la charge qui lui est imposée en service (c.-à-d la CMU qui permet de tenir compte de critères négatifs tels qu'usure, charges dynamiques, etc.).",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Code couleur",
+          "number": "1.5",
+          "order": 4,
+          "subsections": [],
+          "content": "Méthode de marquage de l'équipement (normalement avec de la peinture) pour indiquer visuellement son statut en matière de certification. 21",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Numéro de l'installation/d'identification",
+          "number": "1.06",
+          "order": 5,
+          "subsections": [],
+          "content": "Numéro unique donné à un élément d'un appareil de levage à des fins d'enregistrement et pour en faciliter la traçabilité.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Hauteur libre",
+          "number": "1.07",
+          "order": 6,
+          "subsections": [],
+          "content": "Distance verticale maximale entre l'élément à soulever et le point de suspension de l'appareil de levage, c.-a-d. entre les œils de levage et le dessous des poutres du chemin de roulement.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Hauteur de levage",
+          "number": "1.08",
+          "order": 7,
+          "subsections": [],
+          "content": "Distance de déplacement possible entre les points de connexion supérieur et inférieur, c.-à-d. les crochets d'un appareil de levage.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Dimension établie",
+          "number": "1.09",
+          "order": 8,
+          "subsections": [],
+          "content": "Distance minimum entre le niveau de suspension et la selle de crochet inférieure (aussi connu sous le nom de hauteur fermée).",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Capteurs de charge",
+          "number": "1.10",
+          "order": 9,
+          "subsections": [],
+          "content": "Élément d'équipement utilisé pour détecter les charges réelles à un point de fixation (p. ex. manille à capteur de charge, cale-étalon ou cellule dynamométrique en compression, etc.)",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Charge d'épreuve",
+          "number": "1.11",
+          "order": 10,
+          "subsections": [],
+          "content": "Charge appliquée en conditions d'essai supérieure à la CMU/CU afin de vérifier l'intégrité de l'équipement de levage.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Personne compétente (pour l'inspection du matériel de levage)",
+          "number": "1.12",
+          "order": 11,
+          "subsections": [],
+          "content": "Individu ayant les connaissances et l'expérience requises, aussi bien théoriques que pratiques, sur le matériel et équipement considéré pour pouvoir certifier avec confiance que celui-ci ne présente pas de défaut évident et qu'il convient en tous points pour l'opération pour laquelle il sera utilisé. 22",
+          "images": [],
+          "tables": []
+        }
+      ],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Définitions et principes des équipements de levage",
+      "number": 2,
+      "order": 1,
+      "sections": [
+        {
+          "title": "Equipements de levage",
+          "number": "2.1",
+          "order": 0,
+          "subsections": [],
+          "content": "Ces équipements comprennent les appareils et l’équipement de levage. Ils sont définis comme suit: Appareils de levage Tout dispositif mécanique capable de lever ou d’abaisser une charge. Ex: Grues, Chariots élévateurs, Nacelles suspendues, Palans, Poutre de levage, Treuils... Equipement de levage Tout dispositif quel qu’il soit, utilisé et conçu pour être utilisé directement ou indirectement pour relier une charge à un appareil de levage et ne faisant pas partie de la charge. Ex: élingues à câble, chaîne ou fibre synthétique, crochets et accessoires, pivots, manilles, boulon à œil, ridoirs, attaches à coin, lève-tôles.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Compétent(e)",
+          "number": "2.2",
+          "order": 1,
+          "subsections": [],
+          "content": "Disposant des connaissances, des compétences, ainsi que de l’expérience nécessaire à la réalisation de tâches spécifiques.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Abrasion",
+          "number": "2.3",
+          "order": 2,
+          "subsections": [],
+          "content": "Usure de surfaces des brins d’un câble.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Homologué",
+          "number": "2.4",
+          "order": 3,
+          "subsections": [],
+          "content": "Conforme à la norme intérieur de l’entreprise.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Chef de manœuvre",
+          "number": "2.5",
+          "order": 4,
+          "subsections": [],
+          "content": "Individu clairement identifiable ayant la responsabilité partagée d’assurer un levage et une dépose de la charge en toute sécurité. Contrôle également l’opération de levage lors d’un levage en aveugle.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Levage en aveugle",
+          "number": "2.6",
+          "order": 5,
+          "subsections": [],
+          "content": "Lorsque l’utilisateur de l’appareil de levage n’a pas le chef de manœuvre, responsable de la charge, dans son champ visuel de manière continue.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Agent de coordination du levage",
+          "number": "2.7",
+          "order": 6,
+          "subsections": [],
+          "content": "Point de contact responsable du levage pour une installation particulière et personne compétente pour les opérations de levage.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Résistance à la rupture (câble)",
+          "number": "2.8",
+          "order": 7,
+          "subsections": [],
+          "content": "La charge mesurée requise pour briser un câble en tension. 23",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "CCU",
+          "number": "2.9",
+          "order": 8,
+          "subsections": [],
+          "content": "Unités de transport de marchandises (Cargo Carrying Unit), tout équipement utilisé pour contenir ou transférer une charge. Exemples: conteneurs, nacelles, râteliers à bouteilles de gaz, nacelles de transfert de personnel, bennes à déchets, ect.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Certification",
+          "number": "2.10",
+          "order": 9,
+          "subsections": [],
+          "content": "La preuve (généralement sous forme de document papier) que le matériel est certifié.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Certifié",
+          "number": "2.11",
+          "order": 10,
+          "subsections": [],
+          "content": "Prouve la réussite à un examen défini.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Câble Lang",
+          "number": "2.12",
+          "order": 11,
+          "subsections": [],
+          "content": "Câble dont les fils composant les torons et ces derniers sont dans le même sens",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Câblage à gauche ordinaire",
+          "number": "2.13",
+          "order": 12,
+          "subsections": [],
+          "content": "Les fils sont enroulés vers la droite et les torons vers la gauche",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Plan de levage",
+          "number": "2.14",
+          "order": 13,
+          "subsections": [],
+          "content": "Une fois l’évaluation des risques terminée, un document écrit officiel est crée afin de détailler l’approche à suivre lors de l’opération de levage. Elle identifiera le personnel et l’équipement requis, ainsi que la méthode de levage.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Essai en charge",
+          "number": "2.15",
+          "order": 14,
+          "subsections": [],
+          "content": "Essai de traction à un niveau prédéterminé et nouvelle inspection d’un élément de l’équipement.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Câblage à droite ordinaire",
+          "number": "2.16",
+          "order": 15,
+          "subsections": [],
+          "content": "Les fils sont enroulés vers la gauche et les torons vers la droite",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Corde de manœuvre",
+          "number": "2.17",
+          "order": 16,
+          "subsections": [],
+          "content": "Une corde de type “anti-nœuds” attachés à une charge suspendue (généralement en bas) facilite la stabilisation de cette dernière et permet au membre de l’équipage tenant la corde de prévenir toute rotation et d’aider au guidage de la charge.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Tirfor",
+          "number": "2.18",
+          "order": 17,
+          "subsections": [],
+          "content": "Mot anglais décrivant un treuil manuel utilisé pour déplacer/lever des objets lourds par tranches ou pour dérouler le câble. 24",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Qualifié(e)",
+          "number": "2.19",
+          "order": 18,
+          "subsections": [],
+          "content": "Compétent(e), grâce à un enseignement et une pratique spécialisés. Une fois terminé, une formation (comprenant généralement des examens permettent de prouver sa compétence) est généralement suivie d’une certification.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Principes de l’équipement de levage",
+          "number": "2.20",
+          "order": 19,
+          "subsections": [],
+          "content": "Tous les équipements de levage doivent avoir une solidité et une construction adéquates, être réalisés dans des matériaux de qualité et capables de supporter les charges et contraintes qu’ils auront à supporter. Ils devront être testés conformément aux exigences réglementaires (par application d’une charge d’épreuve) et u certificat d’essai sera émis avant leur première utilisation. Ce certificat est un document juridique important.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Facteurs de sécurité",
+          "number": "2.21",
+          "order": 20,
+          "subsections": [],
+          "content": "Le facteur de sécurité pour tout équipement de levage doit être adéquat et basé sur sa conception. Il ne doit jamais être abaissé et sert à indiquer la tolérance à l'usure, aux impacts, aux charges dynamiques et aux surcharges accidentelles. Ces tolérances sont prévues uniquement pour des circonstances imprévues et ne doivent pas être réduites volontairement. Évitez les surcharges et soyez vigilants pour prévenir les situations accidentelles. En cas de doute, consultez votre superviseur.",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Certains dispositifs de levage (p. ex. palonniers) peuvent être utilisés de",
+          "number": "2.22",
+          "order": 21,
+          "subsections": [],
+          "content": "différentes façons. Il est donc important que le fabricant/fournisseur donne dans chaque cas des renseignements sur l'usage spécifique prévu et demande conseil avant de tenter toute utilisation non prévue",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Certains chapitres de cette norme mentionnent l'angle auquel",
+          "number": "2.23",
+          "order": 22,
+          "subsections": [],
+          "content": "l'équipement est utilisé (p. ex. l'angle entre les brins d'une élingue multiple). Il est extrêmement important de tenir compte de la variation de la charge maximale d'utilisation que peut entraîner l'utilisation d'un tel équipement à un angle prononcé",
+          "images": [],
+          "tables": []
+        },
+        {
+          "title": "Un point final à considérer lors de la sélection de l'équipement pour une",
+          "number": "2.24",
+          "order": 23,
+          "subsections": [],
+          "content": "opération donnée est la compatibilité entre les différents éléments requis. Un certain nombre de qualités différentes de matériau(x) sont souvent utilisées pour le matériel de levage. En particulier, on remarquera que la taille des crochets, maillons, anneaux et manilles varie considérablement pour une capacité donnée selon le type de métal utilisé. Vous devrez donc vous assurer que chaque élément est correctement monté et aligné avec son voisin. Un anneau ou une 25 manille intermédiaires pourront pour cela être utilisés en cas de besoin.",
+          "images": [],
+          "tables": []
+        }
+      ],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Inspection d’appareils de levage",
+      "number": 3,
+      "order": 2,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Sélection d’un équipement de levage",
+      "number": 4,
+      "order": 3,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Améliorer la sécurité des opérations de levage",
+      "number": 5,
+      "order": 4,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Norme et formulaire de contrôle et de récupération",
+      "number": 6,
+      "order": 5,
+      "sections": [],
+      "content": "Utilisation sécuritaire du matériel",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Grues",
+      "number": 7,
+      "order": 6,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Palans à chaînes",
+      "number": 8,
+      "order": 8,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Palans à câble (Tirfors)",
+      "number": 9,
+      "order": 10,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Poulies à chape ouverte / Moufles",
+      "number": 10,
+      "order": 12,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Treuils",
+      "number": 11,
+      "order": 14,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Elingues à câbles métalliques",
+      "number": 12,
+      "order": 16,
+      "sections": [],
+      "content": "Conseil de sécurité",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Elingues en fibre synthétiques",
+      "number": 13,
+      "order": 7,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Manilles",
+      "number": 14,
+      "order": 9,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Boulons à oeil",
+      "number": 15,
+      "order": 11,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Tendeurs",
+      "number": 16,
+      "order": 13,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Dispositifs anti-chute",
+      "number": 17,
+      "order": 15,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Recommandations concernant l’élingage",
+      "number": 18,
+      "order": 17,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Chargement/ Déchargement de conteneurs",
+      "number": 19,
+      "order": 18,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Transfert de personnel",
+      "number": 20,
+      "order": 19,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Levage au dessus d’équipements sous tension",
+      "number": 21,
+      "order": 20,
+      "sections": [],
+      "content": "",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    },
+    {
+      "title": "Levage sans contact avec les mains",
+      "number": 22,
+      "order": 21,
+      "sections": [],
+      "content": "Tableaux de charges utiles Tableaux 1 Charges de rupture des câbles métalliques Tableaux 2 Elingues en câbles métalliques Tableaux 3 Elingues en fibres synthétiques Tableaux 4 Elingues en chaîne alliage Tableau 5 Manilles en alliage Tableau 6 Boulon à œil Tableau 7 Anneaux de levage 19 Tableau 8 Tendeurs Annexes Annexe 1 Equipements de levage / Matrice législative Annexe 2 Densité des matériaux Annexe 3 Liste de contrôle générale avant levage Annexe 4 Echelle de Beaufort des forces du vent et indicateurs visuels Annexe 5 Calculs utiles 20",
+      "images": [],
+      "tables": [],
+      "subsections": []
+    }
+  ],
+  "images": [],
+  "tables": []
+}

@@ -1,0 +1,163 @@
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft } from 'lucide-react';
+import Button from '../../System Design/Button';
+import api from '../../services/api';
+import Sidebar from '../../components/DocumentViewer/Sidebar';
+import ContentDisplay from '../../components/DocumentViewer/ContentDisplay';
+import FullBookContent from '../../components/DocumentViewer/FullBookContent';
+import './DocumentViewer.css';
+
+const DocumentViewer = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [bookData, setBookData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [viewMode, setViewMode] = useState('full'); // 'simple' ou 'full' - démarrer en vue complète
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
+  useEffect(() => {
+    const fetchBookData = async () => {
+      try {
+        setLoading(true);
+        // Appeler l'API avec l'URL du livre (l'ID est utilisé comme URL)
+        const structure = await api.get(`/books/${id}/export_structure/`);
+        setBookData(structure.data);
+        
+        // Sélectionner automatiquement le premier chapitre
+        if (structure.data?.chapters?.length > 0) {
+          setSelectedItem({
+            type: 'chapter',
+            data: structure.data.chapters[0],
+            index: 0
+          });
+        }
+      } catch (error) {
+        console.error('Erreur lors de la récupération des données du livre:', error);
+        setError('Impossible de charger les données du livre');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (id) {
+      fetchBookData();
+    }
+  }, [id]);
+
+  const handleSelectContent = (content) => {
+    // Passer automatiquement en vue complète lors de la sélection
+    setViewMode('full');
+    setSelectedItem(content);
+  };
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+
+  if (loading) {
+    return (
+      <div className="w-full flex flex-col bg-gray-50 min-h-screen items-center justify-center">
+        <div className="flex flex-col items-center justify-center p-8 text-center">
+          <Loader2 className="h-8 w-8 animate-spin" />
+          <p className="text-gray-600 mt-2">Chargement du document...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="w-full flex flex-col bg-gray-50 min-h-screen items-center justify-center">
+        <div className="flex flex-col items-center justify-center p-8 text-center">
+          <FileText className="h-16 w-16" />
+          <p className="text-red-600 text-lg mb-4">{error}</p>
+          <Button onClick={() => navigate('/documents')}>
+            Retour aux documents
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full flex flex-col bg-gray-50 min-h-screen">
+      {/* Header */}
+      <div className="bg-white border-b border-gray-200 px-5 py-4 flex items-center justify-between shadow-sm z-100 w-full">
+        <div className="flex items-center gap-5 w-full">
+          <Button
+            variant="outline"
+            onClick={() => navigate('/documents')}
+            className="flex items-center gap-2 px-4 py-2 border border-gray-300 bg-white rounded-md cursor-pointer transition-all duration-200 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-400 hover:text-gray-900"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Retour
+          </Button>
+          
+          <div className="flex flex-col gap-1 flex-1">
+            {bookData?.book && (
+              <>
+                <h1 className="text-xl font-semibold text-gray-900 leading-tight">{bookData.book.title}</h1>
+                <p className="text-xs text-gray-600">
+                  Créé le {new Date(bookData.book.created_at).toLocaleDateString()}
+                </p>
+              </>
+            )}
+          </div>
+        </div>
+        
+        {/* <button 
+          onClick={toggleViewMode}
+          className="view-mode-toggle-btn"
+          title={viewMode === 'simple' ? "Vue complète" : "Vue simple"}
+        >
+          {viewMode === 'simple' ? <FileText size={20} /> : <List size={20} />}
+        </button> */}
+        <button 
+          onClick={toggleSidebar}
+          className="bg-blue-500 text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:-translate-y-0.5"
+          title={sidebarOpen ? "Masquer le sommaire" : "Afficher le sommaire"}
+        >
+          {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+      </div>
+
+      {/* Main Content */}
+      <div className="flex-1 flex w-full">
+        {/* Sidebar */}
+        {sidebarOpen && (
+          <div className="w-80 bg-white border-r border-gray-200 overflow-y-auto flex-shrink-0 h-screen sticky top-20">
+            <Sidebar 
+              bookData={bookData} 
+              onSelectContent={handleSelectContent}
+              selectedItem={selectedItem}
+            />
+          </div>
+        )}
+        
+        {/* Content Area */}
+        <div className={`flex-1 w-full ${!sidebarOpen ? '' : ''}`}>
+          {viewMode === 'full' ? (
+            <FullBookContent bookData={bookData} selectedItem={selectedItem} />
+          ) : selectedItem ? (
+            <ContentDisplay selectedItem={selectedItem} bookData={bookData} />
+          ) : (
+            <div className="flex flex-col items-center justify-center p-12 text-center">
+              <BookOpen size={48} className="text-gray-400 mb-4" />
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Bienvenue dans le Document Viewer</h2>
+              <p className="text-gray-600 mb-4">Sélectionnez un chapitre, une section ou une sous-section dans le sommaire pour afficher son contenu.</p>
+              <p className="text-sm text-gray-500">
+                Ou cliquez sur <FileText size={16} /> pour afficher tout le livre avec la hiérarchie complète.
+              </p>
+            </div>
+          )}
+        </div>
+       </div>
+    </div>
+  );
+};
+
+export default DocumentViewer;

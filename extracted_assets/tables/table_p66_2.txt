@@ -1,0 +1,8 @@
+Modèle | Diamètre
+câble neuf | Dimension
+“A” (ne
+doit pas
+être < a)
+T508 | 8.3 mm | 37 mm
+T516 | 11.5 mm | 37 mm
+T532 | 16.3 mm | 68 mm

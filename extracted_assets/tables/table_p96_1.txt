@@ -1,0 +1,12 @@
+12.14 Recommandations d’usage
+Les tire-câbles à extrémité libre peuvent servir de manchon pour tirer un
+câble de remplacement, mais ne doivent pas être utilisés si un risque de
+rotation entre les câbles existe (ex. : câbles électriques). Dans ce cas, il
+est préférable d’utiliser deux tire-câbles reliés par un émerillon.
+Éviter de superposer deux tire-câbles, car cela compromet leur efficacité
+et peut les endommager.
+Pour faciliter l’installation de longues sections de câble, on peut ajouter
+des points de traction intermédiaires à l’aide de tire-câbles fixés à
+intervalles réguliers.
+Fig.12.8
+96

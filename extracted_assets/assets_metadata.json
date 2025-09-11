@@ -1,0 +1,3596 @@
+{
+  "images": [
+    {
+      "id": "img_1_0",
+      "page": 1,
+      "index": 0,
+      "filename": "img_p1_0_39d896c0.png",
+      "filepath": "extracted_assets\\images\\img_p1_0_39d896c0.png",
+      "url": "/assets/images/img_p1_0_39d896c0.png",
+      "width": 1280,
+      "height": 857,
+      "hash": "39d896c079bba65dd0d24b36c66b1cc4",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 1",
+      "description": "Image 1 de la page 1"
+    },
+    {
+      "id": "img_1_1",
+      "page": 1,
+      "index": 1,
+      "filename": "img_p1_1_2189b3da.png",
+      "filepath": "extracted_assets\\images\\img_p1_1_2189b3da.png",
+      "url": "/assets/images/img_p1_1_2189b3da.png",
+      "width": 253,
+      "height": 199,
+      "hash": "2189b3dae67e25960f0d4bc14d6537f6",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 2",
+      "description": "Image 2 de la page 1"
+    },
+    {
+      "id": "img_3_0",
+      "page": 3,
+      "index": 0,
+      "filename": "img_p3_0_d20a4f90.png",
+      "filepath": "extracted_assets\\images\\img_p3_0_d20a4f90.png",
+      "url": "/assets/images/img_p3_0_d20a4f90.png",
+      "width": 624,
+      "height": 788,
+      "hash": "d20a4f9012a5578bebdac1591d2dce5f",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 3",
+      "description": "Image 3 de la page 3"
+    },
+    {
+      "id": "img_4_0",
+      "page": 4,
+      "index": 0,
+      "filename": "img_p4_0_143d5e91.png",
+      "filepath": "extracted_assets\\images\\img_p4_0_143d5e91.png",
+      "url": "/assets/images/img_p4_0_143d5e91.png",
+      "width": 605,
+      "height": 671,
+      "hash": "143d5e91deb297b9b5beba2fb5c5275a",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 4",
+      "description": "Image 4 de la page 4"
+    },
+    {
+      "id": "img_5_0",
+      "page": 5,
+      "index": 0,
+      "filename": "img_p5_0_9478c0af.png",
+      "filepath": "extracted_assets\\images\\img_p5_0_9478c0af.png",
+      "url": "/assets/images/img_p5_0_9478c0af.png",
+      "width": 539,
+      "height": 591,
+      "hash": "9478c0af728649594f25aca7f352a0ca",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 5",
+      "description": "Image 5 de la page 5"
+    },
+    {
+      "id": "img_6_0",
+      "page": 6,
+      "index": 0,
+      "filename": "img_p6_0_8a25cf8d.png",
+      "filepath": "extracted_assets\\images\\img_p6_0_8a25cf8d.png",
+      "url": "/assets/images/img_p6_0_8a25cf8d.png",
+      "width": 554,
+      "height": 727,
+      "hash": "8a25cf8d34ddfcaf13eb3cee8c8c3d12",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 6",
+      "description": "Image 6 de la page 6"
+    },
+    {
+      "id": "img_7_0",
+      "page": 7,
+      "index": 0,
+      "filename": "img_p7_0_4eb229a9.png",
+      "filepath": "extracted_assets\\images\\img_p7_0_4eb229a9.png",
+      "url": "/assets/images/img_p7_0_4eb229a9.png",
+      "width": 623,
+      "height": 796,
+      "hash": "4eb229a96f55ee9d943dd110601c7f0c",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 7",
+      "description": "Image 7 de la page 7"
+    },
+    {
+      "id": "img_8_0",
+      "page": 8,
+      "index": 0,
+      "filename": "img_p8_0_32cf05fb.png",
+      "filepath": "extracted_assets\\images\\img_p8_0_32cf05fb.png",
+      "url": "/assets/images/img_p8_0_32cf05fb.png",
+      "width": 624,
+      "height": 727,
+      "hash": "32cf05fbd3bd9554f5c0bd6e6fd92c35",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 8",
+      "description": "Image 8 de la page 8"
+    },
+    {
+      "id": "img_9_0",
+      "page": 9,
+      "index": 0,
+      "filename": "img_p9_0_0362fd65.png",
+      "filepath": "extracted_assets\\images\\img_p9_0_0362fd65.png",
+      "url": "/assets/images/img_p9_0_0362fd65.png",
+      "width": 614,
+      "height": 655,
+      "hash": "0362fd65a676b71dc6da65543c43ff96",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 9",
+      "description": "Image 9 de la page 9"
+    },
+    {
+      "id": "img_10_0",
+      "page": 10,
+      "index": 0,
+      "filename": "img_p10_0_f2329444.png",
+      "filepath": "extracted_assets\\images\\img_p10_0_f2329444.png",
+      "url": "/assets/images/img_p10_0_f2329444.png",
+      "width": 621,
+      "height": 724,
+      "hash": "f2329444a0cc27a91524a590eeff1344",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 10",
+      "description": "Image 10 de la page 10"
+    },
+    {
+      "id": "img_11_0",
+      "page": 11,
+      "index": 0,
+      "filename": "img_p11_0_a98775d0.png",
+      "filepath": "extracted_assets\\images\\img_p11_0_a98775d0.png",
+      "url": "/assets/images/img_p11_0_a98775d0.png",
+      "width": 602,
+      "height": 743,
+      "hash": "a98775d09e41e1b20580801ff290e639",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 11",
+      "description": "Image 11 de la page 11"
+    },
+    {
+      "id": "img_12_0",
+      "page": 12,
+      "index": 0,
+      "filename": "img_p12_0_54e52782.png",
+      "filepath": "extracted_assets\\images\\img_p12_0_54e52782.png",
+      "url": "/assets/images/img_p12_0_54e52782.png",
+      "width": 604,
+      "height": 758,
+      "hash": "54e52782f95e5fefe81933f329b6114c",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 12",
+      "description": "Image 12 de la page 12"
+    },
+    {
+      "id": "img_13_0",
+      "page": 13,
+      "index": 0,
+      "filename": "img_p13_0_f7ad9360.png",
+      "filepath": "extracted_assets\\images\\img_p13_0_f7ad9360.png",
+      "url": "/assets/images/img_p13_0_f7ad9360.png",
+      "width": 615,
+      "height": 786,
+      "hash": "f7ad9360ec8c57e0c5aed6dccfbf2f6b",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 13",
+      "description": "Image 13 de la page 13"
+    },
+    {
+      "id": "img_14_0",
+      "page": 14,
+      "index": 0,
+      "filename": "img_p14_0_67f5e35f.png",
+      "filepath": "extracted_assets\\images\\img_p14_0_67f5e35f.png",
+      "url": "/assets/images/img_p14_0_67f5e35f.png",
+      "width": 611,
+      "height": 675,
+      "hash": "67f5e35f2937bcd8015d26f44c77f464",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 14",
+      "description": "Image 14 de la page 14"
+    },
+    {
+      "id": "img_15_0",
+      "page": 15,
+      "index": 0,
+      "filename": "img_p15_0_add1494e.png",
+      "filepath": "extracted_assets\\images\\img_p15_0_add1494e.png",
+      "url": "/assets/images/img_p15_0_add1494e.png",
+      "width": 608,
+      "height": 789,
+      "hash": "add1494eafed0df2c884a15e7edc5e6f",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 15",
+      "description": "Image 15 de la page 15"
+    },
+    {
+      "id": "img_16_0",
+      "page": 16,
+      "index": 0,
+      "filename": "img_p16_0_9722ded7.png",
+      "filepath": "extracted_assets\\images\\img_p16_0_9722ded7.png",
+      "url": "/assets/images/img_p16_0_9722ded7.png",
+      "width": 616,
+      "height": 716,
+      "hash": "9722ded725a1915261dec2d2eaa8a788",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 16",
+      "description": "Image 16 de la page 16"
+    },
+    {
+      "id": "img_17_0",
+      "page": 17,
+      "index": 0,
+      "filename": "img_p17_0_ea1ee864.png",
+      "filepath": "extracted_assets\\images\\img_p17_0_ea1ee864.png",
+      "url": "/assets/images/img_p17_0_ea1ee864.png",
+      "width": 603,
+      "height": 723,
+      "hash": "ea1ee864e7f06a93fff3148c71193b79",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 17",
+      "description": "Image 17 de la page 17"
+    },
+    {
+      "id": "img_18_0",
+      "page": 18,
+      "index": 0,
+      "filename": "img_p18_0_47795977.png",
+      "filepath": "extracted_assets\\images\\img_p18_0_47795977.png",
+      "url": "/assets/images/img_p18_0_47795977.png",
+      "width": 610,
+      "height": 575,
+      "hash": "4779597721785e5a39db3cd2063ad541",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 18",
+      "description": "Image 18 de la page 18"
+    },
+    {
+      "id": "img_18_1",
+      "page": 18,
+      "index": 1,
+      "filename": "img_p18_1_bbabd423.png",
+      "filepath": "extracted_assets\\images\\img_p18_1_bbabd423.png",
+      "url": "/assets/images/img_p18_1_bbabd423.png",
+      "width": 356,
+      "height": 553,
+      "hash": "bbabd423b7e0cfe9a22c291c71f0ebe4",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 19",
+      "description": "Image 19 de la page 18"
+    },
+    {
+      "id": "img_27_0",
+      "page": 27,
+      "index": 0,
+      "filename": "img_p27_0_054bc368.png",
+      "filepath": "extracted_assets\\images\\img_p27_0_054bc368.png",
+      "url": "/assets/images/img_p27_0_054bc368.png",
+      "width": 405,
+      "height": 520,
+      "hash": "054bc3686cc34e91ec92d30a90923a72",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 20",
+      "description": "Image 20 de la page 27"
+    },
+    {
+      "id": "img_27_1",
+      "page": 27,
+      "index": 1,
+      "filename": "img_p27_1_93926ac6.png",
+      "filepath": "extracted_assets\\images\\img_p27_1_93926ac6.png",
+      "url": "/assets/images/img_p27_1_93926ac6.png",
+      "width": 481,
+      "height": 481,
+      "hash": "93926ac628ced6d084747dc2bb7f4f43",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 21",
+      "description": "Image 21 de la page 27"
+    },
+    {
+      "id": "img_27_2",
+      "page": 27,
+      "index": 2,
+      "filename": "img_p27_2_0d99a5b5.png",
+      "filepath": "extracted_assets\\images\\img_p27_2_0d99a5b5.png",
+      "url": "/assets/images/img_p27_2_0d99a5b5.png",
+      "width": 363,
+      "height": 400,
+      "hash": "0d99a5b54c81ffafeb1d29324367dc7e",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 22",
+      "description": "Image 22 de la page 27"
+    },
+    {
+      "id": "img_31_0",
+      "page": 31,
+      "index": 0,
+      "filename": "img_p31_0_37b62b3d.png",
+      "filepath": "extracted_assets\\images\\img_p31_0_37b62b3d.png",
+      "url": "/assets/images/img_p31_0_37b62b3d.png",
+      "width": 480,
+      "height": 480,
+      "hash": "37b62b3d07c5b560ccb5d4260989d0c5",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 23",
+      "description": "Image 23 de la page 31"
+    },
+    {
+      "id": "img_31_1",
+      "page": 31,
+      "index": 1,
+      "filename": "img_p31_1_7c516740.png",
+      "filepath": "extracted_assets\\images\\img_p31_1_7c516740.png",
+      "url": "/assets/images/img_p31_1_7c516740.png",
+      "width": 353,
+      "height": 307,
+      "hash": "7c51674033a587ef12b9060b9d83ba24",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 24",
+      "description": "Image 24 de la page 31"
+    },
+    {
+      "id": "img_34_0",
+      "page": 34,
+      "index": 0,
+      "filename": "img_p34_0_c38fbab3.png",
+      "filepath": "extracted_assets\\images\\img_p34_0_c38fbab3.png",
+      "url": "/assets/images/img_p34_0_c38fbab3.png",
+      "width": 750,
+      "height": 750,
+      "hash": "c38fbab3c91d9f437c5ebd32a2c22914",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 25",
+      "description": "Image 25 de la page 34"
+    },
+    {
+      "id": "img_34_1",
+      "page": 34,
+      "index": 1,
+      "filename": "img_p34_1_7d228f69.png",
+      "filepath": "extracted_assets\\images\\img_p34_1_7d228f69.png",
+      "url": "/assets/images/img_p34_1_7d228f69.png",
+      "width": 500,
+      "height": 500,
+      "hash": "7d228f69810670b0af28b196489469b6",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 26",
+      "description": "Image 26 de la page 34"
+    },
+    {
+      "id": "img_35_0",
+      "page": 35,
+      "index": 0,
+      "filename": "img_p35_0_1edf0460.png",
+      "filepath": "extracted_assets\\images\\img_p35_0_1edf0460.png",
+      "url": "/assets/images/img_p35_0_1edf0460.png",
+      "width": 720,
+      "height": 540,
+      "hash": "1edf04601057411d62d3d68b82e498d2",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 27",
+      "description": "Image 27 de la page 35"
+    },
+    {
+      "id": "img_35_1",
+      "page": 35,
+      "index": 1,
+      "filename": "img_p35_1_6df8fded.png",
+      "filepath": "extracted_assets\\images\\img_p35_1_6df8fded.png",
+      "url": "/assets/images/img_p35_1_6df8fded.png",
+      "width": 486,
+      "height": 423,
+      "hash": "6df8fded34d5f8c325bbda90aae3b129",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 28",
+      "description": "Image 28 de la page 35"
+    },
+    {
+      "id": "img_35_2",
+      "page": 35,
+      "index": 2,
+      "filename": "img_p35_2_12db139c.png",
+      "filepath": "extracted_assets\\images\\img_p35_2_12db139c.png",
+      "url": "/assets/images/img_p35_2_12db139c.png",
+      "width": 319,
+      "height": 595,
+      "hash": "12db139cf7c96101cb847a401b140c4e",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 29",
+      "description": "Image 29 de la page 35"
+    },
+    {
+      "id": "img_37_0",
+      "page": 37,
+      "index": 0,
+      "filename": "img_p37_0_322ec4a6.png",
+      "filepath": "extracted_assets\\images\\img_p37_0_322ec4a6.png",
+      "url": "/assets/images/img_p37_0_322ec4a6.png",
+      "width": 422,
+      "height": 500,
+      "hash": "322ec4a6d286ae4e3be4826d6265869f",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 30",
+      "description": "Image 30 de la page 37"
+    },
+    {
+      "id": "img_38_0",
+      "page": 38,
+      "index": 0,
+      "filename": "img_p38_0_8d285c79.png",
+      "filepath": "extracted_assets\\images\\img_p38_0_8d285c79.png",
+      "url": "/assets/images/img_p38_0_8d285c79.png",
+      "width": 602,
+      "height": 542,
+      "hash": "8d285c797de46b549112881cb2a04377",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 31",
+      "description": "Image 31 de la page 38"
+    },
+    {
+      "id": "img_40_0",
+      "page": 40,
+      "index": 0,
+      "filename": "img_p40_0_7d8bd6d5.png",
+      "filepath": "extracted_assets\\images\\img_p40_0_7d8bd6d5.png",
+      "url": "/assets/images/img_p40_0_7d8bd6d5.png",
+      "width": 602,
+      "height": 432,
+      "hash": "7d8bd6d53992e2daa9e9c5c9e0993ba7",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 32",
+      "description": "Image 32 de la page 40"
+    },
+    {
+      "id": "img_41_0",
+      "page": 41,
+      "index": 0,
+      "filename": "img_p41_0_5c9da6c6.png",
+      "filepath": "extracted_assets\\images\\img_p41_0_5c9da6c6.png",
+      "url": "/assets/images/img_p41_0_5c9da6c6.png",
+      "width": 445,
+      "height": 775,
+      "hash": "5c9da6c619527def8f89a75da18faca4",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 33",
+      "description": "Image 33 de la page 41"
+    },
+    {
+      "id": "img_42_0",
+      "page": 42,
+      "index": 0,
+      "filename": "img_p42_0_77178a22.png",
+      "filepath": "extracted_assets\\images\\img_p42_0_77178a22.png",
+      "url": "/assets/images/img_p42_0_77178a22.png",
+      "width": 494,
+      "height": 545,
+      "hash": "77178a22fcda5be366652a6b30f7f7ed",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 34",
+      "description": "Image 34 de la page 42"
+    },
+    {
+      "id": "img_45_0",
+      "page": 45,
+      "index": 0,
+      "filename": "img_p45_0_218adf27.png",
+      "filepath": "extracted_assets\\images\\img_p45_0_218adf27.png",
+      "url": "/assets/images/img_p45_0_218adf27.png",
+      "width": 604,
+      "height": 550,
+      "hash": "218adf27d9945f9ec1046f915e77a113",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 35",
+      "description": "Image 35 de la page 45"
+    },
+    {
+      "id": "img_46_0",
+      "page": 46,
+      "index": 0,
+      "filename": "img_p46_0_ac61ee75.png",
+      "filepath": "extracted_assets\\images\\img_p46_0_ac61ee75.png",
+      "url": "/assets/images/img_p46_0_ac61ee75.png",
+      "width": 629,
+      "height": 453,
+      "hash": "ac61ee75bf96b47e4d882f8167e6ea9a",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 36",
+      "description": "Image 36 de la page 46"
+    },
+    {
+      "id": "img_49_0",
+      "page": 49,
+      "index": 0,
+      "filename": "img_p49_0_44d12456.png",
+      "filepath": "extracted_assets\\images\\img_p49_0_44d12456.png",
+      "url": "/assets/images/img_p49_0_44d12456.png",
+      "width": 563,
+      "height": 377,
+      "hash": "44d12456456d7b33d33071251c447ecd",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 37",
+      "description": "Image 37 de la page 49"
+    },
+    {
+      "id": "img_50_0",
+      "page": 50,
+      "index": 0,
+      "filename": "img_p50_0_248e3f5c.png",
+      "filepath": "extracted_assets\\images\\img_p50_0_248e3f5c.png",
+      "url": "/assets/images/img_p50_0_248e3f5c.png",
+      "width": 657,
+      "height": 432,
+      "hash": "248e3f5c29b2efdb85b4f20c65c8cc2f",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 38",
+      "description": "Image 38 de la page 50"
+    },
+    {
+      "id": "img_55_0",
+      "page": 55,
+      "index": 0,
+      "filename": "img_p55_0_4cc91650.png",
+      "filepath": "extracted_assets\\images\\img_p55_0_4cc91650.png",
+      "url": "/assets/images/img_p55_0_4cc91650.png",
+      "width": 460,
+      "height": 360,
+      "hash": "4cc91650d4fb3d5c241a812e6d5d27b0",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 39",
+      "description": "Image 39 de la page 55"
+    },
+    {
+      "id": "img_55_1",
+      "page": 55,
+      "index": 1,
+      "filename": "img_p55_1_2e239202.png",
+      "filepath": "extracted_assets\\images\\img_p55_1_2e239202.png",
+      "url": "/assets/images/img_p55_1_2e239202.png",
+      "width": 64,
+      "height": 439,
+      "hash": "2e2392026ad366965f0dabe8a9a82847",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 40",
+      "description": "Image 40 de la page 55"
+    },
+    {
+      "id": "img_55_2",
+      "page": 55,
+      "index": 2,
+      "filename": "img_p55_2_05f8f67a.png",
+      "filepath": "extracted_assets\\images\\img_p55_2_05f8f67a.png",
+      "url": "/assets/images/img_p55_2_05f8f67a.png",
+      "width": 83,
+      "height": 119,
+      "hash": "05f8f67adef169c5aa93d63681362fb8",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 41",
+      "description": "Image 41 de la page 55"
+    },
+    {
+      "id": "img_58_0",
+      "page": 58,
+      "index": 0,
+      "filename": "img_p58_0_f0402fab.png",
+      "filepath": "extracted_assets\\images\\img_p58_0_f0402fab.png",
+      "url": "/assets/images/img_p58_0_f0402fab.png",
+      "width": 322,
+      "height": 426,
+      "hash": "f0402fab8db2f947bcee7cb010ffa5fe",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 42",
+      "description": "Image 42 de la page 58"
+    },
+    {
+      "id": "img_59_0",
+      "page": 59,
+      "index": 0,
+      "filename": "img_p59_0_c94fee8f.png",
+      "filepath": "extracted_assets\\images\\img_p59_0_c94fee8f.png",
+      "url": "/assets/images/img_p59_0_c94fee8f.png",
+      "width": 1072,
+      "height": 351,
+      "hash": "c94fee8f8d8d40a8313635b0f0df996b",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 43",
+      "description": "Image 43 de la page 59"
+    },
+    {
+      "id": "img_59_1",
+      "page": 59,
+      "index": 1,
+      "filename": "img_p59_1_68a13a32.png",
+      "filepath": "extracted_assets\\images\\img_p59_1_68a13a32.png",
+      "url": "/assets/images/img_p59_1_68a13a32.png",
+      "width": 1024,
+      "height": 378,
+      "hash": "68a13a324edc29aa860d6c556cd9043b",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 44",
+      "description": "Image 44 de la page 59"
+    },
+    {
+      "id": "img_60_0",
+      "page": 60,
+      "index": 0,
+      "filename": "img_p60_0_250d872a.png",
+      "filepath": "extracted_assets\\images\\img_p60_0_250d872a.png",
+      "url": "/assets/images/img_p60_0_250d872a.png",
+      "width": 673,
+      "height": 829,
+      "hash": "250d872ae0cfb3343682a16f2eb76b96",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 45",
+      "description": "Image 45 de la page 60"
+    },
+    {
+      "id": "img_61_0",
+      "page": 61,
+      "index": 0,
+      "filename": "img_p61_0_dd2a9485.png",
+      "filepath": "extracted_assets\\images\\img_p61_0_dd2a9485.png",
+      "url": "/assets/images/img_p61_0_dd2a9485.png",
+      "width": 706,
+      "height": 776,
+      "hash": "dd2a9485c3b36b7e0482dc09ca00610a",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 46",
+      "description": "Image 46 de la page 61"
+    },
+    {
+      "id": "img_63_0",
+      "page": 63,
+      "index": 0,
+      "filename": "img_p63_0_d1cad942.png",
+      "filepath": "extracted_assets\\images\\img_p63_0_d1cad942.png",
+      "url": "/assets/images/img_p63_0_d1cad942.png",
+      "width": 396,
+      "height": 360,
+      "hash": "d1cad942b2711ff7a9d56399fa6b5205",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 47",
+      "description": "Image 47 de la page 63"
+    },
+    {
+      "id": "img_63_1",
+      "page": 63,
+      "index": 1,
+      "filename": "img_p63_1_9d40fdad.png",
+      "filepath": "extracted_assets\\images\\img_p63_1_9d40fdad.png",
+      "url": "/assets/images/img_p63_1_9d40fdad.png",
+      "width": 421,
+      "height": 174,
+      "hash": "9d40fdadccc6dd0ebbabb49e7a9825d0",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 48",
+      "description": "Image 48 de la page 63"
+    },
+    {
+      "id": "img_64_0",
+      "page": 64,
+      "index": 0,
+      "filename": "img_p64_0_cf03e04c.png",
+      "filepath": "extracted_assets\\images\\img_p64_0_cf03e04c.png",
+      "url": "/assets/images/img_p64_0_cf03e04c.png",
+      "width": 964,
+      "height": 304,
+      "hash": "cf03e04c9fa0489dbaf8e3423944b8e0",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 49",
+      "description": "Image 49 de la page 64"
+    },
+    {
+      "id": "img_64_1",
+      "page": 64,
+      "index": 1,
+      "filename": "img_p64_1_c6eb6e34.png",
+      "filepath": "extracted_assets\\images\\img_p64_1_c6eb6e34.png",
+      "url": "/assets/images/img_p64_1_c6eb6e34.png",
+      "width": 987,
+      "height": 421,
+      "hash": "c6eb6e34ce27c75d349f8932d990b1e5",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 50",
+      "description": "Image 50 de la page 64"
+    },
+    {
+      "id": "img_64_2",
+      "page": 64,
+      "index": 2,
+      "filename": "img_p64_2_147b72cf.png",
+      "filepath": "extracted_assets\\images\\img_p64_2_147b72cf.png",
+      "url": "/assets/images/img_p64_2_147b72cf.png",
+      "width": 310,
+      "height": 267,
+      "hash": "147b72cf7b24252b95120555014ff055",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 51",
+      "description": "Image 51 de la page 64"
+    },
+    {
+      "id": "img_64_3",
+      "page": 64,
+      "index": 3,
+      "filename": "img_p64_3_1684ea6d.png",
+      "filepath": "extracted_assets\\images\\img_p64_3_1684ea6d.png",
+      "url": "/assets/images/img_p64_3_1684ea6d.png",
+      "width": 252,
+      "height": 289,
+      "hash": "1684ea6d88c66c237c08e72fb1f0669f",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 52",
+      "description": "Image 52 de la page 64"
+    },
+    {
+      "id": "img_66_0",
+      "page": 66,
+      "index": 0,
+      "filename": "img_p66_0_dddaa3b8.png",
+      "filepath": "extracted_assets\\images\\img_p66_0_dddaa3b8.png",
+      "url": "/assets/images/img_p66_0_dddaa3b8.png",
+      "width": 438,
+      "height": 445,
+      "hash": "dddaa3b8d35e693982cf74d6507cde30",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 53",
+      "description": "Image 53 de la page 66"
+    },
+    {
+      "id": "img_67_0",
+      "page": 67,
+      "index": 0,
+      "filename": "img_p67_0_fc0d170a.png",
+      "filepath": "extracted_assets\\images\\img_p67_0_fc0d170a.png",
+      "url": "/assets/images/img_p67_0_fc0d170a.png",
+      "width": 888,
+      "height": 576,
+      "hash": "fc0d170a2312a33c77f557ceacf83cdc",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 54",
+      "description": "Image 54 de la page 67"
+    },
+    {
+      "id": "img_67_1",
+      "page": 67,
+      "index": 1,
+      "filename": "img_p67_1_f33554d9.png",
+      "filepath": "extracted_assets\\images\\img_p67_1_f33554d9.png",
+      "url": "/assets/images/img_p67_1_f33554d9.png",
+      "width": 1375,
+      "height": 427,
+      "hash": "f33554d931bf59737588a102ab42e0b8",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 55",
+      "description": "Image 55 de la page 67"
+    },
+    {
+      "id": "img_68_0",
+      "page": 68,
+      "index": 0,
+      "filename": "img_p68_0_f42c0b09.png",
+      "filepath": "extracted_assets\\images\\img_p68_0_f42c0b09.png",
+      "url": "/assets/images/img_p68_0_f42c0b09.png",
+      "width": 952,
+      "height": 273,
+      "hash": "f42c0b099f2c1133a4d107aea0dff3df",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 56",
+      "description": "Image 56 de la page 68"
+    },
+    {
+      "id": "img_69_0",
+      "page": 69,
+      "index": 0,
+      "filename": "img_p69_0_f0a62580.png",
+      "filepath": "extracted_assets\\images\\img_p69_0_f0a62580.png",
+      "url": "/assets/images/img_p69_0_f0a62580.png",
+      "width": 343,
+      "height": 568,
+      "hash": "f0a62580cc2a1249b9cca05a61557df3",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 57",
+      "description": "Image 57 de la page 69"
+    },
+    {
+      "id": "img_69_1",
+      "page": 69,
+      "index": 1,
+      "filename": "img_p69_1_c71288da.png",
+      "filepath": "extracted_assets\\images\\img_p69_1_c71288da.png",
+      "url": "/assets/images/img_p69_1_c71288da.png",
+      "width": 519,
+      "height": 259,
+      "hash": "c71288dad1be65adfbd30879b2698281",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 58",
+      "description": "Image 58 de la page 69"
+    },
+    {
+      "id": "img_71_0",
+      "page": 71,
+      "index": 0,
+      "filename": "img_p71_0_02484e9b.png",
+      "filepath": "extracted_assets\\images\\img_p71_0_02484e9b.png",
+      "url": "/assets/images/img_p71_0_02484e9b.png",
+      "width": 541,
+      "height": 529,
+      "hash": "02484e9bd083317b1a090021be874f62",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 59",
+      "description": "Image 59 de la page 71"
+    },
+    {
+      "id": "img_72_0",
+      "page": 72,
+      "index": 0,
+      "filename": "img_p72_0_fb860fe5.png",
+      "filepath": "extracted_assets\\images\\img_p72_0_fb860fe5.png",
+      "url": "/assets/images/img_p72_0_fb860fe5.png",
+      "width": 388,
+      "height": 495,
+      "hash": "fb860fe59626112f163ab3e11ef26556",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 60",
+      "description": "Image 60 de la page 72"
+    },
+    {
+      "id": "img_73_0",
+      "page": 73,
+      "index": 0,
+      "filename": "img_p73_0_de460baa.png",
+      "filepath": "extracted_assets\\images\\img_p73_0_de460baa.png",
+      "url": "/assets/images/img_p73_0_de460baa.png",
+      "width": 277,
+      "height": 333,
+      "hash": "de460baa826e25e66dfe4c33365ab615",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 61",
+      "description": "Image 61 de la page 73"
+    },
+    {
+      "id": "img_73_1",
+      "page": 73,
+      "index": 1,
+      "filename": "img_p73_1_e48eab31.png",
+      "filepath": "extracted_assets\\images\\img_p73_1_e48eab31.png",
+      "url": "/assets/images/img_p73_1_e48eab31.png",
+      "width": 148,
+      "height": 277,
+      "hash": "e48eab3173939b7a01380bcfed417243",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 62",
+      "description": "Image 62 de la page 73"
+    },
+    {
+      "id": "img_74_0",
+      "page": 74,
+      "index": 0,
+      "filename": "img_p74_0_b66535c8.png",
+      "filepath": "extracted_assets\\images\\img_p74_0_b66535c8.png",
+      "url": "/assets/images/img_p74_0_b66535c8.png",
+      "width": 277,
+      "height": 549,
+      "hash": "b66535c84da8fc61cc3051742123c9d5",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 63",
+      "description": "Image 63 de la page 74"
+    },
+    {
+      "id": "img_74_1",
+      "page": 74,
+      "index": 1,
+      "filename": "img_p74_1_c44750a9.png",
+      "filepath": "extracted_assets\\images\\img_p74_1_c44750a9.png",
+      "url": "/assets/images/img_p74_1_c44750a9.png",
+      "width": 238,
+      "height": 322,
+      "hash": "c44750a9ff32ccadae290e530149c5b4",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 64",
+      "description": "Image 64 de la page 74"
+    },
+    {
+      "id": "img_74_2",
+      "page": 74,
+      "index": 2,
+      "filename": "img_p74_2_de2c6a25.png",
+      "filepath": "extracted_assets\\images\\img_p74_2_de2c6a25.png",
+      "url": "/assets/images/img_p74_2_de2c6a25.png",
+      "width": 237,
+      "height": 318,
+      "hash": "de2c6a252a3f2d6b2bd54986d72c0a42",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 65",
+      "description": "Image 65 de la page 74"
+    },
+    {
+      "id": "img_74_3",
+      "page": 74,
+      "index": 3,
+      "filename": "img_p74_3_0b1f8d42.png",
+      "filepath": "extracted_assets\\images\\img_p74_3_0b1f8d42.png",
+      "url": "/assets/images/img_p74_3_0b1f8d42.png",
+      "width": 549,
+      "height": 345,
+      "hash": "0b1f8d421fd2e8016ce82e7633be64de",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 66",
+      "description": "Image 66 de la page 74"
+    },
+    {
+      "id": "img_75_0",
+      "page": 75,
+      "index": 0,
+      "filename": "img_p75_0_6f4e5bb3.png",
+      "filepath": "extracted_assets\\images\\img_p75_0_6f4e5bb3.png",
+      "url": "/assets/images/img_p75_0_6f4e5bb3.png",
+      "width": 837,
+      "height": 483,
+      "hash": "6f4e5bb33bcf5f14003dc7752ed072b4",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 67",
+      "description": "Image 67 de la page 75"
+    },
+    {
+      "id": "img_75_1",
+      "page": 75,
+      "index": 1,
+      "filename": "img_p75_1_4499b7d8.png",
+      "filepath": "extracted_assets\\images\\img_p75_1_4499b7d8.png",
+      "url": "/assets/images/img_p75_1_4499b7d8.png",
+      "width": 382,
+      "height": 433,
+      "hash": "4499b7d83a89a90812ff85550f7d72f4",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 68",
+      "description": "Image 68 de la page 75"
+    },
+    {
+      "id": "img_77_0",
+      "page": 77,
+      "index": 0,
+      "filename": "img_p77_0_8f1a1e47.png",
+      "filepath": "extracted_assets\\images\\img_p77_0_8f1a1e47.png",
+      "url": "/assets/images/img_p77_0_8f1a1e47.png",
+      "width": 700,
+      "height": 298,
+      "hash": "8f1a1e478d16a6c37bb97dd0af52e767",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 69",
+      "description": "Image 69 de la page 77"
+    },
+    {
+      "id": "img_79_0",
+      "page": 79,
+      "index": 0,
+      "filename": "img_p79_0_1226fba9.png",
+      "filepath": "extracted_assets\\images\\img_p79_0_1226fba9.png",
+      "url": "/assets/images/img_p79_0_1226fba9.png",
+      "width": 273,
+      "height": 321,
+      "hash": "1226fba9184933373ba8696f1c3ebec8",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 70",
+      "description": "Image 70 de la page 79"
+    },
+    {
+      "id": "img_79_1",
+      "page": 79,
+      "index": 1,
+      "filename": "img_p79_1_8e59fc54.png",
+      "filepath": "extracted_assets\\images\\img_p79_1_8e59fc54.png",
+      "url": "/assets/images/img_p79_1_8e59fc54.png",
+      "width": 436,
+      "height": 289,
+      "hash": "8e59fc54ce22a4690794dfeca24b82a4",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 71",
+      "description": "Image 71 de la page 79"
+    },
+    {
+      "id": "img_79_2",
+      "page": 79,
+      "index": 2,
+      "filename": "img_p79_2_191ecefa.png",
+      "filepath": "extracted_assets\\images\\img_p79_2_191ecefa.png",
+      "url": "/assets/images/img_p79_2_191ecefa.png",
+      "width": 178,
+      "height": 118,
+      "hash": "191ecefaa0cf445c76628ca58c122588",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 72",
+      "description": "Image 72 de la page 79"
+    },
+    {
+      "id": "img_80_0",
+      "page": 80,
+      "index": 0,
+      "filename": "img_p80_0_cd4dd158.png",
+      "filepath": "extracted_assets\\images\\img_p80_0_cd4dd158.png",
+      "url": "/assets/images/img_p80_0_cd4dd158.png",
+      "width": 472,
+      "height": 493,
+      "hash": "cd4dd158cf029a039b1d7f5d1c4792ca",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 73",
+      "description": "Image 73 de la page 80"
+    },
+    {
+      "id": "img_82_0",
+      "page": 82,
+      "index": 0,
+      "filename": "img_p82_0_c94d5004.png",
+      "filepath": "extracted_assets\\images\\img_p82_0_c94d5004.png",
+      "url": "/assets/images/img_p82_0_c94d5004.png",
+      "width": 685,
+      "height": 406,
+      "hash": "c94d5004b604ac56c1cab92d9fc9893b",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 74",
+      "description": "Image 74 de la page 82"
+    },
+    {
+      "id": "img_83_0",
+      "page": 83,
+      "index": 0,
+      "filename": "img_p83_0_449f3b46.png",
+      "filepath": "extracted_assets\\images\\img_p83_0_449f3b46.png",
+      "url": "/assets/images/img_p83_0_449f3b46.png",
+      "width": 1000,
+      "height": 382,
+      "hash": "449f3b4678833777442ad45756490cbc",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 75",
+      "description": "Image 75 de la page 83"
+    },
+    {
+      "id": "img_83_1",
+      "page": 83,
+      "index": 1,
+      "filename": "img_p83_1_e3c690ee.png",
+      "filepath": "extracted_assets\\images\\img_p83_1_e3c690ee.png",
+      "url": "/assets/images/img_p83_1_e3c690ee.png",
+      "width": 862,
+      "height": 289,
+      "hash": "e3c690ee2cb44290778a05436f4c3d9c",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 76",
+      "description": "Image 76 de la page 83"
+    },
+    {
+      "id": "img_84_0",
+      "page": 84,
+      "index": 0,
+      "filename": "img_p84_0_bf145c5d.png",
+      "filepath": "extracted_assets\\images\\img_p84_0_bf145c5d.png",
+      "url": "/assets/images/img_p84_0_bf145c5d.png",
+      "width": 1186,
+      "height": 376,
+      "hash": "bf145c5dd2879ff392207c0f079b7e79",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 77",
+      "description": "Image 77 de la page 84"
+    },
+    {
+      "id": "img_85_0",
+      "page": 85,
+      "index": 0,
+      "filename": "img_p85_0_0de20cc4.png",
+      "filepath": "extracted_assets\\images\\img_p85_0_0de20cc4.png",
+      "url": "/assets/images/img_p85_0_0de20cc4.png",
+      "width": 1066,
+      "height": 234,
+      "hash": "0de20cc4c83dddc05edd87afb4987b55",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 78",
+      "description": "Image 78 de la page 85"
+    },
+    {
+      "id": "img_85_1",
+      "page": 85,
+      "index": 1,
+      "filename": "img_p85_1_1a619e3a.png",
+      "filepath": "extracted_assets\\images\\img_p85_1_1a619e3a.png",
+      "url": "/assets/images/img_p85_1_1a619e3a.png",
+      "width": 469,
+      "height": 151,
+      "hash": "1a619e3a96633126b1c358c26ca87bd8",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 79",
+      "description": "Image 79 de la page 85"
+    },
+    {
+      "id": "img_86_0",
+      "page": 86,
+      "index": 0,
+      "filename": "img_p86_0_57a0805e.png",
+      "filepath": "extracted_assets\\images\\img_p86_0_57a0805e.png",
+      "url": "/assets/images/img_p86_0_57a0805e.png",
+      "width": 198,
+      "height": 243,
+      "hash": "57a0805ee239ed47bc06c760c9f6ce2f",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 80",
+      "description": "Image 80 de la page 86"
+    },
+    {
+      "id": "img_86_1",
+      "page": 86,
+      "index": 1,
+      "filename": "img_p86_1_d4d17752.png",
+      "filepath": "extracted_assets\\images\\img_p86_1_d4d17752.png",
+      "url": "/assets/images/img_p86_1_d4d17752.png",
+      "width": 258,
+      "height": 205,
+      "hash": "d4d17752430f78cdaead39390bdf98bb",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 81",
+      "description": "Image 81 de la page 86"
+    },
+    {
+      "id": "img_86_2",
+      "page": 86,
+      "index": 2,
+      "filename": "img_p86_2_c4c53665.png",
+      "filepath": "extracted_assets\\images\\img_p86_2_c4c53665.png",
+      "url": "/assets/images/img_p86_2_c4c53665.png",
+      "width": 228,
+      "height": 282,
+      "hash": "c4c536655526132b69ab1880cf02d06a",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 82",
+      "description": "Image 82 de la page 86"
+    },
+    {
+      "id": "img_88_0",
+      "page": 88,
+      "index": 0,
+      "filename": "img_p88_0_fe1c9f22.png",
+      "filepath": "extracted_assets\\images\\img_p88_0_fe1c9f22.png",
+      "url": "/assets/images/img_p88_0_fe1c9f22.png",
+      "width": 800,
+      "height": 800,
+      "hash": "fe1c9f221e19f0ce47b1fe60d429f897",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 83",
+      "description": "Image 83 de la page 88"
+    },
+    {
+      "id": "img_88_1",
+      "page": 88,
+      "index": 1,
+      "filename": "img_p88_1_2910e61d.png",
+      "filepath": "extracted_assets\\images\\img_p88_1_2910e61d.png",
+      "url": "/assets/images/img_p88_1_2910e61d.png",
+      "width": 800,
+      "height": 800,
+      "hash": "2910e61d6b967a7c3e547c5bda680184",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 84",
+      "description": "Image 84 de la page 88"
+    },
+    {
+      "id": "img_88_2",
+      "page": 88,
+      "index": 2,
+      "filename": "img_p88_2_4b6b705c.png",
+      "filepath": "extracted_assets\\images\\img_p88_2_4b6b705c.png",
+      "url": "/assets/images/img_p88_2_4b6b705c.png",
+      "width": 800,
+      "height": 800,
+      "hash": "4b6b705c3cd657d619e154e8a6dfa099",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 85",
+      "description": "Image 85 de la page 88"
+    },
+    {
+      "id": "img_88_3",
+      "page": 88,
+      "index": 3,
+      "filename": "img_p88_3_b7f282dc.png",
+      "filepath": "extracted_assets\\images\\img_p88_3_b7f282dc.png",
+      "url": "/assets/images/img_p88_3_b7f282dc.png",
+      "width": 800,
+      "height": 800,
+      "hash": "b7f282dcc1ca4b0b79451e86b6cd9a23",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 86",
+      "description": "Image 86 de la page 88"
+    },
+    {
+      "id": "img_89_0",
+      "page": 89,
+      "index": 0,
+      "filename": "img_p89_0_0e02c830.png",
+      "filepath": "extracted_assets\\images\\img_p89_0_0e02c830.png",
+      "url": "/assets/images/img_p89_0_0e02c830.png",
+      "width": 175,
+      "height": 412,
+      "hash": "0e02c83000da68dc0f83a58ebe676661",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 87",
+      "description": "Image 87 de la page 89"
+    },
+    {
+      "id": "img_89_1",
+      "page": 89,
+      "index": 1,
+      "filename": "img_p89_1_f89beb9b.png",
+      "filepath": "extracted_assets\\images\\img_p89_1_f89beb9b.png",
+      "url": "/assets/images/img_p89_1_f89beb9b.png",
+      "width": 560,
+      "height": 560,
+      "hash": "f89beb9b3b1945fbd4839f090179d35f",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 88",
+      "description": "Image 88 de la page 89"
+    },
+    {
+      "id": "img_89_2",
+      "page": 89,
+      "index": 2,
+      "filename": "img_p89_2_5fab2ed7.png",
+      "filepath": "extracted_assets\\images\\img_p89_2_5fab2ed7.png",
+      "url": "/assets/images/img_p89_2_5fab2ed7.png",
+      "width": 97,
+      "height": 231,
+      "hash": "5fab2ed7c9d0d7ae44effa380114a4fa",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 89",
+      "description": "Image 89 de la page 89"
+    },
+    {
+      "id": "img_90_0",
+      "page": 90,
+      "index": 0,
+      "filename": "img_p90_0_10936265.png",
+      "filepath": "extracted_assets\\images\\img_p90_0_10936265.png",
+      "url": "/assets/images/img_p90_0_10936265.png",
+      "width": 613,
+      "height": 493,
+      "hash": "1093626546d6253f18bcc02aed279ec3",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 90",
+      "description": "Image 90 de la page 90"
+    },
+    {
+      "id": "img_91_0",
+      "page": 91,
+      "index": 0,
+      "filename": "img_p91_0_96919298.png",
+      "filepath": "extracted_assets\\images\\img_p91_0_96919298.png",
+      "url": "/assets/images/img_p91_0_96919298.png",
+      "width": 508,
+      "height": 289,
+      "hash": "9691929863f630891118fa97d113cf03",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 91",
+      "description": "Image 91 de la page 91"
+    },
+    {
+      "id": "img_91_1",
+      "page": 91,
+      "index": 1,
+      "filename": "img_p91_1_b776cb1d.png",
+      "filepath": "extracted_assets\\images\\img_p91_1_b776cb1d.png",
+      "url": "/assets/images/img_p91_1_b776cb1d.png",
+      "width": 525,
+      "height": 231,
+      "hash": "b776cb1d3a89954563111dfc7794fac6",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 92",
+      "description": "Image 92 de la page 91"
+    },
+    {
+      "id": "img_91_2",
+      "page": 91,
+      "index": 2,
+      "filename": "img_p91_2_cbbec7bc.png",
+      "filepath": "extracted_assets\\images\\img_p91_2_cbbec7bc.png",
+      "url": "/assets/images/img_p91_2_cbbec7bc.png",
+      "width": 400,
+      "height": 400,
+      "hash": "cbbec7bc4130e8a10f645bd30ff003f7",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 93",
+      "description": "Image 93 de la page 91"
+    },
+    {
+      "id": "img_91_3",
+      "page": 91,
+      "index": 3,
+      "filename": "img_p91_3_99ca4759.png",
+      "filepath": "extracted_assets\\images\\img_p91_3_99ca4759.png",
+      "url": "/assets/images/img_p91_3_99ca4759.png",
+      "width": 405,
+      "height": 213,
+      "hash": "99ca4759ff8d06ad1fb18f49acd0caff",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 94",
+      "description": "Image 94 de la page 91"
+    },
+    {
+      "id": "img_92_0",
+      "page": 92,
+      "index": 0,
+      "filename": "img_p92_0_87a2d4b2.png",
+      "filepath": "extracted_assets\\images\\img_p92_0_87a2d4b2.png",
+      "url": "/assets/images/img_p92_0_87a2d4b2.png",
+      "width": 292,
+      "height": 189,
+      "hash": "87a2d4b2155abe8d7134ffee75fa9c48",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 95",
+      "description": "Image 95 de la page 92"
+    },
+    {
+      "id": "img_92_1",
+      "page": 92,
+      "index": 1,
+      "filename": "img_p92_1_81f896a7.png",
+      "filepath": "extracted_assets\\images\\img_p92_1_81f896a7.png",
+      "url": "/assets/images/img_p92_1_81f896a7.png",
+      "width": 231,
+      "height": 199,
+      "hash": "81f896a717138de57aec1413ae9f7fb3",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 96",
+      "description": "Image 96 de la page 92"
+    },
+    {
+      "id": "img_92_2",
+      "page": 92,
+      "index": 2,
+      "filename": "img_p92_2_05c10cba.png",
+      "filepath": "extracted_assets\\images\\img_p92_2_05c10cba.png",
+      "url": "/assets/images/img_p92_2_05c10cba.png",
+      "width": 213,
+      "height": 213,
+      "hash": "05c10cba9682a64bafe96733401b23f3",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 97",
+      "description": "Image 97 de la page 92"
+    },
+    {
+      "id": "img_94_0",
+      "page": 94,
+      "index": 0,
+      "filename": "img_p94_0_48e7a756.png",
+      "filepath": "extracted_assets\\images\\img_p94_0_48e7a756.png",
+      "url": "/assets/images/img_p94_0_48e7a756.png",
+      "width": 283,
+      "height": 375,
+      "hash": "48e7a7568a5abdbb0000e2479d75e9f6",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 98",
+      "description": "Image 98 de la page 94"
+    },
+    {
+      "id": "img_94_1",
+      "page": 94,
+      "index": 1,
+      "filename": "img_p94_1_076ae2cc.png",
+      "filepath": "extracted_assets\\images\\img_p94_1_076ae2cc.png",
+      "url": "/assets/images/img_p94_1_076ae2cc.png",
+      "width": 300,
+      "height": 300,
+      "hash": "076ae2cc43755b8eb3aaff0e7c21f044",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 99",
+      "description": "Image 99 de la page 94"
+    },
+    {
+      "id": "img_94_2",
+      "page": 94,
+      "index": 2,
+      "filename": "img_p94_2_f17d41a7.png",
+      "filepath": "extracted_assets\\images\\img_p94_2_f17d41a7.png",
+      "url": "/assets/images/img_p94_2_f17d41a7.png",
+      "width": 283,
+      "height": 340,
+      "hash": "f17d41a74322da4a725d8b5ba0a0909d",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 100",
+      "description": "Image 100 de la page 94"
+    },
+    {
+      "id": "img_94_3",
+      "page": 94,
+      "index": 3,
+      "filename": "img_p94_3_5c71e2df.png",
+      "filepath": "extracted_assets\\images\\img_p94_3_5c71e2df.png",
+      "url": "/assets/images/img_p94_3_5c71e2df.png",
+      "width": 350,
+      "height": 350,
+      "hash": "5c71e2dff15d0b2969f04be71ff44186",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 101",
+      "description": "Image 101 de la page 94"
+    },
+    {
+      "id": "img_96_0",
+      "page": 96,
+      "index": 0,
+      "filename": "img_p96_0_c03b40df.png",
+      "filepath": "extracted_assets\\images\\img_p96_0_c03b40df.png",
+      "url": "/assets/images/img_p96_0_c03b40df.png",
+      "width": 831,
+      "height": 123,
+      "hash": "c03b40df6dde70b5d15856549dc49cb5",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 102",
+      "description": "Image 102 de la page 96"
+    },
+    {
+      "id": "img_98_0",
+      "page": 98,
+      "index": 0,
+      "filename": "img_p98_0_ded34fd2.png",
+      "filepath": "extracted_assets\\images\\img_p98_0_ded34fd2.png",
+      "url": "/assets/images/img_p98_0_ded34fd2.png",
+      "width": 475,
+      "height": 117,
+      "hash": "ded34fd206c4cf5111261650ab2075b3",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 103",
+      "description": "Image 103 de la page 98"
+    },
+    {
+      "id": "img_100_0",
+      "page": 100,
+      "index": 0,
+      "filename": "img_p100_0_57005aca.png",
+      "filepath": "extracted_assets\\images\\img_p100_0_57005aca.png",
+      "url": "/assets/images/img_p100_0_57005aca.png",
+      "width": 674,
+      "height": 537,
+      "hash": "57005acae1a930f1ed2b3c21fca409b1",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 104",
+      "description": "Image 104 de la page 100"
+    },
+    {
+      "id": "img_100_1",
+      "page": 100,
+      "index": 1,
+      "filename": "img_p100_1_606476f2.png",
+      "filepath": "extracted_assets\\images\\img_p100_1_606476f2.png",
+      "url": "/assets/images/img_p100_1_606476f2.png",
+      "width": 60,
+      "height": 109,
+      "hash": "606476f20c2cd2749926773e9cc5cf68",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 105",
+      "description": "Image 105 de la page 100"
+    },
+    {
+      "id": "img_100_2",
+      "page": 100,
+      "index": 2,
+      "filename": "img_p100_2_f2ffe1c5.png",
+      "filepath": "extracted_assets\\images\\img_p100_2_f2ffe1c5.png",
+      "url": "/assets/images/img_p100_2_f2ffe1c5.png",
+      "width": 75,
+      "height": 114,
+      "hash": "f2ffe1c576441929e1866c2e0c6b4ca9",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 106",
+      "description": "Image 106 de la page 100"
+    },
+    {
+      "id": "img_100_3",
+      "page": 100,
+      "index": 3,
+      "filename": "img_p100_3_e8d17da6.png",
+      "filepath": "extracted_assets\\images\\img_p100_3_e8d17da6.png",
+      "url": "/assets/images/img_p100_3_e8d17da6.png",
+      "width": 91,
+      "height": 118,
+      "hash": "e8d17da67a4e34492cd6f4c6feed9c9d",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 107",
+      "description": "Image 107 de la page 100"
+    },
+    {
+      "id": "img_100_4",
+      "page": 100,
+      "index": 4,
+      "filename": "img_p100_4_fd37e95e.png",
+      "filepath": "extracted_assets\\images\\img_p100_4_fd37e95e.png",
+      "url": "/assets/images/img_p100_4_fd37e95e.png",
+      "width": 160,
+      "height": 111,
+      "hash": "fd37e95e0499188a57eac14e4747fcf3",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 108",
+      "description": "Image 108 de la page 100"
+    },
+    {
+      "id": "img_101_0",
+      "page": 101,
+      "index": 0,
+      "filename": "img_p101_0_6bc55167.png",
+      "filepath": "extracted_assets\\images\\img_p101_0_6bc55167.png",
+      "url": "/assets/images/img_p101_0_6bc55167.png",
+      "width": 810,
+      "height": 866,
+      "hash": "6bc551675bcb8aa5bdba723aaf6c4bd9",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 109",
+      "description": "Image 109 de la page 101"
+    },
+    {
+      "id": "img_102_0",
+      "page": 102,
+      "index": 0,
+      "filename": "img_p102_0_90c9e659.png",
+      "filepath": "extracted_assets\\images\\img_p102_0_90c9e659.png",
+      "url": "/assets/images/img_p102_0_90c9e659.png",
+      "width": 343,
+      "height": 195,
+      "hash": "90c9e659617989c9ee24ca6c54e309d2",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 110",
+      "description": "Image 110 de la page 102"
+    },
+    {
+      "id": "img_104_0",
+      "page": 104,
+      "index": 0,
+      "filename": "img_p104_0_a0ded8ff.png",
+      "filepath": "extracted_assets\\images\\img_p104_0_a0ded8ff.png",
+      "url": "/assets/images/img_p104_0_a0ded8ff.png",
+      "width": 610,
+      "height": 448,
+      "hash": "a0ded8ff08b216a429fc15bf69a1599c",
+      "context": {
+        "chapter": {
+          "number": 0,
+          "title": "Glossaire"
+        },
+        "subsection": null
+      },
+      "title": "Figure 111",
+      "description": "Image 111 de la page 104"
+    }
+  ],
+  "tables": [
+    {
+      "id": "table_1_0",
+      "page": 1,
+      "index": 0,
+      "filename": "table_p1_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p1_1.txt",
+      "url": "/assets/tables/table_p1_1.txt",
+      "rows": 1,
+      "columns": 2,
+      "title": "Tableau 1",
+      "content": [
+        " | "
+      ]
+    },
+    {
+      "id": "table_1_1",
+      "page": 1,
+      "index": 1,
+      "filename": "table_p1_2.txt",
+      "filepath": "extracted_assets\\tables\\table_p1_2.txt",
+      "url": "/assets/tables/table_p1_2.txt",
+      "rows": 1,
+      "columns": 2,
+      "title": "Tableau 2",
+      "content": [
+        " | "
+      ]
+    },
+    {
+      "id": "table_1_2",
+      "page": 1,
+      "index": 2,
+      "filename": "table_p1_3.txt",
+      "filepath": "extracted_assets\\tables\\table_p1_3.txt",
+      "url": "/assets/tables/table_p1_3.txt",
+      "rows": 1,
+      "columns": 2,
+      "title": "Tableau 3",
+      "content": [
+        " | "
+      ]
+    },
+    {
+      "id": "table_1_3",
+      "page": 1,
+      "index": 3,
+      "filename": "table_p1_4.txt",
+      "filepath": "extracted_assets\\tables\\table_p1_4.txt",
+      "url": "/assets/tables/table_p1_4.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 4",
+      "content": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "table_19_0",
+      "page": 19,
+      "index": 0,
+      "filename": "table_p19_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p19_1.txt",
+      "url": "/assets/tables/table_p19_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 5",
+      "content": [
+        "Sommaire\nIntroduction et champs d’applications\n1.0 Glossaire\n2.0 Définitions et principes des équipements de levage\n3.0 Inspection d’appareils de levage\n4.0 Sélection d’un équipement de levage\n5.0 Améliorer la sécurité des opérations de levage\n6.0 Norme et formulaire de contrôle et de récupération\nUtilisation sécuritaire du matériel\n7.0 Grues\n13.0 Elingues en fibre synthétiques\n8.0 Palans à chaînes\n14.0 Manilles\n9.0 Palans à câble (Tirfors)\n15.0 Boulons à oeil\n10.0 Poulies à chape ouverte / Moufles\n16.0 Tendeurs\n11.0 Treuils\n17.0 Dispositifs anti-chute\n12.0 Elingues à câbles métalliques\nConseil de sécurité\n18.0 Recommandations concernant l’élingage\n19.0 Chargement/ Déchargement de conteneurs\n20.0 Transfert de personnel\n21.0 Levage au dessus d’équipements sous tension\n22.0 Levage sans contact avec les mains\nTableaux de charges utiles\nTableaux 1 Charges de rupture des câbles métalliques\nTableaux 2 Elingues en câbles métalliques\nTableaux 3 Elingues en fibres synthétiques\nTableaux 4 Elingues en chaîne alliage\nTableau 5 Manilles en alliage\nTableau 6 Boulon à œil\nTableau 7 Anneaux de levage 19\nTableau 8 Tendeurs",
+        ""
+      ]
+    },
+    {
+      "id": "table_20_0",
+      "page": 20,
+      "index": 0,
+      "filename": "table_p20_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p20_1.txt",
+      "url": "/assets/tables/table_p20_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 6",
+      "content": [
+        "Annexes\nAnnexe 1 Equipements de levage / Matrice législative\nAnnexe 2 Densité des matériaux\nAnnexe 3 Liste de contrôle générale avant levage\nAnnexe 4 Echelle de Beaufort des forces du vent et indicateurs visuels\nAnnexe 5 Calculs utiles\n20",
+        ""
+      ]
+    },
+    {
+      "id": "table_21_0",
+      "page": 21,
+      "index": 0,
+      "filename": "table_p21_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p21_1.txt",
+      "url": "/assets/tables/table_p21_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 7",
+      "content": [
+        "1.0 Glossaire\n1.1 Personne compétente\nPersonne dont les connaissances, l'expérience et les compétences, ainsi\nque la formation et l'autorisation de travail à un poste de levage défini\nont été avérées.\n1.2 Charge utile (en anglais Working Load Limit WLL)\nLa charge maximale qu'un appareil de levage est conçu pour lever,\nabaisser ou suspendre. Cette charge maximale ne tient pas compte des\nconditions de service particulières qui peuvent modifier la capacité\nfinale de l'équipement (voir CMU ci-dessous).\nRemarque: la charge utile déterminée par la personne compétente ne\ndoit jamais être dépassée volontairement.\n1.3 Charge maximale utile (CMU) (en anglais Safe Working Load SWL)\nLa charge maximale (telle que certifiée par une personne compétente)\nqu'un appareil de levage est capable de lever, d'abaisser ou de tenir\nsuspendue dans des conditions de service particulières. La CMU peut\ndonc être inférieure à la charge utile.\nRemarque: la charge maximale utile déterminée par la personne\ncompétente ne doit jamais être dépassée volontairement.\n1.4 Facteur de sécurité\nRapport entre la charge qui provoquerait la défaillance d'un élément\nd'un appareil de levage et la charge qui lui est imposée en service (c.-à-d\nla CMU qui permet de tenir compte de critères négatifs tels qu'usure,\ncharges dynamiques, etc.).\n1.5 Code couleur\nMéthode de marquage de l'équipement (normalement avec de la\npeinture) pour indiquer visuellement son statut en matière de\ncertification.\n21",
+        ""
+      ]
+    },
+    {
+      "id": "table_22_0",
+      "page": 22,
+      "index": 0,
+      "filename": "table_p22_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p22_1.txt",
+      "url": "/assets/tables/table_p22_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 8",
+      "content": [
+        "1.06 Numéro de l'installation/d'identification\nNuméro unique donné à un élément d'un appareil de levage à des fins\nd'enregistrement et pour en faciliter la traçabilité.\n1.07 Hauteur libre\nDistance verticale maximale entre l'élément à soulever et le point de\nsuspension de l'appareil de levage, c.-a-d. entre les œils de levage et le\ndessous des poutres du chemin de roulement.\n1.08 Hauteur de levage\nDistance de déplacement possible entre les points de connexion\nsupérieur et inférieur, c.-à-d. les crochets d'un appareil de levage.\n1.09 Dimension établie\nDistance minimum entre le niveau de suspension et la selle de crochet\ninférieure (aussi connu sous le nom de hauteur fermée).\n1.10 Capteurs de charge\nÉlément d'équipement utilisé pour détecter les charges réelles à un\npoint de fixation (p. ex. manille à capteur de charge, cale-étalon ou\ncellule dynamométrique en compression, etc.)\n1.11 Charge d'épreuve\nCharge appliquée en conditions d'essai supérieure à la CMU/CU afin de\nvérifier l'intégrité de l'équipement de levage.\n1.12 Personne compétente (pour l'inspection du matériel de levage)\nIndividu ayant les connaissances et l'expérience requises, aussi bien\nthéoriques que pratiques, sur le matériel et équipement considéré pour\npouvoir certifier avec confiance que celui-ci ne présente pas de défaut\névident et qu'il convient en tous points pour l'opération pour laquelle il\nsera utilisé.\n22",
+        ""
+      ]
+    },
+    {
+      "id": "table_23_0",
+      "page": 23,
+      "index": 0,
+      "filename": "table_p23_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p23_1.txt",
+      "url": "/assets/tables/table_p23_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 9",
+      "content": [
+        "2.0 Définition et principes des équipements de levage\n2.1 Equipements de levage\nCes équipements comprennent les appareils et l’équipement de\nlevage. Ils sont définis comme suit:\nAppareils de levage\nTout dispositif mécanique capable de lever ou d’abaisser une charge.\nEx: Grues, Chariots élévateurs, Nacelles suspendues, Palans, Poutre de\nlevage, Treuils...\nEquipement de levage\nTout dispositif quel qu’il soit, utilisé et conçu pour être utilisé\ndirectement ou indirectement pour relier une charge à un appareil de\nlevage et ne faisant pas partie de la charge.\nEx: élingues à câble, chaîne ou fibre synthétique, crochets et accessoires,\npivots, manilles, boulon à œil, ridoirs, attaches à coin, lève-tôles.\n2.2 Compétent(e)\nDisposant des connaissances, des compétences, ainsi que de\nl’expérience nécessaire à la réalisation de tâches spécifiques.\n2.3 Abrasion\nUsure de surfaces des brins d’un câble.\n2.4 Homologué\nConforme à la norme intérieur de l’entreprise.\n2.5 Chef de manœuvre\nIndividu clairement identifiable ayant la responsabilité partagée\nd’assurer un levage et une dépose de la charge en toute sécurité.\nContrôle également l’opération de levage lors d’un levage en aveugle.\n2.6 Levage en aveugle\nLorsque l’utilisateur de l’appareil de levage n’a pas le chef de manœuvre,\nresponsable de la charge, dans son champ visuel de manière continue.\n2.7 Agent de coordination du levage\nPoint de contact responsable du levage pour une installation particulière\net personne compétente pour les opérations de levage.\n2.8 Résistance à la rupture (câble)\nLa charge mesurée requise pour briser un câble en tension.\n23",
+        ""
+      ]
+    },
+    {
+      "id": "table_24_0",
+      "page": 24,
+      "index": 0,
+      "filename": "table_p24_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p24_1.txt",
+      "url": "/assets/tables/table_p24_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 10",
+      "content": [
+        "2.9 CCU\nUnités de transport de marchandises (Cargo Carrying Unit), tout\néquipement utilisé pour contenir ou transférer une charge. Exemples:\nconteneurs, nacelles, râteliers à bouteilles de gaz, nacelles de transfert\nde personnel, bennes à déchets, ect.\n2.10 Certification\nLa preuve (généralement sous forme de document papier) que le\nmatériel est certifié.\n2.11 Certifié\nProuve la réussite à un examen défini.\n2.12 Câble Lang\nCâble dont les fils composant les torons et ces derniers sont dans le\nmême sens\n2.13 Câblage à gauche ordinaire\nLes fils sont enroulés vers la droite et les torons vers la gauche\n2.14 Plan de levage\nUne fois l’évaluation des risques terminée, un document écrit officiel est\ncrée afin de détailler l’approche à suivre lors de l’opération de levage.\nElle identifiera le personnel et l’équipement requis, ainsi que la méthode\nde levage.\n2.15 Essai en charge\nEssai de traction à un niveau prédéterminé et nouvelle inspection d’un\nélément de l’équipement.\n2.16 Câblage à droite ordinaire\nLes fils sont enroulés vers la gauche et les torons vers la droite\n2.17 Corde de manœuvre\nUne corde de type “anti-nœuds” attachés à une charge suspendue\n(généralement en bas) facilite la stabilisation de cette dernière et permet\nau membre de l’équipage tenant la corde de prévenir toute rotation et\nd’aider au guidage de la charge.\n2.18 Tirfor\nMot anglais décrivant un treuil manuel utilisé pour déplacer/lever des\nobjets lourds par tranches ou pour dérouler le câble.\n24",
+        ""
+      ]
+    },
+    {
+      "id": "table_25_0",
+      "page": 25,
+      "index": 0,
+      "filename": "table_p25_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p25_1.txt",
+      "url": "/assets/tables/table_p25_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 11",
+      "content": [
+        "2.19 Qualifié(e)\nCompétent(e), grâce à un enseignement et une pratique spécialisés. Une\nfois terminé, une formation (comprenant généralement des examens\npermettent de prouver sa compétence) est généralement suivie d’une\ncertification.\n2.20 Principes de l’équipement de levage\nTous les équipements de levage doivent avoir une solidité et une\nconstruction adéquates, être réalisés dans des matériaux de qualité et\ncapables de supporter les charges et contraintes qu’ils auront à\nsupporter. Ils devront être testés conformément aux exigences\nréglementaires (par application d’une charge d’épreuve) et u certificat\nd’essai sera émis avant leur première utilisation. Ce certificat est un\ndocument juridique important.\n2.21 Facteurs de sécurité\nLe facteur de sécurité pour tout équipement de levage doit être adéquat\net basé sur sa conception. Il ne doit jamais être abaissé et sert à\nindiquer la tolérance à l'usure, aux impacts, aux charges dynamiques et\naux surcharges accidentelles. Ces tolérances sont prévues uniquement\npour des circonstances imprévues et ne doivent pas être réduites\nvolontairement. Évitez les surcharges et soyez vigilants pour prévenir les\nsituations accidentelles. En cas de doute, consultez votre superviseur.\n2.22 Certains dispositifs de levage (p. ex. palonniers) peuvent être utilisés de\ndifférentes façons. Il est donc important que le fabricant/fournisseur\ndonne dans chaque cas des renseignements sur l'usage spécifique\nprévu et demande conseil avant de tenter toute utilisation non prévue\n2.23 Certains chapitres de cette norme mentionnent l'angle auquel\nl'équipement est utilisé (p. ex. l'angle entre les brins d'une élingue\nmultiple). Il est extrêmement important de tenir compte de la variation\nde la charge maximale d'utilisation que peut entraîner l'utilisation d'un\ntel équipement à un angle prononcé\n2.24 Un point final à considérer lors de la sélection de l'équipement pour une\nopération donnée est la compatibilité entre les différents éléments\nrequis. Un certain nombre de qualités différentes de matériau(x) sont\nsouvent utilisées pour le matériel de levage. En particulier, on\nremarquera que la taille des crochets, maillons, anneaux et manilles\nvarie considérablement pour une capacité donnée selon le type de\nmétal utilisé. Vous devrez donc vous assurer que chaque élément est\ncorrectement monté et aligné avec son voisin. Un anneau ou une\n25\nmanille intermédiaires pourront pour cela être utilisés en cas de besoin.",
+        ""
+      ]
+    },
+    {
+      "id": "table_26_0",
+      "page": 26,
+      "index": 0,
+      "filename": "table_p26_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p26_1.txt",
+      "url": "/assets/tables/table_p26_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 12",
+      "content": [
+        "3.0 INSPECTION D'APPAREILS DE LEVAGE\nCe chapitre décrits les inspections nécessaires pour garantir la sécurité\ndes opérations de levage.\n3.1\nVérifications avant l'utilisation\nAvant chaque utilisation, il est impératif d'examiner tous les composants\nde l'appareil de levage pour s'assurer qu'ils sont en bon état et sécurisés\npour l'opération prévue.\nAttention! Ne rangez pas le matériel de levage dans des vestiaires ou\ncoffres à outils, car il pourrait être oublié lors d'une inspection et ainsi\nne plus être certifié.\n3.2\nTrois éléments spécifiques à vérifier, en dehors de l'équipement,\nsont :\nI) La CMU requise.\nII) Le n° de l'installation/d'identification.\nIII) Le bon code couleur (le code courant doit être affiché à un endroit\nbien en vue - pour le confirmer, vous adresser à votre superviseur).\nRemarque : Le code couleur n'indique pas l'aptitude à l'usage, mais\nsimplement l'état de certification.\n3.3\nPour plus de détails sur les points à vérifier lors de ces inspections,\nconsultez le chapitre 6 \"Améliorer la sécurité des opérations de levage\"\nde cette norme, les détails variant selon le type d'équipement.\nN'oubliez pas: S'il n'y a aucune CMU, aucun n° d'identification et/\nou aucun CODE COULEUR, ne l'utilisez pas !\n3.4 Appareils de levage\nGrues, chariots élévateurs, à fourche et autres, nacelles suspendues,\npalans motorisés, à main, à levier et à corde, chariots porte-palans et\nattaches de poutres, moufles, treuils, poutres de levage.\nEquipement de levage\n3.5\nElingues à câble, chaîne ou fibre synthétique, crochets et accessoires,\npivots, manilles, boulons à oeil, tendeurs/ridois, attaches à coin, lève-\ntôles.\nConsultez la section 2.0 de cette norme afin d’obtenir la bonne\ndéfinition de cet équipement\n26",
+        ""
+      ]
+    },
+    {
+      "id": "table_27_0",
+      "page": 27,
+      "index": 0,
+      "filename": "table_p27_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p27_1.txt",
+      "url": "/assets/tables/table_p27_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 13",
+      "content": [
+        "4.0 SELECTION D’UN EQUIPEMENT DE LEVAGE\n4.1\nAvant de préparer le levage, il est crucial de déterminer le poids de la\ncharge à soulever. Dans la plupart des cas, ce chiffre est déjà connu.\nCependant, si ce n'est pas le cas, utilisez un dispositif de mesure du\npoids (voir exemples aux figures 4.1 à 5.3 ci-dessous). Vous pouvez\négalement consulter le fabricant ou prendre des mesures et calculer le\npoids en utilisant le tableau de densité des matériaux à l'annexe 2. En\ncas de doute, n'hésitez pas à consulter votre agent de coordination du\nlevage.\nFig. 4.1 Fig. 4.2\nFig. 4.3\nManille de cellule Contrôleur d’état\nDynamomètre\ndynamométrique de charge de grue\n4.2\nAprès avoir déterminé le poids de la charge, il est essentiel de vérifier la\nhauteur libre disponible, car elle influence les angles des élingues et la\ntension réelle sur les brins.\nRemarque: Le poids de l'élingage sélectionné doit être ajouté à celui de\nla charge, et le poids total doit être pris en compte lors du choix de\nl'appareil de levage.\n4.3\nVérifiez la compatibilité des différents composants, car les tailles varient\nselon le matériau utilisé pour la fabrication.\n4.4\nVérifiez bien que l'équipement retenu convient à la tâche spécifique et à\nson environnement, par exemple en cas d'utilisation sous l'eau (tous les\ntypes d'équipements ne conviennent pas pour une telle utilisation !).\n4.5\nUne fois l'équipement sélectionné, il doit subir un examen \"pré-\nutilisation\" comme décrit dans les différents chapitres de cette norme. Si\nun élément échoue à l'examen visuel, il doit être immédiatement mis\nhors service et signalé à un superviseur ou à l'agent de coordination du\nlevage.\n27",
+        ""
+      ]
+    },
+    {
+      "id": "table_28_0",
+      "page": 28,
+      "index": 0,
+      "filename": "table_p28_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p28_1.txt",
+      "url": "/assets/tables/table_p28_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 14",
+      "content": [
+        "5.0 AMÉLIORER LA SÉCURITÉ DES OPÉRATIONS DE LEVAGE\nCe chapitre présente les procédures correctes à suivre lors d'une\nopération de levage.\nCompétences du personnel\n5.1\nToute personne utilisant un appareil ou équipement de levage doit être\nformée à son utilisation et posséder une expérience pratique de ses\ncapacités et des défaillances potentielles. Ces connaissances sont\négalement utiles lors de l'inspection avant utilisation.\nNe jamais dépasser la charge maximale utile\nLors de toute opération de levage, il est impératif de s'assurer que la\n5.2\ncharge imposée à tout appareil de levage ou partie de celui-ci ne\ndépasse pas la CMU/CU. En cas de doute sur cette charge ou celle\nappliquée à un élément particulier de l'engin ou appareil de levage, il est\nrecommandé d'utiliser des capteurs de charge. De plus, il est essentiel\nde veiller à ce que la charge reste stable à tous les stades de l'opération.\nEn général, la charge pourrait être instable si son centre de gravité ne se\ntrouve pas sous le crochet ou s'il est plus haut que le point de fixation\ndes élingues à la charge. D'autres causes d'instabilité peuvent inclure un\nliquide s'agitant dans un récipient, etc.\nUtilisation correcte\nL'équipement doit être utilisé uniquement pour l'usage spécifique pour\n5.3\nlequel il a été conçu et ne doit pas être adapté à un autre type\nd'opération.\nVérification du levage\n5.4\nAvant toute opération de levage, la charge doit d'abord être soulevée à\nune faible hauteur. Ce levage d'essai permet au grutier ou opérateur de\nvérifier qu'il a correctement estimé l'équilibre, la stabilité et la sécurité\ngénérale de la charge alors que celle-ci est encore dans une position\nrelativement sûre. La charge devra être descendue et l'élingage modifié\nen cas de découverte de différences. Cette séquence de levage d'essai\npuis d'ajustement doit être répétée jusqu'à ce que l'opérateur soit\nsatisfait de l'équilibrage, de la stabilité de la charge et de la sécurité du\nlevage.\nAttention ! Ne vous tenez jamais sous une charge; gardez vos mains\néloignées des élingues, etc. (conformément aux consignes de levage\nsans contact avec les mains § 28). Évitez de grimper sur les conteneurs\net matériaux empilés; ne vous tenez jamais entre les charges et des\nmurs ou parois de cales, etc.\n28",
+        ""
+      ]
+    },
+    {
+      "id": "table_29_0",
+      "page": 29,
+      "index": 0,
+      "filename": "table_p29_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p29_1.txt",
+      "url": "/assets/tables/table_p29_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 15",
+      "content": [
+        "5.5 Prévoyez\nAvant de déplacer une charge, préparez son trajet jusqu'au point de\ndépose en enlevant toute obstruction et en s'assurant que le personnel\na quitté la zone.\nAttention! Ne jamais déplacer une charge au-dessus de personnel.\nSi nécessaire, avertissez le personnel pour qu'il quitte la zone avant de\ndéplacer la charge. Évitez également de déplacer la charge au-dessus de\nmachines en fonctionnement ou d'équipements critiques.\nAvant de lever une charge, assurez-vous que le point de repose est\nsuffisamment grand et peut recevoir la charge en toute sécurité. Il\npourrait être nécessaire de prévoir des cales spécifiques, comme des\nblocs de bois, pour permettre l'enlèvement des élingues de la charge. La\ncharge ne doit jamais être abaissée de manière à pincer ou écraser\nles élingues, car cela pourrait les endommager gravement. Lorsque\nvous abaissez la charge, arrêtez-la à faible distance de la surface de\ndépose pour permettre au grutier de la stabiliser, de vérifier la position\ndes cales au sol et de s'assurer qu'aucun personnel ne risque de se\nprendre un pied ou une main dans la charge. Ensuite, abaissez la charge\ncentimètre par centimètre jusqu'à ce qu'elle soit en position. Avant de\ndétendre les élingues, assurez vous que la charge est stable et\nsécurisée. Sinon, soulevez-la légèrement pour repositionner les cales,\npuis reposez-la. Cette procédure de pose d'essai est similaire à celle du\nlevage d'essai et doit être répétée jusqu'à ce que le grutier soit satisfait\nde la dépose de la charge.\n5.6 Marges de sécurité\nLors d'opérations de levage multipoints nécessitant deux appareils de\nlevage ou plus, assurez-vous qu'aucun élément de l'équipement ou\npoint de levage ne soit soumis à une charge dépassant sa charge\nmaximale utile.\nPlusieurs méthodes peuvent être utilisées en fonction de la nature de\nl'opération. Par exemple, lorsque la capacité de levage n'est pas trop\nlimitée, chaque point de levage avec son appareil et ses accessoires doit\nêtre capable de supporter la totalité de la charge.\n29",
+        ""
+      ]
+    },
+    {
+      "id": "table_30_0",
+      "page": 30,
+      "index": 0,
+      "filename": "table_p30_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p30_1.txt",
+      "url": "/assets/tables/table_p30_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 16",
+      "content": [
+        "Autre possibilité, si la capacité est limitée, l'utilisation de capteurs de\ncharge permet de mesurer en continu les charges sur l'équipement aux\npoints de levage individuels au fur et à mesure du déroulement de\nl'opération. Une autre solution consiste à calculer soigneusement les\ncharges qui seront imposées, mais il faudra veiller à ne pas faire de\nfausses hypothèses, en particulier en ce qui concerne le poids et la\nposition du centre de gravité.\nNous recommandons cependant, à moins d'utiliser des capteurs de\ncharge, que la charge maximale utile de chaque point de levage et de\nson équipement associé ne soit pas inférieure à 1,5 fois la part de la\ncharge qu'il est censé recevoir. Au fur et à mesure du déroulement de\nl'opération, on devra contrôler constamment les divers angles de\nl'équipement et les charges, qui indiquent comment le poids est\ndistribué.\n5.7 Dans le cas de charges rigides, on devra déterminer combien de points\nde levage supporteront à tout moment la charge, étant donné qu'en\npratique la majorité de celle-ci pourrait ne l'être que par 2 points. Dans\nun tel cas, la charge maximale utile de chaque point de levage et de son\nélingage ne devra pas être inférieure à la moitié de la charge totale.\n5.8 Mauvaise utilisation de l'équipement\nIl est strictement interdit de dépasser la CMU/CU d'un équipement\nde levage. Vous veillerez en particulier à éviter une surcharge, un\nmauvais élingage et un coinçage des élingues entre la charge et le sol.\nNe jamais tenter de réparer un quelconque élément d'élingage ou de\nl'engin de levage, car toutes les réparations doivent être effectuées par\ndu personnel qualifié formé aux procédures de réparation approuvées\net disposant de la documentation de référence du fabricant. Au cas où\nvous remarqueriez que l'équipement est défectueux, signalez-le à votre\nsuperviseur qui prendra les mesures nécessaires.\nAttention! Toute réparation ou modification non autorisée d'un\néquipement de levage annule automatiquement sa certification. Cela\ns'applique également au démontage de toute partie intégrante d'un\nélingage/ensemble de levage.\nNe jamais tenter de souder un accessoire de levage, qui sera\ngénéralement fabriqué avec des matériaux de haute qualité et nécessite\nun soudage spécial.\n30",
+        ""
+      ]
+    },
+    {
+      "id": "table_31_0",
+      "page": 31,
+      "index": 0,
+      "filename": "table_p31_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p31_1.txt",
+      "url": "/assets/tables/table_p31_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 17",
+      "content": [
+        "5.9 Lorsque vous utilisez un équipement pneumatique, il est essentiel de\nvérifier la pression. Une pression trop élevée peut entraîner une\nsurcharge de la machine, tandis qu'une pression trop faible ne\npermettra pas de lever la CMU/CU. Il est recommandé d'installer une\nunité d'alimentation en air avec un régulateur de pression aussi près\nque possible de l'équipement.\n5.10 Conditions météorologiques\nLors de la préparation de votre opération de levage, il est crucial de tenir\ncompte des conditions météorologiques. Elles peuvent avoir un impact\nnégatif sur la sécurité globale de l'opération pour plusieurs raisons.\n5.11 Vent: Les vents forts ou en rafales peuvent directement affecter la\nstabilité et l'intégrité structurelle d'une grue. Indirectement, ils peuvent\ndéstabiliser une charge ou la faire sortir du rayon maximal de travail de\nla grue. Les vents peuvent également rendre la pose d'une charge plus\ndangereuse dans un espace restreint en la poussant et en la faisant se\nbalancer, ce qui pourrait entraîner des collisions avec des équipements\nou des employés. Des éléments lâches peuvent également tomber. Les\nconstructeurs indiquent parfois les vitesses de vent maximales pour une\nutilisation sécurisée de leurs grues. Cependant, d'autres critères doivent\nêtre pris en compte, tels que la longueur de la flèche, le type de charge\n(les grandes surfaces peuvent agir comme une voile), le poids de la\ncharge (les charges légères sont plus facilement soufflées), etc. La\nplupart des grues sont équipées d'un anémomètre affichant la vitesse\ndu vent en temps réel. Sinon, des anémomètres portables peuvent être\nutilisés.\nFig. 5.1\nAnémomètre\n5.12 Vents marins: Les vents marins peuvent provoquer des vagues et de la\nhoule, ce qui ajoute des dynamiques supplémentaires aux opérations de\nlevage de charges depuis un navire flottant à l'aide d'une grue montée\nsur une plateforme fixe. Par exemple, si le navire descend au moment\noù la charge est saisie, un effet d'« arrachage » se produit, augmentant\nainsi la charge réelle et les contraintes sur la grue. Cela est encore plus\nproblématique lorsque des charges sont transférées d'un navire à\n31\nl'autre, surtout si l'un des navires monte tandis que l'autre descend.",
+        ""
+      ]
+    },
+    {
+      "id": "table_33_0",
+      "page": 33,
+      "index": 0,
+      "filename": "table_p33_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p33_1.txt",
+      "url": "/assets/tables/table_p33_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 18",
+      "content": [
+        "6.0 NORME ET CONTROLE\n6.1 Afin d’aider à créer des conditions de travail plus sûres et d’améliorer les\nprocédures, il vous a été remis cette norme d’élingage et de levage\ndestinée à vous guider et à vous aider à utiliser les équipements de\nlevage en réduisant les risques lors de vos opérations de levage et\nd’élingage.\n6.2 Lorsque vous utiliserez l’un des équipements figurant dans l’index de\ncette norme, vous devrez vous référer aux chapitres le concernant.\nN’oubliez pas: Vous serez souvent responsable de la sécurité de vos\ncollègues et leur vie pourrait un jour dépendre de votre aptitude à\ntravailler sans créer de risques\n33",
+        ""
+      ]
+    },
+    {
+      "id": "table_35_0",
+      "page": 35,
+      "index": 0,
+      "filename": "table_p35_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p35_1.txt",
+      "url": "/assets/tables/table_p35_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 19",
+      "content": [
+        "Grue à tour type\nGrue à piédestal type\nGrue portuaire type\nFig. 7.2\n35",
+        ""
+      ]
+    },
+    {
+      "id": "table_36_0",
+      "page": 36,
+      "index": 0,
+      "filename": "table_p36_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p36_1.txt",
+      "url": "/assets/tables/table_p36_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 20",
+      "content": [
+        "7.3 Pour travailler sans risques avec des grues, il est important de\ncomprendre comment elles fonctionnent. Les plus courantes (voir fig.\n7.1 et 7.2) comprennent une tourelle et une cabine de commande avec\nflèche pivotante, un cadre en A et deux treuils, un pour lever/abaisser la\nflèche et l’autre pour lever et abaisser la charge. Certaines grues\nintègrent un treuil supplémentaire dit auxiliaire permettant de lever plus\nrapidement des charges légères.\nLe mouvement pivotant dit aussi d’orientation est rendu possible par un\npignon sous la grue qui entraîne une couronne fixe sur la tourelle.\nLes six mouvements d’une grue sont donc:\n1) Relevage de la flèche (pour réduire la portée)\n2) Descente de la flèche (pour augmenter la portée)\n3) Levage de la charge\n4) Descente de la charge\n5) Pivotement à gauche\n6) Pivotement à droite\nPivotement\nRelevage de\ngauche\nla flèche\nDescente de Pivotement\nla flèche droite\nLever\nAbaisser\n36",
+        ""
+      ]
+    },
+    {
+      "id": "table_37_0",
+      "page": 37,
+      "index": 0,
+      "filename": "table_p37_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p37_1.txt",
+      "url": "/assets/tables/table_p37_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 21",
+      "content": [
+        "Dans l'intérêt de la sécurité et pour aider le grutier, la grue est 7.4\nnormalement équipée de divers dispositifs qui limitent ces 6\nmouvements pour éviter d'endommager la grue. Le cas échéant, ils\ncomprennent:\nLors du relevage de la flèche, une fin de course l'empêchant d'entrer\nen contact avec les butées arrière.\nLors de l'abaissement de la flèche, une fin de course empêchant\nl'angle de flèche d'être inférieur à environ 15° par rapport à\nl'horizontale. (Cette fin de course peut être neutralisée pour\npermettre de garer la flèche sur son support)\nLors du levage d'une charge, une fin de course empêche de tirer le\ncrochet à travers le mouflage (voir fig. 7.4 ci-dessous).\nLors de la descente de la charge, une fin de course empêche de\nperdre le câble, le crochet et éventuellement la charge.\nDes fins de course de rotation sont quelquefois installées, mais le\ngrutier (et vous, si vous dirigez la grue) devra rester vigilant pour\néviter que la flèche entre en contact avec des obstacles tels que\nd'autres grues, des bâtiments et autres structures. Dans un\nenvironnement offshore, vous aurez à éviter la tour de forage, les\ntorchères, les mâts radio, l'helideck, etc.\n.xorppa\n.\nm4\nm2\nà\neétimil\n.xorppa\nm5,0\nFin de course\nal\nà\n.xorppa\nruetuaH\nMoufle crochet\nm5,1\nFig. 7.4\n37",
+        ""
+      ]
+    },
+    {
+      "id": "table_37_1",
+      "page": 37,
+      "index": 1,
+      "filename": "table_p37_2.txt",
+      "filepath": "extracted_assets\\tables\\table_p37_2.txt",
+      "url": "/assets/tables/table_p37_2.txt",
+      "rows": 1,
+      "columns": 2,
+      "title": "Tableau 22",
+      "content": [
+        " | "
+      ]
+    },
+    {
+      "id": "table_38_0",
+      "page": 38,
+      "index": 0,
+      "filename": "table_p38_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p38_1.txt",
+      "url": "/assets/tables/table_p38_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 23",
+      "content": [
+        "7.5 En plus des fins de course, il existe un autre dispositif de sécurité dont\ndispose le grutier, un indicateur automatique de charge admissible avec\nalarme visuelles et sonores. Il indique à l'opérateur la portée (position\ndu crochet), la CU de la grue à cette portée et la charge réelle sur le\ncrochet. L'alarme visuelle est généralement réglée pour s'allumer à\nenviron 90 % de la capacité de la grue, quelle que soit la portée, tandis\nque l'alarme sonore se déclenche à environ 100% de cette capacité, soit\nen état de surcharge.\n7.6 Certaines grues sont équipées de dispositifs de sécurité\nsupplémentaires tels que des systèmes de protection contre la\nsurcharge automatiques (AOPS) ou manuels (MOPS), des systèmes\nprotections de dépassements majeurs (GOP) ou systèmes de protection\nultime (UPS) et des indicateurs de vitesse du vent (anémomètres) ou de\nsa direction (manche à vent).\n7.7 Lorsque la grue est installée sur une plateforme offshore, la cabine doit\nêtre équipée d'un extincteur, d'une cagoule anti-fumée et d'un gilet de\nsauvetage.\n7.8 Comme tout appareil de levage, les grues ont une charge maximale\nutile/ charge utile, qui dépend du nombre de brins de mouflage.\nÉvidemment, plus ce nombre est grand plus la capacité de levage est\nélevée, mais cela diminue la vitesse de levage. Dans le cas d'un levage\ndepuis/vers un navire, cela peut créer un problème si la vitesse de\nlevage est trop faible pour empêcher la charge de taper sur le pont, etc.\nlorsqu'il se soulève avec la vague suivante. La CMU/ CU baisse\négalement lorsque la portée augmente (voir fig. 7.5 ci-dessous). Referez-\nvous toujours à l'abaque de charges, qui doit être affiché dans la cabine\nde la grue.\nPortée min.\nPortée max.\nCharge max.\n38\nCharge min.\nFig. 7.5",
+        ""
+      ]
+    },
+    {
+      "id": "table_39_0",
+      "page": 39,
+      "index": 0,
+      "filename": "table_p39_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p39_1.txt",
+      "url": "/assets/tables/table_p39_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 24",
+      "content": [
+        "7.9 Responsabilités d'un grutier\nPour recevoir la qualification de grutier, vous devez:\nÊtre âgé(e) d'au moins 18 ans.\nÊtre médicalement apte, en particulier au niveau de l'acuité visuelle\net auditive et des réflexes.\nAvoir une stature permettant d'opérer la grue en sécurité.\nAvoir reçu une formation adéquate à la conduite du type de grue\nque vous aurez à opérer et être capable de juger des distances, des\nhauteurs et des espaces libres.\nÊtre autorisé(e) à conduire la grue.\nÊtre suffisamment familiarisé(e) avec le fonctionnement de la grue\npour pouvoir effectuer les vérifications de routine conformément\naux check-lists spécifiques à cette grue lorsque cela est nécessaire.\nConnaître parfaitement le travail des élingueurs et les signaux à bras\nafin de répondre sans erreur à leurs instructions ainsi qu'à celles du\nchef de manœuvre.\n7.10 L'opérateur de la grue doit parfaitement connaître l'élingage des\ncharges et autres dispositions pour leur levage. Il est responsable de\nl'état de la grue et doit la piloter sans dépasser ses limites de sécurité. Il\ndoit être capable de programmer le système indicateur de charge en\nfonction des conditions ambiantes.\n7.11 Avant d'utiliser la grue, il effectuera également les vérifications\npréalables. Dans certaines circonstances, il pourra être aidé par le\nmécanicien de la grue. Il devra évidemment contrôler les niveaux de\ncarburant, de lubrifiant et de fluide de refroidissement, mais également\nle bon état de la structure. Une fois qu'il aura démarré la grue, il devra la\nlaisser marcher pendant environ 5 minutes (réchauffage), puis vérifier le\nfonctionnement de toutes les commandes et tous les freins, instruments\net dispositifs de sécurité.\n39",
+        ""
+      ]
+    },
+    {
+      "id": "table_40_0",
+      "page": 40,
+      "index": 0,
+      "filename": "table_p40_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p40_1.txt",
+      "url": "/assets/tables/table_p40_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 25",
+      "content": [
+        "7.12 L’opérateur doit signaler tout défaut de fonctionnement au mécanicien\nafin qu’il soit remédié.\n7.13 Si la grue opère dans un parc à tubulaires ou lieu similaire, il y aura des\nréglages/paramètres spéciaux supplémentaires dont il faudra tenir\ncompte. Ainsi, l’état du sol est crucial. Dans l’idéal, le sol sera ferme et\nplane et dans le cas contraire, des mesures devront être prévues pour\nbien répartir la charge entre les stabilisateurs.\nCalage bois, métal\nou fibres\n7.14 L’opérateur doit également s’assurer dans la mesure du possible de\nl’absence de risques sous la surface tels qu’égouts ou conduites de gaz\nou d’eau qui pourraient s’effondrer sous la charge.\n7.15 Une attention toute particulière sera nécessaire en cas de travail à\nproximité des rebords d’excavation ou même d’un quai. Lors d’un\ntransfert de la charge par une poutre stabilisatrice, l’effondrement du\nrebord pourrait être désastreux.\n7.16 Si la grue est utilisée pour poser des pipelines ou éléments similaires en\nplein air, l’opérateur doit être également conscient des risques\npotentiels en hauteur tels que les câbles à haute tension (HT). Une\ndistance minimum recommandée doit être respectée par rapport à de\ntels câbles (Voir 8.41).\n40",
+        ""
+      ]
+    },
+    {
+      "id": "table_41_0",
+      "page": 41,
+      "index": 0,
+      "filename": "table_p41_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p41_1.txt",
+      "url": "/assets/tables/table_p41_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 26",
+      "content": [
+        "7.17 Si la grue doit ou pourrait s’approcher plus près d’un câble sous-tension,\nle courant devra être coupé. Rappelez-vous que les câbles se balancent\nquand le vent souffle et que les hautes tensions peuvent provoquer des\narcs traversant les espaces importants.\n7.18 Le risque pour les grues offshore à piédestal est rarement posé par de\ntels câbles mais plutôt par une autre grue opérant à proximité. Le\ngrutier devra donc en tenir compte lors du déplacement de charges sur\nle pont et être particulièrement vigilant.\n7.19 Dans l’idéal, il devra être en mesure de voir la charge en permanence.\nPuisque cela n’est pas toujours possible, il aura donc besoin de\nquelqu’un pour le guider et faire des signaux. Un chef de manoeuvre,\nqui ne sera pas l’élingueur, devra systématiquement être désigné.\n7.20 Enfin, il devra faire particulièrement attention lorsqu’il déplacera la grue\nvers le haut ou le bas d’une pente ou à travers celle-ci.\nSol de niveaux: rayon correct\nFonctionnement normal sur le sol de niveau\nMontée: la portée diminue\nDans cet exemple, la grue pourrait basculer\nvers l’arrière lorsque la charge est descendue\nDescente: la portée augmente\nDans cet exemple, la grue pourrait basculer\nvers l’avant lorsque la charge pivote hors de\nl’aire d’évolution.\n41",
+        ""
+      ]
+    },
+    {
+      "id": "table_42_0",
+      "page": 42,
+      "index": 0,
+      "filename": "table_p42_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p42_1.txt",
+      "url": "/assets/tables/table_p42_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 27",
+      "content": [
+        "Dans ces exemples, la charge latérale imposée à la flèche pourrait\nfaire basculer la gue ou provoquer l’affaissement de cette flèche.\nFig. 7.8\n42",
+        ""
+      ]
+    },
+    {
+      "id": "table_43_0",
+      "page": 43,
+      "index": 0,
+      "filename": "table_p43_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p43_1.txt",
+      "url": "/assets/tables/table_p43_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 28",
+      "content": [
+        "Responsabilités d’un élingueur et d’un chef de manoeuvre lors des\nlevages\nPour recevoir la qualification d’élingeur ou de chef de manoeuvre, vous\ndevez:\nEtre âgé(e) d’au moins 18 ans.\nEtre médicalement apte, en particulier au niveau de l’acuité visuelle\net auditive et des réflexes.\nEtre physiquement apte à réaliser les tâches et activités associées à\nce rôle.\nAvoir été formé aux principes généraux de l’élingage et être capable\nd’évaluer les poids et les distances, hauteurs et espaces libres.\nEtre capable de sélectionner les équipements d’élingage/levage pour\nles charges à manutentionner.\nComprends les signaux manuels et être capable de donner des\nsignaux clairs et précis.\nEtre capable de diriger les mouvements de la grue et le déplacement\nde la charge tout en assurant la sécurité du personnel et de\nl’installation.\nLa tâche la plus importante de l’élingueur est de préparer et d’élinguer\n7.22\ncorrectement la charge: sélection et montage des accessoires/élingues\nappropriés, protection de l’élingage si nécessaire, et essai de levage pour\nvérifier que la charge est stable.\nDans des circonstances normales, une seule personne sera nécessaire\n7.23\npour signaler et guider la grue (le chef de manoeuvre). Il doit être en\npermanence en contact visuelle avec le grutier et ne pas avoir à\ns’occuper de la charge.\nRemarque : toute personne pourra signaler un arrêt d’urgence en cas\nde danger.\n43",
+        ""
+      ]
+    },
+    {
+      "id": "table_44_0",
+      "page": 44,
+      "index": 0,
+      "filename": "table_p44_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p44_1.txt",
+      "url": "/assets/tables/table_p44_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 29",
+      "content": [
+        "7.24 Dans le cas d'un navire, les communications radio entre la grue, le chef\nde manœuvre et le bord devront être établies avant le levage par-dessus\nbord.\n7.25 Sur une installation offshore, toutes les liaisons radio entre le grutier et\nle navire auxiliaire devront se faire par duplex. En cas de rupture de la\nliaison, le levage devra être immédiatement interrompu et la charge\nstabilisée.\n7.26 Dans les cas où deux grues ou plus seront utilisées simultanément, on\nchoisira des canaux individuels pour chaque grue pour éviter les\nconfusions. Lorsqu'elles sont toutes sur le même canal, on utilisera des\nsignaux à bras pour s'assurer que la bonne grue répond à un ordre\nparticulier donné.\n7.27 Sur des installations offshores, durant les périodes de silence radio,\ntous les talkies-walkies et autres radios devront être coupés et\naucune opération de levage avec des navires ne devra avoir lieu.\nLes levages seront restreints aux opérations sur la plateforme, là où le\ngrutier pourra clairement voir le chef de manœuvre.\n7.28 Opérations de levage spéciales\nLevage en tandem: le levage d'une charge avec deux grues peut être\ndangereux et devra être évité au maximum. Lorsque les dimensions\nphysiques ou le poids de la charge nécessitent l'emploi de 2 grues, cela\nest acceptable si l'opération est méticuleusement préparée. Le levage\ndoit être supervisé par une personne compétente. Il est absolument\nvital d'évaluer avec précision la charge susceptible d'être imposée à\nchaque grue. Il est également nécessaire d'évaluer soigneusement\ncomment et jusqu'où la répartition des charges peut varier au cas où la\ncharge ne serait plus d'aplomb ou si l'une ou les 2 grues devaient\nabaisser ou relever leur flèche, se déplacer ou pivoter. Les câbles de\nlevage ne seraient plus verticaux\nSi n'importe laquelle de ces circonstances venait à se produire, cela\npourrait imposer une charge supplémentaire à l'une ou aux 2 grues, ce\nqui pourrait en compromettre la stabilité ou les endommager\nsérieusement.\n7.29 Un élingage spécial pourrait être nécessaire pour tenir compte de la\nvariation maximale de distribution des charges et de toute charge\nangulaire qui pourrait apparaître durant l'opération en tandem.\n44",
+        ""
+      ]
+    },
+    {
+      "id": "table_45_0",
+      "page": 45,
+      "index": 0,
+      "filename": "table_p45_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p45_1.txt",
+      "url": "/assets/tables/table_p45_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 30",
+      "content": [
+        "7.30 Toutes les opérations de levage en tandem devront être soigneusement\nplanifiées à l'avance par une personne ou équipe compétente. On\nutilisera autant que possible des grues de capacité égale et de\ncaractéristiques similaires. On sélectionnera des grues et des élingages\nayant une marge de capacité supérieure à celle nécessaire si la charge\nétait levée par une seule grue. Il est recommandé, à moins d'utiliser des\ncellules dynamométriques, que chaque grue soit capable de soulever 75\n% de la charge totale à la portée et au rayon de travail requis. En cas\nd'utilisation de cellules dynamométriques, chaque grue devra\nuniquement être capable de soulever 25% de plus que sa part estimée\nde la charge.\nChaque grue doit généralement être capable de soulever 75% de la charge totale\nFig. 7.9\n45",
+        ""
+      ]
+    },
+    {
+      "id": "table_46_0",
+      "page": 46,
+      "index": 0,
+      "filename": "table_p46_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p46_1.txt",
+      "url": "/assets/tables/table_p46_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 31",
+      "content": [
+        "7.31 Une personne compétente doit être désignée pour superviser\nl'opération et les signaux qu'elle fera à chacun des grutiers devront être\nclairs et bien compris. Les opérations de levage à plus de 2 grues\nnécessiteront la réalisation d'évaluations et de contrôles plus poussés.\nRemarque: nous estimons que chaque grue devrait normalement être\ncapable de soulever 75% de la charge totale, mais il est possible de\nréduire cette marge de sécurité dans des cas spéciaux. Dans de tels cas,\nnous vous recommandons de soumettre le plan de levage et les charges\ncalculées à votre organisme de certification pour approbation. Les\nbarges à grues, par exemple, ont leurs propres règles pour le levage en\ntandem comme convenu avec leur organisme de certification, étant\ndonné qu'avec des charges extrêmement lourdes (des centaines de\ntonnes) on ne peut pas s'attendre à ce que chaque engin puisse recevoir\n75 % de la charge\n7.32 Redressement: les opérations de redressement ou « tailing » sont\nsimilaires aux opérations de levage en tandem avec deux grues, mais\nune fois que la charge a décollé du sol, une grue l'abaisse tandis que\nl'autre continue à la lever, ce qui entraîne sa rotation sur 90°.\nAttention! Lorsque la charge doit aussi être tournée sur 90°, le poids\nTOTAL sera transféré d'une des deux grues à l'autre.\nDans l’idéal, chaque grue devrait être capable de soulever\nla charge intégrale, à moins qu’une autre procédure ait été prévue.\nFig. 7.10 46",
+        ""
+      ]
+    },
+    {
+      "id": "table_47_0",
+      "page": 47,
+      "index": 0,
+      "filename": "table_p47_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p47_1.txt",
+      "url": "/assets/tables/table_p47_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 32",
+      "content": [
+        "7.33 Conditions ambiantes: p. ex. vitesse du vent, rafales, etc. pouvant\nprovoquer une surcharge en poussant la charge au-delà du rayon de\ntravail. Lors d'un levage au-dessus d'un plan d'eau ou en mer, des vents\nviolents peuvent réduire la capacité de levage d'une grue en raison des\nfacteurs dynamiques causés par l'augmentation de la hauteur des\nvagues et par la houle. Des tableaux de charge/rayon de travail/état de\nla mer doivent être affichés dans la cabine pour connaître les réductions\nde charge applicables.\n7.34 Avant de commencer le levage, la personne qui le commande a la\nresponsabilité de s'assurer que tout ce qui pourrait retenir la charge a\nété enlevé/démonté (arrimage sur pont, berceau de transport, supports,\netc.) et que le crochet est directement au-dessus du centre de gravité\n(lorsqu'il est connu). Le ou les câbles de levage doivent être verticaux\npour minimiser les mouvements de la charge lorsque l'on commence à\nla soulever.\n7.35 Lors d'un levage sur un navire, le grutier et l'équipage/commandant du\nnavire doivent tous s'assurer que tous les arrimages ont été enlevés et\nque le levage est effectué en sûreté, avec le minimum de\nrotation/balancement et de charges par à-coups. (Lorsque le levage se\nfait entre deux navires flottants, les effets du tangage et du roulis sont\nplus importants car ils peuvent doubler les forces dynamiques\nnormales)\n7.36 Lorsque l'on procèdera au levage de charges lourdes, la capacité de\ncharge maximale dépendra du nombre de pièces de ligne ; elle diminue\nlorsque le rayon de travail augmente. Lors de la préparation d'un levage\nlourd, confirmez le poids de la charge, déterminez le rayon maximum\nrequis pour sa préhension, son transfert et sa dépose, puis consultez\nl'abaque de charge/portée de la grue pour vous assurer que le mouflage\nest adéquat.\n47",
+        ""
+      ]
+    },
+    {
+      "id": "table_48_0",
+      "page": 48,
+      "index": 0,
+      "filename": "table_p48_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p48_1.txt",
+      "url": "/assets/tables/table_p48_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 33",
+      "content": [
+        "7.37 Dans l'idéal, l'opérateur devrait être en mesure de voir en permanence\nla charge, mais selon le type et la conception du navire/des installations,\ncela n'est pas toujours possible. Dans de tels cas, il devra être en contact\nradio avec le chef de manœuvre et/ou être dirigé par un chef de\nmanœuvre en contact visuel avec la charge et clairement visible par\nl'opérateur.\n7.38 Avant tout levage, vérifiez bien l'état et l'équilibrage de tout l'élingage et\nautres accessoires de levage. Au cas où ils devraient être maintenus en\nposition pendant la mise sous tension du/des câbles de levage, utiliser\ndes perches pour tirer/pousser - ne jamais passer les doigts autour des\nélingues ou les agripper.\n7.39 Le grutier devra également décider si une corde stabilisatrice est\nnécessaire pour contrôler la charge une fois suspendue en l'air. Ces\ncordes sont particulièrement recommandées dans le cas de charges\nlongues, pour lesquelles ces premières devront être attachées à l'une ou\naux deux extrémités afin de contrôler les mouvements de rotation. Ces\ncordes doivent être suffisamment longues pour que le ou les opérateurs\nn'aient pas à se tenir sous la charge pendant le levage. Elles doivent\ntoujours être arrimées à la charge, pas à l'élingage (voir § 8.19).\n7.40 Lorsqu'une opération de levage nécessite plus d'un opérateur, il est\nessentiel de s'assurer que les communications entre eux soient\ndistinctes. Pour cela, utiliser de préférence des talkies-walkies.\n7.41 Toutes les instructions données au grutier (à part un arrêt d'urgence),\nque ce soit par contact radio ou par le chef de manœuvre, ne doivent\nêtre données que par le chef de manœuvre ou la personne contrôlant le\nlevage.\nCependant, l'ordre ou le signal d'ARRÊT D'URGENCE peut être donné\npar toute personne voyant une situation dangereuse apparaître\ndurant l'opération en cours.\n48",
+        ""
+      ]
+    },
+    {
+      "id": "table_49_0",
+      "page": 49,
+      "index": 0,
+      "filename": "table_p49_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p49_1.txt",
+      "url": "/assets/tables/table_p49_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 34",
+      "content": [
+        "7.42 Faites particulièrement attention lors du levage de charges ayant une\ngrande surface, qui donnent une grande prise au vent. Si nécessaire,\nprévoyez une/plusieurs cordes de manœuvre, ou pour des charges\nlourdes des câbles reliés à des treuils, pour aider à contrôler la charge.\nPris dans la\nmain courante\nEviter d’attacher une corde de\nmanœuvre à l’élingue\nFig. 7.19\n49",
+        ""
+      ]
+    },
+    {
+      "id": "table_49_1",
+      "page": 49,
+      "index": 1,
+      "filename": "table_p49_2.txt",
+      "filepath": "extracted_assets\\tables\\table_p49_2.txt",
+      "url": "/assets/tables/table_p49_2.txt",
+      "rows": 2,
+      "columns": 2,
+      "title": "Tableau 35",
+      "content": [
+        "Pris dans l\nmain couran | ",
+        " | l\nan"
+      ]
+    },
+    {
+      "id": "table_49_2",
+      "page": 49,
+      "index": 2,
+      "filename": "table_p49_3.txt",
+      "filepath": "extracted_assets\\tables\\table_p49_3.txt",
+      "url": "/assets/tables/table_p49_3.txt",
+      "rows": 1,
+      "columns": 2,
+      "title": "Tableau 36",
+      "content": [
+        " | "
+      ]
+    },
+    {
+      "id": "table_50_0",
+      "page": 50,
+      "index": 0,
+      "filename": "table_p50_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p50_1.txt",
+      "url": "/assets/tables/table_p50_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 37",
+      "content": [
+        "7.43 La majorité des grues offshores sont équipées de crochets en C pour\néviter au maximum qu'ils se prennent dans des obstacles tels que des\nmains courantes, etc. Les grues de plus grande taille sont généralement\néquipées de crochets doubles qui pourraient avoir un effet sur la\nconception de l'élingue (voir fig. 7.21).\nAnneau mou\nAnneau\nAnneau mou métallique\nAnneau\nmétallique\nCrochets en C Crochets doubles\nCrochets doubles\n7.44 Ponts roulants\nLorsque vous opèrerez ce type de grue, vous remarquerez que la\nplupart des commandes ont deux vitesses (lente et normale).\nCommencez toujours par la vitesse lente pour vous assurer que la\ncharge est stable et pour plus de sécurité avant de lever/vous déplacer à\nvitesse normale.\n7.45 Au cas où la charge se balancerait lorsque vous stoppez, ce mouvement\npeut être éliminé en déplaçant la grue dans le sens du balancement\n(lorsque la charge va vers la gauche, avancez la grue dans la même\ndirection).\nRemarque: vous devrez vous entraîner à cette manœuvre avec une\ncharge sûre et dans une aire vaste bien dégagée avant de la faire dans\nles conditions réelles.\n50",
+        ""
+      ]
+    },
+    {
+      "id": "table_51_0",
+      "page": 51,
+      "index": 0,
+      "filename": "table_p51_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p51_1.txt",
+      "url": "/assets/tables/table_p51_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 38",
+      "content": [
+        "7.46 Grues de bord\nLes grues de bord doivent être équipées de:\n• Systèmes de communication qui permettent:\n- D'attirer l'attention du personnel (tel qu'un avertisseur sonore)\n- Une communication verbale avec le personnel (tel qu'un système de\nhaut-parleurs\n- Une communication avec l'équipage, les navires ravitailleurs et la salle\nde contrôle par radio bidirectionnelle\n- Une utilisation mains libres\n• Une cabine d'opérateur fixe doit être équipée d'une caméra de flèche\n• Abaques de charges\n• Indicateur de portée ou d'angle\n• Un dispositif de restriction de la hauteur maximum de la flèche afin\nd'empêcher cette dernière d'être entraînée contre les butées arrière\n• Un dispositif de restriction de la hauteur minimum de la flèche afin\nd'empêcher cette dernière d'être abaissée au-delà de la portée\nmaximale admissible\n• Des disjoncteurs de limite supérieure afin d'empêcher les moufles\nd'être entrainées dans les réas\n• Un dispositif anti-rapprochement des moufles du treuil principal et de\nl'auxiliaire, ou système équivalent lorsqu'un tel dispositif ne peut être\ninstallé\n• Des instruments indiquant de manière continue la charge sur le\ncrochet ainsi que la charge nominale pour chaque portée. L'indicateur\nautomatique de charge doit produire un avertissement clair et continu\nlorsque la capacité nominale de la grue est\n• Dispositif d'arrêt d'urgence\n• Un extincteur portable adapté aux incendies de classes A, B et C\n• Cagoule anti-fumée\n• Gilet de sauvetage\n• Éclairage de sécurité\n• Un étiquetage clair en anglais et dans la langue locale dominante\nindiquant la fonction des commandes et lisible à toute heure du jour ou\nde la nuit.\n• Registre de collision de la grue\n51",
+        ""
+      ]
+    },
+    {
+      "id": "table_52_0",
+      "page": 52,
+      "index": 0,
+      "filename": "table_p52_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p52_1.txt",
+      "url": "/assets/tables/table_p52_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 39",
+      "content": [
+        "L'entretien de routine des grues doit être effectué conformément aux\ndocuments de référence.\nUn carnet de bord de la grue doit être rempli par le grutier.\n7.47 Grues et dispositifs de manutention de bloc d'obturation de puits,\ngrues de manutention de conduites, portiques et pont roulants\nLes grues et dispositifs de manutention de bloc d'obturation de puits,\ngrues de manutention de conduites, portiques et pont roulants doivent\nintégrer:\n• Un dispositif d'arrêt d'urgence accessible au personnel à proximité\n• Un registre des collisions\n• Des butées d'arrêt pour rails/portiques/ponts\n• Un système de protection contre la surcharge\nLes grues se déplaçant sur des rails situés sur le pont (pont principal ou\nniveau supérieur) doivent intégrer un système d'avertissement sonore\net visuel afin d'alerter le personnel travaillant à proximité lors de leur\ndéplacement.\n52",
+        ""
+      ]
+    },
+    {
+      "id": "table_53_0",
+      "page": 53,
+      "index": 0,
+      "filename": "table_p53_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p53_1.txt",
+      "url": "/assets/tables/table_p53_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 40",
+      "content": [
+        "7.48 Procédures radio pour les opérations de levage\nI) Considération générales\nLes messages radio ne devraient être utilisés que pour le travail et pas\npour des conversations oiseuses. Dans la règlementations radio, les\ninjures/grossièretés sont interdites.\nII) Etablissement des liaisons\nLe grutier et le chef de manœuvre doivent établir leurs modalités de\nliaison radio (le centre radio indiquera le canal de service) avant le début\nde toute opération de levage. Chaque fois que le chef de manoeuvre\nchange de position, il doit vérifier la communication avec le grutier\nIII) Canaux radio\nQuand plus d’une grue opèrent dans la zone, chacune doit avoir son\npropre canal. Cela est particulièrement important lors de travaux\nsimultanés avec des navires. Lorsqu’ils participent au levage, il convient\négalement d’établir une communication radio avec ces navires avant de\ncommencer la manutention. On pourra par exemple passer de la VHF à\nl’ UHF ou inversement.\nIV) Grue communiquant sur des canaux différents\nLorsque deux grues sont sur des canaux différents au cours d’un\ntransbordement en tandem, le chef de manœuvre prévues et la position\ndes extrémités de leur flèche afin d’éviter tout contact entre les grues\ndurant les opérations.\nV) Grues communiquant sur le même canal\nCependant, si elles utilisent le même canal, par exemple lors d’un levage\nen tandem, il convient d’utiliser des signaux à bras individuels pour\nchaque grue avant de communiquer par radio. Ces appels radio doivent\ncommencer par la position de la grue concernée sur la\nplateforme/installation, p ex. bâbord/tribord/centre, ect. Ces\nconventions doivent être utilisées à chaque appel pour empêcher toute\nconfusion avec d’autres communications radio\n53",
+        ""
+      ]
+    },
+    {
+      "id": "table_54_0",
+      "page": 54,
+      "index": 0,
+      "filename": "table_p54_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p54_1.txt",
+      "url": "/assets/tables/table_p54_1.txt",
+      "rows": 2,
+      "columns": 2,
+      "title": "Tableau 41",
+      "content": [
+        "VI) Levage en aveugle\nDurant de tels levage en aveugle, lorsque la charge est levée ,\ndescendue ou suspendue pendant de longue périodes, éviter de\nmaintenir le bouton d’émission (radio) enfoncé pendant tout le levage.\nL’pération ne sera sinon pas en en mesure de confirmer ou répondre.\nDe même, évitez de donner des instructions au début du levage puis\ncesser toute communication jusqu’a ce que le levage soit presque\nterminé. Donnez l’ordre de lancement puis continuez à parler au grutier\nà peu près toutes les 10 secondes pour le rassurer en lui indiquant que\nle contact est toujours établi et que vous poursuivez la gestion du\nlevage. Stoppez toujours un mouvement de la grue avant d’en\ncommencer un autre.\nVII) Interférences\nLorsque vous dirigez des opérations de levage, assurez-vous que les\nemployés travaillant à proximité immédiate et communiquant sur le\nmême canal ont v=bien éteint leurs systèmes radios afin de réduire le\nrisque d’interruptions ou d’interférences avec vos instructions.\nAttention! Panne de communication: les communications radio avec le\ngrutier doivent être maintenus en permanence durant les opérations de\nlevage. Au cas où elles seraient interrompues par un tiers ou de manière\npermanente, toutes ces opérations devront cesser sur le champ et ne\nreprendre que lorsque la liaison aura été rétablie.\n54 | ",
+        " | "
+      ]
+    },
+    {
+      "id": "table_56_0",
+      "page": 56,
+      "index": 0,
+      "filename": "table_p56_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p56_1.txt",
+      "url": "/assets/tables/table_p56_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 42",
+      "content": [
+        "IX) Précaution d’emploi et sécurité\nToujours vérifier que les piles/ la batterie sont chargées à fond avant de\nprendre l’appareil pour son poste. S’assurer que le micro n’est pas\nexposé à la pluie. Si vous ne disposez pas d’une coque de transport\npermettant de protéger l’appareil, une mesure de protection simple\nconsiste à utilisier un sachet plastique ou à placer un morceau de film\nétirable sur le micro pour éviter qu’il ne soit trempé. Ne pas transporter\nles talkies-walkies dans la poche. Toujours s’assurer qu’ils sont dans\nleurs sacoche protectrice, attachés au corps soit par une bandoulière à\nl’épaule, soit à la ceinture; tout en protégeant le talkie-walkie cela évitera\ntout risque de blesser quelqu’un s’il tombe d’une certaine hauteur\nlorsqu’il vous échappera ou en montant une échelle.\nAttention ! Etant donné que ces radios ont une puissance d’émission\nnon négligeable, si l’antenne venait à être endommagée et la partie\ncentrale exposée, l’antenne devrait être immédiatement remplacée non\nseulement afin de maintenir des performances optimales, mais aussi\npour des raisons de sécurité pour l’utilisateur.\nX) Silence radio\nSur une installation offshore, pendant les périodes de silence radio, les\nsystèmes radio des grues seront isolées. Aucun levage entre un navire et\nla plateforme ne devra avoir lieu. Les opérations de grutage seront\nrestreintes aux zones où le grutier pourra clairement voir l’opération et\nle chef de manoeuvre.\n56",
+        ""
+      ]
+    },
+    {
+      "id": "table_57_0",
+      "page": 57,
+      "index": 0,
+      "filename": "table_p57_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p57_1.txt",
+      "url": "/assets/tables/table_p57_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 43",
+      "content": [
+        "8.0 UTILISATION SECURITAIRE DES PALANS A CHAINES\n8.1 Sélection\nPour sélectionner un palan, la premère chose à considérer est la CMU /\nCU, qui doit être choisi selon la charge à soulever. Lorsque celle-ci est\ninconnue, on calcule son poids en ajoutant un certain pourcentage à\ntitre de marge d’erreur. La sélection peut alors être effectuée.\nAttention ! Eviter de lever des charges de moins de 10 % de la capacité\ndu treuil et NE JAMAIS lever des charges de moins de 5% de celle-ci, car\nelles pourraient ne pas être suffisantes pour activer le frein à friction.\n8.2 La seconde chose à considérer est la hauteur perdue minimum, étant\ndonné que le manque d’espace vertical est souvent un problème dans\nles espaces confinés (p. ex. salles des machines ou ateliers avec\npalonniers bas). Cette hauteur varie selon le fabricant et/ou le modèle et\npeut influencer la sélection.\n8.3 La troisième chose à considérer est la hauteur libre sous crochet\n(hauteur de levage). Les palans à chaînes de levage ont généralement\nune HLSC standard de 3m (les chaînes de levage font généralement un\ndemi-mètre de moins), mais il existe des modèles avec pratiquement\nn’importe quelle hauteur de levage de 1,5 - 1,8 m, mais peuvent\négalement être équipés de chaînes plus longues si l’application le\ndemande.\n8.4 Vérifications avant utilisation\nAvant d’utiliser un palan à chaîne, il est nécessaire de s’assurer qu’il est\nen bon état de fonctionnement et qu’il est sûr. Les vérifications\nsuivantes doivent être effectuées :\nVérifier que:\nLa CMU/CU est adéquate pour la charge\nLe code couleur est à jour et le palan porte un n° d’installation / Une\nmarque d’identification.\nLes linguets de sécurité sont présents.\nIl n’y a aucun signe d’utilisation abusive, p.ex. crochet étiré, boîtier\nfissuré, chaîne étirée/déformée, etc.\nPour un palan à plusieurs brins, les chaînes ne sont pas tordues\nentre la moufle inférieur et le boîtier de levage (ce qui est\ngénéralement dû au retournement de la moufle inférieur)\nLe bruit du cliquet est net (un clic clair et fort) quand on fait tourner\nla roue de chaîne de levage ou que l’on actionne le levier.\n57\nAttention! Une chaîne de levage étirée ou un levier de manoeuvre\ndéformé pourraient indiquer que le palan a été surchargé.",
+        ""
+      ]
+    },
+    {
+      "id": "table_58_0",
+      "page": 58,
+      "index": 0,
+      "filename": "table_p58_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p58_1.txt",
+      "url": "/assets/tables/table_p58_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 44",
+      "content": [
+        "8.5 Installations des palans\nil est essentiel de s’assurer que l’élément structurel auquel le palan est\nsuspendu est adéquat pour la charge prévue. Celle-ci doit comprendre\nle poids du palan lui-même plus celui des accessoires à crochets tels\nqu’élingues, manilles, chariots, etc.\n8.6 Lorsque l'on utilisera un palan suspendu à un crochet, ce crochet\nsupérieur doit être attaché à son support de manière telle que ce\nsupport s'adapte librement dans le siège du crochet et n'exerce\naucune charge latérale sur le point de contact.\n8.7 Le crochet supérieur doit être muni d'un linguet de sécurité.\n8.8 Après l'installation, on s'assurera que la chaîne de levage et\nles chaînes de charge tombent librement, ne sont pas\ntordues et ne font pas de nœuds. On vérifiera en particulier,\ndans le cas de palans multibrins, que la moufle inférieure ne\ns'est pas retournée entre les boucles de chaîne, tordant la\nchaîne de charge. Dans ce cas, retournez cette moufle jusqu'à\nce qu'il n'y ait plus de tours.\nFig. 8.1\n8.9 Vérifiez la longueur de la chaîne de charge pour vous assurer que le\ncrochet inférieur peut atteindre le point le plus bas requis sans que vous\nayez à sortir toute la chaîne. En effet, dans un tel cas, cela pourrait\nappliquer une contrainte excessive à l'ancrage de l'extrémité libre (qui\nn'est pas réellement un composant porte-charge).\nAttention! Un palan ne doit être utilisé que pour lever et abaisser: les\ncharges ne doivent pas être laissées suspendues sans surveillance,\nmême peu de temps. Un élingage de secours devra être prévu et utilisé\ndans ce cas.\n58",
+        ""
+      ]
+    },
+    {
+      "id": "table_59_0",
+      "page": 59,
+      "index": 0,
+      "filename": "table_p59_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p59_1.txt",
+      "url": "/assets/tables/table_p59_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 45",
+      "content": [
+        "8.10 Toujours\nS'assurer que l'élingage de la charge (élingue/manille/anneaux)\nrepose correctement dans l'anse du crochet inférieur et permet de\nfermer le linguet de sécurité.\nS'assurer que la charge est correctement équilibrée.\nPlacer le palan directement au-dessus du centre de gravité de la\ncharge (s'il est connu)\nS'assurer que tous les obstacles ont été enlevés (p. ex., boulons de\nfixation de la charge).\n8.11 Ne jamais\nCharger les extrémités des crochets.\nNe jamais\nUtiliser la chaîne de charge comme élingue, c.-à-d. enroulée autour\nde la charge et fixée à elle-même\nDéplacer une charge au-dessus de personnes. Forcer de manière\nexcessive sur la chaîne de commande ou le levier pour éviter les\nsurcharges sur le palan.\nUtiliser une rallonge du levier (tube) pour exercer plus de force\n(palans à chaînes).\nLaisser une charge suspendue sans surveillance sans soutien/\nélingage supplémentaire (secondaire).\nRemarque: à l'origine, on recommandait uniquement l'usage de palans\nà chaîne à la verticale puisque les encliquetages fonctionnaient\npurement par gravité. De nos jours, ces dispositifs sont maintenus par\nun voire deux ressorts. Les palans à chaînes peuvent donc être utilisés\njusqua un angie de 45° par rapport à la verticale (p. ex. dans une\nsituation de « traction transversale ». Les palans à levier peuvent quant à\neux être utilisés à l'horizontale.\n59",
+        ""
+      ]
+    },
+    {
+      "id": "table_60_0",
+      "page": 60,
+      "index": 0,
+      "filename": "table_p60_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p60_1.txt",
+      "url": "/assets/tables/table_p60_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 46",
+      "content": [
+        "Attention! Si une charge est laissée suspendue, la zone sous la charge\ndoit être balisée pour éviter tout danger pour le personnel.\nFaire une mise en charge brusque\nLaisser tomber le palan sur le sol\nNe jamais utiliser un palan à chaîne comme élingue ou brin\nd’élingage lors de l’utilisation d’une grue pour un levage. Les palans à\nchaînes sont conçues pour être chargés de manière graduelle, c’est à\ndire, tout en tendant le jeu de la chaîne à l’aide du réducteur. LES\nPALANS A CHAINES NE SONT PAS CONCUES POUR RESISTER A DES\nMISES EN CHARGES BRUSQUES auxquelles ils pourraient être sujets\nlorsque la charge est plus rapidement levée ou même rapidement\n“saisie” par une grue. Il est fort possible que le mécanisme de\nfreinage soi endommagé ou, encore plus probable, subisse une\npanne catastrophique.\nFig. 8.5\n60",
+        ""
+      ]
+    },
+    {
+      "id": "table_61_0",
+      "page": 61,
+      "index": 0,
+      "filename": "table_p61_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p61_1.txt",
+      "url": "/assets/tables/table_p61_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 47",
+      "content": [
+        "Attention! Il est interdit, dans les circonstances décrites ci-dessus, de\n“déclasser” un palan. Aucun fabricant de bonnes foi ne saura accepter\nun tel usage abusif de ses produits.\nLorsqu’un ajustement doit être possible pour le positionnement final ou\npour l’installation de la charge, vous pouvez monter un palan à chaîne\nde sorte que le brin d’élingage supporte l’ensemble des charges\ndynamiques. Une fois le mouvement vertical de la grue terminé et une\nfois que cette dernière peut jouer un rôle de “chariot aérien\nautomobile”, c’est à dire une structure fixe à laquelle le palan à chaîne\npeut être suspendu, ce dernier peut alors supporter la tension de\nl’élingage qui peut donc être déconnecté. A partir de là, le palan à chaîne\npeut être utilisé pour réaliser l’ajustement/le positionnement final requis\nFig. 8.6\n61",
+        ""
+      ]
+    },
+    {
+      "id": "table_62_0",
+      "page": 62,
+      "index": 0,
+      "filename": "table_p62_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p62_1.txt",
+      "url": "/assets/tables/table_p62_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 48",
+      "content": [
+        "8.12 Utilisation d'un palan sous l'eau\nIl peut parfois être nécessaire d'utiliser un palan sous l'eau, manipulé\npar des plongeurs immergés. Il est essentiel de vérifier que le type de\npalan sélectionné est adapté, car le matériau des disques de frein\npourrait ne pas convenir. Consultez le fabricant pour confirmation. Une\nfois le travail terminé, un palan utilisé sous l'eau doit être envoyé à\nun atelier agréé, démonté complètement, purgé à l'eau douce,\nregraissé, remonté et testé avant toute nouvelle utilisation.\n8.13 Palans pneumatiques\nPour les palans pneumatiques, assurez-vous qu'une unité de\nconditionnement d'alimentation en air comprimé avec filtre, graisseur et\ndétendeur est installée et réglée à la pression correcte, afin d'éviter\ntoute contamination de l'air du moteur.\n8.14 Testez le palan sur toute la longueur de la chaîne de charge et vérifiez le\nbon fonctionnement des fins de course haut.\n8.15 Vérifiez les commandes du boîtier et assurez-vous que les boutons\npoussoirs s'enfoncent sans problème et remontent en position neutre\nlorsqu'ils sont relâchés.\n8.16 Par temps extrêmement froid, il est possible d'introduire un produit\ndégivrant via le graisseur pour prévenir tout givrage du moteur\npneumatique.\n62",
+        ""
+      ]
+    },
+    {
+      "id": "table_63_0",
+      "page": 63,
+      "index": 0,
+      "filename": "table_p63_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p63_1.txt",
+      "url": "/assets/tables/table_p63_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 49",
+      "content": [
+        "9.0 L'UTILISATION SÉCURITAIRE DES PALANS A CÂBLE (Tirfors)\n9.1 Les palans à câble, disponibles en trois capacités, peuvent être utilisés\npour lever des charges (avec un facteur de sécurité de 5/1), ainsi que\npour tracter des charges (avec un facteur de sécurité d'environ 3,3/1)\nsoit;\nCU (levage) Capacité (traction)\n800 kg 1 200 kg\n1 600 kg 2 500 kg\n3 200 kg 5 000 kg\n9.2 Sélection des palans\nIl est crucial de distinguer entre l'utilisation de levage et l'utilisation\nde traction :\nLors d'une utilisation de levage, la charge ne reste pas stationnaire\nen cas de défaillance du palan ou de l'un de ses accessoires.\nLors d'une utilisation de traction, la charge reste stationnaire en cas\nde défaillance du palan ou de l'un de ses accessoires.\nChoisissez donc la capacité en tenant compte de cette caractéristique,\nainsi que de la charge à déplacer (voir exemples 1 à 4).\nLevage simple Traction simple\n(en cas de défaillance du (en cas de défaillance du\npalan ou du câble, palan ou du câble,\nla charge tombe) la charge reste\nFig. 9.1\nstationnaire)\nUn palan 3 t peut soulever une charge de 3 t (estimée), mais exercer une\ntraction de 5 t, le facteur de sécurité étant réduit étant donné que\nl'opération est moins risquée.\n63",
+        ""
+      ]
+    },
+    {
+      "id": "table_64_0",
+      "page": 64,
+      "index": 0,
+      "filename": "table_p64_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p64_1.txt",
+      "url": "/assets/tables/table_p64_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 50",
+      "content": [
+        "Tirer vers le haut sur une pente = levage (en cas de défaillance du palan,\nla charge dégringole le long de la pente, donc elle NE RESTE PAS\nstationnaire).\nTraction transversale = levage (en cas de défaillance du palan ou du\ncâble, la charge repart, donc elle NE RESTE PAS stationnaire).\n9.3\nLes palans à câble sont équipés de câbles spéciaux qui résistent à la\nforte pression des mâchoires, évitant ainsi les nids de fils brisés. La\nlongueur standard du câble fourni est de 20 mètres, mais des câbles\nplus courts ou plus longs sont facilement disponibles.\n9.4\nLes palans à câble sont généralement actionnés à la main, mais des\nversions hydrauliques existent pour des besoins spécifiques,\nnotamment pour des levages ou tractions particulièrement longs.\nFig. 9.2\n64\nPalan manuel standard Palan hydraulique",
+        ""
+      ]
+    },
+    {
+      "id": "table_65_0",
+      "page": 65,
+      "index": 0,
+      "filename": "table_p65_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p65_1.txt",
+      "url": "/assets/tables/table_p65_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 51",
+      "content": [
+        "9.5 Sécurité\nIl est impératif d'utiliser le câble correct pour le type de palan, car ces\nappareils sont conçus pour opérer avec un diamètre spécifique qui varie\nselon les fabricants de câbles. Voir tableau ci-dessous.\nFabricant A B C\nDiamètre du Diamètre du\nCU du treuil Diamètre du câble\ncâble câble\n800 kg 8,3 mm 8 mm 8 mm\n1600 kg 11,5 mm 11,2 mm 11 mm\n3200 kg 16,3 mm 16 mm 10 mm\nSi vous utilisez un câble du fabricant « C » sur un palan du fabricant « A\n», vous pourriez vous retrouver dans une situation dangereuse, car\nla corde pourrait glisser et s'échapper de la machine en charge.\n9.6 Vérifications avant l'utilisation\nAvant d'utiliser le palan à câble, assurez-vous toujours qu'il est en bon\nétat de fonctionnement et qu'il peut être utilisé en toute sécurité. Pour\ncela, vérifiez les points suivants :\nLa CMU/CU est adéquate pour la charge.\nLe code couleur est à jour et le palan porte un numéro d'installation\nou une marque d'identification.\nLe crochet de charge, son axe et les paliers du crochet dans les joues\nne présentent pas de signes d'usure, de fissures ou de déformations.\nLe linguet de sécurité du crochet se ferme correctement et le crochet\npeut pivoter librement.\nFaites fonctionner le palan dans les deux sens et vérifiez que les\ngoupilles de cisaillement sont intactes (des goupilles cisaillées ou\nfissurées sont symptomatiques d'une surcharge).\nVérifiez le fonctionnement du levier ou du bouton de relâchement.\n65",
+        ""
+      ]
+    },
+    {
+      "id": "table_65_1",
+      "page": 65,
+      "index": 1,
+      "filename": "table_p65_2.txt",
+      "filepath": "extracted_assets\\tables\\table_p65_2.txt",
+      "url": "/assets/tables/table_p65_2.txt",
+      "rows": 5,
+      "columns": 4,
+      "title": "Tableau 52",
+      "content": [
+        "Fabricant | A | B | C",
+        "CU du treuil | Diamètre du câble | Diamètre du\ncâble | Diamètre du\ncâble",
+        "800 kg | 8,3 mm | 8 mm | 8 mm",
+        "1600 kg | 11,5 mm | 11,2 mm | 11 mm",
+        "3200 kg | 16,3 mm | 16 mm | 10 mm"
+      ]
+    },
+    {
+      "id": "table_66_0",
+      "page": 66,
+      "index": 0,
+      "filename": "table_p66_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p66_1.txt",
+      "url": "/assets/tables/table_p66_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 53",
+      "content": [
+        "Insérez un câble et vérifiez la course des leviers avant et arrière. Sa\nlongueur dépendra du modèle (voir ci-dessous).\nT508 - 55 mm env.\nT516 - 55 mm env.\nT532 - 32 mm env.\nVérifiez le câble et assurez-vous qu'il est du type adapté au palan\nutilisé et qu'il ne présente pas de signe d'usure, de déformation, de\nrouille, etc.\nAssurez-vous que le palan est bien graissé.\nRemarque : Une course plus longue peut indiquer une usure interne,\ntandis qu'une course plus courte peut signaler un encrassement ou des\ndommages dans le mécanisme.\n9.7 Avec les T500 de Tirfor, il est possible de vérifier l'usure interne sans\ndémonter le palan. Pour ce faire, utilisez un câble neuf ou non usé et\nsuivez les étapes suivantes :\n1.Ouvrez le boîtier et insérez le câble neuf.\n2.Refermez le chemin de passage.\n3.Poussez le levier d'ouverture vers le point d'ancrage jusqu'à\nressentir une résistance.\n4.Mesurez la distance entre l'arrière du levier d'ouverture et le rebord\ndu boîtier. Cette distance ne doit pas être inférieure aux valeurs\nspécifiées.\nDimension\nDiamètre “A” (ne\nModèle\ncâble neuf doit pas\nêtre < a)\nT508 8.3 mm 37 mm\nT516 11.5 mm 37 mm\nT532 16.3 mm 68 mm\n66\nFig. 9.3",
+        ""
+      ]
+    },
+    {
+      "id": "table_66_1",
+      "page": 66,
+      "index": 1,
+      "filename": "table_p66_2.txt",
+      "filepath": "extracted_assets\\tables\\table_p66_2.txt",
+      "url": "/assets/tables/table_p66_2.txt",
+      "rows": 4,
+      "columns": 3,
+      "title": "Tableau 54",
+      "content": [
+        "Modèle | Diamètre\ncâble neuf | Dimension\n“A” (ne\ndoit pas\nêtre < a)",
+        "T508 | 8.3 mm | 37 mm",
+        "T516 | 11.5 mm | 37 mm",
+        "T532 | 16.3 mm | 68 mm"
+      ]
+    },
+    {
+      "id": "table_67_0",
+      "page": 67,
+      "index": 0,
+      "filename": "table_p67_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p67_1.txt",
+      "url": "/assets/tables/table_p67_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 55",
+      "content": [
+        "9.8 Comment utiliser le palan (modèles légers)\nEtape 1: Pour utiliser un palan léger, commencez par dérouler le câble\nMaxiflex pour Tirfor en ligne droite entre la machine et la charge, afin\nd'éviter la formation de boucles qui pourraient détordre les torons ou\nvriller le câble une fois tendu.\nV\nV\nL1 L2\np\nB\nA\nC\nFig. 9.4\nEtape 2: Ensuite, retirez la goupille de verrouillage et le goujon d'ancrage\n(C) du palan.\nEtape 3: Pour insérer le câble, penchez le palan jusqu'à ce qu'il repose sur\nl'extrémité du goujon d'ancrage (B). Avec la main gauche, tournez le\nloquet de libération du câble (V) vers l'avant. Sur les modèles sans loquets\nde sécurité, insérez une pièce ou un tournevis dans la fente du point (V) et\ntournez vers l'avant. Avec la main droite, poussez fermement le levier de\nlibération du câble (P) vers l'avant, en direction du goujon d'ancrage,\njusqu'à ce qu'il soit bloqué en position.\nEtape 4: Enfin, assurez-vous que les deux leviers de commande sont\norientés dans le même sens. Insérez l'extrémité compactée en fuseau du\ncâble Maxiflex dans le guide-câble (A) du côté opposé au goujon d'ancrage\njusqu'à ce qu'il passe complètement à travers le palan.\n1 2 3 3.a 4\nFig. 9.5 67",
+        ""
+      ]
+    },
+    {
+      "id": "table_68_0",
+      "page": 68,
+      "index": 0,
+      "filename": "table_p68_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p68_1.txt",
+      "url": "/assets/tables/table_p68_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 56",
+      "content": [
+        "Étape 5: Passez le câble lâche à travers le palan (B) à la main.\nÉtape 6: Fixez l'élingue d'ancrage ou de suspension du palan et replacez\nle goujon d'ancrage en le passant à travers les anneaux de l'élingue.\nRemettez la goupille de verrouillage en place et assurez-vous que le\ncâble Maxiflex passe sous le goujon d'ancrage.\nÉtape 7: Pour refermer le chemin de passage sur le câble, abaissez le\nlevier de libération et laissez-le revenir à sa position initiale.\nÉtape 8: Montez la poignée télescopique sur le levier de manœuvre (L1),\nle plus proche du goujon d'ancrage, ou sur le levier de descente (L2),\nsitué au centre du palan. Bloquez la poignée en la faisant pivoter. Le\npalan est maintenant prêt à être utilisé pour le levage ou la descente.\nÉtape 9: Tirez et poussez la poignée pour faire passer le câble dans le\npalan.\n5 6 7 8\nFig. 9.6\nAttention ! Ne tentez jamais d'actionner simultanément les leviers de\nlevage et de descente, car la charge pourrait être instantanément\nrelâchée. N'utilisez jamais de rallonge (tube) pour faire levier sur l'un des\nleviers de commande, car cela surchargerait le palan.\n68",
+        ""
+      ]
+    },
+    {
+      "id": "table_69_0",
+      "page": 69,
+      "index": 0,
+      "filename": "table_p69_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p69_1.txt",
+      "url": "/assets/tables/table_p69_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 57",
+      "content": [
+        "Comment utiliser les modèles lourds\nL1 Levier de montée\nL2 Levier de descente\nP Levier de libération du câble\nA Guide-câble\nB Sortie du câble\nC Crochet d'ancrage\nV Loquet de libération du câble\nFig. 9.7\n9.9 Étape 1: Déroulez le câble spécial Maxiflex pour Tirfor afin de former\nune ligne droite, et ce afin d'éviter la formation de boucles qui\npourraient détordre les torons ou vriller le câble une fois celui-ci\nÉtape 2: Les instructions suivantes supposent que le crochet d'ancrage\ndu palan est orienté à l'opposé de l'opérateur.\nAvec la main droite, appuyez sur le loquet de libération du câble (V)\nsitué sur le côté du boîtier, à proximité du crochet, et maintenez-le\nenfoncé. Tirez sur le levier de libération du câble\n(P) à l'aide de la main gauche afin de l'éloigner du crochet et jusqu'à ce\nqu'il soit en position verticale. Loquet de libération (V). Continuer de tirer\nsur le levier de libération du câble (P) jusqu'à ce qu'il soit bloqué en\nposition. Les deux mâchoires sont maintenant ouvertes.\nÉtape 3: Après avoir posé le palan au sol, insérez l'extrémité compactée\nen fuseau du câble au point (A). C'est la meilleure position pour\nl'insertion du câble entre les mâchoires. Poussez le câble jusqu'à ce qu'il\nsorte au point (B).\n69",
+        ""
+      ]
+    },
+    {
+      "id": "table_70_0",
+      "page": 70,
+      "index": 0,
+      "filename": "table_p70_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p70_1.txt",
+      "url": "/assets/tables/table_p70_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 58",
+      "content": [
+        "Étape 4: Ancrez le palan et le crochet avec les élingues adaptées et\nassurez-vous que le loquet de sécurité est fermé.\nÉtape 5: Tirez le câble à la main jusqu'à ce qu'il soit tendu jusqu'à la\ncharge.\nÉtape 6: Afin de refermer le chemin de passage sur le câble, tirez sur le\nlevier de libération du câble (P) afin de l'éloigner du crochet, appuyez et\nmaintenez enfoncé le loquet de libération du câble (V) situé sur le côté\ndu palan. Laissez le levier de libération (P) revenir lentement à sa\nposition de départ.\nÉtape 7: Le câble est maintenant fermement bloqué dans la mâchoire\ndu palan. Pour utiliser le palan, placez le levier de manœuvre sur le\nlevier de montée L1, bloquez-le en position en le faisant pivoter, puis\ntirez et poussez le premier levier. Le câble passe dans le palan à la fois\nlorsque l'on tire et pousse le levier.\n70",
+        ""
+      ]
+    },
+    {
+      "id": "table_71_0",
+      "page": 71,
+      "index": 0,
+      "filename": "table_p71_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p71_1.txt",
+      "url": "/assets/tables/table_p71_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 59",
+      "content": [
+        "9.10 Ne jamais\nNe jamais utiliser un palan à câble comme élingage ou brin d'élingage\nlors de l'utilisation d'une grue pour un levage. Les palans à câble sont\nconçus pour être chargés de manière graduelle, en tendant le mou du\ncâble grâce à l'action de « pression alternative » des mâchoires du palan.\nIls ne sont pas conçus pour résister à des mises en charge brusques,\ncomme celles qui peuvent se produire lorsque la charge est rapidement\nlevée ou « arrachée » par une grue. Cela pourrait endommager les\nmâchoires ou, plus probablement, provoquer une panne catastrophique\npermettant au câble de glisser librement dans le palan.\nFig. 9.8\nAttention ! Il est interdit de « déclasser » un palan à câble dans les\ncirconstances décrites ci-dessus. Les fabricants n'acceptent\ngénéralement pas un tel usage abusif de leurs produits.\n71",
+        ""
+      ]
+    },
+    {
+      "id": "table_72_0",
+      "page": 72,
+      "index": 0,
+      "filename": "table_p72_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p72_1.txt",
+      "url": "/assets/tables/table_p72_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 60",
+      "content": [
+        "Pour permettre un ajustement final ou l'installation de la charge, vous\npouvez installer un palan à câble en parallèle avec un brin d'élingage, en\nlaissant un jeu de câble pour que le brin d'élingage supporte toutes les\ncharges dynamiques. Une fois le mouvement vertical de la grue terminé\net celle-ci pouvant servir de « chariot aérien automobile » (une structure\nfixe à laquelle le palan à câble peut être suspendu), le palan à câble peut\nalors supporter la tension de l'élingage, qui peut ensuite être\ndéconnecté. Le palan à câble peut alors être utilisé pour effectuer\nl'ajustement final nécessaire.\n72",
+        ""
+      ]
+    },
+    {
+      "id": "table_73_0",
+      "page": 73,
+      "index": 0,
+      "filename": "table_p73_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p73_1.txt",
+      "url": "/assets/tables/table_p73_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 61",
+      "content": [
+        "10.0 UTILISATION SECURITAIRES DES POULIES A CHAPE OUVERTE /\nMOUFLES\n10.1 Les moufles sont disponibles sous forme simple ou multiple avec un\nchoix d’accessoires de suspension, les plus utilisées étant les émerillons\nsimples ou émerillons à oeil ovale.\nFig. 10.1\n10.2 Le principal fonction d’une moufle simple est de changer le sens de\nlevage ou de traction d’une corde, tandis que les moufles multiples\nréduisent l’effort de traction requis sur le brin d’attaque pour soulever la\ncharge.\n10.3 Sélection\nLa première chose à considérée lors de la sélection de moufles simples\nest la charge à soulever et la charge résultante sur l’élément de\nsuspension (crochet), c’est à dire, charge plus traction de levage (qui\nsera plus élevée que la charge en raison des frottements sur les\npoulies). La charge résultante augmente lorsque l’angle entre les brins\ndiminue.\nRemarque: lorsque la moufle est du type à chape ouverte, elle doit être\nconçue de sorte que le boulon fixant la joue ne puisse être\ncomplètement sorti.\n73",
+        ""
+      ]
+    },
+    {
+      "id": "table_74_0",
+      "page": 74,
+      "index": 0,
+      "filename": "table_p74_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p74_1.txt",
+      "url": "/assets/tables/table_p74_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 62",
+      "content": [
+        "10.4 Traction angulaire\nR = Résultante (charge au sommet)\nW = Poids à soulever\nP = Traction (W + % pour frottement)\nRemarque: il est généralement convenu que le pourcentage à ajouter\npour les frottements est égal à:\nPoulie à roulement à rouleaux: 4% par poulie, W x 1,04\nPoulies à roulements à bagues bronze: 8% par poulie, W x 1,08\nPour calculer la charge résultante R, commencez par déterminer la\ntraction requise P en multipliant la charge à soulever W par 1,04 (poulies\nà roulements) ou par 1,08 (poulies à bagues), puis en multipliant par les\nfacteurs indiqués dans le tableau de la fig 10.2 en fonction de l’angle\nentre les brins.\nAttention ! Lorsque vous utilisez une moufle simple sur la partie\nsupérieur, la charge résultante sur le support auquel celle-ci est fixée\npeut être le double de la charge soulevée, soit dans des conditions\nextrêmes.\nFig. 10.3\n74",
+        ""
+      ]
+    },
+    {
+      "id": "table_75_0",
+      "page": 75,
+      "index": 0,
+      "filename": "table_p75_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p75_1.txt",
+      "url": "/assets/tables/table_p75_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 63",
+      "content": [
+        "Lors de la sélection de moufles multiples, il est essentiel de prendre en\n10.5\ncompte la charge à soulever (W) ainsi que la traction de levage (P). La\ncapacité du treuil détermine le nombre de moufles nécessaires (c'est-à-\ndire le nombre de brins) pour effectuer le levage, ainsi que la charge\ncorrespondante.\nLe tableau ci-dessous vous aidera dans cette sélection.\nMultipliez la charge à soulever (W) par les facteurs indiqués pour obtenir\nla charge résultante sur le crochet (R) et la charge de levage (P) requise.\nFig. 10.4\nExemple :\nW = 16 tonnes\nP = 3 tonnes Y\nCombien de brins sont nécessaires ?\nR = W/P = 16/3 = 5.3\nInversement, divisez la charge de levage ou la capacité du treuil (P) par\nle poids à soulever (W) et comparez le facteur obtenu dans le tableau\npour déterminer le type de moufle et la CMU/CU requise.\n75",
+        ""
+      ]
+    },
+    {
+      "id": "table_76_0",
+      "page": 76,
+      "index": 0,
+      "filename": "table_p76_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p76_1.txt",
+      "url": "/assets/tables/table_p76_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 64",
+      "content": [
+        "10.6 Vérifications avant l'utilisation\nAvant d'utiliser une moufle, assurez-vous de vérifier les points suivants :\nLa CMU/CU est adéquate pour la charge.\nLe code couleur est à jour et la moufle porte un numéro\nd'installation ou une marque d'identification.\nLa moufle ne présente pas de traces d'usure, de fissures ou de\ndéformations dans la gorge.\nSoulevez la moufle pour vérifier l'usure des roulements et des\nbagues.\nFaites tourner les réas pour vous assurer que les roulements et les\nbagues tournent librement.\nVérifiez que tous les trous de graissage sont propres et non bloqués,\net que la moufle est bien graissée.\nAssurez-vous que les accessoires de crochet et d'émerillon ne\nprésentent pas d'usure ou de déformation.\nExaminez les paliers de butée et leurs rondelles, si possible, pour\nvérifier leur bon fonctionnement.\nVérifiez que l'axe supérieur et les sections filetées ne présentent pas\nd'usure ou de déformation.\nSi le crochet supérieur est du type à tige, vérifiez l'état de la tige et de\nl'écrou pour vous assurer qu'ils ne présentent pas d'usure ou de\ndéformation. Vérifiez également que la traverse ne présente pas de\ntraces d'usure.\nAssurez-vous que la manille et l'anneau de suspension ne\nprésentent pas d'usure, de déformations ou de fissures.\nVérifiez que les plaques et étriers latéraux ne présentent pas de\ntraces d'usure, de déformation ou de fissures, en particulier autour\ndu trou de l'axe chargé principal et du trou de suspension supérieur.\nAssurez-vous que les étriers et flasques latéraux ne présentent pas\nd'arêtes vives ou de barbures qui pourraient abîmer le câble.\nVérifiez que les ringots, s'ils sont présents, ne sont pas usés,\ndéformés ou fissurés.\nVérifiez toutes les pièces d'écartement et les boulons d'assemblage\npour vous assurer qu'ils ne sont pas déformés.\nÀ l'aide d'une jauge, vérifiez que le diamètre intérieur des réas est\ncompatible avec le câble du treuil.\n76",
+        ""
+      ]
+    },
+    {
+      "id": "table_77_0",
+      "page": 77,
+      "index": 0,
+      "filename": "table_p77_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p77_1.txt",
+      "url": "/assets/tables/table_p77_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 65",
+      "content": [
+        "Gorge trop petite Gorge trop large\nCâble supporté sur\n(abrasion du câble (aplatissement\n½ de sa circonférence\npar le réa) du câble)\nFig. 10.5\n10.7\nSécurité\nAvant de suspendre la moufle à la charpente de soutien, assurez-vous\nque toutes les goupilles fendues et d'arrêt sont correctement installées.\nPour une moufle à chape ouverte, vérifiez que la goupille d'arrêt est\nbien en place.\nFig. 10.6\n10.8\nAssurez-vous que l'élément de charpente de suspension est assez solide\npour supporter toutes les charges prévues; en cas de doute, consultez\nvotre superviseur.\n77",
+        ""
+      ]
+    },
+    {
+      "id": "table_78_0",
+      "page": 78,
+      "index": 0,
+      "filename": "table_p78_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p78_1.txt",
+      "url": "/assets/tables/table_p78_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 66",
+      "content": [
+        "10.9 Assurez-vous que la moufle est correctement alignée avec le brin\nd'attaque afin d'éviter que le câble ne frotte contre une joue.\n10.10 Si le câble n'est pas manchonné, après mouflage:\nVous devez toujours vous assurer que\nL'extrémité du câble est une attache à coin ouverte\nNe jamais\nFormer l'extrémité du câble à l'aide de serre-câbles, leur utilisation\nétant formellement interdite dans les applications de levage.\nSurcharger la moufle.\n78",
+        ""
+      ]
+    },
+    {
+      "id": "table_79_0",
+      "page": 79,
+      "index": 0,
+      "filename": "table_p79_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p79_1.txt",
+      "url": "/assets/tables/table_p79_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 67",
+      "content": [
+        "11.0 UTILISATION SECURITAIRE DES TREUILS\n11.1 Les treuils peuvent être manuels ou motorisés, les plus courants\nsont les modèles pneumatiques.\nManuel Pneumatique\nFig. 11.1\n11.2 Sélection\nLors de la sélection d’un treuil, l’élément le plus important est la traction\nrequise. Si vous utilisez un mouflage multiple, consultez 11.4 de cette\nnorme qui vous aideras pour les calculs. Ne pas oubliez que la majorité\ndes chiffres indiqués sont basés sur les performances avec tambour à\ndemi plein (la traction diminue quand le tambour se remplit).\nTambour plein - traction min.\nTambour à demi-plein - traction moy.\n(Capacité du câble = 36 % de la valeur totale)\n1er tour - traction max.\nFig. 11.2\nRemarque: la traction avec tambour à demi plein n’a qu’une\nperformance moyenne. Ne pas ce chiffre avec la capacité du câble, qui\nest d’environ 36% du stockage tambour plein à ce point.\n79",
+        ""
+      ]
+    },
+    {
+      "id": "table_80_0",
+      "page": 80,
+      "index": 0,
+      "filename": "table_p80_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p80_1.txt",
+      "url": "/assets/tables/table_p80_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 68",
+      "content": [
+        "11.3 La capacité du tambour, c'est-à-dire la longueur de câble nécessaire, est\nillustrée à la figure 14.3.\nAttention ! Le câble doit avoir une longueur minimale telle qu'en\nposition extrême (les moufles supérieure et inférieure étant les plus\néloignées possible), il reste au moins cinq couches sur le tambour. Cela\npermet d'éviter tout transfert de charge sur l'ancrage au tambour, qui\nn'est PAS un composant porteur.\nPour déterminer la longueur de câble requise, voici un exemple des\nparamètres à considérer : des moufles à 3 et à 2 réas, une moufle\nouverte à corde et un treuil.\nMultipliez la distance entre les centres des moufles par le nombre de\nbrins. p. ex. 35 m x 5 = 175 m\nAjoutez la longueur de corde de la moufle supérieure à travers la\nmoufle ouverte jusqu'au treuil.\np. ex. 30 m + 10 m = 40 m\nAjoutez la longueur autour des réas, c.-a-d., nombre de réas x 0,5\nfois la circonférence du réa.\np. ex. 5 x 600 mm = 3 m\nAjoutez la marge de 5 tours sur le tambour, soit 5 fois la\ncirconférence de celui-ci.\np. ex. 5 x 2,5 m = 12,5 m\nLongueur totale du câble requise.\n= 175 m + 40 m + 3 m + 12,5 m = 230,5 m\n(Lorsque cette longueur représente plus de 36%\nde la capacité du tambour, vérifiez à nouveau la traction\ndonnée pour le treuil dans le catalogue du fabricant).\nFig. 11.3\n80",
+        ""
+      ]
+    },
+    {
+      "id": "table_81_0",
+      "page": 81,
+      "index": 0,
+      "filename": "table_p81_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p81_1.txt",
+      "url": "/assets/tables/table_p81_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 69",
+      "content": [
+        "11.4 Vérifications avant l'utilisation\nAvant d'actionner le treuil, vérifiez que:\nLa CMU/CU est adéquate pour la charge.\nLe code couleur est à jour et le treuil porte un n° d'installation / une\nmarque d'identification.\nLa garde de câble n'est pas endommagée ni tordue, ce qui pourrait\nbloquer et/ou user le câble En l'absence de garde, NE PAS\nUTILISER !\nLe tambour du treuil n'est pas usé, déformé ou fissuré.\nLes bandes et tambours de frein ne sont pas anormalement usés.\nLes bandes et tambours sont propres et ne présentent pas de rouille\nou autre contamination.\nLorsqu'ils sont présents, examinez le frein automatique et les\nressorts d'arrêt, leurs bielles et goupilles.\nVérifiez que la partie exposée de la tige de piston ne présente pas de\nrouille et autre corrosion.\nUne fois le courant coupé, vérifiez que tous les leviers de commande\nreviennent en position neutre quand on les relâche.\nVérifiez que les flèches et marques de sens de défilement sont en\nplace et clairement visibles.\nVérifiez le niveau d'hulle.\nExaminez le socle du treuil et vérifiez qu'il ne présente pas de\nsoudures fissurées, fissures autour des trous de boulons,\ndéformations ou autres dégâts dus à des chocs.\nAncrage:\nVérifiez que les boulons, soudures et autres fixations sont adéquats\net autant que possible, que les éléments du socle métallique ne\nprésentent pas de signes de détérioration.\nRemarque: si un treuil est déplacé, il doit être rééprouvé, à moins que le\nnouvel ancrage ait déjà été certifié.\n81",
+        ""
+      ]
+    },
+    {
+      "id": "table_82_0",
+      "page": 82,
+      "index": 0,
+      "filename": "table_p82_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p82_1.txt",
+      "url": "/assets/tables/table_p82_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 70",
+      "content": [
+        "vérifiez que l'alimentation en air convient pour ce type particulier de\ntreuil (pression, etc.).\nBranchez l'alimentation en air et faites un essai de fonctionnement\ndu treuil.\n11.5 Inspectez visuellement le câble du treuil et vérifiez qu'il ne présente pas:\nD'usure et de rouille et autre corrosion.\nDe traces d'abrasion.\nDe dégâts mécaniques (écrasements, fils brisés...).\n11.6 Commande et pose du câble\nSi un nouveau câble est nécessaire , assurez-vous que vous mesurez\ncorrectement le diamètre pour éviter d'avoir un câble TROP PETIT.\nFig. 11.4\n11.7 Lorsque vous déroulerez un câble d’un touret en bois sur le tambour du\ntreuil, évitez de la courber dans l’autre sens, ce qui abîme le\ncommettage.\n82",
+        ""
+      ]
+    },
+    {
+      "id": "table_83_0",
+      "page": 83,
+      "index": 0,
+      "filename": "table_p83_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p83_1.txt",
+      "url": "/assets/tables/table_p83_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 71",
+      "content": [
+        "11.8 Il est essentiel de déterminer le commettage approprié du câble.\nLorsqu'un câble ou cordage avec le sens de commettage correct est\nenroulé, les boucles sur le tambour se loveront les unes contre les\nautres et maintiendront une nappe régulière lorsque la charge sera\ndéposée. En revanche, avec un câble ou cordage au commettage\nincorrect, les boucles se séparent lorsque la charge est déposée. Lors de\nla reprise de l'enroulement, les boucles de câble peuvent se croiser et se\nchevaucher, entraînant un aplatissement et un écrasement.\nFig. 11.5\nCommettage à gauche - main gauche Commettage à droite - main droite\nSous enroulement Sous enroulement Sous enroulement Sous enroulement\nAttacher à gauche Attacher à droite Attacher à droite Attacher à gauche\nFig. 11.6\n83",
+        ""
+      ]
+    },
+    {
+      "id": "table_84_0",
+      "page": 84,
+      "index": 0,
+      "filename": "table_p84_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p84_1.txt",
+      "url": "/assets/tables/table_p84_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 72",
+      "content": [
+        "11.9 Les treuils les plus utilisées ont un étrier de frein long et un étrier de\nfrein court\nAssurez-vous que l'enroulement du câble est correct par rapport aux\nétriers, car un bobinage incorrect peut :\nRéduire l'efficacité des freins.\nDiminuer considérablement la capacité de treuillage, car la vanne\nrotative fonctionnera en sens inverse.\nFig. 11.7\nRemarque: toute modification du sens d’enroulement doit faire l’objet\nd’une discussion avec le fabricant et être approuvée par celui-ci.\n84",
+        ""
+      ]
+    },
+    {
+      "id": "table_85_0",
+      "page": 85,
+      "index": 0,
+      "filename": "table_p85_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p85_1.txt",
+      "url": "/assets/tables/table_p85_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 73",
+      "content": [
+        "11.10 Angle de déflexion\nNous recommandons que l'angle de déflexion maximal pour un\ntambour lisse ne dépasse pas 1,5°. Pour un tambour rainuré, cet angle\npeut aller jusqu'à 2,5°. Pour atteindre ces valeurs, il peut être nécessaire\nd'utiliser une poulie ou une moufle déflectrice.\n11.11 Dans la majorité des cas, le câble a une cosse fixée par virole, mais dans\ncertaines circonstances (mouflage multiple) la cosse est enlevée et\nl'élément de terminaison doit être monté sur place. La meilleure\nsolution consiste à utiliser des attaches à coin ouvertes, en particulier\npour le levage de charges.\nRemarque 1: les attaches à coin ouvertes ont une efficacité de 80 %. On\nvérifiera visuellement qu'elles ne présentent pas de fissures autour de la\nchape.\nFig. 11.8\nNe pas serrer le brin mort contre le brin sous tension (mauvaise\ntechnique courante).\nRemarque 2: des attaches à coin étendu sont maintenant disponibles et\nintègrent un trou permettant le montage du serre-câble. La sécurité est\nainsi plus grande et l'extrémité est plus propre.\nFig. 11.9\n85",
+        ""
+      ]
+    },
+    {
+      "id": "table_86_0",
+      "page": 86,
+      "index": 0,
+      "filename": "table_p86_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p86_1.txt",
+      "url": "/assets/tables/table_p86_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 74",
+      "content": [
+        "Remarque 3 : Le brin mort (retourné) doit avoir une longueur minimale\nde 6 diamètres pour les câbles standard et de 20 diamètres pour les\ncâbles antigiratoires, mais dans tous les cas, il ne doit pas être inférieur\nà 150 mm.\nLa cosse fixée par virole peut être équipée d'un crochet ou d'une manille\npour la connexion à la charge. La plupart des fabricants privilégient\nl'utilisation d'un crochet de sécurité de type fermé (par exemple, BK) ou\nd'une manille de sécurité. Ces dernières semblent être l'attache\npréférée lorsqu'on utilise le treuil pour le levage de personnes.\n11.12 Il existe différents types de serre-câbles permettant de terminer les\ncâbles sur place ; les trois types les plus courants sont :\n“First Grips” (efficacité: 80 %)\nSerre-câbles “Eureka” (efficacité variable, en moyenne 45% sur la\nbasse d’essais indépendants effectués sur des serre-câbles de 16\nmm à 2 boulons)\nSerre câbles “Bulldog” (seul le type DIN1142 est acceptable efficacité\n80%)\nLes chiffres d’efficacité indiqués ci-dessus sont basés sur la charge de\nrupture du câble indiquée par le fabricant.\nFirst Grip\nEureka peut être Bulldog doit uniquement\nPeut être posé dans\nposé dans les 2 sens être posé dans un sens\nles 2 sens\nFig. 11.10\nRemarque: dans les situations générales d’élingage, l’utilisation de tout\ntype de serre câble à l’extrémité des câbles dans des applications de\nlevage ou de traction est interdite.\n86",
+        ""
+      ]
+    },
+    {
+      "id": "table_87_0",
+      "page": 87,
+      "index": 0,
+      "filename": "table_p87_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p87_1.txt",
+      "url": "/assets/tables/table_p87_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 75",
+      "content": [
+        "11.13 Utilisation des treuils\nToujours\nGarder les mains éloignées du câble/cordage s’enroulant sur le\ntambour.\nTenir le personnel éloigné du câble de levage.\nVérifier que le frein fonctionne correctement avant de lever une\ncharge à une hauteur importante.\nAbaisser la charge lentement pour éviter les charges dynamiques sur\nle treuil et le câble.\n11.14 Ne jamais\nSurcharger le treuil\nL’utiliser pour lever ou descendre du personnel, sauf s’il a été\nspécifiquement conçu à cette fin et possède le marquage afférent.\nChanger de sens d’enroulement/déroulement (bobinage) sans\nconsulter auparavant le fabricant.\nRemarque: lorsqu’ils y a plusieurs treuils dans un espace restreint, il est\nnécessaire pour des raisons de sécurité de marquer les terminaisons\ndes câbles avec l’identité du treuil correspondant.\nAttention ! Lorsque l’on opère un treuil avec le câble passant dans une\nmoufle en hauteur, il est souvent nécessaire de fixer un poids à son\nextrémité pour empêcher qu’il ne se déroule intempestivement sous\nl’effet du poids du segment situé entre la moufle et le treuil. Cela est\nparticulièrement important dans le cas d’un transfert\n11.15 Treuils de transfert (levage) de personnel\nSur les derricks et les plates-formes de forage, les treuils sont\nfréquemment utilisés pour le transfert de personnel. Ces treuils doivent\nêtre soit spécialement conçus à cet effet, soit modifiés et recertifiés pour\ncette utilisation. Dans tous les cas, ils doivent porter la mention \"apte au\ntransfert de personnes\". Aucun autre type de treuil ne peut être utilisé\npour le transfert de personnel.\nAttention ! Lors de telles opérations, ne JAMAIS laisser le treuil sans\nsurveillance, quelles que soient les circonstances\n87",
+        ""
+      ]
+    },
+    {
+      "id": "table_88_0",
+      "page": 88,
+      "index": 0,
+      "filename": "table_p88_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p88_1.txt",
+      "url": "/assets/tables/table_p88_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 76",
+      "content": [
+        "12.0 UTILISATION SECURITAIRE DES ELINGUES CABLES\n12.1 Les élingues en câbles métalliques sont souvent fabriquées avec ces\nterminaisons formées par épissure mécanique couramment appelées\nviroles, gaines ou manchons. Le œil de l’élingue peut être muni ou non\nde cosses en fonction de l’application.\n12.2 Sélection\nLes élingues à câbles sont les plus utilisées car elles sont très\npolyvalentes et relativement légères par rapport à leur résistance.\nElles peuvent être simples (monobrin) ou à brins multiples.\nElingues simples et sans fin\nCosse Cosse\nCosse\nAnneau mou\nCosse\nAnneau mou\nSans fin\nFig. 12.1\n88",
+        ""
+      ]
+    },
+    {
+      "id": "table_89_0",
+      "page": 89,
+      "index": 0,
+      "filename": "table_p89_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p89_1.txt",
+      "url": "/assets/tables/table_p89_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 77",
+      "content": [
+        "Elingues multi-brins\nDeux brins Trois brins Quatre brins\nFig. 12.2\n12.3 La majorité des élingues utilisées doivent être munies de cosses pour\nutiliser au mieux la résistance du câble, car avec des élingues à boucle\nsouple, la résistance est moindre si l’oeil supportant la charge a un faible\ndiamètre.\n12.4 Charges maximale d’utilisation\nLa CMU est fixé en fonction :\n1. Du diamètre.\n2. De la construction (type d’âme).\n3. De la résistance à la traction du fil métallique.\nLa construction du câble est choisie en fonction d’une application\nspécifique, les câbles métalliques avec âme acier offre une meilleur\nrésistance à l’écrasement et à l’aplatissement lors du treuillage par\nexemple. Tandis que ceux à âme acier et fibres conviennent pour la\nfabrications d’élingues.\nA titre d’exemple la figure 12.3 définit la charge maximal d’une élingue à\ncâble (6 x 36 ou 6 x 19)\nAttention ! Ce tableau est donnée à titre d’exemple et ne peux pas être\nutilisé pour une autre composition de câble. Dans ce tableau la charge\nd’utilisation maximal en tonnes est définie pour les différents modes\nd’élingage.\n89",
+        ""
+      ]
+    },
+    {
+      "id": "table_90_0",
+      "page": 90,
+      "index": 0,
+      "filename": "table_p90_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p90_1.txt",
+      "url": "/assets/tables/table_p90_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 78",
+      "content": [
+        "Fig.12.3\n90",
+        ""
+      ]
+    },
+    {
+      "id": "table_91_0",
+      "page": 91,
+      "index": 0,
+      "filename": "table_p91_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p91_1.txt",
+      "url": "/assets/tables/table_p91_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 79",
+      "content": [
+        "12.5 Construction types\n6 x 36\n6 x 19\nPlus flexible Moins flexible\nMoins résistant à l’usure Plus résistant à l’usure\nFig.12.4\n12.6 Avantage des élingue à câbles\nA solidité égale, les élingues câble sont plus légères que des élingues à\nchaîne, elle risque de moins abimer les charges fragiles ou de surfaces\ndélicates. Elles absorbent également mieux les charges dynamiques.\n12.7 Lorsque l’élingue est munie de crochets le seul type autorisé est le type\n“fermé”.\nFig.12.5\nA faire et à ne pas faire\nNe jamais passer une élingue à travers un crochet ou une manille !\n91",
+        ""
+      ]
+    },
+    {
+      "id": "table_92_0",
+      "page": 92,
+      "index": 0,
+      "filename": "table_p92_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p92_1.txt",
+      "url": "/assets/tables/table_p92_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 80",
+      "content": [
+        "Toujours utiliser une manille pour connecter deux élingues\nAssurer vous que la longuer de l’anneaux\nest ≥ 2 x le diamètre du crochet\n92",
+        ""
+      ]
+    },
+    {
+      "id": "table_93_0",
+      "page": 93,
+      "index": 0,
+      "filename": "table_p93_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p93_1.txt",
+      "url": "/assets/tables/table_p93_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 81",
+      "content": [
+        "12.8 Vérifications avant utilisation\nLes vérifications suivantes doivent être effectuées avant d’utiliser une\nélingue :\nLa CMU est adéquate pour la charge\nLe code couleur est à jour et l’élingue porte un n° d’installation / une\nmarque d’identification.\nExaminez chaque brin individuel sur toute sa longueur et vérifiez\nqu’il ne présente pas d’usure, de corrosion, d’abrasion ou de fils\nbrisés.\nExaminez chaque virole ou manchon et vérifiez qu’il a la taille\ncorrecte.\nLa virole/ manchon ne doit pas présenter de fissures ou\ndéformations.\nVérifiez que chaque cosse a été posée correctement.\nExaminez le câble autour des cosses, où il subit souvent une\nabrasion due au fait que l’élingue est traînée sur des surfaces rêches.\nExaminez l’anneau/ maillon de tête et l’assemblage quadruple et\nvérifiez l’absence d’usure, de corrosion et de fissures.\nLorsque des crochets sont utilisés, vérifiez l’absence d’usure, de\ncorrosion et de fissures et vérifiez que les linguets de sécurités\nfonctionnent.\n93",
+        ""
+      ]
+    },
+    {
+      "id": "table_94_0",
+      "page": 94,
+      "index": 0,
+      "filename": "table_p94_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p94_1.txt",
+      "url": "/assets/tables/table_p94_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 82",
+      "content": [
+        "12.9 Sécurité\nPour les élingues à plusieurs brins, la capacité maximale d'utilisation\n(CMU) indiquée reste valable tant que l’angle de levage ne dépasse pas\n90°. Il est impératif de ne pas excéder cet angle, sauf si l’élingue a été\nspécifiquement conçue, testée et marquée pour supporter un angle\nsupérieur.\n90° max\n90° max\nFig.12.6\n12.10 Lors de l’utilisation d’élingues simples en paire ou d’élingues sans fin, il\nconvient de prendre en compte les pertes de capacité liées à l’angle de\nlevage et à la configuration géométrique.\n12.11 Tire-câbles, chaussettes et « Chinese Fingers »\nLes tire-câbles sont principalement destinés à la traction ou au maintien\nde câbles métalliques, de cordages ou de tubes. Fabriqués à la main à\npartir de fil d’acier galvanisé haute résistance, ils doivent être utilisés\navec précaution.\nFig.12.7\n94\nTire-câbles standard un et deux yeux",
+        ""
+      ]
+    },
+    {
+      "id": "table_95_0",
+      "page": 95,
+      "index": 0,
+      "filename": "table_p95_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p95_1.txt",
+      "url": "/assets/tables/table_p95_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 83",
+      "content": [
+        "12.12 Chaque modèle possède une charge de rupture définie. L’utilisateur doit\nappliquer un coefficient de sécurité adapté à l’usage prévu :\nPour les opérations de traction classiques : un facteur de sécurité de 3\nest recommandé (capacité = charge de rupture ÷ 3).\nPour les opérations de levage plus sensibles : un facteur de 5 est requis\n(capacité = charge de rupture ÷ 5).\nCe facteur vise à prévenir la rupture du tire-câble sous l’effet de la\ncharge, mais ne garantit pas l’adhérence sur le câble tracté ou soulevé,\nqui dépendra de son état et de sa préparation.\nAttention ! Certains fabricants déconseillent l’usage de leurs tire-câbles\npour le levage. Il est donc essentiel de consulter leur documentation\ntechnique.\n12.13 Tire-câbles pour traction\nUtilisés pour tirer des câbles, tubes ou cordages, notamment lors de\nl’installation sur des grues ou des poulies. Les diamètres standards vont\nde 4 à 115 mm, avec des variantes adaptées à la charge. Des modèles\nsur mesure peuvent être fabriqués pour des diamètres allant jusqu’à\n600 mm ou plus.\nOn distingue deux types :\nTire-câbles de traction : pour des charges légères (tubes plastiques,\ncordages), un seul fil métallique peut suffire. Pour des charges\nlourdes, on utilise des tresses simples, doubles ou triples.\nTire-câbles porteurs : similaires aux précédents, mais intégrés à\nl’installation. Ils peuvent comporter une ou deux boucles selon les\npoints d’ancrage.\nLa longueur standard varie de 600 à 1 000 mm, mais des versions plus\nlongues existent, notamment pour les tresses triples.\n95",
+        ""
+      ]
+    },
+    {
+      "id": "table_96_0",
+      "page": 96,
+      "index": 0,
+      "filename": "table_p96_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p96_1.txt",
+      "url": "/assets/tables/table_p96_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 84",
+      "content": [
+        "12.14 Recommandations d’usage\nLes tire-câbles à extrémité libre peuvent servir de manchon pour tirer un\ncâble de remplacement, mais ne doivent pas être utilisés si un risque de\nrotation entre les câbles existe (ex. : câbles électriques). Dans ce cas, il\nest préférable d’utiliser deux tire-câbles reliés par un émerillon.\nÉviter de superposer deux tire-câbles, car cela compromet leur efficacité\net peut les endommager.\nPour faciliter l’installation de longues sections de câble, on peut ajouter\ndes points de traction intermédiaires à l’aide de tire-câbles fixés à\nintervalles réguliers.\nFig.12.8\n96",
+        ""
+      ]
+    },
+    {
+      "id": "table_97_0",
+      "page": 97,
+      "index": 0,
+      "filename": "table_p97_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p97_1.txt",
+      "url": "/assets/tables/table_p97_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 85",
+      "content": [
+        "12.15 Inspectez visuellement le tire-câble avant l'emploi.\nSi vous l'installez sur un câble métallique, assurez-vous que\nl'excédent de lubrifiant a été enlevé.\nSélectionnez la taille correcte de tire-câble pour le diamètre de\nl'objet à tirer.\nSélectionnez le tressage correct requis (simple, double ou triple).\n12.16 Instructions générales pour la pose de tire-câbles\nPour faciliter les choses, l'extrémité libre du tire-câble peut être\npressée contre une surface plate afin d'évaser les extrémités des fils\nde la tresse, ce qui facilitera le montage de cette extrémité sur le\ncâble, etc.\nEnfoncez le tire-câble le long du câble, en poussant de l'extrémité à\nboucle vers l'extrémité libre, ce qui provoque la légère expansion de\nla gaine nécessaire pour la faire passer sur le câble.\nLes tire-câbles à une boucle doivent être tirés au maximum sur le\ncâble de façon à ce que celui-ci les traverse de part et d'autre. Avec\nles modèles à deux boucles, le câble peut être enfoncé dans le\ntire-câble passant entre les deux boucles, aussi loin que nécessaire.\nAssurez-vous que le tire-câble repose uniformément et fermement\ncontre le câble en plaçant les deux mains autour de la circonférence\ndu câble.\nPour les modèles à une seule boucle, commencez par l'extrémité\nbouclée.\nPour les modèles à deux boucles, commencez à l'extrémité libre,\nsans boucles.\nSerrez au maximum sur la gaine et déplacez-vous vers l'autre\nextrémité du tire-câble en glissant fermement les mains sur la gaine\ntressée afin qu'elle soit bien serrée contre le câble.\nPour encore augmenter le serrage, vous devez poser un collier\nautour du tire-câble à l'extrémité ouverte (du côté opposé aux\nboucles). Appliquez la traction lentement pour permettre au tire-\ncâble de se contracter et de serrer.\n97",
+        ""
+      ]
+    },
+    {
+      "id": "table_98_0",
+      "page": 98,
+      "index": 0,
+      "filename": "table_p98_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p98_1.txt",
+      "url": "/assets/tables/table_p98_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 86",
+      "content": [
+        "Traction sur l’extrémité à boucles Collier\nFig.12.9\nNe jamais\nSurcharger ou exercer une traction forte et brutale sur un tire-câble.\nUtiliser un tire -câble s’il présente un quelconque signe d’avarie ou\nd’usure (ce que vous vérifiez avant chaque utilisation).\nAttention ! Si à un moment quelconque un des fils de la nappe tressé\nvenait à se casser, arrêtez immédiatement de tier. De telles cassures\nsont généralement causées par une surcharge ou une application\ninégale de la force de traction.\nLors de l’utilisation de ces tire-câbles, portez un équipements protecteur\n(gants) en permanance.\n98",
+        ""
+      ]
+    },
+    {
+      "id": "table_99_0",
+      "page": 99,
+      "index": 0,
+      "filename": "table_p99_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p99_1.txt",
+      "url": "/assets/tables/table_p99_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 87",
+      "content": [
+        "13.0 UTILISATION SECURITAIRE DES ELINGUES EN FIBRES SYNTHETIQUES\nIl est essentiel de surveiller rigoureusement les conditions de stockage\net de manipulation des élingues en fibres synthétiques afin de préserver\nleur intégrité et d’éviter toute contamination. En raison de leur\nconception, ces élingues peuvent perdre une grande partie de leur\nrésistance en cas de coupure, de déchirure, d’effilochage ou de rupture\ndes coutures.\nSi la gaine de protection présente des dommages ou des entailles,\nl’élingue doit être immédiatement mise hors service. De manière\ngénérale, les élingues en fibres synthétiques et les sangles doivent être\nretirées du service après un an d’utilisation, sauf dans le cas\nd’applications spécifiques. Pour ces dernières, une inspection rigoureuse\nest nécessaire pour prolonger leur usage au-delà de cette période.\nEn raison de la sensibilité du matériau, la capacité maximale d’utilisation\n(CMU) peut être fortement réduite en cas de défauts visibles. Il est donc\nimpératif de procéder à un examen minutieux avant chaque utilisation\net de ne pas réutiliser une élingue présentant l’un des défauts\nmentionnés.\n13.1 Les élingues en fibres synthétiques (plates et rondes) sont\ndisponibles en cinq types de base:\nFormat Applications\nA boucles cousues Multiples\nAvec maillons en D Simple direct ou brassière\nAvec maillons en D et Simple direct, brassière/ maillon\nmaillon mouflage mouflage nœud coulant\nSans fin (plate - sangle) Multiples\nSans fin (ronde) Multiples\n99",
+        ""
+      ]
+    },
+    {
+      "id": "table_100_0",
+      "page": 100,
+      "index": 0,
+      "filename": "table_p100_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p100_1.txt",
+      "url": "/assets/tables/table_p100_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 88",
+      "content": [
+        "Avec mailons en D et mouflage\nAvec maillons en D\nSans fin (plate)\nA boucle cousues\nFig.13.1\n13.2\nCapacité de levage et choix du type d’élingue\nLa largeur de l’élingue influence directement sa capacité de levage :\nUne élingue simple (épaisseur simple) offre environ 1 tonne de capacité\npar 50 mm de largeur.\nUne élingue double (double épaisseur) offre environ 1 tonne par 25 mm\nde largeur.\n13.3\nLe choix entre une élingue plate ou ronde dépend du mode d’élingage\nprévu, car celui-ci impacte la CMU. Il convient donc d’appliquer un\nfacteur de mode (M) adapté à la configuration d’utilisation.\nElingage Nœud coulant\nPanier 0° Panier 90°\nsimple direct M = 0,8 M = 2 M = 1,4\nM = 1\nFig.13.2\n100",
+        ""
+      ]
+    },
+    {
+      "id": "table_101_0",
+      "page": 101,
+      "index": 0,
+      "filename": "table_p101_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p101_1.txt",
+      "url": "/assets/tables/table_p101_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 89",
+      "content": [
+        "13.4 Pour les opérations courantes, les élingues rondes ou estropes à\nboucles souples sont recommandées pour leur polyvalence. Toutefois,\nen cas d’usage fréquent, les modèles avec maillons en D sont\npréférables en raison de leur meilleure résistance à l’usure.\n13.5 Pour les charges fragiles ou aux formes complexes (comme les vannes,\narmoires de commande, actionneurs, etc.), les élingues rondes sont à\nprivilégier. Leur souplesse et leur capacité à former un nœud coulant\nassurent un maintien sûr sans endommager la charge.\nFig.13.3\nLonguer utile efficace (entre points de charges)\n13.6 Vérifications avant utilisation\nAvant d’utiliser des élingues plates ou rondes, vous devez les examiner\nsur toute leur longueur pour vous assurer que :\nLa CMU/CU est adéquate pour la charge\nLe code couleur est à jour\nL’élingue porte un n° d’installation\nIl n’y a pas de coupures, déchirures ou effilochages\nDe dégâts dus à des produits chimiques\nOu à la chaleur\nDe pénétration de corps étrangers dans les fibres\nDe déformation/ d’usure des oeillets métalliques\nAttention ! Lorsque de l’inspection délingues rondes et en cas de\ndécouverte de coupures dans la gaine protectrice, ces premières doivent\nêtre mises au rebut car la résistance de l’âme intérieur pourrait être\ncompromise.\n101",
+        ""
+      ]
+    },
+    {
+      "id": "table_102_0",
+      "page": 102,
+      "index": 0,
+      "filename": "table_p102_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p102_1.txt",
+      "url": "/assets/tables/table_p102_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 90",
+      "content": [
+        "13.7 Consignes de sécurité\n13.8 Les élingues en fibres synthétiques sont destinées à un usage sur site ou\nsur installation, mais ne doivent pas être utilisées pour le transport\nentre ces lieux.\n13.9 La majorité est fabriquée en polyester, ce qui leur confère une bonne\nrésistance à l’eau de mer, aux hydrocarbures et à de nombreux acides à\ntempérature ambiante. En revanche, elles sont vulnérables aux bases\nalcalines, qui peuvent dégrader le polyester.\n13.10 Il est crucial d’éviter tout contact avec des arêtes vives, qui risqueraient\nde couper ou d’endommager l’élingue lors de la prise de charge. Des\nprotections doivent systématiquement être mises en place autour de\nces zones à risque.\nN\nLes sangles risque de ce couper\nFig.13.4\nToujours placer des protections autour des arêtes vives.\n102",
+        ""
+      ]
+    },
+    {
+      "id": "table_103_0",
+      "page": 103,
+      "index": 0,
+      "filename": "table_p103_1.txt",
+      "filepath": "extracted_assets\\tables\\table_p103_1.txt",
+      "url": "/assets/tables/table_p103_1.txt",
+      "rows": 2,
+      "columns": 1,
+      "title": "Tableau 91",
+      "content": [
+        "103",
+        ""
+      ]
+    }
+  ],
+  "metadata": {
+    "pdf_path": "D:\\GitHub\\digitalbook\\Livretdigital.pdf",
+    "images_dir": "extracted_assets\\images",
+    "tables_dir": "extracted_assets\\tables"
+  }
+}

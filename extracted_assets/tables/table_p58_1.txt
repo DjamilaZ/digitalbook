@@ -1,0 +1,28 @@
+8.5 Installations des palans
+il est essentiel de s’assurer que l’élément structurel auquel le palan est
+suspendu est adéquat pour la charge prévue. Celle-ci doit comprendre
+le poids du palan lui-même plus celui des accessoires à crochets tels
+qu’élingues, manilles, chariots, etc.
+8.6 Lorsque l'on utilisera un palan suspendu à un crochet, ce crochet
+supérieur doit être attaché à son support de manière telle que ce
+support s'adapte librement dans le siège du crochet et n'exerce
+aucune charge latérale sur le point de contact.
+8.7 Le crochet supérieur doit être muni d'un linguet de sécurité.
+8.8 Après l'installation, on s'assurera que la chaîne de levage et
+les chaînes de charge tombent librement, ne sont pas
+tordues et ne font pas de nœuds. On vérifiera en particulier,
+dans le cas de palans multibrins, que la moufle inférieure ne
+s'est pas retournée entre les boucles de chaîne, tordant la
+chaîne de charge. Dans ce cas, retournez cette moufle jusqu'à
+ce qu'il n'y ait plus de tours.
+Fig. 8.1
+8.9 Vérifiez la longueur de la chaîne de charge pour vous assurer que le
+crochet inférieur peut atteindre le point le plus bas requis sans que vous
+ayez à sortir toute la chaîne. En effet, dans un tel cas, cela pourrait
+appliquer une contrainte excessive à l'ancrage de l'extrémité libre (qui
+n'est pas réellement un composant porte-charge).
+Attention! Un palan ne doit être utilisé que pour lever et abaisser: les
+charges ne doivent pas être laissées suspendues sans surveillance,
+même peu de temps. Un élingage de secours devra être prévu et utilisé
+dans ce cas.
+58

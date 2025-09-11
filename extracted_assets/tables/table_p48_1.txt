@@ -1,0 +1,30 @@
+7.37 Dans l'idéal, l'opérateur devrait être en mesure de voir en permanence
+la charge, mais selon le type et la conception du navire/des installations,
+cela n'est pas toujours possible. Dans de tels cas, il devra être en contact
+radio avec le chef de manœuvre et/ou être dirigé par un chef de
+manœuvre en contact visuel avec la charge et clairement visible par
+l'opérateur.
+7.38 Avant tout levage, vérifiez bien l'état et l'équilibrage de tout l'élingage et
+autres accessoires de levage. Au cas où ils devraient être maintenus en
+position pendant la mise sous tension du/des câbles de levage, utiliser
+des perches pour tirer/pousser - ne jamais passer les doigts autour des
+élingues ou les agripper.
+7.39 Le grutier devra également décider si une corde stabilisatrice est
+nécessaire pour contrôler la charge une fois suspendue en l'air. Ces
+cordes sont particulièrement recommandées dans le cas de charges
+longues, pour lesquelles ces premières devront être attachées à l'une ou
+aux deux extrémités afin de contrôler les mouvements de rotation. Ces
+cordes doivent être suffisamment longues pour que le ou les opérateurs
+n'aient pas à se tenir sous la charge pendant le levage. Elles doivent
+toujours être arrimées à la charge, pas à l'élingage (voir § 8.19).
+7.40 Lorsqu'une opération de levage nécessite plus d'un opérateur, il est
+essentiel de s'assurer que les communications entre eux soient
+distinctes. Pour cela, utiliser de préférence des talkies-walkies.
+7.41 Toutes les instructions données au grutier (à part un arrêt d'urgence),
+que ce soit par contact radio ou par le chef de manœuvre, ne doivent
+être données que par le chef de manœuvre ou la personne contrôlant le
+levage.
+Cependant, l'ordre ou le signal d'ARRÊT D'URGENCE peut être donné
+par toute personne voyant une situation dangereuse apparaître
+durant l'opération en cours.
+48

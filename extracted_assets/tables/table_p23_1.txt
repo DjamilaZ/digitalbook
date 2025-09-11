@@ -1,0 +1,34 @@
+2.0 Définition et principes des équipements de levage
+2.1 Equipements de levage
+Ces équipements comprennent les appareils et l’équipement de
+levage. Ils sont définis comme suit:
+Appareils de levage
+Tout dispositif mécanique capable de lever ou d’abaisser une charge.
+Ex: Grues, Chariots élévateurs, Nacelles suspendues, Palans, Poutre de
+levage, Treuils...
+Equipement de levage
+Tout dispositif quel qu’il soit, utilisé et conçu pour être utilisé
+directement ou indirectement pour relier une charge à un appareil de
+levage et ne faisant pas partie de la charge.
+Ex: élingues à câble, chaîne ou fibre synthétique, crochets et accessoires,
+pivots, manilles, boulon à œil, ridoirs, attaches à coin, lève-tôles.
+2.2 Compétent(e)
+Disposant des connaissances, des compétences, ainsi que de
+l’expérience nécessaire à la réalisation de tâches spécifiques.
+2.3 Abrasion
+Usure de surfaces des brins d’un câble.
+2.4 Homologué
+Conforme à la norme intérieur de l’entreprise.
+2.5 Chef de manœuvre
+Individu clairement identifiable ayant la responsabilité partagée
+d’assurer un levage et une dépose de la charge en toute sécurité.
+Contrôle également l’opération de levage lors d’un levage en aveugle.
+2.6 Levage en aveugle
+Lorsque l’utilisateur de l’appareil de levage n’a pas le chef de manœuvre,
+responsable de la charge, dans son champ visuel de manière continue.
+2.7 Agent de coordination du levage
+Point de contact responsable du levage pour une installation particulière
+et personne compétente pour les opérations de levage.
+2.8 Résistance à la rupture (câble)
+La charge mesurée requise pour briser un câble en tension.
+23
