@@ -18,10 +18,10 @@ const bookService = {
   searchBooks: async (query, page = 1) => {
     try {
       const params = {
-        search: query,
+        q: query,
         page: page
       };
-      const response = await api.get('/books/', { params });
+      const response = await api.get('/books/search/', { params });
       return response.data;
     } catch (error) {
       console.error('Erreur lors de la recherche des livres:', error);

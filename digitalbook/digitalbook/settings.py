@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework_nested',
     'corsheaders',
     'books',
+    'qcm',
 ]
 # Configuration CORS
 CORS_ALLOW_ALL_ORIGINS = True  # Pour le développement uniquement

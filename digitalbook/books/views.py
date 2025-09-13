@@ -248,6 +248,39 @@ class BookViewSet(viewsets.ModelViewSet):
             'results': serializer.data
         }, status=status.HTTP_200_OK)
 
+    @action(detail=False, methods=['get'])
+    def search(self, request):
+        """Rechercher des livres par titre"""
+        query = request.query_params.get('q', '').strip()
+        
+        if not query:
+            return Response({
+                'error': 'Le paramètre de recherche "q" est requis',
+                'count': 0,
+                'results': []
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        # Rechercher dans le titre
+        books = Book.objects.filter(
+            title__icontains=query
+        )
+        
+        # Ordonner par pertinence (les livres dont le titre correspond exactement en premier)
+        books = books.order_by('-created_at')
+        
+        # Paginer les résultats
+        page = self.paginate_queryset(books)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+        
+        # Si pas de pagination, retourner tous les résultats
+        serializer = self.get_serializer(books, many=True)
+        return Response({
+            'count': len(serializer.data),
+            'results': serializer.data
+        }, status=status.HTTP_200_OK)
+
 class ChapterViewSet(viewsets.ModelViewSet):
     serializer_class = ChapterSerializer
     # permission_classes = [IsAuthenticated]
