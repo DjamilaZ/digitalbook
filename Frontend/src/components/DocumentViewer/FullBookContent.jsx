@@ -160,9 +160,9 @@ const FullBookContent = ({ bookData, selectedItem }) => {
 
   return (
     <div className="w-full max-w-none px-6 py-8" ref={contentRef}>
-      {/* Introduction du livre */}
+      {/* Introduction du livre - Fixe lors du défilement */}
       {bookData.title && (
-        <div className="w-full mb-8">
+        <div className="w-full mb-8 sticky top-0 bg-white z-10 py-4 border-b border-gray-200">
           <h1 id="book-title" className="text-4xl font-bold text-gray-900 mb-4">{bookData.title}</h1>
           {bookData.description && (
             <div className="text-lg text-gray-700 leading-relaxed">

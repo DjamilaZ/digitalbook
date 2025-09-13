@@ -1,10 +1,11 @@
 const theme = {
     colors: {
-      primary: "#2563EB",
+      primary: "#246df3",
       secondary: "#4B5563",
-      accent: "#8B5CF6",
-      success: "#10B981",
-      danger: "#EF4444",
+      accent: "#9535bc",
+      success: "#4dc59e",
+      danger: "#f6140e",
+      warning: "#e3e89e",
       background: "#F9FAFB",
       surface: "#FFFFFF",
       text: {

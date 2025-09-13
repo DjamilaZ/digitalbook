@@ -43,34 +43,6 @@ const Documents = () => {
     fetchDocuments();
   }, [currentPage]);
 
-  // Gérer la recherche avec debounce
-  useEffect(() => {
-    const debounceTimer = setTimeout(() => {
-      if (searchQuery.trim() === '') {
-        // Si la recherche est vide, recharger tous les documents
-        setCurrentPage(1);
-        const fetchDocuments = async () => {
-          try {
-            const data = await bookService.getAllBooks({ page: 1 });
-            setDocuments(data.results || []);
-            setTotalCount(data.count || 0);
-            setNextPage(data.next);
-            setPreviousPage(data.previous);
-            setTotalPages(Math.ceil((data.count || 0) / 10));
-          } catch (error) {
-            console.error('Erreur lors du chargement des documents:', error);
-          }
-        };
-        fetchDocuments();
-      } else {
-        // Sinon, effectuer la recherche
-        handleSearch();
-      }
-    }, 300); // 300ms de debounce
-
-    return () => clearTimeout(debounceTimer);
-  }, [searchQuery]);
-
   const handleSearch = async () => {
     if (searchQuery.trim() === '') return;
     
@@ -89,6 +61,35 @@ const Documents = () => {
       setIsLoading(false);
     }
   };
+
+  // Gérer la recherche avec debounce
+  useEffect(() => {
+    const debounceTimer = setTimeout(() => {
+      if (searchQuery.trim() === '') {
+        // Si la recherche est vide, recharger tous les documents
+        const fetchDocuments = async () => {
+          setIsLoading(true);
+          try {
+            const data = await bookService.getAllBooks();
+            setDocuments(data.results || []);
+            setTotalCount(data.count || 0);
+            setNextPage(data.next);
+            setPreviousPage(data.previous);
+            setCurrentPage(1);
+            setTotalPages(Math.ceil((data.count || 0) / 10));
+          } catch (error) {
+            console.error('Erreur lors du chargement des documents:', error);
+          }
+        };
+        fetchDocuments();
+      } else {
+        // Sinon, effectuer la recherche
+        handleSearch();
+      }
+    }, 300); // 300ms de debounce
+
+    return () => clearTimeout(debounceTimer);
+  }, [searchQuery]);
 
   // Gestionnaires de pagination
   const handlePageChange = (page) => {
@@ -112,16 +113,6 @@ const Documents = () => {
     navigate(`/documents/${docId}`);
   };
 
-  const handleAnalyzeDocument = async (docId) => {
-    try {
-      await bookService.analyzeBook(docId);
-      // Rafraîchir la liste des documents après analyse
-      const updatedDocs = await bookService.getAllBooks();
-      setDocuments(updatedDocs.results || []);
-    } catch (error) {
-      console.error('Erreur lors de l\'analyse du document:', error);
-    }
-  };
 
   const handleDeleteDocument = async (docId) => {
     if (window.confirm('Êtes-vous sûr de vouloir supprimer ce document ?')) {
@@ -132,6 +123,29 @@ const Documents = () => {
       } catch (error) {
         console.error('Erreur lors de la suppression du document:', error);
       }
+    }
+  };
+
+  const handleDownloadDocument = async (pdfUrl) => {
+    try {
+      // Construire l'URL complète du PDF
+      const fullUrl = `http://localhost:8000${pdfUrl}`;
+      
+      // Créer un lien temporaire pour le téléchargement
+      const link = document.createElement('a');
+      link.href = fullUrl;
+      link.target = '_blank';
+      link.download = pdfUrl.split('/').pop() || 'document.pdf';
+      
+      // Ajouter le lien au document, cliquer dessus, puis le supprimer
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      console.log('Téléchargement du PDF initié:', fullUrl);
+    } catch (error) {
+      console.error('Erreur lors du téléchargement du document:', error);
+      alert('Erreur lors du téléchargement du document. Veuillez réessayer.');
     }
   };
 
@@ -166,42 +180,86 @@ const Documents = () => {
             </div>
             <input
               type="text"
-              className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
               placeholder="Rechercher un document..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3">
-              <button className="text-gray-400 hover:text-gray-500">
+              <button className="text-accent hover:text-accent">
                 <Filter className="h-5 w-5" />
               </button>
             </div>
+          </div>
+          
+          {/* Filtres rapides */}
+          <div className="flex gap-2 mt-4">
+            <button className="px-3 py-1.5 text-sm font-medium bg-primary-100 text-primary rounded-md hover:bg-primary-200">
+              Tous
+            </button>
+            <button className="px-3 py-1.5 text-sm font-medium bg-accent-100 text-accent rounded-md hover:bg-accent-200">
+              Récents
+            </button>
+            <button className="px-3 py-1.5 text-sm font-medium bg-success-100 text-success rounded-md hover:bg-success-200">
+              Favoris
+            </button>
+            <button className="px-3 py-1.5 text-sm font-medium bg-warning-100 text-warning rounded-md hover:bg-warning-200">
+              Partagés
+            </button>
           </div>
         </div>
 
         {/* Liste des documents */}
         {isLoading ? (
           <div className="flex justify-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
           </div>
         ) : documents.length > 0 ? (
           <>
+            {/* Statistiques des documents */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+              <div className="bg-primary-50 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-primary">{documents.length}</div>
+                <div className="text-sm text-gray-600">Total documents</div>
+              </div>
+              <div className="bg-success-50 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-success">
+                  {documents.reduce((sum, doc) => sum + (doc.chapters_count || 0), 0)}
+                </div>
+                <div className="text-sm text-gray-600">Chapitres totaux</div>
+              </div>
+              <div className="bg-accent-50 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-accent">
+                  {Math.floor(documents.reduce((sum, doc) => sum + (doc.file_size || 0), 0) / 1024 / 1024)}
+                </div>
+                <div className="text-sm text-gray-600">MB utilisés</div>
+              </div>
+              <div className="bg-warning-50 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-warning">
+                  {new Date().toLocaleDateString('fr-FR')}
+                </div>
+                <div className="text-sm text-gray-600">Dernière mise à jour</div>
+              </div>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {documents.map((doc) => (
                 <DocumentCard
                   key={doc.id}
                   title={doc.title}
-                  sections={doc.sections}
+                  chapters_count={doc.chapters_count}
                   document={doc}
+                  date={new Date(doc.created_at).toLocaleDateString('fr-FR')}
                   onView={() => handleViewDocument(doc.id)}
-                  onAnalyze={() => handleAnalyzeDocument(doc.id)}
+                  onDownload={() => handleDownloadDocument(doc)}
+                  onDelete={() => handleDeleteDocument(doc.id)}
                 />
               ))}
             </div>
             
-            {/* Contrôles de pagination */}
+            {/* Pagination */}
             {totalPages > 1 && (
-              <div className="mt-8 flex justify-center items-center space-x-4">
+              <div className="flex justify-center items-center space-x-2 mt-8">
                 <Button
                   onClick={handlePreviousPage}
                   disabled={!previousPage}

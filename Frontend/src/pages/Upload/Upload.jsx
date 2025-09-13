@@ -88,19 +88,39 @@ const Upload = () => {
           <div className="p-6 border-b">
             <h2 className="text-lg font-semibold mb-4">Importer un document</h2>
             
-            <div className="mb-4">
-              <label htmlFor="document-title" className="block text-sm font-medium text-gray-700 mb-1">
-                Titre du document <span className="text-red-500">*</span>
+            <div className="mb-8">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Titre du document
               </label>
               <input
                 type="text"
-                id="document-title"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Entrez le titre du document"
+                className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                placeholder="Entrez un titre pour votre document"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 disabled={isUploading || uploadComplete}
               />
+              
+              {/* Catégories */}
+              {/* <div className="mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Catégorie
+                </label>
+                <div className="flex gap-2 flex-wrap">
+                  <button className="px-3 py-1.5 text-sm font-medium bg-primary-100 text-primary rounded-md hover:bg-primary-200">
+                    Professionnel
+                  </button>
+                  <button className="px-3 py-1.5 text-sm font-medium bg-accent-100 text-accent rounded-md hover:bg-accent-200">
+                    Éducation
+                  </button>
+                  <button className="px-3 py-1.5 text-sm font-medium bg-success-100 text-success rounded-md hover:bg-success-200">
+                    Personnel
+                  </button>
+                  <button className="px-3 py-1.5 text-sm font-medium bg-warning-100 text-warning rounded-md hover:bg-warning-200">
+                    Loisirs
+                  </button>
+                </div>
+              </div> */}
             </div>
             
             <p className="text-sm text-gray-600 mb-2">
@@ -114,14 +134,14 @@ const Upload = () => {
           <div 
             {...getRootProps()} 
             className={`p-8 text-center border-2 border-dashed rounded-lg mx-6 my-4 transition-colors ${
-              isDragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-300'
+              isDragActive ? 'border-primary bg-primary-50' : 'border-gray-200 hover:border-primary'
             }`}
           >
             <input {...getInputProps()} />
             
             {file ? (
               <div className="flex flex-col items-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-3">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary mb-3">
                   <FileText size={24} />
                 </div>
                 <p className="font-medium text-gray-900">{file.name}</p>
@@ -203,14 +223,14 @@ const Upload = () => {
         </div>
         
         {uploadComplete && (
-          <div className="mt-8 p-6 bg-green-50 border border-green-200 rounded-xl">
+          <div className="mt-8 p-6 bg-success-50 border border-success-200 rounded-xl">
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-600 flex-shrink-0">
+              <div className="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center text-success flex-shrink-0">
                 <Check size={16} />
               </div>
               <div>
-                <h3 className="font-medium text-green-800">Document téléchargé avec succès !</h3>
-                <p className="text-sm text-green-700 mt-1">
+                <h3 className="font-medium text-success-800">Document téléchargé avec succès !</h3>
+                <p className="text-sm text-success-700 mt-1">
                   Votre document a été analysé avec succès. Vous pouvez maintenant le consulter dans votre bibliothèque.
                 </p>
                 <div className="mt-4 flex gap-3">

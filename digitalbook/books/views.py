@@ -223,6 +223,30 @@ class BookViewSet(viewsets.ModelViewSet):
             structure["chapters"].append(chapter_data)
         
         return Response(structure, status=status.HTTP_200_OK)
+    
+    @action(detail=False, methods=['get'])
+    def recent(self, request):
+        """Retourner les 5 derniers livres créés récemment (derniers 7 jours)"""
+        from django.utils import timezone
+        from datetime import timedelta
+        
+        # Calculer la date d'il y a 7 jours
+        seven_days_ago = timezone.now() - timedelta(days=7)
+        
+        # Récupérer les 5 derniers livres créés dans les 7 derniers jours, ordonnés par date de création
+        recent_books = Book.objects.filter(
+            created_at__gte=seven_days_ago
+        ).order_by('-created_at')[:5]  # Limiter aux 5 derniers livres
+        
+        # Utiliser le BookListSerializer pour une réponse optimisée
+        serializer = self.get_serializer(recent_books, many=True)
+        
+        return Response({
+            'count': len(serializer.data),
+            'period': 'last_7_days',
+            'max_results': 5,
+            'results': serializer.data
+        }, status=status.HTTP_200_OK)
 
 class ChapterViewSet(viewsets.ModelViewSet):
     serializer_class = ChapterSerializer

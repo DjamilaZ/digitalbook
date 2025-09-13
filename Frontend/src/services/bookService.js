@@ -91,6 +91,17 @@ const bookService = {
     }
   },
 
+  // Récupérer les livres récents (créés dans les 7 derniers jours)
+  getRecentBooks: async () => {
+    try {
+      const response = await api.get('/books/recent/');
+      return response.data;
+    } catch (error) {
+      console.error('Erreur lors de la récupération des livres récents:', error);
+      throw error;
+    }
+  },
+
   // Analyser un livre (si vous avez un endpoint spécifique pour l'analyse)
   analyzeBook: async (id) => {
     try {

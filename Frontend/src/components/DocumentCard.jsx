@@ -1,12 +1,12 @@
 import React from 'react';
-import { FileText, Clock, MoreVertical, BookOpen, FileSearch, Download } from 'lucide-react';
+import { FileText, Download, Trash2, Eye, Clock, BookOpen } from "lucide-react";
 
 const DocumentCard = ({ 
   title, 
   date, 
-  sections, 
+  chapters_count, 
   onView, 
-  onAnalyze, 
+  onDownload, 
   onDelete 
 }) => {
   return (
@@ -14,7 +14,7 @@ const DocumentCard = ({
       <div className="p-5 border-b">
         <div className="flex items-start justify-between">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 flex-shrink-0">
+            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white flex-shrink-0">
               <FileText size={24} />
             </div>
             <div>
@@ -23,7 +23,7 @@ const DocumentCard = ({
                 <Clock size={14} />
                 <span>{date}</span>
                 <span>•</span>
-                <span>{sections} sections</span>
+                <span>{chapters_count} chapitres</span>
               </div>
             </div>
           </div>
@@ -37,22 +37,22 @@ const DocumentCard = ({
         <div className="flex gap-2">
           <button 
             onClick={onView}
-            className="px-3 py-1.5 text-sm font-medium text-blue-600 hover:bg-blue-50 rounded-md flex items-center gap-1.5"
+            className="px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary-50 rounded-md flex items-center gap-1.5"
           >
             <BookOpen size={16} />
            Lire
           </button>
           <button 
-            onClick={onAnalyze}
-            className="px-3 py-1.5 text-sm font-medium text-purple-600 hover:bg-purple-50 rounded-md flex items-center gap-1.5"
+            onClick={onDownload}
+            className="px-3 py-1.5 text-sm font-medium text-accent hover:bg-accent-50 rounded-md flex items-center gap-1.5"
           >
             <Download size={16} />
             Télécharger PDF
           </button>
-        </div>
+        </div>  
         {/* <button 
           onClick={onDelete}
-          className="text-sm text-red-600 hover:text-red-800"
+          className="text-primary hover:text-primary"
         >
           Supprimer
         </button> */}

@@ -11,9 +11,9 @@ const Button = ({ children, variant = "primary", size = "md", className, ...prop
   };
 
   const variants = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700",
+    primary: "bg-primary text-white hover:bg-primary",
     secondary: "bg-gray-100 text-gray-800 hover:bg-gray-200",
-    accent: "bg-purple-600 text-white hover:bg-purple-700",
+    accent: "bg-accent text-white hover:bg-accent",
   };
 
   return (

@@ -1,20 +1,17 @@
 import React from "react";
 import { Home, Upload, FileText } from "lucide-react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NavItem from "./NavItem";
 
 const Sidebar = () => {
-  const location = useLocation();
 
   return (
     <aside className="w-64 h-screen bg-white border-r flex flex-col justify-between fixed left-0 top-0 bottom-0 z-50">
       {/* Logo */}
       <div>
-        <div className="flex items-center gap-2 p-6">
-          <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
-            D
-          </div>
-          <div>
+        <div className="flex flex-col items-center p-6">
+          <img src="/total-energies-logo.png" alt="Total Energies Logo" className="w-20 h-20 object-contain mb-3" />
+          <div className="text-center">
             <h1 className="text-lg font-bold">DigitalBook</h1>
             <p className="text-sm text-gray-500">Lecture de vos documents en toutes simplicité</p>
           </div>

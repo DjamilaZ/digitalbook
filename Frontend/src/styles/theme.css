@@ -1,0 +1,91 @@
+/* Variables CSS basées sur le thème */
+:root {
+  /* Couleurs principales */
+  --color-primary: #246df3;
+  --color-secondary: #4B5563;
+  --color-accent: #9535bc;
+  --color-success: #4dc59e;
+  --color-danger: #f6140e;
+  --color-warning: #e3e89e;
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+  
+  /* Couleurs de texte */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6B7280;
+  
+  /* Variantes de couleurs */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-500: #246df3;
+  --color-primary-600: #1d4ed8;
+  --color-primary-700: #1e40af;
+  
+  --color-accent-50: #f3e8ff;
+  --color-accent-100: #e9d5ff;
+  --color-accent-500: #9535bc;
+  --color-accent-600: #7c3aed;
+  
+  --color-success-50: #ecfdf5;
+  --color-success-100: #d1fae5;
+  --color-success-500: #4dc59e;
+  --color-success-600: #059669;
+  
+  --color-danger-50: #fef2f2;
+  --color-danger-100: #fee2e2;
+  --color-danger-500: #f6140e;
+  --color-danger-600: #dc2626;
+  
+  --color-warning-50: #f7fee7;
+  --color-warning-100: #ecfccb;
+  --color-warning-500: #e3e89e;
+  --color-warning-600: #ca8a04;
+}
+
+/* Classes utilitaires pour les couleurs */
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-50 { background-color: var(--color-primary-50); }
+.bg-primary-100 { background-color: var(--color-primary-100); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-accent-50 { background-color: var(--color-accent-50); }
+.bg-accent-100 { background-color: var(--color-accent-100); }
+.bg-success { background-color: var(--color-success); }
+.bg-success-50 { background-color: var(--color-success-50); }
+.bg-success-100 { background-color: var(--color-success-100); }
+.bg-danger { background-color: var(--color-danger); }
+.bg-danger-50 { background-color: var(--color-danger-50); }
+.bg-danger-100 { background-color: var(--color-danger-100); }
+.bg-warning { background-color: var(--color-warning); }
+.bg-warning-50 { background-color: var(--color-warning-50); }
+.bg-warning-100 { background-color: var(--color-warning-100); }
+
+.text-primary { color: var(--color-primary); }
+.text-accent { color: var(--color-accent); }
+.text-success { color: var(--color-success); }
+.text-danger { color: var(--color-danger); }
+.text-warning { color: var(--color-warning); }
+
+.border-primary { border-color: var(--color-primary); }
+.border-accent { border-color: var(--color-accent); }
+.border-success { border-color: var(--color-success); }
+.border-danger { border-color: var(--color-danger); }
+.border-warning { border-color: var(--color-warning); }
+
+/* Focus styles - utilisés avec Tailwind */
+.focus\:ring-primary:focus { outline-color: var(--color-primary); }
+.focus\:ring-accent:focus { outline-color: var(--color-accent); }
+.focus\:ring-success:focus { outline-color: var(--color-success); }
+.focus\:ring-danger:focus { outline-color: var(--color-danger); }
+.focus\:ring-warning:focus { outline-color: var(--color-warning); }
+
+.hover\:bg-primary:hover { background-color: var(--color-primary-600); }
+.hover\:bg-accent:hover { background-color: var(--color-accent-600); }
+.hover\:bg-success:hover { background-color: var(--color-success-600); }
+.hover\:bg-danger:hover { background-color: var(--color-danger-600); }
+.hover\:bg-warning:hover { background-color: var(--color-warning-600); }
+
+.hover\:text-primary:hover { color: var(--color-primary-600); }
+.hover\:text-accent:hover { color: var(--color-accent-600); }
+.hover\:text-success:hover { color: var(--color-success-600); }
+.hover\:text-danger:hover { color: var(--color-danger-600); }
+.hover\:text-warning:hover { color: var(--color-warning-600); }

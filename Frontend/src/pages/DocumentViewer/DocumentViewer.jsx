@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft } from 'lucide-react';
+import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft, Download } from 'lucide-react';
 import Button from '../../System Design/Button';
 import api from '../../services/api';
 import Sidebar from '../../components/DocumentViewer/Sidebar';
@@ -57,6 +57,31 @@ const DocumentViewer = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
+  const handleDownloadDocument = async () => {
+    try {
+      if (!bookData?.book?.pdf_url) {
+        console.error('URL du PDF non disponible');
+        return;
+      }
+      
+      // Construire l'URL complète du PDF
+      const fullUrl = `http://localhost:8000${bookData.book.pdf_url}`;
+      
+      // Créer un lien temporaire pour le téléchargement
+      const link = document.createElement('a');
+      link.href = fullUrl;
+      link.target = '_blank';
+      link.download = bookData.book.pdf_url.split('/').pop() || 'document.pdf';
+      
+      // Ajouter le lien au document, cliquer dessus, puis le supprimer
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Erreur lors du téléchargement du document:', error);
+    }
+  };
+
 
   if (loading) {
     return (
@@ -85,8 +110,8 @@ const DocumentViewer = () => {
 
   return (
     <div className="w-full flex flex-col bg-gray-50 min-h-screen">
-      {/* Header */}
-      <div className="bg-white border-b border-gray-200 px-5 py-4 flex items-center justify-between shadow-sm z-100 w-full">
+      {/* Header - Fixe lors du défilement */}
+      <div className="bg-white border-b border-gray-200 px-5 py-4 flex items-center justify-between shadow-sm z-100 w-full sticky top-0">
         <div className="flex items-center gap-5 w-full">
           <Button
             variant="outline"
@@ -117,8 +142,15 @@ const DocumentViewer = () => {
           {viewMode === 'simple' ? <FileText size={20} /> : <List size={20} />}
         </button> */}
         <button 
+          onClick={handleDownloadDocument}
+          className="bg-success text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-success hover:-translate-y-0.5 mr-2"
+          title="Voir le PDF d'origine"
+        >
+          <Download size={20} />
+        </button>
+        <button 
           onClick={toggleSidebar}
-          className="bg-blue-500 text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:-translate-y-0.5"
+          className="bg-primary text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-primary hover:-translate-y-0.5"
           title={sidebarOpen ? "Masquer le sommaire" : "Afficher le sommaire"}
         >
           {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
