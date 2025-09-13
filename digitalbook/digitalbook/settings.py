@@ -179,3 +179,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configuration OpenAI pour la génération de QCM
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', '')
+OPENAI_MODEL = os.environ.get('OPENAI_MODEL', 'gpt-4o-mini')
+
+# Configuration QCM
+QCM_DEFAULT_QUESTIONS = int(os.environ.get('QCM_DEFAULT_QUESTIONS', '5'))
+QCM_MAX_QUESTIONS = int(os.environ.get('QCM_MAX_QUESTIONS', '10'))

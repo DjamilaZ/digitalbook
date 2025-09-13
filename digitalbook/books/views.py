@@ -5,7 +5,9 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
+from django.conf import settings
 from .models import Book, Chapter, Section, Subsection
+from qcm.models import QCM, Question, Reponse
 from .serializers import BookSerializer, BookListSerializer, ChapterSerializer, SectionSerializer, SubsectionSerializer
 
 class BookPagination(PageNumberPagination):
@@ -146,6 +148,32 @@ class BookViewSet(viewsets.ModelViewSet):
                 print("\n--- DÉBUT CRÉATION HIÉRARCHIE ---")
                 book = create_book_hierarchy_from_json(book, structured_data)
                 print("--- FIN CRÉATION HIÉRARCHIE ---")
+                
+                # Générer automatiquement des QCM pour chaque chapitre
+                generate_qcm = request.data.get('generate_qcm', 'true').lower() == 'true'
+                
+                if generate_qcm and getattr(settings, 'OPENAI_API_KEY', ''):
+                    print("\n--- DÉBUT GÉNÉRATION AUTOMATIQUE DES QCM ---")
+                    try:
+                        from qcm.utils import generate_qcms_for_book
+                        nb_questions = int(request.data.get('nb_questions_per_chapter', getattr(settings, 'QCM_DEFAULT_QUESTIONS', 5)))
+                        qcm_results = generate_qcms_for_book(
+                            book=book,
+                            nb_questions_per_chapter=nb_questions,
+                            generate_for_all_chapters=True
+                        )
+                        print(f"✓ QCM générés: {len(qcm_results['success'])} succès, {len(qcm_results['failed'])} échecs")
+                        if qcm_results['failed']:
+                            print(f"✗ Échecs de génération QCM: {[f['chapter'].title for f in qcm_results['failed']]}")
+                    except Exception as e:
+                        print(f"✗ Erreur lors de la génération des QCM: {e}")
+                        import traceback
+                        print(f"Traceback: {traceback.format_exc()}")
+                    print("--- FIN GÉNÉRATION AUTOMATIQUE DES QCM ---")
+                elif generate_qcm:
+                    print("\n⚠ OPENAI_API_KEY non configurée, génération des QCM ignorée")
+                else:
+                    print("\n⚠ Génération des QCM désactivée par l'utilisateur")
             
             print(f"=== FIN TRAITEMENT PDF POUR LIVRE: {book.title} ===\n")
             
@@ -167,6 +195,65 @@ class BookViewSet(viewsets.ModelViewSet):
             headers=headers
         )
     
+    @action(detail=True, methods=['post'])
+    def generate_qcms(self, request, id=None):
+        """
+        Génère automatiquement des QCM pour tous les chapitres d'un livre existant
+        
+        Paramètres optionnels:
+        - nb_questions_per_chapter: Nombre de questions par chapitre (défaut: 5)
+        - generate_for_all_chapters: Si false, ne génère que pour les chapitres sans QCM (défaut: true)
+        """
+        book = self.get_object()
+        
+        # Vérifier que l'API key OpenAI est configurée
+        if not getattr(settings, 'OPENAI_API_KEY', ''):
+            return Response(
+                {'error': 'OPENAI_API_KEY non configurée'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        try:
+            from qcm.utils import generate_qcms_for_book
+            
+            nb_questions = int(request.data.get('nb_questions_per_chapter', getattr(settings, 'QCM_DEFAULT_QUESTIONS', 5)))
+            generate_for_all = request.data.get('generate_for_all_chapters', 'true').lower() == 'true'
+            
+            print(f"\n=== DÉBUT GÉNÉRATION MANUELLE DES QCM POUR LIVRE: {book.title} ===")
+            
+            qcm_results = generate_qcms_for_book(
+                book=book,
+                nb_questions_per_chapter=nb_questions,
+                generate_for_all_chapters=generate_for_all
+            )
+            
+            response_data = {
+                'book_id': book.id,
+                'book_title': book.title,
+                'qcm_generated': len(qcm_results['success']),
+                'qcm_failed': len(qcm_results['failed']),
+                'qcm_skipped': len(qcm_results['skipped']),
+                'details': {
+                    'success': [{'qcm_id': qcm.id, 'chapter_title': qcm.chapter.title} for qcm in qcm_results['success']],
+                    'failed': [{'chapter_title': f['chapter'].title, 'error': f['error']} for f in qcm_results['failed']],
+                    'skipped': [{'chapter_title': chapter.title} for chapter in qcm_results['skipped']]
+                }
+            }
+            
+            print(f"✓ QCM générés manuellement: {len(qcm_results['success'])} succès, {len(qcm_results['failed'])} échecs")
+            print(f"=== FIN GÉNÉRATION MANUELLE DES QCM POUR LIVRE: {book.title} ===\n")
+            
+            return Response(response_data, status=status.HTTP_200_OK)
+            
+        except Exception as e:
+            print(f"✗ Erreur lors de la génération manuelle des QCM: {e}")
+            import traceback
+            print(f"Traceback: {traceback.format_exc()}")
+            return Response(
+                {'error': f'Erreur lors de la génération des QCM: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+    
     @action(detail=True, methods=['get'])
     def export_structure(self, request, id=None):
         """Exporter la structure complète d'un livre en JSON"""
@@ -186,12 +273,51 @@ class BookViewSet(viewsets.ModelViewSet):
         
         # Récupérer tous les chapitres du livre avec leurs sections et sous-sections
         for chapter in book.chapters.all().order_by('order'):
+            # Récupérer les QCMs associés à ce chapitre
+            qcms = chapter.qcms.all()
+            qcm_data = []
+            
+            for qcm in qcms:
+                qcm_info = {
+                    "id": qcm.id,
+                    "title": qcm.title,
+                    "description": qcm.description,
+                    "created_at": qcm.created_at.isoformat(),
+                    "updated_at": qcm.updated_at.isoformat(),
+                    "question_count": qcm.questions.count(),
+                    "questions": []
+                }
+                
+                # Ajouter les questions et réponses pour chaque QCM
+                for question in qcm.questions.all().order_by('order'):
+                    question_info = {
+                        "id": question.id,
+                        "text": question.text,
+                        "order": question.order,
+                        "responses": []
+                    }
+                    
+                    # Ajouter les réponses pour chaque question
+                    for response in question.reponses.all().order_by('order'):
+                        response_info = {
+                            "id": response.id,
+                            "text": response.text,
+                            "is_correct": response.is_correct,
+                            "order": response.order
+                        }
+                        question_info["responses"].append(response_info)
+                    
+                    qcm_info["questions"].append(question_info)
+                
+                qcm_data.append(qcm_info)
+            
             chapter_data = {
                 "id": chapter.id,
                 "title": chapter.title,
                 "content": chapter.content,
                 "order": chapter.order,
-                "sections": []
+                "sections": [],
+                "qcm": qcm_data  # Ajouter les QCMs au chapitre
             }
             
             # Récupérer toutes les sections du chapitre

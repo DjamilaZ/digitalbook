@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
+from django.conf import settings
 from .models import QCM, Question, Reponse
 from .serializers import (
     QCMSerializer, QCMListSerializer, QCMCreateSerializer,
@@ -11,6 +12,7 @@ from .serializers import (
     ReponseSerializer, ReponseCreateSerializer
 )
 from books.models import Book, Chapter
+from .ai_generator import QCMGenerator
 
 
 class QCMPagination(PageNumberPagination):
@@ -84,6 +86,100 @@ class QCMViewSet(viewsets.ModelViewSet):
             serializer.save(question=question)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(detail=False, methods=['post'])
+    def generate(self, request):
+        """
+        Génère automatiquement un QCM à partir d'un chapitre en utilisant l'IA
+        
+        Paramètres attendus:
+        - book_id: ID du livre
+        - chapter_id: ID du chapitre
+        - title: Titre du QCM (optionnel)
+        - description: Description du QCM (optionnel)
+        - nb_questions: Nombre de questions à générer (optionnel, défaut: 5)
+        """
+        try:
+            book_id = request.data.get('book_id')
+            chapter_id = request.data.get('chapter_id')
+            title = request.data.get('title')
+            description = request.data.get('description', '')
+            nb_questions = int(request.data.get('nb_questions', settings.QCM_DEFAULT_QUESTIONS))
+            
+            # Validation des paramètres
+            if not book_id or not chapter_id:
+                return Response(
+                    {'error': 'book_id et chapter_id sont requis'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            
+            # Limiter le nombre de questions
+            nb_questions = min(nb_questions, settings.QCM_MAX_QUESTIONS)
+            
+            # Récupérer le livre et le chapitre
+            book = get_object_or_404(Book, id=book_id)
+            chapter = get_object_or_404(Chapter, id=chapter_id, book=book)
+            
+            # Vérifier que le chapitre a des sections
+            if not chapter.sections.exists():
+                return Response(
+                    {'error': 'Le chapitre ne contient aucune section'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            
+            # Générer le titre si non fourni
+            if not title:
+                title = f"QCM auto-généré - {chapter.title}"
+            
+            # Initialiser le générateur IA
+            generator = QCMGenerator()
+            
+            # Générer les questions avec l'IA
+            qcm_data = generator.generate_qcm_from_chapter(
+                chapter=chapter,
+                nb_questions=nb_questions
+            )
+            
+            # Créer le QCM
+            qcm = QCM.objects.create(
+                book=book,
+                chapter=chapter,
+                title=title,
+                description=description
+            )
+            
+            # Créer les questions et réponses
+            for i, question_data in enumerate(qcm_data):
+                question = Question.objects.create(
+                    qcm=qcm,
+                    text=question_data['question'],
+                    order=i + 1
+                )
+                
+                # Créer les réponses
+                for j, option in enumerate(question_data['options']):
+                    is_correct = (option == question_data['reponse_correcte'])
+                    Reponse.objects.create(
+                        question=question,
+                        text=option,
+                        is_correct=is_correct,
+                        order=j + 1
+                    )
+            
+            # Retourner le QCM créé
+            serializer = QCMSerializer(qcm)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            
+        except ValueError as e:
+            return Response(
+                {'error': f'Erreur de génération du QCM: {str(e)}'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        except Exception as e:
+            return Response(
+                {'error': f'Erreur serveur: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
 
 class QuestionViewSet(viewsets.ModelViewSet):

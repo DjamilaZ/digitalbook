@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Pin } from 'lucide-react';
+import QCMComponent from './QCMComponent';
 
 const FullBookContent = ({ bookData, selectedItem }) => {
   // Composant pour mettre en évidence les mots spéciaux
@@ -280,6 +281,22 @@ const FullBookContent = ({ bookData, selectedItem }) => {
                     {renderTables(subsection.tables)}
                   </div>
                 ))}
+              </div>
+            )}
+
+            {/* QCMs du chapitre - Affichés à la fin */}
+            {chapter.qcm && chapter.qcm.length > 0 && (
+              <div className="w-full mt-8">
+                <div className="border-t-2 border-blue-200 pt-6">
+                  <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+                    🧠 Quiz - Testez vos connaissances
+                  </h2>
+                  <div className="space-y-6">
+                    {chapter.qcm.map((qcm, qcmIndex) => (
+                      <QCMComponent key={qcm.id} qcm={qcm} />
+                    ))}
+                  </div>
+                </div>
               </div>
             )}
           </div>
