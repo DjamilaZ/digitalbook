@@ -50,7 +50,7 @@ const Home = () => {
       {/* Hero */}
       <div className="bg-primary-50 rounded-xl p-10 text-center">
         <h1 className="text-3xl font-bold mb-4">
-          Lisez vos PDF <span className="text-primary">intelligemment</span>
+          Lisez vos Book <span className="text-primary">intelligemment</span>
         </h1>
         <p className="text-gray-600 mb-6">
           Transformez vos documents PDF en expérience de lecture interactive avec sommaire automatique et navigation fluide.
