@@ -51,6 +51,16 @@ const DocumentViewer = () => {
     // Passer automatiquement en vue complète lors de la sélection
     setViewMode('full');
     setSelectedItem(content);
+    
+    // Si c'est la couverture, faire défiler vers l'image
+    if (content.type === 'cover') {
+      setTimeout(() => {
+        const coverImage = document.getElementById('cover-image');
+        if (coverImage) {
+          coverImage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
   };
 
   const toggleSidebar = () => {
@@ -157,11 +167,11 @@ const DocumentViewer = () => {
         </button>
       </div>
 
-      {/* Main Content */}
-      <div className="flex-1 flex w-full">
-        {/* Sidebar */}
+      {/* Main Content - Layout avec sommaire à gauche et contenu à droite */}
+      <div className="flex w-full flex-1">
+        {/* Sidebar - toujours visible à gauche et fixe lors du défilement */}
         {sidebarOpen && (
-          <div className="w-80 bg-white border-r border-gray-200 overflow-y-auto flex-shrink-0 h-screen sticky top-20">
+          <div className="w-80 bg-white border-r border-gray-200 flex-shrink-0 sticky top-20 h-screen overflow-y-auto">
             <Sidebar 
               bookData={bookData} 
               onSelectContent={handleSelectContent}
@@ -170,8 +180,67 @@ const DocumentViewer = () => {
           </div>
         )}
         
-        {/* Content Area */}
-        <div className={`flex-1 w-full ${!sidebarOpen ? '' : ''}`}>
+        {/* Content Area - contenu à droite qui défile */}
+        <div className="flex-1 w-full overflow-y-auto">
+          {/* Image de couverture et en-tête dans le contenu principal */}
+          {bookData?.book && (() => {
+            const coverImageUrl = bookData.book.cover_image 
+              ? (bookData.book.cover_image.startsWith('http') 
+                  ? bookData.book.cover_image.replace('/books/covers/', '/covers/')
+                  : `http://localhost:8000${bookData.book.cover_image.replace('/books/covers/', '/covers/')}`)
+              : null;
+            
+            return (
+              <div className="w-full bg-white">
+                {/* En-tête avec titre et informations */}
+                <div className="max-w-4xl mx-auto p-6 border-b border-gray-200">
+                  <div className="flex flex-col md:flex-row gap-6 items-start">
+                    <div className="flex-1">
+                      <h1 className="text-3xl font-bold text-gray-900 mb-4">{bookData.book.title}</h1>
+                      <div className="text-gray-600 space-y-2">
+                        <p>Créé le {new Date(bookData.book.created_at).toLocaleDateString('fr-FR', { 
+                          year: 'numeric', 
+                          month: 'long', 
+                          day: 'numeric' 
+                        })}</p>
+                        <p>{bookData.chapters?.length || 0} chapitre{bookData.chapters?.length !== 1 ? 's' : ''}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Image de couverture pleine largeur comme un PDF */}
+                {coverImageUrl && (
+                  <div className="w-full bg-gray-50 py-8">
+                    <div className="max-w-4xl mx-auto px-6">
+                      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img 
+                          id="cover-image"
+                          src={coverImageUrl}
+                          alt={`Couverture de ${bookData.book.title}`}
+                          className="w-full h-auto object-contain"
+                          onError={(e) => {
+                            console.log('DocumentViewer - Cover image failed to load:', coverImageUrl);
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                          onLoad={(e) => {
+                            console.log('DocumentViewer - Cover image loaded successfully:', coverImageUrl);
+                          }}
+                        />
+                        <div className="w-full h-96 bg-primary flex items-center justify-center text-white" 
+                             style={{ display: 'none' }}>
+                          <FileText size={64} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })()}
+          
+          {/* Contenu du livre (chapitres) */}
           {viewMode === 'full' ? (
             <FullBookContent bookData={bookData} selectedItem={selectedItem} />
           ) : selectedItem ? (

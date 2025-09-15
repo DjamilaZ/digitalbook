@@ -51,6 +51,7 @@ class BookListSerializer(serializers.ModelSerializer):
     author = serializers.CharField(source='created_by', read_only=True, allow_null=True)
     chapters_count = serializers.SerializerMethodField()
     sections_count = serializers.SerializerMethodField()
+    cover_image = serializers.ImageField(read_only=True, allow_null=True)
     
     class Meta:
         model = Book
@@ -58,6 +59,7 @@ class BookListSerializer(serializers.ModelSerializer):
             'id', 
             'title', 
             'pdf_url', 
+            'cover_image',
             'chapters_count', 
             'sections_count', 
             'author', 

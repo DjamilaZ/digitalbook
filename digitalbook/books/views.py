@@ -78,6 +78,10 @@ class BookViewSet(viewsets.ModelViewSet):
             for chunk in pdf_file.chunks():
                 destination.write(chunk)
         
+        # Extraire la première page comme couverture
+        from .pdf_parser import extract_cover_from_pdf
+        cover_path = extract_cover_from_pdf(file_path, settings.MEDIA_ROOT)
+        
         # Construire l'URL complète du fichier
         pdf_url = f"{settings.MEDIA_URL}books/pdfs/{unique_filename}"
         
@@ -106,7 +110,8 @@ class BookViewSet(viewsets.ModelViewSet):
         book = Book.objects.create(
             title=book_data['title'],
             url=book_data['url'],
-            pdf_url=book_data['pdf_url']
+            pdf_url=book_data['pdf_url'],
+            cover_image=cover_path
         )
         
         # Parser le PDF et créer la hiérarchie
@@ -266,6 +271,7 @@ class BookViewSet(viewsets.ModelViewSet):
                 "title": book.title,
                 "url": book.url,
                 "pdf_url": book.pdf_url,
+                "cover_image": book.cover_image.url if book.cover_image else None,
                 "created_at": book.created_at.isoformat()
             },
             "chapters": []

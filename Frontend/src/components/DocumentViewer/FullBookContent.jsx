@@ -119,12 +119,15 @@ const FullBookContent = ({ bookData, selectedItem }) => {
   // Effet pour défiler vers l'élément sélectionné
   useEffect(() => {
     if (selectedItem && contentRef.current && bookData && bookData.chapters) {
+      console.log('🎯 Défilement vers:', selectedItem);
+      
       let elementId = '';
       
       if (selectedItem.type === 'chapter' && selectedItem.chapterIndex !== undefined) {
         const chapter = bookData.chapters[selectedItem.chapterIndex];
         if (chapter && chapter.id) {
           elementId = `chapter-${chapter.id}`;
+          console.log('📍 ID chapitre:', elementId, 'Chapitre:', chapter.title);
         }
       } else if (selectedItem.type === 'section' && selectedItem.chapterIndex !== undefined && selectedItem.sectionIndex !== undefined) {
         const chapter = bookData.chapters[selectedItem.chapterIndex];
@@ -132,6 +135,8 @@ const FullBookContent = ({ bookData, selectedItem }) => {
           const section = chapter.sections[selectedItem.sectionIndex];
           if (section && section.id) {
             elementId = `section-${section.id}`;
+            console.log('📍 ID section:', elementId, 'Section:', section.title);
+            console.log('📍 Chapter index:', selectedItem.chapterIndex, 'Section index:', selectedItem.sectionIndex);
           }
         }
       } else if (selectedItem.type === 'subsection' && selectedItem.chapterIndex !== undefined && selectedItem.sectionIndex !== undefined && selectedItem.subsectionIndex !== undefined) {
@@ -142,18 +147,193 @@ const FullBookContent = ({ bookData, selectedItem }) => {
             const subsection = section.subsections[selectedItem.subsectionIndex];
             if (subsection && subsection.id) {
               elementId = `subsection-${subsection.id}`;
+              console.log('📍 ID sous-section:', elementId, 'Sous-section:', subsection.title);
             }
           }
         }
       }
       
       if (elementId) {
+        console.log('🔍 Recherche de l\'élément avec ID:', elementId);
         const element = document.getElementById(elementId);
         if (element) {
+          console.log('✅ Élément trouvé:', element.tagName, element.textContent);
           // Attendre un peu que le contenu soit rendu
           setTimeout(() => {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 100);
+            // Calculer précisément la hauteur du header fixe
+            const mainHeader = document.querySelector('.sticky.top-0');
+            const bookTitleHeader = document.querySelector('.sticky.top-0.bg-white.z-10');
+            
+            let totalHeaderHeight = 0;
+            
+            // Header principal (navigation)
+            if (mainHeader) {
+              totalHeaderHeight += mainHeader.offsetHeight;
+              console.log('📐 Header principal:', mainHeader.offsetHeight);
+            }
+            
+            // Header du titre du livre (s'il existe)
+            if (bookTitleHeader && bookTitleHeader !== mainHeader) {
+              totalHeaderHeight += bookTitleHeader.offsetHeight;
+              console.log('📐 Header titre livre:', bookTitleHeader.offsetHeight);
+            }
+            
+            console.log('📐 Hauteur totale des headers:', totalHeaderHeight);
+            
+            // Calculer la position de l'élément dans le conteneur de défilement
+            console.log('🔍 Début de la recherche du conteneur de défilement');
+            
+            // D'abord chercher le conteneur le plus proche
+            let scrollContainer = element.closest('.overflow-y-auto');
+            console.log('🔍 closest(.overflow-y-auto):', !!scrollContainer);
+            
+            // Si aucun conteneur trouvé, chercher dans les parents plus largement
+            if (!scrollContainer) {
+              console.log('🔍 Recherche dans les parents...');
+              let parent = element.parentElement;
+              let level = 0;
+              while (parent && !scrollContainer && level < 10) {
+                console.log(`🔍 Parent niveau ${level}:`, parent.tagName, parent.className);
+                if (parent.classList.contains('overflow-y-auto')) {
+                  scrollContainer = parent;
+                  console.log('✅ Conteneur trouvé dans les parents!');
+                }
+                parent = parent.parentElement;
+                level++;
+              }
+            }
+            
+            // Si toujours pas trouvé, chercher globalement
+            if (!scrollContainer) {
+              console.log('🔍 Recherche globale...');
+              scrollContainer = document.querySelector('.overflow-y-auto');
+              console.log('🔍 querySelector(.overflow-y-auto):', !!scrollContainer);
+            }
+            
+            // Alternative: chercher par d'autres sélecteurs courants
+            if (!scrollContainer) {
+              console.log('🔍 Recherche avec sélecteurs alternatifs...');
+              const selectors = [
+                '.overflow-y-auto',
+                '[class*="overflow-y"]',
+                '.overflow-auto',
+                '[class*="overflow"]'
+              ];
+              
+              for (const selector of selectors) {
+                const container = document.querySelector(selector);
+                if (container) {
+                  console.log(`✅ Conteneur trouvé avec selector: ${selector}`);
+                  scrollContainer = container;
+                  break;
+                }
+              }
+            }
+            
+            // Dernière tentative: chercher le conteneur principal du contenu
+            if (!scrollContainer) {
+              console.log('🔍 Recherche du conteneur principal...');
+              // Chercher le conteneur qui contient le FullBookContent
+              const contentContainer = document.querySelector('.flex-1.w-full.overflow-y-auto');
+              if (contentContainer) {
+                scrollContainer = contentContainer;
+                console.log('✅ Conteneur principal trouvé!');
+              }
+            }
+            
+            console.log('🔍 Scroll container trouvé:', !!scrollContainer);
+            
+            if (scrollContainer) {
+              console.log('📐 Scroll container:', scrollContainer.tagName, scrollContainer.className);
+              
+              // S'assurer que le conteneur peut défiler
+              if (scrollContainer.scrollHeight > scrollContainer.clientHeight) {
+                console.log('✅ Conteneur peut défiler');
+                
+                // Position absolue de l'élément dans le conteneur
+                const containerRect = scrollContainer.getBoundingClientRect();
+                const elementRect = element.getBoundingClientRect();
+                const scrollTop = scrollContainer.scrollTop;
+                
+                console.log('📐 Container rect:', { top: containerRect.top, left: containerRect.left, width: containerRect.width, height: containerRect.height });
+                console.log('📐 Element rect:', { top: elementRect.top, left: elementRect.left, width: elementRect.width, height: elementRect.height });
+                console.log('📐 Current scroll top:', scrollTop);
+                
+                // Position de l'élément par rapport au début du contenu
+                const elementOffsetTop = elementRect.top - containerRect.top + scrollTop;
+                
+                // Position finale avec compensation du header et marge supplémentaire
+                const marginOffset = 80; // Marge confortable sous le header
+                const finalScrollPosition = Math.max(0, elementOffsetTop - totalHeaderHeight - marginOffset);
+                
+                console.log('📐 Element offset top:', elementOffsetTop);
+                console.log('📐 Total header height:', totalHeaderHeight);
+                console.log('📐 Margin offset:', marginOffset);
+                console.log('📐 Final scroll position:', finalScrollPosition);
+                
+                // Défiler vers la position calculée
+                scrollContainer.scrollTo({
+                  top: finalScrollPosition,
+                  behavior: 'smooth'
+                });
+                
+                // Vérifier que le défilement a bien eu lieu
+                setTimeout(() => {
+                  console.log('📐 Scroll position après défilement:', scrollContainer.scrollTop);
+                }, 300);
+              } else {
+                console.log('⚠️ Conteneur ne peut pas défiler, utilisation de window.scrollTo()');
+                
+                // Utiliser window.scrollTo() comme fallback
+                const elementRect = element.getBoundingClientRect();
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                
+                console.log('📐 Element rect (window):', { top: elementRect.top, left: elementRect.left });
+                console.log('📐 Current window scroll:', currentScroll);
+                
+                // Calculer la position absolue de l'élément par rapport à la page
+                const elementPageTop = elementRect.top + currentScroll;
+                
+                // Position finale avec compensation du header
+                const marginOffset = 80;
+                const finalWindowScrollPosition = Math.max(0, elementPageTop - totalHeaderHeight - marginOffset);
+                
+                console.log('📐 Element page top:', elementPageTop);
+                console.log('📐 Final window scroll position:', finalWindowScrollPosition);
+                
+                // Défiler la fenêtre entière
+                window.scrollTo({
+                  top: finalWindowScrollPosition,
+                  behavior: 'smooth'
+                });
+                
+                // Vérifier que le défilement a bien eu lieu
+                setTimeout(() => {
+                  console.log('📐 Window scroll position après défilement:', window.pageYOffset || document.documentElement.scrollTop);
+                }, 300);
+              }
+            } else {
+              console.log('❌ Aucun conteneur de défilement trouvé');
+              // Lister tous les éléments avec overflow-y-auto pour le débogage
+              const allScrollContainers = document.querySelectorAll('.overflow-y-auto');
+              console.log('📋 Tous les conteneurs de défilement trouvés:', allScrollContainers.length);
+              allScrollContainers.forEach((container, index) => {
+                console.log(`📋 Container ${index}:`, container.tagName, container.className);
+              });
+              
+              // Utiliser scrollIntoView comme dernier recours
+              element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+              });
+            }
+          }, 150);
+        } else {
+          console.log('❌ Élément non trouvé avec ID:', elementId);
+          // Lister tous les IDs disponibles pour le débogage
+          const allElements = document.querySelectorAll('[id^="chapter-"], [id^="section-"], [id^="subsection-"]');
+          console.log('📋 IDs disponibles:', Array.from(allElements).map(el => el.id));
         }
       }
     }
@@ -230,7 +410,7 @@ const FullBookContent = ({ bookData, selectedItem }) => {
                         {/* Titre de la sous-section (H3) */}
                         <h3 
                           id={`subsection-${subsection.id}`}
-                          className={`text-xl font-medium text-gray-700 mb-3 ${selectedItem?.type === 'subsection' && selectedItem?.chapterIndex === chapterIndex && selectedItem?.sectionIndex === undefined && selectedItem?.subsectionIndex === subsectionIndex ? 'bg-yellow-50 border-l-4 border-yellow-500 pl-4 py-2 -ml-4' : ''}`}
+                          className={`text-xl font-medium text-gray-700 mb-3 ${selectedItem?.type === 'subsection' && selectedItem?.chapterIndex === chapterIndex && selectedItem?.sectionIndex === sectionIndex && selectedItem?.subsectionIndex === subsectionIndex ? 'bg-yellow-50 border-l-4 border-yellow-500 pl-4 py-2 -ml-4' : ''}`}
                         >
                           {chapter.order + 1}.{section.order + 1}.{subsection.order + 1} {subsection.title}
                         </h3>
