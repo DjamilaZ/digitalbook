@@ -27,6 +27,28 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+class Thematique(models.Model):
+    """Modèle représentant une thématique qui peut contenir un ou plusieurs chapitres."""
+    book = models.ForeignKey(
+        Book,
+        on_delete=models.CASCADE,
+        related_name='thematiques',
+        verbose_name="Livre",
+        null=True,
+        blank=True
+    )
+    title = models.CharField(max_length=255, verbose_name="Titre")
+    description = models.TextField(blank=True, verbose_name="Description")
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Date de création")
+    
+    class Meta:
+        verbose_name = "Thématique"
+        verbose_name_plural = "Thématiques"
+        ordering = ['title']
+    
+    def __str__(self):
+        return self.title
+
 class Chapter(models.Model):
     """Modèle représentant un chapitre d'un livre."""
     book = models.ForeignKey(
@@ -34,6 +56,14 @@ class Chapter(models.Model):
         on_delete=models.CASCADE,
         related_name='chapters',
         verbose_name="Livre"
+    )
+    thematique = models.ForeignKey(
+        Thematique,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='chapters',
+        verbose_name="Thématique"
     )
     title = models.CharField(max_length=255, verbose_name="Titre")
     content = models.TextField(verbose_name="Contenu", blank=True)

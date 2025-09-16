@@ -46,6 +46,18 @@ class BookSerializer(serializers.ModelSerializer):
         )
         return book
 
+class BookUpdateSerializer(serializers.ModelSerializer):
+    """Serializer pour la mise à jour du titre d'un livre"""
+    class Meta:
+        model = Book
+        fields = ['title']
+        
+    def validate_title(self, value):
+        """Valide que le titre n'est pas vide"""
+        if not value or not value.strip():
+            raise serializers.ValidationError("Le titre ne peut pas être vide.")
+        return value.strip()
+
 class BookListSerializer(serializers.ModelSerializer):
     """Serializer pour la liste des livres avec les champs demandés"""
     author = serializers.CharField(source='created_by', read_only=True, allow_null=True)

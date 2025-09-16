@@ -6,12 +6,13 @@ const FullBookContent = ({ bookData, selectedItem }) => {
   // Composant pour mettre en évidence les mots spéciaux
   const HighlightedText = ({ text }) => {
     const specialWords = ['remarque', 'note', 'rappelle'];
+    const redBoldWords = ["N'oubliez pas"];
     
     const createHighlightedElements = (text) => {
       const elements = [];
       let lastIndex = 0;
       
-      // Trouver toutes les occurrences des mots spéciaux
+      // Trouver toutes les occurrences des mots spéciaux en bleu
       specialWords.forEach(word => {
         const regex = new RegExp(`\\b${word}\\b`, 'gi');
         let match;
@@ -31,10 +32,42 @@ const FullBookContent = ({ bookData, selectedItem }) => {
             elements.push(<br key={`br-${match.index}`} />);
           }
           
-          // Ajouter le mot spécial mis en évidence
+          // Ajouter le mot spécial mis en évidence en bleu
           elements.push(
             <span key={`highlight-${match.index}-${match[0]}`} className="inline-flex items-center gap-1 font-bold text-blue-600">
               <Pin size={14} className="text-blue-500" />
+              <span className="italic">{match[0]}</span>
+            </span>
+          );
+          
+          lastIndex = match.index + match[0].length;
+        }
+      });
+      
+      // Trouver toutes les occurrences des mots spéciaux en rouge et gras
+      redBoldWords.forEach(word => {
+        const regex = new RegExp(word, 'gi');
+        let match;
+        
+        while ((match = regex.exec(text)) !== null) {
+          // Ajouter le texte avant le mot spécial
+          if (match.index > lastIndex) {
+            elements.push(
+              <span key={`text-${lastIndex}-${match.index}`}>
+                {text.substring(lastIndex, match.index)}
+              </span>
+            );
+          }
+          
+          // Ajouter un saut de ligne avant le mot spécial
+          if (match.index > 0 && text[match.index - 1] !== '\n') {
+            elements.push(<br key={`br-${match.index}`} />);
+          }
+          
+          // Ajouter le mot spécial mis en évidence en rouge et gras
+          elements.push(
+            <span key={`redbold-${match.index}-${match[0]}`} className="inline-flex items-center gap-1 font-bold text-red-600">
+              <Pin size={14} className="text-red-500" />
               <span className="italic">{match[0]}</span>
             </span>
           );
@@ -77,19 +110,54 @@ const FullBookContent = ({ bookData, selectedItem }) => {
   const renderImages = (images) => {
     if (!images || images.length === 0) return null;
     
+    // URL de base du backend Django pour les fichiers médias
+    const backendBaseUrl = 'http://localhost:8000';
+    
     return (
       <div className="w-full my-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {images.map((image, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
-              <img 
-                src={image.url} 
-                alt={image.caption || `Illustration ${index + 1}`} 
-                className="w-full h-auto object-cover"
-              />
-              <p className="text-sm text-gray-600 p-2 bg-gray-50">{image.caption || `Image ${index + 1}`}</p>
-            </div>
-          ))}
+          {images.map((image, index) => {
+            // Gérer les deux formats: chaîne de caractères ou objet avec url
+            const imagePath = typeof image === 'string' ? image : image.url;
+            const imageCaption = typeof image === 'string' ? `Image ${index + 1}` : (image.caption || `Illustration ${index + 1}`);
+            
+            // Construire l'URL complète pour l'image
+            let fullImageUrl;
+            if (imagePath.startsWith('http')) {
+              // Si c'est déjà une URL complète, l'utiliser telle quelle
+              fullImageUrl = imagePath;
+            } else if (imagePath.startsWith('/media/')) {
+              // Si c'est un chemin média, ajouter l'URL du backend
+              fullImageUrl = `${backendBaseUrl}${imagePath}`;
+            } else if (imagePath.startsWith('/')) {
+              // Si c'est un chemin absolu, l'ajouter à l'URL du backend
+              fullImageUrl = `${backendBaseUrl}${imagePath}`;
+            } else {
+              // Si c'est un chemin relatif, le traiter comme chemin média
+              fullImageUrl = `${backendBaseUrl}/media/${imagePath}`;
+            }
+            
+            return (
+              <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                <img 
+                  src={fullImageUrl} 
+                  alt={imageCaption} 
+                  className="w-full h-auto object-cover"
+                  onError={(e) => {
+                    console.error('Erreur de chargement de l\'image:', fullImageUrl);
+                    // Cacher l'image en cas d'erreur
+                    e.target.style.display = 'none';
+                    // Afficher un message d'erreur à la place
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'p-4 bg-red-50 border border-red-200 rounded text-red-600 text-sm';
+                    errorDiv.textContent = `Image non trouvée: ${imageCaption}`;
+                    e.target.parentNode.appendChild(errorDiv);
+                  }}
+                />
+                <p className="text-sm text-gray-600 p-2 bg-gray-50">{imageCaption}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
@@ -150,6 +218,12 @@ const FullBookContent = ({ bookData, selectedItem }) => {
               console.log('📍 ID sous-section:', elementId, 'Sous-section:', subsection.title);
             }
           }
+        }
+      } else if (selectedItem.type === 'qcm' && selectedItem.chapterIndex !== undefined && selectedItem.qcmIndex !== undefined) {
+        const chapter = bookData.chapters[selectedItem.chapterIndex];
+        if (chapter && chapter.id) {
+          elementId = `chapter-${chapter.id}-qcm-${selectedItem.qcmIndex}`;
+          console.log('📍 ID QCM:', elementId, 'Chapitre:', chapter.title, 'QCM Index:', selectedItem.qcmIndex);
         }
       }
       
@@ -357,6 +431,21 @@ const FullBookContent = ({ bookData, selectedItem }) => {
       <div className="w-full space-y-8">
         {bookData.chapters.map((chapter, chapterIndex) => (
           <div key={chapter.id} className="w-full">
+            {/* Information de thématique si disponible */}
+            {chapter.thematique && (
+              <div className="mb-4 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                <div className="flex items-center gap-2 text-purple-800">
+                  <span className="font-semibold text-purple-900">Thématique:</span>
+                  <span className="text-purple-700">{chapter.thematique.title}</span>
+                </div>
+                {chapter.thematique.description && (
+                  <p className="text-sm text-purple-600 mt-1 italic">
+                    {chapter.thematique.description}
+                  </p>
+                )}
+              </div>
+            )}
+
             {/* Titre du chapitre (H1) */}
             <h1 
               id={`chapter-${chapter.id}`}
@@ -473,7 +562,9 @@ const FullBookContent = ({ bookData, selectedItem }) => {
                   </h2>
                   <div className="space-y-6">
                     {chapter.qcm.map((qcm, qcmIndex) => (
-                      <QCMComponent key={qcm.id} qcm={qcm} />
+                      <div key={qcm.id} id={`chapter-${chapter.id}-qcm-${qcmIndex}`} className="qcm-section">
+                        <QCMComponent key={qcm.id} qcm={qcm} />
+                      </div>
                     ))}
                   </div>
                 </div>

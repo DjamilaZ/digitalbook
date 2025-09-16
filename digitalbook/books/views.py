@@ -8,7 +8,7 @@ from rest_framework.pagination import PageNumberPagination
 from django.conf import settings
 from .models import Book, Chapter, Section, Subsection
 from qcm.models import QCM, Question, Reponse
-from .serializers import BookSerializer, BookListSerializer, ChapterSerializer, SectionSerializer, SubsectionSerializer
+from .serializers import BookSerializer, BookListSerializer, BookUpdateSerializer, ChapterSerializer, SectionSerializer, SubsectionSerializer
 
 class BookPagination(PageNumberPagination):
     """Pagination personnalisée pour les livres - 12 livres par page"""
@@ -322,6 +322,11 @@ class BookViewSet(viewsets.ModelViewSet):
                 "title": chapter.title,
                 "content": chapter.content,
                 "order": chapter.order,
+                "thematique": {
+                    "id": chapter.thematique.id,
+                    "title": chapter.thematique.title,
+                    "description": chapter.thematique.description
+                } if chapter.thematique else None,
                 "sections": [],
                 "qcm": qcm_data  # Ajouter les QCMs au chapitre
             }
@@ -412,6 +417,26 @@ class BookViewSet(viewsets.ModelViewSet):
             'count': len(serializer.data),
             'results': serializer.data
         }, status=status.HTTP_200_OK)
+
+    def update(self, request, *args, **kwargs):
+        """Mettre à jour le titre d'un livre"""
+        instance = self.get_object()
+        
+        # Utiliser le serializer de mise à jour
+        serializer = BookUpdateSerializer(instance, data=request.data, partial=True)
+        
+        if serializer.is_valid():
+            serializer.save()
+            return Response({
+                'message': 'Titre mis à jour avec succès',
+                'book': {
+                    'id': instance.id,
+                    'title': serializer.validated_data['title'],
+                    'url': instance.url
+                }
+            }, status=status.HTTP_200_OK)
+        
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ChapterViewSet(viewsets.ModelViewSet):
     serializer_class = ChapterSerializer
