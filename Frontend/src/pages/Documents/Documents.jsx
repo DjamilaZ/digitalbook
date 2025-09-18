@@ -82,6 +82,8 @@ const Documents = () => {
             setTotalPages(Math.ceil((data.count || 0) / 10));
           } catch (error) {
             console.error('Erreur lors du chargement des documents:', error);
+          } finally {
+            setIsLoading(false);
           }
         };
         fetchDocuments();
@@ -136,16 +138,29 @@ const Documents = () => {
     }
   };
 
-  const handleDownloadDocument = async (pdfUrl) => {
+  const handleDownloadDocument = async (docOrPdfUrl) => {
     try {
+      // Récupérer l'URL du PDF à partir d'une chaîne ou d'un objet document
+      let pdfUrl = '';
+      if (typeof docOrPdfUrl === 'string') {
+        pdfUrl = docOrPdfUrl || '';
+      } else if (docOrPdfUrl && typeof docOrPdfUrl === 'object') {
+        pdfUrl = docOrPdfUrl.pdf_url || docOrPdfUrl.pdf || '';
+      }
+
+      if (!pdfUrl) {
+        alert('Le lien du PDF est introuvable');
+        return;
+      }
+
       // Construire l'URL complète du PDF
-      const fullUrl = `http://localhost:8000${pdfUrl}`;
+      const fullUrl = pdfUrl.startsWith('http') ? pdfUrl : `http://localhost:8000${pdfUrl}`;
       
       // Créer un lien temporaire pour le téléchargement
       const link = document.createElement('a');
       link.href = fullUrl;
       link.target = '_blank';
-      link.download = pdfUrl.split('/').pop() || 'document.pdf';
+      link.download = (pdfUrl.split('/').pop() || 'document.pdf');
       
       // Ajouter le lien au document, cliquer dessus, puis le supprimer
       document.body.appendChild(link);
@@ -284,11 +299,11 @@ const Documents = () => {
                 <DocumentCard
                   key={doc.id}
                   title={doc.title}
-                  chapters_count={doc.chapters_count}
+                  chapters_count={doc.chapters_count || 0}
                   document={doc}
-                  date={new Date(doc.created_at).toLocaleDateString('fr-FR')}
+                  date={doc.created_at ? new Date(doc.created_at).toLocaleDateString('fr-FR') : ''}
                   onView={() => handleViewDocument(doc.id)}
-                  onDownload={() => handleDownloadDocument(doc)}
+                  onDownload={() => handleDownloadDocument(doc.pdf_url)}
                   onDelete={() => handleDeleteDocument(doc.id)}
                 />
               ))}
