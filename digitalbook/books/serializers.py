@@ -28,11 +28,12 @@ class BookSerializer(serializers.ModelSerializer):
     chapters = ChapterSerializer(many=True, read_only=True)
     created_by = serializers.StringRelatedField(read_only=True)
     pdf_file = serializers.FileField(required=False, allow_null=True, write_only=True)
+    json_structure_file = serializers.FileField(required=False, allow_null=True, write_only=True)
     pdf_url = serializers.URLField(required=False, allow_null=True, read_only=True)
     
     class Meta:
         model = Book
-        fields = ['id', 'title', 'url', 'created_at', 'created_by', 'chapters', 'pdf_file', 'pdf_url']
+        fields = ['id', 'title', 'url', 'created_at', 'created_by', 'chapters', 'pdf_file', 'json_structure_file', 'pdf_url']
         read_only_fields = ['id', 'created_at', 'created_by', 'url']
         extra_kwargs = {
             'pdf_file': {'required': True}

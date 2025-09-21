@@ -1,0 +1,46 @@
+{
+  "titre_livre": "Projet de Smart Parking",
+  "chapters_sans_thematique": [
+    {
+      "titre": "1. Objectif de notre Projet",
+      "contenu": "L’objectif derrière ce genre de projet c’est d’aider les conducteurs à trouver une place de parking gratuite et à gérer leur stationnement. Sa fonction de base est la détection des places de parking gratuites et l'envoi d'informations pour les conducteurs via une Ecran LCD, ce smart parking facilite aussi le stationnement pour le conducteur afin d’éviter les accidents grâce à des détecteurs de distance, enfin la sécurité des conducteurs reste une priorité, et c’est pour cela l’utilisation des détecteurs de flamme et des alarmes était si importante.",
+      "sections": []
+    },
+    {
+      "titre": "2. Les équipements",
+      "contenu": "Détection des voitures : 2 détecteur infrarouge FC-51 \n Ouvrir et fermer la barrière : Servo motor SG-90\nPour alerter que la barrière sera fermée ou ouvrir ou bien\nAide à stationnement : capteur de distance HC-SR04, et une\nAffichage des messages (Nombre de places Disponible) : LCD",
+      "sections": []
+    },
+    {
+      "titre": "3. Principe de fonctionnement",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "1) L’ Entrée d’ une voiture au parking",
+          "contenu": "Le conducteur de la voiture peut savoir s’il existe des places au parking en regardant l’affichage qui indique le nombre de place disponible, alors si le conducteur essaie d’entrer au parking et il n’existe pas une place la barrière n’ouvrira pas, sinon la barrière ouvrira. Tout d’abord, le détecteur infrarouge (détecteur des obstacle) FC-50 de l’entrée, détecte la voiture s’il existe une place une alarme déclenche pendant 500 ms et la barrière ouvrira en utilisant un servo motor SG-90, la barrière reste ouverte jusqu’à ce que le deuxième détecteur FC-50 (sortie) détecte la voiture, après cela la barrière fermera, l’affichage dans LCD changera en décrémentant le nombre de places disponibles.",
+          "sous_sections": []
+        },
+        {
+          "titre": "2) La sortie d’ une voiture",
+          "contenu": "C’est le même principe que l’entrée c’est juste les rôles des détecteurs infrarouges qui changent, tout d’abord le détecteur de sortie détecte la voiture puis celui de l’entrée et au niveau de l’affichage le nombre de places en LCD changera en incrémentant le nombre de places disponibles.",
+          "sous_sections": []
+        },
+        {
+          "titre": "3) Aide à stationnement",
+          "contenu": "Quand la voiture recule le détecteur de distance détecte la voiture une fois la distance entre le mur et la voiture est de 3 cm. La LED s'allumera, ce qui indique au conducteur d’arrêter.",
+          "sous_sections": []
+        },
+        {
+          "titre": "4) Détecteur de feu",
+          "contenu": "Une fois que le détecteur des flames détecte un feu, une alarme déclenche.",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "4. Schéma du circuit",
+      "contenu": "",
+      "sections": []
+    }
+  ]
+}

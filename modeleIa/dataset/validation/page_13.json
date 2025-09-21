@@ -1,0 +1,5 @@
+{
+  "image": "page_13.png",
+  "ground_truth": "<s_doc><chapter>Introduction</chapter><section>1.1 Objectifs</section><paragraph>Texte ici...</paragraph></s_doc>"
+}
+

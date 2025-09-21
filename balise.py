@@ -1,6 +1,7 @@
 import pdfplumber
 import json
 import re
+import unicodedata
 import os
 import io
 import hashlib
@@ -13,7 +14,13 @@ def is_page_number_line(s: str) -> bool:
 
 def normalize_heading_title(title: str) -> str:
     """Remove stray leading '#' and trim spaces from a heading title."""
-    return re.sub(r"^#+", "", title).strip()
+    t = re.sub(r"^#+", "", title)
+    t = normalize_ws(t)
+    # Collapse multiple spaces only
+    t = re.sub(r"\s+", " ", t).strip()
+    # Fix internal single-letter splits within words (titles only)
+    t = cleanup_title_internal_splits(t)
+    return t
 
 def is_numeric_heading(title: str) -> bool:
     """Return True if a heading title is only a numeric code like '1' or '1.2' or '2.10.3'."""
@@ -23,6 +30,70 @@ def get_heading_code(title: str):
     """Extract leading numeric code (e.g. '2.0', '2.18') from a title, else None."""
     m = re.match(r"^(\d+(?:\.\d+)*)\b", title.strip())
     return m.group(1) if m else None
+
+def split_heading_title_and_content(s: str):
+    """Split heading at the first colon. Returns (title, remainder_or_None)."""
+    if ":" in s:
+        left, right = s.split(":", 1)
+        left = left.strip()
+        right = right.strip()
+        return left, (right if right else None)
+    return s.strip(), None
+
+def normalize_ws(s: str) -> str:
+    """Normalize unicode spaces (NBSP, narrow NBSP, thin space, etc.) to regular spaces."""
+    return (
+        s.replace("\u00A0", " ")  # NBSP
+         .replace("\u202F", " ")  # NARROW NBSP
+         .replace("\u2009", " ")  # THIN SPACE
+         .replace("\u200A", " ")  # HAIR SPACE
+         .replace("\u2007", " ")  # FIGURE SPACE
+         .replace("\u2002", " ")  # EN SPACE
+         .replace("\u2003", " ")  # EM SPACE
+         .replace("\u2004", " ")  # THREE-PER-EM SPACE
+         .replace("\u2005", " ")  # FOUR-PER-EM SPACE
+         .replace("\u2006", " ")  # SIX-PER-EM SPACE
+         .replace("\u2008", " ")  # PUNCTUATION SPACE
+         .replace("\u205F", " ")  # MEDIUM MATHEMATICAL SPACE
+         .replace("\u200B", "")   # ZERO WIDTH SPACE
+         .replace("\ufeff", "")   # BOM
+    )
+
+def cleanup_title_internal_splits(t: str) -> str:
+    """Merge isolated single-letter tokens back into previous word inside titles.
+    Example: 'fonctionnemen t' -> 'fonctionnement', 'Schma du' unaffected.
+    """
+    tokens = t.split()
+    merged = []
+    for tok in tokens:
+        if (
+            merged
+            and len(tok) == 1
+            and re.fullmatch(r"[A-Za-zÀ-ÿ]", tok)
+            and re.fullmatch(r"[A-Za-zÀ-ÿ]+", merged[-1])
+            and len(merged[-1]) >= 3
+        ):
+            merged[-1] = merged[-1] + tok
+        else:
+            merged.append(tok)
+    return " ".join(merged)
+
+def is_fragment_line(line: str) -> bool:
+    """Return True if line is 1-3 letters possibly separated by spaces (e.g., 'g', 'r e')."""
+    s = normalize_ws(line)
+    s = re.sub(r"\s+", "", s)
+    # Remove any non-letter residuals (punctuation/invisibles)
+    letters = re.sub(r"[^A-Za-zÀ-ÿ]", "", s)
+    return 1 <= len(letters) <= 3 and bool(re.fullmatch(r"[A-Za-zÀ-ÿ]+", letters))
+
+def merge_fragment_into_title(title: str, fragment: str) -> str:
+    """Append compacted fragment letters to the end of the last word in title."""
+    tit = normalize_ws(title)
+    frag = normalize_ws(fragment)
+    frag = re.sub(r"\s+", "", frag)
+    if not frag:
+        return tit
+    return (tit + frag) if re.search(r"[A-Za-zÀ-ÿ]$", tit) else (tit + " " + frag)
 
 def is_toc_misc_line(s: str) -> bool:
     """Heuristic to skip TOC-like lines that aren't actual content (Tableau/x, Annexe/s)."""
@@ -99,8 +170,10 @@ def parse_pdf_to_json(pdf_path, output_json):
                 m_ch = re.match(r'^\s*#(?!#)\s*(.+)$', line)
 
                 if m_sub:  # Sous-section
+                    raw = m_sub.group(1).strip()
+                    left, right = split_heading_title_and_content(raw)
                     current_subsection = {
-                        "title": normalize_heading_title(m_sub.group(1).strip()),
+                        "title": normalize_heading_title(left),
                         "content": [],
                         "images": []
                     }
@@ -121,28 +194,43 @@ def parse_pdf_to_json(pdf_path, output_json):
                             }
                             structure.append(current_chapter)
                         current_chapter["sections"].append(current_section)
+                    if right:
+                        current_subsection["content"].append(right)
                     current_section["subsections"].append(current_subsection)
 
                 elif m_sec:  # Section
-                    sec_title = normalize_heading_title(m_sec.group(1).strip())
+                    raw = m_sec.group(1).strip()
+                    left, right = split_heading_title_and_content(raw)
+                    sec_title = normalize_heading_title(left)
                     code = get_heading_code(sec_title)
-                    if current_chapter is None:
-                        # Créer un chapitre par défaut si besoin
-                        current_chapter = {
-                            "title": "Chapitre",
-                            "content": [],
-                            "sections": []
-                        }
-                        structure.append(current_chapter)
-                        sections_index = {}
 
-                    if code and code in sections_index:
-                        # Réutiliser la section existante et actualiser le titre si plus descriptif
-                        existing = sections_index[code]
-                        if len(sec_title) > len(existing["title"]):
-                            existing["title"] = sec_title
-                        current_section = existing
+                    # Find if this section already exists anywhere in the structure
+                    existing_section = None
+                    for chapter in structure:
+                        for section in chapter.get("sections", []):
+                            # Match by title, or by code if the title is just a number
+                            if section.get("title") == sec_title or (code and get_heading_code(section.get("title")) == code):
+                                existing_section = section
+                                break
+                        if existing_section:
+                            break
+
+                    if existing_section:
+                        # A section with this title/code already exists, so we'll merge into it.
+                        current_section = existing_section
+                        # If the new title is more descriptive, update it.
+                        if len(sec_title) > len(current_section.get("title", "")):
+                            current_section["title"] = sec_title
+                        if right:
+                            current_section.setdefault("content", [])
+                            current_section["content"].append(right)
                     else:
+                        # This is a new section, create it.
+                        if current_chapter is None:
+                            # If we are not in a chapter, create a default one.
+                            current_chapter = {"title": "Chapitre", "content": [], "sections": []}
+                            structure.append(current_chapter)
+                        
                         current_section = {
                             "title": sec_title,
                             "content": [],
@@ -152,18 +240,33 @@ def parse_pdf_to_json(pdf_path, output_json):
                         current_chapter["sections"].append(current_section)
                         if code:
                             sections_index[code] = current_section
+                        if right:
+                            current_section["content"].append(right)
                     current_subsection = None
 
                 elif m_ch:  # Chapitre
-                    current_chapter = {
-                        "title": normalize_heading_title(m_ch.group(1).strip()),
-                        "content": [],
-                        "sections": []
-                    }
-                    structure.append(current_chapter)
+                    raw = m_ch.group(1).strip()
+                    left, right = split_heading_title_and_content(raw)
+                    ch_title = normalize_heading_title(left)
+                    existing_chapter = next((ch for ch in structure if ch.get("title") == ch_title), None)
+
+                    if existing_chapter:
+                        current_chapter = existing_chapter
+                    else:
+                        current_chapter = {
+                            "title": ch_title,
+                            "content": [],
+                            "sections": []
+                        }
+                        structure.append(current_chapter)
+
+                    if right:
+                        current_chapter.setdefault("content", [])
+                        current_chapter["content"].append(right)
                     current_section = None
                     current_subsection = None
-                    sections_index = {}
+                    # Rebuild sections_index for the current chapter to handle section merging correctly
+                    sections_index = {get_heading_code(sec['title']): sec for sec in current_chapter['sections'] if get_heading_code(sec['title'])}
 
                 else:  # Contenu normal
                     # Image caption detection: text wrapped in asterisks like *My image title*
@@ -239,6 +342,17 @@ def parse_pdf_to_json(pdf_path, output_json):
                             if is_toc_misc_line(line) or re.match(r'^\d+(?:\.\d+)*\b', line):
                                 continue
 
+                    # Merge tiny letter fragments into the current title instead of content
+                    if current_subsection is not None and is_fragment_line(line):
+                        current_subsection["title"] = merge_fragment_into_title(current_subsection["title"], line)
+                        continue
+                    if current_section is not None and is_fragment_line(line):
+                        current_section["title"] = merge_fragment_into_title(current_section["title"], line)
+                        continue
+                    if current_chapter is not None and is_fragment_line(line):
+                        current_chapter["title"] = merge_fragment_into_title(current_chapter["title"], line)
+                        continue
+
                     if current_subsection is not None:
                         current_subsection["content"].append(line)
                     elif current_section is not None:
@@ -255,7 +369,10 @@ def parse_pdf_to_json(pdf_path, output_json):
 
 # Exemple d'utilisation
 if __name__ == "__main__":
-    pdf_path = "Livretdigitalbalise-1-24.pdf"
+    pdf_path = "LivretDigitalbalise-1-24.pdf"
     output_json = "structure.json"
     data = parse_pdf_to_json(pdf_path, output_json)
     print(json.dumps(data, indent=4, ensure_ascii=False))
+
+
+   

@@ -25,6 +25,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/auth/', include('authentication.urls', namespace='auth')),  # Authentication URLs
     path('api/', include('books.urls')),  # Include books URLs under /api/
     path('api/', include('qcm.urls')),    # Include QCM URLs under /api/
 ]

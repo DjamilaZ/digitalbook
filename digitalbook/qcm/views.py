@@ -25,7 +25,7 @@ class QCMPagination(PageNumberPagination):
 class QCMViewSet(viewsets.ModelViewSet):
     queryset = QCM.objects.all()
     serializer_class = QCMSerializer
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     lookup_field = 'id'
     lookup_url_kwarg = 'id'
     pagination_class = QCMPagination
@@ -40,6 +40,13 @@ class QCMViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         queryset = QCM.objects.all()
+        
+        # Filtrer par utilisateur connecté
+        if self.request.user.is_authenticated:
+            queryset = queryset.filter(book__created_by=self.request.user)
+        else:
+            return QCM.objects.none()
+        
         # Filtrer par livre si spécifié
         book_id = self.request.query_params.get('book_id')
         if book_id:
@@ -183,9 +190,10 @@ class QCMViewSet(viewsets.ModelViewSet):
 
 
 class QuestionViewSet(viewsets.ModelViewSet):
+    """ViewSet pour la gestion des questions"""
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     lookup_field = 'id'
     lookup_url_kwarg = 'id'
     
@@ -195,7 +203,10 @@ class QuestionViewSet(viewsets.ModelViewSet):
         return QuestionSerializer
     
     def get_queryset(self):
-        queryset = Question.objects.all()
+        if self.request.user.is_authenticated:
+            return Question.objects.filter(qcm__book__created_by=self.request.user)
+        return Question.objects.none()
+        
         # Filtrer par QCM si spécifié
         qcm_id = self.request.query_params.get('qcm_id')
         if qcm_id:
@@ -222,9 +233,10 @@ class QuestionViewSet(viewsets.ModelViewSet):
 
 
 class ReponseViewSet(viewsets.ModelViewSet):
+    """ViewSet pour la gestion des réponses"""
     queryset = Reponse.objects.all()
     serializer_class = ReponseSerializer
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     lookup_field = 'id'
     lookup_url_kwarg = 'id'
     
@@ -234,7 +246,11 @@ class ReponseViewSet(viewsets.ModelViewSet):
         return ReponseSerializer
     
     def get_queryset(self):
-        queryset = Reponse.objects.all()
+        if self.request.user.is_authenticated:
+            queryset = Reponse.objects.filter(question__qcm__book__created_by=self.request.user)
+        else:
+            return Reponse.objects.none()
+        
         # Filtrer par question si spécifié
         question_id = self.request.query_params.get('question_id')
         if question_id:
