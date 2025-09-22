@@ -89,3 +89,20 @@ class SuccessResponseSerializer(serializers.Serializer):
     """Sérialiseur pour les réponses de succès"""
     message = serializers.CharField()
     data = serializers.DictField(required=False)
+
+
+class RequestPasswordResetSerializer(serializers.Serializer):
+    """Sérialiseur pour demander la réinitialisation de mot de passe"""
+    email = serializers.EmailField(required=True)
+
+
+class ResetPasswordSerializer(serializers.Serializer):
+    """Sérialiseur pour réinitialiser le mot de passe avec un token"""
+    token = serializers.CharField(required=True)
+    newPassword = serializers.CharField(required=True)
+
+
+class ChangePasswordSerializer(serializers.Serializer):
+    """Sérialiseur pour changer le mot de passe (utilisateur authentifié)"""
+    oldPassword = serializers.CharField(required=True)
+    newPassword = serializers.CharField(required=True)

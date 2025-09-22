@@ -27,7 +27,7 @@ class CustomUser(AbstractUser):
     
     # Métadonnées
     is_external_user = models.BooleanField(default=True)
-    external_api_url = models.URLField(default='https://smart-cv.worldws.pro/api')
+    external_api_url = models.URLField(default='https://total-cms.worldws.pro//api')
     
     # Timestamps
     last_login_api = models.DateTimeField(blank=True, null=True)

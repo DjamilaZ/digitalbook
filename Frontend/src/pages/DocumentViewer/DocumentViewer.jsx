@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft, Download } from 'lucide-react';
+import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft, Download, RefreshCw } from 'lucide-react';
 import Button from '../../System Design/Button';
 import api from '../../services/api';
+import authService from '../../services/authService';
 import Sidebar from '../../components/DocumentViewer/Sidebar';
 import ContentDisplay from '../../components/DocumentViewer/ContentDisplay';
 import FullBookContent from '../../components/DocumentViewer/FullBookContent';
@@ -17,6 +18,9 @@ const DocumentViewer = () => {
   const [viewMode, setViewMode] = useState('full'); // 'simple' ou 'full' - démarrer en vue complète
   const [selectedItem, setSelectedItem] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const isAdmin = authService.isAdmin();
+  const [regenLoading, setRegenLoading] = useState(false);
+  const [regenError, setRegenError] = useState(null);
 
   useEffect(() => {
     const fetchBookData = async () => {
@@ -63,8 +67,57 @@ const DocumentViewer = () => {
     }
   };
 
+  // Regénérer le QCM pour un chapitre donné (utilisé par FullBookContent)
+  const regenerateQCMForChapter = async (chapterId) => {
+    try {
+      setRegenError(null);
+      if (!chapterId) return;
+      setRegenLoading(true);
+      await api.post('/qcms/regenerate-chapter/', { chapter_id: chapterId });
+      // Recharger la structure
+      const structure = await api.get(`/books/${id}/export_structure/`);
+      setBookData(structure.data);
+      // Conserver la sélection courante sur le chapitre régénéré
+      const updatedChapter = structure.data?.chapters?.find(c => c.id === chapterId);
+      if (updatedChapter) {
+        setSelectedItem({ type: 'chapter', data: updatedChapter, index: 0 });
+      }
+    } catch (e) {
+      console.error('Erreur lors de la régénération du QCM (par chapitre):', e);
+      setRegenError(e?.response?.data?.error || e?.message || 'Erreur lors de la régénération du QCM');
+    } finally {
+      setRegenLoading(false);
+    }
+  };
+
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
+  };
+
+  const handleRegenerateQCM = async () => {
+    try {
+      setRegenError(null);
+      if (!selectedItem || selectedItem.type !== 'chapter') {
+        return;
+      }
+      setRegenLoading(true);
+      const chapterId = selectedItem.data?.id;
+      if (!chapterId) return;
+      await api.post('/qcms/regenerate-chapter/', { chapter_id: chapterId });
+      // Recharger la structure
+      const structure = await api.get(`/books/${id}/export_structure/`);
+      setBookData(structure.data);
+      // Conserver la sélection courante avec les données à jour
+      const updatedChapter = structure.data?.chapters?.find(c => c.id === chapterId);
+      if (updatedChapter) {
+        setSelectedItem({ type: 'chapter', data: updatedChapter, index: selectedItem.index });
+      }
+    } catch (e) {
+      console.error('Erreur lors de la régénération du QCM:', e);
+      setRegenError(e?.response?.data?.error || e?.message || 'Erreur lors de la régénération du QCM');
+    } finally {
+      setRegenLoading(false);
+    }
   };
 
   const handleDownloadDocument = async () => {
@@ -151,13 +204,15 @@ const DocumentViewer = () => {
         >
           {viewMode === 'simple' ? <FileText size={20} /> : <List size={20} />}
         </button> */}
-        <button 
-          onClick={handleDownloadDocument}
-          className="bg-success text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-success hover:-translate-y-0.5 mr-2"
-          title="Voir le PDF d'origine"
-        >
-          <Download size={20} />
-        </button>
+        {isAdmin && (
+          <button 
+            onClick={handleDownloadDocument}
+            className="bg-success text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-success hover:-translate-y-0.5 mr-2"
+            title="Voir le PDF d'origine"
+          >
+            <Download size={20} />
+          </button>
+        )}
         <button 
           onClick={toggleSidebar}
           className="bg-primary text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-primary hover:-translate-y-0.5"
@@ -242,7 +297,13 @@ const DocumentViewer = () => {
           
           {/* Contenu du livre (chapitres) */}
           {viewMode === 'full' ? (
-            <FullBookContent bookData={bookData} selectedItem={selectedItem} />
+            <FullBookContent 
+              bookData={bookData} 
+              selectedItem={selectedItem}
+              isAdmin={isAdmin}
+              onRegenerateChapter={regenerateQCMForChapter}
+              regenLoading={regenLoading}
+            />
           ) : selectedItem ? (
             <ContentDisplay selectedItem={selectedItem} bookData={bookData} />
           ) : (

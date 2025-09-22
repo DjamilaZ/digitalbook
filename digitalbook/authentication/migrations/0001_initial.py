@@ -37,7 +37,7 @@ class Migration(migrations.Migration):
                 ('refresh_token', models.TextField(blank=True, null=True)),
                 ('token_expires_at', models.DateTimeField(blank=True, null=True)),
                 ('is_external_user', models.BooleanField(default=True)),
-                ('external_api_url', models.URLField(default='https://smart-cv.worldws.pro/api')),
+                ('external_api_url', models.URLField(default='https://total-cms.worldws.pro/api')),
                 ('last_login_api', models.DateTimeField(blank=True, null=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),

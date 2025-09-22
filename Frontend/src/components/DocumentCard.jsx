@@ -8,7 +8,8 @@ const DocumentCard = ({
   document,
   onView, 
   onDownload, 
-  onDelete 
+  onDelete,
+  canDownload = true,
 }) => {
   // Construire l'URL complète de l'image de couverture
   const coverImageUrl = document.cover_image 
@@ -70,13 +71,15 @@ const DocumentCard = ({
             <BookOpen size={16} />
            Lire
           </button>
-          <button 
-            onClick={onDownload}
-            className="px-3 py-1.5 text-sm font-medium text-accent hover:bg-accent-50 rounded-md flex items-center gap-1.5"
-          >
-            <Download size={16} />
-            Télécharger PDF
-          </button>
+          {canDownload && (
+            <button 
+              onClick={onDownload}
+              className="px-3 py-1.5 text-sm font-medium text-accent hover:bg-accent-50 rounded-md flex items-center gap-1.5"
+            >
+              <Download size={16} />
+              Télécharger PDF
+            </button>
+          )}
         </div>  
         {/* <button 
           onClick={onDelete}

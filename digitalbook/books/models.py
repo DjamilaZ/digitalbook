@@ -18,6 +18,23 @@ class Book(models.Model):
     )
     cover_image = models.ImageField(upload_to='books/covers/', null=True, blank=True, verbose_name="Image de couverture")
     pdf_url = models.URLField(max_length=1000, null=True, blank=True, verbose_name="URL du PDF")
+    # Suivi de traitement en arrière-plan
+    processing_status = models.CharField(
+        max_length=32,
+        choices=[
+            ('queued', 'Queued'),
+            ('processing', 'Processing'),
+            ('completed', 'Completed'),
+            ('failed', 'Failed'),
+            ('idle', 'Idle'),
+        ],
+        default='idle',
+        verbose_name="Statut de traitement",
+    )
+    processing_progress = models.PositiveIntegerField(default=0, verbose_name="Progression (%)")
+    processing_error = models.TextField(null=True, blank=True, verbose_name="Erreur de traitement")
+    processing_started_at = models.DateTimeField(null=True, blank=True, verbose_name="Début de traitement")
+    processing_finished_at = models.DateTimeField(null=True, blank=True, verbose_name="Fin de traitement")
     
     class Meta:
         verbose_name = "Livre"

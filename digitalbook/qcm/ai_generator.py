@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 from typing import Dict, List, Optional, Union
 from django.conf import settings
 import openai
@@ -43,7 +44,7 @@ class QCMGenerator:
         
         return content
     
-    def _create_prompt(self, content: str, nb_questions: int = 5) -> str:
+    def _create_prompt(self, content: str, nb_questions: int = 5, avoid_questions: Optional[List[str]] = None) -> str:
         """
         Crée le prompt pour l'IA
         
@@ -51,7 +52,7 @@ class QCMGenerator:
         :param nb_questions: Nombre de questions à générer
         :return: Prompt pour l'IA
         """
-        return f"""
+        base = f"""
 Tu es un expert en pédagogie et en création de contenu éducatif.
 À partir du contenu ci-dessous, génère {nb_questions} questions de type QCM pertinentes et variées.
 
@@ -62,6 +63,7 @@ Consignes importantes :
 4. Les mauvaises réponses doivent être plausibles mais incorrectes
 5. Les questions doivent être claires et précises
 6. Adapte le niveau de difficulté au contenu fourni
+7. Ne répète pas de questions déjà utilisées; si une question ressemble fortement à une question donnée ci-dessous, propose une variante substantiellement différente.
 
 Format attendu en JSON strict (sans aucun texte avant ou après) :
 [
@@ -76,6 +78,12 @@ Format attendu en JSON strict (sans aucun texte avant ou après) :
 Contenu à analyser :
 {content}
 """
+        if avoid_questions:
+            # Limiter la taille injectée pour ne pas exploser le prompt
+            limited = avoid_questions[:50]
+            avoid_block = "\nQuestions déjà utilisées (à éviter) :\n" + "\n".join(f"- {q}" for q in limited) + "\n"
+            return base + avoid_block
+        return base
     
     def _parse_response(self, raw_output: str) -> List[Dict]:
         """
@@ -121,7 +129,8 @@ Contenu à analyser :
             raise
     
     def generate_qcm(self, chapter_title: str, sections: Dict[str, str], 
-                    nb_questions: int = 5, model: str = "gpt-4o-mini") -> List[Dict]:
+                    nb_questions: int = 5, model: str = "gpt-4o-mini",
+                    avoid_questions_texts: Optional[List[str]] = None) -> List[Dict]:
         """
         Génère un QCM à partir d'un chapitre et de ses sections
         
@@ -140,7 +149,7 @@ Contenu à analyser :
             content = self._format_content(chapter_title, sections)
             
             # Créer le prompt
-            prompt = self._create_prompt(content, nb_questions)
+            prompt = self._create_prompt(content, nb_questions, avoid_questions=avoid_questions_texts)
             
             # Appeler l'API OpenAI
             response = openai.chat.completions.create(
@@ -166,7 +175,8 @@ Contenu à analyser :
             logger.error(f"Erreur lors de la génération du QCM: {e}")
             raise
     
-    def generate_qcm_from_chapter(self, chapter, nb_questions: int = 5) -> List[Dict]:
+    def generate_qcm_from_chapter(self, chapter, nb_questions: int = 5, 
+                                  avoid_questions_texts: Optional[List[str]] = None) -> List[Dict]:
         """
         Génère un QCM à partir d'un objet Chapter Django
         
@@ -183,7 +193,8 @@ Contenu à analyser :
         return self.generate_qcm(
             chapter_title=chapter.title,
             sections=sections,
-            nb_questions=nb_questions
+            nb_questions=nb_questions,
+            avoid_questions_texts=avoid_questions_texts
         )
 
 

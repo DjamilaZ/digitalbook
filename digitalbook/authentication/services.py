@@ -13,7 +13,7 @@ class ExternalAPIService:
     """Service pour communiquer avec l'API externe d'authentification"""
     
     def __init__(self):
-        self.base_url = 'https://smart-cv.worldws.pro/api'
+        self.base_url = 'https://total-cms.worldws.pro/api'
         self.timeout = 30
         
     def _make_request(self, method, endpoint, data=None, headers=None):
@@ -100,6 +100,43 @@ class ExternalAPIService:
                 'error': response_data.get('message', 'Erreur lors du rafraîchissement du token'),
                 'status_code': status_code
             }
+
+    def request_password_reset(self, email: str):
+        """Demande l'envoi d'un email de réinitialisation de mot de passe"""
+        endpoint = '/users/request-password-reset'
+        data = { 'email': email }
+        status_code, response_data = self._make_request('POST', endpoint, data)
+        return {
+            'success': status_code == 200,
+            'data': response_data,
+            'status_code': status_code,
+            'error': None if status_code == 200 else response_data.get('message', 'Erreur lors de la demande de réinitialisation')
+        }
+
+    def reset_password(self, token: str, new_password: str):
+        """Réinitialise le mot de passe à partir d'un token reçu par email"""
+        endpoint = '/users/reset-password'
+        data = { 'token': token, 'newPassword': new_password }
+        status_code, response_data = self._make_request('POST', endpoint, data)
+        return {
+            'success': status_code == 200,
+            'data': response_data,
+            'status_code': status_code,
+            'error': None if status_code == 200 else response_data.get('message', 'Erreur lors de la réinitialisation du mot de passe')
+        }
+
+    def change_password(self, access_token: str, old_password: str, new_password: str):
+        """Change le mot de passe de l'utilisateur authentifié"""
+        endpoint = '/users/change-password'
+        headers = { 'Authorization': f'Bearer {access_token}' }
+        data = { 'oldPassword': old_password, 'newPassword': new_password }
+        status_code, response_data = self._make_request('POST', endpoint, data, headers=headers)
+        return {
+            'success': status_code == 200,
+            'data': response_data,
+            'status_code': status_code,
+            'error': None if status_code == 200 else response_data.get('message', 'Erreur lors du changement de mot de passe')
+        }
     
     def get_user_info(self, access_token):
         """Récupère les informations utilisateur avec le token d'accès"""

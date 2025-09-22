@@ -12,6 +12,8 @@ const Upload = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [uploadComplete, setUploadComplete] = useState(false);
   const [error, setError] = useState('');
+  const [createdBook, setCreatedBook] = useState(null);
+  const [isQueued, setIsQueued] = useState(false);
 
   const onPdfDrop = useCallback((acceptedFiles) => {
     if (acceptedFiles && acceptedFiles.length > 0) {
@@ -96,12 +98,17 @@ const Upload = () => {
       });
       
       const newBook = await bookService.createBook(formData);
+      setCreatedBook(newBook);
+      const queued = (newBook?.processing_status === 'queued' || newBook?.processing_status === 'processing');
+      setIsQueued(queued);
       setUploadComplete(true);
       
-      // Rediriger vers la page du livre après un court délai
-      setTimeout(() => {
-        navigate(`/documents/${newBook.id}`);
-      }, 1500);
+      // Si le traitement est déjà terminé (cas rare), on peut rediriger. Sinon, on reste sur place.
+      if (!queued) {
+        setTimeout(() => {
+          navigate(`/documents/${newBook.id}`);
+        }, 1500);
+      }
     } catch (error) {
       console.error('Erreur lors du téléchargement:', error);
       const errorMessage = error.response?.data?.message || 
@@ -297,7 +304,7 @@ const Upload = () => {
                 ) : uploadComplete ? (
                   <>
                     <Check className="mr-2 h-4 w-4" />
-                    Téléchargé avec succès !
+                    {isQueued ? 'Document créé, traitement en cours…' : 'Téléchargé avec succès !'}
                   </>
                 ) : (
                   <>
@@ -311,23 +318,37 @@ const Upload = () => {
         </div>
         
         {uploadComplete && (
-          <div className="mt-8 p-6 bg-success-50 border border-success-200 rounded-xl">
+          <div className={`mt-8 p-6 rounded-xl border ${isQueued ? 'bg-blue-50 border-blue-200' : 'bg-success-50 border-success-200'}`}>
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center text-success flex-shrink-0">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isQueued ? 'bg-blue-100 text-blue-700' : 'bg-success-100 text-success'}`}>
                 <Check size={16} />
               </div>
               <div>
-                <h3 className="font-medium text-success-800">Document téléchargé avec succès !</h3>
-                <p className="text-sm text-success-700 mt-1">
-                  Votre document a été analysé avec succès. Vous pouvez maintenant le consulter dans votre bibliothèque.
+                <h3 className={`font-medium ${isQueued ? 'text-blue-900' : 'text-success-800'}`}>
+                  {isQueued ? 'Document créé — traitement en cours' : 'Document téléchargé avec succès !'}
+                </h3>
+                <p className={`text-sm mt-1 ${isQueued ? 'text-blue-800' : 'text-success-700'}`}>
+                  {isQueued
+                    ? "Le fichier a été importé. L’extraction et la génération des QCM continuent en arrière-plan. Vous pourrez ouvrir le document une fois le traitement terminé."
+                    : "Votre document a été analysé avec succès. Vous pouvez maintenant le consulter dans votre bibliothèque."}
                 </p>
                 <div className="mt-4 flex gap-3">
-                  <Button variant="primary" size="sm">
-                    Voir le document
-                  </Button>
-                  <Button variant="secondary" size="sm">
+                  <Button
+                    variant={isQueued ? 'secondary' : 'primary'}
+                    size="sm"
+                    onClick={() => navigate('/')}
+                  >
                     Retour à l'accueil
                   </Button>
+                  {createdBook?.id && !isQueued && (
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      onClick={() => navigate(`/documents/${createdBook.id}`)}
+                    >
+                      Voir le document
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

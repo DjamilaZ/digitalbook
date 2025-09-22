@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import { Pin } from 'lucide-react';
+import React, { useEffect, useRef, useMemo } from 'react';
+import { Pin, RefreshCw } from 'lucide-react';
 import QCMComponent from './QCMComponent';
 
-const FullBookContent = ({ bookData, selectedItem }) => {
+const FullBookContent = ({ bookData, selectedItem, isAdmin, onRegenerateChapter, regenLoading }) => {
   // Composant pour mettre en évidence les mots spéciaux
   const HighlightedText = ({ text }) => {
     const specialWords = ['remarque', 'note', 'rappelle'];
@@ -87,8 +87,24 @@ const FullBookContent = ({ bookData, selectedItem }) => {
       
       return elements.length > 0 ? elements : [text];
     };
-    
+
     return <>{createHighlightedElements(text)}</>;
+  };
+
+  // Nettoyer les titres qui contiennent déjà une numérotation (même logique que Sidebar)
+  const cleanTitle = (title, order = null) => {
+    if (!title) return '';
+    if (order !== null) {
+      const regex = new RegExp(`^${order + 1}\\.\\s*`);
+      if (regex.test(title)) {
+        return title.replace(regex, '');
+      }
+    }
+    const generalNumberingRegex = /^(\d+\.?\s*)+/;
+    if (generalNumberingRegex.test(title)) {
+      return title.replace(generalNumberingRegex, '');
+    }
+    return title;
   };
 
   const renderContent = (content) => {
@@ -413,6 +429,25 @@ const FullBookContent = ({ bookData, selectedItem }) => {
     }
   }, [selectedItem, bookData]);
 
+  // Regrouper les chapitres par thématique pour l'affichage "full content"
+  const hasRealThematiques = useMemo(() => {
+    return Array.isArray(bookData?.chapters) && bookData.chapters.some(ch => ch.thematique);
+  }, [bookData?.chapters]);
+
+  const groupedChapters = useMemo(() => {
+    if (!Array.isArray(bookData?.chapters)) return [];
+    const map = new Map(); // préserve l'ordre d'apparition
+    const WITHOUT = 'sans-thematique';
+    for (const ch of bookData.chapters) {
+      const key = ch.thematique ? String(ch.thematique.id) : WITHOUT;
+      if (!map.has(key)) {
+        map.set(key, { key, thematique: ch.thematique || null, chapters: [] });
+      }
+      map.get(key).chapters.push(ch);
+    }
+    return Array.from(map.values());
+  }, [bookData?.chapters]);
+
   return (
     <div className="w-full max-w-none px-6 py-8" ref={contentRef}>
       {/* Introduction du livre - Fixe lors du défilement */}
@@ -427,149 +462,171 @@ const FullBookContent = ({ bookData, selectedItem }) => {
         </div>
       )}
 
-      {/* Contenu des chapitres */}
-      <div className="w-full space-y-8">
-        {bookData.chapters.map((chapter, chapterIndex) => (
-          <div key={chapter.id} className="w-full">
-            {/* Information de thématique si disponible */}
-            {chapter.thematique && (
-              <div className="mb-4 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+      {/* Contenu des chapitres, groupés par thématique */}
+      <div className="w-full space-y-12">
+        {groupedChapters.map((group) => (
+          <div key={group.key} className="w-full">
+            {group.thematique ? (
+              <div className="mb-6 p-4 bg-purple-50 border border-purple-200 rounded-lg">
                 <div className="flex items-center gap-2 text-purple-800">
                   <span className="font-semibold text-purple-900">Thématique:</span>
-                  <span className="text-purple-700">{chapter.thematique.title}</span>
+                  <span className="text-purple-700">{group.thematique.title}</span>
                 </div>
-                {chapter.thematique.description && (
+                {group.thematique.description && (
                   <p className="text-sm text-purple-600 mt-1 italic">
-                    {chapter.thematique.description}
+                    {group.thematique.description}
                   </p>
                 )}
               </div>
-            )}
+            ) : null}
 
-            {/* Titre du chapitre (H1) */}
-            <h1 
-              id={`chapter-${chapter.id}`}
-              className={`text-3xl font-bold text-gray-900 mb-6 ${selectedItem?.type === 'chapter' && selectedItem?.chapterIndex === chapterIndex ? 'bg-blue-50 border-l-4 border-blue-500 pl-4 py-2 -ml-6' : ''}`}
-            >
-              Chapitre {chapter.order + 1}. {chapter.title}
-            </h1>
-
-            {/* Contenu du chapitre */}
-            {chapter.content && (
-              <div className="text-gray-800 leading-relaxed mb-6 space-y-4">
-                {renderContent(chapter.content)}
-              </div>
-            )}
-
-            {/* Images du chapitre */}
-            {renderImages(chapter.images)}
-
-            {/* Tableaux du chapitre */}
-            {renderTables(chapter.tables)}
-
-            {/* Sections du chapitre */}
-            <div className="w-full space-y-6 ml-4">
-              {chapter.sections.map((section, sectionIndex) => (
-                <div key={section.id} className="w-full">
-                  {/* Titre de la section (H2) */}
-                  <h2 
-                    id={`section-${section.id}`}
-                    className={`text-2xl font-semibold text-gray-800 mb-4 ${selectedItem?.type === 'section' && selectedItem?.chapterIndex === chapterIndex && selectedItem?.sectionIndex === sectionIndex ? 'bg-green-50 border-l-4 border-green-500 pl-4 py-2 -ml-4' : ''}`}
-                  >
-                    {chapter.order + 1}.{section.order + 1} {section.title}
-                  </h2>
-
-                  {/* Contenu de la section */}
-                  {section.content && (
-                    <div className="text-gray-700 leading-relaxed mb-4 space-y-3">
-                      {renderContent(section.content)}
-                    </div>
-                  )}
-
-                  {/* Images de la section */}
-                  {renderImages(section.images)}
-
-                  {/* Tableaux de la section */}
-                  {renderTables(section.tables)}
-
-                  {/* Sous-sections de la section */}
-                  <div className="w-full space-y-4 ml-4">
-                    {section.subsections.map((subsection, subsectionIndex) => (
-                      <div key={subsection.id} className="w-full">
-                        {/* Titre de la sous-section (H3) */}
-                        <h3 
-                          id={`subsection-${subsection.id}`}
-                          className={`text-xl font-medium text-gray-700 mb-3 ${selectedItem?.type === 'subsection' && selectedItem?.chapterIndex === chapterIndex && selectedItem?.sectionIndex === sectionIndex && selectedItem?.subsectionIndex === subsectionIndex ? 'bg-yellow-50 border-l-4 border-yellow-500 pl-4 py-2 -ml-4' : ''}`}
+            <div className="w-full space-y-10">
+              {group.chapters.map((chapter) => {
+                const chapterIndexOriginal = bookData.chapters.findIndex(c => c.id === chapter.id);
+                return (
+                  <div key={chapter.id} className="w-full">
+                    {/* Titre du chapitre (H1) + actions admin */}
+                    <div className="flex items-center justify-between gap-3 mb-6">
+                      <h1 
+                        id={`chapter-${chapter.id}`}
+                        className={`text-3xl font-bold text-gray-900 ${selectedItem?.type === 'chapter' && selectedItem?.chapterIndex === chapterIndexOriginal ? 'bg-blue-50 border-l-4 border-blue-500 pl-4 py-2 -ml-6' : ''}`}
+                      >
+                        Chapitre {chapter.order + 1}. {cleanTitle(chapter.title, chapter.order)}
+                      </h1>
+                      {isAdmin && onRegenerateChapter && Array.isArray(chapter.sections) && chapter.sections.length > 0 && (
+                        <button
+                          type="button"
+                          onClick={() => onRegenerateChapter(chapter.id)}
+                          disabled={regenLoading}
+                          className={`border-none rounded-md px-3 py-2 cursor-pointer transition-all duration-300 text-sm flex items-center gap-2 ${regenLoading ? 'bg-gray-300 text-gray-600' : 'bg-warning text-white hover:bg-warning hover:-translate-y-0.5'}`}
+                          title="Régénérer le QCM (5 questions)"
                         >
-                          {chapter.order + 1}.{section.order + 1}.{subsection.order + 1} {subsection.title}
-                        </h3>
+                          <RefreshCw size={16} />
+                          Régénérer QCM
+                        </button>
+                      )}
+                    </div>
 
-                        {/* Contenu de la sous-section */}
-                        {subsection.content && (
-                          <div className="text-gray-600 leading-relaxed mb-3 space-y-2">
-                            {renderContent(subsection.content)}
-                          </div>
-                        )}
-
-                        {/* Images de la sous-section */}
-                        {renderImages(subsection.images)}
-
-                        {/* Tableaux de la sous-section */}
-                        {renderTables(subsection.tables)}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Sous-sections directes du chapitre (sans section parente) */}
-            {chapter.subsections && chapter.subsections.length > 0 && (
-              <div className="w-full space-y-4 ml-4">
-                {chapter.subsections.map((subsection, subsectionIndex) => (
-                  <div key={subsection.id} className="w-full">
-                    {/* Titre de la sous-section (H3) */}
-                    <h3 
-                      id={`subsection-${subsection.id}`}
-                      className="text-xl font-medium text-gray-700 mb-3"
-                    >
-                      {chapter.order + 1}.{subsection.order + 1} {subsection.title}
-                    </h3>
-
-                    {/* Contenu de la sous-section */}
-                    {subsection.content && (
-                      <div className="text-gray-600 leading-relaxed mb-3 space-y-2">
-                        {renderContent(subsection.content)}
+                    {/* Contenu du chapitre */}
+                    {chapter.content && (
+                      <div className="text-gray-800 leading-relaxed mb-6 space-y-4">
+                        {renderContent(chapter.content)}
                       </div>
                     )}
 
-                    {/* Images de la sous-section */}
-                    {renderImages(subsection.images)}
+                    {/* Images du chapitre */}
+                    {renderImages(chapter.images)}
 
-                    {/* Tableaux de la sous-section */}
-                    {renderTables(subsection.tables)}
-                  </div>
-                ))}
-              </div>
-            )}
+                    {/* Tableaux du chapitre */}
+                    {renderTables(chapter.tables)}
 
-            {/* QCMs du chapitre - Affichés à la fin */}
-            {chapter.qcm && chapter.qcm.length > 0 && (
-              <div className="w-full mt-8">
-                <div className="border-t-2 border-blue-200 pt-6">
-                  <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
-                    🧠 Quiz - Testez vos connaissances
-                  </h2>
-                  <div className="space-y-6">
-                    {chapter.qcm.map((qcm, qcmIndex) => (
-                      <div key={qcm.id} id={`chapter-${chapter.id}-qcm-${qcmIndex}`} className="qcm-section">
-                        <QCMComponent key={qcm.id} qcm={qcm} />
+                    {/* Sections du chapitre */}
+                    <div className="w-full space-y-6 ml-4">
+                      {chapter.sections.map((section, sectionIndex) => (
+                        <div key={section.id} className="w-full">
+                          {/* Titre de la section (H2) */}
+                          <h2 
+                            id={`section-${section.id}`}
+                            className={`text-2xl font-semibold text-gray-800 mb-4 ${selectedItem?.type === 'section' && selectedItem?.chapterIndex === chapterIndexOriginal && selectedItem?.sectionIndex === sectionIndex ? 'bg-green-50 border-l-4 border-green-500 pl-4 py-2 -ml-4' : ''}`}
+                          >
+                            {chapter.order + 1}.{section.order + 1} {cleanTitle(section.title, section.order)}
+                          </h2>
+
+                          {/* Contenu de la section */}
+                          {section.content && (
+                            <div className="text-gray-700 leading-relaxed mb-4 space-y-3">
+                              {renderContent(section.content)}
+                            </div>
+                          )}
+
+                          {/* Images de la section */}
+                          {renderImages(section.images)}
+
+                          {/* Tableaux de la section */}
+                          {renderTables(section.tables)}
+
+                          {/* Sous-sections de la section */}
+                          <div className="w-full space-y-4 ml-4">
+                            {section.subsections.map((subsection, subsectionIndex) => (
+                              <div key={subsection.id} className="w-full">
+                                {/* Titre de la sous-section (H3) */}
+                                <h3 
+                                  id={`subsection-${subsection.id}`}
+                                  className={`text-xl font-medium text-gray-700 mb-3 ${selectedItem?.type === 'subsection' && selectedItem?.chapterIndex === chapterIndexOriginal && selectedItem?.sectionIndex === sectionIndex && selectedItem?.subsectionIndex === subsectionIndex ? 'bg-yellow-50 border-l-4 border-yellow-500 pl-4 py-2 -ml-4' : ''}`}
+                                >
+                                  {chapter.order + 1}.{section.order + 1}.{subsection.order + 1} {cleanTitle(subsection.title, subsection.order)}
+                                </h3>
+
+                                {/* Contenu de la sous-section */}
+                                {subsection.content && (
+                                  <div className="text-gray-600 leading-relaxed mb-3 space-y-2">
+                                    {renderContent(subsection.content)}
+                                  </div>
+                                )}
+
+                                {/* Images de la sous-section */}
+                                {renderImages(subsection.images)}
+
+                                {/* Tableaux de la sous-section */}
+                                {renderTables(subsection.tables)}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Sous-sections directes du chapitre (sans section parente) */}
+                    {chapter.subsections && chapter.subsections.length > 0 && (
+                      <div className="w-full space-y-4 ml-4">
+                        {chapter.subsections.map((subsection, subsectionIndex) => (
+                          <div key={subsection.id} className="w-full">
+                            {/* Titre de la sous-section (H3) */}
+                            <h3 
+                              id={`subsection-${subsection.id}`}
+                              className="text-xl font-medium text-gray-700 mb-3"
+                            >
+                              {chapter.order + 1}.{subsection.order + 1} {cleanTitle(subsection.title, subsection.order)}
+                            </h3>
+
+                            {/* Contenu de la sous-section */}
+                            {subsection.content && (
+                              <div className="text-gray-600 leading-relaxed mb-3 space-y-2">
+                                {renderContent(subsection.content)}
+                              </div>
+                            )}
+
+                            {/* Images de la sous-section */}
+                            {renderImages(subsection.images)}
+
+                            {/* Tableaux de la sous-section */}
+                            {renderTables(subsection.tables)}
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    )}
+
+                    {/* QCMs du chapitre - Affichés à la fin */}
+                    {chapter.qcm && chapter.qcm.length > 0 && (
+                      <div className="w-full mt-8">
+                        <div className="border-t-2 border-blue-200 pt-6">
+                          <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+                            🧠 Quiz - Testez vos connaissances
+                          </h2>
+                          <div className="space-y-6">
+                            {chapter.qcm.map((qcm, qcmIndex) => (
+                              <div key={qcm.id} id={`chapter-${chapter.id}-qcm-${qcmIndex}`} className="qcm-section">
+                                <QCMComponent key={qcm.id} qcm={qcm} />
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                </div>
-              </div>
-            )}
+                );
+              })}
+            </div>
           </div>
         ))}
       </div>

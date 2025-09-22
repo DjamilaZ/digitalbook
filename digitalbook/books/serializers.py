@@ -30,10 +30,20 @@ class BookSerializer(serializers.ModelSerializer):
     pdf_file = serializers.FileField(required=False, allow_null=True, write_only=True)
     json_structure_file = serializers.FileField(required=False, allow_null=True, write_only=True)
     pdf_url = serializers.URLField(required=False, allow_null=True, read_only=True)
+    processing_status = serializers.CharField(read_only=True)
+    processing_progress = serializers.IntegerField(read_only=True)
+    processing_error = serializers.CharField(read_only=True)
+    processing_started_at = serializers.DateTimeField(read_only=True)
+    processing_finished_at = serializers.DateTimeField(read_only=True)
     
     class Meta:
         model = Book
-        fields = ['id', 'title', 'url', 'created_at', 'created_by', 'chapters', 'pdf_file', 'json_structure_file', 'pdf_url']
+        fields = [
+            'id', 'title', 'url', 'created_at', 'created_by', 'chapters',
+            'pdf_file', 'json_structure_file', 'pdf_url',
+            'processing_status', 'processing_progress', 'processing_error',
+            'processing_started_at', 'processing_finished_at'
+        ]
         read_only_fields = ['id', 'created_at', 'created_by', 'url']
         extra_kwargs = {
             'pdf_file': {'required': True}

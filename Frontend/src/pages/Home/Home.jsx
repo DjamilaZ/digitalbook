@@ -5,12 +5,14 @@ import FeatureCard from "../../System Design/FeatureCard";
 import DocumentItem from "../../System Design/DocumentItem";
 import { Search, FileText, BookOpen } from "lucide-react";
 import bookService from "../../services/bookService";
+import authService from "../../services/authService";
 
 const Home = () => {
   const navigate = useNavigate();
   const [recentDocuments, setRecentDocuments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const isAdmin = authService.isAdmin();
 
   // Charger les documents récents
   useEffect(() => {
@@ -42,6 +44,7 @@ const Home = () => {
   };
 
   const handleViewDocument = (docId) => {
+    console.log(docId);
     navigate(`/documents/${docId}`);
   };
 
@@ -56,7 +59,9 @@ const Home = () => {
           Transformez vos documents PDF en expérience de lecture interactive avec sommaire automatique et navigation fluide.
         </p>
         <div className="flex justify-center gap-4">
-          <Button variant="primary" onClick={handleUploadNew}>Télécharger un PDF</Button>
+          {isAdmin && (
+            <Button variant="primary" onClick={handleUploadNew}>Télécharger un PDF</Button>
+          )}
           <Button variant="accent" onClick={handleViewLibrary}>Voir ma bibliothèque</Button>
         </div>
       </div>
@@ -122,13 +127,23 @@ const Home = () => {
         ) : (
           <div className="text-center py-8 text-gray-500">
             <p>Aucun document récent trouvé</p>
-            <Button 
-              variant="outline" 
-              className="mt-4"
-              onClick={handleUploadNew}
-            >
-              Télécharger votre premier document
-            </Button>
+            {isAdmin ? (
+              <Button 
+                variant="outline" 
+                className="mt-4"
+                onClick={handleUploadNew}
+              >
+                Télécharger votre premier document
+              </Button>
+            ) : (
+              <Button 
+                variant="accent" 
+                className="mt-4"
+                onClick={handleViewLibrary}
+              >
+                Voir ma bibliothèque
+              </Button>
+            )}
           </div>
         )}
       </div>

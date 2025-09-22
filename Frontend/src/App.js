@@ -8,6 +8,8 @@ import Upload from './pages/Upload/Upload';
 import Documents from './pages/Documents/Documents';
 import DocumentViewer from './pages/DocumentViewer/DocumentViewer';
 import authService from './services/authService';
+import Profile from './pages/Profile/Profile';
+import ResetPassword from './pages/ResetPassword/ResetPassword';
 
 // Composant pour protéger les routes nécessitant une authentification
 const ProtectedRoute = ({ children }) => {
@@ -55,6 +57,47 @@ const ProtectedRoute = ({ children }) => {
   return isAuthenticated ? children : <Navigate to="/login" replace />;
 };
 
+// Composant pour protéger les routes réservées aux administrateurs
+const AdminRoute = ({ children }) => {
+  const [allowed, setAllowed] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const checkAdmin = async () => {
+      try {
+        const authStatus = authService.isAuthenticated();
+        if (authStatus) {
+          try {
+            await authService.validateToken();
+          } catch (error) {
+            // Token invalide, on refusera plus bas
+          }
+        }
+        setAllowed(authStatus && authService.isAdmin());
+      } catch (error) {
+        setAllowed(false);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    checkAdmin();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
+  return allowed ? children : <Navigate to="/" replace />;
+};
+
 // Composant pour le layout principal
 const MainLayout = () => {
   return (
@@ -63,9 +106,14 @@ const MainLayout = () => {
       <div className="flex-1 ml-64">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/upload" element={<Upload />} />
+          <Route path="/upload" element={
+            <AdminRoute>
+              <Upload />
+            </AdminRoute>
+          } />
           <Route path="/documents" element={<Documents />} />
           <Route path="/documents/:id" element={<DocumentViewer />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </div>
@@ -77,6 +125,7 @@ function App() {
     <div className="bg-gray-50 min-h-screen">
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/*" element={
           <ProtectedRoute>
             <MainLayout />

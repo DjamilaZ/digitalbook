@@ -5,6 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
 from django.conf import settings
+from django.db import transaction
 from .models import QCM, Question, Reponse
 from .serializers import (
     QCMSerializer, QCMListSerializer, QCMCreateSerializer,
@@ -58,6 +59,102 @@ class QCMViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(chapter_id=chapter_id)
             
         return queryset
+
+    @action(detail=False, methods=['post'], url_path='regenerate-chapter')
+    def regenerate_chapter(self, request):
+        """
+        Regénère le QCM pour un chapitre donné en recréant exactement 5 nouvelles questions.
+        - Supprime les QCM existants liés à ce chapitre (pour ne plus afficher les anciennes questions)
+        - Génère un nouveau QCM avec 5 questions
+        - Crée un QCM s'il n'existait pas
+
+        Body attendu:
+        { "chapter_id": <int>, "title": <optionnel>, "description": <optionnel> }
+        """
+        try:
+            chapter_id = request.data.get('chapter_id')
+            title = request.data.get('title')
+            description = request.data.get('description', '')
+
+            if not chapter_id:
+                return Response(
+                    {'error': 'chapter_id est requis'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            # Récupérer le chapitre appartenant à un livre de l'utilisateur
+            chapter = get_object_or_404(Chapter, id=chapter_id, book__created_by=request.user)
+
+            # Vérifier que le chapitre a des sections
+            if not chapter.sections.exists():
+                return Response(
+                    {'error': 'Le chapitre ne contient aucune section'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            # Titre par défaut
+            if not title:
+                title = f"QCM auto-généré - {chapter.title}"
+
+            # Toujours 5 questions, borné par le max autorisé
+            nb_questions = min(5, getattr(settings, 'QCM_MAX_QUESTIONS', 10))
+
+            with transaction.atomic():
+                # Récupérer les anciennes questions AVANT suppression pour les éviter
+                existing_questions_texts = list(
+                    Question.objects.filter(qcm__chapter=chapter, qcm__book=chapter.book)
+                    .values_list('text', flat=True)
+                )
+
+                # Supprimer les anciens QCM du chapitre (et leurs questions/réponses)
+                QCM.objects.filter(chapter=chapter, book=chapter.book).delete()
+
+                # Générer les données via l'IA en évitant les anciennes questions
+                generator = QCMGenerator()
+                qcm_data = generator.generate_qcm_from_chapter(
+                    chapter=chapter,
+                    nb_questions=nb_questions,
+                    avoid_questions_texts=existing_questions_texts
+                )
+
+                # Créer le QCM
+                qcm = QCM.objects.create(
+                    book=chapter.book,
+                    chapter=chapter,
+                    title=title,
+                    description=description
+                )
+
+                # Créer questions et réponses
+                for i, question_data in enumerate(qcm_data):
+                    question = Question.objects.create(
+                        qcm=qcm,
+                        text=question_data['question'],
+                        order=i + 1
+                    )
+
+                    for j, option in enumerate(question_data['options']):
+                        is_correct = (option == question_data['reponse_correcte'])
+                        Reponse.objects.create(
+                            question=question,
+                            text=option,
+                            is_correct=is_correct,
+                            order=j + 1
+                        )
+
+            serializer = QCMSerializer(qcm)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+        except ValueError as e:
+            return Response(
+                {'error': f'Erreur de génération du QCM: {str(e)}'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        except Exception as e:
+            return Response(
+                {'error': f'Erreur serveur: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
     @action(detail=True, methods=['get'])
     def questions(self, request, id=None):
@@ -140,12 +237,23 @@ class QCMViewSet(viewsets.ModelViewSet):
             
             # Initialiser le générateur IA
             generator = QCMGenerator()
+
+            # Récupérer les questions existantes pour éviter les doublons
+            existing_questions_texts = list(
+                Question.objects.filter(qcm__chapter=chapter, qcm__book=book)
+                .values_list('text', flat=True)
+            )
             
-            # Générer les questions avec l'IA
+            # Générer les questions en évitant les anciennes
             qcm_data = generator.generate_qcm_from_chapter(
                 chapter=chapter,
-                nb_questions=nb_questions
+                nb_questions=nb_questions,
+                avoid_questions_texts=existing_questions_texts
             )
+            
+            # Filtrer tout doublon exact qui aurait pu passer
+            existing_set = set(existing_questions_texts)
+            qcm_data = [q for q in qcm_data if q.get('question') not in existing_set]
             
             # Créer le QCM
             qcm = QCM.objects.create(

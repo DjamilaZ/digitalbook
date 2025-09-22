@@ -13,7 +13,8 @@ from .models import CustomUser, UserSession
 from .serializers import (
     LoginSerializer, UserSerializer, AuthResponseSerializer,
     RefreshTokenSerializer, LogoutSerializer, UserSessionSerializer,
-    ErrorResponseSerializer, SuccessResponseSerializer
+    ErrorResponseSerializer, SuccessResponseSerializer,
+    RequestPasswordResetSerializer, ResetPasswordSerializer, ChangePasswordSerializer,
 )
 from .services import auth_service
 
@@ -95,6 +96,122 @@ class LoginView(generics.GenericAPIView):
         logger.info(f"Connexion réussie pour l'utilisateur: {email}")
         
         return Response(response_serializer.data, status=status.HTTP_200_OK)
+
+
+# Password reset request (AllowAny) -> proxifie l'API externe
+@method_decorator(csrf_exempt, name='dispatch')
+class RequestPasswordResetView(generics.GenericAPIView):
+    permission_classes = [AllowAny]
+    authentication_classes = []
+    serializer_class = RequestPasswordResetSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        try:
+            serializer.is_valid(raise_exception=True)
+        except Exception as e:
+            return Response(
+                ErrorResponseSerializer({
+                    'error': 'Données invalides',
+                    'status_code': status.HTTP_400_BAD_REQUEST,
+                    'details': {'validation': str(e)}
+                }).data,
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        email = serializer.validated_data['email']
+        result = auth_service.external_api.request_password_reset(email)
+        if not result['success']:
+            return Response(
+                ErrorResponseSerializer({
+                    'error': result['error'] or 'Erreur lors de la demande de réinitialisation',
+                    'status_code': result.get('status_code', 400)
+                }).data,
+                status=result.get('status_code', status.HTTP_400_BAD_REQUEST)
+            )
+        message = result['data'].get('message', 'Password reset email sent')
+        return Response(SuccessResponseSerializer({ 'message': message }).data, status=status.HTTP_200_OK)
+
+
+# Password reset with token (AllowAny) -> proxifie l'API externe
+@method_decorator(csrf_exempt, name='dispatch')
+class ResetPasswordView(generics.GenericAPIView):
+    permission_classes = [AllowAny]
+    authentication_classes = []
+    serializer_class = ResetPasswordSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        try:
+            serializer.is_valid(raise_exception=True)
+        except Exception as e:
+            return Response(
+                ErrorResponseSerializer({
+                    'error': 'Données invalides',
+                    'status_code': status.HTTP_400_BAD_REQUEST,
+                    'details': {'validation': str(e)}
+                }).data,
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        token = serializer.validated_data['token']
+        new_password = serializer.validated_data['newPassword']
+        result = auth_service.external_api.reset_password(token, new_password)
+        if not result['success']:
+            return Response(
+                ErrorResponseSerializer({
+                    'error': result['error'] or 'Erreur lors de la réinitialisation du mot de passe',
+                    'status_code': result.get('status_code', 400)
+                }).data,
+                status=result.get('status_code', status.HTTP_400_BAD_REQUEST)
+            )
+        message = result['data'].get('message', 'Password reset successful')
+        return Response(SuccessResponseSerializer({ 'message': message }).data, status=status.HTTP_200_OK)
+
+
+# Change password (IsAuthenticated) -> proxifie l'API externe
+class ChangePasswordView(generics.GenericAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = ChangePasswordSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        try:
+            serializer.is_valid(raise_exception=True)
+        except Exception as e:
+            return Response(
+                ErrorResponseSerializer({
+                    'error': 'Données invalides',
+                    'status_code': status.HTTP_400_BAD_REQUEST,
+                    'details': {'validation': str(e)}
+                }).data,
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        user = request.user
+        access_token = getattr(user, 'access_token', None)
+        if not access_token:
+            return Response(
+                ErrorResponseSerializer({
+                    'error': 'Utilisateur non authentifié auprès de l\'API externe',
+                    'status_code': status.HTTP_401_UNAUTHORIZED
+                }).data,
+                status=status.HTTP_401_UNAUTHORIZED
+            )
+
+        old_password = serializer.validated_data['oldPassword']
+        new_password = serializer.validated_data['newPassword']
+        result = auth_service.external_api.change_password(access_token, old_password, new_password)
+        if not result['success']:
+            return Response(
+                ErrorResponseSerializer({
+                    'error': result['error'] or 'Erreur lors du changement de mot de passe',
+                    'status_code': result.get('status_code', 400)
+                }).data,
+                status=result.get('status_code', status.HTTP_400_BAD_REQUEST)
+            )
+        message = result['data'].get('message', 'Password changed successfully')
+        return Response(SuccessResponseSerializer({ 'message': message }).data, status=status.HTTP_200_OK)
 
 
 class RefreshTokenView(generics.GenericAPIView):

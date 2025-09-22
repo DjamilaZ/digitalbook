@@ -1,0 +1,41 @@
+{
+    "titre_livre": "Mon Livre",
+    "thematiques": [
+      {
+        "title": "Introduction",
+        "description": "",
+        "chapters": [
+          {
+            "title": "Chapitre 1",
+            "content": "Contenu du chapitre",
+            "order": 0,
+            "sections": [
+              {
+                "title": "Section 1.1",
+                "content": "Texte section",
+                "order": 0,
+                "images": [],
+                "tables": [],
+                "subsections": [
+                  {
+                    "title": "Sous-section 1.1.1",
+                    "content": "Texte sous-section",
+                    "order": 0,
+                    "images": [],
+                    "tables": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "chapters_sans_thematique": [
+      {
+        "titre": "Chapitre isolé",
+        "contenu": "Texte",
+        "sections": []
+      }
+    ]
+  }

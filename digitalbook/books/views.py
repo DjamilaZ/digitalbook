@@ -9,6 +9,7 @@ from django.conf import settings
 from django.db import transaction
 import json
 from .models import Book, Chapter, Section, Subsection, Thematique
+from .background import submit_process_book
 from qcm.models import QCM, Question, Reponse
 from .serializers import BookSerializer, BookListSerializer, BookUpdateSerializer, ChapterSerializer, SectionSerializer, SubsectionSerializer
 
@@ -40,9 +41,9 @@ class BookViewSet(viewsets.ModelViewSet):
         serializer.save(created_by=self.request.user)
 
     def create(self, request, *args, **kwargs):
-        """Gère l'upload de fichiers PDF et sauvegarde l'URL dans la BDD
-        Si un fichier JSON est fourni, utilise sa structure pour créer la hiérarchie
-        Sinon, utilise le parsing PDF automatique
+        """Upload le PDF, crée l'objet Book, et délègue le traitement à un pool de threads.
+        - 2 threads dédiés au traitement (création hiérarchie + QCM)
+        - Retourne immédiatement une réponse avec un statut de traitement = queued
         """
         if 'pdf_file' not in request.FILES:
             return Response(
@@ -78,9 +79,12 @@ class BookViewSet(viewsets.ModelViewSet):
             for chunk in pdf_file.chunks():
                 destination.write(chunk)
         
-        # Extraire la première page comme couverture
-        from .pdf_parser import extract_cover_from_pdf
-        cover_path = extract_cover_from_pdf(file_path, settings.MEDIA_ROOT)
+        # Extraire la première page comme couverture (meilleur UX sans attendre tout le parsing)
+        try:
+            from .pdf_parser import extract_cover_from_pdf
+            cover_path = extract_cover_from_pdf(file_path, settings.MEDIA_ROOT)
+        except Exception:
+            cover_path = None
         
         # Construire l'URL complète du fichier
         pdf_url = f"{settings.MEDIA_URL}books/pdfs/{unique_filename}"
@@ -114,126 +118,49 @@ class BookViewSet(viewsets.ModelViewSet):
             cover_image=cover_path,
             created_by=request.user
         )
-        
-        # Parser le PDF et créer la hiérarchie
+        # Paramètres de traitement
+        generate_qcm = str(request.data.get('generate_qcm', 'true')).lower() == 'true'
         try:
-            print(f"\n=== DÉBUT TRAITEMENT POUR LIVRE: {book.title} ===")
-            print(f"PDF URL: {book.pdf_url}")
-            
-            # Vérifier si un fichier JSON de structure est fourni
-            json_file = request.FILES.get('json_structure_file')
-            
-            if json_file:
-                print("\n--- UTILISATION DU FICHIER JSON FOURNI ---")
-                
-                # Lire et parser le fichier JSON
-                try:
-                    json_content = json_file.read().decode('utf-8')
-                    structured_data = json.loads(json_content)
-                    print(f"✓ Fichier JSON chargé avec succès")
-                    
-                    # Utiliser le titre du JSON si fourni, sinon garder celui du formulaire
-                    if structured_data.get('title'):
-                        book.title = structured_data['title']
-                        book.save()
-                        print(f"✓ Titre mis à jour depuis le JSON: {book.title}")
-                    
-                except Exception as e:
-                    print(f"✗ Erreur lecture du fichier JSON: {e}")
-                    # Fallback sur le parsing PDF automatique
-                    structured_data = None
-            else:
-                print("\n--- AUCUN FICHIER JSON FOURNI, UTILISATION DU PARSING PDF AUTOMATIQUE ---")
-                structured_data = None
-            
-            # Si pas de JSON ou erreur de lecture, utiliser le parsing PDF automatique
-            if not structured_data:
-                from .pdf_parser import parse_pdf_to_structured_json, create_book_hierarchy_from_json
-                
-                # Obtenir le chemin absolu du fichier PDF
-                import os
-                from django.conf import settings
-                pdf_file_path = os.path.join(settings.MEDIA_ROOT, book.pdf_url.replace(settings.MEDIA_URL, ''))
-                print(f"Chemin PDF absolu: {pdf_file_path}")
-                
-                # Vérifier que le fichier existe
-                if not os.path.exists(pdf_file_path):
-                    print(f"✗ ERREUR: Le fichier PDF n'existe pas: {pdf_file_path}")
-                else:
-                    print(f"✓ Fichier PDF trouvé, taille: {os.path.getsize(pdf_file_path)} octets")
-                    
-                    # Parser le PDF pour obtenir la structure
-                    print("\n--- DÉBUT PARSING PDF ---")
-                    structured_data = parse_pdf_to_structured_json(pdf_file_path)
-                    print("--- FIN PARSING PDF ---")
-                    
-                    # Écrire le JSON structuré dans un fichier data.json
-                    print("\n--- ÉCRITURE FICHIER data.json ---")
-                    data_json_path = os.path.join(settings.BASE_DIR, 'data.json')
-                    try:
-                        with open(data_json_path, 'w', encoding='utf-8') as f:
-                            json.dump(structured_data, f, ensure_ascii=False, indent=2)
-                        print(f"✓ Fichier data.json écrit avec succès: {data_json_path}")
-                    except Exception as e:
-                        print(f"✗ Erreur écriture fichier data.json: {e}")
-            
-            # Créer la hiérarchie dans la BDD
-            if structured_data:
-                print("\n--- DÉBUT CRÉATION HIÉRARCHIE ---")
-                if json_file:
-                    # Utiliser la nouvelle fonction pour créer la hiérarchie depuis le JSON fourni
-                    book = create_book_hierarchy_from_provided_json(book, structured_data)
-                else:
-                    # Utiliser la fonction existante pour le parsing PDF automatique
-                    from .pdf_parser import create_book_hierarchy_from_json
-                    book = create_book_hierarchy_from_json(book, structured_data)
-                print("--- FIN CRÉATION HIÉRARCHIE ---")
-                
-                # Générer automatiquement des QCM pour chaque chapitre
-                generate_qcm = request.data.get('generate_qcm', 'true').lower() == 'true'
-                
-                if generate_qcm and getattr(settings, 'OPENAI_API_KEY', ''):
-                    print("\n--- DÉBUT GÉNÉRATION AUTOMATIQUE DES QCM ---")
-                    try:
-                        from qcm.utils import generate_qcms_for_book
-                        nb_questions = int(request.data.get('nb_questions_per_chapter', getattr(settings, 'QCM_DEFAULT_QUESTIONS', 5)))
-                        qcm_results = generate_qcms_for_book(
-                            book=book,
-                            nb_questions_per_chapter=nb_questions,
-                            generate_for_all_chapters=True
-                        )
-                        print(f"✓ QCM générés: {len(qcm_results['success'])} succès, {len(qcm_results['failed'])} échecs")
-                        if qcm_results['failed']:
-                            print(f"✗ Échecs de génération QCM: {[f['chapter'].title for f in qcm_results['failed']]}")
-                    except Exception as e:
-                        print(f"✗ Erreur lors de la génération des QCM: {e}")
-                        import traceback
-                        print(f"Traceback: {traceback.format_exc()}")
-                    print("--- FIN GÉNÉRATION AUTOMATIQUE DES QCM ---")
-                elif generate_qcm:
-                    print("\n⚠ OPENAI_API_KEY non configurée, génération des QCM ignorée")
-                else:
-                    print("\n⚠ Génération des QCM désactivée par l'utilisateur")
-            
-            print(f"=== FIN TRAITEMENT PDF POUR LIVRE: {book.title} ===\n")
-            
-        except Exception as e:
-            # En cas d'erreur de parsing, on continue quand même
-            # mais on log l'erreur pour le débogage
-            print(f"\n✗ ERREUR LORS DU PARSING PDF: {e}")
-            import traceback
-            print(f"Traceback complet: {traceback.format_exc()}")
-            print(f"=== FIN TRAITEMENT AVEC ERREUR ===\n")
-        
-        # Sérialiser le livre créé pour la réponse
-        serializer = self.get_serializer(book)
-        
-        headers = self.get_success_headers(serializer.data)
-        return Response(
-            serializer.data, 
-            status=status.HTTP_201_CREATED, 
-            headers=headers
+            nb_questions = int(request.data.get('nb_questions_per_chapter', getattr(settings, 'QCM_DEFAULT_QUESTIONS', 5)))
+        except Exception:
+            nb_questions = getattr(settings, 'QCM_DEFAULT_QUESTIONS', 5)
+
+        # Si un JSON de structure est fourni, le sauvegarder pour le thread
+        json_rel_path = None
+        json_file = request.FILES.get('json_structure_file')
+        if json_file:
+            import uuid, os
+            json_dir = os.path.join(settings.MEDIA_ROOT, 'books/json')
+            os.makedirs(json_dir, exist_ok=True)
+            json_name = f"{uuid.uuid4()}.json"
+            json_abs = os.path.join(json_dir, json_name)
+            with open(json_abs, 'wb') as out:
+                for chunk in json_file.chunks():
+                    out.write(chunk)
+            json_rel_path = os.path.join('books/json', json_name).replace('\\', '/')
+
+        # Marquer le livre comme en file d'attente et soumettre au pool 2 threads
+        book.processing_status = 'queued'
+        book.processing_progress = 0
+        book.processing_error = None
+        book.processing_started_at = None
+        book.processing_finished_at = None
+        book.save(update_fields=[
+            'processing_status', 'processing_progress', 'processing_error',
+            'processing_started_at', 'processing_finished_at'
+        ])
+
+        submit_process_book(
+            book_id=book.id,
+            json_structure_file_rel=json_rel_path,
+            generate_qcm=generate_qcm,
+            nb_questions_per_chapter=nb_questions,
         )
+
+        # Retour immédiat
+        serializer = self.get_serializer(book)
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
     
     @action(detail=True, methods=['post'])
     def generate_qcms(self, request, id=None):
@@ -419,6 +346,20 @@ class BookViewSet(viewsets.ModelViewSet):
             'max_results': 5,
             'results': serializer.data
         }, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=['get'], url_path='processing-status')
+    def processing_status(self, request, id=None):
+        """Récupérer le statut/progression du traitement background pour un livre."""
+        book = self.get_object()
+        data = {
+            'id': book.id,
+            'status': book.processing_status,
+            'progress': book.processing_progress,
+            'error': book.processing_error,
+            'started_at': book.processing_started_at,
+            'finished_at': book.processing_finished_at,
+        }
+        return Response(data, status=status.HTTP_200_OK)
 
     @action(detail=False, methods=['get'])
     def search(self, request):

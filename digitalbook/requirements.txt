@@ -17,3 +17,7 @@ pdfplumber>=0.9.0
 
 # Dépendances pour la génération de QCM avec IA
 openai>=1.0.0
+
+# Tâches asynchrones
+celery>=5.3,<6.0
+redis>=5.0.0

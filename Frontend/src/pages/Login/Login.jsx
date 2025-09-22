@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../System Design/Button";
 import { FallingBooksAnimation } from "./FallingBooksAnimation";
@@ -7,11 +7,55 @@ import authService from "../../services/authService";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState(() => {
+    try { return localStorage.getItem('remember_email') || ""; } catch (_) { return ""; }
+  });
+  const [password, setPassword] = useState(() => {
+    try { return localStorage.getItem('remember_password') || ""; } catch (_) { return ""; }
+  });
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const [rememberMe, setRememberMe] = useState(() => {
+    try {
+      const rm = localStorage.getItem('remember_me');
+      if (rm !== null) return rm === 'true';
+      const hasCreds = !!localStorage.getItem('remember_email') || !!localStorage.getItem('remember_password');
+      if (hasCreds) return true;
+      const pref = localStorage.getItem('auth_pref') || sessionStorage.getItem('auth_pref');
+      return pref === 'local';
+    } catch (_) {
+      return false;
+    }
+  });
+
+  // Synchroniser depuis localStorage si "Se souvenir de moi" est actif
+  useEffect(() => {
+    try {
+      if (rememberMe) {
+        const savedEmail = localStorage.getItem('remember_email');
+        const savedPassword = localStorage.getItem('remember_password');
+        if (savedEmail && savedEmail !== email) setEmail(savedEmail);
+        if (savedPassword && savedPassword !== password) setPassword(savedPassword);
+      }
+    } catch (_) {}
+  }, [rememberMe]);
+
+  // Fallback au montage: réhydrater après le premier rendu si champs vides
+  useEffect(() => {
+    const t = setTimeout(() => {
+      try {
+        if (rememberMe) {
+          const savedEmail = localStorage.getItem('remember_email');
+          const savedPassword = localStorage.getItem('remember_password');
+          if (!email && savedEmail) setEmail(savedEmail);
+          if (!password && savedPassword) setPassword(savedPassword);
+        }
+      } catch (_) {}
+    }, 0);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -20,10 +64,23 @@ const Login = () => {
 
     try {
       // Appel à l'API d'authentification réelle
-      const response = await authService.login(email, password);
+      const response = await authService.login(email, password, rememberMe);
       
       console.log('Connexion réussie:', response);
       
+      // Sauvegarde ou nettoyage des identifiants selon la préférence
+      try {
+        if (rememberMe) {
+          localStorage.setItem('remember_me', 'true');
+          localStorage.setItem('remember_email', email);
+          localStorage.setItem('remember_password', password);
+        } else {
+          localStorage.removeItem('remember_me');
+          localStorage.removeItem('remember_email');
+          localStorage.removeItem('remember_password');
+        }
+      } catch (_) {}
+
       // Redirection vers la page d'accueil après connexion réussie
       navigate("/");
     } catch (err) {
@@ -91,7 +148,7 @@ const Login = () => {
         </div>
 
         {/* Formulaire de connexion */}
-        <form onSubmit={handleLogin} className="space-y-6">
+        <form onSubmit={handleLogin} className="space-y-6" autoComplete="on">
           {/* Champ Email */}
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
@@ -103,11 +160,17 @@ const Login = () => {
               </div>
               <input
                 id="email"
+                name="username"
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  const v = e.target.value;
+                  setEmail(v);
+                  try { if (rememberMe) localStorage.setItem('remember_email', v); } catch (_) {}
+                }}
                 className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 bg-white/70 backdrop-blur-sm"
                 placeholder="votre@email.com"
+                autoComplete="username email"
                 required
               />
             </div>
@@ -124,11 +187,17 @@ const Login = () => {
               </div>
               <input
                 id="password"
+                name="password"
                 type={showPassword ? "text" : "password"}
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => {
+                  const v = e.target.value;
+                  setPassword(v);
+                  try { if (rememberMe) localStorage.setItem('remember_password', v); } catch (_) {}
+                }}
                 className="block w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 bg-white/70 backdrop-blur-sm"
                 placeholder="••••••••"
+                autoComplete="current-password"
                 required
               />
               <button
@@ -160,15 +229,32 @@ const Login = () => {
                 name="remember-me"
                 type="checkbox"
                 className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+                checked={rememberMe}
+                onChange={(e) => {
+                  const checked = e.target.checked;
+                  setRememberMe(checked);
+                  try {
+                    if (checked) {
+                      localStorage.setItem('remember_me', 'true');
+                      // Enregistrer les valeurs actuelles si présentes
+                      if (email) localStorage.setItem('remember_email', email);
+                      if (password) localStorage.setItem('remember_password', password);
+                    } else {
+                      localStorage.removeItem('remember_me');
+                      localStorage.removeItem('remember_email');
+                      localStorage.removeItem('remember_password');
+                    }
+                  } catch (_) {}
+                }}
               />
               <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
                 Se souvenir de moi
               </label>
             </div>
             <div className="text-sm">
-              <a href="#" className="font-medium text-primary hover:text-primary/80">
+              <button type="button" onClick={() => navigate('/reset-password')} className="font-medium text-primary hover:text-primary/80 bg-transparent border-0 p-0">
                 Mot de passe oublié?
-              </a>
+              </button>
             </div>
           </div>
 

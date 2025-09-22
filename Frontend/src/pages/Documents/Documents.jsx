@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import DocumentCard from '../../components/DocumentCard';
 import Button from '../../System Design/Button';
 import bookService from '../../services/bookService';
+import authService from '../../services/authService';
 
 const Documents = () => {
   // État pour la recherche
@@ -18,6 +19,7 @@ const Documents = () => {
   const [nextPage, setNextPage] = useState(null);
   const [previousPage, setPreviousPage] = useState(null);
   const navigate = useNavigate();
+  const isAdmin = authService.isAdmin();
 
   // Charger les documents avec pagination et recherche
   useEffect(() => {
@@ -187,14 +189,16 @@ const Documents = () => {
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Mes Documents</h1>
             <p className="text-gray-600 text-lg">Gérez et consultez tous vos documents</p>
           </div>
-          <Button 
-            variant="primary" 
-            className="flex items-center gap-2"
-            onClick={handleUploadNew}
-          >
-            <Plus size={18} />
-            Nouveau document
-          </Button>
+          {isAdmin && (
+            <Button 
+              variant="primary" 
+              className="flex items-center gap-2"
+              onClick={handleUploadNew}
+            >
+              <Plus size={18} />
+              Nouveau document
+            </Button>
+          )}
         </div>
 
         {/* Barre de recherche et filtres */}
@@ -305,6 +309,7 @@ const Documents = () => {
                   onView={() => handleViewDocument(doc.id)}
                   onDownload={() => handleDownloadDocument(doc.pdf_url)}
                   onDelete={() => handleDeleteDocument(doc.id)}
+                  canDownload={isAdmin}
                 />
               ))}
             </div>
