@@ -64,7 +64,7 @@ services:
       - "8017:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./Frontend/public:/usr/share/nginx/html # frontend build folder
+      - ./Frontend/build:/usr/share/nginx/html # frontend build folder
     depends_on:
       - backend
 
