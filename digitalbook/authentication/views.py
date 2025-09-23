@@ -17,6 +17,7 @@ from .serializers import (
     RequestPasswordResetSerializer, ResetPasswordSerializer, ChangePasswordSerializer,
 )
 from .services import auth_service
+from .custom_auth import CsrfExemptSessionAuthentication
 
 logger = logging.getLogger(__name__)
 
@@ -278,9 +279,11 @@ class RefreshTokenView(generics.GenericAPIView):
         return Response(response_serializer.data, status=status.HTTP_200_OK)
 
 
+@method_decorator(csrf_exempt, name='dispatch')
 class LogoutView(generics.GenericAPIView):
     """Vue pour la déconnexion des utilisateurs"""
     permission_classes = [IsAuthenticated]
+    authentication_classes = [CsrfExemptSessionAuthentication]
     serializer_class = LogoutSerializer
 
     def post(self, request, *args, **kwargs):

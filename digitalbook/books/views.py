@@ -6,12 +6,15 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
 from django.conf import settings
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 from django.db import transaction
 import json
 from .models import Book, Chapter, Section, Subsection, Thematique
 from .background import submit_process_book
 from qcm.models import QCM, Question, Reponse
 from .serializers import BookSerializer, BookListSerializer, BookUpdateSerializer, ChapterSerializer, SectionSerializer, SubsectionSerializer
+from authentication.custom_auth import CsrfExemptSessionAuthentication
 
 class BookPagination(PageNumberPagination):
     """Pagination personnalisée pour les livres - 12 livres par page"""
@@ -19,10 +22,12 @@ class BookPagination(PageNumberPagination):
     page_size_query_param = 'page_size'
     max_page_size = 100
 
+@method_decorator(csrf_exempt, name='dispatch')
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     permission_classes = [IsAuthenticated]
+    authentication_classes = [CsrfExemptSessionAuthentication]
     lookup_field = 'id'
     lookup_url_kwarg = 'id'
     pagination_class = BookPagination
