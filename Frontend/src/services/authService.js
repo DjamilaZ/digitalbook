@@ -1,7 +1,7 @@
 import api from './api';
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000/api/auth';
+const BASE_URL = '/api/auth';
 
 // Instance axios dédiée pour l'authentification
 const authApi = axios.create({
