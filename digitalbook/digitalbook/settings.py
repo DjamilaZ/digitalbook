@@ -54,6 +54,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     
     'http://127.0.0.1:3000',
+    'https://digitalbook.dev.digitalia-ltd.com',
 ]
 CORS_ALLOW_HEADERS = [
     'accept',
@@ -78,6 +79,7 @@ CORS_ALLOW_METHODS = [
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://digitalbook.dev.digitalia-ltd.com"
 ]
 
 # Cookies (développement HTTP local)
