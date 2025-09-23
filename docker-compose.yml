@@ -51,8 +51,8 @@ services:
     image: elestio/pgadmin:latest
     restart: always
     environment:
-      - PGADMIN_DEFAULT_EMAIL="admin-digitalbook@digitalia-ltd.com"
-      - PGADMIN_DEFAULT_PASSWORD="s8WfcpLK7TZ0atsdwYVw"
+      - PGADMIN_DEFAULT_EMAIL=admin-digitalbook@digitalia-ltd.com
+      - PGADMIN_DEFAULT_PASSWORD=s8WfcpLK7TZ0atsdwYVw
     #    ports:
     #      - "8088:8080"
     volumes:
