@@ -82,7 +82,7 @@ ALLOWED_HOSTS = [
     "[::1]",
     "localhost:3000",
     "127.0.0.1:3000",
-    "https://digitalbook.dev.digitalia-ltd.com"
+    "digitalbook.dev.digitalia-ltd.com"
 ]
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
@@ -90,11 +90,16 @@ CSRF_TRUSTED_ORIGINS = [
     "https://digitalbook.dev.digitalia-ltd.com"
 ]
 
+# Ensure Django knows the original request scheme when behind a reverse proxy (Nginx)
+# This is required so CSRF same-origin/origin checks work correctly over HTTPS
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+USE_X_FORWARDED_HOST = True
+
 # Cookies (développement HTTP local)
 SESSION_COOKIE_SAMESITE = 'Lax'
 CSRF_COOKIE_SAMESITE = 'Lax'
-SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE =    True
 # Laisser accessible au JS pour qu'Axios puisse lire le cookie et envoyer l'en-tête X-CSRFToken
 CSRF_COOKIE_HTTPONLY = False
 # Configuration de l'API REST
