@@ -1,0 +1,2315 @@
+{
+  "chapitres": [
+    {
+      "titre": "Intro",
+      "contenu": "LIVRE DIGITAL LEVAGE ",
+      "sections": []
+    },
+    {
+      "titre": "1",
+      "contenu": "Introduction Bienvenue dans ce e-book consacré aux opérations de levage chez TotalEnergies. Le levage joue un rôle crucial dans nos activités quotidiennes, qu'il s'agisse de soulever, descendre ou suspendre des charges de différentes tailles et masses. Bien que courantes, ces opérations présentent des risques importants pour le personnel, l'environnement et les installations. Il est essentiel de disposer de la formation et des compétences nécessaires pour effectuer ces opérations en toute sécurité. Cette norme d'élingage et de levage doit être respectée. Ce guide vise à fournir un aperçu des meilleures pratiques, des procédures et des normes en vigueur pour les opérations de levage au sein de notre entreprise. N’oubliez pas: S’il n’y a aucun CMU, aucun n° d’identification et/ou aucun CODE COULEUR, ne l’utilisez pas ! ",
+      "sections": []
+    },
+    {
+      "titre": "2",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "3",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "4",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "5",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "6",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "7",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "8",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "9",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "10",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "11",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "12",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "13",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "14",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "15",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "16",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "17",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "18",
+      "contenu": "Introduction et champs d’applications ",
+      "sections": [
+        {
+          "titre": "1.0 Glossaire",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.0 Définitions et principes des équipements de levage",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "3.0 Inspection d’appareils de levage ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "4.0 Sélection d’un équipement de levage",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.0 Améliorer la sécurité des opérations de levage ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "6.0 Norme et formulaire de contrôle et de récupération  ",
+          "contenu": "Utilisation sécuritaire du matériel  ",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.0 Grues ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.0 Palans à chaînes ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "9.0 Palans à câble (Tirfors)",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "10.0 Poulies à chape ouverte / Moufles ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.0 Treuils ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.0 Elingues à câbles métalliques  ",
+          "contenu": "Conseil de sécurité  ",
+          "sous_sections": []
+        },
+        {
+          "titre": "18.0 Recommandations concernant l’élingage ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "19.0 Chargement/ Déchargement de conteneurs",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "20.0 Transfert de personnel ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "21.0 Levage au dessus d’équipements sous tension ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "22.0 Levage sans contact avec les mains ",
+          "contenu": "Tableaux de charges utiles Tableaux 1 Charges de rupture des câbles métalliques  Tableaux 2 Elingues en câbles métalliques  Tableaux 3 Elingues en fibres synthétiques Tableaux 4 Elingues en chaîne alliage  Tableau 5 Manilles en alliage  Tableau 6 Boulon à œil  Tableau 7 Anneaux de levage  Tableau 8 Tendeurs  Sommaire  ",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.0 Elingues en fibre synthétiques ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "14.0 Manilles ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "15.0 Boulons à oeil ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "16.0 Tendeurs ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "17.0 Dispositifs anti-chute",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "19",
+      "contenu": "Annexes  Annexe 1 Equipements de levage / Matrice législative  Annexe 2 Densité des matériaux  Annexe 3 Liste de contrôle générale avant levage  Annexe 4 Echelle de Beaufort des forces du vent et indicateurs visuels Annexe 5 Calculs utiles   ",
+      "sections": []
+    },
+    {
+      "titre": "20",
+      "contenu": "Glossaire  Personne compétente  Personne dont les connaissances, l'expérience et les compétences, ainsi que la formation et l'autorisation de travail à un poste de levage défini ont été avérées. Charge utile (en anglais Working Load Limit WLL)  La charge maximale qu'un appareil de levage est conçu pour lever, abaisser ou suspendre. Cette charge maximale ne tient pas compte des conditions de service particulières qui peuvent modifier la capacité finale de l'équipement (voir CMU ci-dessous). Remarque: la charge utile déterminée par la personne compétente ne doit jamais être dépassée volontairement. Charge maximale utile (CMU) (en anglais Safe Working Load SWL)  La charge maximale (telle que certifiée par une personne compétente) qu'un appareil de levage est capable de lever, d'abaisser ou de tenir suspendue dans des conditions de service particulières. La CMU peut donc être inférieure à la charge utile. Remarque: la charge maximale utile déterminée par la personne compétente ne doit jamais être dépassée volontairement.  Facteur de sécurité Rapport entre la charge qui provoquerait la défaillance d'un élément d'un appareil de levage et la charge qui lui est imposée en service (c.-à-d la CMU qui permet de tenir compte de critères négatifs tels qu'usure, charges dynamiques, etc.). Code couleur Méthode de marquage de l'équipement (normalement avec de la peinture) pour indiquer visuellement son statut en matière de certification. ",
+      "sections": [
+        {
+          "titre": "1.0",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.3",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.4",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.5",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "21",
+      "contenu": "Numéro de l'installation/d'identification Numéro unique donné à un élément d'un appareil de levage à des fins d'enregistrement et pour en faciliter la traçabilité. Hauteur libre Distance verticale maximale entre l'élément à soulever et le point de suspension de l'appareil de levage, c.-a-d. entre les œils de levage et le dessous des poutres du chemin de roulement.  Hauteur de levage Distance de déplacement possible entre les points de connexion supérieur et inférieur, c.-à-d. les crochets d'un appareil de levage.  Dimension établie Distance minimum entre le niveau de suspension et la selle de crochet inférieure (aussi connu sous le nom de hauteur fermée).  Capteurs de charge  Élément d'équipement utilisé pour détecter les charges réelles à un point de fixation (p. ex. manille à capteur de charge, cale-étalon ou cellule dynamométrique en compression, etc.) Charge d'épreuve Charge appliquée en conditions d'essai supérieure à la CMU/CU afin de vérifier l'intégrité de l'équipement de levage. Personne compétente (pour l'inspection du matériel de levage) Individu ayant les connaissances et l'expérience requises, aussi bien théoriques que pratiques, sur le matériel et équipement considéré pour pouvoir certifier avec confiance que celui-ci ne présente pas de défaut évident et qu'il convient en tous points pour l'opération pour laquelle il sera utilisé. ",
+      "sections": [
+        {
+          "titre": "1.06",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.07",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.08",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.09",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.10",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.11",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "1.12",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "22",
+      "contenu": "Equipements de levage Ces équipements comprennent les appareils et l’équipement de levage. Ils sont définis comme suit:  Appareils de levage  Tout dispositif mécanique capable de lever ou d’abaisser une charge. Ex: Grues, Chariots élévateurs, Nacelles suspendues, Palans, Poutre de levage, Treuils... Equipement de levage  Tout dispositif quel qu’il soit, utilisé et conçu pour être utilisé directement ou indirectement pour relier une charge à un appareil de levage et ne faisant pas partie de la charge.  Ex: élingues à câble, chaîne ou fibre synthétique, crochets et accessoires, pivots, manilles, boulon à œil, ridoirs, attaches à coin, lève-tôles.  Compétent(e)  Disposant des connaissances, des compétences, ainsi que de l’expérience nécessaire à la réalisation de tâches spécifiques.  Abrasion  Usure de surfaces des brins d’un câble.  Homologué  Conforme à la norme intérieur de l’entreprise. Chef de manœuvre Individu clairement identifiable ayant la responsabilité partagée d’assurer un levage et une dépose de la charge en toute sécurité. Contrôle également l’opération de levage lors d’un levage en aveugle. Levage en aveugle  Lorsque l’utilisateur de l’appareil de levage n’a pas le chef de manœuvre, responsable de la charge, dans son champ visuel de manière continue. Agent de coordination du levage Point de contact responsable du levage pour une installation particulière et personne compétente pour les opérations de levage.  Résistance à la rupture (câble)  La charge mesurée requise pour briser un câble en tension.  ",
+      "sections": [
+        {
+          "titre": "2.0 Définition et principes des équipements de levage ",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.3",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.4",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.6",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.7",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.8",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "23",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "2.9",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.10",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.11",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.12",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.13",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.14",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.15",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.16",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.17",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.18",
+          "contenu": "CCU  Unités de transport de marchandises (Cargo Carrying Unit), tout équipement utilisé pour contenir ou transférer une charge. Exemples: conteneurs, nacelles, râteliers à bouteilles de gaz, nacelles de transfert de personnel, bennes à déchets, ect.   Certification  La preuve (généralement sous forme de document papier) que le matériel est certifié.  Certifié  Prouve la réussite à un examen défini.  Câble Lang Câble dont les fils composant les torons et ces derniers sont dans le même sens  Câblage à gauche ordinaire Les fils sont enroulés vers la droite et les torons vers la gauche Plan de levage  Une fois l’évaluation des risques terminée, un document écrit officiel est crée afin de détailler l’approche à suivre lors de l’opération de levage. Elle identifiera le personnel et l’équipement requis, ainsi que la méthode de levage.   Essai en charge  Essai de traction à un niveau prédéterminé et nouvelle inspection d’un élément de l’équipement.  Câblage à droite ordinaire Les fils sont enroulés vers la gauche et les torons vers la droite Corde de manœuvre Une corde de type “anti-nœuds” attachés à une charge suspendue (généralement en bas) facilite la stabilisation de cette dernière et permet au membre de l’équipage tenant la corde de prévenir toute rotation et d’aider au guidage de la charge.  Tirfor  Mot anglais décrivant un treuil manuel utilisé pour déplacer/lever des objets lourds par tranches ou pour dérouler le câble.  ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "24",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "2.19",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.20",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.21",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.22",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.23",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "2.24",
+          "contenu": "Qualifié(e) Compétent(e), grâce à un enseignement et une pratique spécialisés. Une fois terminé, une formation (comprenant généralement des examens permettent de prouver sa compétence) est généralement suivie d’une certification.  Principes de l’équipement de levage  Tous les équipements de levage doivent avoir une solidité et une construction adéquates, être réalisés dans des matériaux de qualité et capables de  supporter les charges et contraintes qu’ils auront à supporter. Ils devront être testés conformément aux exigences réglementaires (par application d’une charge d’épreuve) et u certificat d’essai sera émis avant leur première utilisation. Ce certificat est un document juridique important.  Facteurs de sécurité Le facteur de sécurité pour tout équipement de levage doit être adéquat et basé sur sa conception. Il ne doit jamais être abaissé et sert à indiquer la tolérance à l'usure, aux impacts, aux charges dynamiques et aux surcharges accidentelles. Ces tolérances sont prévues uniquement pour des circonstances imprévues et ne doivent pas être réduites volontairement. Évitez les surcharges et soyez vigilants pour prévenir les situations accidentelles. En cas de doute, consultez votre superviseur. Certains dispositifs de levage (p. ex. palonniers) peuvent être utilisés de différentes façons. Il est donc important que le fabricant/fournisseur donne dans chaque cas des renseignements sur l'usage spécifique prévu et demande conseil avant de tenter toute utilisation non prévue Certains chapitres de cette norme mentionnent l'angle auquel l'équipement est utilisé (p. ex. l'angle entre les brins d'une élingue multiple). Il est extrêmement important de tenir compte de la variation de la charge maximale d'utilisation que peut entraîner l'utilisation d'un tel équipement à un angle prononcé Un point final à considérer lors de la sélection de l'équipement pour une opération donnée est la compatibilité entre les différents éléments requis. Un certain nombre de qualités différentes de matériau(x) sont souvent utilisées pour le matériel de levage. En particulier, on remarquera que la taille des crochets, maillons, anneaux et manilles varie considérablement pour une capacité donnée selon le type de métal utilisé. Vous devrez donc vous assurer que chaque élément est correctement monté et aligné avec son voisin. Un anneau ou une manille intermédiaires pourront pour cela être utilisés en cas de besoin. 25 ",
+          "sous_sections": []
+        },
+        {
+          "titre": "3.0 INSPECTION D'APPAREILS DE LEVAGE ",
+          "contenu": "Ce chapitre décrits les inspections nécessaires pour garantir la sécurité des opérations de levage. Vérifications avant l'utilisation  Avant chaque utilisation, il est impératif d'examiner tous les composants de l'appareil de levage pour s'assurer qu'ils sont en bon état et sécurisés pour l'opération prévue. Attention! Ne rangez pas le matériel de levage dans des vestiaires ou coffres à outils, car il pourrait être oublié lors d'une inspection et ainsi ne plus être certifié.  Trois éléments spécifiques à vérifier, en dehors de l'équipement, sont : I)    La CMU requise.  II)   Le n° de l'installation/d'identification.  III) Le bon code couleur (le code courant doit être affiché à un endroit       bien en vue - pour le confirmer, vous adresser à votre superviseur).  Remarque : Le code couleur n'indique pas l'aptitude à l'usage, mais simplement l'état de certification. Pour plus de détails sur les points à vérifier lors de ces inspections, consultez le chapitre 6 \"Améliorer la sécurité des opérations de levage\" de cette norme, les détails variant selon le type d'équipement. ",
+          "sous_sections": []
+        },
+        {
+          "titre": "3.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "3.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "3.3",
+          "contenu": "N'oubliez pas: S'il n'y a aucune CMU, aucun n° d'identification et/ ou aucun CODE COULEUR, ne l'utilisez pas ! Appareils de levage  Grues, chariots élévateurs, à fourche et autres, nacelles suspendues, palans motorisés, à main, à levier et à corde, chariots porte-palans et attaches de poutres, moufles, treuils, poutres de levage.  Equipement de levage  Elingues à câble, chaîne ou fibre synthétique, crochets et accessoires, pivots, manilles, boulons à oeil, tendeurs/ridois, attaches à coin, lève- tôles.  Consultez la section 2.0 de cette norme afin d’obtenir la bonne définition de cet équipement  ",
+          "sous_sections": []
+        },
+        {
+          "titre": "3.4",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "3.5",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "26",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "4.0 SELECTION D’UN EQUIPEMENT DE LEVAGE  ",
+          "contenu": "Avant de préparer le levage, il est crucial de déterminer le poids de la charge à soulever. Dans la plupart des cas, ce chiffre est déjà connu. Cependant, si ce n'est pas le cas, utilisez un dispositif de mesure du poids (voir exemples aux figures 4.1 à 5.3 ci-dessous). Vous pouvez également consulter le fabricant ou prendre des mesures et calculer le poids en utilisant le tableau de densité des matériaux à l'annexe 2. En cas de doute, n'hésitez pas à consulter votre agent de coordination du levage. Après avoir déterminé le poids de la charge, il est essentiel de vérifier la hauteur libre disponible, car elle influence les angles des élingues et la tension réelle sur les brins. Remarque: Le poids de l'élingage sélectionné doit être ajouté à celui de la charge, et le poids total doit être pris en compte lors du choix de l'appareil de levage. Vérifiez la compatibilité des différents composants, car les tailles varient selon le matériau utilisé pour la fabrication.  Vérifiez bien que l'équipement retenu convient à la tâche spécifique et à son environnement, par exemple en cas d'utilisation sous l'eau (tous les types d'équipements ne conviennent pas pour une telle utilisation !). Une fois l'équipement sélectionné, il doit subir un examen \"pré- utilisation\" comme décrit dans les différents chapitres de cette norme. Si un élément échoue à l'examen visuel, il doit être immédiatement mis hors service et signalé à un superviseur ou à l'agent de coordination du levage. ",
+          "sous_sections": []
+        },
+        {
+          "titre": "4.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "4.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "4.3",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "4.4",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "4.5",
+          "contenu": "                     Fig. 4.1                                            Manille de cellule dynamométrique                      Fig. 4.2                                           Contrôleur d’état de charge de grue                       Fig. 4.3                                          Dynamomètre  ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "27",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "5.0 AMÉLIORER LA SÉCURITÉ DES OPÉRATIONS DE LEVAGE ",
+          "contenu": "Ce chapitre présente les procédures correctes à suivre lors d'une opération de levage. Compétences du personnel  Toute personne utilisant un appareil ou équipement de levage doit être formée à son utilisation et posséder une expérience pratique de ses capacités et des défaillances potentielles. Ces connaissances sont également utiles lors de l'inspection avant utilisation. Ne jamais dépasser la charge maximale utile Lors de toute opération de levage, il est impératif de s'assurer que la charge imposée à tout appareil de levage ou partie de celui-ci ne dépasse pas la CMU/CU. En cas de doute sur cette charge ou celle appliquée à un élément particulier de l'engin ou appareil de levage, il est recommandé d'utiliser des capteurs de charge. De plus, il est essentiel de veiller à ce que la charge reste stable à tous les stades de l'opération. En général, la charge pourrait être instable si son centre de gravité ne se trouve pas sous le crochet ou s'il est plus haut que le point de fixation des élingues à la charge. D'autres causes d'instabilité peuvent inclure un liquide s'agitant dans un récipient, etc. Utilisation correcte  L'équipement doit être utilisé uniquement pour l'usage spécifique pour lequel il a été conçu et ne doit pas être adapté à un autre type d'opération. Vérification du levage  Avant toute opération de levage, la charge doit d'abord être soulevée à une faible hauteur. Ce levage d'essai permet au grutier ou opérateur de vérifier qu'il a correctement estimé l'équilibre, la stabilité et la sécurité générale de la charge alors que celle-ci est encore dans une position relativement sûre. La charge devra être descendue et l'élingage modifié en cas de découverte de différences. Cette séquence de levage d'essai puis d'ajustement doit être répétée jusqu'à ce que l'opérateur soit satisfait de l'équilibrage, de la stabilité de la charge et de la sécurité du levage. Attention ! Ne vous tenez jamais sous une charge; gardez vos mains éloignées des élingues, etc. (conformément aux consignes de levage sans contact avec les mains § 28). Évitez de grimper sur les conteneurs et matériaux empilés; ne vous tenez jamais entre les charges et des murs ou parois de cales, etc. ",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.3",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.4",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "28",
+      "contenu": "Prévoyez Avant de déplacer une charge, préparez son trajet jusqu'au point de dépose en enlevant toute obstruction et en s'assurant que le personnel a quitté la zone. Attention! Ne jamais déplacer une charge au-dessus de personnel.  Si nécessaire, avertissez le personnel pour qu'il quitte la zone avant de déplacer la charge. Évitez également de déplacer la charge au-dessus de machines en fonctionnement ou d'équipements critiques. Avant de lever une charge, assurez-vous que le point de repose est suffisamment grand et peut recevoir la charge en toute sécurité. Il pourrait être nécessaire de prévoir des cales spécifiques, comme des blocs de bois, pour permettre l'enlèvement des élingues de la charge. La charge ne doit jamais être abaissée de manière à pincer ou écraser les élingues, car cela pourrait les endommager gravement. Lorsque vous abaissez la charge, arrêtez-la à faible distance de la surface de dépose pour permettre au grutier de la stabiliser, de vérifier la position des cales au sol et de s'assurer qu'aucun personnel ne risque de se prendre un pied ou une main dans la charge. Ensuite, abaissez la charge centimètre par centimètre jusqu'à ce qu'elle soit en position. Avant de détendre les élingues, assurez vous que la charge est stable et sécurisée. Sinon, soulevez-la légèrement pour repositionner les cales, puis reposez-la. Cette procédure de pose d'essai est similaire à celle du levage d'essai et doit être répétée jusqu'à ce que le grutier soit satisfait de la dépose de la charge. Marges de sécurité  Lors d'opérations de levage multipoints nécessitant deux appareils de levage ou plus, assurez-vous qu'aucun élément de l'équipement ou point de levage ne soit soumis à une charge dépassant sa charge maximale utile.  Plusieurs méthodes peuvent être utilisées en fonction de la nature de l'opération. Par exemple, lorsque la capacité de levage n'est pas trop limitée, chaque point de levage avec son appareil et ses accessoires doit être capable de supporter la totalité de la charge. ",
+      "sections": [
+        {
+          "titre": "5.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.6",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "29",
+      "contenu": "Autre possibilité, si la capacité est limitée, l'utilisation de capteurs de charge permet de mesurer en continu les charges sur l'équipement aux points de levage individuels au fur et à mesure du déroulement de l'opération. Une autre solution consiste à calculer soigneusement les charges qui seront imposées, mais il faudra veiller à ne pas faire de fausses hypothèses, en particulier en ce qui concerne le poids et la position du centre de gravité. Nous recommandons cependant, à moins d'utiliser des capteurs de charge, que la charge maximale utile de chaque point de levage et de son équipement associé ne soit pas inférieure à 1,5 fois la part de la charge qu'il est censé recevoir. Au fur et à mesure du déroulement de l'opération, on devra contrôler constamment les divers angles de l'équipement et les charges, qui indiquent comment le poids est distribué. Dans le cas de charges rigides, on devra déterminer combien de points de levage supporteront à tout moment la charge, étant donné qu'en pratique la majorité de celle-ci pourrait ne l'être que par 2 points. Dans un tel cas, la charge maximale utile de chaque point de levage et de son élingage ne devra pas être inférieure à la moitié de la charge totale.  Mauvaise utilisation de l'équipement Il est strictement interdit de dépasser la CMU/CU d'un équipement de levage. Vous veillerez en particulier à éviter une surcharge, un mauvais élingage et un coinçage des élingues entre la charge et le sol. Ne jamais tenter de réparer un quelconque élément d'élingage ou de l'engin de levage, car toutes les réparations doivent être effectuées par du personnel qualifié formé aux procédures de réparation approuvées et disposant de la documentation de référence du fabricant. Au cas où vous remarqueriez que l'équipement est défectueux, signalez-le à votre superviseur qui prendra les mesures nécessaires.  Attention! Toute réparation ou modification non autorisée d'un équipement de levage annule automatiquement sa certification. Cela s'applique également au démontage de toute partie intégrante d'un élingage/ensemble de levage.  Ne jamais tenter de souder un accessoire de levage, qui sera généralement fabriqué avec des matériaux de haute qualité et nécessite un soudage spécial. ",
+      "sections": [
+        {
+          "titre": "5.7",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.8",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "30",
+      "contenu": "Lorsque vous utilisez un équipement pneumatique, il est essentiel de vérifier la pression. Une pression trop élevée peut entraîner une surcharge de la machine, tandis qu'une pression trop faible ne permettra pas de lever la CMU/CU. Il est recommandé d'installer une unité d'alimentation en air avec un régulateur de pression aussi près que possible de l'équipement. Conditions météorologiques  Lors de la préparation de votre opération de levage, il est crucial de tenir compte des conditions météorologiques. Elles peuvent avoir un impact négatif sur la sécurité globale de l'opération pour plusieurs raisons. Vent: Les vents forts ou en rafales peuvent directement affecter la stabilité et l'intégrité structurelle d'une grue. Indirectement, ils peuvent déstabiliser une charge ou la faire sortir du rayon maximal de travail de la grue. Les vents peuvent également rendre la pose d'une charge plus dangereuse dans un espace restreint en la poussant et en la faisant se balancer, ce qui pourrait entraîner des collisions avec des équipements ou des employés. Des éléments lâches peuvent également tomber. Les constructeurs indiquent parfois les vitesses de vent maximales pour une utilisation sécurisée de leurs grues. Cependant, d'autres critères doivent être pris en compte, tels que la longueur de la flèche, le type de charge (les grandes surfaces peuvent agir comme une voile), le poids de la charge (les charges légères sont plus facilement soufflées), etc. La plupart des grues sont équipées d'un anémomètre affichant la vitesse du vent en temps réel. Sinon, des anémomètres portables peuvent être utilisés. Vents marins: Les vents marins peuvent provoquer des vagues et de la houle, ce qui ajoute des dynamiques supplémentaires aux opérations de levage de charges depuis un navire flottant à l'aide d'une grue montée sur une plateforme fixe. Par exemple, si le navire descend au moment où la charge est saisie, un effet d'« arrachage » se produit, augmentant ainsi la charge réelle et les contraintes sur la grue. Cela est encore plus problématique lorsque des charges sont transférées d'un navire à l'autre, surtout si l'un des navires monte tandis que l'autre descend. ",
+      "sections": [
+        {
+          "titre": "5.9",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.10",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.11",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.12",
+          "contenu": "Fig. 5.1 Anémomètre  ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "31",
+      "contenu": "Pluie : Une pluie excessive peut déstabiliser les conditions au sol, ce qui est crucial lors du positionnement et de l'installation des grues. Ce qui était sûr hier peut devenir dangereux aujourd'hui. La pluie peut également réduire la visibilité, compliquant ainsi la communication, notamment pour les signaux manuels. Neige et glace : La neige et la glace peuvent rendre les sols glissants, augmentant le risque de glissade ou de chute sous une charge suspendue. Des morceaux de glace peuvent également tomber de grandes hauteurs, comme du haut de la flèche de la grue, et causer de graves blessures. La glace peut temporairement geler l'équipement de sécurité, comme les interrupteurs de fin de course, qui empêchent un levage excessif. Il est donc essentiel de vérifier l'équipement avant utilisation. La neige et la glace sur la surface de la charge peuvent ajouter un poids substantiel et doivent être nettoyées avant le levage. Un froid extrême peut également affecter la sécurité de l'équipement de levage, car l'acier peut devenir cassant et moins résistant à des températures inférieures à -20 °C. Orages : Toutes les opérations de levage extérieures doivent être suspendues en cas d'orages. La flèche de la grue est souvent l'une des structures métalliques les plus hautes de la zone et peut attirer la foudre. Soleil : Le soleil est généralement apprécié par les travailleurs en extérieur, mais sa lumière directe peut détériorer certains matériels de levage synthétiques en fibre, comme les cordes et les élingues. Une lumière éblouissante peut également masquer un danger imminent. ",
+      "sections": [
+        {
+          "titre": "5.13",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.14",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.15",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "5.16",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "32",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "6.0 NORME ET CONTROLE ",
+          "contenu": "Afin d’aider à créer des conditions de travail plus sûres et d’améliorer les procédures, il vous a été remis cette norme d’élingage et de levage destinée à vous guider et à vous aider à utiliser les équipements de levage en réduisant les risques lors de vos opérations de levage et d’élingage. Lorsque vous utiliserez l’un des équipements figurant dans l’index de cette norme, vous devrez vous référer aux chapitres le concernant.  N’oubliez pas: Vous serez souvent responsable de la sécurité de vos collègues et leur vie pourrait un jour dépendre de votre aptitude à travailler sans créer de risques  ",
+          "sous_sections": []
+        },
+        {
+          "titre": "6.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "6.2",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "33",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "7.0 UTILISATION SECURITAIRE DES GRUES ",
+          "contenu": "Seuls les grutiers dûment accrédités sont autorisés à opérer des grues.  Les grutages constituent un élément majeur des processus industriels. En fait, dans le secteur offshore, les grues et portiques consitituent l’un des équipements vitaux, car ils permettent de transférer les marchandises entre la terre et les navires. Etant donné les conséquences potentiellement catastrophique d’un accident de grue, ces derniers doivent être correctement entretenus et maintenus en excellent état de marche. De plus, ce personnel doit être capable d’effectuer les contrôles de sécurité journaliers, y compris de la précision des indicateurs de charge, ainsi que la maintenance préventive courante comme le graissage. Pour opérer une grue en toute sécurité, il est absolument essentiel que toutes les charges soient correctement élinguées et que toute cargaison soit correctement emballée, pesée et décrite dans les manifeste afin d’éviter toute surcharge possible.   Fonctions de base et sécurité de grues  ",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.2",
+          "contenu": "Grue mobile type  Grue sur chenilles type  Fig. 7.1 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "34",
+      "contenu": "Grue portuaire type  Fig. 7.2 Grue à tour type  Grue à piédestal type  ",
+      "sections": []
+    },
+    {
+      "titre": "35",
+      "contenu": "Pour travailler sans risques avec des grues, il est important de comprendre comment elles fonctionnent. Les plus courantes (voir fig. ",
+      "sections": [
+        {
+          "titre": "7.1 et 7.2) comprennent une tourelle et une cabine de commande avec",
+          "contenu": "flèche pivotante, un cadre en A et deux treuils, un pour lever/abaisser la flèche et l’autre pour lever et abaisser la charge. Certaines grues intègrent un treuil supplémentaire dit auxiliaire permettant de lever plus rapidement des charges légères.  Le mouvement pivotant dit aussi d’orientation est rendu possible par un pignon sous la grue qui entraîne une couronne fixe sur la tourelle.  Les six mouvements d’une grue sont donc:  1)   Relevage de la flèche (pour réduire la portée)  2)   Descente de la flèche (pour augmenter la portée) 3)   Levage de la charge  4)   Descente de la charge  5)   Pivotement à gauche  6)   Pivotement à droite   ",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.3",
+          "contenu": "Relevage de  la flèche  Descente de  la flèche  Lever  Abaisser  Pivotement  gauche  Pivotement droite ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "36",
+      "contenu": "Dans l'intérêt de la sécurité et pour aider le grutier, la grue est normalement équipée de divers dispositifs qui limitent ces 6 mouvements pour éviter d'endommager la grue. Le cas échéant, ils comprennent:  Lors du relevage de la flèche, une fin de course l'empêchant d'entrer   en contact avec les butées arrière.  Lors de l'abaissement de la flèche, une fin de course empêchant l'angle de flèche d'être inférieur à environ 15° par rapport à l'horizontale. (Cette fin de course peut être neutralisée pour permettre de garer la flèche sur son support)  Lors du levage d'une charge, une fin de course empêche de tirer le crochet à travers le mouflage (voir fig. 7.4 ci-dessous). Lors de la descente de la charge, une fin de course empêche de perdre le câble, le crochet et éventuellement la charge.  Des fins de course de rotation sont quelquefois installées, mais le grutier (et vous, si vous dirigez la grue) devra rester vigilant pour éviter que la flèche entre en contact avec des obstacles tels que d'autres grues, des bâtiments et autres structures. Dans un environnement offshore, vous aurez à éviter la tour de forage, les torchères, les mâts radio, l'helideck, etc. Fin de course  Moufle crochet  1,5m approx. 2m approx. 0,5m approx. Hauteur à la limitée à 4m . Fig. 7.4 ",
+      "sections": [
+        {
+          "titre": "7.4",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "37",
+      "contenu": "En plus des fins de course, il existe un autre dispositif de sécurité dont dispose le grutier, un indicateur automatique de charge admissible avec alarme visuelles et sonores. Il indique à l'opérateur la portée (position du crochet), la CU de la grue à cette portée et la charge réelle sur le crochet. L'alarme visuelle est généralement réglée pour s'allumer à environ 90 % de la capacité de la grue, quelle que soit la portée, tandis que l'alarme sonore se déclenche à environ 100% de cette capacité, soit en état de surcharge. Certaines  grues  sont  équipées  de  dispositifs  de  sécurité supplémentaires tels que des systèmes de protection contre la surcharge automatiques (AOPS) ou manuels (MOPS), des systèmes protections de dépassements majeurs (GOP) ou systèmes de protection ultime (UPS) et des indicateurs de vitesse du vent (anémomètres) ou de sa direction (manche à vent).  Lorsque la grue est installée sur une plateforme offshore, la cabine doit être équipée d'un extincteur, d'une cagoule anti-fumée et d'un gilet de sauvetage.  Comme tout appareil de levage, les grues ont une charge maximale utile/ charge utile, qui dépend du nombre de brins de mouflage. Évidemment, plus ce nombre est grand plus la capacité de levage est élevée, mais cela diminue la vitesse de levage. Dans le cas d'un levage depuis/vers un navire, cela peut créer un problème si la vitesse de levage est trop faible pour empêcher la charge de taper sur le pont, etc. lorsqu'il se soulève avec la vague suivante. La CMU/ CU baisse également lorsque la portée augmente (voir fig. 7.5 ci-dessous). Referez- vous toujours à l'abaque de charges, qui doit être affiché dans la cabine de la grue. ",
+      "sections": [
+        {
+          "titre": "7.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.6",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.7",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.8",
+          "contenu": "Charge min. Portée max.  Charge max.  Portée min.  Fig. 7.5 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "38",
+      "contenu": "Responsabilités d'un grutier  Pour recevoir la qualification de grutier, vous devez:  Être âgé(e) d'au moins 18 ans.  Être médicalement apte, en particulier au niveau de l'acuité visuelle et auditive et des réflexes. Avoir une stature permettant d'opérer la grue en sécurité.  Avoir reçu une formation adéquate à la conduite du type de grue que vous aurez à opérer et être capable de juger des distances, des hauteurs et des espaces libres.  Être autorisé(e) à conduire la grue.  Être suffisamment familiarisé(e) avec le fonctionnement de la grue pour pouvoir effectuer les vérifications de routine conformément aux check-lists spécifiques à cette grue lorsque cela est nécessaire. Connaître parfaitement le travail des élingueurs et les signaux à bras afin de répondre sans erreur à leurs instructions ainsi qu'à celles du chef de manœuvre.  L'opérateur de la grue doit parfaitement connaître l'élingage des charges et autres dispositions pour leur levage. Il est responsable de l'état de la grue et doit la piloter sans dépasser ses limites de sécurité. Il doit être capable de programmer le système indicateur de charge en fonction des conditions ambiantes.  Avant d'utiliser la grue, il effectuera également les vérifications préalables. Dans certaines circonstances, il pourra être aidé par le mécanicien de la grue. Il devra évidemment contrôler les niveaux de carburant, de lubrifiant et de fluide de refroidissement, mais également le bon état de la structure. Une fois qu'il aura démarré la grue, il devra la laisser marcher pendant environ 5 minutes (réchauffage), puis vérifier le fonctionnement de toutes les commandes et tous les freins, instruments et dispositifs de sécurité. ",
+      "sections": [
+        {
+          "titre": "7.9",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.10",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.11",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "39",
+      "contenu": "L’opérateur doit signaler tout défaut de fonctionnement au mécanicien afin qu’il soit remédié.  Si la grue opère dans un parc à tubulaires ou lieu similaire, il y aura des réglages/paramètres spéciaux supplémentaires dont il faudra tenir compte. Ainsi, l’état du sol est crucial. Dans l’idéal, le sol sera ferme et plane et dans le cas contraire, des mesures devront être prévues pour bien répartir la charge entre les stabilisateurs.  L’opérateur doit également s’assurer dans la mesure du possible de l’absence de risques sous la surface tels qu’égouts ou conduites de gaz ou d’eau qui pourraient s’effondrer sous la charge.  Une attention toute particulière sera nécessaire en cas de travail à proximité des rebords d’excavation ou même d’un quai. Lors d’un transfert de la charge par une poutre stabilisatrice, l’effondrement du rebord pourrait être désastreux.  Si la grue est utilisée pour poser des pipelines ou éléments similaires en plein air, l’opérateur doit être également conscient des risques potentiels en hauteur tels que les câbles à haute tension (HT). Une distance minimum recommandée doit être respectée par rapport à de tels câbles (Voir 8.41).  ",
+      "sections": [
+        {
+          "titre": "7.12",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.13",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.14",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.15",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.16",
+          "contenu": "Calage bois, métal  ou fibres ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "40",
+      "contenu": "Si la grue doit ou pourrait s’approcher plus près d’un câble sous-tension, le courant devra être coupé. Rappelez-vous que les câbles se balancent quand le vent souffle et que les hautes tensions peuvent provoquer des arcs traversant les espaces importants.  Le risque pour les grues offshore à piédestal est rarement posé par de tels câbles mais plutôt par une autre grue opérant à proximité. Le grutier devra donc en tenir compte lors du déplacement de charges sur le pont et être particulièrement vigilant.  Dans l’idéal, il devra être en mesure de voir la charge en permanence. Puisque cela n’est pas toujours possible, il aura donc besoin de quelqu’un pour le guider et faire des signaux. Un chef de manoeuvre, qui ne sera pas l’élingueur, devra systématiquement être désigné.  Enfin, il devra faire particulièrement attention lorsqu’il déplacera la grue vers le haut ou le bas d’une pente ou à travers celle-ci.  ",
+      "sections": [
+        {
+          "titre": "7.17",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.18",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.19",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.20",
+          "contenu": "Sol de niveaux: rayon correct Fonctionnement normal sur le sol de niveau  Montée: la portée diminue  Dans cet exemple, la grue pourrait basculer  vers l’arrière lorsque la charge est descendue  Descente: la portée augmente  Dans cet exemple, la grue pourrait basculer  vers l’avant lorsque la charge pivote hors de  l’aire d’évolution.   ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "41",
+      "contenu": "Dans ces exemples, la charge latérale imposée à la flèche pourrait  faire basculer la gue ou provoquer l’affaissement de cette flèche.  Fig. 7.8 ",
+      "sections": []
+    },
+    {
+      "titre": "42",
+      "contenu": "Responsabilités d’un élingueur et d’un chef de manoeuvre lors des levages  Pour recevoir la qualification d’élingeur ou de chef de manoeuvre, vous devez: Etre âgé(e) d’au moins 18 ans.  Etre médicalement apte, en particulier au niveau de l’acuité visuelle et auditive et des réflexes.  Etre physiquement apte à réaliser les tâches et activités associées à ce rôle.  Avoir été formé aux principes généraux de l’élingage et être capable d’évaluer les poids et les distances, hauteurs et espaces libres.  Etre capable de sélectionner les équipements d’élingage/levage pour les charges à manutentionner. Comprends les signaux manuels et être capable de donner des signaux clairs et précis.  Etre capable de diriger les mouvements de la grue et le déplacement de la charge tout en assurant la sécurité du personnel et de l’installation.  La tâche la plus importante de l’élingueur est de préparer et d’élinguer correctement la charge: sélection et montage des accessoires/élingues appropriés, protection de l’élingage si nécessaire, et essai de levage pour vérifier que la charge est stable.  Dans des circonstances normales, une seule personne sera nécessaire pour signaler et guider la grue (le chef de manoeuvre). Il doit être en permanence en contact visuelle avec le grutier et ne pas avoir à s’occuper de la charge.  Remarque : toute personne pourra signaler un arrêt d’urgence en cas de danger.  ",
+      "sections": [
+        {
+          "titre": "7.22",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.23",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "43",
+      "contenu": "Dans le cas d'un navire, les communications radio entre la grue, le chef de manœuvre et le bord devront être établies avant le levage par-dessus bord. Sur une installation offshore, toutes les liaisons radio entre le grutier et le navire auxiliaire devront se faire par duplex. En cas de rupture de la liaison, le levage devra être immédiatement interrompu et la charge stabilisée.  Dans les cas où deux grues ou plus seront utilisées simultanément, on choisira des canaux individuels pour chaque grue pour éviter les confusions. Lorsqu'elles sont toutes sur le même canal, on utilisera des signaux à bras pour s'assurer que la bonne grue répond à un ordre particulier donné. Sur des installations offshores, durant les périodes de silence radio, tous les talkies-walkies et autres radios devront être coupés et aucune opération de levage avec des navires ne devra avoir lieu. Les levages seront restreints aux opérations sur la plateforme, là où le grutier pourra clairement voir le chef de manœuvre. Opérations de levage spéciales  Levage en tandem: le levage d'une charge avec deux grues peut être dangereux et devra être évité au maximum. Lorsque les dimensions physiques ou le poids de la charge nécessitent l'emploi de 2 grues, cela est acceptable si l'opération est méticuleusement préparée. Le levage doit être supervisé par une personne compétente. Il est absolument vital d'évaluer avec précision la charge susceptible d'être imposée à chaque grue. Il est également nécessaire d'évaluer soigneusement comment et jusqu'où la répartition des charges peut varier au cas où la charge ne serait plus d'aplomb ou si l'une ou les 2 grues devaient abaisser ou relever leur flèche, se déplacer ou pivoter. Les câbles de levage ne seraient plus verticaux  Si n'importe laquelle de ces circonstances venait à se produire, cela pourrait imposer une charge supplémentaire à l'une ou aux 2 grues, ce qui pourrait en compromettre la stabilité ou les endommager sérieusement. Un élingage spécial pourrait être nécessaire pour tenir compte de la variation maximale de distribution des charges et de toute charge angulaire qui pourrait apparaître durant l'opération en tandem. ",
+      "sections": [
+        {
+          "titre": "7.24",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.25",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.26",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.27",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.28",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.29",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "44",
+      "contenu": "Toutes les opérations de levage en tandem devront être soigneusement planifiées à l'avance par une personne ou équipe compétente. On utilisera autant que possible des grues de capacité égale et de caractéristiques similaires. On sélectionnera des grues et des élingages ayant une marge de capacité supérieure à celle nécessaire si la charge était levée par une seule grue. Il est recommandé, à moins d'utiliser des cellules dynamométriques, que chaque grue soit capable de soulever 75 % de la charge totale à la portée et au rayon de travail requis. En cas d'utilisation  de  cellules  dynamométriques,  chaque  grue  devra uniquement être capable de soulever 25% de plus que sa part estimée de la charge. ",
+      "sections": [
+        {
+          "titre": "7.30",
+          "contenu": "Chaque grue doit généralement être capable de soulever 75% de la charge totale  Fig. 7.9 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "45",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "7.31",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.32",
+          "contenu": "Une personne compétente doit être désignée pour superviser l'opération et les signaux qu'elle fera à chacun des grutiers devront être clairs et bien compris. Les opérations de levage à plus de 2 grues nécessiteront la réalisation d'évaluations et de contrôles plus poussés. Remarque: nous estimons que chaque grue devrait normalement être capable de soulever 75% de la charge totale, mais il est possible de réduire cette marge de sécurité dans des cas spéciaux. Dans de tels cas, nous vous recommandons de soumettre le plan de levage et les charges calculées à votre organisme de certification pour approbation. Les barges à grues, par exemple, ont leurs propres règles pour le levage en tandem comme convenu avec leur organisme de certification, étant donné qu'avec des charges extrêmement lourdes (des centaines de tonnes) on ne peut pas s'attendre à ce que chaque engin puisse recevoir ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "75 % de la charge ",
+      "contenu": "Redressement: les opérations de redressement ou « tailing » sont similaires aux opérations de levage en tandem avec deux grues, mais une fois que la charge a décollé du sol, une grue l'abaisse tandis que l'autre continue à la lever, ce qui entraîne sa rotation sur 90°.  Attention! Lorsque la charge doit aussi être tournée sur 90°, le poids TOTAL sera transféré d'une des deux grues à l'autre. Dans l’idéal, chaque grue devrait être capable de soulever  la charge intégrale, à moins qu’une autre procédure ait été prévue.  Fig. 7.10 ",
+      "sections": []
+    },
+    {
+      "titre": "46",
+      "contenu": "Conditions ambiantes: p. ex. vitesse du vent, rafales, etc. pouvant provoquer une surcharge en poussant la charge au-delà du rayon de travail. Lors d'un levage au-dessus d'un plan d'eau ou en mer, des vents violents peuvent réduire la capacité de levage d'une grue en raison des facteurs dynamiques causés par l'augmentation de la hauteur des vagues et par la houle. Des tableaux de charge/rayon de travail/état de la mer doivent être affichés dans la cabine pour connaître les réductions de charge applicables.  Avant de commencer le levage, la personne qui le commande a la responsabilité de s'assurer que tout ce qui pourrait retenir la charge a été enlevé/démonté (arrimage sur pont, berceau de transport, supports, etc.) et que le crochet est directement au-dessus du centre de gravité (lorsqu'il est connu). Le ou les câbles de levage doivent être verticaux pour minimiser les mouvements de la charge lorsque l'on commence à la soulever.  Lors d'un levage sur un navire, le grutier et l'équipage/commandant du navire doivent tous s'assurer que tous les arrimages ont été enlevés et que le levage est effectué en sûreté, avec le minimum de rotation/balancement et de charges par à-coups. (Lorsque le levage se fait entre deux navires flottants, les effets du tangage et du roulis sont plus importants car ils peuvent doubler les forces dynamiques normales) Lorsque l'on procèdera au levage de charges lourdes, la capacité de charge maximale dépendra du nombre de pièces de ligne ; elle diminue lorsque le rayon de travail augmente. Lors de la préparation d'un levage lourd, confirmez le poids de la charge, déterminez le rayon maximum requis pour sa préhension, son transfert et sa dépose, puis consultez l'abaque de charge/portée de la grue pour vous assurer que le mouflage est adéquat. ",
+      "sections": [
+        {
+          "titre": "7.33",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.34",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.35",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.36",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "47",
+      "contenu": "Dans l'idéal, l'opérateur devrait être en mesure de voir en permanence la charge, mais selon le type et la conception du navire/des installations, cela n'est pas toujours possible. Dans de tels cas, il devra être en contact radio avec le chef de manœuvre et/ou être dirigé par un chef de manœuvre en contact visuel avec la charge et clairement visible par l'opérateur.  Avant tout levage, vérifiez bien l'état et l'équilibrage de tout l'élingage et autres accessoires de levage. Au cas où ils devraient être maintenus en position pendant la mise sous tension du/des câbles de levage, utiliser des perches pour tirer/pousser - ne jamais passer les doigts autour des élingues ou les agripper.  Le grutier devra également décider si une corde stabilisatrice est nécessaire pour contrôler la charge une fois suspendue en l'air. Ces cordes sont particulièrement recommandées dans le cas de charges longues, pour lesquelles ces premières devront être attachées à l'une ou aux deux extrémités afin de contrôler les mouvements de rotation. Ces cordes doivent être suffisamment longues pour que le ou les opérateurs n'aient pas à se tenir sous la charge pendant le levage. Elles doivent toujours être arrimées à la charge, pas à l'élingage (voir § 8.19).  Lorsqu'une opération de levage nécessite plus d'un opérateur, il est essentiel de s'assurer que les communications entre eux soient distinctes. Pour cela, utiliser de préférence des talkies-walkies. Toutes les instructions données au grutier (à part un arrêt d'urgence), que ce soit par contact radio ou par le chef de manœuvre, ne doivent être données que par le chef de manœuvre ou la personne contrôlant le levage. Cependant, l'ordre ou le signal d'ARRÊT D'URGENCE peut être donné par toute personne voyant une situation dangereuse apparaître durant l'opération en cours. ",
+      "sections": [
+        {
+          "titre": "7.37",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.38",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.39",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.40",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.41",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "48",
+      "contenu": "Faites particulièrement attention lors du levage de charges ayant une grande surface, qui donnent une grande prise au vent. Si nécessaire, prévoyez une/plusieurs cordes de manœuvre, ou pour des charges lourdes des câbles reliés à des treuils, pour aider à contrôler la charge. ",
+      "sections": [
+        {
+          "titre": "7.42",
+          "contenu": "Eviter d’attacher une corde de  manœuvre à l’élingue  Pris dans la  main courante  Fig. 7.19 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "49",
+      "contenu": "La majorité des grues offshores sont équipées de crochets en C pour éviter au maximum qu'ils se prennent dans des obstacles tels que des mains courantes, etc. Les grues de plus grande taille sont généralement équipées de crochets doubles qui pourraient avoir un effet sur la conception de l'élingue (voir fig. 7.21). Ponts roulants  Lorsque vous opèrerez ce type de grue, vous remarquerez que la plupart des commandes ont deux vitesses (lente et normale). Commencez toujours par la vitesse lente pour vous assurer que la charge est stable et pour plus de sécurité avant de lever/vous déplacer à vitesse normale.  Au cas où la charge se balancerait lorsque vous stoppez, ce mouvement peut être éliminé en déplaçant la grue dans le sens du balancement (lorsque la charge va vers la gauche, avancez la grue dans la même direction).  Remarque: vous devrez vous entraîner à cette manœuvre avec une charge sûre et dans une aire vaste bien dégagée avant de la faire dans les conditions réelles. ",
+      "sections": [
+        {
+          "titre": "7.43",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.44",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "7.45",
+          "contenu": "Crochets doubles Anneau mou  Anneau mou  Anneau  métallique  Anneau  métallique  Crochets doubles Crochets en C ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "50",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "7.46",
+          "contenu": "Grues de bord  Les grues de bord doivent être équipées de: • Systèmes de communication qui permettent: - D'attirer l'attention du personnel (tel qu'un avertisseur sonore)  - Une communication verbale avec le personnel (tel qu'un système de haut-parleurs  - Une communication avec l'équipage, les navires ravitailleurs et la salle de contrôle par radio bidirectionnelle  - Une utilisation mains libres  • Une cabine d'opérateur fixe doit être équipée d'une caméra de flèche • Abaques de charges • Indicateur de portée ou d'angle • Un dispositif de restriction de la hauteur maximum de la flèche afin d'empêcher cette dernière d'être entraînée contre les butées arrière  • Un dispositif de restriction de la hauteur minimum de la flèche afin d'empêcher cette dernière d'être abaissée au-delà de la portée maximale admissible • Des disjoncteurs de limite supérieure afin d'empêcher les moufles d'être entrainées dans les réas  • Un dispositif anti-rapprochement des moufles du treuil principal et de l'auxiliaire, ou système équivalent lorsqu'un tel dispositif ne peut être installé • Des instruments indiquant de manière continue la charge sur le crochet ainsi que la charge nominale pour chaque portée. L'indicateur automatique de charge doit produire un avertissement clair et continu lorsque la capacité nominale de la grue est  • Dispositif d'arrêt d'urgence  • Un extincteur portable adapté aux incendies de classes A, B et C  • Cagoule anti-fumée • Gilet de sauvetage • Éclairage de sécurité  • Un étiquetage clair en anglais et dans la langue locale dominante indiquant la fonction des commandes et lisible à toute heure du jour ou de la nuit. • Registre de collision de la grue ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "51",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "7.47",
+          "contenu": "L'entretien de routine des grues doit être effectué conformément aux documents de référence.  Un carnet de bord de la grue doit être rempli par le grutier. Grues et dispositifs de manutention de bloc d'obturation de puits, grues de manutention de conduites, portiques et pont roulants  Les grues et dispositifs de manutention de bloc d'obturation de puits, grues de manutention de conduites, portiques et pont roulants doivent intégrer: • Un dispositif d'arrêt d'urgence accessible au personnel à proximité • Un registre des collisions • Des butées d'arrêt pour rails/portiques/ponts • Un système de protection contre la surcharge  Les grues se déplaçant sur des rails situés sur le pont (pont principal ou niveau supérieur) doivent intégrer un système d'avertissement sonore et visuel afin d'alerter le personnel travaillant à proximité lors de leur déplacement. ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "52",
+      "contenu": "Procédures radio pour les opérations de levage  Considération générales  Les messages radio ne devraient être utilisés que pour le travail et pas pour des conversations oiseuses. Dans la règlementations radio, les injures/grossièretés sont interdites.  Etablissement des liaisons  Le grutier et le chef de manœuvre doivent établir leurs modalités de liaison radio (le centre radio indiquera le canal de service) avant le début de toute opération de levage. Chaque fois que le chef de manoeuvre change de position, il doit vérifier la communication avec le grutier Canaux radio  Quand plus d’une grue opèrent dans la zone, chacune doit avoir son propre canal. Cela est particulièrement important lors de travaux simultanés avec des navires. Lorsqu’ils participent au levage, il convient également d’établir une communication radio avec ces navires avant de commencer la manutention. On pourra par exemple passer de la VHF à l’ UHF ou inversement.  Grue communiquant sur des canaux différents  Lorsque deux grues sont sur des canaux différents au cours d’un transbordement en tandem, le chef de manœuvre prévues et la position des extrémités de leur flèche afin d’éviter tout contact entre les grues durant les opérations.  Grues communiquant sur le même canal  Cependant, si elles utilisent le même canal, par exemple lors d’un levage en tandem, il convient d’utiliser des signaux à bras individuels pour chaque grue avant de communiquer par radio. Ces appels radio doivent commencer  par  la  position  de  la  grue  concernée  sur  la plateforme/installation,  p  ex.  bâbord/tribord/centre,  ect.  Ces conventions doivent être utilisées à chaque appel pour empêcher toute confusion avec d’autres communications radio  ",
+      "sections": [
+        {
+          "titre": "7.48",
+          "contenu": "I) II) III) IV) V) ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "53",
+      "contenu": "Levage en aveugle  Durant de tels levage en aveugle, lorsque la charge est levée , descendue ou suspendue pendant de longue périodes, éviter de maintenir le bouton d’émission (radio) enfoncé pendant tout le levage. L’pération ne sera sinon pas en en mesure de confirmer ou répondre. De même, évitez de donner des instructions au début du levage puis cesser toute communication jusqu’a ce que le levage soit presque terminé. Donnez l’ordre de lancement puis continuez à parler au grutier à peu près toutes les 10 secondes pour le rassurer en lui indiquant que le contact est toujours établi et que vous poursuivez la gestion du levage. Stoppez toujours un mouvement de la grue avant d’en commencer un autre.  Interférences  Lorsque vous dirigez des opérations de levage, assurez-vous que les employés travaillant à proximité immédiate et communiquant sur le même canal ont v=bien éteint leurs systèmes radios afin de réduire le risque d’interruptions ou d’interférences avec vos instructions.  Attention! Panne de communication: les communications radio avec le grutier doivent être maintenus en permanence durant les opérations de levage. Au cas où elles seraient interrompues par un tiers ou de manière permanente, toutes ces opérations devront cesser sur le champ et ne reprendre que lorsque la liaison aura été rétablie.  VI) VII) ",
+      "sections": []
+    },
+    {
+      "titre": "54",
+      "contenu": "Talkie-walkie type (fonctionnement et commandes ) (Assurez vous que vous êtes bien familiarisé avec le modèle que vous utilisez ) Fig. 7.22 Marche-Arrêt/ Contrôle du volume Met la radio on / off et ajuste le volume du haut parleur.  Bouton d’émission                                Pressez le bouton pour parler, relâcher pour écouter.  Sélecteur de canaux/balayage          Sélectionner le canal de fonctionnement ou la fonction de balayage.  Bouton de commande                         Réglage du volume ou balayage/suppression du canal nuisible.                                                                     Lorsqu’il est enfoncé, permet d’écouter toute activité sur le canal.                                                                     Ni le silencieux de porteuse, ni le silencieux à commande par                                                                     tonalités, ni le silencieux DPL ne sont actifs lors de l’écoute. Voyant tricolore Rouge continue Rouge clignotant lors de l’émission   Rouge clignotant en réception  Vert clignotant  Jaune continu  Connecteur d’antenne  Connecteur d’accesoires Sélectionne le mode d’utilisation, silencieux de porteuse ou silencieuse PL / DPL.  Bouton d’écoute  = Emission radio  = Batterie faible  = Canal occupé  = Balayage  = Ecoute du canal active Connecteur pour casque externe ou un microphone à distance  Remarque : les modèles plus récents intègrent souvent un écran à cristaux liquides.  ",
+      "sections": []
+    },
+    {
+      "titre": "55",
+      "contenu": "Précaution d’emploi et sécurité  Toujours vérifier que les piles/ la batterie sont chargées à fond avant de prendre l’appareil pour son poste. S’assurer que le micro n’est pas exposé à la pluie. Si vous ne disposez pas d’une coque de transport permettant de protéger l’appareil, une mesure de protection simple consiste à utilisier un sachet plastique ou à placer un morceau de film étirable sur le micro pour éviter qu’il ne soit trempé. Ne pas transporter les talkies-walkies dans la poche. Toujours s’assurer qu’ils sont dans leurs sacoche protectrice, attachés au corps soit par une bandoulière à l’épaule, soit à la ceinture; tout en protégeant le talkie-walkie cela évitera tout risque de blesser quelqu’un s’il tombe d’une certaine hauteur lorsqu’il vous échappera ou en montant une échelle.  Attention ! Etant donné que ces radios ont une puissance d’émission non négligeable, si l’antenne venait à être endommagée et la partie centrale exposée, l’antenne devrait être immédiatement remplacée non seulement afin de maintenir des performances optimales, mais aussi pour des raisons de sécurité pour l’utilisateur.  Silence radio  Sur une installation offshore, pendant les périodes de silence radio, les systèmes radio des grues seront isolées. Aucun levage entre un navire et la plateforme ne devra avoir lieu. Les opérations de grutage seront restreintes aux zones où le grutier pourra clairement voir l’opération et le chef de manoeuvre.  IX) X) ",
+      "sections": []
+    },
+    {
+      "titre": "56",
+      "contenu": "UTILISATION SECURITAIRE DES PALANS A CHAINES  Sélection  Pour sélectionner un palan, la premère chose à considérer est la CMU / CU, qui doit être choisi selon la charge à soulever. Lorsque celle-ci est inconnue, on calcule son poids en ajoutant un certain pourcentage à titre de marge d’erreur. La sélection peut alors être effectuée.  Attention ! Eviter de lever des charges de moins de 10 % de la capacité du treuil et NE JAMAIS lever des charges de moins de 5% de celle-ci, car elles pourraient ne pas être suffisantes pour activer le frein à friction.  La seconde chose à  considérer est la hauteur perdue minimum, étant donné que le manque d’espace vertical est souvent un problème dans les espaces confinés (p. ex. salles des machines ou ateliers avec palonniers bas). Cette hauteur varie selon le fabricant et/ou le modèle et peut influencer la sélection.  La troisième chose à considérer est la hauteur libre sous crochet (hauteur de levage). Les palans à chaînes de levage ont généralement une HLSC standard de 3m (les chaînes de levage font généralement un demi-mètre de moins), mais il existe des modèles avec pratiquement n’importe quelle hauteur de levage de 1,5 - 1,8 m, mais peuvent également être équipés de chaînes plus longues si l’application le demande.  Vérifications avant utilisation  Avant d’utiliser un palan à chaîne, il est nécessaire de s’assurer qu’il est en bon état de fonctionnement et qu’il est sûr. Les vérifications suivantes doivent être effectuées :  Vérifier que:  La CMU/CU est adéquate pour la charge Le code couleur est à jour et le palan porte un n° d’installation / Une marque d’identification.  Les linguets de sécurité sont présents.  Il n’y a aucun signe d’utilisation abusive, p.ex. crochet étiré, boîtier fissuré, chaîne étirée/déformée, etc.  Pour un palan à plusieurs brins, les chaînes ne sont pas tordues entre la moufle inférieur et le boîtier de levage (ce qui est généralement dû au retournement de la moufle inférieur) Le bruit du cliquet est net (un clic clair et fort) quand on fait tourner la roue de chaîne de levage ou que l’on actionne le levier.  Attention! Une chaîne de levage étirée ou un levier de manoeuvre déformé pourraient indiquer que le palan a été surchargé.  ",
+      "sections": [
+        {
+          "titre": "8.0",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.3",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.4",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "57",
+      "contenu": "Installations des palans  il est essentiel de s’assurer que l’élément structurel auquel le palan est suspendu est adéquat pour la charge prévue. Celle-ci doit comprendre le poids du palan lui-même plus celui des accessoires à crochets tels qu’élingues, manilles, chariots, etc.  Lorsque l'on utilisera un palan suspendu à un crochet, ce crochet supérieur doit être attaché à son support de manière telle que ce support s'adapte librement dans le siège du crochet et n'exerce aucune charge latérale sur le point de contact.  Le crochet supérieur doit être muni d'un linguet de sécurité. Vérifiez la longueur de la chaîne de charge pour vous assurer que le crochet inférieur peut atteindre le point le plus bas requis sans que vous ayez à sortir toute la chaîne. En effet, dans un tel cas, cela pourrait appliquer une contrainte excessive à l'ancrage de l'extrémité libre (qui n'est pas réellement un composant porte-charge).  Attention! Un palan ne doit être utilisé que pour lever et abaisser: les charges ne doivent pas être laissées suspendues sans surveillance, même peu de temps. Un élingage de secours devra être prévu et utilisé dans ce cas. ",
+      "sections": [
+        {
+          "titre": "8.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.6",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.7",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.8",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.9",
+          "contenu": "Après l'installation, on s'assurera que la chaîne de levage et les chaînes de charge tombent librement, ne sont pas tordues et ne font pas de nœuds. On vérifiera en particulier, dans le cas de palans multibrins, que la moufle inférieure ne s'est pas retournée entre les boucles de chaîne, tordant la chaîne de charge. Dans ce cas, retournez cette moufle jusqu'à ce qu'il n'y ait plus de tours.  Fig. 8.1 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "58",
+      "contenu": "Toujours  S'assurer que l'élingage de la charge (élingue/manille/anneaux) repose correctement dans l'anse du crochet inférieur et permet de fermer le linguet de sécurité.  S'assurer que la charge est correctement équilibrée. Placer le palan directement au-dessus du centre de gravité de la charge (s'il est connu) S'assurer que tous les obstacles ont été enlevés (p. ex., boulons de fixation de la charge).  Ne jamais  Charger les extrémités des crochets.  Ne jamais  Utiliser la chaîne de charge comme élingue, c.-à-d. enroulée autour de la charge et fixée à elle-même  Déplacer une charge au-dessus de personnes. Forcer de manière excessive sur la chaîne de commande ou le levier pour éviter les surcharges sur le palan. Utiliser une rallonge du levier (tube) pour exercer plus de force (palans à chaînes).  Laisser une charge suspendue sans surveillance sans soutien/ élingage supplémentaire (secondaire).  Remarque: à l'origine, on recommandait uniquement l'usage de palans à chaîne à la verticale puisque les encliquetages fonctionnaient purement par gravité. De nos jours, ces dispositifs sont maintenus par un voire deux ressorts. Les palans à chaînes peuvent donc être utilisés jusqua un angie de 45° par rapport à la verticale (p. ex. dans une situation de « traction transversale ». Les palans à levier peuvent quant à eux être utilisés à l'horizontale. ",
+      "sections": [
+        {
+          "titre": "8.10",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.11",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "59",
+      "contenu": "Attention! Si une charge est laissée suspendue, la zone sous la charge doit être balisée pour éviter tout danger pour le personnel.  Faire une mise en charge brusque  Laisser tomber le palan sur le sol  Ne jamais utiliser un palan à chaîne comme élingue ou brin d’élingage lors de l’utilisation d’une grue pour un levage. Les palans à chaînes sont conçues pour être chargés de manière graduelle, c’est à dire, tout en tendant le jeu de la chaîne à l’aide du réducteur. LES PALANS A CHAINES NE SONT PAS CONCUES POUR RESISTER A DES MISES EN CHARGES BRUSQUES auxquelles ils pourraient être sujets lorsque la charge est plus rapidement levée ou même rapidement “saisie” par une grue. Il est fort possible que le mécanisme de freinage soi endommagé ou, encore plus probable, subisse une panne catastrophique.   Fig. 8.5 ",
+      "sections": []
+    },
+    {
+      "titre": "60",
+      "contenu": "Attention! Il est interdit, dans les circonstances décrites ci-dessus, de “déclasser” un palan. Aucun fabricant de bonnes foi ne saura accepter un tel usage abusif de ses produits.  Lorsqu’un ajustement doit être possible pour le positionnement final ou pour l’installation de la charge, vous pouvez monter un palan à chaîne de sorte que le brin d’élingage supporte l’ensemble des charges dynamiques. Une fois le mouvement vertical de la grue terminé et une fois que cette dernière peut jouer un rôle de “chariot aérien automobile”, c’est à dire une structure fixe à laquelle le palan à chaîne peut être suspendu, ce dernier peut alors supporter la tension de l’élingage qui peut donc être déconnecté. A partir de là, le palan à chaîne peut être utilisé pour réaliser l’ajustement/le positionnement final requis   Fig. 8.6 ",
+      "sections": []
+    },
+    {
+      "titre": "61",
+      "contenu": "Utilisation d'un palan sous l'eau Il peut parfois être nécessaire d'utiliser un palan sous l'eau, manipulé par des plongeurs immergés. Il est essentiel de vérifier que le type de palan sélectionné est adapté, car le matériau des disques de frein pourrait ne pas convenir. Consultez le fabricant pour confirmation. Une fois le travail terminé, un palan utilisé sous l'eau doit être envoyé à un atelier agréé, démonté complètement, purgé à l'eau douce, regraissé, remonté et testé avant toute nouvelle utilisation. Palans pneumatiques Pour les palans pneumatiques, assurez-vous qu'une unité de conditionnement d'alimentation en air comprimé avec filtre, graisseur et détendeur est installée et réglée à la pression correcte, afin d'éviter toute contamination de l'air du moteur. Testez le palan sur toute la longueur de la chaîne de charge et vérifiez le bon fonctionnement des fins de course haut. Vérifiez les commandes du boîtier et assurez-vous que les boutons poussoirs s'enfoncent sans problème et remontent en position neutre lorsqu'ils sont relâchés. Par temps extrêmement froid, il est possible d'introduire un produit dégivrant via le graisseur pour prévenir tout givrage du moteur pneumatique. ",
+      "sections": [
+        {
+          "titre": "8.12",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.13",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.14",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.15",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "8.16",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "62",
+      "contenu": "L'UTILISATION SÉCURITAIRE DES PALANS A CÂBLE (Tirfors) Les palans à câble, disponibles en trois capacités, peuvent être utilisés pour lever des charges (avec un facteur de sécurité de 5/1), ainsi que pour tracter des charges (avec un facteur de sécurité d'environ 3,3/1) soit;  CU (levage)                Capacité (traction) ",
+      "sections": []
+    },
+    {
+      "titre": " 800 kg                         1 200 kg",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": " 1 600 kg                      2 500 kg",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": " 3 200 kg                      5 000 kg ",
+      "contenu": "Sélection des palans Il est crucial de distinguer entre l'utilisation de levage et l'utilisation de traction : Lors d'une utilisation de levage, la charge ne reste pas stationnaire en cas de défaillance du palan ou de l'un de ses accessoires. Lors d'une utilisation de traction, la charge reste stationnaire en cas de défaillance du palan ou de l'un de ses accessoires. Choisissez donc la capacité en tenant compte de cette caractéristique, ainsi que de la charge à déplacer (voir exemples 1 à 4). Un palan 3 t peut soulever une charge de 3 t (estimée), mais exercer une traction de 5 t, le facteur de sécurité étant réduit étant donné que l'opération est moins risquée. Levage simple  (en cas de défaillance du  palan ou du câble,  la charge tombe) Traction simple  (en cas de défaillance du  palan ou du câble,  la charge reste  stationnaire) ",
+      "sections": [
+        {
+          "titre": "9.0",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "9.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "9.2",
+          "contenu": "Fig. 9.1 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "63",
+      "contenu": "Tirer vers le haut sur une pente = levage (en cas de défaillance du palan, la charge dégringole le long de la pente, donc elle NE RESTE PAS stationnaire). Traction transversale = levage (en cas de défaillance du palan ou du câble, la charge repart, donc elle NE RESTE PAS stationnaire). Les palans à câble sont équipés de câbles spéciaux qui résistent à la forte pression des mâchoires, évitant ainsi les nids de fils brisés. La longueur standard du câble fourni est de 20 mètres, mais des câbles plus courts ou plus longs sont facilement disponibles.  Les palans à câble sont généralement actionnés à la main, mais des versions  hydrauliques  existent  pour  des  besoins  spécifiques, notamment pour des levages ou tractions particulièrement longs. ",
+      "sections": [
+        {
+          "titre": "9.3",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "9.4",
+          "contenu": "Fig. 9.2 Palan manuel standard  Palan hydraulique  ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "64",
+      "contenu": "Fabricant  A  B  C CU du treuil Diamètre du câble  Diamètre du câble  Diamètre du câble  ",
+      "sections": []
+    },
+    {
+      "titre": "800 kg ",
+      "contenu": "8,3 mm ",
+      "sections": []
+    },
+    {
+      "titre": "8 mm",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "8 mm",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "1600 kg ",
+      "contenu": "11,5 mm 11,2 mm ",
+      "sections": []
+    },
+    {
+      "titre": "11 mm",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "3200 kg ",
+      "contenu": "16,3 mm ",
+      "sections": []
+    },
+    {
+      "titre": "16 mm",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "10 mm",
+      "contenu": "Sécurité Il est impératif d'utiliser le câble correct pour le type de palan, car ces appareils sont conçus pour opérer avec un diamètre spécifique qui varie selon les fabricants de câbles. Voir tableau ci-dessous. Si vous utilisez un câble du fabricant « C » sur un palan du fabricant « A », vous pourriez vous retrouver dans une situation dangereuse, car la corde pourrait glisser et s'échapper de la machine en charge. Vérifications avant l'utilisation Avant d'utiliser le palan à câble, assurez-vous toujours qu'il est en bon état de fonctionnement et qu'il peut être utilisé en toute sécurité. Pour cela, vérifiez les points suivants : La CMU/CU est adéquate pour la charge. Le code couleur est à jour et le palan porte un numéro d'installation ou une marque d'identification. Le crochet de charge, son axe et les paliers du crochet dans les joues ne présentent pas de signes d'usure, de fissures ou de déformations. Le linguet de sécurité du crochet se ferme correctement et le crochet peut pivoter librement. Faites fonctionner le palan dans les deux sens et vérifiez que les goupilles de cisaillement sont intactes (des goupilles cisaillées ou fissurées sont symptomatiques d'une surcharge). Vérifiez le fonctionnement du levier ou du bouton de relâchement. ",
+      "sections": [
+        {
+          "titre": "9.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "9.6 ",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "65",
+      "contenu": "Insérez un câble et vérifiez la course des leviers avant et arrière. Sa longueur dépendra du modèle (voir ci-dessous).  T508 - 55 mm env.  T516 - 55 mm env.  T532 - 32 mm env. Vérifiez le câble et assurez-vous qu'il est du type adapté au palan utilisé et qu'il ne présente pas de signe d'usure, de déformation, de rouille, etc.  Assurez-vous que le palan est bien graissé. Remarque : Une course plus longue peut indiquer une usure interne, tandis qu'une course plus courte peut signaler un encrassement ou des dommages dans le mécanisme. Avec les T500 de Tirfor, il est possible de vérifier l'usure interne sans démonter le palan. Pour ce faire, utilisez un câble neuf ou non usé et suivez les étapes suivantes : 1.Ouvrez le boîtier et insérez le câble neuf. 2.Refermez le chemin de passage. 3.Poussez le levier d'ouverture vers le point d'ancrage jusqu'à ressentir une résistance. 4.Mesurez la distance entre l'arrière du levier d'ouverture et le rebord du boîtier. Cette distance ne doit pas être inférieure aux valeurs spécifiées. Modèle  Diamètre câble neuf  Dimension “A” (ne doit pas être < a) T508 ",
+      "sections": [
+        {
+          "titre": "8.3 mm",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "37 mm",
+      "contenu": "T516  ",
+      "sections": [
+        {
+          "titre": "11.5 mm",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "37 mm",
+      "contenu": "T532 ",
+      "sections": [
+        {
+          "titre": "16.3 mm",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "68 mm",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "9.7 ",
+          "contenu": "Fig. 9.3 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "66",
+      "contenu": "Comment utiliser le palan (modèles légers) Etape 1: Pour utiliser un palan léger, commencez par dérouler le câble Maxiflex pour Tirfor en ligne droite entre la machine et la charge, afin d'éviter la formation de boucles qui pourraient détordre les torons ou vriller le câble une fois tendu. Etape 2: Ensuite, retirez la goupille de verrouillage et le goujon d'ancrage (C) du palan.  Etape 3: Pour insérer le câble, penchez le palan jusqu'à ce qu'il repose sur l'extrémité du goujon d'ancrage (B). Avec la main gauche, tournez le loquet de libération du câble (V) vers l'avant. Sur les modèles sans loquets de sécurité, insérez une pièce ou un tournevis dans la fente du point (V) et tournez vers l'avant. Avec la main droite, poussez fermement le levier de libération du câble (P) vers l'avant, en direction du goujon d'ancrage, jusqu'à ce qu'il soit bloqué en position. Etape 4: Enfin, assurez-vous que les deux leviers de commande sont orientés dans le même sens. Insérez l'extrémité compactée en fuseau du câble Maxiflex dans le guide-câble (A) du côté opposé au goujon d'ancrage jusqu'à ce qu'il passe complètement à travers le palan. ",
+      "sections": [
+        {
+          "titre": "9.8",
+          "contenu": "Fig. 9.4 B C L1 L2 VV p A Fig. 9.5 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "1 ",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "2",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "3",
+      "contenu": "3.a ",
+      "sections": []
+    },
+    {
+      "titre": "4",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "67",
+      "contenu": "Étape 5: Passez le câble lâche à travers le palan (B) à la main. Étape 6: Fixez l'élingue d'ancrage ou de suspension du palan et replacez le goujon d'ancrage en le passant à travers les anneaux de l'élingue. Remettez la goupille de verrouillage en place et assurez-vous que le câble Maxiflex passe sous le goujon d'ancrage. Étape 7: Pour refermer le chemin de passage sur le câble, abaissez le levier de libération et laissez-le revenir à sa position initiale. Étape 8: Montez la poignée télescopique sur le levier de manœuvre (L1), le plus proche du goujon d'ancrage, ou sur le levier de descente (L2), situé au centre du palan. Bloquez la poignée en la faisant pivoter. Le palan est maintenant prêt à être utilisé pour le levage ou la descente. Étape 9: Tirez et poussez la poignée pour faire passer le câble dans le palan. Attention ! Ne tentez jamais d'actionner simultanément les leviers de levage et de descente, car la charge pourrait être instantanément relâchée. N'utilisez jamais de rallonge (tube) pour faire levier sur l'un des leviers de commande, car cela surchargerait le palan. Fig. 9.6 ",
+      "sections": []
+    },
+    {
+      "titre": "5",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "6",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "7",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "8",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "68",
+      "contenu": "Comment utiliser les modèles lourds L1   Levier de montée L2   Levier de descente P     Levier de libération du câble A     Guide-câble B     Sortie du câble C     Crochet d'ancrage V     Loquet de libération du câble Étape 1: Déroulez le câble spécial Maxiflex pour Tirfor afin de former  une ligne droite, et ce afin d'éviter la formation de boucles qui pourraient détordre les torons ou vriller le câble une fois celui-ci  Étape 2: Les instructions suivantes supposent que le crochet d'ancrage du palan est orienté à l'opposé de l'opérateur. Avec la main droite, appuyez sur le loquet de libération du câble (V) situé sur le côté du boîtier, à proximité du crochet, et maintenez-le enfoncé. Tirez sur le levier de libération du câble  (P) à l'aide de la main gauche afin de l'éloigner du crochet et jusqu'à ce qu'il soit en position verticale. Loquet de libération (V). Continuer de tirer sur le levier de libération du câble (P) jusqu'à ce qu'il soit bloqué en position. Les deux mâchoires sont maintenant ouvertes.  Étape 3: Après avoir posé le palan au sol, insérez l'extrémité compactée  en fuseau du câble au point (A). C'est la meilleure position pour l'insertion du câble entre les mâchoires. Poussez le câble jusqu'à ce qu'il sorte au point (B). Fig. 9.7 ",
+      "sections": [
+        {
+          "titre": "9.9",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "69",
+      "contenu": "Étape 4: Ancrez le palan et le crochet avec les élingues adaptées et assurez-vous que le loquet de sécurité est fermé.  Étape 5: Tirez le câble à la main jusqu'à ce qu'il soit tendu jusqu'à la  charge. Étape 6: Afin de refermer le chemin de passage sur le câble, tirez sur le levier de libération du câble (P) afin de l'éloigner du crochet, appuyez et maintenez enfoncé le loquet de libération du câble (V) situé sur le côté du palan. Laissez le levier de libération (P) revenir lentement à sa position de départ. Étape 7: Le câble est maintenant fermement bloqué dans la mâchoire du palan. Pour utiliser le palan, placez le levier de manœuvre sur le levier de montée L1, bloquez-le en position en le faisant pivoter, puis tirez et poussez le premier levier. Le câble passe dans le palan à la fois lorsque l'on tire et pousse le levier. ",
+      "sections": []
+    },
+    {
+      "titre": "70",
+      "contenu": "Ne jamais  Ne jamais utiliser un palan à câble comme élingage ou brin d'élingage lors de l'utilisation d'une grue pour un levage. Les palans à câble sont conçus pour être chargés de manière graduelle, en tendant le mou du câble grâce à l'action de « pression alternative » des mâchoires du palan. Ils ne sont pas conçus pour résister à des mises en charge brusques, comme celles qui peuvent se produire lorsque la charge est rapidement levée ou « arrachée » par une grue. Cela pourrait endommager les mâchoires ou, plus probablement, provoquer une panne catastrophique permettant au câble de glisser librement dans le palan. Attention ! Il est interdit de « déclasser » un palan à câble dans les circonstances  décrites  ci-dessus.  Les  fabricants  n'acceptent généralement pas un tel usage abusif de leurs produits. ",
+      "sections": [
+        {
+          "titre": "9.10",
+          "contenu": "Fig. 9.8 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "71",
+      "contenu": "Pour permettre un ajustement final ou l'installation de la charge, vous pouvez installer un palan à câble en parallèle avec un brin d'élingage, en laissant un jeu de câble pour que le brin d'élingage supporte toutes les charges dynamiques. Une fois le mouvement vertical de la grue terminé et celle-ci pouvant servir de « chariot aérien automobile » (une structure fixe à laquelle le palan à câble peut être suspendu), le palan à câble peut alors supporter la tension de l'élingage, qui peut ensuite être déconnecté. Le palan à câble peut alors être utilisé pour effectuer l'ajustement final nécessaire. ",
+      "sections": []
+    },
+    {
+      "titre": "72",
+      "contenu": "UTILISATION SECURITAIRES DES POULIES A CHAPE OUVERTE / MOUFLES  Les moufles sont disponibles sous forme simple ou multiple avec un choix d’accessoires de suspension, les plus utilisées étant les émerillons simples ou émerillons à oeil ovale. Le principal fonction d’une moufle simple est de changer le sens de levage ou de traction d’une corde, tandis que les moufles multiples réduisent l’effort de traction requis sur le brin d’attaque pour soulever la charge.  Sélection  La première chose à considérée lors de la sélection de moufles simples est la charge à soulever et la charge résultante sur l’élément de suspension (crochet), c’est à dire, charge plus traction de levage (qui sera plus élevée que la charge en raison des frottements sur les poulies). La charge résultante augmente lorsque l’angle entre les brins diminue.  Remarque: lorsque la moufle est du type à chape ouverte, elle doit être conçue de sorte que le boulon fixant la joue ne puisse être complètement sorti.  Fig. 10.1 ",
+      "sections": [
+        {
+          "titre": "10.0",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "10.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "10.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "10.3",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "73",
+      "contenu": "Traction angulaire Remarque: il est généralement convenu que le pourcentage à ajouter pour les frottements est égal à:  Poulie à roulement à rouleaux: 4% par poulie, W x 1,04  Poulies à roulements à bagues bronze: 8% par poulie, W x 1,08 Pour calculer la charge résultante R, commencez par déterminer la traction requise P en multipliant la charge à soulever W par 1,04 (poulies à roulements) ou par 1,08 (poulies à bagues), puis en multipliant par les facteurs indiqués dans le tableau de la fig 10.2 en fonction de l’angle entre les brins.  Attention ! Lorsque vous utilisez une moufle simple sur la partie supérieur, la charge résultante sur le support auquel celle-ci est fixée peut être le double de la charge soulevée, soit dans des conditions extrêmes.   ",
+      "sections": [
+        {
+          "titre": "10.4",
+          "contenu": "R = Résultante (charge au sommet) W = Poids à soulever P = Traction (W + % pour frottement)  Fig. 10.3 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "74",
+      "contenu": "Lors de la sélection de moufles multiples, il est essentiel de prendre en compte la charge à soulever (W) ainsi que la traction de levage (P). La capacité du treuil détermine le nombre de moufles nécessaires (c'est-à- dire le nombre de brins) pour effectuer le levage, ainsi que la charge correspondante. Le tableau ci-dessous vous aidera dans cette sélection. Multipliez la charge à soulever (W) par les facteurs indiqués pour obtenir la charge résultante sur le crochet (R) et la charge de levage (P) requise. Inversement, divisez la charge de levage ou la capacité du treuil (P) par le poids à soulever (W) et comparez le facteur obtenu dans le tableau pour déterminer le type de moufle et la CMU/CU requise. Y ",
+      "sections": [
+        {
+          "titre": "10.5 ",
+          "contenu": "Fig. 10.4 Exemple : W = 16 tonnes P = 3 tonnes  Combien de brins sont nécessaires ?  R = W/P = 16/3 = 5.3  ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "75",
+      "contenu": "Vérifications avant l'utilisation Avant d'utiliser une moufle, assurez-vous de vérifier les points suivants : La CMU/CU est adéquate pour la charge. Le code couleur est à jour et la moufle porte un numéro d'installation ou une marque d'identification. La moufle ne présente pas de traces d'usure, de fissures ou de déformations dans la gorge. Soulevez la moufle pour vérifier l'usure des roulements et des bagues. Faites tourner les réas pour vous assurer que les roulements et les bagues tournent librement. Vérifiez que tous les trous de graissage sont propres et non bloqués, et que la moufle est bien graissée. Assurez-vous que les accessoires de crochet et d'émerillon ne présentent pas d'usure ou de déformation. Examinez les paliers de butée et leurs rondelles, si possible, pour vérifier leur bon fonctionnement. Vérifiez que l'axe supérieur et les sections filetées ne présentent pas d'usure ou de déformation. Si le crochet supérieur est du type à tige, vérifiez l'état de la tige et de l'écrou pour vous assurer qu'ils ne présentent pas d'usure ou de déformation. Vérifiez également que la traverse ne présente pas de traces d'usure. Assurez-vous que la manille et l'anneau de suspension ne présentent pas d'usure, de déformations ou de fissures. Vérifiez que les plaques et étriers latéraux ne présentent pas de traces d'usure, de déformation ou de fissures, en particulier autour du trou de l'axe chargé principal et du trou de suspension supérieur. Assurez-vous que les étriers et flasques latéraux ne présentent pas d'arêtes vives ou de barbures qui pourraient abîmer le câble. Vérifiez que les ringots, s'ils sont présents, ne sont pas usés, déformés ou fissurés. Vérifiez toutes les pièces d'écartement et les boulons d'assemblage pour vous assurer qu'ils ne sont pas déformés. À l'aide d'une jauge, vérifiez que le diamètre intérieur des réas est compatible avec le câble du treuil. ",
+      "sections": [
+        {
+          "titre": "10.6 ",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "76",
+      "contenu": "Câble supporté sur  ½ de sa circonférence Gorge trop petite  (abrasion du câble  par le réa) Gorge trop large  (aplatissement  du câble) Sécurité Avant de suspendre la moufle à la charpente de soutien, assurez-vous que toutes les goupilles fendues et d'arrêt sont correctement installées. Pour une moufle à chape ouverte, vérifiez que la goupille d'arrêt est bien en place. Assurez-vous que l'élément de charpente de suspension est assez solide pour supporter toutes les charges prévues; en cas de doute, consultez votre superviseur. Fig. 10.5 Fig. 10.6 ",
+      "sections": [
+        {
+          "titre": "10.7",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "10.8",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "77",
+      "contenu": "Assurez-vous que la moufle est correctement alignée avec le brin d'attaque afin d'éviter que le câble ne frotte contre une joue. Si le câble n'est pas manchonné, après mouflage: Vous devez toujours vous assurer que L'extrémité du câble est une attache à coin ouverte  Ne jamais Former l'extrémité du câble à l'aide de serre-câbles, leur utilisation étant formellement interdite dans les applications de levage. Surcharger la moufle. ",
+      "sections": [
+        {
+          "titre": "10.9",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "10.10",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "78",
+      "contenu": "UTILISATION SECURITAIRE DES TREUILS  Les treuils peuvent être manuels ou motorisés, les plus courants sont les modèles pneumatiques.       Manuel                                                 Pneumatique  Sélection  Lors de la sélection d’un treuil, l’élément le plus important est la traction requise. Si vous utilisez un mouflage multiple, consultez 11.4 de cette norme qui vous aideras pour les calculs. Ne pas oubliez que la majorité des chiffres indiqués sont basés sur les performances avec tambour à demi plein (la traction diminue quand le tambour se remplit).  Remarque: la traction avec tambour à demi plein n’a qu’une performance moyenne. Ne pas ce chiffre avec la capacité du câble, qui est d’environ 36% du stockage tambour plein à ce point.  ",
+      "sections": [
+        {
+          "titre": "11.0",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.2",
+          "contenu": "Fig. 11.1 Fig. 11.2 Tambour plein - traction min. Tambour à demi-plein - traction moy. (Capacité du câble = 36 % de la valeur totale) 1er tour - traction max.  ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "79",
+      "contenu": "La capacité du tambour, c'est-à-dire la longueur de câble nécessaire, est illustrée à la figure 14.3. Attention ! Le câble doit avoir une longueur minimale telle qu'en position extrême (les moufles supérieure et inférieure étant les plus éloignées possible), il reste au moins cinq couches sur le tambour. Cela permet d'éviter tout transfert de charge sur l'ancrage au tambour, qui n'est PAS un composant porteur. Pour déterminer la longueur de câble requise, voici un exemple des paramètres à considérer : des moufles à 3 et à 2 réas, une moufle ouverte à corde et un treuil. Multipliez la distance entre les centres des moufles par le nombre de brins. p. ex. 35 m x 5 = 175 m Ajoutez la longueur de corde de la moufle supérieure à travers la moufle ouverte jusqu'au treuil.        p. ex. 30 m + 10 m = 40 m Ajoutez la longueur autour des réas, c.-a-d., nombre de réas x 0,5 fois la circonférence du réa.          p. ex. 5 x 600 mm = 3 m Ajoutez la marge de 5 tours sur le tambour, soit 5 fois la circonférence de celui-ci.        p. ex. 5 x 2,5 m = 12,5 m Longueur totale du câble requise.        = 175 m + 40 m + 3 m + 12,5 m = 230,5 m (Lorsque cette longueur représente plus de 36%  de la capacité du tambour, vérifiez à nouveau la traction  donnée pour le treuil dans le catalogue du fabricant). ",
+      "sections": [
+        {
+          "titre": "11.3",
+          "contenu": "Fig. 11.3 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "80",
+      "contenu": "Vérifications avant l'utilisation Avant d'actionner le treuil, vérifiez que: La CMU/CU est adéquate pour la charge. Le code couleur est à jour et le treuil porte un n° d'installation / une marque d'identification. La garde de câble n'est pas endommagée ni tordue, ce qui pourrait bloquer et/ou user le câble En l'absence de garde, NE PAS UTILISER ! Le tambour du treuil n'est pas usé, déformé ou fissuré. Les bandes et tambours de frein ne sont pas anormalement usés. Les bandes et tambours sont propres et ne présentent pas de rouille ou autre contamination. Lorsqu'ils sont présents, examinez le frein automatique et les ressorts d'arrêt, leurs bielles et goupilles. Vérifiez que la partie exposée de la tige de piston ne présente pas de rouille et autre corrosion. Une fois le courant coupé, vérifiez que tous les leviers de commande reviennent en position neutre quand on les relâche. Vérifiez que les flèches et marques de sens de défilement sont en place et clairement visibles. Vérifiez le niveau d'hulle. Examinez le socle du treuil et vérifiez qu'il ne présente pas de soudures fissurées, fissures autour des trous de boulons, déformations ou autres dégâts dus à des chocs.       Ancrage: Vérifiez que les boulons, soudures et autres fixations sont adéquats et autant que possible, que les éléments du socle métallique ne présentent pas de signes de détérioration. Remarque: si un treuil est déplacé, il doit être rééprouvé, à moins que le nouvel ancrage ait déjà été certifié. ",
+      "sections": [
+        {
+          "titre": "11.4",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "81",
+      "contenu": "vérifiez que l'alimentation en air convient pour ce type particulier de treuil (pression, etc.).  Branchez l'alimentation en air et faites un essai de fonctionnement du treuil.  Inspectez visuellement le câble du treuil et vérifiez qu'il ne présente pas:  D'usure et de rouille et autre corrosion.  De traces d'abrasion.  De dégâts mécaniques (écrasements, fils brisés...). Commande et pose du câble Si un nouveau câble est nécessaire , assurez-vous que vous mesurez correctement le diamètre pour éviter d'avoir un câble TROP PETIT. Lorsque vous déroulerez un câble d’un touret en bois sur le tambour du treuil, évitez de la courber dans l’autre sens, ce qui abîme le commettage.  ",
+      "sections": [
+        {
+          "titre": "11.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.6",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.7",
+          "contenu": "Fig. 11.4 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "82",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "11.8",
+          "contenu": "Il est essentiel de déterminer le commettage approprié du câble. Lorsqu'un câble ou cordage avec le sens de commettage correct est enroulé, les boucles sur le tambour se loveront les unes contre les autres et maintiendront une nappe régulière lorsque la charge sera déposée. En revanche, avec un câble ou cordage au commettage incorrect, les boucles se séparent lorsque la charge est déposée. Lors de la reprise de l'enroulement, les boucles de câble peuvent se croiser et se chevaucher, entraînant un aplatissement et un écrasement. Fig. 11.5 Commettage à gauche - main gauche Commettage à droite - main droite  Sous enroulement  Attacher à gauche Sous enroulement  Attacher à droite Sous enroulement  Attacher à droite Sous enroulement  Attacher à gauche Fig. 11.6 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "83",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "11.9",
+          "contenu": "Les treuils les plus utilisées ont un étrier de frein long et un étrier de frein court  Assurez-vous que l'enroulement du câble est correct par rapport aux étriers, car un bobinage incorrect peut : Réduire l'efficacité des freins. Diminuer considérablement la capacité de treuillage, car la vanne rotative fonctionnera en sens inverse. Remarque: toute modification du sens d’enroulement doit faire l’objet d’une discussion avec le fabricant et être approuvée par celui-ci.   Fig. 11.7 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "84",
+      "contenu": "Angle de déflexion Nous recommandons que l'angle de déflexion maximal pour un tambour lisse ne dépasse pas 1,5°. Pour un tambour rainuré, cet angle peut aller jusqu'à 2,5°. Pour atteindre ces valeurs, il peut être nécessaire d'utiliser une poulie ou une moufle déflectrice. Dans la majorité des cas, le câble a une cosse fixée par virole, mais dans certaines circonstances (mouflage multiple) la cosse est enlevée et l'élément de terminaison doit être monté sur place. La meilleure solution consiste à utiliser des attaches à coin ouvertes, en particulier pour le levage de charges.  Remarque 1: les attaches à coin ouvertes ont une efficacité de 80 %. On vérifiera visuellement qu'elles ne présentent pas de fissures autour de la chape. Ne pas serrer le brin mort contre le brin sous tension (mauvaise technique courante). Remarque 2: des attaches à coin étendu sont maintenant disponibles et intègrent un trou permettant le montage du serre-câble. La sécurité est ainsi plus grande et l'extrémité est plus propre. ",
+      "sections": [
+        {
+          "titre": "11.10",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.11",
+          "contenu": "Fig. 11.8 Fig. 11.9 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "85",
+      "contenu": "Remarque 3 : Le brin mort (retourné) doit avoir une longueur minimale de 6 diamètres pour les câbles standard et de 20 diamètres pour les câbles antigiratoires, mais dans tous les cas, il ne doit pas être inférieur à 150 mm. La cosse fixée par virole peut être équipée d'un crochet ou d'une manille pour la connexion à la charge. La plupart des fabricants privilégient l'utilisation d'un crochet de sécurité de type fermé (par exemple, BK) ou d'une manille de sécurité. Ces dernières semblent être l'attache préférée lorsqu'on utilise le treuil pour le levage de personnes. Il existe différents types de serre-câbles permettant de terminer les câbles sur place ; les trois types les plus courants sont : “First Grips” (efficacité: 80 %)  Serre-câbles “Eureka” (efficacité variable, en moyenne 45% sur la basse d’essais indépendants effectués sur des serre-câbles de 16 mm à 2 boulons)  Serre câbles “Bulldog” (seul le type DIN1142 est acceptable efficacité 80%)  Les chiffres d’efficacité indiqués ci-dessus sont basés sur la charge de rupture du câble indiquée par le fabricant.   Remarque: dans les situations générales d’élingage, l’utilisation de tout type de serre câble à l’extrémité des câbles dans des applications de levage ou de traction est interdite.  ",
+      "sections": [
+        {
+          "titre": "11.12",
+          "contenu": "First Grip  Peut être posé dans  les 2 sens  Eureka peut être  posé dans les 2 sens  Bulldog doit uniquement  être posé dans un sens  Fig. 11.10 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "86",
+      "contenu": "Utilisation des treuils  Toujours Garder les mains éloignées du câble/cordage s’enroulant sur le tambour.  Tenir le personnel éloigné du câble de levage.  Vérifier que le frein fonctionne correctement avant de lever une charge à une hauteur importante.  Abaisser la charge lentement pour éviter les charges dynamiques sur le treuil et le câble.  Ne jamais  Surcharger le treuil  L’utiliser pour lever ou descendre du personnel, sauf s’il a été spécifiquement conçu à cette fin et possède le marquage afférent.  Changer de sens d’enroulement/déroulement (bobinage) sans consulter auparavant le fabricant.  Remarque: lorsqu’ils y a plusieurs treuils dans un espace restreint, il est nécessaire pour des raisons de sécurité de marquer les terminaisons des câbles avec l’identité du treuil correspondant.  Attention ! Lorsque l’on opère un treuil avec le câble passant dans une moufle en hauteur, il est souvent nécessaire de fixer un poids à son extrémité pour empêcher qu’il ne se déroule intempestivement sous l’effet du poids du segment situé entre la moufle et le treuil. Cela est particulièrement important dans le cas d’un transfert   Treuils de transfert (levage) de personnel  Sur les derricks et les plates-formes de forage, les treuils sont fréquemment utilisés pour le transfert de personnel. Ces treuils doivent être soit spécialement conçus à cet effet, soit modifiés et recertifiés pour cette utilisation. Dans tous les cas, ils doivent porter la mention \"apte au transfert de personnes\". Aucun autre type de treuil ne peut être utilisé pour le transfert de personnel. Attention ! Lors de telles opérations, ne JAMAIS laisser le treuil sans surveillance, quelles que soient les circonstances  ",
+      "sections": [
+        {
+          "titre": "11.13",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.14",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "11.15",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "87",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "12.0",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.1",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.2 ",
+          "contenu": "UTILISATION SECURITAIRE DES ELINGUES CABLES  Les élingues en câbles métalliques sont souvent fabriquées avec ces terminaisons formées par épissure mécanique couramment appelées viroles, gaines ou manchons. Le œil de l’élingue peut être muni ou non de cosses en fonction de l’application.  Sélection  Les élingues à câbles sont les plus utilisées car elles sont très polyvalentes et relativement légères par rapport à leur résistance.  Elles peuvent être simples (monobrin) ou à brins multiples. Elingues simples et sans fin  Cosse Cosse Cosse Cosse Anneau mou  Anneau mou  Sans fin  Fig. 12.1 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "88",
+      "contenu": "Elingues multi-brins  La majorité des élingues utilisées doivent être munies de cosses pour utiliser au mieux la résistance du câble, car avec des élingues à boucle souple, la résistance est moindre si l’oeil supportant la charge a un faible diamètre.  Charges maximale d’utilisation  La CMU est fixé en fonction : 1. Du diamètre. 2. De la construction (type d’âme). 3. De la résistance à la traction du fil métallique. La construction du câble est choisie en fonction d’une application spécifique, les câbles métalliques avec âme acier offre une meilleur résistance à l’écrasement et à l’aplatissement lors du treuillage par exemple. Tandis que ceux à âme acier et fibres conviennent pour la fabrications d’élingues.  A titre d’exemple la figure 12.3 définit la charge maximal d’une élingue à câble (6 x 36 ou 6 x 19)  Attention ! Ce tableau est donnée à titre d’exemple et ne peux pas être utilisé pour une autre composition de câble. Dans ce tableau la charge d’utilisation maximal en tonnes est définie  pour les différents modes d’élingage.  Deux brins  Trois brins  Quatre brins Fig. 12.2 ",
+      "sections": [
+        {
+          "titre": "12.3",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.4 ",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "89",
+      "contenu": "Fig.12.3 ",
+      "sections": []
+    },
+    {
+      "titre": "90",
+      "contenu": "Construction types  Avantage des élingue à câbles  A solidité égale, les élingues câble sont plus légères que des élingues à chaîne, elle risque de moins abimer les charges fragiles ou de surfaces délicates. Elles absorbent également mieux les charges dynamiques.  Lorsque l’élingue est munie de crochets le seul type autorisé est le type   “fermé”.  Plus flexible Moins résistant à l’usure  Moins flexible  Plus résistant à l’usure ",
+      "sections": []
+    },
+    {
+      "titre": "6 x 36",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "6 x 19",
+      "contenu": "Fig.12.4 Fig.12.5 A faire et à ne pas faire ​ Ne jamais passer une élingue à travers un crochet ou une manille !​ ",
+      "sections": [
+        {
+          "titre": "12.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.6",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.7",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "91",
+      "contenu": "Toujours utiliser une manille pour connecter deux élingues ​ Assurer vous que la longuer de l’anneaux  est ≥ 2 x le diamètre du crochet ​ ",
+      "sections": []
+    },
+    {
+      "titre": "92",
+      "contenu": "Vérifications avant utilisation  Les vérifications suivantes doivent être effectuées avant d’utiliser une élingue :   La CMU est adéquate pour la charge  Le code couleur est à jour et l’élingue porte un n° d’installation / une marque d’identification.  Examinez chaque brin individuel sur toute sa longueur et vérifiez qu’il ne présente pas d’usure, de corrosion, d’abrasion ou de fils brisés.  Examinez chaque virole ou manchon et vérifiez qu’il a la taille correcte.  La virole/ manchon ne doit pas présenter de fissures ou déformations.  Vérifiez que chaque cosse a été posée correctement.  Examinez le câble autour des cosses, où il subit souvent une abrasion due au fait que l’élingue est traînée sur des surfaces rêches.  Examinez l’anneau/ maillon de tête et l’assemblage quadruple et vérifiez l’absence d’usure, de corrosion et de fissures.  Lorsque des crochets sont utilisés, vérifiez l’absence d’usure, de corrosion et de fissures et vérifiez que les linguets de sécurités fonctionnent.  ",
+      "sections": [
+        {
+          "titre": "12.8",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "93",
+      "contenu": "Sécurité Pour les élingues à plusieurs brins, la capacité maximale d'utilisation (CMU) indiquée reste valable tant que l’angle de levage ne dépasse pas 90°. Il est impératif de ne pas excéder cet angle, sauf si l’élingue a été spécifiquement conçue, testée et marquée pour supporter un angle supérieur. Lors de l’utilisation d’élingues simples en paire ou d’élingues sans fin, il convient de prendre en compte les pertes de capacité liées à l’angle de levage et à la configuration géométrique. Tire-câbles, chaussettes et « Chinese Fingers » Les tire-câbles sont principalement destinés à la traction ou au maintien de câbles métalliques, de cordages ou de tubes. Fabriqués à la main à partir de fil d’acier galvanisé haute résistance, ils doivent être utilisés avec précaution. ",
+      "sections": [
+        {
+          "titre": "12.9",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.10",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.11",
+          "contenu": "90° max 90° max Fig.12.6 Tire-câbles standard un et deux yeux  Fig.12.7 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "94",
+      "contenu": "Chaque modèle possède une charge de rupture définie. L’utilisateur doit appliquer un coefficient de sécurité adapté à l’usage prévu : Pour les opérations de traction classiques : un facteur de sécurité de 3 est recommandé (capacité = charge de rupture ÷ 3). Pour les opérations de levage plus sensibles : un facteur de 5 est requis (capacité = charge de rupture ÷ 5). Ce facteur vise à prévenir la rupture du tire-câble sous l’effet de la charge, mais ne garantit pas l’adhérence sur le câble tracté ou soulevé, qui dépendra de son état et de sa préparation. Attention ! Certains fabricants déconseillent l’usage de leurs tire-câbles pour le levage. Il est donc essentiel de consulter leur documentation technique. Tire-câbles pour traction Utilisés pour tirer des câbles, tubes ou cordages, notamment lors de l’installation sur des grues ou des poulies. Les diamètres standards vont de 4 à 115 mm, avec des variantes adaptées à la charge. Des modèles sur mesure peuvent être fabriqués pour des diamètres allant jusqu’à ",
+      "sections": []
+    },
+    {
+      "titre": "600 mm ou plus.",
+      "contenu": "On distingue deux types : Tire-câbles de traction : pour des charges légères (tubes plastiques, cordages), un seul fil métallique peut suffire. Pour des charges lourdes, on utilise des tresses simples, doubles ou triples. Tire-câbles porteurs : similaires aux précédents, mais intégrés à l’installation. Ils peuvent comporter une ou deux boucles selon les points d’ancrage. La longueur standard varie de 600 à 1 000 mm, mais des versions plus longues existent, notamment pour les tresses triples. ",
+      "sections": [
+        {
+          "titre": "12.12",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.13",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "95",
+      "contenu": "Recommandations d’usage Les tire-câbles à extrémité libre peuvent servir de manchon pour tirer un câble de remplacement, mais ne doivent pas être utilisés si un risque de rotation entre les câbles existe (ex. : câbles électriques). Dans ce cas, il est préférable d’utiliser deux tire-câbles reliés par un émerillon. Éviter de superposer deux tire-câbles, car cela compromet leur efficacité et peut les endommager. Pour faciliter l’installation de longues sections de câble, on peut ajouter des points de traction intermédiaires à l’aide de tire-câbles fixés à intervalles réguliers. ",
+      "sections": [
+        {
+          "titre": "12.14",
+          "contenu": "Fig.12.8 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "96",
+      "contenu": "",
+      "sections": [
+        {
+          "titre": "12.15",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "12.16",
+          "contenu": "Inspectez visuellement le tire-câble avant l'emploi. Si vous l'installez sur un câble métallique, assurez-vous que l'excédent de lubrifiant a été enlevé. Sélectionnez la taille correcte de tire-câble pour le diamètre de l'objet à tirer. Sélectionnez le tressage correct requis (simple, double ou triple). Instructions générales pour la pose de tire-câbles Pour faciliter les choses, l'extrémité libre du tire-câble peut être pressée contre une surface plate afin d'évaser les extrémités des fils de la tresse, ce qui facilitera le montage de cette extrémité sur le câble, etc. Enfoncez le tire-câble le long du câble, en poussant de l'extrémité à boucle vers l'extrémité libre, ce qui provoque la légère expansion de la gaine nécessaire pour la faire passer sur le câble. Les tire-câbles à une boucle doivent être tirés au maximum sur le câble de façon à ce que celui-ci les traverse de part et d'autre. Avec les modèles à deux boucles, le câble peut être enfoncé dans le         tire-câble passant entre les deux boucles, aussi loin que nécessaire. Assurez-vous que le tire-câble repose uniformément et fermement contre le câble en plaçant les deux mains autour de la circonférence du câble. Pour les modèles à une seule boucle, commencez par l'extrémité bouclée.  Pour les modèles à deux boucles, commencez à l'extrémité libre, sans boucles. Serrez au maximum sur la gaine et déplacez-vous vers l'autre extrémité du tire-câble en glissant fermement les mains sur la gaine tressée afin qu'elle soit bien serrée contre le câble. Pour encore augmenter le serrage, vous devez poser un collier autour du tire-câble à l'extrémité ouverte (du côté opposé aux boucles). Appliquez la traction lentement pour permettre au tire- câble de se contracter et de serrer. ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "97",
+      "contenu": "Ne jamais  Surcharger ou exercer une traction forte et brutale sur un tire-câble.  Utiliser un tire -câble s’il présente un quelconque signe d’avarie ou d’usure (ce que vous vérifiez avant chaque utilisation).  Attention ! Si à un moment quelconque un des fils de la nappe tressé venait  à se casser, arrêtez immédiatement de tier. De telles cassures sont généralement causées par une surcharge ou une application inégale de la force de traction.  Lors de l’utilisation de ces tire-câbles, portez un équipements protecteur (gants) en permanance.  Fig.12.9 Collier  Traction sur l’extrémité à boucles  ",
+      "sections": []
+    },
+    {
+      "titre": "98",
+      "contenu": "UTILISATION SECURITAIRE DES ELINGUES EN FIBRES SYNTHETIQUES Il est essentiel de surveiller rigoureusement les conditions de stockage et de manipulation des élingues en fibres synthétiques afin de préserver leur intégrité et d’éviter toute contamination. En raison de leur conception, ces élingues peuvent perdre une grande partie de leur résistance en cas de coupure, de déchirure, d’effilochage ou de rupture des coutures. Si la gaine de protection présente des dommages ou des entailles, l’élingue doit être immédiatement mise hors service. De manière générale, les élingues en fibres synthétiques et les sangles doivent être retirées du service après un an d’utilisation, sauf dans le cas d’applications spécifiques. Pour ces dernières, une inspection rigoureuse est nécessaire pour prolonger leur usage au-delà de cette période. En raison de la sensibilité du matériau, la capacité maximale d’utilisation (CMU) peut être fortement réduite en cas de défauts visibles. Il est donc impératif de procéder à un examen minutieux avant chaque utilisation et de ne pas réutiliser une élingue présentant l’un des défauts mentionnés. Les élingues en fibres synthétiques (plates et rondes) sont disponibles en cinq types de base:  Format A boucles cousues  Avec maillons en D Avec maillons en D et         maillon mouflage  Sans fin (plate - sangle)  Sans fin (ronde)  Applications Multiples  Simple direct ou brassière  Simple direct, brassière/ maillon  mouflage nœud coulant  Multiples  Multiples  ",
+      "sections": [
+        {
+          "titre": "13.0",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.1",
+          "contenu": "",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "99",
+      "contenu": "Capacité de levage et choix du type d’élingue La largeur de l’élingue influence directement sa capacité de levage : Une élingue simple (épaisseur simple) offre environ 1 tonne de capacité par 50 mm de largeur. Une élingue double (double épaisseur) offre environ 1 tonne par 25 mm de largeur. Le choix entre une élingue plate ou ronde dépend du mode d’élingage prévu, car celui-ci impacte la CMU. Il convient donc d’appliquer un facteur de mode (M) adapté à la configuration d’utilisation. A boucle cousues  Avec maillons en D Avec mailons en D et mouflage  Sans fin (plate) ",
+      "sections": [
+        {
+          "titre": "13.2",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.3",
+          "contenu": "Elingage  simple direct M = 1 Nœud coulant M = 0,8 Panier 0° M = 2 Panier 90° M = 1,4 Fig.13.1 Fig.13.2 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "100",
+      "contenu": "Pour les opérations courantes, les élingues rondes ou estropes à boucles souples sont recommandées pour leur polyvalence. Toutefois, en cas d’usage fréquent, les modèles avec maillons en D sont préférables en raison de leur meilleure résistance à l’usure. Pour les charges fragiles ou aux formes complexes (comme les vannes, armoires de commande, actionneurs, etc.), les élingues rondes sont à privilégier. Leur souplesse et leur capacité à former un nœud coulant assurent un maintien sûr sans endommager la charge. Vérifications avant utilisation Avant d’utiliser des élingues plates ou rondes, vous devez les examiner sur toute leur longueur pour vous assurer que :  La CMU/CU est adéquate pour la charge  Le code couleur est à jour  L’élingue porte un n° d’installation  Il n’y a pas de coupures, déchirures ou effilochages De dégâts dus à des produits chimiques Ou à la chaleur  De pénétration de corps étrangers dans les fibres  De déformation/ d’usure des oeillets métalliques  Attention ! Lorsque de l’inspection délingues rondes et en cas de découverte de coupures dans la gaine protectrice, ces premières doivent être mises au rebut car la résistance de l’âme intérieur pourrait être compromise.  ",
+      "sections": [
+        {
+          "titre": "13.4",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.5",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.6",
+          "contenu": "Longuer utile efficace (entre points de charges)  Fig.13.3 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "101",
+      "contenu": "Consignes de sécurité Les élingues en fibres synthétiques sont destinées à un usage sur site ou sur installation, mais ne doivent pas être utilisées pour le transport entre ces lieux.  La majorité est fabriquée en polyester, ce qui leur confère une bonne résistance à l’eau de mer, aux hydrocarbures et à de nombreux acides à température ambiante. En revanche, elles sont vulnérables aux bases alcalines, qui peuvent dégrader le polyester. Il est crucial d’éviter tout contact avec des arêtes vives, qui risqueraient de couper ou d’endommager l’élingue lors de la prise de charge. Des protections doivent systématiquement être mises en place autour de ces zones à risque. Toujours placer des protections autour des arêtes vives. ",
+      "sections": [
+        {
+          "titre": "13.7",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.8",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.9",
+          "contenu": "",
+          "sous_sections": []
+        },
+        {
+          "titre": "13.10",
+          "contenu": "N Les sangles risque de ce couper  Fig.13.4 ",
+          "sous_sections": []
+        }
+      ]
+    },
+    {
+      "titre": "102",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "103",
+      "contenu": "",
+      "sections": []
+    },
+    {
+      "titre": "104",
+      "contenu": "",
+      "sections": []
+    }
+  ],
+  "assets": [
+    {
+      "page": 1,
+      "path": "assets\\page1_img1.png"
+    },
+    {
+      "page": 1,
+      "path": "assets\\page1_img2.jpeg"
+    },
+    {
+      "page": 3,
+      "path": "assets\\page3_img1.png"
+    },
+    {
+      "page": 4,
+      "path": "assets\\page4_img1.png"
+    },
+    {
+      "page": 5,
+      "path": "assets\\page5_img1.png"
+    },
+    {
+      "page": 6,
+      "path": "assets\\page6_img1.png"
+    },
+    {
+      "page": 7,
+      "path": "assets\\page7_img1.png"
+    },
+    {
+      "page": 8,
+      "path": "assets\\page8_img1.png"
+    },
+    {
+      "page": 9,
+      "path": "assets\\page9_img1.png"
+    },
+    {
+      "page": 10,
+      "path": "assets\\page10_img1.png"
+    },
+    {
+      "page": 11,
+      "path": "assets\\page11_img1.png"
+    },
+    {
+      "page": 12,
+      "path": "assets\\page12_img1.png"
+    },
+    {
+      "page": 13,
+      "path": "assets\\page13_img1.png"
+    },
+    {
+      "page": 14,
+      "path": "assets\\page14_img1.png"
+    },
+    {
+      "page": 15,
+      "path": "assets\\page15_img1.png"
+    },
+    {
+      "page": 16,
+      "path": "assets\\page16_img1.png"
+    },
+    {
+      "page": 17,
+      "path": "assets\\page17_img1.png"
+    },
+    {
+      "page": 18,
+      "path": "assets\\page18_img1.png"
+    },
+    {
+      "page": 18,
+      "path": "assets\\page18_img2.png"
+    },
+    {
+      "page": 27,
+      "path": "assets\\page27_img1.png"
+    },
+    {
+      "page": 27,
+      "path": "assets\\page27_img2.png"
+    },
+    {
+      "page": 27,
+      "path": "assets\\page27_img3.jpeg"
+    },
+    {
+      "page": 31,
+      "path": "assets\\page31_img1.png"
+    },
+    {
+      "page": 31,
+      "path": "assets\\page31_img2.png"
+    },
+    {
+      "page": 34,
+      "path": "assets\\page34_img1.png"
+    },
+    {
+      "page": 34,
+      "path": "assets\\page34_img2.png"
+    },
+    {
+      "page": 35,
+      "path": "assets\\page35_img1.png"
+    },
+    {
+      "page": 35,
+      "path": "assets\\page35_img2.png"
+    },
+    {
+      "page": 35,
+      "path": "assets\\page35_img3.png"
+    },
+    {
+      "page": 36,
+      "path": "assets\\page36_img1.png"
+    },
+    {
+      "page": 37,
+      "path": "assets\\page37_img1.png"
+    },
+    {
+      "page": 38,
+      "path": "assets\\page38_img1.png"
+    },
+    {
+      "page": 40,
+      "path": "assets\\page40_img1.png"
+    },
+    {
+      "page": 41,
+      "path": "assets\\page41_img1.png"
+    },
+    {
+      "page": 42,
+      "path": "assets\\page42_img1.png"
+    },
+    {
+      "page": 45,
+      "path": "assets\\page45_img1.png"
+    },
+    {
+      "page": 46,
+      "path": "assets\\page46_img1.png"
+    },
+    {
+      "page": 49,
+      "path": "assets\\page49_img1.png"
+    },
+    {
+      "page": 50,
+      "path": "assets\\page50_img1.png"
+    },
+    {
+      "page": 55,
+      "path": "assets\\page55_img1.png"
+    },
+    {
+      "page": 55,
+      "path": "assets\\page55_img2.png"
+    },
+    {
+      "page": 55,
+      "path": "assets\\page55_img3.png"
+    },
+    {
+      "page": 58,
+      "path": "assets\\page58_img1.png"
+    },
+    {
+      "page": 59,
+      "path": "assets\\page59_img1.png"
+    },
+    {
+      "page": 59,
+      "path": "assets\\page59_img2.png"
+    },
+    {
+      "page": 60,
+      "path": "assets\\page60_img1.png"
+    },
+    {
+      "page": 61,
+      "path": "assets\\page61_img1.png"
+    },
+    {
+      "page": 63,
+      "path": "assets\\page63_img1.png"
+    },
+    {
+      "page": 63,
+      "path": "assets\\page63_img2.png"
+    },
+    {
+      "page": 64,
+      "path": "assets\\page64_img1.png"
+    },
+    {
+      "page": 64,
+      "path": "assets\\page64_img2.png"
+    },
+    {
+      "page": 64,
+      "path": "assets\\page64_img3.png"
+    },
+    {
+      "page": 64,
+      "path": "assets\\page64_img4.png"
+    },
+    {
+      "page": 66,
+      "path": "assets\\page66_img1.png"
+    },
+    {
+      "page": 67,
+      "path": "assets\\page67_img1.png"
+    },
+    {
+      "page": 67,
+      "path": "assets\\page67_img2.png"
+    },
+    {
+      "page": 68,
+      "path": "assets\\page68_img1.png"
+    },
+    {
+      "page": 69,
+      "path": "assets\\page69_img1.png"
+    },
+    {
+      "page": 69,
+      "path": "assets\\page69_img2.png"
+    },
+    {
+      "page": 71,
+      "path": "assets\\page71_img1.png"
+    },
+    {
+      "page": 72,
+      "path": "assets\\page72_img1.png"
+    },
+    {
+      "page": 73,
+      "path": "assets\\page73_img1.png"
+    },
+    {
+      "page": 73,
+      "path": "assets\\page73_img2.png"
+    },
+    {
+      "page": 74,
+      "path": "assets\\page74_img1.png"
+    },
+    {
+      "page": 74,
+      "path": "assets\\page74_img2.png"
+    },
+    {
+      "page": 74,
+      "path": "assets\\page74_img3.png"
+    },
+    {
+      "page": 74,
+      "path": "assets\\page74_img4.png"
+    },
+    {
+      "page": 75,
+      "path": "assets\\page75_img1.png"
+    },
+    {
+      "page": 75,
+      "path": "assets\\page75_img2.png"
+    },
+    {
+      "page": 77,
+      "path": "assets\\page77_img1.png"
+    },
+    {
+      "page": 77,
+      "path": "assets\\page77_img2.png"
+    },
+    {
+      "page": 79,
+      "path": "assets\\page79_img1.png"
+    },
+    {
+      "page": 79,
+      "path": "assets\\page79_img2.png"
+    },
+    {
+      "page": 79,
+      "path": "assets\\page79_img3.png"
+    },
+    {
+      "page": 80,
+      "path": "assets\\page80_img1.png"
+    },
+    {
+      "page": 82,
+      "path": "assets\\page82_img1.png"
+    },
+    {
+      "page": 83,
+      "path": "assets\\page83_img1.png"
+    },
+    {
+      "page": 83,
+      "path": "assets\\page83_img2.png"
+    },
+    {
+      "page": 84,
+      "path": "assets\\page84_img1.png"
+    },
+    {
+      "page": 85,
+      "path": "assets\\page85_img1.png"
+    },
+    {
+      "page": 85,
+      "path": "assets\\page85_img2.png"
+    },
+    {
+      "page": 86,
+      "path": "assets\\page86_img1.png"
+    },
+    {
+      "page": 86,
+      "path": "assets\\page86_img2.png"
+    },
+    {
+      "page": 86,
+      "path": "assets\\page86_img3.png"
+    },
+    {
+      "page": 88,
+      "path": "assets\\page88_img1.png"
+    },
+    {
+      "page": 88,
+      "path": "assets\\page88_img2.png"
+    },
+    {
+      "page": 88,
+      "path": "assets\\page88_img3.png"
+    },
+    {
+      "page": 88,
+      "path": "assets\\page88_img4.png"
+    },
+    {
+      "page": 89,
+      "path": "assets\\page89_img1.png"
+    },
+    {
+      "page": 89,
+      "path": "assets\\page89_img2.png"
+    },
+    {
+      "page": 89,
+      "path": "assets\\page89_img3.png"
+    },
+    {
+      "page": 90,
+      "path": "assets\\page90_img1.png"
+    },
+    {
+      "page": 91,
+      "path": "assets\\page91_img1.png"
+    },
+    {
+      "page": 91,
+      "path": "assets\\page91_img2.png"
+    },
+    {
+      "page": 91,
+      "path": "assets\\page91_img3.png"
+    },
+    {
+      "page": 91,
+      "path": "assets\\page91_img4.png"
+    },
+    {
+      "page": 92,
+      "path": "assets\\page92_img1.png"
+    },
+    {
+      "page": 92,
+      "path": "assets\\page92_img2.png"
+    },
+    {
+      "page": 92,
+      "path": "assets\\page92_img3.png"
+    },
+    {
+      "page": 94,
+      "path": "assets\\page94_img1.png"
+    },
+    {
+      "page": 94,
+      "path": "assets\\page94_img2.png"
+    },
+    {
+      "page": 94,
+      "path": "assets\\page94_img3.png"
+    },
+    {
+      "page": 94,
+      "path": "assets\\page94_img4.png"
+    },
+    {
+      "page": 96,
+      "path": "assets\\page96_img1.png"
+    },
+    {
+      "page": 98,
+      "path": "assets\\page98_img1.png"
+    },
+    {
+      "page": 100,
+      "path": "assets\\page100_img1.png"
+    },
+    {
+      "page": 100,
+      "path": "assets\\page100_img2.png"
+    },
+    {
+      "page": 100,
+      "path": "assets\\page100_img3.png"
+    },
+    {
+      "page": 100,
+      "path": "assets\\page100_img4.png"
+    },
+    {
+      "page": 100,
+      "path": "assets\\page100_img5.png"
+    },
+    {
+      "page": 101,
+      "path": "assets\\page101_img1.png"
+    },
+    {
+      "page": 102,
+      "path": "assets\\page102_img1.png"
+    },
+    {
+      "page": 104,
+      "path": "assets\\page104_img1.png"
+    }
+  ]
+}

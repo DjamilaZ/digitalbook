@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './ContentDisplay.css';
 
 const ContentDisplay = ({ selectedItem }) => {
+  const contentRef = useRef(null);
+
+  // Effet pour défiler vers le titre de l'élément sélectionné
+  useEffect(() => {
+    if (selectedItem && contentRef.current) {
+      setTimeout(() => {
+        // Calculer la position du header fixe pour ajuster le défilement
+        const header = document.querySelector('[class*="sticky top-20"]');
+        const headerHeight = header ? header.offsetHeight : 80;
+        
+        // Position du titre par rapport au haut de la page
+        const titleElement = contentRef.current.querySelector('.content-title');
+        if (titleElement) {
+          const titlePosition = titleElement.getBoundingClientRect().top + window.pageYOffset;
+          
+          // Défiler vers le titre avec un décalage pour le header
+          window.scrollTo({
+            top: titlePosition - headerHeight - 20, // 20px de marge supplémentaire
+            behavior: 'smooth'
+          });
+        }
+      }, 150);
+    }
+  }, [selectedItem]);
+
   if (!selectedItem) {
     return (
       <div className="content-display">
@@ -99,7 +124,7 @@ const ContentDisplay = ({ selectedItem }) => {
   };
 
   return (
-    <div className="content-display">
+    <div className="content-display" ref={contentRef}>
       <div className="content-header">
         <div className="breadcrumb">
           {getBreadcrumb().map((item, index) => (

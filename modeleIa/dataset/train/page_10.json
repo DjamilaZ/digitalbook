@@ -1,0 +1,28 @@
+[
+  {
+    "chapter": "GLOSSARY OF TERMS ",
+    "content": "",
+    "sections": [
+      {
+        "titre": "Competent Person (For Lifting Equipment Inspection)  ",
+        "contenu": "A person having the appropriate practical and theoretical knowledge and\nexperience of the lifting equipment so that they can detect defects or\nweaknesses, and assess how important they are in relation to the safety\nand continued use of the equipment.\nThis person should not be the same person who performs the routine\nmaintenance of the equipment and be sufficiently independent and\nimpartial to make objective decisions "
+      },
+      {
+        "titre": "Working Load Limit (WLL)  ",
+        "contenu": "The maximum load which an item of lifting equipment is designed to\nraise, lower or suspend. The WLL does not account for particular service\nconditions which may affect the final rating of the equipment (see SWL\nbelow).\n~ Note: Tile Working Loacl L1m1t as determined by tile Manufactu1er must\nL::.J never be exceeded "
+      },
+      {
+        "titre": "Safe Working Load (SWL)  ",
+        "contenu": "Tile maximum load (as certified by a Competent Person) which an item of\nlifting equipment may raise, lower or suspend under particular service\nconditions, e.g. the SWL can be lower than the WLL.\n~ Note: Tile Safe Working Load as oeterm1ned by t11e Competent Person\nL::.J must never be exceeded "
+      },
+      {
+        "titre": "Factor of Safety I Safety Factor  ",
+        "contenu": "The ratio of the load that would cause failure of an item of lifting equipment\nto the load that is imposed upon it in service, i.e. SWL (this is to allow for\ndetrimental criteria such as wear and tear, dynamic loadings, etc).  "
+      },
+      {
+        "titre": "Colour Code  ",
+        "contenu": "A method of marking equipment (normally with paint) to give a visual\nindication of its certification status. This colour should be changed at each\nperiodic examination. "
+      }
+    ]
+  }
+]

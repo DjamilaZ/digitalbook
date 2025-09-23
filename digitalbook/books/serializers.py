@@ -28,11 +28,22 @@ class BookSerializer(serializers.ModelSerializer):
     chapters = ChapterSerializer(many=True, read_only=True)
     created_by = serializers.StringRelatedField(read_only=True)
     pdf_file = serializers.FileField(required=False, allow_null=True, write_only=True)
+    json_structure_file = serializers.FileField(required=False, allow_null=True, write_only=True)
     pdf_url = serializers.URLField(required=False, allow_null=True, read_only=True)
+    processing_status = serializers.CharField(read_only=True)
+    processing_progress = serializers.IntegerField(read_only=True)
+    processing_error = serializers.CharField(read_only=True)
+    processing_started_at = serializers.DateTimeField(read_only=True)
+    processing_finished_at = serializers.DateTimeField(read_only=True)
     
     class Meta:
         model = Book
-        fields = ['id', 'title', 'url', 'created_at', 'created_by', 'chapters', 'pdf_file', 'pdf_url']
+        fields = [
+            'id', 'title', 'url', 'created_at', 'created_by', 'chapters',
+            'pdf_file', 'json_structure_file', 'pdf_url',
+            'processing_status', 'processing_progress', 'processing_error',
+            'processing_started_at', 'processing_finished_at'
+        ]
         read_only_fields = ['id', 'created_at', 'created_by', 'url']
         extra_kwargs = {
             'pdf_file': {'required': True}
@@ -46,11 +57,24 @@ class BookSerializer(serializers.ModelSerializer):
         )
         return book
 
+class BookUpdateSerializer(serializers.ModelSerializer):
+    """Serializer pour la mise à jour du titre d'un livre"""
+    class Meta:
+        model = Book
+        fields = ['title']
+        
+    def validate_title(self, value):
+        """Valide que le titre n'est pas vide"""
+        if not value or not value.strip():
+            raise serializers.ValidationError("Le titre ne peut pas être vide.")
+        return value.strip()
+
 class BookListSerializer(serializers.ModelSerializer):
     """Serializer pour la liste des livres avec les champs demandés"""
     author = serializers.CharField(source='created_by', read_only=True, allow_null=True)
     chapters_count = serializers.SerializerMethodField()
     sections_count = serializers.SerializerMethodField()
+    cover_image = serializers.ImageField(read_only=True, allow_null=True)
     
     class Meta:
         model = Book
@@ -58,6 +82,7 @@ class BookListSerializer(serializers.ModelSerializer):
             'id', 
             'title', 
             'pdf_url', 
+            'cover_image',
             'chapters_count', 
             'sections_count', 
             'author', 

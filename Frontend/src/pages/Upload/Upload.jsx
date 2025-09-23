@@ -1,25 +1,38 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { FileText, Upload as UploadIcon, X, Check, Loader2 } from 'lucide-react';
+import { FileText, Upload as UploadIcon, X, Check, Loader2, FileJson } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../System Design/Button';
 import bookService from '../../services/bookService';
 
 const Upload = () => {
-  const [file, setFile] = useState(null);
+  const [pdfFile, setPdfFile] = useState(null);
+  const [jsonFile, setJsonFile] = useState(null);
   const [title, setTitle] = useState('');
   const [isUploading, setIsUploading] = useState(false);
   const [uploadComplete, setUploadComplete] = useState(false);
   const [error, setError] = useState('');
+  const [createdBook, setCreatedBook] = useState(null);
+  const [isQueued, setIsQueued] = useState(false);
 
-  const onDrop = useCallback((acceptedFiles) => {
+  const onPdfDrop = useCallback((acceptedFiles) => {
     if (acceptedFiles && acceptedFiles.length > 0) {
-      setFile(acceptedFiles[0]);
+      setPdfFile(acceptedFiles[0]);
     }
   }, []);
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    onDrop,
+  const onJsonDrop = useCallback((acceptedFiles) => {
+    if (acceptedFiles && acceptedFiles.length > 0) {
+      setJsonFile(acceptedFiles[0]);
+    }
+  }, []);
+
+  const { 
+    getRootProps: getPdfRootProps, 
+    getInputProps: getPdfInputProps, 
+    isDragActive: isPdfDragActive 
+  } = useDropzone({
+    onDrop: onPdfDrop,
     accept: {
       'application/pdf': ['.pdf']
     },
@@ -27,17 +40,36 @@ const Upload = () => {
     maxSize: 50 * 1024 * 1024, // 50MB
   });
 
-  const handleRemoveFile = (e) => {
+  const { 
+    getRootProps: getJsonRootProps, 
+    getInputProps: getJsonInputProps, 
+    isDragActive: isJsonDragActive 
+  } = useDropzone({
+    onDrop: onJsonDrop,
+    accept: {
+      'application/json': ['.json']
+    },
+    multiple: false,
+    maxSize: 5 * 1024 * 1024, // 5MB
+  });
+
+  const handleRemovePdfFile = (e) => {
     e.stopPropagation();
-    setFile(null);
+    setPdfFile(null);
+    setUploadComplete(false);
+  };
+
+  const handleRemoveJsonFile = (e) => {
+    e.stopPropagation();
+    setJsonFile(null);
     setUploadComplete(false);
   };
 
   const navigate = useNavigate();
 
   const handleUpload = async () => {
-    if (!file) {
-      setError('Veuillez sélectionner un fichier');
+    if (!pdfFile) {
+      setError('Veuillez sélectionner un fichier PDF');
       return;
     }
     
@@ -50,24 +82,33 @@ const Upload = () => {
     setError('');
     
     try {
-      // Créer un objet avec les données du formulaire
-      const bookData = {
-        title: title.trim(),
-        pdf_file: file
-      };
+      // Créer un objet FormData pour l'upload multiple
+      const formData = new FormData();
+      formData.append('title', title.trim());
+      formData.append('pdf_file', pdfFile);
+      
+      if (jsonFile) {
+        formData.append('json_structure_file', jsonFile);
+      }
       
       console.log('Envoi des données du livre:', {
-        title: bookData.title,
-        file: bookData.pdf_file ? bookData.pdf_file.name : 'Aucun fichier'
+        title: title.trim(),
+        pdf_file: pdfFile.name,
+        json_file: jsonFile ? jsonFile.name : 'Aucun fichier JSON'
       });
       
-      const newBook = await bookService.createBook(bookData);
+      const newBook = await bookService.createBook(formData);
+      setCreatedBook(newBook);
+      const queued = (newBook?.processing_status === 'queued' || newBook?.processing_status === 'processing');
+      setIsQueued(queued);
       setUploadComplete(true);
       
-      // Rediriger vers la page du livre après un court délai
-      setTimeout(() => {
-        navigate(`/documents/${newBook.id}`);
-      }, 1500);
+      // Si le traitement est déjà terminé (cas rare), on peut rediriger. Sinon, on reste sur place.
+      if (!queued) {
+        setTimeout(() => {
+          navigate(`/documents/${newBook.id}`);
+        }, 1500);
+      }
     } catch (error) {
       console.error('Erreur lors du téléchargement:', error);
       const errorMessage = error.response?.data?.message || 
@@ -123,53 +164,106 @@ const Upload = () => {
               </div> */}
             </div>
             
-            <p className="text-sm text-gray-600 mb-2">
-              Glissez et déposez votre fichier PDF ici ou cliquez pour le sélectionner
+            <p className="text-sm text-gray-600 mb-4">
+              Téléchargez vos fichiers pour créer un nouveau document
             </p>
-            <p className="text-xs text-gray-500">
-              Taille maximale : 50MB. Formats acceptés : .pdf
+            <p className="text-xs text-gray-500 mb-6">
+              Le fichier PDF est obligatoire. Le fichier JSON est optionnel et permet de définir la structure du livre.
             </p>
           </div>
           
-          <div 
-            {...getRootProps()} 
-            className={`p-8 text-center border-2 border-dashed rounded-lg mx-6 my-4 transition-colors ${
-              isDragActive ? 'border-primary bg-primary-50' : 'border-gray-200 hover:border-primary'
-            }`}
-          >
-            <input {...getInputProps()} />
-            
-            {file ? (
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary mb-3">
-                  <FileText size={24} />
+          {/* Zone d'upload PDF */}
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Fichier PDF <span className="text-red-500">*</span>
+            </label>
+            <div 
+              {...getPdfRootProps()} 
+              className={`p-6 text-center border-2 border-dashed rounded-lg transition-colors ${
+                isPdfDragActive ? 'border-primary bg-primary-50' : 'border-gray-200 hover:border-primary'
+              }`}
+            >
+              <input {...getPdfInputProps()} />
+              
+              {pdfFile ? (
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary mb-3">
+                    <FileText size={24} />
+                  </div>
+                  <p className="font-medium text-gray-900">{pdfFile.name}</p>
+                  <p className="text-sm text-gray-500 mb-4">
+                    {(pdfFile.size / 1024 / 1024).toFixed(2)} MB
+                  </p>
+                  <button 
+                    onClick={handleRemovePdfFile}
+                    className="text-sm text-red-600 hover:text-red-800 flex items-center gap-1"
+                  >
+                    <X size={16} /> Supprimer
+                  </button>
                 </div>
-                <p className="font-medium text-gray-900">{file.name}</p>
-                <p className="text-sm text-gray-500 mb-4">
-                  {(file.size / 1024 / 1024).toFixed(2)} MB
-                </p>
-                <button 
-                  onClick={handleRemoveFile}
-                  className="text-sm text-red-600 hover:text-red-800 flex items-center gap-1"
-                >
-                  <X size={16} /> Supprimer
-                </button>
-              </div>
-            ) : (
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 mb-3">
-                  <UploadIcon size={24} />
+              ) : (
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 mb-3">
+                    <FileText size={24} />
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {isPdfDragActive 
+                      ? 'Déposez le PDF ici...' 
+                      : 'Glissez votre PDF ici ou cliquez pour sélectionner'}
+                  </p>
+                  <p className="text-xs text-gray-400 mt-2">
+                    Formats acceptés: .pdf (max 50MB)
+                  </p>
                 </div>
-                <p className="text-sm text-gray-600">
-                  {isDragActive 
-                    ? 'Déposez le fichier ici...' 
-                    : 'Formats acceptés: .pdf (max 50MB)'}
-                </p>
-                <p className="text-xs text-gray-400 mt-2">
-                  ou cliquez pour parcourir vos fichiers
-                </p>
-              </div>
-            )}
+              )}
+            </div>
+          </div>
+          
+          {/* Zone d'upload JSON */}
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Fichier de structure JSON <span className="text-gray-400">(optionnel)</span>
+            </label>
+            <div 
+              {...getJsonRootProps()} 
+              className={`p-6 text-center border-2 border-dashed rounded-lg transition-colors ${
+                isJsonDragActive ? 'border-accent bg-accent-50' : 'border-gray-200 hover:border-accent'
+              }`}
+            >
+              <input {...getJsonInputProps()} />
+              
+              {jsonFile ? (
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center text-accent mb-3">
+                    <FileJson size={24} />
+                  </div>
+                  <p className="font-medium text-gray-900">{jsonFile.name}</p>
+                  <p className="text-sm text-gray-500 mb-4">
+                    {(jsonFile.size / 1024 / 1024).toFixed(2)} MB
+                  </p>
+                  <button 
+                    onClick={handleRemoveJsonFile}
+                    className="text-sm text-red-600 hover:text-red-800 flex items-center gap-1"
+                  >
+                    <X size={16} /> Supprimer
+                  </button>
+                </div>
+              ) : (
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 mb-3">
+                    <FileJson size={24} />
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {isJsonDragActive 
+                      ? 'Déposez le JSON ici...' 
+                      : 'Glissez votre JSON ici ou cliquez pour sélectionner'}
+                  </p>
+                  <p className="text-xs text-gray-400 mt-2">
+                    Formats acceptés: .json (max 5MB)
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
           
           <div className="p-6">
@@ -182,7 +276,8 @@ const Upload = () => {
             <div className="flex flex-col sm:flex-row justify-end gap-3">
               <Button
                 onClick={() => {
-                  setFile(null);
+                  setPdfFile(null);
+                  setJsonFile(null);
                   setTitle('');
                   setError('');
                 }}
@@ -196,7 +291,7 @@ const Upload = () => {
               
               <Button
                 onClick={handleUpload}
-                disabled={!file || !title.trim() || isUploading || uploadComplete}
+                disabled={!pdfFile || !title.trim() || isUploading || uploadComplete}
                 variant="primary"
                 size="md"
                 className="w-full sm:w-auto"
@@ -209,7 +304,7 @@ const Upload = () => {
                 ) : uploadComplete ? (
                   <>
                     <Check className="mr-2 h-4 w-4" />
-                    Téléchargé avec succès !
+                    {isQueued ? 'Document créé, traitement en cours…' : 'Téléchargé avec succès !'}
                   </>
                 ) : (
                   <>
@@ -223,23 +318,37 @@ const Upload = () => {
         </div>
         
         {uploadComplete && (
-          <div className="mt-8 p-6 bg-success-50 border border-success-200 rounded-xl">
+          <div className={`mt-8 p-6 rounded-xl border ${isQueued ? 'bg-blue-50 border-blue-200' : 'bg-success-50 border-success-200'}`}>
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center text-success flex-shrink-0">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isQueued ? 'bg-blue-100 text-blue-700' : 'bg-success-100 text-success'}`}>
                 <Check size={16} />
               </div>
               <div>
-                <h3 className="font-medium text-success-800">Document téléchargé avec succès !</h3>
-                <p className="text-sm text-success-700 mt-1">
-                  Votre document a été analysé avec succès. Vous pouvez maintenant le consulter dans votre bibliothèque.
+                <h3 className={`font-medium ${isQueued ? 'text-blue-900' : 'text-success-800'}`}>
+                  {isQueued ? 'Document créé — traitement en cours' : 'Document téléchargé avec succès !'}
+                </h3>
+                <p className={`text-sm mt-1 ${isQueued ? 'text-blue-800' : 'text-success-700'}`}>
+                  {isQueued
+                    ? "Le fichier a été importé. L’extraction et la génération des QCM continuent en arrière-plan. Vous pourrez ouvrir le document une fois le traitement terminé."
+                    : "Votre document a été analysé avec succès. Vous pouvez maintenant le consulter dans votre bibliothèque."}
                 </p>
                 <div className="mt-4 flex gap-3">
-                  <Button variant="primary" size="sm">
-                    Voir le document
-                  </Button>
-                  <Button variant="secondary" size="sm">
+                  <Button
+                    variant={isQueued ? 'secondary' : 'primary'}
+                    size="sm"
+                    onClick={() => navigate('/')}
+                  >
                     Retour à l'accueil
                   </Button>
+                  {createdBook?.id && !isQueued && (
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      onClick={() => navigate(`/documents/${createdBook.id}`)}
+                    >
+                      Voir le document
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

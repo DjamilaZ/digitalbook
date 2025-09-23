@@ -24,9 +24,15 @@ services:
     #   - "8000:8000"
     depends_on:
       - db
+    env_file:
+      - .env
     environment:
       - DATABASE_URL=postgresql://digitalbook:digitalbook@db:5432/digitalbook
       - DEBUG=1
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
+      - QCM_DEFAULT_QUESTIONS=${QCM_DEFAULT_QUESTIONS:-5}
+      - QCM_MAX_QUESTIONS=${QCM_MAX_QUESTIONS:-20}
 
 
   # frontend:

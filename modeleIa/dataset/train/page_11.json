@@ -1,0 +1,36 @@
+[
+  {
+    "chapter": "GLOSSARY OF TERMS ",
+    "content": "",
+    "sections": [
+      {
+        "titre": "Plant / Identification Number  ",
+        "contenu": "A unique number given to an item of lifting equipment for registration purposes and to facilitate traceability. "
+      },
+      {
+        "titre": "Headroom  ",
+        "contenu": "The maximum vertical distance between the item to be lifted and the point of suspension of the hoisting machine, e.g . between the lifting eyes and the underside of runway beams. "
+      },
+      {
+        "titre": "Height of Lift ",
+        "contenu": "The amount of possible travel between the top and bottom connection points, e.g. hooks of a hoisting machine. "
+      },
+      {
+        "titre": "Drawn-up Dimension ",
+        "contenu": "The minimum distance between the suspension level and the bottom hook saddle (also known as closed-height). "
+      },
+      {
+        "titre": "Load Sensors ",
+        "contenu": "A piece of equipment used for detecting the actual loadings at a rigging point, e.g. load cell shackle, test clock or compression load cell, etc. "
+      },
+      {
+        "titre": "Lifting Equipment",
+        "contenu": "A generic term which includes lifting appliances and lifting accessories. "
+      },
+      {
+        "titre": "Thorough Examination",
+        "contenu": "A systematic and detailed examination of lifting equipment by a competent person to detect defects that are, or might affect the safe use of the equipment. "
+      }
+    ]
+  }
+]
