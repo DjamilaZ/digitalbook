@@ -76,6 +76,14 @@ CORS_ALLOW_METHODS = [
     'POST',
     'PUT',
 ]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "[::1]",
+    "localhost:3000",
+    "127.0.0.1:3000",
+    "https://digitalbook.dev.digitalia-ltd.com"
+]
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
