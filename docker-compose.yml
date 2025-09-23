@@ -9,8 +9,8 @@ services:
       - POSTGRES_DB=digitalbook
       - POSTGRES_USER=digitalbook
       - POSTGRES_PASSWORD=digitalbook
-    ports:
-      - "5432:5432"
+    # ports:
+    #   - "5432:5432"
 
   backend:
     build: 
@@ -20,13 +20,14 @@ services:
     volumes:
       - ./digitalbook:/app
       - static_volume:/app/staticfiles
-    ports:
-      - "8000:8000"
+    # ports:
+    #   - "8000:8000"
     depends_on:
       - db
     environment:
       - DATABASE_URL=postgresql://digitalbook:digitalbook@db:5432/digitalbook
       - DEBUG=1
+
 
   # frontend:
   #   build: ./frontend
@@ -39,6 +40,27 @@ services:
   #     - NODE_ENV=development
   #   depends_on:
   #     - backend
+
+  pgadmin:
+    image: elestio/pgadmin:latest
+    restart: always
+    environment:
+      - PGADMIN_DEFAULT_EMAIL="admin-digitalbook@digitalia-ltd.com"
+      - PGADMIN_DEFAULT_PASSWORD="s8WfcpLK7TZ0atsdwYVw"
+    #    ports:
+    #      - "8088:8080"
+    volumes:
+      - ./pgadmin-servers.json:/pgadmin4/servers.json
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8017:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./frontend/public:/usr/share/nginx/html # frontend build folder
+    depends_on:
+      - backend
 
 volumes:
   postgres_data:
