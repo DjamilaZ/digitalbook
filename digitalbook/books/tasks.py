@@ -46,7 +46,9 @@ def process_book_task(self, book_id: int, json_structure_file_rel: str = None,
 
         if json_file_path and os.path.exists(json_file_path):
             # Utiliser le JSON fourni par l'utilisateur
-            with open(json_file_path, 'r', encoding='utf-8') as f:
+            print(f"[process_book_task] Loading JSON from {json_file_path}")
+            # Supporte les fichiers JSON avec BOM UTF-8 via 'utf-8-sig'
+            with open(json_file_path, 'r', encoding='utf-8-sig') as f:
                 structured_data = json.load(f)
             # Option: mettre à jour le titre depuis le JSON
             if structured_data.get('title'):
@@ -57,7 +59,8 @@ def process_book_task(self, book_id: int, json_structure_file_rel: str = None,
             book.processing_progress = 40
             book.save(update_fields=['processing_progress'])
 
-            from .views import create_book_hierarchy_from_provided_json
+            from .hierarchy import create_book_hierarchy_from_provided_json
+            print("[process_book_task] Creating hierarchy from provided JSON...")
             create_book_hierarchy_from_provided_json(book, structured_data)
         else:
             # Parser le PDF

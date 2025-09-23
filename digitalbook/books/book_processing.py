@@ -27,6 +27,7 @@ def process_book_sync(
     - Génère les QCMs si demandé
     - Met à jour les champs de progression/statut sur le modèle Book
     """
+    print(f"[process_book_sync] Start for book_id={book_id}")
     book = Book.objects.get(id=book_id)
 
     # Marquer comme en cours
@@ -51,11 +52,16 @@ def process_book_sync(
         json_file_path = None
         if json_structure_file_rel:
             json_file_path = os.path.join(settings.MEDIA_ROOT, json_structure_file_rel)
+        print(f"[process_book_sync] json_structure_file_rel={json_structure_file_rel}")
+        print(f"[process_book_sync] Resolved json_file_path={json_file_path}")
 
         if json_file_path and os.path.exists(json_file_path):
             # Utiliser le JSON fourni par l'utilisateur
-            with open(json_file_path, 'r', encoding='utf-8') as f:
+            print(f"[process_book_sync] Loading JSON from {json_file_path}")
+            # Supporte les fichiers JSON avec BOM UTF-8 via 'utf-8-sig'
+            with open(json_file_path, 'r', encoding='utf-8-sig') as f:
                 structured_data = json.load(f)
+            print(f"[process_book_sync] JSON loaded. Root keys: {list(structured_data.keys())}")
             # Option: mettre à jour le titre depuis le JSON
             if structured_data.get('title'):
                 _save_book_fields(book, title=structured_data['title'])
@@ -63,8 +69,11 @@ def process_book_sync(
             # Créer la hiérarchie depuis le JSON fourni
             _save_book_fields(book, processing_progress=40)
 
-            from .views import create_book_hierarchy_from_provided_json
+            # Import depuis un module dédié pour éviter les dépendances aux vues
+            from .hierarchy import create_book_hierarchy_from_provided_json
+            print("[process_book_sync] Creating hierarchy from provided JSON...")
             create_book_hierarchy_from_provided_json(book, structured_data)
+            print("[process_book_sync] Hierarchy creation done.")
         else:
             # Parser le PDF
             if not pdf_file_path or not os.path.exists(pdf_file_path):
@@ -82,6 +91,7 @@ def process_book_sync(
             except Exception:
                 pass
 
+            print("[process_book_sync] Parsing PDF to structured JSON...")
             structured_data = parse_pdf_to_structured_json(pdf_file_path)
 
             # Optionnel: écrire le JSON structuré sur disque (debug/dev)
@@ -94,6 +104,7 @@ def process_book_sync(
 
             # Créer la hiérarchie
             _save_book_fields(book, processing_progress=60)
+            print("[process_book_sync] Creating hierarchy from parsed PDF JSON...")
             create_book_hierarchy_from_json(book, structured_data)
 
         # Étape 2: Génération QCM (si demandée et API key configurée)
@@ -111,6 +122,7 @@ def process_book_sync(
             )
 
         # Finalisation
+        print("[process_book_sync] Finalizing: status=completed")
         _save_book_fields(
             book,
             processing_status='completed',
@@ -120,6 +132,7 @@ def process_book_sync(
 
     except Exception as e:
         tb = traceback.format_exc()
+        print(f"[process_book_sync] ERROR: {e}\n{tb}")
         _save_book_fields(
             book,
             processing_status='failed',
