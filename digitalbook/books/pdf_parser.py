@@ -414,6 +414,58 @@ def save_image(image, prefix, page_num, index, output_dir):
     return image_filename
 
 
+def extract_cover_from_pdf(pdf_path, output_dir):
+    """
+    Extrait la première page d'un PDF comme image de couverture
+    
+    Args:
+        pdf_path: Chemin vers le fichier PDF
+        output_dir: Dossier de sortie pour l'image de couverture
+        
+    Returns:
+        Chemin relatif de l'image de couverture générée, ou None si échec
+    """
+    try:
+        # Ouvrir le PDF avec PyMuPDF
+        doc = fitz.open(pdf_path)
+        
+        if len(doc) == 0:
+            print("✗ Le PDF ne contient aucune page")
+            return None
+        
+        # Récupérer la première page
+        first_page = doc[0]
+        
+        # Créer le dossier de couverture s'il n'existe pas
+        covers_dir = os.path.join(output_dir, 'covers')
+        os.makedirs(covers_dir, exist_ok=True)
+        
+        # Générer un nom de fichier unique pour la couverture
+        import uuid
+        cover_filename = f"cover_{uuid.uuid4().hex[:8]}.png"
+        cover_path = os.path.join(covers_dir, cover_filename)
+        
+        # Extraire la page comme image
+        pix = first_page.get_pixmap(matrix=fitz.Matrix(2, 2))  # Résolution 2x pour meilleure qualité
+        img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+        
+        # Sauvegarder l'image
+        img.save(cover_path, 'PNG')
+        
+        # Retourner le chemin relatif
+        relative_path = os.path.join('books/covers', cover_filename)
+        print(f"✓ Couverture extraite avec succès: {relative_path}")
+        
+        doc.close()
+        return relative_path
+        
+    except Exception as e:
+        print(f"✗ Erreur lors de l'extraction de la couverture: {e}")
+        import traceback
+        print(f"Traceback: {traceback.format_exc()}")
+        return None
+
+
 def extract_assets(pdf_path, output_dir, structured_data=None):
     """
     Extrait toutes les images et tableaux du PDF, les enregistre dans des dossiers spécifiques

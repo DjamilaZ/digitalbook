@@ -18,11 +18,50 @@ class Book(models.Model):
     )
     cover_image = models.ImageField(upload_to='books/covers/', null=True, blank=True, verbose_name="Image de couverture")
     pdf_url = models.URLField(max_length=1000, null=True, blank=True, verbose_name="URL du PDF")
+    # Suivi de traitement en arrière-plan
+    processing_status = models.CharField(
+        max_length=32,
+        choices=[
+            ('queued', 'Queued'),
+            ('processing', 'Processing'),
+            ('completed', 'Completed'),
+            ('failed', 'Failed'),
+            ('idle', 'Idle'),
+        ],
+        default='idle',
+        verbose_name="Statut de traitement",
+    )
+    processing_progress = models.PositiveIntegerField(default=0, verbose_name="Progression (%)")
+    processing_error = models.TextField(null=True, blank=True, verbose_name="Erreur de traitement")
+    processing_started_at = models.DateTimeField(null=True, blank=True, verbose_name="Début de traitement")
+    processing_finished_at = models.DateTimeField(null=True, blank=True, verbose_name="Fin de traitement")
     
     class Meta:
         verbose_name = "Livre"
         verbose_name_plural = "Livres"
         ordering = ['-created_at']
+    
+    def __str__(self):
+        return self.title
+
+class Thematique(models.Model):
+    """Modèle représentant une thématique qui peut contenir un ou plusieurs chapitres."""
+    book = models.ForeignKey(
+        Book,
+        on_delete=models.CASCADE,
+        related_name='thematiques',
+        verbose_name="Livre",
+        null=True,
+        blank=True
+    )
+    title = models.CharField(max_length=255, verbose_name="Titre")
+    description = models.TextField(blank=True, verbose_name="Description")
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Date de création")
+    
+    class Meta:
+        verbose_name = "Thématique"
+        verbose_name_plural = "Thématiques"
+        ordering = ['title']
     
     def __str__(self):
         return self.title
@@ -34,6 +73,14 @@ class Chapter(models.Model):
         on_delete=models.CASCADE,
         related_name='chapters',
         verbose_name="Livre"
+    )
+    thematique = models.ForeignKey(
+        Thematique,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='chapters',
+        verbose_name="Thématique"
     )
     title = models.CharField(max_length=255, verbose_name="Titre")
     content = models.TextField(verbose_name="Contenu", blank=True)

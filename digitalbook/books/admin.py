@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Book, Chapter, Section, Subsection
+from .models import Book, Chapter, Section, Subsection, Thematique
 
 class ChapterInline(admin.TabularInline):
     model = Chapter
@@ -23,11 +23,17 @@ class BookAdmin(admin.ModelAdmin):
     prepopulated_fields = {'url': ('title',)}
     inlines = [ChapterInline]
 
+@admin.register(Thematique)
+class ThematiqueAdmin(admin.ModelAdmin):
+    list_display = ('title', 'book', 'created_at')
+    list_filter = ('book', 'created_at')
+    search_fields = ('title', 'description', 'book__title')
+
 @admin.register(Chapter)
 class ChapterAdmin(admin.ModelAdmin):
-    list_display = ('title', 'book', 'order')
-    list_filter = ('book',)
-    search_fields = ('title', 'book__title')
+    list_display = ('title', 'book', 'thematique', 'order')
+    list_filter = ('book', 'thematique')
+    search_fields = ('title', 'book__title', 'thematique__title')
     inlines = [SectionInline]
 
 @admin.register(Section)

@@ -18,10 +18,10 @@ const bookService = {
   searchBooks: async (query, page = 1) => {
     try {
       const params = {
-        search: query,
+        q: query,
         page: page
       };
-      const response = await api.get('/books/', { params });
+      const response = await api.get('/books/search/', { params });
       return response.data;
     } catch (error) {
       console.error('Erreur lors de la recherche des livres:', error);
@@ -43,17 +43,29 @@ const bookService = {
   // Créer un nouveau livre
   createBook: async (bookData) => {
     try {
-      // Créer un objet FormData pour envoyer les données du formulaire
-      const formData = new FormData();
+      let formData;
       
-      // Ajouter le titre s'il est défini
-      if (bookData.title) {
-        formData.append('title', bookData.title);
-      }
-      
-      // Ajouter le fichier PDF s'il est défini
-      if (bookData.pdf_file) {
-        formData.append('pdf_file', bookData.pdf_file);
+      // Si bookData est déjà un FormData, l'utiliser directement
+      if (bookData instanceof FormData) {
+        formData = bookData;
+      } else {
+        // Sinon, créer un objet FormData pour envoyer les données du formulaire
+        formData = new FormData();
+        
+        // Ajouter le titre s'il est défini
+        if (bookData.title) {
+          formData.append('title', bookData.title);
+        }
+        
+        // Ajouter le fichier PDF s'il est défini
+        if (bookData.pdf_file) {
+          formData.append('pdf_file', bookData.pdf_file);
+        }
+        
+        // Ajouter le fichier JSON de structure s'il est défini
+        if (bookData.json_structure_file) {
+          formData.append('json_structure_file', bookData.json_structure_file);
+        }
       }
       
       // Utiliser api pour les requêtes avec des fichiers

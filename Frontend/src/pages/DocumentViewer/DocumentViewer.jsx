@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft, Download } from 'lucide-react';
+import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft, Download, RefreshCw } from 'lucide-react';
 import Button from '../../System Design/Button';
 import api from '../../services/api';
+import authService from '../../services/authService';
 import Sidebar from '../../components/DocumentViewer/Sidebar';
 import ContentDisplay from '../../components/DocumentViewer/ContentDisplay';
 import FullBookContent from '../../components/DocumentViewer/FullBookContent';
@@ -17,6 +18,9 @@ const DocumentViewer = () => {
   const [viewMode, setViewMode] = useState('full'); // 'simple' ou 'full' - démarrer en vue complète
   const [selectedItem, setSelectedItem] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const isAdmin = authService.isAdmin();
+  const [regenLoading, setRegenLoading] = useState(false);
+  const [regenError, setRegenError] = useState(null);
 
   useEffect(() => {
     const fetchBookData = async () => {
@@ -51,10 +55,69 @@ const DocumentViewer = () => {
     // Passer automatiquement en vue complète lors de la sélection
     setViewMode('full');
     setSelectedItem(content);
+    
+    // Si c'est la couverture, faire défiler vers l'image
+    if (content.type === 'cover') {
+      setTimeout(() => {
+        const coverImage = document.getElementById('cover-image');
+        if (coverImage) {
+          coverImage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  };
+
+  // Regénérer le QCM pour un chapitre donné (utilisé par FullBookContent)
+  const regenerateQCMForChapter = async (chapterId) => {
+    try {
+      setRegenError(null);
+      if (!chapterId) return;
+      setRegenLoading(true);
+      await api.post('/qcms/regenerate-chapter/', { chapter_id: chapterId });
+      // Recharger la structure
+      const structure = await api.get(`/books/${id}/export_structure/`);
+      setBookData(structure.data);
+      // Conserver la sélection courante sur le chapitre régénéré
+      const updatedChapter = structure.data?.chapters?.find(c => c.id === chapterId);
+      if (updatedChapter) {
+        setSelectedItem({ type: 'chapter', data: updatedChapter, index: 0 });
+      }
+    } catch (e) {
+      console.error('Erreur lors de la régénération du QCM (par chapitre):', e);
+      setRegenError(e?.response?.data?.error || e?.message || 'Erreur lors de la régénération du QCM');
+    } finally {
+      setRegenLoading(false);
+    }
   };
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
+  };
+
+  const handleRegenerateQCM = async () => {
+    try {
+      setRegenError(null);
+      if (!selectedItem || selectedItem.type !== 'chapter') {
+        return;
+      }
+      setRegenLoading(true);
+      const chapterId = selectedItem.data?.id;
+      if (!chapterId) return;
+      await api.post('/qcms/regenerate-chapter/', { chapter_id: chapterId });
+      // Recharger la structure
+      const structure = await api.get(`/books/${id}/export_structure/`);
+      setBookData(structure.data);
+      // Conserver la sélection courante avec les données à jour
+      const updatedChapter = structure.data?.chapters?.find(c => c.id === chapterId);
+      if (updatedChapter) {
+        setSelectedItem({ type: 'chapter', data: updatedChapter, index: selectedItem.index });
+      }
+    } catch (e) {
+      console.error('Erreur lors de la régénération du QCM:', e);
+      setRegenError(e?.response?.data?.error || e?.message || 'Erreur lors de la régénération du QCM');
+    } finally {
+      setRegenLoading(false);
+    }
   };
 
   const handleDownloadDocument = async () => {
@@ -141,13 +204,15 @@ const DocumentViewer = () => {
         >
           {viewMode === 'simple' ? <FileText size={20} /> : <List size={20} />}
         </button> */}
-        <button 
-          onClick={handleDownloadDocument}
-          className="bg-success text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-success hover:-translate-y-0.5 mr-2"
-          title="Voir le PDF d'origine"
-        >
-          <Download size={20} />
-        </button>
+        {isAdmin && (
+          <button 
+            onClick={handleDownloadDocument}
+            className="bg-success text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-success hover:-translate-y-0.5 mr-2"
+            title="Voir le PDF d'origine"
+          >
+            <Download size={20} />
+          </button>
+        )}
         <button 
           onClick={toggleSidebar}
           className="bg-primary text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-primary hover:-translate-y-0.5"
@@ -157,11 +222,11 @@ const DocumentViewer = () => {
         </button>
       </div>
 
-      {/* Main Content */}
-      <div className="flex-1 flex w-full">
-        {/* Sidebar */}
+      {/* Main Content - Layout avec sommaire à gauche et contenu à droite */}
+      <div className="flex w-full flex-1">
+        {/* Sidebar - toujours visible à gauche et fixe lors du défilement */}
         {sidebarOpen && (
-          <div className="w-80 bg-white border-r border-gray-200 overflow-y-auto flex-shrink-0 h-screen sticky top-20">
+          <div className="w-80 bg-white border-r border-gray-200 flex-shrink-0 sticky top-20 h-screen overflow-y-auto">
             <Sidebar 
               bookData={bookData} 
               onSelectContent={handleSelectContent}
@@ -170,10 +235,75 @@ const DocumentViewer = () => {
           </div>
         )}
         
-        {/* Content Area */}
-        <div className={`flex-1 w-full ${!sidebarOpen ? '' : ''}`}>
+        {/* Content Area - contenu à droite qui défile */}
+        <div className="flex-1 w-full overflow-y-auto">
+          {/* Image de couverture et en-tête dans le contenu principal */}
+          {bookData?.book && (() => {
+            const coverImageUrl = bookData.book.cover_image 
+              ? (bookData.book.cover_image.startsWith('http') 
+                  ? bookData.book.cover_image.replace('/books/covers/', '/covers/')
+                  : `http://localhost:8000${bookData.book.cover_image.replace('/books/covers/', '/covers/')}`)
+              : null;
+            
+            return (
+              <div className="w-full bg-white">
+                {/* En-tête avec titre et informations */}
+                <div className="max-w-4xl mx-auto p-6 border-b border-gray-200">
+                  <div className="flex flex-col md:flex-row gap-6 items-start">
+                    <div className="flex-1">
+                      <h1 className="text-3xl font-bold text-gray-900 mb-4">{bookData.book.title}</h1>
+                      <div className="text-gray-600 space-y-2">
+                        <p>Créé le {new Date(bookData.book.created_at).toLocaleDateString('fr-FR', { 
+                          year: 'numeric', 
+                          month: 'long', 
+                          day: 'numeric' 
+                        })}</p>
+                        <p>{bookData.chapters?.length || 0} chapitre{bookData.chapters?.length !== 1 ? 's' : ''}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Image de couverture pleine largeur comme un PDF */}
+                {coverImageUrl && (
+                  <div className="w-full bg-gray-50 py-8">
+                    <div className="max-w-4xl mx-auto px-6">
+                      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img 
+                          id="cover-image"
+                          src={coverImageUrl}
+                          alt={`Couverture de ${bookData.book.title}`}
+                          className="w-full h-auto object-contain"
+                          onError={(e) => {
+                            console.log('DocumentViewer - Cover image failed to load:', coverImageUrl);
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                          onLoad={(e) => {
+                            console.log('DocumentViewer - Cover image loaded successfully:', coverImageUrl);
+                          }}
+                        />
+                        <div className="w-full h-96 bg-primary flex items-center justify-center text-white" 
+                             style={{ display: 'none' }}>
+                          <FileText size={64} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })()}
+          
+          {/* Contenu du livre (chapitres) */}
           {viewMode === 'full' ? (
-            <FullBookContent bookData={bookData} selectedItem={selectedItem} />
+            <FullBookContent 
+              bookData={bookData} 
+              selectedItem={selectedItem}
+              isAdmin={isAdmin}
+              onRegenerateChapter={regenerateQCMForChapter}
+              regenLoading={regenLoading}
+            />
           ) : selectedItem ? (
             <ContentDisplay selectedItem={selectedItem} bookData={bookData} />
           ) : (
