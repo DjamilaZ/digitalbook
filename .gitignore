@@ -52,9 +52,8 @@ ENV/
 .env.test.local
 .env.production.local
 
-# Build directories
-build/
-Frontend/build/
+
+
 
 # Coverage directory used by tools like istanbul
 coverage/
