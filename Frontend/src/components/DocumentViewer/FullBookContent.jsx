@@ -127,7 +127,7 @@ const FullBookContent = ({ bookData, selectedItem, isAdmin, onRegenerateChapter,
     if (!images || images.length === 0) return null;
     
     // URL de base du backend Django pour les fichiers médias
-    const backendBaseUrl = 'http://localhost:8000';
+    const backendBaseUrl = '';
     
     return (
       <div className="w-full my-6">

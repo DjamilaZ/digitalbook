@@ -15,7 +15,7 @@ const DocumentCard = ({
   const coverImageUrl = document.cover_image 
     ? (document.cover_image.startsWith('http') 
         ? document.cover_image.replace('/books/covers/', '/covers/')  // Corriger le chemin
-        : `http://localhost:8000${document.cover_image}`)
+        : `${document.cover_image}`)
     : null;
 
   // Débogage

@@ -2,7 +2,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const local ={
-      target: 'http://localhost:8000',
+      target: '',
       changeOrigin: true,
       secure: false,
     }

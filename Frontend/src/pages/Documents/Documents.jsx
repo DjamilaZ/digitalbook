@@ -156,7 +156,7 @@ const Documents = () => {
       }
 
       // Construire l'URL complète du PDF
-      const fullUrl = pdfUrl.startsWith('http') ? pdfUrl : `http://localhost:8000${pdfUrl}`;
+      const fullUrl = pdfUrl.startsWith('http') ? pdfUrl : `${pdfUrl}`;
       
       // Créer un lien temporaire pour le téléchargement
       const link = document.createElement('a');

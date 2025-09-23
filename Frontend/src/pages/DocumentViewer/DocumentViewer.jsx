@@ -128,7 +128,7 @@ const DocumentViewer = () => {
       }
       
       // Construire l'URL complète du PDF
-      const fullUrl = `http://localhost:8000${bookData.book.pdf_url}`;
+      const fullUrl = `${bookData.book.pdf_url}`;
       
       // Créer un lien temporaire pour le téléchargement
       const link = document.createElement('a');
@@ -242,7 +242,7 @@ const DocumentViewer = () => {
             const coverImageUrl = bookData.book.cover_image 
               ? (bookData.book.cover_image.startsWith('http') 
                   ? bookData.book.cover_image.replace('/books/covers/', '/covers/')
-                  : `http://localhost:8000${bookData.book.cover_image.replace('/books/covers/', '/covers/')}`)
+                  : `${bookData.book.cover_image.replace('/books/covers/', '/covers/')}`)
               : null;
             
             return (
