@@ -24,8 +24,8 @@ services:
       - ./digitalbook/extracted_assets:/app/extracted_assets
       # Scripts de parsing avancé (algo_balise.py)
       - ./scripts:/app/scripts
-    ports:
-      - "8000:8000"
+    # ports:
+    #   - "8000:8000"
     depends_on:
       - db
     env_file:
