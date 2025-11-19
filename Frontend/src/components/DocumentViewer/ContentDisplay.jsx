@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './ContentDisplay.css';
 
-const ContentDisplay = ({ selectedItem }) => {
+const ContentDisplay = ({ selectedItem, bookData }) => {
   const contentRef = useRef(null);
 
   // Effet pour défiler vers le titre de l'élément sélectionné
@@ -63,19 +63,77 @@ const ContentDisplay = ({ selectedItem }) => {
       );
     }
 
-    // Formater le contenu pour un meilleur affichage
-    const formatContent = (content) => {
-      return content.split('. ').map((sentence, index) => {
-        if (sentence.trim() === '') return null;
-        return (
-          <p key={index} className="content-paragraph">
-            {sentence.trim() + (index < content.split('. ').length - 1 ? '.' : '')}
-          </p>
-        );
-      }).filter(Boolean);
-    };
+    const content = data.content;
 
-    return formatContent(data.content);
+    const blocks = [];
+    const articleRegex = /<article>([\s\S]*?)<\/article>/gi;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = articleRegex.exec(content)) !== null) {
+      if (match.index > lastIndex) {
+        blocks.push({ type: 'text', text: content.slice(lastIndex, match.index) });
+      }
+      blocks.push({ type: 'article', text: (match[1] || '').trim() });
+      lastIndex = articleRegex.lastIndex;
+    }
+    if (lastIndex < content.length) {
+      blocks.push({ type: 'text', text: content.slice(lastIndex) });
+    }
+
+    const elements = [];
+
+    blocks.forEach((block, blockIndex) => {
+      if (block.type === 'text') {
+        const lines = block.text.split(/\n+/);
+        lines.forEach((line, lineIndex) => {
+          const trimmed = line.trim();
+          if (!trimmed) return;
+          elements.push(
+            <p
+              key={`p-${blockIndex}-${lineIndex}`}
+              className="content-paragraph"
+              style={{ textAlign: 'justify' }}
+            >
+              {trimmed}
+            </p>
+          );
+        });
+      } else if (block.type === 'article') {
+        const lines = block.text.split(/\n+/).map((l) => l.trim()).filter(Boolean);
+        if (!lines.length) return;
+        elements.push(
+          <div
+            key={`article-${blockIndex}`}
+            className="my-4 border border-yellow-400 bg-yellow-50 rounded-md px-4 py-3 text-sm text-gray-800"
+          >
+            {lines.map((line, i) => (
+              <p
+                key={i}
+                className="content-paragraph mb-2"
+                style={{ textAlign: 'justify' }}
+              >
+                {line}
+              </p>
+            ))}
+          </div>
+        );
+      }
+    });
+
+    return elements;
+  };
+
+  const isIntroChapter = (chapter) => {
+    if (!chapter) return false;
+    return !!chapter.is_intro;
+  };
+
+  const getDisplayChapterNumber = (chapter) => {
+    if (!chapter) return 0;
+    if (!bookData?.chapters) return chapter?.order ?? 0;
+    const countIntroBefore = bookData.chapters.filter(c => (c.order < chapter.order) && isIntroChapter(c)).length;
+    return (chapter?.order ?? 0) - countIntroBefore;
   };
 
   const getBreadcrumb = () => {
@@ -83,27 +141,51 @@ const ContentDisplay = ({ selectedItem }) => {
     
     if (selectedItem.type === 'chapter') {
       if (data && data.order !== undefined && data.title) {
-        breadcrumb.push(`Chapitre ${data.order + 1}: ${data.title}`);
+        if (isIntroChapter(data)) {
+          breadcrumb.push(`${data.title}`);
+        } else {
+          breadcrumb.push(`Chapitre ${getDisplayChapterNumber(data)}: ${data.title}`);
+        }
       }
     } else if (selectedItem.type === 'section') {
       const chapter = selectedItem.chapterData;
       if (chapter && chapter.order !== undefined && chapter.title) {
-        breadcrumb.push(`Chapitre ${chapter.order + 1}: ${chapter.title}`);
+        if (isIntroChapter(chapter)) {
+          breadcrumb.push(`${chapter.title}`);
+        } else {
+          breadcrumb.push(`Chapitre ${getDisplayChapterNumber(chapter)}: ${chapter.title}`);
+        }
       }
       if (data && data.order !== undefined && data.title) {
-        breadcrumb.push(`Section ${data.order + 1}: ${data.title}`);
+        if (chapter && isIntroChapter(chapter)) {
+          breadcrumb.push(`Section ${data.order}: ${data.title}`);
+        } else {
+          breadcrumb.push(`Section ${getDisplayChapterNumber(chapter)}.${data.order}: ${data.title}`);
+        }
       }
     } else if (selectedItem.type === 'subsection') {
       const chapter = selectedItem.chapterData;
       const section = selectedItem.sectionData;
       if (chapter && chapter.order !== undefined && chapter.title) {
-        breadcrumb.push(`Chapitre ${chapter.order + 1}: ${chapter.title}`);
+        if (isIntroChapter(chapter)) {
+          breadcrumb.push(`${chapter.title}`);
+        } else {
+          breadcrumb.push(`Chapitre ${getDisplayChapterNumber(chapter)}: ${chapter.title}`);
+        }
       }
       if (section && section.order !== undefined && section.title) {
-        breadcrumb.push(`Section ${section.order + 1}: ${section.title}`);
+        if (chapter && isIntroChapter(chapter)) {
+          breadcrumb.push(`Section ${section.order}: ${section.title}`);
+        } else {
+          breadcrumb.push(`Section ${getDisplayChapterNumber(chapter)}.${section.order}: ${section.title}`);
+        }
       }
       if (data && data.order !== undefined && data.title) {
-        breadcrumb.push(`Sous-section ${data.order + 1}: ${data.title}`);
+        if (chapter && isIntroChapter(chapter)) {
+          breadcrumb.push(`Sous-section ${section?.order}.${data.order}: ${data.title}`);
+        } else {
+          breadcrumb.push(`Sous-section ${getDisplayChapterNumber(chapter)}.${section?.order}.${data.order}: ${data.title}`);
+        }
       }
     }
     
@@ -174,12 +256,66 @@ const ContentDisplay = ({ selectedItem }) => {
             <h3>Tableaux</h3>
             {data.tables.map((table, index) => (
               <div key={index} className="table-item">
-                <div className="table-content">
-                  {table.content.split('\n').map((line, lineIndex) => (
-                    <div key={lineIndex} className="table-line">{line}</div>
-                  ))}
-                </div>
-                <p className="table-caption">{table.caption || `Tableau ${index + 1}`}</p>
+                {(() => {
+                  // 1) Snapshot image table
+                  const url = table?.url || '';
+                  const isSnapshot = table?.is_snapshot === true || /\.(png|jpe?g|gif|webp)$/i.test(url);
+                  if (isSnapshot && url) {
+                    return (
+                      <>
+                        <div className="bg-white p-3 flex justify-center items-center border border-gray-200 rounded">
+                          <img src={url} alt={table.title || table.caption || `Tableau ${index + 1}`} className="max-w-full h-auto" />
+                        </div>
+                        <p className="table-caption">{table.caption || table.title || `Tableau ${index + 1}`}</p>
+                      </>
+                    );
+                  }
+
+                  // 2) Text content table -> parse pipe-delimited rows
+                  const c = table?.content;
+                  let rawLines = [];
+                  if (typeof c === 'string') {
+                    rawLines = c.split('\n');
+                  } else if (Array.isArray(c)) {
+                    rawLines = c.flatMap((item) => (typeof item === 'string' ? item.split('\n') : []));
+                  }
+                  let lines = rawLines.map(l => (l ?? '').trim()).filter(l => l.length > 0);
+                  const hasPipe = lines.some(l => l.includes('|'));
+                  if (hasPipe) {
+                    lines = lines.filter(l => l.includes('|'));
+                  }
+                  const rows = lines.map(l => l.split('|').map(cell => cell.trim()));
+                  const colCount = table?.columns || (rows[0]?.length || 0);
+                  const useHeader = colCount > 1 && rows.length > 0 && rows[0].length === colCount;
+
+                  return rows.length > 0 ? (
+                    <div className="bg-white p-3 overflow-x-auto border border-gray-200 rounded">
+                      <table className="min-w-full text-sm">
+                        {useHeader && (
+                          <thead className="bg-gray-50">
+                            <tr>
+                              {rows[0].map((h, i) => (
+                                <th key={i} className="px-3 py-2 text-left font-semibold text-gray-700 border-b border-gray-200">{h}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                        )}
+                        <tbody>
+                          {(useHeader ? rows.slice(1) : rows).map((r, ri) => (
+                            <tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                              {r.map((cell, ci) => (
+                                <td key={ci} className="px-3 py-2 align-top border-b border-gray-200 whitespace-pre-wrap">{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      <p className="table-caption mt-2">{table.caption || table.title || `Tableau ${index + 1}`}</p>
+                    </div>
+                  ) : (
+                    <div className="table-line text-gray-500">Aucun contenu de tableau</div>
+                  );
+                })()}
               </div>
             ))}
           </div>

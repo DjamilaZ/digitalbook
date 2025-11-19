@@ -41,6 +41,7 @@ def classify_line_by_pattern(line):
 
     # Si aucun motif ne correspond, c'est un paragraphe normal
     return 'p', line.strip(), None
+
 def extract_number(s):
     """Extrait le numéro d'une section (ex: '1.1' -> 1.1, '1.10' -> 1.1, '1.01' -> 1.01)"""
     # Recherche le motif numérique au début du titre
@@ -54,6 +55,11 @@ def extract_number(s):
     
     # Retourne un tuple pour un tri correct (1.2 < 1.10)
     return (major, minor)
+
+def clean_line(text):
+    text = text.strip()
+    text = re.sub(r'\s+\d{1,3}$', '', text)
+    return text
 
 def save_image(image, prefix, page_num, index, output_dir):
     """Sauvegarde une image et retourne le chemin relatif"""
@@ -136,133 +142,127 @@ def parse_pdf_to_structured_json(pdf_path):
     last_chapter_num = -1
 
     with pdfplumber.open(pdf_path) as pdf:
-        full_text = ""
-        for page in pdf.pages:
-            page_text = page.extract_text(x_tolerance=2) # Améliore la jointure des mots
-            if page_text:
-                full_text += page_text + "\n"
+        total_pages = len(pdf.pages)
+        for page_num, page in enumerate(pdf.pages):
+            page_text = page.extract_text(x_tolerance=2)
+            if not page_text:
+                continue
+            for raw_line in page_text.split('\n'):
+                line = clean_line(raw_line)
+                if not line:
+                    continue
+                level, text, number = classify_line_by_pattern(line)
+                if level == 'h1':
+                    chapter_num = number
+                    chapter_key = f"{chapter_num:02d}"
+                    if chapter_key in chapters_dict:
+                        prev_chapter = current_chapter
+                        current_chapter = chapters_dict[chapter_key]
+                        if current_chapter.get("title", "").startswith(f"{chapter_num}.0 (Titre non trouvé)") and text:
+                            current_chapter["title"] = text
+                        if prev_chapter and prev_chapter is not current_chapter and 'end_page' not in prev_chapter:
+                            prev_chapter['end_page'] = page_num
+                    else:
+                        current_chapter = {
+                            "title": text,
+                            "number": chapter_num,
+                            "sections": [],
+                            "content": "",
+                            "images": [],
+                            "tables": [],
+                            "start_page": page_num + 1
+                        }
+                        chapters_dict[chapter_key] = current_chapter
+                        chapter_order.append(chapter_key)
+                        document["chapters"].append(current_chapter)
+                    current_section = None
+                    current_subsection = None
+                elif level == 'h2':
+                    section_num = number
+                    if current_chapter is None:
+                        chapter_num = int(section_num.split('.')[0])
+                        chapter_key = f"{chapter_num:02d}"
+                        if chapter_key not in chapters_dict:
+                            current_chapter = {
+                                "title": f"{chapter_num}.0 (Titre non trouvé)",
+                                "number": chapter_num,
+                                "sections": [],
+                                "content": "",
+                                "images": [],
+                                "tables": [],
+                                "start_page": page_num + 1
+                            }
+                            chapters_dict[chapter_key] = current_chapter
+                            chapter_order.append(chapter_key)
+                            document["chapters"].append(current_chapter)
+                    existing = None
+                    for sec in current_chapter.get("sections", []):
+                        if sec.get("number") == section_num:
+                            existing = sec
+                            break
+                    if existing:
+                        existing["title"] = text or existing.get("title", "")
+                        if 'start_page' not in existing:
+                            existing['start_page'] = page_num + 1
+                        current_section = existing
+                    else:
+                        current_section = {
+                            "title": text,
+                            "number": section_num,
+                            "subsections": [],
+                            "content": "",
+                            "images": [],
+                            "tables": [],
+                            "start_page": page_num + 1
+                        }
+                        current_chapter["sections"].append(current_section)
+                    if current_subsection and 'end_page' not in current_subsection:
+                        current_subsection['end_page'] = page_num
+                    current_subsection = None
+                elif level == 'h3':
+                    subsection_num = number
+                    parent_for_sub = current_section
+                    if parent_for_sub is None and current_chapter is not None:
+                        parent_for_sub = current_chapter
+                        if "subsections" not in parent_for_sub:
+                            parent_for_sub["subsections"] = []
+                    existing_sub = None
+                    if parent_for_sub is not None:
+                        for sub in parent_for_sub.get("subsections", []):
+                            if sub.get("number") == subsection_num:
+                                existing_sub = sub
+                                break
+                    if existing_sub:
+                        existing_sub["title"] = text or existing_sub.get("title", "")
+                        if 'start_page' not in existing_sub:
+                            existing_sub['start_page'] = page_num + 1
+                        current_subsection = existing_sub
+                    else:
+                        current_subsection = {
+                            "title": text,
+                            "number": subsection_num,
+                            "content": "",
+                            "images": [],
+                            "tables": [],
+                            "start_page": page_num + 1
+                        }
+                        if parent_for_sub is not None:
+                            parent_for_sub.setdefault("subsections", []).append(current_subsection)
+                    
+                elif level == 'p':
+                    if current_subsection:
+                        current_subsection["content"] += text + " "
+                    elif current_section:
+                        current_section["content"] += text + " "
+                    elif current_chapter:
+                        current_chapter["content"] += text + " "
 
-    lines = full_text.split('\n')
-    for line in lines:
-        # Ignorer les lignes vides
-        if not line.strip():
-            continue
-            
-        # Classer la ligne
-        level, text, number = classify_line_by_pattern(line.strip())
-        
-        if level == 'h1':
-            # Nouveau chapitre (niveau 1)
-            chapter_num = number
-            chapter_key = f"{chapter_num:02d}"  # Format sur 2 chiffres pour le tri
-            
-            if chapter_key in chapters_dict:
-                current_chapter = chapters_dict[chapter_key]
-                # Mettre à jour le titre si c'était un chapitre temporaire
-                if current_chapter["title"] == f"{chapter_num}.0 (Titre non trouvé)":
-                    current_chapter["title"] = text
-            else:
-                current_chapter = {
-                    "title": text,
-                    "number": chapter_num,
-                    "sections": [],  # Liste des sections du chapitre
-                    "content": "",
-                    "images": [],
-                    "tables": []
-                }
-                chapters_dict[chapter_key] = current_chapter
-                chapter_order.append(chapter_key)
-                document["chapters"].append(current_chapter)
-            
-            # Réinitialiser les niveaux inférieurs
-            current_section = None
-            current_subsection = None
-            
-        elif level == 'h2':
-            # Nouvelle section (niveau 2)
-            section_num = number
-            
-            # Créer la section si elle n'existe pas déjà
-            current_section = {
-                "title": text,
-                "number": section_num,
-                "subsections": [],
-                "content": "",
-                "images": [],
-                "tables": []
-            }
-            
-            # Ajouter la section au chapitre actuel
-            if current_chapter:
-                current_chapter["sections"].append(current_section)
-            else:
-                # Si pas de chapitre parent, créer un chapitre temporaire
-                chapter_num = int(section_num.split('.')[0])
-                chapter_key = f"{chapter_num:02d}"
-                if chapter_key not in chapters_dict:
-                    current_chapter = {
-                        "title": f"{chapter_num}.0 (Titre non trouvé)",
-                        "number": chapter_num,
-                        "sections": [current_section],
-                        "content": "",
-                        "images": [],
-                        "tables": []
-                    }
-                    chapters_dict[chapter_key] = current_chapter
-                    chapter_order.append(chapter_key)
-                    document["chapters"].append(current_chapter)
-            
-            # Réinitialiser le niveau sous-section
-            current_subsection = None
-            
-        elif level == 'h3':
-            # Nouvelle sous-section (niveau 3)
-            subsection_num = number
-            
-            # Créer la sous-section
-            current_subsection = {
-                "title": text,
-                "number": subsection_num,
-                "content": "",
-                "images": [],
-                "tables": []
-            }
-            
-            # Ajouter la sous-section à la section actuelle ou au chapitre si pas de section
-            if current_section:
-                current_section["subsections"].append(current_subsection)
-            elif current_chapter:
-                # Si pas de section parente, ajouter directement au chapitre
-                current_chapter["subsections"] = current_chapter.get("subsections", []) + [current_subsection]
-            else:
-                # Si ni chapitre ni section, créer une structure minimale
-                chapter_num = int(subsection_num.split('.')[0])
-                chapter_key = f"{chapter_num:02d}"
-                if chapter_key not in chapters_dict:
-                    current_chapter = {
-                        "title": f"{chapter_num}.0 (Titre non trouvé)",
-                        "number": chapter_num,
-                        "sections": [],
-                        "content": "",
-                        "images": [],
-                        "tables": []
-                    }
-                    chapters_dict[chapter_key] = current_chapter
-                    chapter_order.append(chapter_key)
-                    document["chapters"].append(current_chapter)
-                
-                # Ajouter la sous-section directement au chapitre
-                current_chapter["subsections"] = current_chapter.get("subsections", []) + [current_subsection]
-        
-        elif level == 'p':
-            # Ajoute le contenu à l'élément le plus récent
-            if current_subsection:
-                current_subsection["content"] += text + " "
-            elif current_section:
-                current_section["content"] += text + " "
-            elif current_chapter:
-                # Ce contenu est l'introduction du chapitre, avant la première sous-section
-                current_chapter["content"] += text + " "
+        if current_subsection and 'end_page' not in current_subsection:
+            current_subsection['end_page'] = total_pages
+        if current_section and 'end_page' not in current_section:
+            current_section['end_page'] = total_pages
+        if current_chapter and 'end_page' not in current_chapter:
+            current_chapter['end_page'] = total_pages
 
     # Nettoyer les contenus et trier les sections/sous-sections
     for chapter in document["chapters"]:
@@ -338,6 +338,36 @@ def parse_pdf_to_structured_json(pdf_path):
 
     return document
 
+def find_node_for_page(structured_data, page_num):
+    ch_obj = None
+    sec_obj = None
+    sub_obj = None
+    for ch in structured_data.get('chapters', []):
+        cs = ch.get('start_page', 0)
+        ce = ch.get('end_page', 0)
+        if cs and ce and cs <= page_num <= ce:
+            ch_obj = ch
+            for sec in ch.get('sections', []):
+                ss = sec.get('start_page', 0)
+                se = sec.get('end_page', 0)
+                if ss and se and ss <= page_num <= se:
+                    sec_obj = sec
+                    for sub in sec.get('subsections', []):
+                        sss = sub.get('start_page', 0)
+                        sse = sub.get('end_page', 0)
+                        if sss and sse and sss <= page_num <= sse:
+                            sub_obj = sub
+                            return ch_obj, sec_obj, sub_obj
+                    return ch_obj, sec_obj, sub_obj
+            for sub in ch.get('subsections', []):
+                sss = sub.get('start_page', 0)
+                sse = sub.get('end_page', 0)
+                if sss and sse and sss <= page_num <= sse:
+                    sub_obj = sub
+                    return ch_obj, sec_obj, sub_obj
+            return ch_obj, sec_obj, sub_obj
+    return ch_obj, sec_obj, sub_obj
+
 def extract_assets(pdf_path, output_dir, structured_data=None):
     """
     Extrait toutes les images et tableaux du PDF, les enregistre dans des dossiers spécifiques
@@ -367,25 +397,7 @@ def extract_assets(pdf_path, output_dir, structured_data=None):
         }
     }
     
-    # Préparer la structure pour la recherche de contexte
     chapter_contexts = []
-    if structured_data and 'chapters' in structured_data:
-        for chapter in structured_data['chapters']:
-            chapter_num = extract_number(chapter['title'])[0] if 'title' in chapter else 0
-            chapter_contexts.append({
-                'type': 'chapter',
-                'number': chapter_num,
-                'title': chapter.get('title', ''),
-                'start_page': 0,
-                'end_page': 9999,  # Valeur par défaut élevée
-                'subsections': [{
-                    'type': 'subsection',
-                    'number': extract_number(sub.get('title', '0.0')),
-                    'title': sub.get('title', ''),
-                    'start_page': 0,
-                    'end_page': 9999
-                } for sub in chapter.get('subsections', [])]
-            })
     
     # Dictionnaire pour suivre les images déjà enregistrées (éviter les doublons)
     image_hashes = set()
@@ -426,8 +438,12 @@ def extract_assets(pdf_path, output_dir, structured_data=None):
                 filepath = os.path.join(images_dir, filename)
                 image.save(filepath, 'PNG')
                 
-                # Trouver le contexte (chapitre et sous-section) de l'image
-                context = find_context_for_page(chapter_contexts, page_num + 1)
+                ch_obj, sec_obj, sub_obj = find_node_for_page(structured_data or {}, page_num + 1)
+                context = {
+                    'chapter': {'number': ch_obj.get('number'), 'title': ch_obj.get('title')} if ch_obj else None,
+                    'section': {'number': sec_obj.get('number'), 'title': sec_obj.get('title')} if sec_obj else None,
+                    'subsection': {'number': sub_obj.get('number'), 'title': sub_obj.get('title')} if sub_obj else None
+                }
                 
                 # Créer l'objet image avec métadonnées
                 image_data = {
@@ -448,7 +464,6 @@ def extract_assets(pdf_path, output_dir, structured_data=None):
                 # Ajouter aux assets globaux
                 assets['images'].append(image_data)
                 
-                # Ajouter aux images globales de la structure
                 if structured_data is not None:
                     structured_data['images'].append({
                         'id': image_data['id'],
@@ -457,6 +472,12 @@ def extract_assets(pdf_path, output_dir, structured_data=None):
                         'description': image_data['description'],
                         'page': image_data['page']
                     })
+                    if sub_obj is not None:
+                        sub_obj.setdefault('images', []).append(image_data)
+                    elif sec_obj is not None:
+                        sec_obj.setdefault('images', []).append(image_data)
+                    elif ch_obj is not None:
+                        ch_obj.setdefault('images', []).append(image_data)
     
     finally:
         if 'doc' in locals():
@@ -500,7 +521,6 @@ def extract_assets(pdf_path, output_dir, structured_data=None):
                     # Ajouter aux assets globaux
                     assets['tables'].append(table_data)
                     
-                    # Ajouter aux tableaux globaux de la structure
                     if structured_data is not None:
                         structured_data['tables'].append({
                             'id': table_data['id'],
@@ -510,6 +530,13 @@ def extract_assets(pdf_path, output_dir, structured_data=None):
                             'rows': table_data['rows'],
                             'columns': table_data['columns']
                         })
+                        ch_obj, sec_obj, sub_obj = find_node_for_page(structured_data or {}, page_num + 1)
+                        if sub_obj is not None:
+                            sub_obj.setdefault('tables', []).append(table_data)
+                        elif sec_obj is not None:
+                            sec_obj.setdefault('tables', []).append(table_data)
+                        elif ch_obj is not None:
+                            ch_obj.setdefault('tables', []).append(table_data)
     except Exception as e:
         print(f"Erreur lors de l'extraction des tableaux : {str(e)}")
     
@@ -563,7 +590,7 @@ def find_context_for_page(chapter_contexts, page_num):
     return context
 
 def main():
-    pdf_file = "Livretdigital.pdf"
+    pdf_file = "IOGP best pratique.pdf"
     
     # 1. Extraire la structure du texte
     structured_data = parse_pdf_to_structured_json(pdf_file)

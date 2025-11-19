@@ -10,6 +10,7 @@ import DocumentViewer from './pages/DocumentViewer/DocumentViewer';
 import authService from './services/authService';
 import Profile from './pages/Profile/Profile';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
+import UsersManagement from './pages/Admin/UsersManagement';
 
 // Composant pour protéger les routes nécessitant une authentification
 const ProtectedRoute = ({ children }) => {
@@ -98,6 +99,47 @@ const AdminRoute = ({ children }) => {
   return allowed ? children : <Navigate to="/" replace />;
 };
 
+// Composant pour protéger les routes accessibles aux administrateurs et aux managers (lecture seule côté UI pour managers)
+const AdminOrManagerRoute = ({ children }) => {
+  const [allowed, setAllowed] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const check = async () => {
+      try {
+        const authStatus = authService.isAuthenticated();
+        if (authStatus) {
+          try {
+            await authService.validateToken();
+          } catch (error) {
+            // Token invalide, on refusera plus bas
+          }
+        }
+        setAllowed(authStatus && (authService.isAdmin() || authService.isManager()));
+      } catch (error) {
+        setAllowed(false);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    check();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
+  return allowed ? children : <Navigate to="/" replace />;
+};
+
 // Composant pour le layout principal
 const MainLayout = () => {
   return (
@@ -114,6 +156,11 @@ const MainLayout = () => {
           <Route path="/documents" element={<Documents />} />
           <Route path="/documents/:id" element={<DocumentViewer />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/admin/users" element={
+            <AdminOrManagerRoute>
+              <UsersManagement />
+            </AdminOrManagerRoute>
+          } />
         </Routes>
       </div>
     </div>

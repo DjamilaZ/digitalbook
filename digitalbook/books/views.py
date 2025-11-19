@@ -5,16 +5,23 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
+from rest_framework.views import APIView
+from rest_framework.exceptions import PermissionDenied
 from django.conf import settings
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from django.db import transaction
+from django.db.models import F, Max
 import json
-from .models import Book, Chapter, Section, Subsection, Thematique
+from .models import (
+    Book, Chapter, Section, Subsection, Thematique, ReadingProgress,
+    ThematiqueTranslation, ChapterTranslation, SectionTranslation, SubsectionTranslation,
+)
 from .background import submit_process_book
 from qcm.models import QCM, Question, Reponse
-from .serializers import BookSerializer, BookListSerializer, BookUpdateSerializer, ChapterSerializer, SectionSerializer, SubsectionSerializer
+from .serializers import BookSerializer, BookListSerializer, BookUpdateSerializer, ChapterSerializer, SectionSerializer, SubsectionSerializer, ReadingProgressSerializer
 from authentication.custom_auth import CsrfExemptSessionAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 class BookPagination(PageNumberPagination):
     """Pagination personnalisée pour les livres - 12 livres par page"""
@@ -27,7 +34,7 @@ class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     permission_classes = [IsAuthenticated]
-    authentication_classes = [CsrfExemptSessionAuthentication]
+    authentication_classes = [JWTAuthentication, CsrfExemptSessionAuthentication]
     lookup_field = 'id'
     lookup_url_kwarg = 'id'
     pagination_class = BookPagination
@@ -39,11 +46,39 @@ class BookViewSet(viewsets.ModelViewSet):
         return BookSerializer
 
     def get_queryset(self):
-        """Retourne tous les livres pour les utilisateurs authentifiés"""
-        return Book.objects.all()
+        """Retourne les livres en fonction du rôle de l'utilisateur.
+
+        - admin : voit tous les livres
+        - manager / employe : voit uniquement les livres publiés
+        """
+        user = self.request.user
+        role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+        qs = Book.objects.all()
+        if role == 'admin':
+            return qs
+        return qs.filter(published=True)
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
+
+    def perform_update(self, serializer):
+        """Empêche les non-admin de modifier le champ published."""
+        user = self.request.user
+        role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+        if role != 'admin':
+            # Forcer published à l'ancienne valeur pour les non-admin
+            instance = self.get_object()
+            serializer.save(published=instance.published)
+        else:
+            serializer.save()
+
+    def destroy(self, request, *args, **kwargs):
+        """Seul un admin peut supprimer un livre."""
+        user = request.user
+        role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+        if role != 'admin':
+            raise PermissionDenied("Seul un admin peut supprimer un livre.")
+        return super().destroy(request, *args, **kwargs)
 
     def create(self, request, *args, **kwargs):
         """Upload le PDF, crée l'objet Book, et délègue le traitement à un pool de threads.
@@ -289,6 +324,9 @@ class BookViewSet(viewsets.ModelViewSet):
                 "title": chapter.title,
                 "content": chapter.content,
                 "order": chapter.order,
+                "is_intro": getattr(chapter, 'is_intro', False),
+                "images": getattr(chapter, 'images', []),
+                "tables": getattr(chapter, 'tables', []),
                 "thematique": {
                     "id": chapter.thematique.id,
                     "title": chapter.thematique.title,
@@ -366,58 +404,158 @@ class BookViewSet(viewsets.ModelViewSet):
         }
         return Response(data, status=status.HTTP_200_OK)
 
-    @action(detail=False, methods=['get'])
-    def search(self, request):
-        """Rechercher des livres par titre"""
-        query = request.query_params.get('q', '').strip()
-        
-        if not query:
-            return Response({
-                'error': 'Le paramètre de recherche "q" est requis',
-                'count': 0,
-                'results': []
-            }, status=status.HTTP_400_BAD_REQUEST)
-        
-        # Rechercher dans le titre
-        books = Book.objects.filter(
-            title__icontains=query
-        )
-        
-        # Ordonner par pertinence (les livres dont le titre correspond exactement en premier)
-        books = books.order_by('-created_at')
-        
-        # Paginer les résultats
-        page = self.paginate_queryset(books)
-        if page is not None:
-            serializer = self.get_serializer(page, many=True)
-            return self.get_paginated_response(serializer.data)
-        
-        # Si pas de pagination, retourner tous les résultats
-        serializer = self.get_serializer(books, many=True)
-        return Response({
-            'count': len(serializer.data),
-            'results': serializer.data
-        }, status=status.HTTP_200_OK)
+    @action(detail=True, methods=['post'], url_path='finalize')
+    def finalize(self, request, id=None):
+        """Déclenche le job de traduction du livre (asynchrone).
 
-    def update(self, request, *args, **kwargs):
-        """Mettre à jour le titre d'un livre"""
-        instance = self.get_object()
-        
-        # Utiliser le serializer de mise à jour
-        serializer = BookUpdateSerializer(instance, data=request.data, partial=True)
-        
-        if serializer.is_valid():
-            serializer.save()
-            return Response({
-                'message': 'Titre mis à jour avec succès',
-                'book': {
-                    'id': instance.id,
-                    'title': serializer.validated_data['title'],
-                    'url': instance.url
+        Fonctionnalité de traduction désactivée temporairement.
+        """
+        # from .background import submit_translate_book
+        # book = self.get_object()
+        # # Optionnel: liste de cibles fournie
+        # targets = request.data.get('target_langs') or request.data.get('targets') or None
+        # if isinstance(targets, str):
+        #     targets = [t.strip() for t in targets.split(',') if t.strip()]
+        # submit_translate_book(book.id, targets)
+        # return Response({'status': 'accepted', 'book_id': book.id}, status=status.HTTP_202_ACCEPTED)
+
+        return Response(
+            {'error': 'La traduction automatique est désactivée pour le moment.'},
+            status=status.HTTP_503_SERVICE_UNAVAILABLE,
+        )
+
+    @action(detail=True, methods=['get'], url_path='content')
+    def content(self, request, id=None):
+        """Retourner la structure du livre avec traductions selon ?lang=fr|en|pt (fallback sur source)."""
+        book = self.get_object()
+        req_lang = (request.query_params.get('lang') or '').strip().lower()
+        if req_lang not in ('fr', 'en', 'pt'):
+            req_lang = None
+
+        def pick_thematique(thematique: Thematique):
+            data = {
+                'id': thematique.id,
+                'title': thematique.title,
+                'description': thematique.description,
+                'translation_status': None,
+            }
+            if req_lang:
+                tr = ThematiqueTranslation.objects.filter(thematique=thematique, lang=req_lang).first()
+                if tr and (tr.title or tr.description):
+                    data['title'] = tr.title or data['title']
+                    data['description'] = tr.description or data['description']
+                    data['translation_status'] = tr.status
+            return data
+
+        structure = {
+            'book': {
+                'id': book.id,
+                'title': book.title,
+                'url': book.url,
+                'pdf_url': book.pdf_url,
+                'cover_image': book.cover_image.url if book.cover_image else None,
+                'created_at': book.created_at.isoformat(),
+                'language': book.language,
+            },
+            'chapters': []
+        }
+
+        for chapter in book.chapters.all().order_by('order'):
+            ch_title = chapter.title
+            ch_content = chapter.content
+            ch_status = None
+            if req_lang:
+                trc = ChapterTranslation.objects.filter(chapter=chapter, lang=req_lang).first()
+                if trc and (trc.title or trc.content):
+                    ch_title = trc.title or ch_title
+                    ch_content = trc.content or ch_content
+                    ch_status = trc.status
+
+            chapter_data = {
+                'id': chapter.id,
+                'title': ch_title,
+                'content': ch_content,
+                'order': chapter.order,
+                'images': getattr(chapter, 'images', []),
+                'tables': getattr(chapter, 'tables', []),
+                'translation_status': ch_status,
+                'thematique': pick_thematique(chapter.thematique) if chapter.thematique else None,
+                'sections': [],
+            }
+
+            for section in chapter.sections.all().order_by('order'):
+                se_title = section.title
+                se_content = section.content
+                se_images = section.images
+                se_tables = section.tables
+                se_status = None
+                if req_lang:
+                    trs = SectionTranslation.objects.filter(section=section, lang=req_lang).first()
+                    if trs and (trs.title or trs.content or trs.images or trs.tables):
+                        se_title = trs.title or se_title
+                        se_content = trs.content or se_content
+                        se_images = trs.images if isinstance(trs.images, list) else se_images
+                        se_tables = trs.tables if isinstance(trs.tables, list) else se_tables
+                        se_status = trs.status
+
+                section_data = {
+                    'id': section.id,
+                    'title': se_title,
+                    'content': se_content,
+                    'order': section.order,
+                    'images': se_images,
+                    'tables': se_tables,
+                    'translation_status': se_status,
+                    'subsections': [],
                 }
-            }, status=status.HTTP_200_OK)
-        
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+                for subsection in section.subsections.all().order_by('order'):
+                    su_title = subsection.title
+                    su_content = subsection.content
+                    su_images = subsection.images
+                    su_tables = subsection.tables
+                    su_status = None
+                    if req_lang:
+                        trs = SubsectionTranslation.objects.filter(subsection=subsection, lang=req_lang).first()
+                        if trs and (trs.title or trs.content or trs.images or trs.tables):
+                            su_title = trs.title or su_title
+                            su_content = trs.content or su_content
+                            su_images = trs.images if isinstance(trs.images, list) else su_images
+                            su_tables = trs.tables if isinstance(trs.tables, list) else su_tables
+                            su_status = trs.status
+
+                    subsection_data = {
+                        'id': subsection.id,
+                        'title': su_title,
+                        'content': su_content,
+                        'order': subsection.order,
+                        'images': su_images,
+                        'tables': su_tables,
+                        'translation_status': su_status,
+                    }
+                    section_data['subsections'].append(subsection_data)
+
+                chapter_data['sections'].append(section_data)
+
+            structure['chapters'].append(chapter_data)
+
+        return Response(structure, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=['get', 'put', 'patch'], url_path='reading-progress')
+    def reading_progress(self, request, id=None):
+        """Récupérer ou mettre à jour la progression de lecture de l'utilisateur pour ce livre."""
+        book = self.get_object()
+        rp, _ = ReadingProgress.objects.get_or_create(user=request.user, book=book)
+
+        if request.method in ['PUT', 'PATCH']:
+            serializer = ReadingProgressSerializer(rp, data=request.data, partial=True)
+            if serializer.is_valid():
+                serializer.save(book=book)
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        serializer = ReadingProgressSerializer(rp)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 class ChapterViewSet(viewsets.ModelViewSet):
     """ViewSet pour la gestion des chapitres"""
@@ -426,207 +564,56 @@ class ChapterViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
-        if self.request.user.is_authenticated:
-            return Chapter.objects.filter(book__created_by=self.request.user)
-        return Chapter.objects.none()
+        qs = Chapter.objects.none()
+        user = self.request.user
+        if user.is_authenticated:
+            role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+            if role in ('admin', 'manager'):
+                qs = Chapter.objects.all()
+            else:
+                qs = Chapter.objects.filter(book__created_by=user)
+            # Filtrer par livre parent si présent (nested router)
+            book_id = self.kwargs.get('book_id') or self.kwargs.get('book_pk') or None
+            if book_id:
+                qs = qs.filter(book_id=book_id)
+        return qs
     
     def perform_create(self, serializer):
-        serializer.save(created_by=self.request.user)
+        book_id = self.kwargs.get('book_id') or self.kwargs.get('book_pk')
+        user = self.request.user
+        role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+        if role in ('admin', 'manager'):
+            book = get_object_or_404(Book, id=book_id)
+        else:
+            book = get_object_or_404(Book, id=book_id, created_by=user)
+        # Gestion de la position/ordre lors de la création du chapitre
+        position = (self.request.data.get('position') or 'first').lower()
+        after_id = self.request.data.get('after_id')
+        qs = Chapter.objects.filter(book=book)
+        new_order = 0
 
-    def create(self, request, *args, **kwargs):
-        """Gère l'upload de fichiers PDF et sauvegarde l'URL dans la BDD
-        Si un fichier JSON est fourni, utilise sa structure pour créer la hiérarchie
-        Sinon, utilise le parsing PDF automatique
-        """
-        if 'pdf_file' not in request.FILES:
-            return Response(
-                {'error': 'Aucun fichier PDF fourni'}, 
-                status=status.HTTP_400_BAD_REQUEST
-            )
-        
-        pdf_file = request.FILES['pdf_file']
-        
-        # Vérifier que c'est bien un fichier PDF
-        if not pdf_file.name.lower().endswith('.pdf'):
-            return Response(
-                {'error': 'Le fichier doit être au format PDF'}, 
-                status=status.HTTP_400_BAD_REQUEST
-            )
-        
-        # Sauvegarder le fichier dans le système de fichiers
-        from django.conf import settings
-        import os
-        import uuid
-        
-        # Créer le répertoire de stockage s'il n'existe pas
-        upload_dir = os.path.join(settings.MEDIA_ROOT, 'books/pdfs')
-        os.makedirs(upload_dir, exist_ok=True)
-        
-        # Générer un nom de fichier unique
-        file_extension = os.path.splitext(pdf_file.name)[1]
-        unique_filename = f"{uuid.uuid4()}{file_extension}"
-        file_path = os.path.join(upload_dir, unique_filename)
-        
-        # Sauvegarder le fichier
-        with open(file_path, 'wb+') as destination:
-            for chunk in pdf_file.chunks():
-                destination.write(chunk)
-        
-        # Extraire la première page comme couverture
-        from .pdf_parser import extract_cover_from_pdf
-        cover_path = extract_cover_from_pdf(file_path, settings.MEDIA_ROOT)
-        
-        # Construire l'URL complète du fichier
-        pdf_url = f"{settings.MEDIA_URL}books/pdfs/{unique_filename}"
-        
-        # Générer une URL unique à partir du titre
-        import re
-        from django.utils.text import slugify
-        
-        title = request.data.get('title', pdf_file.name.replace('.pdf', ''))
-        base_url = slugify(title)
-        url = base_url
-        counter = 1
-        
-        # Vérifier que l'URL est unique
-        while Book.objects.filter(url=url).exists():
-            url = f"{base_url}-{counter}"
-            counter += 1
-        
-        # Créer le livre avec l'URL du PDF
-        book_data = {
-            'title': title,
-            'url': url,
-            'pdf_url': pdf_url
-        }
-        
-        # Créer directement le livre avec toutes les données
-        book = Book.objects.create(
-            title=book_data['title'],
-            url=book_data['url'],
-            pdf_url=book_data['pdf_url'],
-            cover_image=cover_path
-        )
-        
-        # Parser le PDF et créer la hiérarchie
-        try:
-            print(f"\n=== DÉBUT TRAITEMENT POUR LIVRE: {book.title} ===")
-            print(f"PDF URL: {book.pdf_url}")
-            
-            # Vérifier si un fichier JSON de structure est fourni
-            json_file = request.FILES.get('json_structure_file')
-            
-            if json_file:
-                print("\n--- UTILISATION DU FICHIER JSON FOURNI ---")
-                
-                # Lire et parser le fichier JSON
-                try:
-                    json_content = json_file.read().decode('utf-8')
-                    structured_data = json.loads(json_content)
-                    print(f"✓ Fichier JSON chargé avec succès")
-                    
-                    # Utiliser le titre du JSON si fourni, sinon garder celui du formulaire
-                    if structured_data.get('title'):
-                        book.title = structured_data['title']
-                        book.save()
-                        print(f"✓ Titre mis à jour depuis le JSON: {book.title}")
-                    
-                except Exception as e:
-                    print(f"✗ Erreur lecture du fichier JSON: {e}")
-                    # Fallback sur le parsing PDF automatique
-                    structured_data = None
+        if position == 'last':
+            max_order = qs.aggregate(max_o=Max('order'))['max_o']
+            new_order = (max_order or 0) + 1
+        elif position == 'after' and after_id:
+            try:
+                ref = qs.get(id=after_id)
+                ref_order = ref.order
+            except Chapter.DoesNotExist:
+                ref_order = None
+            if ref_order is None:
+                max_order = qs.aggregate(max_o=Max('order'))['max_o']
+                new_order = (max_order or 0) + 1
             else:
-                print("\n--- AUCUN FICHIER JSON FOURNI, UTILISATION DU PARSING PDF AUTOMATIQUE ---")
-                structured_data = None
-            
-            # Si pas de JSON ou erreur de lecture, utiliser le parsing PDF automatique
-            if not structured_data:
-                from .pdf_parser import parse_pdf_to_structured_json, create_book_hierarchy_from_json
-                
-                # Obtenir le chemin absolu du fichier PDF
-                import os
-                from django.conf import settings
-                pdf_file_path = os.path.join(settings.MEDIA_ROOT, book.pdf_url.replace(settings.MEDIA_URL, ''))
-                print(f"Chemin PDF absolu: {pdf_file_path}")
-                
-                # Vérifier que le fichier existe
-                if not os.path.exists(pdf_file_path):
-                    print(f"✗ ERREUR: Le fichier PDF n'existe pas: {pdf_file_path}")
-                else:
-                    print(f"✓ Fichier PDF trouvé, taille: {os.path.getsize(pdf_file_path)} octets")
-                    
-                    # Parser le PDF pour obtenir la structure
-                    print("\n--- DÉBUT PARSING PDF ---")
-                    structured_data = parse_pdf_to_structured_json(pdf_file_path)
-                    print("--- FIN PARSING PDF ---")
-                    
-                    # Écrire le JSON structuré dans un fichier data.json
-                    print("\n--- ÉCRITURE FICHIER data.json ---")
-                    data_json_path = os.path.join(settings.BASE_DIR, 'data.json')
-                    try:
-                        with open(data_json_path, 'w', encoding='utf-8') as f:
-                            json.dump(structured_data, f, ensure_ascii=False, indent=2)
-                        print(f"✓ Fichier data.json écrit avec succès: {data_json_path}")
-                    except Exception as e:
-                        print(f"✗ Erreur écriture fichier data.json: {e}")
-            
-            # Créer la hiérarchie dans la BDD
-            if structured_data:
-                print("\n--- DÉBUT CRÉATION HIÉRARCHIE ---")
-                if json_file:
-                    # Utiliser la nouvelle fonction pour créer la hiérarchie depuis le JSON fourni
-                    book = create_book_hierarchy_from_provided_json(book, structured_data)
-                else:
-                    # Utiliser la fonction existante pour le parsing PDF automatique
-                    from .pdf_parser import create_book_hierarchy_from_json
-                    book = create_book_hierarchy_from_json(book, structured_data)
-                print("--- FIN CRÉATION HIÉRARCHIE ---")
-                
-                # Générer automatiquement des QCM pour chaque chapitre
-                generate_qcm = request.data.get('generate_qcm', 'true').lower() == 'true'
-                
-                if generate_qcm and getattr(settings, 'OPENAI_API_KEY', ''):
-                    print("\n--- DÉBUT GÉNÉRATION AUTOMATIQUE DES QCM ---")
-                    try:
-                        from qcm.utils import generate_qcms_for_book
-                        nb_questions = int(request.data.get('nb_questions_per_chapter', getattr(settings, 'QCM_DEFAULT_QUESTIONS', 5)))
-                        qcm_results = generate_qcms_for_book(
-                            book=book,
-                            nb_questions_per_chapter=nb_questions,
-                            generate_for_all_chapters=True
-                        )
-                        print(f"✓ QCM générés: {len(qcm_results['success'])} succès, {len(qcm_results['failed'])} échecs")
-                        if qcm_results['failed']:
-                            print(f"✗ Échecs de génération QCM: {[f['chapter'].title for f in qcm_results['failed']]}")
-                    except Exception as e:
-                        print(f"✗ Erreur lors de la génération des QCM: {e}")
-                        import traceback
-                        print(f"Traceback: {traceback.format_exc()}")
-                    print("--- FIN GÉNÉRATION AUTOMATIQUE DES QCM ---")
-                elif generate_qcm:
-                    print("\n⚠ OPENAI_API_KEY non configurée, génération des QCM ignorée")
-                else:
-                    print("\n⚠ Génération des QCM désactivée par l'utilisateur")
-            
-            print(f"=== FIN TRAITEMENT PDF POUR LIVRE: {book.title} ===\n")
-            
-        except Exception as e:
-            # En cas d'erreur de parsing, on continue quand même
-            # mais on log l'erreur pour le débogage
-            print(f"\n✗ ERREUR LORS DU PARSING PDF: {e}")
-            import traceback
-            print(f"Traceback complet: {traceback.format_exc()}")
-            print(f"=== FIN TRAITEMENT AVEC ERREUR ===\n")
-        
-        # Sérialiser le livre créé pour la réponse
-        serializer = self.get_serializer(book)
-        
-        headers = self.get_success_headers(serializer.data)
-        return Response(
-            serializer.data, 
-            status=status.HTTP_201_CREATED, 
-            headers=headers
-        )
+                qs.filter(order__gt=ref_order).update(order=F('order') + 1)
+                new_order = ref_order + 1
+        else:
+            # Par défaut, insérer au début
+            qs.update(order=F('order') + 1)
+            new_order = 0
+
+        serializer.save(book=book, order=new_order)
+
 
 class SectionViewSet(viewsets.ModelViewSet):
     """ViewSet pour la gestion des sections"""
@@ -635,17 +622,59 @@ class SectionViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
-        if self.request.user.is_authenticated:
-            return Section.objects.filter(chapter__book__created_by=self.request.user)
-        return Section.objects.none()
+        qs = Section.objects.none()
+        user = self.request.user
+        if user.is_authenticated:
+            role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+            if role in ('admin', 'manager'):
+                qs = Section.objects.all()
+            else:
+                qs = Section.objects.filter(chapter__book__created_by=user)
+            # Filtrer par parents si présents
+            book_id = self.kwargs.get('book_id') or self.kwargs.get('book_pk')
+            chapter_id = self.kwargs.get('chapter_id') or self.kwargs.get('chapter_pk')
+            if book_id:
+                qs = qs.filter(chapter__book_id=book_id)
+            if chapter_id:
+                qs = qs.filter(chapter_id=chapter_id)
+        return qs
     
     def perform_create(self, serializer):
-        chapter = get_object_or_404(
-            Chapter, 
-            id=self.kwargs['chapter_id'],
-            book__created_by=self.request.user
-        )
-        serializer.save(chapter=chapter)
+        chapter_id = self.kwargs.get('chapter_id') or self.kwargs.get('chapter_pk')
+        user = self.request.user
+        role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+        if role in ('admin', 'manager'):
+            chapter = get_object_or_404(Chapter, id=chapter_id)
+        else:
+            chapter = get_object_or_404(Chapter, id=chapter_id, book__created_by=user)
+        # Gestion de la position/ordre lors de la création de la section
+        position = (self.request.data.get('position') or 'first').lower()
+        after_id = self.request.data.get('after_id')
+        qs = Section.objects.filter(chapter=chapter)
+        new_order = 0
+
+        if position == 'last':
+            max_order = qs.aggregate(max_o=Max('order'))['max_o']
+            new_order = (max_order or 0) + 1
+        elif position == 'after' and after_id:
+            try:
+                ref = qs.get(id=after_id)
+                ref_order = ref.order
+            except Section.DoesNotExist:
+                ref_order = None
+            if ref_order is None:
+                max_order = qs.aggregate(max_o=Max('order'))['max_o']
+                new_order = (max_order or 0) + 1
+            else:
+                qs.filter(order__gt=ref_order).update(order=F('order') + 1)
+                new_order = ref_order + 1
+        else:
+            # Par défaut, insérer au début
+            qs.update(order=F('order') + 1)
+            new_order = 0
+
+        serializer.save(chapter=chapter, order=new_order)
+
 
 class SubsectionViewSet(viewsets.ModelViewSet):
     """ViewSet pour la gestion des sous-sections"""
@@ -654,116 +683,61 @@ class SubsectionViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
-        if self.request.user.is_authenticated:
-            return Subsection.objects.filter(section__chapter__book__created_by=self.request.user)
-        return Subsection.objects.none()
+        qs = Subsection.objects.none()
+        user = self.request.user
+        if user.is_authenticated:
+            role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+            if role in ('admin', 'manager'):
+                qs = Subsection.objects.all()
+            else:
+                qs = Subsection.objects.filter(section__chapter__book__created_by=user)
+            # Filtrer par parents si présents
+            book_id = self.kwargs.get('book_id') or self.kwargs.get('book_pk')
+            chapter_id = self.kwargs.get('chapter_id') or self.kwargs.get('chapter_pk')
+            section_id = self.kwargs.get('section_id') or self.kwargs.get('section_pk')
+            if book_id:
+                qs = qs.filter(section__chapter__book_id=book_id)
+            if chapter_id:
+                qs = qs.filter(section__chapter_id=chapter_id)
+            if section_id:
+                qs = qs.filter(section_id=section_id)
+        return qs
     
     def perform_create(self, serializer):
-        section = get_object_or_404(
-            Section, 
-            id=self.kwargs['section_id'],
-            chapter__book__created_by=self.request.user
-        )
-        serializer.save(section=section)
+        section_id = self.kwargs.get('section_id') or self.kwargs.get('section_pk')
+        user = self.request.user
+        role = getattr(getattr(user, 'profile', user), 'role_name', None) or getattr(user, 'role_name', None)
+        if role in ('admin', 'manager'):
+            section = get_object_or_404(Section, id=section_id)
+        else:
+            section = get_object_or_404(Section, id=section_id, chapter__book__created_by=user)
+        # Gestion de la position/ordre lors de la création de la sous-section
+        position = (self.request.data.get('position') or 'first').lower()
+        after_id = self.request.data.get('after_id')
+        qs = Subsection.objects.filter(section=section)
+        new_order = 0
 
-
-def create_book_hierarchy_from_provided_json(book, structured_data):
-    """
-    Crée la hiérarchie complète d'un livre (thématiques, chapitres, sections, sous-sections)
-    à partir d'un JSON structuré fourni par l'utilisateur
-    
-    Args:
-        book: Instance du modèle Book
-        structured_data: Dictionnaire contenant la structure du livre
-    
-    Returns:
-        Book: L'instance du livre mise à jour avec sa hiérarchie
-    """
-    print(f"\n=== CRÉATION HIÉRARCHIE DEPUIS JSON FOURNI ===")
-    print(f"Livre: {book.title}")
-    print(f"Structure reçue: {list(structured_data.keys())}")
-    
-    try:
-        with transaction.atomic():
-            # Vérifier si c'est la nouvelle structure (avec thematiques) ou l'ancienne (avec chapitres directement)
-            if 'thematiques' in structured_data or 'chapters_sans_thematique' in structured_data:
-                # Nouvelle structure
-                print("Utilisation de la nouvelle structure (avec thematiques)")
-                
-                # Mettre à jour le titre du livre si présent (pour les fichiers mixtes)
-                if 'titre_livre' in structured_data:
-                    book.title = structured_data['titre_livre']
-                    book.save()
-                    print(f"Titre du livre mis à jour: {book.title}")
-                
-                # Créer les thématiques
-                thematiques_data = structured_data.get('thematiques', [])
-                for thematique_data in thematiques_data:
-                    print(f"\n--- Création thématique: {thematique_data.get('title', 'Sans titre')} ---")
-                    
-                    thematique = Thematique.objects.create(
-                        book=book,
-                        title=thematique_data.get('title', 'Thématique sans titre'),
-                        description=thematique_data.get('description', '')
-                    )
-                    print(f"✓ Thématique créée: {thematique.title}")
-                    
-                    # Créer les chapitres de cette thématique
-                    chapters_data = thematique_data.get('chapters', [])
-                    for chapter_index, chapter_data in enumerate(chapters_data):
-                        chapter = create_chapter_from_data(chapter_data, book, thematique, chapter_index)
-                
-                # Créer les chapitres sans thématique
-                chapters_sans_thematique = structured_data.get('chapters_sans_thematique', [])
-                if chapters_sans_thematique:
-                    print(f"\n--- Création chapitres sans thématique ---")
-                    for chapter_index, chapter_data in enumerate(chapters_sans_thematique):
-                        # Adapter les noms de champs pour l'ancienne structure
-                        chapter_data_adapted = {
-                            'title': chapter_data.get('titre', 'Chapitre sans titre'),
-                            'content': chapter_data.get('contenu', ''),
-                            'sections': chapter_data.get('sections', [])
-                        }
-                        chapter = create_chapter_from_data(chapter_data_adapted, book, None, chapter_index)
-            
-            elif 'chapitres' in structured_data or 'titre_livre' in structured_data:
-                # Ancienne structure (comme test_structure.json)
-                print("Utilisation de l'ancienne structure (chapitres directs)")
-                
-                # Mettre à jour le titre du livre si présent
-                if 'titre_livre' in structured_data:
-                    book.title = structured_data['titre_livre']
-                    book.save()
-                    print(f"Titre du livre mis à jour: {book.title}")
-                
-                # Créer les chapitres directement (sans thématique)
-                chapitres_data = structured_data.get('chapitres', [])
-                print(f"Nombre de chapitres à créer: {len(chapitres_data)}")
-                
-                for chapter_index, chapitre_data in enumerate(chapitres_data):
-                    print(f"\n--- Création chapitre: {chapitre_data.get('titre', 'Sans titre')} ---")
-                    
-                    # Adapter les noms de champs
-                    chapter_data_adapted = {
-                        'title': chapitre_data.get('titre', 'Chapitre sans titre'),
-                        'content': chapitre_data.get('contenu', ''),
-                        'sections': chapitre_data.get('sections', [])
-                    }
-                    
-                    chapter = create_chapter_from_data(chapter_data_adapted, book, None, chapter_index)
-            
+        if position == 'last':
+            max_order = qs.aggregate(max_o=Max('order'))['max_o']
+            new_order = (max_order or 0) + 1
+        elif position == 'after' and after_id:
+            try:
+                ref = qs.get(id=after_id)
+                ref_order = ref.order
+            except Subsection.DoesNotExist:
+                ref_order = None
+            if ref_order is None:
+                max_order = qs.aggregate(max_o=Max('order'))['max_o']
+                new_order = (max_order or 0) + 1
             else:
-                print("Structure JSON non reconnue")
-                raise ValueError("Structure JSON non reconnue. Les clés attendues sont: 'thematiques'/'chapters_sans_thematique' ou 'chapitres'/'titre_livre'")
-            
-            print(f"\n✓ HIÉRARCHIE CRÉÉE AVEC SUCCÈS POUR LE LIVRE: {book.title}")
-            return book
-            
-    except Exception as e:
-        print(f"✗ ERREUR LORS DE LA CRÉATION DE LA HIÉRARCHIE: {e}")
-        import traceback
-        print(f"Traceback: {traceback.format_exc()}")
-        raise
+                qs.filter(order__gt=ref_order).update(order=F('order') + 1)
+                new_order = ref_order + 1
+        else:
+            # Par défaut, insérer au début
+            qs.update(order=F('order') + 1)
+            new_order = 0
+
+        serializer.save(section=section, order=new_order)
 
 
 def create_chapter_from_data(chapter_data, book, thematique, chapter_index=None):
@@ -874,3 +848,34 @@ def create_subsection_from_data(subsection_data, section, subsection_index=None)
     print(f"        ✓ Sous-section créée: {subsection.title} (ID: {subsection.id})")
     
     return subsection
+
+
+class ImageUploadView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, *args, **kwargs):
+        """Uploader une image et retourner son URL publique."""
+        img = request.FILES.get('file') or request.FILES.get('image')
+        if not img:
+            return Response({'error': 'Aucun fichier fourni (clé attendue: file)'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            import os, uuid
+            upload_dir = os.path.join(settings.MEDIA_ROOT, 'books/images')
+            os.makedirs(upload_dir, exist_ok=True)
+
+            ext = os.path.splitext(img.name)[1] or '.png'
+            filename = f"{uuid.uuid4()}{ext}"
+            abs_path = os.path.join(upload_dir, filename)
+            with open(abs_path, 'wb+') as destination:
+                for chunk in img.chunks():
+                    destination.write(chunk)
+
+            url = f"{settings.MEDIA_URL}books/images/{filename}"
+            caption = request.data.get('caption')
+            payload = {'url': url}
+            if caption:
+                payload['caption'] = caption
+            return Response(payload, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

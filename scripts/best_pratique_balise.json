@@ -1,0 +1,1965 @@
+{
+    "thematiques": [],
+    "chapters_sans_thematique": [
+        {
+            "title": "Acknowledgements",
+            "content": [
+                "This report was prepared by the Lifting and Hoisting Task Force, reporting to the",
+                "IOGP Safety Committee.",
+                "Front cover photography used with permission courtesy of",
+                "© curraheeshutter/iStockphoto and © rawi_earth/iStockphoto"
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 2,
+            "end_page": 2
+        },
+        {
+            "title": "About",
+            "content": [
+                "This Report hopes to enable a significant reduction in lifting incidents among",
+                "IOGP Member Companies and our contractors by highlighting the essential",
+                "principles of safe lifting and encouraging their strict application to lifting and",
+                "hoisting operations.",
+                "Secondly, this report aims to assist those responsible in planning, managing, and",
+                "controlling lifting and hoisting operations by providing high level principles and",
+                "operative questions to check safety and technical compliance at working sites."
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 2,
+            "end_page": 6
+        },
+        {
+            "title": "Introduction",
+            "content": [
+                "In 2006, IOGP published a Recommended Practice for lifting and hoisting operations. Fatal and",
+                "serious accidents continued to occur in lifting and hoisting operations, and it is clear that more",
+                "effort is required to eliminate accidents from this activity. The first phase of this renewed effort",
+                "was to revise the existing document to consider the required competence of people involved in all",
+                "phases of lift planning and execution, new technologies, new processes, and feedback that IOGP had",
+                "received from its Member Companies.",
+                "This recommended practice applies equally to onshore and offshore lifting and hoisting operations,",
+                "including associated transport and handling. This Report’s recommendations are relevant",
+                "throughout the entire lifecycle of an oil and gas operation, and can be applied to all offshore and",
+                "onshore mechanical lifting and hoisting activities in the exploration and production industry, with the",
+                "exception of:",
+                "• Drilling crown block, travelling block, and top drive operations",
+                "• Goods and personnel elevators",
+                "• Ship anchor handling, marine towing, and routine ship operations not directly associated with",
+                "Upstream activities (e.g., ship maintenance)",
+                "• Tree cutting and associated movement of lumber",
+                "• Mining and earth moving",
+                "• Helicopter lifting operations",
+                "• Fall protection and rope access equipment",
+                "• Manual handling",
+                "• Jacking",
+                "• Diving operations",
+                "• Vehicle maintenance lifts",
+                "• Piling machines",
+                "IOGP strongly recommends that all companies conducting lifting activities have a management",
+                "system that includes specific procedures based on a full assessment of the risks and control",
+                "measures required. Further guidance on the development and implementation of such systems can",
+                "be found in IOGP Report 510 - Operating Management System Framework.",
+                "IOGP recommends that organizations performing marine lifting operations refer to the International",
+                "Marine Contractors Association (IMCA) Guidelines for Lifting Operations as well. This IMCA",
+                "guideline provides detailed technical and health and safety information on all matters pertaining to",
+                "marine and subsea lifting and hoisting operations, much of which can equally be applied in other",
+                "situations.",
+                "The IOGP Life-Saving Rules and the supporting Start-Work Checks are consistent with the",
+                "recommendations in this report. For more on the Rules, see IOGP Report 459 – Life-Saving Rules."
+            ],
+            "sections": [],
+            "images": [
+                {
+                    "id": "imgsnap_7_0",
+                    "page": 7,
+                    "index": 0,
+                    "filename": "snapshot_p7_0.png",
+                    "filepath": "extracted_assets\\images\\snapshot_p7_0.png",
+                    "url": "/assets/images/snapshot_p7_0.png",
+                    "width": 1191,
+                    "height": 455,
+                    "hash": null,
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "Introduction"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Safe Mechanical Lifting and the other Life-Saving Rules",
+                    "description": "Snapshot de la page 7 (zone)"
+                },
+                {
+                    "id": "imgsnap_7_1",
+                    "page": 7,
+                    "index": 1,
+                    "filename": "snapshot_p7_1.png",
+                    "filepath": "extracted_assets\\images\\snapshot_p7_1.png",
+                    "url": "/assets/images/snapshot_p7_1.png",
+                    "width": 1191,
+                    "height": 712,
+                    "hash": null,
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "Introduction"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Mechanical Lifting Start-Work Check",
+                    "description": "Snapshot de la page 7 (zone)"
+                }
+            ],
+            "tables": [
+                {
+                    "id": "table_7_0",
+                    "page": 7,
+                    "index": 0,
+                    "filename": "table_p7_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p7_1.txt",
+                    "url": "/assets/tables/table_p7_1.txt",
+                    "rows": 5,
+                    "columns": 6,
+                    "title": "Tableau 1",
+                    "content": [
+                        " | Obtain authorisation   before overriding   or disabling safety   controls • I understand and use safety- critical equipment and procedures  which apply to my task • I obtain authorisation before:   – disabling or overriding safety  equipment   – deviating from procedures  – crossing a barrier | Obtain authorisation  before entering a  confined space • I confirm energy  sources are isolated • I confirm the atmosphere has been  tested and is monitored • I check and use my breathing  apparatus when required • I confirm there is an attendant  standing by  • I confirm a rescue plan is in place • I obtain authorisation to enter | Follow safe driving  rules • I always wear a  seatbelt • I do not exceed the speed limit,  and reduce my speed for road  conditions • I do not use phones or operate  devices while driving • I am fit, rested and fully alert while  driving • I follow journey management  requirements  • I confirm the atmosphere has been  • I confirm a rescue plan is in place | Verify isolation and  zero energy before  work begins • I have identified all  energy sources • I confirm that hazardous energy  sources have been isolated,  locked, and tagged • I have checked there is zero   energy and tested for residual   or stored energy 0 | ",
+                        "Plan lifting  operations and  control the area • I confirm that the  equipment and load  have been inspected and   are fit for purpose  • I only operate equipment that I am  qualified to use • I establish and obey barriers and  exclusion zones • I never walk under a suspended  load |  |  |  |  | ",
+                        " | Hot Work | Line of Fire | Work Authorisation | Working at Height | ",
+                        " | Control flammables  and ignition sources • I identify and control  ignition sources  • Before starting any hot work:  – I confirm flammable material   has been removed or isolated  – I obtain authorisation  • Before starting hot work in a  hazardous area I confirm:  – a gas test has been completed   – gas will be monitored continually | Keep yourself and  others out of the   line of fire • I position myself to  avoid:   – moving objects   – vehicles  – pressure releases  – dropped objects • I establish and obey barriers and  exclusion zones • I take action to secure loose objects  and report potential dropped objects |  | Protect yourself  against a fall when  working at height • I inspect my fall  protection equipment  before use • I secure tools and work materials  to prevent dropped objects • I tie off 100% to approved anchor  points while outside a protected  area | ",
+                        " |  |  |  |  | "
+                    ],
+                    "cells": [
+                        [
+                            {
+                                "bbox": [
+                                    214.68740000000003,
+                                    176.74649999999997,
+                                    219.88139999999999,
+                                    264.534875
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    219.88139999999999,
+                                    176.74649999999997,
+                                    297.37037499999997,
+                                    264.534875
+                                ],
+                                "text": "Obtain authorisation   before overriding   or disabling safety   controls • I understand and use safety- critical equipment and procedures  which apply to my task • I obtain authorisation before:   – disabling or overriding safety  equipment   – deviating from procedures  – crossing a barrier",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    297.37037499999997,
+                                    176.74649999999997,
+                                    365.5843967387385,
+                                    264.534875
+                                ],
+                                "text": "Obtain authorisation  before entering a  confined space • I confirm energy  sources are isolated • I confirm the atmosphere has been  tested and is monitored • I check and use my breathing  apparatus when required • I confirm there is an attendant  standing by  • I confirm a rescue plan is in place • I obtain authorisation to enter",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    365.5843967387385,
+                                    176.74649999999997,
+                                    459.04966666666655,
+                                    264.534875
+                                ],
+                                "text": "Follow safe driving  rules • I always wear a  seatbelt • I do not exceed the speed limit,  and reduce my speed for road  conditions • I do not use phones or operate  devices while driving • I am fit, rested and fully alert while  driving • I follow journey management  requirements  • I confirm the atmosphere has been  • I confirm a rescue plan is in place",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    459.04966666666655,
+                                    176.74649999999997,
+                                    538.4385,
+                                    264.534875
+                                ],
+                                "text": "Verify isolation and  zero energy before  work begins • I have identified all  energy sources • I confirm that hazardous energy  sources have been isolated,  locked, and tagged • I have checked there is zero   energy and tested for residual   or stored energy 0",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    56.77393333333333,
+                                    193.49415915999995,
+                                    214.68740000000003,
+                                    362.77099999999996
+                                ],
+                                "text": "Plan lifting  operations and  control the area • I confirm that the  equipment and load  have been inspected and   are fit for purpose  • I only operate equipment that I am  qualified to use • I establish and obey barriers and  exclusion zones • I never walk under a suspended  load",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    214.68740000000003,
+                                    264.534875,
+                                    219.88139999999999,
+                                    276.39450000000005
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    219.88139999999999,
+                                    264.534875,
+                                    297.37037499999997,
+                                    276.39450000000005
+                                ],
+                                "text": "Hot Work",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    297.37037499999997,
+                                    264.534875,
+                                    365.5843967387385,
+                                    276.39450000000005
+                                ],
+                                "text": "Line of Fire",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    365.5843967387385,
+                                    264.534875,
+                                    459.04966666666655,
+                                    276.39450000000005
+                                ],
+                                "text": "Work Authorisation",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    459.04966666666655,
+                                    264.534875,
+                                    538.4385,
+                                    276.39450000000005
+                                ],
+                                "text": "Working at Height",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    214.68740000000003,
+                                    276.39450000000005,
+                                    219.88139999999999,
+                                    362.77099999999996
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    219.88139999999999,
+                                    276.39450000000005,
+                                    297.37037499999997,
+                                    362.77099999999996
+                                ],
+                                "text": "Control flammables  and ignition sources • I identify and control  ignition sources  • Before starting any hot work:  – I confirm flammable material   has been removed or isolated  – I obtain authorisation  • Before starting hot work in a  hazardous area I confirm:  – a gas test has been completed   – gas will be monitored continually",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    297.37037499999997,
+                                    276.39450000000005,
+                                    365.5843967387385,
+                                    362.77099999999996
+                                ],
+                                "text": "Keep yourself and  others out of the   line of fire • I position myself to  avoid:   – moving objects   – vehicles  – pressure releases  – dropped objects • I establish and obey barriers and  exclusion zones • I take action to secure loose objects  and report potential dropped objects",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            "",
+                            {
+                                "bbox": [
+                                    459.04966666666655,
+                                    276.39450000000005,
+                                    538.4385,
+                                    362.77099999999996
+                                ],
+                                "text": "Protect yourself  against a fall when  working at height • I inspect my fall  protection equipment  before use • I secure tools and work materials  to prevent dropped objects • I tie off 100% to approved anchor  points while outside a protected  area",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "columns_content": [
+                        "Plan lifting  operations and  control the area • I confirm that the  equipment and load  have been inspected and   are fit for purpose  • I only operate equipment that I am  qualified to use • I establish and obey barriers and  exclusion zones • I never walk under a suspended  load",
+                        "Obtain authorisation   before overriding   or disabling safety   controls • I understand and use safety- critical equipment and procedures  which apply to my task • I obtain authorisation before:   – disabling or overriding safety  equipment   – deviating from procedures  – crossing a barrier \nHot Work \nControl flammables  and ignition sources • I identify and control  ignition sources  • Before starting any hot work:  – I confirm flammable material   has been removed or isolated  – I obtain authorisation  • Before starting hot work in a  hazardous area I confirm:  – a gas test has been completed   – gas will be monitored continually",
+                        "Obtain authorisation  before entering a  confined space • I confirm energy  sources are isolated • I confirm the atmosphere has been  tested and is monitored • I check and use my breathing  apparatus when required • I confirm there is an attendant  standing by  • I confirm a rescue plan is in place • I obtain authorisation to enter \nLine of Fire \nKeep yourself and  others out of the   line of fire • I position myself to  avoid:   – moving objects   – vehicles  – pressure releases  – dropped objects • I establish and obey barriers and  exclusion zones • I take action to secure loose objects  and report potential dropped objects",
+                        "Follow safe driving  rules • I always wear a  seatbelt • I do not exceed the speed limit,  and reduce my speed for road  conditions • I do not use phones or operate  devices while driving • I am fit, rested and fully alert while  driving • I follow journey management  requirements  • I confirm the atmosphere has been  • I confirm a rescue plan is in place \nWork Authorisation",
+                        "Verify isolation and  zero energy before  work begins • I have identified all  energy sources • I confirm that hazardous energy  sources have been isolated,  locked, and tagged • I have checked there is zero   energy and tested for residual   or stored energy 0 \nWorking at Height \nProtect yourself  against a fall when  working at height • I inspect my fall  protection equipment  before use • I secure tools and work materials  to prevent dropped objects • I tie off 100% to approved anchor  points while outside a protected  area",
+                        ""
+                    ]
+                },
+                {
+                    "id": "table_7_1",
+                    "page": 7,
+                    "index": 1,
+                    "filename": "table_p7_2.txt",
+                    "filepath": "extracted_assets\\tables\\table_p7_2.txt",
+                    "url": "/assets/tables/table_p7_2.txt",
+                    "rows": 15,
+                    "columns": 7,
+                    "title": "Tableau 2",
+                    "content": [
+                        " |  |  |  |  |  | ",
+                        "Confirm each control/ safeguard below before  starting work Guidance for confirming each control/safeguard | Guidance for confirming each control/safeguard |  |  | Person(s)  Performing  Work | Start-Work  Verifier | ",
+                        "I HAVE CONFIRMED: |  |  |  |  |  | ",
+                        "1 The lift has been planned 2 The hazards are identified  and controlled • The lift method, equipment, and number of people required has been assessed and determined • When required, an approved lift plan or procedure is in place and has been evaluated by a competent person • The lift has been assessed for: • The lifting equipment’s current capacity and condition has been assessed • Equipment operator and lifting crew have discussed the written lift plan prior to lifting • Complete a task risk assessment specific to the scope of work • Discuss hazards with the work team prior to the start of work • Identify overhead hazards and/or other obstructions (e.g., overhead power lines), making sure to check: | • The lift method, equipment, and number of people required has been assessed and determined • When required, an approved lift plan or procedure is in place and has been evaluated by a competent person • The lift has been assessed for:  - load weight  - load size  - center of gravity (e.g., lifting points)  • The lifting equipment’s current capacity and condition has been assessed • Equipment operator and lifting crew have discussed the written lift plan prior to lifting • Complete a task risk assessment specific to the scope of work • Discuss hazards with the work team prior to the start of work • Identify overhead hazards and/or other obstructions (e.g., overhead power lines), making sure to check:   - load path |  |  |  |  | ",
+                        "• Check for simultaneous operations that may introduce any additional hazards • Discuss stop work considerations if work situation changes including change of weather Note | - load path   - swing radius  - overhead hazards  - pickup/lay-down zones • Check for simultaneous operations that may introduce any additional hazards • Discuss stop work considerations if work situation changes including change of weather Note : Consider how to apply “hands-free lifting” (e.g., use of push poles and/or taglines) |  |  |  |  | ",
+                        "3 Workers involved with the  lift are qualified to perform  their task • Lifting equipment operator and lifting crew are qualified to perform their task  Note requirements | • Lifting equipment operator and lifting crew are qualified to perform their task  Note : To be “qualified” may require certification and/or assessment to meet company or applicable legal  requirements |  |  |  |  | ",
+                        "4 The lifting equipment is  stable and potential for  unplanned movement has  been assessed • Lifting appliance is level and/or placed on stable ground • Matting has been assessed for stability and is level for the lifting equipment • Outriggers are deployed • Loads have been assessed for stability, taking into account:  • Equipment is operated per OEM requirements (e.g., weather, sea state and temperature) | • Lifting appliance is level and/or placed on stable ground • Matting has been assessed for stability and is level for the lifting equipment • Outriggers are deployed • Loads have been assessed for stability, taking into account:   - load securing  - workplace conditions  - travel path  - equipment capacity • Equipment is operated per OEM requirements (e.g., weather, sea state and temperature) |  |  |  |  | ",
+                        "5 The lifting and rigging  equipment is:     • certified  • inspected  • rated for the lift • Pre-use crane inspection has been completed • Safety and monitoring devices are in place and functioning • Manufacturer’s load chart is available • The rigging equipment has been inspected prior to lift  • The rigging equipment is rated for the lift Note alternative lifting equipment that is rated for the load | • Pre-use crane inspection has been completed • Safety and monitoring devices are in place and functioning • Manufacturer’s load chart is available • The rigging equipment has been inspected prior to lift  • The rigging equipment is rated for the lift Note : If load chart does not exist, assume equipment is not rated for the lift;  stop  work and identify  alternative lifting equipment that is rated for the load |  |  |  |  | ",
+                        "6 A communication plan  and responsibilities  are  agreed to by the lift crew • Communication method(s) (e.g., hand signals, radio) have been agreed to and tested • Equipment operator and lifting crew have discussed the emergency response, including what emergency  • The person in charge of the lift has been identified as per the lift plan or procedure • The members of the lift crew have agreed to their individual roles and responsibilities for the lift • The signaler for the lift has been identified (banksman/flagman/dogman/spotter) | • Communication method(s) (e.g., hand signals, radio) have been agreed to and tested • Equipment operator and lifting crew have discussed the emergency response, including what emergency  stop signals be used • The person in charge of the lift has been identified as per the lift plan or procedure • The members of the lift crew have agreed to their individual roles and responsibilities for the lift • The signaler for the lift has been identified (banksman/flagman/dogman/spotter) |  |  |  |  | ",
+                        "7 The load has been  inspected prior to lift • Every load has been inspected for integrity and stability (e.g., center of gravity) • Loose objects have been secured or removed prior to lift • Loose and small objects are well packaged or placed in lifting basket | • Every load has been inspected for integrity and stability (e.g., center of gravity)  - The load and its packaging can withstand the forces/motion caused by the lift • Loose objects have been secured or removed prior to lift • Loose and small objects are well packaged or placed in lifting basket |  |  |  |  | ",
+                        "8 Barriers and exclusion  zones are in place • Exclusion zones have been identified and controls are in place to protect people from line of fire hazards, including: • Access to exclusion zones is controlled (e.g., attendant or physical barriers) • Escape routes are unobstructed and known by the work crew | • Exclusion zones have been identified and controls are in place to protect people from line of fire hazards, including:  - working under suspended loads  - moving objects   - dropped objects • Access to exclusion zones is controlled (e.g., attendant or physical barriers) • Escape routes are unobstructed and known by the work crew |  |  |  |  | ",
+                        "Confirm these controls/safeguards are in place and verified prior to starting work. Stop and seek help if anything changes. |  |  |  |  |  | ",
+                        "Printed Name & Role |  | Signature | Date |  |  | ",
+                        " |  |  |  |  |  | ",
+                        " |  |  |  |  |  | "
+                    ],
+                    "cells": [
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    488.596,
+                                    119.49932067924526,
+                                    492.1329999999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#7B2578",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    488.596,
+                                    234.91994736842108,
+                                    492.1329999999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#7B2578",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    488.596,
+                                    258.3053333333333,
+                                    492.1329999999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#7B2578",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    488.596,
+                                    280.7181750000001,
+                                    492.1329999999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#7B2578",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    492.1329999999999,
+                                    119.49932067924526,
+                                    506.84599999999995
+                                ],
+                                "text": "Confirm each control/ safeguard below before  starting work Guidance for confirming each control/safeguard",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#EB7F24",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    492.1329999999999,
+                                    234.91994736842108,
+                                    506.84599999999995
+                                ],
+                                "text": "Guidance for confirming each control/safeguard",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#EB7F24",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    492.1329999999999,
+                                    258.3053333333333,
+                                    506.84599999999995
+                                ],
+                                "text": "Person(s)  Performing  Work",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#62676D",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    492.1329999999999,
+                                    280.7181750000001,
+                                    506.84599999999995
+                                ],
+                                "text": "Start-Work  Verifier",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#62676D",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    506.84599999999995,
+                                    280.7181750000001,
+                                    512.5879999999999
+                                ],
+                                "text": "I HAVE CONFIRMED:",
+                                "text_color": "#010101",
+                                "background_color": "#EB7F24",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    512.5879999999999,
+                                    119.49932067924526,
+                                    553.957101625
+                                ],
+                                "text": "1 The lift has been planned 2 The hazards are identified  and controlled • The lift method, equipment, and number of people required has been assessed and determined • When required, an approved lift plan or procedure is in place and has been evaluated by a competent person • The lift has been assessed for: • The lifting equipment’s current capacity and condition has been assessed • Equipment operator and lifting crew have discussed the written lift plan prior to lifting • Complete a task risk assessment specific to the scope of work • Discuss hazards with the work team prior to the start of work • Identify overhead hazards and/or other obstructions (e.g., overhead power lines), making sure to check:",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    512.5879999999999,
+                                    234.91994736842108,
+                                    553.957101625
+                                ],
+                                "text": "• The lift method, equipment, and number of people required has been assessed and determined • When required, an approved lift plan or procedure is in place and has been evaluated by a competent person • The lift has been assessed for:  - load weight  - load size  - center of gravity (e.g., lifting points)  • The lifting equipment’s current capacity and condition has been assessed • Equipment operator and lifting crew have discussed the written lift plan prior to lifting • Complete a task risk assessment specific to the scope of work • Discuss hazards with the work team prior to the start of work • Identify overhead hazards and/or other obstructions (e.g., overhead power lines), making sure to check:   - load path",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    512.5879999999999,
+                                    258.3053333333333,
+                                    553.957101625
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    512.5879999999999,
+                                    280.7181750000001,
+                                    553.957101625
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    553.957101625,
+                                    119.49932067924526,
+                                    574.8270000000001
+                                ],
+                                "text": "• Check for simultaneous operations that may introduce any additional hazards • Discuss stop work considerations if work situation changes including change of weather Note",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    553.957101625,
+                                    234.91994736842108,
+                                    574.8270000000001
+                                ],
+                                "text": "- load path   - swing radius  - overhead hazards  - pickup/lay-down zones • Check for simultaneous operations that may introduce any additional hazards • Discuss stop work considerations if work situation changes including change of weather Note : Consider how to apply “hands-free lifting” (e.g., use of push poles and/or taglines)",
+                                "text_color": "#010101",
+                                "background_color": "#231F20",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    553.957101625,
+                                    258.3053333333333,
+                                    574.8270000000001
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    553.957101625,
+                                    280.7181750000001,
+                                    574.8270000000001
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    574.8270000000001,
+                                    119.49932067924526,
+                                    587.8969999999999
+                                ],
+                                "text": "3 Workers involved with the  lift are qualified to perform  their task • Lifting equipment operator and lifting crew are qualified to perform their task  Note requirements",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    574.8270000000001,
+                                    234.91994736842108,
+                                    587.8969999999999
+                                ],
+                                "text": "• Lifting equipment operator and lifting crew are qualified to perform their task  Note : To be “qualified” may require certification and/or assessment to meet company or applicable legal  requirements",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    574.8270000000001,
+                                    258.3053333333333,
+                                    587.8969999999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    574.8270000000001,
+                                    280.7181750000001,
+                                    587.8969999999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    587.8969999999999,
+                                    119.49932067924526,
+                                    618.738
+                                ],
+                                "text": "4 The lifting equipment is  stable and potential for  unplanned movement has  been assessed • Lifting appliance is level and/or placed on stable ground • Matting has been assessed for stability and is level for the lifting equipment • Outriggers are deployed • Loads have been assessed for stability, taking into account:  • Equipment is operated per OEM requirements (e.g., weather, sea state and temperature)",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    587.8969999999999,
+                                    234.91994736842108,
+                                    618.738
+                                ],
+                                "text": "• Lifting appliance is level and/or placed on stable ground • Matting has been assessed for stability and is level for the lifting equipment • Outriggers are deployed • Loads have been assessed for stability, taking into account:   - load securing  - workplace conditions  - travel path  - equipment capacity • Equipment is operated per OEM requirements (e.g., weather, sea state and temperature)",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    587.8969999999999,
+                                    258.3053333333333,
+                                    618.738
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    587.8969999999999,
+                                    280.7181750000001,
+                                    618.738
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    618.738,
+                                    119.49932067924526,
+                                    643.851
+                                ],
+                                "text": "5 The lifting and rigging  equipment is:     • certified  • inspected  • rated for the lift • Pre-use crane inspection has been completed • Safety and monitoring devices are in place and functioning • Manufacturer’s load chart is available • The rigging equipment has been inspected prior to lift  • The rigging equipment is rated for the lift Note alternative lifting equipment that is rated for the load",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    618.738,
+                                    234.91994736842108,
+                                    643.851
+                                ],
+                                "text": "• Pre-use crane inspection has been completed • Safety and monitoring devices are in place and functioning • Manufacturer’s load chart is available • The rigging equipment has been inspected prior to lift  • The rigging equipment is rated for the lift Note : If load chart does not exist, assume equipment is not rated for the lift;  stop  work and identify  alternative lifting equipment that is rated for the load",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    618.738,
+                                    258.3053333333333,
+                                    643.851
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    618.738,
+                                    280.7181750000001,
+                                    643.851
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    643.851,
+                                    119.49932067924526,
+                                    665.264
+                                ],
+                                "text": "6 A communication plan  and responsibilities  are  agreed to by the lift crew • Communication method(s) (e.g., hand signals, radio) have been agreed to and tested • Equipment operator and lifting crew have discussed the emergency response, including what emergency  • The person in charge of the lift has been identified as per the lift plan or procedure • The members of the lift crew have agreed to their individual roles and responsibilities for the lift • The signaler for the lift has been identified (banksman/flagman/dogman/spotter)",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    643.851,
+                                    234.91994736842108,
+                                    665.264
+                                ],
+                                "text": "• Communication method(s) (e.g., hand signals, radio) have been agreed to and tested • Equipment operator and lifting crew have discussed the emergency response, including what emergency  stop signals be used • The person in charge of the lift has been identified as per the lift plan or procedure • The members of the lift crew have agreed to their individual roles and responsibilities for the lift • The signaler for the lift has been identified (banksman/flagman/dogman/spotter)",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    643.851,
+                                    258.3053333333333,
+                                    665.264
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    643.851,
+                                    280.7181750000001,
+                                    665.264
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    665.264,
+                                    119.49932067924526,
+                                    680.391
+                                ],
+                                "text": "7 The load has been  inspected prior to lift • Every load has been inspected for integrity and stability (e.g., center of gravity) • Loose objects have been secured or removed prior to lift • Loose and small objects are well packaged or placed in lifting basket",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    665.264,
+                                    234.91994736842108,
+                                    680.391
+                                ],
+                                "text": "• Every load has been inspected for integrity and stability (e.g., center of gravity)  - The load and its packaging can withstand the forces/motion caused by the lift • Loose objects have been secured or removed prior to lift • Loose and small objects are well packaged or placed in lifting basket",
+                                "text_color": "#010101",
+                                "background_color": "#000001",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    665.264,
+                                    258.3053333333333,
+                                    680.391
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    665.264,
+                                    280.7181750000001,
+                                    680.391
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    680.391,
+                                    119.49932067924526,
+                                    701.8032499999999
+                                ],
+                                "text": "8 Barriers and exclusion  zones are in place • Exclusion zones have been identified and controls are in place to protect people from line of fire hazards, including: • Access to exclusion zones is controlled (e.g., attendant or physical barriers) • Escape routes are unobstructed and known by the work crew",
+                                "text_color": "#010101",
+                                "background_color": "#7B2578",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    119.49932067924526,
+                                    680.391,
+                                    234.91994736842108,
+                                    701.8032499999999
+                                ],
+                                "text": "• Exclusion zones have been identified and controls are in place to protect people from line of fire hazards, including:  - working under suspended loads  - moving objects   - dropped objects • Access to exclusion zones is controlled (e.g., attendant or physical barriers) • Escape routes are unobstructed and known by the work crew",
+                                "text_color": "#010101",
+                                "background_color": "#7B2578",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            {
+                                "bbox": [
+                                    234.91994736842108,
+                                    680.391,
+                                    258.3053333333333,
+                                    701.8032499999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    258.3053333333333,
+                                    680.391,
+                                    280.7181750000001,
+                                    701.8032499999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    67.86603333333333,
+                                    701.8032499999999,
+                                    280.7181750000001,
+                                    715.1149285714283
+                                ],
+                                "text": "Confirm these controls/safeguards are in place and verified prior to starting work. Stop and seek help if anything changes.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    100.173,
+                                    715.1149285714283,
+                                    160.626,
+                                    722.3876363636363
+                                ],
+                                "text": "Printed Name & Role",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#62676D",
+                                "icons": []
+                            },
+                            "",
+                            {
+                                "bbox": [
+                                    160.626,
+                                    715.1149285714283,
+                                    219.88139999999999,
+                                    722.3876363636363
+                                ],
+                                "text": "Signature",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#62676D",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    219.88139999999999,
+                                    715.1149285714283,
+                                    280.7181750000001,
+                                    722.3876363636363
+                                ],
+                                "text": "Date",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#62676D",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    100.173,
+                                    722.3876363636363,
+                                    160.626,
+                                    732.7172222222222
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            "",
+                            {
+                                "bbox": [
+                                    160.626,
+                                    722.3876363636363,
+                                    219.88139999999999,
+                                    732.7172222222222
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    219.88139999999999,
+                                    722.3876363636363,
+                                    280.7181750000001,
+                                    732.7172222222222
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#EAEAEA",
+                                "icons": []
+                            },
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "columns_content": [
+                        "Confirm each control/ safeguard below before  starting work Guidance for confirming each control/safeguard \nI HAVE CONFIRMED: \n1 The lift has been planned 2 The hazards are identified  and controlled • The lift method, equipment, and number of people required has been assessed and determined • When required, an approved lift plan or procedure is in place and has been evaluated by a competent person • The lift has been assessed for: • The lifting equipment’s current capacity and condition has been assessed • Equipment operator and lifting crew have discussed the written lift plan prior to lifting • Complete a task risk assessment specific to the scope of work • Discuss hazards with the work team prior to the start of work • Identify overhead hazards and/or other obstructions (e.g., overhead power lines), making sure to check: \n• Check for simultaneous operations that may introduce any additional hazards • Discuss stop work considerations if work situation changes including change of weather Note \n3 Workers involved with the  lift are qualified to perform  their task • Lifting equipment operator and lifting crew are qualified to perform their task  Note requirements \n4 The lifting equipment is  stable and potential for  unplanned movement has  been assessed • Lifting appliance is level and/or placed on stable ground • Matting has been assessed for stability and is level for the lifting equipment • Outriggers are deployed • Loads have been assessed for stability, taking into account:  • Equipment is operated per OEM requirements (e.g., weather, sea state and temperature) \n5 The lifting and rigging  equipment is:     • certified  • inspected  • rated for the lift • Pre-use crane inspection has been completed • Safety and monitoring devices are in place and functioning • Manufacturer’s load chart is available • The rigging equipment has been inspected prior to lift  • The rigging equipment is rated for the lift Note alternative lifting equipment that is rated for the load \n6 A communication plan  and responsibilities  are  agreed to by the lift crew • Communication method(s) (e.g., hand signals, radio) have been agreed to and tested • Equipment operator and lifting crew have discussed the emergency response, including what emergency  • The person in charge of the lift has been identified as per the lift plan or procedure • The members of the lift crew have agreed to their individual roles and responsibilities for the lift • The signaler for the lift has been identified (banksman/flagman/dogman/spotter) \n7 The load has been  inspected prior to lift • Every load has been inspected for integrity and stability (e.g., center of gravity) • Loose objects have been secured or removed prior to lift • Loose and small objects are well packaged or placed in lifting basket \n8 Barriers and exclusion  zones are in place • Exclusion zones have been identified and controls are in place to protect people from line of fire hazards, including: • Access to exclusion zones is controlled (e.g., attendant or physical barriers) • Escape routes are unobstructed and known by the work crew \nConfirm these controls/safeguards are in place and verified prior to starting work. Stop and seek help if anything changes. \nPrinted Name & Role",
+                        "Guidance for confirming each control/safeguard \n• The lift method, equipment, and number of people required has been assessed and determined • When required, an approved lift plan or procedure is in place and has been evaluated by a competent person • The lift has been assessed for:  - load weight  - load size  - center of gravity (e.g., lifting points)  • The lifting equipment’s current capacity and condition has been assessed • Equipment operator and lifting crew have discussed the written lift plan prior to lifting • Complete a task risk assessment specific to the scope of work • Discuss hazards with the work team prior to the start of work • Identify overhead hazards and/or other obstructions (e.g., overhead power lines), making sure to check:   - load path \n- load path   - swing radius  - overhead hazards  - pickup/lay-down zones • Check for simultaneous operations that may introduce any additional hazards • Discuss stop work considerations if work situation changes including change of weather Note : Consider how to apply “hands-free lifting” (e.g., use of push poles and/or taglines) \n• Lifting equipment operator and lifting crew are qualified to perform their task  Note : To be “qualified” may require certification and/or assessment to meet company or applicable legal  requirements \n• Lifting appliance is level and/or placed on stable ground • Matting has been assessed for stability and is level for the lifting equipment • Outriggers are deployed • Loads have been assessed for stability, taking into account:   - load securing  - workplace conditions  - travel path  - equipment capacity • Equipment is operated per OEM requirements (e.g., weather, sea state and temperature) \n• Pre-use crane inspection has been completed • Safety and monitoring devices are in place and functioning • Manufacturer’s load chart is available • The rigging equipment has been inspected prior to lift  • The rigging equipment is rated for the lift Note : If load chart does not exist, assume equipment is not rated for the lift;  stop  work and identify  alternative lifting equipment that is rated for the load \n• Communication method(s) (e.g., hand signals, radio) have been agreed to and tested • Equipment operator and lifting crew have discussed the emergency response, including what emergency  stop signals be used • The person in charge of the lift has been identified as per the lift plan or procedure • The members of the lift crew have agreed to their individual roles and responsibilities for the lift • The signaler for the lift has been identified (banksman/flagman/dogman/spotter) \n• Every load has been inspected for integrity and stability (e.g., center of gravity)  - The load and its packaging can withstand the forces/motion caused by the lift • Loose objects have been secured or removed prior to lift • Loose and small objects are well packaged or placed in lifting basket \n• Exclusion zones have been identified and controls are in place to protect people from line of fire hazards, including:  - working under suspended loads  - moving objects   - dropped objects • Access to exclusion zones is controlled (e.g., attendant or physical barriers) • Escape routes are unobstructed and known by the work crew",
+                        "Signature",
+                        "Date",
+                        "Person(s)  Performing  Work",
+                        "Start-Work  Verifier",
+                        ""
+                    ]
+                },
+                {
+                    "id": "table_8_0",
+                    "page": 8,
+                    "index": 0,
+                    "filename": "table_p8_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p8_1.txt",
+                    "url": "/assets/tables/table_p8_1.txt",
+                    "rows": 5,
+                    "columns": 3,
+                    "title": "Ten principles for lifting",
+                    "content": [
+                        " | All persons involved in planning, performing, lifting and  maintaining lifting equipment are trained and assessed as  competent for their role. Competence is assured through  relevant experience, initial and refresher training, and  periodic assessments. | ",
+                        " | One person in the lift crew is designated as the Person In  Charge of the lifting operation. All personnel involved in the  lifting operation have their individual responsibilities clearly  defined and communicated prior to commencement of the  lifting operation. | ",
+                        " | A risk assessment is required for every lift, regardless of  category. A lift plan is required for every lift, with the level  of detail required defined by the category of lift. A Permit  to Work may also be required subject to lift complexity and  company policy.  NOTE: Category 1 lifts may be addressed through a generic lift  plan, while Category 2 and 3 lifts require a specific lift plan. All  Category 3 lifts require a Permit To Work. | ",
+                        " | An approved competent person (Lifting Technical Authority,  Advisor, Engineer or Subject Matter Expert) is engaged in  assuring that all lifting operations are correctly planned   and managed. | ",
+                        " |  | "
+                    ],
+                    "cells": [
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    286.9196666666666,
+                                    213.0983333333333,
+                                    383.298
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    286.9196666666666,
+                                    539.0825000000001,
+                                    383.298
+                                ],
+                                "text": "All persons involved in planning, performing, lifting and  maintaining lifting equipment are trained and assessed as  competent for their role. Competence is assured through  relevant experience, initial and refresher training, and  periodic assessments.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    383.298,
+                                    213.0983333333333,
+                                    481.09299999999996
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    383.298,
+                                    539.0825000000001,
+                                    481.09299999999996
+                                ],
+                                "text": "One person in the lift crew is designated as the Person In  Charge of the lifting operation. All personnel involved in the  lifting operation have their individual responsibilities clearly  defined and communicated prior to commencement of the  lifting operation.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    481.09299999999996,
+                                    213.0983333333333,
+                                    624.3469999999999
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    481.09299999999996,
+                                    539.0825000000001,
+                                    624.3469999999999
+                                ],
+                                "text": "A risk assessment is required for every lift, regardless of  category. A lift plan is required for every lift, with the level  of detail required defined by the category of lift. A Permit  to Work may also be required subject to lift complexity and  company policy.  NOTE: Category 1 lifts may be addressed through a generic lift  plan, while Category 2 and 3 lifts require a specific lift plan. All  Category 3 lifts require a Permit To Work.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    624.3469999999999,
+                                    213.0983333333333,
+                                    709.3865
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    624.3469999999999,
+                                    539.0825000000001,
+                                    709.3865
+                                ],
+                                "text": "An approved competent person (Lifting Technical Authority,  Advisor, Engineer or Subject Matter Expert) is engaged in  assuring that all lifting operations are correctly planned   and managed.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "columns_content": [
+                        "",
+                        "All persons involved in planning, performing, lifting and  maintaining lifting equipment are trained and assessed as  competent for their role. Competence is assured through  relevant experience, initial and refresher training, and  periodic assessments. \nOne person in the lift crew is designated as the Person In  Charge of the lifting operation. All personnel involved in the  lifting operation have their individual responsibilities clearly  defined and communicated prior to commencement of the  lifting operation. \nA risk assessment is required for every lift, regardless of  category. A lift plan is required for every lift, with the level  of detail required defined by the category of lift. A Permit  to Work may also be required subject to lift complexity and  company policy.  NOTE: Category 1 lifts may be addressed through a generic lift  plan, while Category 2 and 3 lifts require a specific lift plan. All  Category 3 lifts require a Permit To Work. \nAn approved competent person (Lifting Technical Authority,  Advisor, Engineer or Subject Matter Expert) is engaged in  assuring that all lifting operations are correctly planned   and managed.",
+                        ""
+                    ]
+                },
+                {
+                    "id": "table_9_0",
+                    "page": 9,
+                    "index": 0,
+                    "filename": "table_p9_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p9_1.txt",
+                    "url": "/assets/tables/table_p9_1.txt",
+                    "rows": 5,
+                    "columns": 4,
+                    "title": "Tableau 4",
+                    "content": [
+                        " |  | Lifting Equipment is thoroughly examined on a regular basis  by an inspector who is sufficiently independent2 from the  on-site lifting crew, and who may be external or an in-house  appointee. The examination refers to an acknowledged  Standard for scope, methodology and acceptance/rejection  criteria. All safety and monitoring devices installed on lifting  equipment are operational and not by-passed or disabled.  NOTE: Periods of inspections can be influenced by the   nature and robustness of use and application as well as the  environments of use. | ",
+                        " |  | All lifting equipment is visually inspected by a competent  person before and after use. Equipment integrity is  maintained and faulty equipment is removed from serviced  and tagged as such. Inspection and maintenance activities  are recorded in an equipment register. | ",
+                        " |  | Periodic audits and inspections are conducted by an   Approved Competent Person. | ",
+                        " |  | Any Lifting of personnel is classified to the category requiring  the highest level of controls (IOGP Category 3) and a rescue  plan is included as part of the Lift Plan. Any equipment used  for lifting personnel is certified for the specific activity and  used according to recognised international standards. | ",
+                        " |  |  | "
+                    ],
+                    "cells": [
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    280.51,
+                                    213.0983333333333,
+                                    451.7646666666667
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            "",
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    280.51,
+                                    539.0825000000001,
+                                    451.7646666666667
+                                ],
+                                "text": "Lifting Equipment is thoroughly examined on a regular basis  by an inspector who is sufficiently independent2 from the  on-site lifting crew, and who may be external or an in-house  appointee. The examination refers to an acknowledged  Standard for scope, methodology and acceptance/rejection  criteria. All safety and monitoring devices installed on lifting  equipment are operational and not by-passed or disabled.  NOTE: Periods of inspections can be influenced by the   nature and robustness of use and application as well as the  environments of use.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    451.7646666666667,
+                                    213.0983333333333,
+                                    544.515
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            "",
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    451.7646666666667,
+                                    539.0825000000001,
+                                    544.515
+                                ],
+                                "text": "All lifting equipment is visually inspected by a competent  person before and after use. Equipment integrity is  maintained and faulty equipment is removed from serviced  and tagged as such. Inspection and maintenance activities  are recorded in an equipment register.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    544.515,
+                                    177.91442872180434,
+                                    615.381
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    177.91442872180434,
+                                    544.515,
+                                    213.0983333333333,
+                                    615.381
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    544.515,
+                                    539.0825000000001,
+                                    615.381
+                                ],
+                                "text": "Periodic audits and inspections are conducted by an   Approved Competent Person.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            {
+                                "bbox": [
+                                    113.88599999999998,
+                                    615.381,
+                                    213.0983333333333,
+                                    708.1315
+                                ],
+                                "text": "",
+                                "text_color": null,
+                                "background_color": "#2163B0",
+                                "icons": []
+                            },
+                            "",
+                            {
+                                "bbox": [
+                                    213.0983333333333,
+                                    615.381,
+                                    539.0825000000001,
+                                    708.1315
+                                ],
+                                "text": "Any Lifting of personnel is classified to the category requiring  the highest level of controls (IOGP Category 3) and a rescue  plan is included as part of the Lift Plan. Any equipment used  for lifting personnel is certified for the specific activity and  used according to recognised international standards.",
+                                "text_color": "#FFFFFF",
+                                "background_color": "#FDEFE2",
+                                "icons": []
+                            },
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "columns_content": [
+                        "",
+                        "",
+                        "Lifting Equipment is thoroughly examined on a regular basis  by an inspector who is sufficiently independent2 from the  on-site lifting crew, and who may be external or an in-house  appointee. The examination refers to an acknowledged  Standard for scope, methodology and acceptance/rejection  criteria. All safety and monitoring devices installed on lifting  equipment are operational and not by-passed or disabled.  NOTE: Periods of inspections can be influenced by the   nature and robustness of use and application as well as the  environments of use. \nAll lifting equipment is visually inspected by a competent  person before and after use. Equipment integrity is  maintained and faulty equipment is removed from serviced  and tagged as such. Inspection and maintenance activities  are recorded in an equipment register. \nPeriodic audits and inspections are conducted by an   Approved Competent Person. \nAny Lifting of personnel is classified to the category requiring  the highest level of controls (IOGP Category 3) and a rescue  plan is included as part of the Lift Plan. Any equipment used  for lifting personnel is certified for the specific activity and  used according to recognised international standards.",
+                        ""
+                    ]
+                },
+                {
+                    "id": "table_10_0",
+                    "page": 10,
+                    "index": 0,
+                    "filename": "table_p10_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p10_1.txt",
+                    "url": "/assets/tables/table_p10_1.txt",
+                    "rows": 1,
+                    "columns": 3,
+                    "title": "provides an example of a simple methodology for categorizing a lift, alternatives",
+                    "content": [
+                        "Principle\n1 |  | All lifting operations are categorised by the Person\nin Charge to reflect the risk of the lift. This then\ndefines the required controlling documents and the\ncompetence of the people involved."
+                    ]
+                },
+                {
+                    "id": "table_10_1",
+                    "page": 10,
+                    "index": 1,
+                    "filename": "table_p10_2.txt",
+                    "filepath": "extracted_assets\\tables\\table_p10_2.txt",
+                    "url": "/assets/tables/table_p10_2.txt",
+                    "rows": 12,
+                    "columns": 3,
+                    "title": "Example methodology for categorizing a lift",
+                    "content": [
+                        "Companies can modify the specific criteria listed to reflect their operations and equipment. |  | ",
+                        "Answer the questions starting at the top and not jumping any. Your lift category matches the category of the\nfirst question you answer ‘yes’ to. |  | ",
+                        "CATEGORY 3 | Y | N",
+                        "Is the gross load weight over 90% of the certified load radius curve of the crane? |  | ",
+                        "Does the operation involve the lifting or lowering of personnel? |  | ",
+                        "Will the lift involve tandem lifting using powered lifting appliances? |  | ",
+                        "Could the lift be affected by any proximity hazards, i.e., restricted area, power line, confined space etc. |  | ",
+                        "Will the load be lifted over or in close proximity to live plant? |  | ",
+                        "Will the lift take more than one shift to complete? |  | ",
+                        "Will the lift plan require technical input or calculations from a technical expert (i.e., load distribution in rigging\nand appliances)? |  | ",
+                        "Will the load be transferred from one powered lifting appliance to another? |  | ",
+                        "Will the load be lifted from one marine vessel to another? |  | "
+                    ]
+                },
+                {
+                    "id": "table_11_0",
+                    "page": 11,
+                    "index": 0,
+                    "filename": "table_p11_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p11_1.txt",
+                    "url": "/assets/tables/table_p11_1.txt",
+                    "rows": 26,
+                    "columns": 3,
+                    "title": "categorization questions), and therefore have a specific lift plan approved by the Site",
+                    "content": [
+                        "During the lift, will the crane operator’s visibility of the load be restricted/limited (i.e., ‘blind lift’)? |  | ",
+                        "Is the load to be rotated, up-ended/up-righted (roll-up, tailing or special lifting operations) or transferred from\none appliance to another during operation? |  | ",
+                        "Will the lift be subsea? |  | ",
+                        "Will the lift involve proof load testing of appliances or lifting equipment? |  | ",
+                        "If you’ve answered YES to ANY of the above, the lift is CATEGORY 3.\nIf you’ve answered NO to ALL of the above, check the next set of questions |  | ",
+                        "CATEGORY 2 | Y | N",
+                        "Is the gross load weight over 80% of the certified load radius curve of a mobile crane? |  | ",
+                        "Is the lift outside normal operating conditions for the equipment or the asset? |  | ",
+                        "Is the weight distribution uneven, or does it have the potential to shift? |  | ",
+                        "Will environmental conditions place restrictions on lifting operations? |  | ",
+                        "Is the load of an unusual shape? |  | ",
+                        "Is the weight of the load estimated (i.e., not known)? |  | ",
+                        "Does the load have any hazards such as sharp edges? |  | ",
+                        "Is the load subject to permanent deformation? |  | ",
+                        "Absence of designed and tested lifting points? |  | ",
+                        "Does the load have excessive dimension (limited clearance from crane structures, surroundings)? |  | ",
+                        "Is the operation taking place during SIMOPS or interfering with other concurrent activities? |  | ",
+                        "If you’ve answered YES to any of the above, the Lift is CATEGORY 2.\nIf you’ve answered NO to ALL of the above, the lift is likely Category 1. |  | ",
+                        "CATEGORY 1 | Y | N",
+                        "Are all these three conditions present? |  | ",
+                        "1. You have you answered “No” to all questions in Category 3 and Category 2 |  | ",
+                        "AND |  | ",
+                        "2. The personnel involved in the lift are trained, assessed as competent and authorised to perform their\nspecific role |  | ",
+                        "AND |  | ",
+                        "3. The lifting equipment and the load are simple to use and lift |  | ",
+                        "Only if ALL the 3 conditions for Category 1 are present, is the lift classified as CATEGORY 1. |  | "
+                    ]
+                },
+                {
+                    "id": "table_12_0",
+                    "page": 12,
+                    "index": 0,
+                    "filename": "table_p12_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p12_1.txt",
+                    "url": "/assets/tables/table_p12_1.txt",
+                    "rows": 6,
+                    "columns": 4,
+                    "title": "Example of documentation and control measures for each category of lift",
+                    "content": [
+                        "Type of measure | Category 3 | Category 2 | Category 1",
+                        " | Specific | Specific | Generic for the type of lift",
+                        " | Required | Might be required by\nprocedures or operating\ninstructions\n(e.g., required where\nSIMOPS involved) | Might be required by\nprocedures or operating\ninstructions",
+                        " | Specific | Specific | Generic for the type of lift",
+                        " | Required pre-lift | Required pre-lift | Recommended pre-shift",
+                        " | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nMan-riding (if relevant)\nWork at height\n(if relevant) | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant) | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant)"
+                    ]
+                },
+                {
+                    "id": "table_12_1",
+                    "page": 12,
+                    "index": 1,
+                    "filename": "table_p12_2.txt",
+                    "filepath": "extracted_assets\\tables\\table_p12_2.txt",
+                    "url": "/assets/tables/table_p12_2.txt",
+                    "rows": 7,
+                    "columns": 4,
+                    "title": "Example of personnel involved for lifts of different category",
+                    "content": [
+                        "Type of role | Category 3 | Category 2 | Category 1",
+                        " | ü | ü | ü",
+                        " | ü | ü | ü",
+                        " | ü | ü | As required by operating\ninstructions",
+                        " | ü | ü | As required by operating\ninstructions",
+                        " | ü\n(Site approval of lift plan) | ü\n(Site approval of lift plan) | ü\n(Site approval of lift plan)",
+                        " | ü\n(Technical approval of\nspecific lift plan) | If required by operating\ninstructions | ü*\n(Periodic review approval of\ngeneric lift plans)"
+                    ]
+                },
+                {
+                    "id": "table_typed_8_0",
+                    "page": 8,
+                    "index": 0,
+                    "filename": "typed_table_p8_0.txt",
+                    "filepath": "extracted_assets\\tables\\typed_table_p8_0.txt",
+                    "url": "/assets/tables/typed_table_p8_0.txt",
+                    "rows": 5,
+                    "columns": 3,
+                    "title": "Table p8-1",
+                    "content": [
+                        "!!! table\nPrinciple\n1 |  | All lifting operations are categorised by the Person in\nCharge to reflect the risk of the lift. This then defines the\nrequired controlling documents and the competence of the\npeople involved.",
+                        "Principle\n2 |  | All persons involved in planning, performing, lifting and\nmaintaining lifting equipment are trained and assessed as\ncompetent for their role. Competence is assured through\nrelevant experience, initial and refresher training, and\nperiodic assessments.",
+                        "Principle\n3 |  | One person in the lift crew is designated as the Person In\nCharge of the lifting operation. All personnel involved in the\nlifting operation have their individual responsibilities clearly\ndefined and communicated prior to commencement of the\nlifting operation.",
+                        "Principle\n4 |  | A risk assessment is required for every lift, regardless of\ncategory. A lift plan is required for every lift, with the level\nof detail required defined by the category of lift. A Permit\nto Work may also be required subject to lift complexity and\ncompany policy.\nNOTE: Category 1 lifts may be addressed through a generic lift\nplan, while Category 2 and 3 lifts require a specific lift plan. All\nCategory 3 lifts require a Permit To Work.",
+                        "Principle\n5 |  | An approved competent person (Lifting Technical Authority,\nAdvisor, Engineer or Subject Matter Expert) is engaged in\nassuring that all lifting operations are correctly planned\nand managed."
+                    ],
+                    "data": [
+                        [
+                            "!!! table\nPrinciple\n1",
+                            "",
+                            "All lifting operations are categorised by the Person in\nCharge to reflect the risk of the lift. This then defines the\nrequired controlling documents and the competence of the\npeople involved."
+                        ],
+                        [
+                            "Principle\n2",
+                            "",
+                            "All persons involved in planning, performing, lifting and\nmaintaining lifting equipment are trained and assessed as\ncompetent for their role. Competence is assured through\nrelevant experience, initial and refresher training, and\nperiodic assessments."
+                        ],
+                        [
+                            "Principle\n3",
+                            "",
+                            "One person in the lift crew is designated as the Person In\nCharge of the lifting operation. All personnel involved in the\nlifting operation have their individual responsibilities clearly\ndefined and communicated prior to commencement of the\nlifting operation."
+                        ],
+                        [
+                            "Principle\n4",
+                            "",
+                            "A risk assessment is required for every lift, regardless of\ncategory. A lift plan is required for every lift, with the level\nof detail required defined by the category of lift. A Permit\nto Work may also be required subject to lift complexity and\ncompany policy.\nNOTE: Category 1 lifts may be addressed through a generic lift\nplan, while Category 2 and 3 lifts require a specific lift plan. All\nCategory 3 lifts require a Permit To Work."
+                        ],
+                        [
+                            "Principle\n5",
+                            "",
+                            "An approved competent person (Lifting Technical Authority,\nAdvisor, Engineer or Subject Matter Expert) is engaged in\nassuring that all lifting operations are correctly planned\nand managed."
+                        ]
+                    ]
+                },
+                {
+                    "id": "table_typed_9_0",
+                    "page": 9,
+                    "index": 0,
+                    "filename": "typed_table_p9_0.txt",
+                    "filepath": "extracted_assets\\tables\\typed_table_p9_0.txt",
+                    "url": "/assets/tables/typed_table_p9_0.txt",
+                    "rows": 5,
+                    "columns": 4,
+                    "title": "Table p9-1",
+                    "content": [
+                        "!!! table\nPrinciple\n6 |  |  | A Red Zone is established. All non-authorised personnel are\nrestricted from entering the Red Zone1, and all personnel are\nkept clear of suspended/travelling loads and lifting equipment\nor between the load and any heavy immovable object.",
+                        "Principle\n7 |  |  | Lifting Equipment is thoroughly examined on a regular basis\nby an inspector who is sufficiently independent2 from the\non-site lifting crew, and who may be external or an in-house\nappointee. The examination refers to an acknowledged\nStandard for scope, methodology and acceptance/rejection\ncriteria. All safety and monitoring devices installed on lifting\nequipment are operational and not by-passed or disabled.\nNOTE: Periods of inspections can be influenced by the\nnature and robustness of use and application as well as the\nenvironments of use.",
+                        "Principle\n8 |  |  | All lifting equipment is visually inspected by a competent\nperson before and after use. Equipment integrity is\nmaintained and faulty equipment is removed from serviced\nand tagged as such. Inspection and maintenance activities\nare recorded in an equipment register.",
+                        "Principle\n9 |  |  | Periodic audits and inspections are conducted by an\nApproved Competent Person.",
+                        "Principle\n10 |  |  | Any Lifting of personnel is classified to the category requiring\nthe highest level of controls (IOGP Category 3) and a rescue\nplan is included as part of the Lift Plan. Any equipment used\nfor lifting personnel is certified for the specific activity and\nused according to recognised international standards."
+                    ],
+                    "data": [
+                        [
+                            "!!! table\nPrinciple\n6",
+                            "",
+                            "",
+                            "A Red Zone is established. All non-authorised personnel are\nrestricted from entering the Red Zone1, and all personnel are\nkept clear of suspended/travelling loads and lifting equipment\nor between the load and any heavy immovable object."
+                        ],
+                        [
+                            "Principle\n7",
+                            "",
+                            "",
+                            "Lifting Equipment is thoroughly examined on a regular basis\nby an inspector who is sufficiently independent2 from the\non-site lifting crew, and who may be external or an in-house\nappointee. The examination refers to an acknowledged\nStandard for scope, methodology and acceptance/rejection\ncriteria. All safety and monitoring devices installed on lifting\nequipment are operational and not by-passed or disabled.\nNOTE: Periods of inspections can be influenced by the\nnature and robustness of use and application as well as the\nenvironments of use."
+                        ],
+                        [
+                            "Principle\n8",
+                            "",
+                            "",
+                            "All lifting equipment is visually inspected by a competent\nperson before and after use. Equipment integrity is\nmaintained and faulty equipment is removed from serviced\nand tagged as such. Inspection and maintenance activities\nare recorded in an equipment register."
+                        ],
+                        [
+                            "Principle\n9",
+                            "",
+                            "",
+                            "Periodic audits and inspections are conducted by an\nApproved Competent Person."
+                        ],
+                        [
+                            "Principle\n10",
+                            "",
+                            "",
+                            "Any Lifting of personnel is classified to the category requiring\nthe highest level of controls (IOGP Category 3) and a rescue\nplan is included as part of the Lift Plan. Any equipment used\nfor lifting personnel is certified for the specific activity and\nused according to recognised international standards."
+                        ]
+                    ]
+                },
+                {
+                    "id": "table_typed_10_0",
+                    "page": 10,
+                    "index": 0,
+                    "filename": "typed_table_p10_0.txt",
+                    "filepath": "extracted_assets\\tables\\typed_table_p10_0.txt",
+                    "url": "/assets/tables/typed_table_p10_0.txt",
+                    "rows": 1,
+                    "columns": 3,
+                    "title": "Table p10-1",
+                    "content": [
+                        "!!!table\nPrinciple\n1 |  | All lifting operations are categorised by the Person\nin Charge to reflect the risk of the lift. This then\ndefines the required controlling documents and the\ncompetence of the people involved."
+                    ],
+                    "data": [
+                        [
+                            "!!!table\nPrinciple\n1",
+                            "",
+                            "All lifting operations are categorised by the Person\nin Charge to reflect the risk of the lift. This then\ndefines the required controlling documents and the\ncompetence of the people involved."
+                        ]
+                    ]
+                },
+                {
+                    "id": "table_typed_10_1",
+                    "page": 10,
+                    "index": 1,
+                    "filename": "typed_table_p10_1.txt",
+                    "filepath": "extracted_assets\\tables\\typed_table_p10_1.txt",
+                    "url": "/assets/tables/typed_table_p10_1.txt",
+                    "rows": 12,
+                    "columns": 3,
+                    "title": "Table p10-2",
+                    "content": [
+                        "Companies can modify the specific criteria listed to reflect their operations and equipment. |  | ",
+                        "Answer the questions starting at the top and not jumping any. Your lift category matches the category of the\nfirst question you answer ‘yes’ to. |  | ",
+                        "CATEGORY 3 | Y | N",
+                        "Is the gross load weight over 90% of the certified load radius curve of the crane? |  | ",
+                        "Does the operation involve the lifting or lowering of personnel? |  | ",
+                        "Will the lift involve tandem lifting using powered lifting appliances? |  | ",
+                        "Could the lift be affected by any proximity hazards, i.e., restricted area, power line, confined space etc. |  | ",
+                        "Will the load be lifted over or in close proximity to live plant? |  | ",
+                        "Will the lift take more than one shift to complete? |  | ",
+                        "Will the lift plan require technical input or calculations from a technical expert (i.e., load distribution in rigging\nand appliances)? |  | ",
+                        "Will the load be transferred from one powered lifting appliance to another? |  | ",
+                        "Will the load be lifted from one marine vessel to another? |  | "
+                    ],
+                    "data": [
+                        [
+                            "Companies can modify the specific criteria listed to reflect their operations and equipment.",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Answer the questions starting at the top and not jumping any. Your lift category matches the category of the\nfirst question you answer ‘yes’ to.",
+                            "",
+                            ""
+                        ],
+                        [
+                            "CATEGORY 3",
+                            "Y",
+                            "N"
+                        ],
+                        [
+                            "Is the gross load weight over 90% of the certified load radius curve of the crane?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Does the operation involve the lifting or lowering of personnel?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the lift involve tandem lifting using powered lifting appliances?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Could the lift be affected by any proximity hazards, i.e., restricted area, power line, confined space etc.",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the load be lifted over or in close proximity to live plant?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the lift take more than one shift to complete?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the lift plan require technical input or calculations from a technical expert (i.e., load distribution in rigging\nand appliances)?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the load be transferred from one powered lifting appliance to another?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the load be lifted from one marine vessel to another?",
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "id": "table_typed_11_0",
+                    "page": 11,
+                    "index": 0,
+                    "filename": "typed_table_p11_0.txt",
+                    "filepath": "extracted_assets\\tables\\typed_table_p11_0.txt",
+                    "url": "/assets/tables/typed_table_p11_0.txt",
+                    "rows": 26,
+                    "columns": 3,
+                    "title": "Table p11-1",
+                    "content": [
+                        "During the lift, will the crane operator’s visibility of the load be restricted/limited (i.e., ‘blind lift’)? |  | ",
+                        "Is the load to be rotated, up-ended/up-righted (roll-up, tailing or special lifting operations) or transferred from\none appliance to another during operation? |  | ",
+                        "Will the lift be subsea? |  | ",
+                        "Will the lift involve proof load testing of appliances or lifting equipment? |  | ",
+                        "If you’ve answered YES to ANY of the above, the lift is CATEGORY 3.\nIf you’ve answered NO to ALL of the above, check the next set of questions |  | ",
+                        "CATEGORY 2 | Y | N",
+                        "Is the gross load weight over 80% of the certified load radius curve of a mobile crane? |  | ",
+                        "Is the lift outside normal operating conditions for the equipment or the asset? |  | ",
+                        "Is the weight distribution uneven, or does it have the potential to shift? |  | ",
+                        "Will environmental conditions place restrictions on lifting operations? |  | ",
+                        "Is the load of an unusual shape? |  | ",
+                        "Is the weight of the load estimated (i.e., not known)? |  | ",
+                        "Does the load have any hazards such as sharp edges? |  | ",
+                        "Is the load subject to permanent deformation? |  | ",
+                        "Absence of designed and tested lifting points? |  | ",
+                        "Does the load have excessive dimension (limited clearance from crane structures, surroundings)? |  | ",
+                        "Is the operation taking place during SIMOPS or interfering with other concurrent activities? |  | ",
+                        "If you’ve answered YES to any of the above, the Lift is CATEGORY 2.\nIf you’ve answered NO to ALL of the above, the lift is likely Category 1. |  | ",
+                        "CATEGORY 1 | Y | N",
+                        "Are all these three conditions present? |  | ",
+                        "1. You have you answered “No” to all questions in Category 3 and Category 2 |  | ",
+                        "AND |  | ",
+                        "2. The personnel involved in the lift are trained, assessed as competent and authorised to perform their\nspecific role |  | ",
+                        "AND |  | ",
+                        "3. The lifting equipment and the load are simple to use and lift |  | ",
+                        "Only if ALL the 3 conditions for Category 1 are present, is the lift classified as CATEGORY 1. |  | "
+                    ],
+                    "data": [
+                        [
+                            "During the lift, will the crane operator’s visibility of the load be restricted/limited (i.e., ‘blind lift’)?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Is the load to be rotated, up-ended/up-righted (roll-up, tailing or special lifting operations) or transferred from\none appliance to another during operation?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the lift be subsea?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will the lift involve proof load testing of appliances or lifting equipment?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "If you’ve answered YES to ANY of the above, the lift is CATEGORY 3.\nIf you’ve answered NO to ALL of the above, check the next set of questions",
+                            "",
+                            ""
+                        ],
+                        [
+                            "CATEGORY 2",
+                            "Y",
+                            "N"
+                        ],
+                        [
+                            "Is the gross load weight over 80% of the certified load radius curve of a mobile crane?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Is the lift outside normal operating conditions for the equipment or the asset?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Is the weight distribution uneven, or does it have the potential to shift?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Will environmental conditions place restrictions on lifting operations?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Is the load of an unusual shape?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Is the weight of the load estimated (i.e., not known)?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Does the load have any hazards such as sharp edges?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Is the load subject to permanent deformation?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Absence of designed and tested lifting points?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Does the load have excessive dimension (limited clearance from crane structures, surroundings)?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Is the operation taking place during SIMOPS or interfering with other concurrent activities?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "If you’ve answered YES to any of the above, the Lift is CATEGORY 2.\nIf you’ve answered NO to ALL of the above, the lift is likely Category 1.",
+                            "",
+                            ""
+                        ],
+                        [
+                            "CATEGORY 1",
+                            "Y",
+                            "N"
+                        ],
+                        [
+                            "Are all these three conditions present?",
+                            "",
+                            ""
+                        ],
+                        [
+                            "1. You have you answered “No” to all questions in Category 3 and Category 2",
+                            "",
+                            ""
+                        ],
+                        [
+                            "AND",
+                            "",
+                            ""
+                        ],
+                        [
+                            "2. The personnel involved in the lift are trained, assessed as competent and authorised to perform their\nspecific role",
+                            "",
+                            ""
+                        ],
+                        [
+                            "AND",
+                            "",
+                            ""
+                        ],
+                        [
+                            "3. The lifting equipment and the load are simple to use and lift",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Only if ALL the 3 conditions for Category 1 are present, is the lift classified as CATEGORY 1.",
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "id": "table_typed_12_0",
+                    "page": 12,
+                    "index": 0,
+                    "filename": "typed_table_p12_0.txt",
+                    "filepath": "extracted_assets\\tables\\typed_table_p12_0.txt",
+                    "url": "/assets/tables/typed_table_p12_0.txt",
+                    "rows": 6,
+                    "columns": 4,
+                    "title": "Table p12-1",
+                    "content": [
+                        "!!!table\nType of measure | Category 3 | Category 2 | Category 1",
+                        " | Specific | Specific | Generic for the type of lift",
+                        " | Required | Might be required by\nprocedures or operating\ninstructions\n(e.g., required where\nSIMOPS involved) | Might be required by\nprocedures or operating\ninstructions",
+                        " | Specific | Specific | Generic for the type of lift",
+                        " | Required pre-lift | Required pre-lift | Recommended pre-shift",
+                        " | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nMan-riding (if relevant)\nWork at height\n(if relevant) | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant) | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant)"
+                    ],
+                    "data": [
+                        [
+                            "!!!table\nType of measure",
+                            "Category 3",
+                            "Category 2",
+                            "Category 1"
+                        ],
+                        [
+                            "",
+                            "Specific",
+                            "Specific",
+                            "Generic for the type of lift"
+                        ],
+                        [
+                            "",
+                            "Required",
+                            "Might be required by\nprocedures or operating\ninstructions\n(e.g., required where\nSIMOPS involved)",
+                            "Might be required by\nprocedures or operating\ninstructions"
+                        ],
+                        [
+                            "",
+                            "Specific",
+                            "Specific",
+                            "Generic for the type of lift"
+                        ],
+                        [
+                            "",
+                            "Required pre-lift",
+                            "Required pre-lift",
+                            "Recommended pre-shift"
+                        ],
+                        [
+                            "",
+                            "Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nMan-riding (if relevant)\nWork at height\n(if relevant)",
+                            "Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant)",
+                            "Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant)"
+                        ]
+                    ]
+                },
+                {
+                    "id": "table_typed_12_1",
+                    "page": 12,
+                    "index": 1,
+                    "filename": "typed_table_p12_1.txt",
+                    "filepath": "extracted_assets\\tables\\typed_table_p12_1.txt",
+                    "url": "/assets/tables/typed_table_p12_1.txt",
+                    "rows": 7,
+                    "columns": 4,
+                    "title": "Table p12-2",
+                    "content": [
+                        "!!!table\nType of role | Category 3 | Category 2 | Category 1",
+                        " | ü | ü | ü",
+                        " | ü | ü | ü",
+                        " | ü | ü | As required by operating\ninstructions",
+                        " | ü | ü | As required by operating\ninstructions",
+                        " | ü\n(Site approval of lift plan) | ü\n(Site approval of lift plan) | ü\n(Site approval of lift plan)",
+                        " | ü\n(Technical approval of\nspecific lift plan) | If required by operating\ninstructions | ü*\n(Periodic review approval of\ngeneric lift plans)"
+                    ],
+                    "data": [
+                        [
+                            "!!!table\nType of role",
+                            "Category 3",
+                            "Category 2",
+                            "Category 1"
+                        ],
+                        [
+                            "",
+                            "ü",
+                            "ü",
+                            "ü"
+                        ],
+                        [
+                            "",
+                            "ü",
+                            "ü",
+                            "ü"
+                        ],
+                        [
+                            "",
+                            "ü",
+                            "ü",
+                            "As required by operating\ninstructions"
+                        ],
+                        [
+                            "",
+                            "ü",
+                            "ü",
+                            "As required by operating\ninstructions"
+                        ],
+                        [
+                            "",
+                            "ü\n(Site approval of lift plan)",
+                            "ü\n(Site approval of lift plan)",
+                            "ü\n(Site approval of lift plan)"
+                        ],
+                        [
+                            "",
+                            "ü\n(Technical approval of\nspecific lift plan)",
+                            "If required by operating\ninstructions",
+                            "ü*\n(Periodic review approval of\ngeneric lift plans)"
+                        ]
+                    ]
+                }
+            ],
+            "start_page": 6,
+            "end_page": 12
+        }
+    ]
+}

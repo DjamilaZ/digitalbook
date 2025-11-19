@@ -1,0 +1,31 @@
+Principle
+1 |  | All lifting operations are categorised by the Person in
+Charge to reflect the risk of the lift. This then defines the
+required controlling documents and the competence of the
+people involved.
+Principle
+2 |  | All persons involved in planning, performing, lifting and
+maintaining lifting equipment are trained and assessed as
+competent for their role. Competence is assured through
+relevant experience, initial and refresher training, and
+periodic assessments.
+Principle
+3 |  | One person in the lift crew is designated as the Person In
+Charge of the lifting operation. All personnel involved in the
+lifting operation have their individual responsibilities clearly
+defined and communicated prior to commencement of the
+lifting operation.
+Principle
+4 |  | A risk assessment is required for every lift, regardless of
+category. A lift plan is required for every lift, with the level
+of detail required defined by the category of lift. A Permit
+to Work may also be required subject to lift complexity and
+company policy.
+NOTE: Category 1 lifts may be addressed through a generic lift
+plan, while Category 2 and 3 lifts require a specific lift plan. All
+Category 3 lifts require a Permit To Work.
+Principle
+5 |  | An approved competent person (Lifting Technical Authority,
+Advisor, Engineer or Subject Matter Expert) is engaged in
+assuring that all lifting operations are correctly planned
+and managed.

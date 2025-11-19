@@ -2,7 +2,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const local ={
-      target: '',
+      target: 'http://localhost:8017/api',
       changeOrigin: true,
       secure: false,
     }

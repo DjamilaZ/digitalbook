@@ -11,6 +11,7 @@ ENV PYTHONUNBUFFERED 1
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
+    tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
 # Copie du fichier requirements.txt d'abord pour profiter du cache Docker

@@ -1,0 +1,14 @@
+ultralytics
+doclayout-yolo
+ftfy
+python-doctr
+transformers
+timm
+einops
+opencv-python-headless
+matplotlib
+numpy
+tqdm
+PyYAML
+Pillow
+omegaconf

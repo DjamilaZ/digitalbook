@@ -20,8 +20,12 @@ services:
     volumes:
       - ./digitalbook:/app
       - static_volume:/app/staticfiles
-    # ports:
-    #   - "8000:8000"
+      # Assets extraits dynamiquement par scripts/algo_balise.py
+      - ./digitalbook/extracted_assets:/app/extracted_assets
+      # Scripts de parsing avancé (algo_balise.py)
+      - ./scripts:/app/scripts
+    ports:
+      - "8000:8000"
     depends_on:
       - db
     env_file:
@@ -33,6 +37,8 @@ services:
       - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
       - QCM_DEFAULT_QUESTIONS=${QCM_DEFAULT_QUESTIONS:-5}
       - QCM_MAX_QUESTIONS=${QCM_MAX_QUESTIONS:-20}
+      # - LIBRETRANSLATE_URL=http://libretranslate:5000
+      # - LIBRETRANSLATE_API_KEY=
 
 
   # frontend:
@@ -58,6 +64,14 @@ services:
     volumes:
       - ./pgadmin-servers.json:/pgadmin4/servers.json
 
+  # libretranslate:
+  #   image: libretranslate/libretranslate:latest
+  #   restart: unless-stopped
+  #   ports:
+  #     - "5000:5000"
+  #   environment:
+  #     - LT_LOAD_ONLY=en,fr,pt
+
   nginx:
     image: nginx:alpine
     ports:
@@ -65,6 +79,8 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./Frontend/build:/usr/share/nginx/html # frontend build folder
+      # Dossier d'assets dynamiques servi sous /assets
+      - ./digitalbook/extracted_assets:/usr/share/nginx/html/assets
     depends_on:
       - backend
 

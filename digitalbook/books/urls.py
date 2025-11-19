@@ -21,4 +21,6 @@ urlpatterns = [
     path('', include(books_router.urls)),
     path('', include(chapters_router.urls)),
     path('', include(sections_router.urls)),
+    # Upload d'images
+    path('uploads/images/', views.ImageUploadView.as_view(), name='image-upload'),
 ]

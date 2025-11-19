@@ -1,0 +1,30 @@
+During the lift, will the crane operator’s visibility of the load be restricted/limited (i.e., ‘blind lift’)? |  | 
+Is the load to be rotated, up-ended/up-righted (roll-up, tailing or special lifting operations) or transferred from
+one appliance to another during operation? |  | 
+Will the lift be subsea? |  | 
+Will the lift involve proof load testing of appliances or lifting equipment? |  | 
+If you’ve answered YES to ANY of the above, the lift is CATEGORY 3.
+If you’ve answered NO to ALL of the above, check the next set of questions |  | 
+CATEGORY 2 | Y | N
+Is the gross load weight over 80% of the certified load radius curve of a mobile crane? |  | 
+Is the lift outside normal operating conditions for the equipment or the asset? |  | 
+Is the weight distribution uneven, or does it have the potential to shift? |  | 
+Will environmental conditions place restrictions on lifting operations? |  | 
+Is the load of an unusual shape? |  | 
+Is the weight of the load estimated (i.e., not known)? |  | 
+Does the load have any hazards such as sharp edges? |  | 
+Is the load subject to permanent deformation? |  | 
+Absence of designed and tested lifting points? |  | 
+Does the load have excessive dimension (limited clearance from crane structures, surroundings)? |  | 
+Is the operation taking place during SIMOPS or interfering with other concurrent activities? |  | 
+If you’ve answered YES to any of the above, the Lift is CATEGORY 2.
+If you’ve answered NO to ALL of the above, the lift is likely Category 1. |  | 
+CATEGORY 1 | Y | N
+Are all these three conditions present? |  | 
+1. You have you answered “No” to all questions in Category 3 and Category 2 |  | 
+AND |  | 
+2. The personnel involved in the lift are trained, assessed as competent and authorised to perform their
+specific role |  | 
+AND |  | 
+3. The lifting equipment and the load are simple to use and lift |  | 
+Only if ALL the 3 conditions for Category 1 are present, is the lift classified as CATEGORY 1. |  | 

@@ -175,7 +175,7 @@ const Upload = () => {
           {/* Zone d'upload PDF */}
           <div className="mb-6">
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              Fichier PDF <span className="text-red-500">*</span>
+              Fichier PDF avec balise <span className="text-red-500">*</span>
             </label>
             <div 
               {...getPdfRootProps()} 

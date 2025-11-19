@@ -1,5 +1,5 @@
 from concurrent.futures import ThreadPoolExecutor
-from typing import Optional
+from typing import Optional, List
 
 # Thread pool dédié aux tâches lourdes de création de livre (2 threads)
 _executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="book-worker")
@@ -28,3 +28,21 @@ def submit_process_book(
         generate_qcm,
         nb_questions_per_chapter,
     )
+
+
+def submit_translate_book(
+    book_id: int,
+    target_langs: Optional[List[str]] = None,
+) -> None:
+    """Soumet une tâche de traduction du livre au pool dédié.
+
+    Désactivé temporairement : aucune tâche de traduction n'est soumise.
+    """
+    # Fonction de traduction désactivée temporairement.
+    # from .translation import translate_book_sync
+    # _executor.submit(
+    #     translate_book_sync,
+    #     book_id,
+    #     target_langs,
+    # )
+    return None

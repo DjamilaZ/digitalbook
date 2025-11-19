@@ -213,6 +213,13 @@ class AuthService {
     return false;
   }
 
+  // Vérifier si l'utilisateur est manager
+  isManager() {
+    const user = this.getUserData();
+    const role = (user?.role?.name || user?.role_name || '').toString().toLowerCase();
+    return role === 'manager';
+  }
+
   // Récupérer le nom complet de l'utilisateur
   getUserName() {
     const user = this.getUserData();

@@ -28,16 +28,89 @@ class UserSerializer(serializers.ModelSerializer):
         model = CustomUser
         fields = [
             'id', 'email', 'username', 'first_name', 'last_name',
-            'full_name', 'role_id', 'role_name', 'role_display',
-            'is_external_user', 'last_login_api', 'created_at'
+            'full_name', 'role_name', 'role_display',
+            'created_at'
         ]
-        read_only_fields = ['id', 'is_external_user', 'last_login_api', 'created_at']
+        read_only_fields = ['id', 'created_at']
     
     def get_full_name(self, obj):
         return obj.get_full_name()
     
     def get_role_display(self, obj):
         return obj.get_role_display()
+
+
+class AdminUserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, required=False, allow_blank=True, allow_null=True)
+
+    class Meta:
+        model = CustomUser
+        fields = [
+            'id', 'email', 'username', 'first_name', 'last_name',
+            'role_name', 'is_active', 'is_staff', 'is_superuser',
+            'created_at', 'password'
+        ]
+        read_only_fields = ['id', 'created_at']
+
+    def create(self, validated_data):
+        password = validated_data.pop('password', None)
+        if not validated_data.get('username'):
+            validated_data['username'] = validated_data.get('email')
+        # Enforce defaults and privilege restrictions
+        request = self.context.get('request')
+        # is_active à True automatiquement
+        validated_data['is_active'] = True
+        # Un non-superuser ne peut pas définir is_staff/superuser
+        if not (request and getattr(request.user, 'is_superuser', False)):
+            validated_data.pop('is_staff', None)
+            validated_data.pop('is_superuser', None)
+        user = CustomUser.objects.create(**validated_data)
+        if password:
+            user.set_password(password)
+            user.save(update_fields=['password'])
+        return user
+
+    def update(self, instance, validated_data):
+        password = validated_data.pop('password', None)
+        request = self.context.get('request')
+        # Un non-superuser ne peut pas modifier ces flags sensibles
+        if not (request and getattr(request.user, 'is_superuser', False)):
+            validated_data.pop('is_active', None)
+            validated_data.pop('is_staff', None)
+            validated_data.pop('is_superuser', None)
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        if password:
+            instance.set_password(password)
+        instance.save()
+        return instance
+
+class RegisterSerializer(serializers.ModelSerializer):
+    email = serializers.EmailField(required=True)
+    password = serializers.CharField(write_only=True, required=True)
+    first_name = serializers.CharField(required=False, allow_blank=True)
+    last_name = serializers.CharField(required=False, allow_blank=True)
+    username = serializers.CharField(required=False, allow_blank=True)
+
+    class Meta:
+        model = CustomUser
+        fields = ['email', 'password', 'first_name', 'last_name', 'username']
+
+    def validate_email(self, value):
+        if CustomUser.objects.filter(email=value).exists():
+            raise serializers.ValidationError("Un utilisateur avec cet email existe déjà")
+        return value
+
+    def create(self, validated_data):
+        username = validated_data.get('username') or validated_data['email']
+        user = CustomUser.objects.create_user(
+            username=username,
+            email=validated_data['email'],
+            password=validated_data['password'],
+            first_name=validated_data.get('first_name', ''),
+            last_name=validated_data.get('last_name', ''),
+        )
+        return user
 
 
 class AuthResponseSerializer(serializers.Serializer):

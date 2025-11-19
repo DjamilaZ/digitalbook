@@ -1,0 +1,1278 @@
+{
+    "thematiques": [],
+    "chapters_sans_thematique": [
+        {
+            "title": "IMPORTANT NOTICE",
+            "content": [
+                "This handbook is designed to give guidance aimed at reducing the risk of injury during",
+                "Rigging and Lifting operations.",
+                "It is intended to be used as a reference guide. It is not intended as a fully comprehensive",
+                "manual on health and safety nor as a substitute for formal training.",
+                "The information contained in this handbook is intended to comply with and reflect the",
+                "guidance given in UK health and safety legislation current at the time of publication. The",
+                "users must always satisfy themselves, as to the relevant health and safety legislation",
+                "affecting the work site.",
+                "Lifting equipment, lifting operations, specific tasks and work sites have inherent",
+                "associated risks and hazards. While following the procedures and recommendations",
+                "contained in this book should reduce the risk of injury, it will seldom be possible to",
+                "eradicate risk completely.",
+                "This book contains general recommendations only. The users will require to satisfy",
+                "themselves that these recommendations are suitable for their particular circumstances",
+                "AND DO NOT CONTRADICT GUIDANCE GIVEN BY MANUFACTURERS FOR THEIR",
+                "PARTICULAR EQUIPMENT.",
+                "All statements, technical information, diagrams and recommendations contained in",
+                "this book are believed to be correct but no guarantee is given as to their accuracy",
+                "or completeness. In particular and without prejudice to the foregoing generality, no",
+                "guarantee is given regarding information which has been sourced from third parties.",
+                "To the fullest extent permissible by law, North Sea Lifting Limited shall have no liability",
+                "whatsoever for any loss, claim or damage arising as a result of anything contained in or",
+                "omitted from this book.",
+                "©North Sea Lifting Limited 1991 (Revised 2018)",
+                "All rights reserved. No part of this publication may be reproduced or transmitted in",
+                "any form or by any means, including photocopying and recording without the written",
+                "permission of the copyright holder, application for which should be addressed to the",
+                "Company. Such written permission must also be obtained before any part of this",
+                "publication is stored in a retrieval system of any nature.",
+                "2 I C NSL 1991 I nsLascowor1d.com",
+                "Ownership",
+                "I",
+                "The International Rigging & Lifting Handbook 3",
+                "I e I",
+                "4 NSL 1991 nsl.ascoworld.com"
+            ],
+            "sections": [],
+            "images": [
+                {
+                    "id": "img_2_0",
+                    "page": 2,
+                    "index": 0,
+                    "filename": "img_p2_0_1ed96857.png",
+                    "filepath": "extracted_assets\\images\\img_p2_0_1ed96857.png",
+                    "url": "/assets/images/img_p2_0_1ed96857.png",
+                    "width": 746,
+                    "height": 1029,
+                    "hash": "1ed96857f1a90f16a6f9118c796f56e9",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "IMPORTANT NOTICE"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 2",
+                    "description": "Image 2 de la page 2"
+                },
+                {
+                    "id": "img_3_0",
+                    "page": 3,
+                    "index": 0,
+                    "filename": "img_p3_0_7bc65102.png",
+                    "filepath": "extracted_assets\\images\\img_p3_0_7bc65102.png",
+                    "url": "/assets/images/img_p3_0_7bc65102.png",
+                    "width": 712,
+                    "height": 1031,
+                    "hash": "7bc65102bb4c1c794279811223977bba",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "IMPORTANT NOTICE"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 3",
+                    "description": "Image 3 de la page 3"
+                },
+                {
+                    "id": "img_4_0",
+                    "page": 4,
+                    "index": 0,
+                    "filename": "img_p4_0_3022ad19.png",
+                    "filepath": "extracted_assets\\images\\img_p4_0_3022ad19.png",
+                    "url": "/assets/images/img_p4_0_3022ad19.png",
+                    "width": 708,
+                    "height": 1028,
+                    "hash": "3022ad19fdcef53c4ff47157bd69a4aa",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "IMPORTANT NOTICE"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 4",
+                    "description": "Image 4 de la page 4"
+                },
+                {
+                    "id": "img_5_0",
+                    "page": 5,
+                    "index": 0,
+                    "filename": "img_p5_0_47b99fdc.png",
+                    "filepath": "extracted_assets\\images\\img_p5_0_47b99fdc.png",
+                    "url": "/assets/images/img_p5_0_47b99fdc.png",
+                    "width": 709,
+                    "height": 1029,
+                    "hash": "47b99fdca5a4b40bd698e8a80b1cc2de",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "IMPORTANT NOTICE"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 5",
+                    "description": "Image 5 de la page 5"
+                }
+            ],
+            "tables": [],
+            "start_page": 2,
+            "end_page": 5
+        },
+        {
+            "title": "Introduction",
+            "content": [
+                "The purpose of this handbook is to provide an awareness of lifting equipment and",
+                "of its correct and safe usage.",
+                "It is a statutory requirement of SI 1999 No.3242 -The Management of",
+                "Health and Safety at Work Regulations 1999, that work is carried out by",
+                "trained personnel.",
+                "Irrespective of your normal job designation or duties, the occasion may arise when",
+                "you have to operate lifting equipment.",
+                "The prime considerations are for the health and safety of personnel and then to",
+                "ensure that materials and cargo are handled with the minimum risk of damage.",
+                "This handbook reflects recognised policies and process of industries for safe lifting",
+                "practices and the guidance given by regulatory authorities. Statutory requirements",
+                "are the minimum standards acceptable and in many cases these practices will",
+                "exceed the minimum requirements.",
+                "The individual sections under the heading \"Safe Use of Equipment\" have",
+                "been compiled in general terms as the equipment can originate from various",
+                "manufacturers. Should any doubt exist as to the limitations of the equipment, the",
+                "manufacturer's technical and operational literature should be consulted.",
+                "Each lifting appliance or accessory should have an identification number and its",
+                "Safe Working Load (SWL) or Working Load Limit (WLL) clearly marked. Although",
+                "not required by law, it should also be colour coded to indicate its certification",
+                "status. Only use equipment marked with the current colour code which will be",
+                "prominently displayed at the worksite.",
+                "This handbook is issued in support of existing Health and Safety at Work Policies.",
+                "It provides information on lifting equipment and lifting operations which, if used",
+                "properly, will lead to safer working practices.",
+                "The International Rigging & Lifting Handbook I 5"
+            ],
+            "sections": [],
+            "images": [
+                {
+                    "id": "img_6_0",
+                    "page": 6,
+                    "index": 0,
+                    "filename": "img_p6_0_3edbd2f5.png",
+                    "filepath": "extracted_assets\\images\\img_p6_0_3edbd2f5.png",
+                    "url": "/assets/images/img_p6_0_3edbd2f5.png",
+                    "width": 710,
+                    "height": 1029,
+                    "hash": "3edbd2f5130e79fcffde948271c02219",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "Introduction"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 6",
+                    "description": "Image 6 de la page 6"
+                }
+            ],
+            "tables": [],
+            "start_page": 5,
+            "end_page": 6
+        },
+        {
+            "title": "Scope of Application",
+            "content": [
+                "This Handbook has been produced to comply with the requirements of Health",
+                "and Safety at Work Regulations, The Lifting Operations and Lifting Equipment",
+                "Regulations SI 1998 No 2307(LOLER), Health and Safety Codes of Practice and",
+                "various Safety Guidance Notes. Principally, it provides guidelines for the safe use",
+                "of lifting equipment at worksites but also contains information relating to general",
+                "rigging practice and standards relevant to lifting operations.",
+                "The handbook is aimed at any personnel involved in Lifting operations and those",
+                "working with lifting equipment.",
+                "The aim of this handbook is to alleviate \"every day\" mechanical handling problems.",
+                "It is not intended to solve complex rigging problems. These must be addressed",
+                "separately and individually."
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 6,
+            "end_page": 6
+        },
+        {
+            "title": "British Standards",
+            "content": [
+                "British Standards give guidance and recommendations and compliance is",
+                "not mandatory however we recommend the guidance contained within these",
+                "standards is followed as this will help you comply with your duties under Health &",
+                "Safety legislation. However, where standards have been revised I rewritten and no",
+                "longer contain the level of technical information or safety advice of the superseded",
+                "standards, reference to \"withdrawn\" standards technical information is made.",
+                "6 I C NSL 1991 I nsl.ascoworld.com"
+            ],
+            "sections": [],
+            "images": [
+                {
+                    "id": "img_7_0",
+                    "page": 7,
+                    "index": 0,
+                    "filename": "img_p7_0_a439e421.png",
+                    "filepath": "extracted_assets\\images\\img_p7_0_a439e421.png",
+                    "url": "/assets/images/img_p7_0_a439e421.png",
+                    "width": 712,
+                    "height": 1031,
+                    "hash": "a439e4216efa7bb4fd26fcaff198da84",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "British Standards"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 7",
+                    "description": "Image 7 de la page 7"
+                },
+                {
+                    "id": "img_8_0",
+                    "page": 8,
+                    "index": 0,
+                    "filename": "img_p8_0_7bcf9d50.png",
+                    "filepath": "extracted_assets\\images\\img_p8_0_7bcf9d50.png",
+                    "url": "/assets/images/img_p8_0_7bcf9d50.png",
+                    "width": 1191,
+                    "height": 1719,
+                    "hash": "7bcf9d50d897213791f8e5c48bce778e",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "British Standards"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 8",
+                    "description": "Image 8 de la page 8"
+                },
+                {
+                    "id": "img_9_0",
+                    "page": 9,
+                    "index": 0,
+                    "filename": "img_p9_0_5af47a22.png",
+                    "filepath": "extracted_assets\\images\\img_p9_0_5af47a22.png",
+                    "url": "/assets/images/img_p9_0_5af47a22.png",
+                    "width": 709,
+                    "height": 1029,
+                    "hash": "5af47a2271cca3322a9b8e4306371429",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "British Standards"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 9",
+                    "description": "Image 9 de la page 9"
+                },
+                {
+                    "id": "img_10_0",
+                    "page": 10,
+                    "index": 0,
+                    "filename": "img_p10_0_7fbfd4c8.png",
+                    "filepath": "extracted_assets\\images\\img_p10_0_7fbfd4c8.png",
+                    "url": "/assets/images/img_p10_0_7fbfd4c8.png",
+                    "width": 712,
+                    "height": 1030,
+                    "hash": "7fbfd4c82b78e54bab45d5de0d78b74d",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "British Standards"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 10",
+                    "description": "Image 10 de la page 10"
+                }
+            ],
+            "tables": [],
+            "start_page": 6,
+            "end_page": 10
+        },
+        {
+            "title": "1.0 GLOSSARY OF TERMS",
+            "content": [],
+            "sections": [
+                {
+                    "title": "1.1 Competent Person (For Lifting Equipment Inspection)",
+                    "content": [
+                        "A person having the appropriate practical and theoretical knowledge and",
+                        "experience of the lifting equipment so that they can detect defects or",
+                        "weaknesses, and assess how important they are in relation to the safety",
+                        "and continued use of the equipment.",
+                        "This person should not be the same person who performs the routine",
+                        "maintenance of the equipment and be sufficiently independent and",
+                        "impartial to make objective decisions"
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 10,
+                    "end_page": 10
+                },
+                {
+                    "title": "1.2 Working Load Limit (WLL)",
+                    "content": [
+                        "The maximum load which an item of lifting equipment is designed to",
+                        "raise, lower or suspend. The WLL does not account for particular service",
+                        "conditions which may affect the final rating of the equipment (see SWL",
+                        "below).",
+                        "~ Note: Tile Working Loacl L1m1t as determined by tile Manufactu1er must",
+                        "L::.J",
+                        "never be exceeded",
+                        "I"
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 10,
+                    "end_page": 10
+                },
+                {
+                    "title": "Safe Working Load (SWL)",
+                    "content": [
+                        "Tile maximum load (as certified by a Competent Person) which an item of",
+                        "lifting equipment may raise, lower or suspend under particular service",
+                        "conditions, e.g. the SWL can be lower than the WLL.",
+                        "~ Note: Tile Safe Working Load as oeterm1ned by t11e Competent Person",
+                        "L::.J",
+                        "must never be exceeded"
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 10,
+                    "end_page": 10
+                },
+                {
+                    "title": "1.4 Factor of Safety I Safety Factor",
+                    "content": [
+                        "The ratio of the load that would cause failure of an item of lifting equipment",
+                        "to the load that is imposed upon it in service, i.e. SWL (this is to allow for",
+                        "detrimental criteria such as wear and tear, dynamic loadings, etc)."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 10,
+                    "end_page": 10
+                },
+                {
+                    "title": "1.5 Colour Code",
+                    "content": [
+                        "A method of marking equipment (normally with paint) to give a visual",
+                        "indication of its certification status. This colour should be changed at each",
+                        "periodic examination.",
+                        "I",
+                        "10 O NSL 1991 J nsl.ascowor1d.com"
+                    ],
+                    "subsections": [],
+                    "images": [
+                        {
+                            "id": "img_11_0",
+                            "page": 11,
+                            "index": 0,
+                            "filename": "img_p11_0_e674df62.png",
+                            "filepath": "extracted_assets\\images\\img_p11_0_e674df62.png",
+                            "url": "/assets/images/img_p11_0_e674df62.png",
+                            "width": 712,
+                            "height": 1031,
+                            "hash": "e674df626fc060c71dbdd24ff5847a57",
+                            "context": {
+                                "thematique": null,
+                                "chapter": {
+                                    "title": "1.0 GLOSSARY OF TERMS"
+                                },
+                                "section": {
+                                    "title": "1.5 Colour Code"
+                                },
+                                "subsection": null
+                            },
+                            "title": "Figure 11",
+                            "description": "Image 11 de la page 11"
+                        }
+                    ],
+                    "tables": [],
+                    "start_page": 10,
+                    "end_page": 11
+                },
+                {
+                    "title": "1.6 Plant / Identification Number",
+                    "content": [
+                        "A unique number given to an item of lifting equipment for registration",
+                        "purposes and to facilitate traceability."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 11,
+                    "end_page": 11
+                },
+                {
+                    "title": "1.7 Headroom",
+                    "content": [
+                        "The maximum vertical distance between the item to be lifted and the point",
+                        "of suspension of the hoisting machine, e.g. between the lifting eyes and",
+                        "the underside of runway beams."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 11,
+                    "end_page": 11
+                },
+                {
+                    "title": "1.8 Height of Lift",
+                    "content": [
+                        "The amount of possible travel between the top and bottom connection",
+                        "points, e.g. hooks of a hoisting machine."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 11,
+                    "end_page": 11
+                }
+            ],
+            "images": [],
+            "tables": [],
+            "start_page": 10,
+            "end_page": 11
+        },
+        {
+            "title": "9 Drawn-up Dimension",
+            "content": [
+                "The minimum distance between the suspension level and the bottom hook",
+                "saddle (also known as closed-height)."
+            ],
+            "sections": [
+                {
+                    "title": "Load Sensors",
+                    "content": [
+                        "A piece of equipment used for detecting the actual loadings at a rigging",
+                        "point, e.g. load cell shackle, test clock or compression load cell, etc."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 11,
+                    "end_page": 11
+                },
+                {
+                    "title": "Lifting Equipment",
+                    "content": [
+                        "A generic term which includes lifting appliances and lifting accessories."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 11,
+                    "end_page": 11
+                },
+                {
+                    "title": "Thorough Examination",
+                    "content": [
+                        "A systematic and detailed examination of lifting equipment by a competent",
+                        "person to detect defects that are, or might affect the safe use of the",
+                        "equipment.",
+                        "The International Rigging & Lifting Handbook f 11"
+                    ],
+                    "subsections": [],
+                    "images": [
+                        {
+                            "id": "img_12_0",
+                            "page": 12,
+                            "index": 0,
+                            "filename": "img_p12_0_7d792ec2.png",
+                            "filepath": "extracted_assets\\images\\img_p12_0_7d792ec2.png",
+                            "url": "/assets/images/img_p12_0_7d792ec2.png",
+                            "width": 714,
+                            "height": 1031,
+                            "hash": "7d792ec2a09fef88a0e276b38308ade7",
+                            "context": {
+                                "thematique": null,
+                                "chapter": {
+                                    "title": "9 Drawn-up Dimension"
+                                },
+                                "section": {
+                                    "title": "Thorough Examination"
+                                },
+                                "subsection": null
+                            },
+                            "title": "Figure 12",
+                            "description": "Image 12 de la page 12"
+                        }
+                    ],
+                    "tables": [],
+                    "start_page": 11,
+                    "end_page": 12
+                }
+            ],
+            "images": [],
+            "tables": [],
+            "start_page": 11,
+            "end_page": 12
+        },
+        {
+            "title": "2.0 REGULATIONS",
+            "content": [
+                "The principal Statutory Legislation & Regulations which govern lifting",
+                "activities are:",
+                "The Health and Safety at Work, etc. Act (197 4).",
+                "SI 1998 No. 2307 The Lifting Operations and Lifting Equipment",
+                "Regulations 1998.",
+                "SI 1992 No. 2793 The Manual Handling Operations Regulations."
+            ],
+            "sections": [
+                {
+                    "title": "2.1 Health and Safety at Work, etc. Act (1974)",
+                    "content": [
+                        "This Act came into force in 1975 for onshore areas and was extended in",
+                        "1977, to offshore areas. It is important that persons involved with lifting",
+                        "and lifting equipment ensure the safe use of lifting appliances and lift gear."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 12,
+                    "end_page": 12
+                },
+                {
+                    "title": "2.2 The Effects of the Act",
+                    "content": [
+                        "It is the duty of every employer to ensure, so far as reasonably practicable,",
+                        "the health, safety and welfare at work of all his employees. This duty",
+                        "includes the provision of all necessary instruction, training and supervision.",
+                        "YOU have a legal responsibility to take reasonable care for your own",
+                        "health and safety for that of other people who may be affected by your",
+                        "conduct at work. You must comply with any safety requirements and co",
+                        "operate with your employer I supervisor as far as necessary to enable that",
+                        "duty or requirement to be performed or complied with."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 12,
+                    "end_page": 12
+                },
+                {
+                    "title": "2.3 The Penalties for Non-Compliance",
+                    "content": [
+                        "Legally, YOU are liable for the same statutory penalties as your employer if",
+                        "you do not comply with your obligations under the Act.",
+                        "If you are in breach of the Act, you commit a criminal offence and may",
+                        "be prosecuted whether or not an accident occurs. The Act allows for",
+                        "substantial fines and I or imprisonment."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 12,
+                    "end_page": 12
+                },
+                {
+                    "title": "2.4 SI 1998 No. 2307 The Lifting Operations and Lifting Equipment",
+                    "content": [
+                        "Regulations 1998 (This is backed by an approved code of practice).",
+                        "These regulations came into force in December 1998. The parts of this",
+                        "Statutory Instrument pertinent to this handbook and that affect you \"the",
+                        "user\" are Regulations 4, 5, 6, 7, 8 and 9. Relevant information has been",
+                        "extracted from these regulations and is shown here:",
+                        "12 I C NSL 1991 I nsLascowOOd.com"
+                    ],
+                    "subsections": [],
+                    "images": [
+                        {
+                            "id": "img_13_0",
+                            "page": 13,
+                            "index": 0,
+                            "filename": "img_p13_0_45b42272.png",
+                            "filepath": "extracted_assets\\images\\img_p13_0_45b42272.png",
+                            "url": "/assets/images/img_p13_0_45b42272.png",
+                            "width": 709,
+                            "height": 1029,
+                            "hash": "45b42272aa1dfc99febaadf20a50d347",
+                            "context": {
+                                "thematique": null,
+                                "chapter": {
+                                    "title": "2.0 REGULATIONS"
+                                },
+                                "section": {
+                                    "title": "2.4 SI 1998 No. 2307 The Lifting Operations and Lifting Equipment"
+                                },
+                                "subsection": null
+                            },
+                            "title": "Figure 13",
+                            "description": "Image 13 de la page 13"
+                        }
+                    ],
+                    "tables": [],
+                    "start_page": 12,
+                    "end_page": 13
+                },
+                {
+                    "title": "2.5 Regulation 4 -Strength and Stability:",
+                    "content": [
+                        "Regulation 4 considers the safety risks of lifting equipment that could fail or",
+                        "collapse under load because of:",
+                        "-inadequate physical strength of any part of the equipment; OR",
+                        "-instability in the lifting system.",
+                        "Employers are required to ensure that:",
+                        "a) lifting equipment is of adequate strength and stability for each load,",
+                        "having regard in particular to the stress induced at its mounting or fixing",
+                        "point;",
+                        "b) every part of a load and anything attached to it and used in lifting it is of",
+                        "adequate strength."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 13,
+                    "end_page": 13
+                },
+                {
+                    "title": "2.6 Regulation 5 -Lifting Equipment for Lifting Persons:",
+                    "content": [
+                        "Under this regulation, equipment for lifting persons must be specifically",
+                        "designed for that purpose and will include all the necessary I additional",
+                        "safety features. Any such equipment will be marked accordingly. Do not",
+                        "attempt to use standard lifting equipment which is NOT marked",
+                        "accordingly for lifting, lowering or suspending personnel."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 13,
+                    "end_page": 13
+                },
+                {
+                    "title": "2.7 Regulation 6 -Positioning and Installation:",
+                    "content": [
+                        "Under this regulation, lifting equipment must be positioned and installed",
+                        "in such a way as to minimise the risk of damage to the load or injury",
+                        "to personnel. In certain cases, this includes the fencing off or erection",
+                        "of safety barriers around shafts or hoistways. Never cross or venture",
+                        "beyond these barriers even if it appears safe."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 13,
+                    "end_page": 13
+                },
+                {
+                    "title": "2.8 Regulation 7 -Marking of Lifting Equipment:",
+                    "content": [
+                        "All lifting machinery and accessories shall be plainly marked with their",
+                        "safe working load I working load limit (or loads if dependent on lifting",
+                        "configurations). No lifting appliance or piece of lifting gear shall be",
+                        "used by any person for any load exceeding the SWL I WLL marked",
+                        "thereon."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 13,
+                    "end_page": 13
+                },
+                {
+                    "title": "2.9 Regulation 8 -Organisation of Lifting Operations:",
+                    "content": [
+                        "Every lifting operation must be properly planned by a Competent Person,",
+                        "appropriately supervised, and carried out in a safe manner. (\"lifting",
+                        "operation\" means an operation concerned with the lifting or lowering of a",
+                        "load). This would include risk assessment at a level proportionate to",
+                        "the complexity and the perceived level of hazard.",
+                        "The International Rigging & Lifting Handbook"
+                    ],
+                    "subsections": [],
+                    "images": [
+                        {
+                            "id": "img_14_0",
+                            "page": 14,
+                            "index": 0,
+                            "filename": "img_p14_0_efc360a5.png",
+                            "filepath": "extracted_assets\\images\\img_p14_0_efc360a5.png",
+                            "url": "/assets/images/img_p14_0_efc360a5.png",
+                            "width": 714,
+                            "height": 1031,
+                            "hash": "efc360a51fc25d6e2f152f1fda664c8e",
+                            "context": {
+                                "thematique": null,
+                                "chapter": {
+                                    "title": "2.0 REGULATIONS"
+                                },
+                                "section": {
+                                    "title": "2.9 Regulation 8 -Organisation of Lifting Operations:"
+                                },
+                                "subsection": null
+                            },
+                            "title": "Figure 14",
+                            "description": "Image 14 de la page 14"
+                        }
+                    ],
+                    "tables": [],
+                    "start_page": 13,
+                    "end_page": 14
+                },
+                {
+                    "title": "2.10 Regulation 9 -Thorough Examination and Inspection:",
+                    "content": [
+                        "Every lifting appliance and every piece of lifting gear must be thoroughly",
+                        "examined and, where necessary, tested by a Competent Person before",
+                        "it is used for the first time, after any substantial repair or modification and",
+                        "thereafter at regular intervals. Outwith this, all equipment and gear must",
+                        "be examined by you prior to and after each use.",
+                        "Note: LOLER does not apply to lifting equipment which is not provided for",
+                        "use at work."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 14,
+                    "end_page": 14
+                },
+                {
+                    "title": "2.11 The Manual Handling Operations Regulations 1992",
+                    "content": [
+                        "The Manual Handling Operations Regulations 1992, Statutory Instrument",
+                        "2793 actually came into force on the 1st of January 1993. Manual handling",
+                        "is the handling of loads by human effort, as opposed to mechanical",
+                        "handling, i.e.: the lifting, putting down, pushing, pulling, carrying or moving",
+                        "of a load by hand or bodily force. A \"load\" includes persons, animals,",
+                        "material supported on a fork or shovel, etc. Further information on Manual",
+                        "Handling can be found in section 26 of this handbook and in the HSE",
+                        "Guidance document.",
+                        "141CNSL1991 J nsl.ascoworld.com"
+                    ],
+                    "subsections": [],
+                    "images": [
+                        {
+                            "id": "img_15_0",
+                            "page": 15,
+                            "index": 0,
+                            "filename": "img_p15_0_ecb4e7c9.png",
+                            "filepath": "extracted_assets\\images\\img_p15_0_ecb4e7c9.png",
+                            "url": "/assets/images/img_p15_0_ecb4e7c9.png",
+                            "width": 712,
+                            "height": 1031,
+                            "hash": "ecb4e7c973ac26c9b39255431cfe06e0",
+                            "context": {
+                                "thematique": null,
+                                "chapter": {
+                                    "title": "2.0 REGULATIONS"
+                                },
+                                "section": {
+                                    "title": "2.11 The Manual Handling Operations Regulations 1992"
+                                },
+                                "subsection": null
+                            },
+                            "title": "Figure 15",
+                            "description": "Image 15 de la page 15"
+                        }
+                    ],
+                    "tables": [],
+                    "start_page": 14,
+                    "end_page": 15
+                }
+            ],
+            "images": [],
+            "tables": [],
+            "start_page": 12,
+            "end_page": 15
+        },
+        {
+            "title": "0 DEFINITION AND PRINCIPLES OF LIFTING EQUIPMENT",
+            "content": [
+                "Definition"
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 15,
+            "end_page": 15
+        },
+        {
+            "title": "1 Lifting Equipment",
+            "content": [
+                "Work equipment for lifting or lowering loads and includes its attachments",
+                "used for anchoring, fixing or supporting it and comprises of Lifting",
+                "appliances and lifting accessories.",
+                "Lifting Appliances",
+                "Mechanical device capable of raising or lowering a load, e.g.: Cranes,",
+                "Forklift Trucks, Lifts, Suspended Cradles, Powered Hoists, Manual Hoists,",
+                "Lever Hoists, Rope Hoists, Beam Trolleys, Beam Clamps, Sheave Blocks,",
+                "Winches, Runway Beams.",
+                "Lifting Accessories",
+                "Any device which is used or designed to be used directly or indirectly to",
+                "connect a load to a lifting appliance (see above) and which does not form",
+                "part of the load, e.g. Wire Rope Slings, Chain Slings, Man-made Fibre",
+                "Slings, Hooks and Fittings, Swivels, Shackles, Eye Bolts, Rigging Screws,",
+                "Wedge Sockets, Plate Clamps.",
+                "3.2 Principles of Lifting Equipment",
+                "All lifting equipment should be of adequate strength, sound material, of",
+                "good construction and suitable for the duty which it has to perform. It",
+                "should be tested in accordance with statutory requirements (i.e. a proof",
+                "load applied) and a test certificate should be raised prior to its first use.",
+                "The certificate is an important legal document.",
+                "fil\\ Warning!",
+                "The use of 1mprov1sed (home made) l1ft1ng equipment 1s",
+                "\\.V",
+                "strictly proh1b1ted",
+                "The International Rigging & Lifting Handbook 11 s"
+            ],
+            "sections": [],
+            "images": [
+                {
+                    "id": "img_16_0",
+                    "page": 16,
+                    "index": 0,
+                    "filename": "img_p16_0_4ec3b34b.png",
+                    "filepath": "extracted_assets\\images\\img_p16_0_4ec3b34b.png",
+                    "url": "/assets/images/img_p16_0_4ec3b34b.png",
+                    "width": 712,
+                    "height": 1030,
+                    "hash": "4ec3b34b98ab9261bf7daaf89f730e09",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "1 Lifting Equipment"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 16",
+                    "description": "Image 16 de la page 16"
+                }
+            ],
+            "tables": [],
+            "start_page": 15,
+            "end_page": 16
+        },
+        {
+            "title": "3 Factor of Safety I Safety Factor",
+            "content": [
+                "Good practice requires that any lifting equipment shall have an adequate",
+                "factor of safety incorporated in its design. Where appropriate in each",
+                "of the separate equipment types, a minimum factor of safety for the",
+                "specific item is recommended and this should not be decreased.",
+                "The purposes of a factor of safety are numerous including allowance for",
+                "wear, impact, dynamic loading and accidental overloading. However, it",
+                "cannot be too highly stressec that such allowances are a contingency only",
+                "and must never be purposely eroded. Care should always be taken to",
+                "avoid circumstances which can cause overload (e.g. impact, shock) and",
+                "care should also be taken in circumstances where inadvertent overload",
+                "can occur. In extreme cases where several adverse circumstances occur",
+                "at the same time, the result may be failure even though the nominal",
+                "load lifted does not exceed the safe working load of the equipment. If",
+                "such circumstances are likely to occur, advice will be sought from your",
+                "supervisor."
+            ],
+            "sections": [
+                {
+                    "title": "Many items are covered by British, European and International Standards.",
+                    "content": [
+                        "Where applicable these are listed against individual types of equipment",
+                        "(refer to Appendix 1) ."
+                    ],
+                    "subsections": [],
+                    "images": [],
+                    "tables": [],
+                    "start_page": 16,
+                    "end_page": 16
+                },
+                {
+                    "title": "Some lifting equipment (e.g. lifting beams) can be used in a variety of",
+                    "content": [
+                        "ways. It is therefore important that information on the specific intended use",
+                        "should be indicated by the manufacturer I supplier in such cases and the",
+                        "advice sought before any change of use is attempted.",
+                        "3.6 It will be apparent when reading specific sections of this handbook that",
+                        "reference is made to the angle at which the equipment is used (e.g. the",
+                        "angle between the legs of a multi-leg sling). It is most important that",
+                        "allowance is made for the change in forces applied and resultant variation",
+                        "in safe working load which can result from using the equipment at an",
+                        "angle.",
+                        "3. 7 A final point to be considered when selecting equipment for a particular",
+                        "operation is compatibility between the various items required. A number of",
+                        "different grades of material are used for lifting equipment and in particular it",
+                        "will be found that hooks, links, rings and shackles vary considerably in size",
+                        "for a given capacity according to the grade of material used. Care must",
+                        "therefore be taken to ensure that each item of equipment seats correctly",
+                        "and aligns correctly with its neighbour. Where necessary an intermediate",
+                        "link or shackle should be used to ensure this.",
+                        "'16 I C NSL 1991 I nsl.ascoworld.com"
+                    ],
+                    "subsections": [],
+                    "images": [
+                        {
+                            "id": "img_17_0",
+                            "page": 17,
+                            "index": 0,
+                            "filename": "img_p17_0_6bc48bf7.png",
+                            "filepath": "extracted_assets\\images\\img_p17_0_6bc48bf7.png",
+                            "url": "/assets/images/img_p17_0_6bc48bf7.png",
+                            "width": 712,
+                            "height": 1031,
+                            "hash": "6bc48bf775e8c3f1e6f6d3d96e45e069",
+                            "context": {
+                                "thematique": null,
+                                "chapter": {
+                                    "title": "3 Factor of Safety I Safety Factor"
+                                },
+                                "section": {
+                                    "title": "Some lifting equipment (e.g. lifting beams) can be used in a variety of"
+                                },
+                                "subsection": null
+                            },
+                            "title": "Figure 17",
+                            "description": "Image 17 de la page 17"
+                        }
+                    ],
+                    "tables": [],
+                    "start_page": 16,
+                    "end_page": 17
+                }
+            ],
+            "images": [],
+            "tables": [],
+            "start_page": 16,
+            "end_page": 17
+        },
+        {
+            "title": "0 EXAMINATION OF LIFTING EQUIPMENT",
+            "content": [
+                "This section highlights the examinations which must be carried out to meet",
+                "legal requirements and ensure safe working conditions."
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 17,
+            "end_page": 17
+        },
+        {
+            "title": "1 Companies and users of lifting equipment are required by law to have it",
+            "content": [
+                "thoroughly examined periodically by a Competent Person (Examination",
+                "periods are referenced further within this section -\"Periodicity of",
+                "Examinations\"). The legal responsibility for ensuring this happens lies with",
+                "senior management who would normally delegate to supervisory staff."
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 17,
+            "end_page": 17
+        },
+        {
+            "title": "2 Pre-use Examination",
+            "content": [
+                "Notwithstanding the above, all items of lifting gear must be examined by",
+                "the user prior to each use to ensure, so far as is practicable, that they are",
+                "in a good state of repair and SAFE to carry out the task in hand."
+            ],
+            "sections": [
+                {
+                    "title": "The three common particulars to check for are:",
+                    "content": [
+                        "i) The required SWL.",
+                        "ii) Plant number I Identification number.",
+                        "iii) If applicable, Correct Colour Code (The current colour code should be",
+                        "prominently displayed at the worksite and can be confirmed by",
+                        "referring to a supervisor).",
+                        "4.4 Further details of what to check for during an examination are contained in",
+                        "the \"Safe Use of Lifting Equipment\" section of this handbook as the details",
+                        "vary according to the type of gear.",
+                        "qp Remember: 1f there 1s no SWL I WLL, ID and I or",
+                        "l!!f",
+                        "colour code, do not usei",
+                        "The International Rigging & Lifting Handbook I 17"
+                    ],
+                    "subsections": [],
+                    "images": [
+                        {
+                            "id": "img_18_0",
+                            "page": 18,
+                            "index": 0,
+                            "filename": "img_p18_0_40170498.png",
+                            "filepath": "extracted_assets\\images\\img_p18_0_40170498.png",
+                            "url": "/assets/images/img_p18_0_40170498.png",
+                            "width": 714,
+                            "height": 1031,
+                            "hash": "4017049843deb6051dd69b1f38bc65e7",
+                            "context": {
+                                "thematique": null,
+                                "chapter": {
+                                    "title": "2 Pre-use Examination"
+                                },
+                                "section": {
+                                    "title": "The three common particulars to check for are:"
+                                },
+                                "subsection": null
+                            },
+                            "title": "Figure 18",
+                            "description": "Image 18 de la page 18"
+                        }
+                    ],
+                    "tables": [],
+                    "start_page": 17,
+                    "end_page": 18
+                }
+            ],
+            "images": [],
+            "tables": [],
+            "start_page": 17,
+            "end_page": 18
+        },
+        {
+            "title": "5 Examination (And Testing) Requirements",
+            "content": [],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 18,
+            "end_page": 18
+        },
+        {
+            "title": "6 Initial examination (and testing)",
+            "content": [
+                "All lifting equipment must be thoroughly examined (and tested where",
+                "appropriate) prior to being used for the first time (unless it has not been",
+                "used before or has an EC declaration of conformity less than 12 months",
+                "old), after installation or re-installation or after any repair or modification",
+                "which may affect the safety of the equipment."
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 18,
+            "end_page": 18
+        },
+        {
+            "title": "7 Periodicity of examinations",
+            "content": [
+                "Lifting equipment exposed to conditions which may cause deterioration",
+                "and result in hazardous situations must be thoroughly examined by a",
+                "Competent Person:",
+                "a) In accordance with an inspection scheme, or",
+                "b) On a regular basis dependent on equipment type and I or",
+                "usage, i.e.",
+                "Accessories and \"Personnel\" hoisting equipment.",
+                "intervals not exceeding 6 months",
+                "ii) Lifting appliances and other lifting equipment.",
+                "intervals not exceeding 12 months•",
+                "• Where the equipment is used offshore, due to the harsh environment,",
+                "we recommend the maximum period between examinations should be 6",
+                "months. However, lifting support steelwork with no moving parts such as",
+                "runway beams, padeyes, permanently attached or integral lifting eyes, etc.",
+                "could have their periodicity of examination left at 12 months (maximum) as",
+                "long as:",
+                "They are not used for supporting personnel.",
+                "ii) Their use is infrequent to the extent that wear is not an",
+                "adverse factor.",
+                "iii) They are adequately coated I protected so that corrosion is not an",
+                "adverse factor.",
+                "4.8 Hand splices on certified wire rope are not required to be proof load",
+                "tested.",
+                "fn\\ Warning!",
+                "Do not stow l1ft1ng tackle 1n lockers or tool boxes as the gear",
+                "~ could be missed during a statutory 1nspect1on and hence become uncert1f1ed",
+                "18 I 0 NSL 1991 I nsl.ascowor1d.com"
+            ],
+            "sections": [],
+            "images": [
+                {
+                    "id": "img_19_0",
+                    "page": 19,
+                    "index": 0,
+                    "filename": "img_p19_0_f5f911ab.png",
+                    "filepath": "extracted_assets\\images\\img_p19_0_f5f911ab.png",
+                    "url": "/assets/images/img_p19_0_f5f911ab.png",
+                    "width": 712,
+                    "height": 1030,
+                    "hash": "f5f911ab87d3abc957f00c06c3aa4666",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "7 Periodicity of examinations"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "1 Fig 5.2 Fig 5.3",
+                    "description": "Image 19 de la page 19"
+                }
+            ],
+            "tables": [],
+            "start_page": 18,
+            "end_page": 19
+        },
+        {
+            "title": "0 SELECTION OF LIFTING EQUIPMENT",
+            "content": [],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 19,
+            "end_page": 19
+        },
+        {
+            "title": "1 The most important fact to establish prior to preparing for a lift is the",
+            "content": [
+                "weight of the item to be handled. In the majority of cases this will be",
+                "known but where it is not, use a load measuring device (see figs 5. 1 to"
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 19,
+            "end_page": 19
+        },
+        {
+            "title": "3 below for typical examples) to confirm the weight. As alternatives, you",
+            "content": [
+                "could consult with the manufacturer or take measurements and calculate",
+                "the weight using the Material and Density Table (Appendix 2). If any doubt",
+                "exists, contact your supervisor.",
+                "Loadcell Shackle Crane Weigher Dynamometer",
+                "5.2 Once the weight has been established, another consideration is the",
+                "available \"head-room''. This has a bearing on sling angles and increasing",
+                "tension in the sling legs.",
+                "~ Note: The weight of the selected ngg1ng must be added to the weight of",
+                "L::J",
+                "the load to be lifted and the total weight considered when selecting the",
+                "ho1st1ng machine",
+                "5.3 Check the compatibility of the various components as sizes vary according",
+                "to materials used in manufacture.",
+                "5.4 Check suitability of hoisting equipment for specific tasks and environment,",
+                "e.g. you may wish to use it under water and not all types of equipment are",
+                "suitable for sub-sea use.",
+                "5.5 Once the equipment is selected, it must be subjected to a \"pre-use\"",
+                "examination as described throughout the individual sections of this",
+                "handbook. Should any item fail this visual examination, it must be",
+                "withdrawn from service immediately and reported to the supervisor.",
+                "The International Rigging & Lifting Hanct:>ook"
+            ],
+            "sections": [],
+            "images": [
+                {
+                    "id": "img_20_0",
+                    "page": 20,
+                    "index": 0,
+                    "filename": "img_p20_0_aa26a1a4.png",
+                    "filepath": "extracted_assets\\images\\img_p20_0_aa26a1a4.png",
+                    "url": "/assets/images/img_p20_0_aa26a1a4.png",
+                    "width": 709,
+                    "height": 1029,
+                    "hash": "aa26a1a4f3a9196c7104916f4d481878",
+                    "context": {
+                        "thematique": null,
+                        "chapter": {
+                            "title": "3 below for typical examples) to confirm the weight. As alternatives, you"
+                        },
+                        "section": null,
+                        "subsection": null
+                    },
+                    "title": "Figure 20",
+                    "description": "Image 20 de la page 20"
+                }
+            ],
+            "tables": [],
+            "start_page": 19,
+            "end_page": 20
+        },
+        {
+            "title": "0 SAFE APPROACH TO LIFTING",
+            "content": [
+                "The following section gives recommendations as to the correct procedures",
+                "n to adopt when effecting a lift.",
+                "'!!!!'"
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 20,
+            "end_page": 20
+        },
+        {
+            "title": "1 Personnel Competence",
+            "content": [
+                "u",
+                "Any person using lifting equipment must be trained in the safe use of",
+                "that equipment. The person must also have a working knowledge of its",
+                "capabilities and the defects likely to arise in service. This knowledge will be",
+                "of value when carrying out the pre-use examinations."
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 20,
+            "end_page": 20
+        },
+        {
+            "title": "2 Never Exceed the Safe Working Load I Working Load Limit",
+            "content": [
+                "In all lifting operations care should be taken to ensure that the load imposed",
+                "on any item of equipment or on part of any item does not exceed its SWL",
+                "I WLL. When there is any uncertainty about the weight of the load or the",
+                "load applied to a particular part of the equipment it is recommended that",
+                "load sensing devices be used. In addition, care should be taken to ensure",
+                "that the load remains in a stable condition through the duration of the lift. In",
+                "general the load may be unstable if at any time the centre of gravity of the",
+                "load is not vertically beneath the crane hook, or the centre of gravity of the",
+                "load is higher than the point of attachment of the slings to the load. There",
+                "are other causes of instability to be considered, e.g. liquid moving within a",
+                "vessel, etc.",
+                "6.3 Correct Use",
+                "The equipment should be used only for the specific purpose for which it",
+                "is designed and should not be adapted for any other purposes without",
+                "the approval of a Competent Person and I or the original equipment",
+                "manufacturer I supplier.",
+                "6.4 Check The Lift",
+                "The load should be lifted a nominal distance only in the first instance.",
+                "This 'trial lift\" allows the operator to check his estimations of balance,",
+                "stability, and general security of the load while it is in a safe position. If",
+                "discrepancies are found the load should be lowered and the slinging",
+                "revised. The sequence of trial lift and adjustment should be repeated until",
+                "the operator is satisfied that the load is balanced. stable and secure.",
+                "Warning! Do not stand below loads, keep hands clear of rigging as",
+                "(i]\\ slack taken Up (as pe1 the \"hanos-free\" l1ft1ng policy) avOld c.imb ng on",
+                "IS",
+                "\\..V",
+                "co.cta1ncrs and stacked ma:enals never stand between loads and walls",
+                "bulKheads, etc",
+                "I",
+                "20 C NSL 1991 J nsl.ascoworld.com"
+            ],
+            "sections": [],
+            "images": [],
+            "tables": [],
+            "start_page": 20,
+            "end_page": 20
+        }
+    ]
+}

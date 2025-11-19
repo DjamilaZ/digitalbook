@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft, Download, RefreshCw } from 'lucide-react';
+import { Menu, X, BookOpen, FileText, Loader2, ArrowLeft, Download, RefreshCw, Languages } from 'lucide-react';
+
 import Button from '../../System Design/Button';
 import api from '../../services/api';
 import authService from '../../services/authService';
@@ -19,27 +20,56 @@ const DocumentViewer = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const isAdmin = authService.isAdmin();
+  const isManager = authService.isManager();
   const [regenLoading, setRegenLoading] = useState(false);
   const [regenError, setRegenError] = useState(null);
+  // Traduction désactivée temporairement
+  // const [translateLoading, setTranslateLoading] = useState(false);
+  // const [translateMessage, setTranslateMessage] = useState(null);
+
+  // const handleTranslateBook = async () => {
+  //   try {
+  //     setTranslateMessage(null);
+  //     setTranslateLoading(true);
+  //     await api.post(`/books/${id}/finalize/`, {
+  //       target_langs: ['en', 'pt'],
+  //     });
+  //     setTranslateMessage("Traduction lancée. Le contenu sera disponible progressivement en anglais et portugais.");
+  //   } catch (error) {
+  //     console.error('Erreur lors du lancement de la traduction du livre:', error);
+  //     const msg = error?.response?.data?.error || error?.message || 'Erreur lors du lancement de la traduction';
+  //     setTranslateMessage(msg);
+  //   } finally {
+  //     setTranslateLoading(false);
+  //   }
+  // };
+
+  const reloadBookData = async () => {
+    if (!id) return;
+    try {
+      // Appeler l'API avec l'URL du livre (l'ID est utilisé comme URL)
+      const structure = await api.get(`/books/${id}/export_structure/`);
+      setBookData(structure.data);
+
+      // Si rien n'est sélectionné, sélectionner automatiquement le premier chapitre
+      if (!selectedItem && structure.data?.chapters?.length > 0) {
+        setSelectedItem({
+          type: 'chapter',
+          data: structure.data.chapters[0],
+          index: 0,
+        });
+      }
+    } catch (error) {
+      console.error('Erreur lors de la mise à jour des données du livre:', error);
+    }
+  };
 
   useEffect(() => {
     const fetchBookData = async () => {
       try {
         setLoading(true);
-        // Appeler l'API avec l'URL du livre (l'ID est utilisé comme URL)
-        const structure = await api.get(`/books/${id}/export_structure/`);
-        setBookData(structure.data);
-        
-        // Sélectionner automatiquement le premier chapitre
-        if (structure.data?.chapters?.length > 0) {
-          setSelectedItem({
-            type: 'chapter',
-            data: structure.data.chapters[0],
-            index: 0
-          });
-        }
+        await reloadBookData();
       } catch (error) {
-        console.error('Erreur lors de la récupération des données du livre:', error);
         setError('Impossible de charger les données du livre');
       } finally {
         setLoading(false);
@@ -205,13 +235,29 @@ const DocumentViewer = () => {
           {viewMode === 'simple' ? <FileText size={20} /> : <List size={20} />}
         </button> */}
         {isAdmin && (
-          <button 
-            onClick={handleDownloadDocument}
-            className="bg-success text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-success hover:-translate-y-0.5 mr-2"
-            title="Voir le PDF d'origine"
-          >
-            <Download size={20} />
-          </button>
+          <div className="flex items-center gap-2 mr-2">
+            {/* Bouton Traduire désactivé temporairement */}
+            {/* <button 
+              onClick={handleTranslateBook}
+              disabled={translateLoading}
+              className={`border-none rounded-md px-3 py-2 cursor-pointer transition-all duration-300 text-sm flex items-center gap-2 ${translateLoading ? 'bg-gray-300 text-gray-600' : 'bg-primary text-white hover:bg-primary hover:-translate-y-0.5'}`}
+              title="Lancer la traduction du livre"
+            >
+              {translateLoading ? (
+                <Loader2 size={16} className="animate-spin" />
+              ) : (
+                <Languages size={16} />
+              )}
+              <span>Traduire</span>
+            </button> */}
+            <button 
+              onClick={handleDownloadDocument}
+              className="bg-success text-white border-none rounded-md px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-success hover:-translate-y-0.5"
+              title="Voir le PDF d'origine"
+            >
+              <Download size={20} />
+            </button>
+          </div>
         )}
         <button 
           onClick={toggleSidebar}
@@ -239,12 +285,23 @@ const DocumentViewer = () => {
         <div className="flex-1 w-full overflow-y-auto">
           {/* Image de couverture et en-tête dans le contenu principal */}
           {bookData?.book && (() => {
-            const coverImageUrl = bookData.book.cover_image 
-              ? (bookData.book.cover_image.startsWith('http') 
-                  ? bookData.book.cover_image.replace('/books/covers/', '/covers/')
-                  : `${bookData.book.cover_image.replace('/books/covers/', '/covers/')}`)
-              : null;
-            
+            let coverImageUrl = null;
+            if (bookData.book.cover_image) {
+              try {
+                const href = bookData.book.cover_image;
+                const path = href.startsWith('http') ? new URL(href).pathname : href;
+                const isDev = window.location.port === '3000';
+                const origin = isDev
+                  ? `${window.location.protocol}//${window.location.hostname}:8017`
+                  : `${window.location.protocol}//${window.location.host}`;
+                coverImageUrl = path.startsWith('/media/')
+                  ? `${origin}${path}`
+                  : `${origin}/media/${path.replace(/^\/?/, '')}`;
+              } catch (_) {
+                coverImageUrl = bookData.book.cover_image;
+              }
+            }
+
             return (
               <div className="w-full bg-white">
                 {/* En-tête avec titre et informations */}
@@ -253,23 +310,23 @@ const DocumentViewer = () => {
                     <div className="flex-1">
                       <h1 className="text-3xl font-bold text-gray-900 mb-4">{bookData.book.title}</h1>
                       <div className="text-gray-600 space-y-2">
-                        <p>Créé le {new Date(bookData.book.created_at).toLocaleDateString('fr-FR', { 
-                          year: 'numeric', 
-                          month: 'long', 
-                          day: 'numeric' 
+                        <p>Créé le {new Date(bookData.book.created_at).toLocaleDateString('fr-FR', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric',
                         })}</p>
                         <p>{bookData.chapters?.length || 0} chapitre{bookData.chapters?.length !== 1 ? 's' : ''}</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Image de couverture pleine largeur comme un PDF */}
                 {coverImageUrl && (
                   <div className="w-full bg-gray-50 py-8">
                     <div className="max-w-4xl mx-auto px-6">
                       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img 
+                        <img
                           id="cover-image"
                           src={coverImageUrl}
                           alt={`Couverture de ${bookData.book.title}`}
@@ -279,12 +336,14 @@ const DocumentViewer = () => {
                             e.target.style.display = 'none';
                             e.target.nextSibling.style.display = 'flex';
                           }}
-                          onLoad={(e) => {
+                          onLoad={() => {
                             console.log('DocumentViewer - Cover image loaded successfully:', coverImageUrl);
                           }}
                         />
-                        <div className="w-full h-96 bg-primary flex items-center justify-center text-white" 
-                             style={{ display: 'none' }}>
+                        <div
+                          className="w-full h-96 bg-primary flex items-center justify-center text-white"
+                          style={{ display: 'none' }}
+                        >
                           <FileText size={64} />
                         </div>
                       </div>
@@ -294,15 +353,17 @@ const DocumentViewer = () => {
               </div>
             );
           })()}
-          
+
           {/* Contenu du livre (chapitres) */}
           {viewMode === 'full' ? (
-            <FullBookContent 
-              bookData={bookData} 
+            <FullBookContent
+              bookData={bookData}
               selectedItem={selectedItem}
               isAdmin={isAdmin}
+              canEditStructure={isAdmin || isManager}
               onRegenerateChapter={regenerateQCMForChapter}
               regenLoading={regenLoading}
+              onBookContentChanged={reloadBookData}
             />
           ) : selectedItem ? (
             <ContentDisplay selectedItem={selectedItem} bookData={bookData} />
@@ -310,14 +371,16 @@ const DocumentViewer = () => {
             <div className="flex flex-col items-center justify-center p-12 text-center">
               <BookOpen size={48} className="text-gray-400 mb-4" />
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Bienvenue dans le Document Viewer</h2>
-              <p className="text-gray-600 mb-4">Sélectionnez un chapitre, une section ou une sous-section dans le sommaire pour afficher son contenu.</p>
+              <p className="text-gray-600 mb-4">
+                Sélectionnez un chapitre, une section ou une sous-section dans le sommaire pour afficher son contenu.
+              </p>
               <p className="text-sm text-gray-500">
                 Ou cliquez sur <FileText size={16} /> pour afficher tout le livre avec la hiérarchie complète.
               </p>
             </div>
           )}
         </div>
-       </div>
+      </div>
     </div>
   );
 };

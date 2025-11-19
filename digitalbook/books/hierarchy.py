@@ -21,12 +21,21 @@ def create_chapter_from_data(chapter_data, book, thematique, chapter_index=None)
     json_order = chapter_data.get('order')
     order = json_order if json_order is not None else (chapter_index if chapter_index is not None else 0)
 
+    chapter_content = chapter_data.get('content', '')
+    if isinstance(chapter_content, list):
+        chapter_content = " ".join(str(x) for x in chapter_content)
+    chapter_title = chapter_data.get('title', 'Chapitre sans titre')
+    if not isinstance(chapter_title, str):
+        chapter_title = str(chapter_title)
+    if len(chapter_title) > 255:
+        chapter_title = chapter_title[:255]
     chapter = Chapter.objects.create(
         book=book,
         thematique=thematique,
-        title=chapter_data.get('title', 'Chapitre sans titre'),
-        content=chapter_data.get('content', ''),
-        order=order
+        title=chapter_title,
+        content=chapter_content,
+        order=order,
+        is_intro=bool(chapter_data.get('is_intro', False)),
     )
     print(f"    ✓ Chapitre créé: {chapter.title} (ID: {chapter.id})")
 
@@ -54,6 +63,12 @@ def create_section_from_data(section_data, chapter, section_index=None):
     # Adapter les noms de champs pour l'ancienne structure
     section_title = section_data.get('title') or section_data.get('titre', 'Section sans titre')
     section_content = section_data.get('content') or section_data.get('contenu', '')
+    if isinstance(section_content, list):
+        section_content = " ".join(str(x) for x in section_content)
+    if not isinstance(section_title, str):
+        section_title = str(section_title)
+    if len(section_title) > 255:
+        section_title = section_title[:255]
 
     print(f"    Création section: {section_title}")
 
@@ -95,6 +110,12 @@ def create_subsection_from_data(subsection_data, section, subsection_index=None)
     # Adapter les noms de champs pour l'ancienne structure
     subsection_title = subsection_data.get('title') or subsection_data.get('titre', 'Sous-section sans titre')
     subsection_content = subsection_data.get('content') or subsection_data.get('contenu', '')
+    if isinstance(subsection_content, list):
+        subsection_content = " ".join(str(x) for x in subsection_content)
+    if not isinstance(subsection_title, str):
+        subsection_title = str(subsection_title)
+    if len(subsection_title) > 255:
+        subsection_title = subsection_title[:255]
 
     print(f"      Création sous-section: {subsection_title}")
 

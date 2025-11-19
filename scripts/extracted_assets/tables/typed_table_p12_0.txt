@@ -1,0 +1,23 @@
+Type of measure | Category 3 | Category 2 | Category 1
+ | Specific | Specific | Generic for the type of lift
+ | Required | Might be required by
+procedures or operating
+instructions
+(e.g., required where
+SIMOPS involved) | Might be required by
+procedures or operating
+instructions
+ | Specific | Specific | Generic for the type of lift
+ | Required pre-lift | Required pre-lift | Recommended pre-shift
+ | Mechanical Lifting
+Work around mobile
+equipment (if relevant)
+Man-riding (if relevant)
+Work at height
+(if relevant) | Mechanical Lifting
+Work around mobile
+equipment (if relevant)
+Work at height (if relevant) | Mechanical Lifting
+Work around mobile
+equipment (if relevant)
+Work at height (if relevant)

@@ -180,6 +180,17 @@ const Documents = () => {
     navigate('/upload');
   };
 
+  const handleTogglePublished = async (doc) => {
+    try {
+      const updated = await bookService.updateBook(doc.id, { published: !doc.published });
+      const newPublished = typeof updated?.published === 'boolean' ? updated.published : !doc.published;
+      setDocuments((prev) => prev.map((d) => (d.id === doc.id ? { ...d, published: newPublished } : d)));
+    } catch (error) {
+      console.error('Erreur lors du changement de statut de publication:', error);
+      // On ne bloque pas l’UI, mais on pourrait afficher une notif ici
+    }
+  };
+
   return (
     <div className="flex-1 p-8 overflow-y-auto">
       <div className="max-w-7xl mx-auto">
@@ -310,6 +321,10 @@ const Documents = () => {
                   onDownload={() => handleDownloadDocument(doc.pdf_url)}
                   onDelete={() => handleDeleteDocument(doc.id)}
                   canDownload={isAdmin}
+                  published={doc.published}
+                  canTogglePublished={isAdmin}
+                  onTogglePublished={() => handleTogglePublished(doc)}
+                  canDelete={isAdmin}
                 />
               ))}
             </div>

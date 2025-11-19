@@ -7,6 +7,12 @@ const api = axios.create({
   xsrfHeaderName: 'X-CSRFToken',
 });
 
+// Separate instance for token refresh to avoid interceptor recursion
+const refreshApi = axios.create({
+  baseURL: '/api/auth',
+  withCredentials: true,
+});
+
 // Utility to read a cookie value by name from document.cookie
 function getCookie(name) {
   const value = `; ${document.cookie}`;
@@ -56,16 +62,40 @@ api.interceptors.request.use(
 // Intercepteur pour gérer les erreurs d'authentification
 api.interceptors.response.use(
   (response) => response,
-  (error) => {
-    if (error.response?.status === 401) {
-      // Token invalide ou expiré
-      try { localStorage.removeItem('token'); } catch (e) {}
-      try { localStorage.removeItem('user'); } catch (e) {}
-      try { localStorage.removeItem('auth_pref'); } catch (e) {}
-      try { sessionStorage.removeItem('token'); } catch (e) {}
-      try { sessionStorage.removeItem('user'); } catch (e) {}
-      try { sessionStorage.removeItem('auth_pref'); } catch (e) {}
-      window.location.href = '/login';
+  async (error) => {
+    const originalRequest = error.config || {};
+    if (error.response?.status === 401 && !originalRequest._retry) {
+      const storedRefresh = sessionStorage.getItem('refresh_token') || localStorage.getItem('refresh_token');
+      if (!storedRefresh) {
+        // No refresh token, redirect to login
+        window.location.href = '/login';
+        return Promise.reject(error);
+      }
+      originalRequest._retry = true;
+      try {
+        const res = await refreshApi.post('/refresh/', { refresh_token: storedRefresh });
+        const newAccess = res?.data?.data?.access_token || res?.data?.access_token;
+        const newRefresh = res?.data?.data?.refresh_token || res?.data?.refresh_token;
+        const targetStore = sessionStorage.getItem('refresh_token') ? sessionStorage : localStorage;
+        if (newAccess) targetStore.setItem('token', newAccess);
+        if (newRefresh) targetStore.setItem('refresh_token', newRefresh);
+        // Set header and retry
+        originalRequest.headers = originalRequest.headers || {};
+        originalRequest.headers['Authorization'] = `Bearer ${newAccess}`;
+        return api(originalRequest);
+      } catch (e) {
+        // On failure, clear and redirect
+        try { localStorage.removeItem('token'); } catch (_) {}
+        try { localStorage.removeItem('user'); } catch (_) {}
+        try { localStorage.removeItem('auth_pref'); } catch (_) {}
+        try { localStorage.removeItem('refresh_token'); } catch (_) {}
+        try { sessionStorage.removeItem('token'); } catch (_) {}
+        try { sessionStorage.removeItem('user'); } catch (_) {}
+        try { sessionStorage.removeItem('auth_pref'); } catch (_) {}
+        try { sessionStorage.removeItem('refresh_token'); } catch (_) {}
+        window.location.href = '/login';
+        return Promise.reject(e);
+      }
     }
     return Promise.reject(error);
   }

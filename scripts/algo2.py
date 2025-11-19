@@ -197,8 +197,8 @@ def extract_assets(pdf_path, output_dir, structured_data=None):
 
 # --- Main ---
 def main():
-    pdf_file = "Livretdigital.pdf"
-    output_file = "ebook_structure_detailed.json"
+    pdf_file = "IOGP best pratique.pdf"
+    output_file = "iopgbestpracticedetailled.json"
     assets_dir = "extracted_assets"
     os.makedirs(assets_dir, exist_ok=True)
 

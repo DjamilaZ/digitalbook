@@ -1,0 +1,18 @@
+<table>
+Principle
+4 |  | A risk assessment is required for every lift, regardless
+of category. A lift plan is required for every lift, with
+the level of detail required defined by the category of
+lift. A Permit to Work may also be required subject to
+lift complexity and company policy.
+NOTE: Category 1 lifts may be addressed through a generic
+lift plan, while Category 2 and 3 lifts require a specific
+lift plan. All Category 3 lifts require a Permit To Work.
+Principle
+10
+</table> |  | Any Lifting of personnel is classified to the category
+requiring the highest level of controls (IOGP Category
+3) and a rescue plan is included as part of the Lift
+Plan. Any equipment used for lifting personnel is
+certified for the specific activity and used according
+to recognised international standards.

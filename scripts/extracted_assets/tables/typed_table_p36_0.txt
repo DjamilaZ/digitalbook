@@ -1,0 +1,21 @@
+>A1: M | inimum c | learance distances6 | 
+ |  |  | 
+Voltage | (nominal, kV | , alternating current) Minimum clearan | ce d
+ |  |  | 
+ | up t | o 50 | 3
+ |  |  | 
+ | over 50 | to 200 | 4.5
+ |  |  | 
+ | over 20 | 0 to 350 | 6
+ |  |  | 
+ | over 35 | 0 to 500 | 7.5
+ |  |  | 
+ | over 50 | 0 to 750 | 10.5
+ |  |  | 
+ | over 750 | to 1,000 | 13.5
+ |  |  | 
+ |  | (As established by the utilit | y ow
+ | over | 1,000 professional engineer w | ho i
+ |  | respect to electrical power | tran
+ |  |  | 
+The valu | e that follows | “to” is up to and includes that value. For example, over 5 | 0 to

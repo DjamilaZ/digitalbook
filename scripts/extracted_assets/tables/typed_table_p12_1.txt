@@ -1,0 +1,18 @@
+!!!table
+Type of role | Category 3 | Category 2 | Category 1
+ | ü | ü | ü
+ | ü | ü | ü
+ | ü | ü | As required by operating
+instructions
+ | ü | ü | As required by operating
+instructions
+ | ü
+(Site approval of lift plan) | ü
+(Site approval of lift plan) | ü
+(Site approval of lift plan)
+ | ü
+(Technical approval of
+specific lift plan) | If required by operating
+instructions | ü*
+(Periodic review approval of
+generic lift plans)

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_nested',
+    'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
     'books',
     'qcm',
@@ -98,13 +99,14 @@ USE_X_FORWARDED_HOST = True
 # Cookies (développement HTTP local)
 SESSION_COOKIE_SAMESITE = 'Lax'
 CSRF_COOKIE_SAMESITE = 'Lax'
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE =    True
+SESSION_COOKIE_SECURE = not DEBUG
+CSRF_COOKIE_SECURE = not DEBUG
 # Laisser accessible au JS pour qu'Axios puisse lire le cookie et envoyer l'en-tête X-CSRFToken
 CSRF_COOKIE_HTTPONLY = False
 # Configuration de l'API REST
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ],
@@ -114,6 +116,23 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
+
+# Email configuration
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = os.environ.get('EMAIL_HOST', '')
+    EMAIL_PORT = int(os.environ.get('EMAIL_PORT', '587'))
+    EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', 'true').lower() == 'true'
+    EMAIL_USE_SSL = os.environ.get('EMAIL_USE_SSL', 'false').lower() == 'true'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
+
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'no-reply@digitalbook.local')
+
+# Frontend base URL for password reset links
+FRONTEND_BASE_URL = os.environ.get('FRONTEND_BASE_URL', 'http://localhost:3000')
 
 # ============================
 # Celery Configuration

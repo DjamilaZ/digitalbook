@@ -1,0 +1,1025 @@
+{
+    "chapters": [
+        {
+            "title": "Ten principles for lifting 8",
+            "number": 1,
+            "sections": [],
+            "subsections": [],
+            "content": "",
+            "images": [
+                {
+                    "id": "img_1_0",
+                    "page": 1,
+                    "filename": "img_p1_0_635e5869.png",
+                    "filepath": "extracted_assets\\images\\img_p1_0_635e5869.png",
+                    "url": "/assets/images/img_p1_0_635e5869.png",
+                    "width": 1213,
+                    "height": 2007
+                },
+                {
+                    "id": "img_1_1",
+                    "page": 1,
+                    "filename": "img_p1_1_3205c671.png",
+                    "filepath": "extracted_assets\\images\\img_p1_1_3205c671.png",
+                    "url": "/assets/images/img_p1_1_3205c671.png",
+                    "width": 1227,
+                    "height": 1999
+                },
+                {
+                    "id": "img_33_0",
+                    "page": 33,
+                    "filename": "img_p33_0_c89bbd66.png",
+                    "filepath": "extracted_assets\\images\\img_p33_0_c89bbd66.png",
+                    "url": "/assets/images/img_p33_0_c89bbd66.png",
+                    "width": 1031,
+                    "height": 354
+                },
+                {
+                    "id": "img_34_0",
+                    "page": 34,
+                    "filename": "img_p34_0_5eb541bf.png",
+                    "filepath": "extracted_assets\\images\\img_p34_0_5eb541bf.png",
+                    "url": "/assets/images/img_p34_0_5eb541bf.png",
+                    "width": 1501,
+                    "height": 408
+                }
+            ],
+            "tables": [
+                {
+                    "id": "table_7_0",
+                    "page": 7,
+                    "filename": "table_p7_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p7_1.txt",
+                    "url": "/assets/tables/table_p7_1.txt",
+                    "rows": 2,
+                    "columns": 1,
+                    "content": [
+                        "Safe Mechanical Lifting",
+                        "Plan lifting\noperations and\ncontrol the area\n• I confirm that the\nequipment and load\nhave been inspected and\nare fit for purpose\n• I only operate equipment that I am\nqualified to use\n• I establish and obey barriers and\nexclusion zones\n• I never walk under a suspended\nload"
+                    ]
+                },
+                {
+                    "id": "table_7_1",
+                    "page": 7,
+                    "filename": "table_p7_2.txt",
+                    "filepath": "extracted_assets\\tables\\table_p7_2.txt",
+                    "url": "/assets/tables/table_p7_2.txt",
+                    "rows": 4,
+                    "columns": 4,
+                    "content": [
+                        "Bypassing Safety Controls | Confined Space | Driving | Energy Isolation",
+                        "Obtain authorisation\nbefore overriding\nor disabling safety\ncontrols\n• I understand and use safety-\ncritical equipment and procedures\nwhich apply to my task\n• I obtain authorisation before:\n– disabling or overriding safety\nequipment\n– deviating from procedures\n– crossing a barrier | Obtain authorisation\nbefore entering a\nconfined space\n• I confirm energy\nsources are isolated\n• I confirm the atmosphere has b\ntested and is monitored\n• I check and use my breathing\napparatus when required\n• I confirm there is an attendant\nstanding by\n• I confirm a rescue plan is in pla\n• I obtain authorisation to enter | Follow safe driving\nrules\n• I always wear a\nseatbelt\n• I do not exceed the speed limit,\neen and reduce my speed for road\nconditions\n• I do not use phones or operate\ndevices while driving\n• I am fit, rested and fully alert while\ndriving\nce • I follow journey management\nrequirements | Verify isolation and\nzero energy before\nwork begins 0\n• I have identified all\nenergy sources\n• I confirm that hazardous energy\nsources have been isolated,\nlocked, and tagged\n• I have checked there is zero\nenergy and tested for residual\nor stored energy",
+                        "Hot Work | Line of Fire | Work Authorisation | Working at Height",
+                        "Control flammables\nand ignition sources\n• I identify and control\nignition sources\n• Before starting any hot work:\n– I confirm flammable material\nhas been removed or isolated\n– I obtain authorisation\n• Before starting hot work in a\nhazardous area I confirm:\n– a gas test has been completed\n– gas will be monitored continually | Keep yourself and\nothers out of the\nline of fire\n• I position myself to\navoid:\n– moving objects\n– vehicles\n– pressure releases\n– dropped objects\n• I establish and obey barriers an\nexclusion zones\n• I take action to secure loose obj\nand report potential dropped obj |  | Protect yourself\nagainst a fall when\nworking at height\n• I inspect my fall\nprotection equipment\nbefore use\n• I secure tools and work materials\nto prevent dropped objects\n• I tie off 100% to approved anchor\npoints while outside a protected\narea"
+                    ]
+                },
+                {
+                    "id": "table_7_2",
+                    "page": 7,
+                    "filename": "table_p7_3.txt",
+                    "filepath": "extracted_assets\\tables\\table_p7_3.txt",
+                    "url": "/assets/tables/table_p7_3.txt",
+                    "rows": 13,
+                    "columns": 7,
+                    "content": [
+                        "Confirm each control/\nsafeguard below before\nstarting work |  | Guidance for confirming each control/safeguard |  |  | Person(s)\nPerforming\nWork | Start-Work\nVerifier",
+                        "I HAVE CONFIRMED: |  |  |  |  |  | ",
+                        "1 The lift has been planned\n2 T an h d e c h o a n z t a r r o d l s le a d re identified |  | • The lift method, equipment, and number of people required has been assessed and determined\n• When required, an approved lift plan or procedure is in place and has been evaluated by a competent person\n• The lift has been assessed for:\n- load weight\n- load size\n- center of gravity (e.g., lifting points)\n• The lifting equipment’s current capacity and condition has been assessed\n• Equipment operator and lifting crew have discussed the written lift plan prior to lifting\n• Complete a task risk assessment specific to the scope of work\n• Discuss hazards with the work team prior to the start of work\n• Identify overhead hazards and/or other obstructions (e.g., overhead power lines), making sure to check:\n- load path |  |  |  | ",
+                        " |  | - swing radius\n- overhead hazards\n- pickup/lay-down zones\n• Check for simultaneous operations that may introduce any additional hazards\n• Discuss stop work considerations if work situation changes including change of weather\nNote: Consider how to apply “hands-free lifting” (e.g., use of push poles and/or taglines) |  |  |  | ",
+                        "3 W lif o t r a k r e e r q s u in al v i o fi l e v d e d t o w p it e h r f t o h r e m\ntheir task |  | • Lifting equipment operator and lifting crew are qualified to perform their task\nNote: To be “qualified” may require certification and/or assessment to meet company or applicable legal\nrequirements |  |  |  | ",
+                        "4 T st h a e b l le if t a in n g d e p q o u te ip n m tia e l n f t o i r s\nunplanned movement has\nbeen assessed |  | • Lifting appliance is level and/or placed on stable ground\n• Matting has been assessed for stability and is level for the lifting equipment\n• Outriggers are deployed\n• Loads have been assessed for stability, taking into account:\n- load securing\n- workplace conditions\n- travel path\n- equipment capacity\n• Equipment is operated per OEM requirements (e.g., weather, sea state and temperature) |  |  |  | ",
+                        "5 T eq h u e i l p i m fti e n n g t a i n s: d r igging\n• certified\n• inspected\n• rated for the lift |  | • Pre-use crane inspection has been completed\n• Safety and monitoring devices are in place and functioning\n• Manufacturer’s load chart is available\n• The rigging equipment has been inspected prior to lift\n• The rigging equipment is rated for the lift\nNote: If load chart does not exist, assume equipment is not rated for the lift; stop work and identify\nalternative lifting equipment that is rated for the load |  |  |  | ",
+                        "6 A an c d o m re m sp u o n n i s c i a b t i i l o it n i e p s l a a n r e\nagreed to by the lift crew |  | • Communication method(s) (e.g., hand signals, radio) have been agreed to and tested\n• Equipment operator and lifting crew have discussed the emergency response, including what emergency\nstop signals be used\n• The person in charge of the lift has been identified as per the lift plan or procedure\n• The members of the lift crew have agreed to their individual roles and responsibilities for the lift\n• The signaler for the lift has been identified (banksman/flagman/dogman/spotter) |  |  |  | ",
+                        "7 T in h s e p e lo c a te d d h p a r s i o b r e e to n lift |  | • Every load has been inspected for integrity and stability (e.g., center of gravity)\n- The load and its packaging can withstand the forces/motion caused by the lift\n• Loose objects have been secured or removed prior to lift\n• Loose and small objects are well packaged or placed in lifting basket |  |  |  | ",
+                        "8 B zo a n r e ri s e a rs re a i n n d p e l x a c c l e usion |  | • Exclusion zones have been identified and controls are in place to protect people from line of fire hazards, including:\n- working under suspended loads\n- moving objects\n- dropped objects\n• Access to exclusion zones is controlled (e.g., attendant or physical barriers)\n• Escape routes are unobstructed and known by the work crew |  |  |  | ",
+                        "Confirm these controls/safeguards are in place and verified prior to starting work.\nStop and seek help if anything changes. |  |  |  |  |  | ",
+                        " | Printed Name & Role |  | Signature | Date |  | ",
+                        "Start-Work Verifier |  |  |  |  |  | "
+                    ]
+                },
+                {
+                    "id": "table_8_0",
+                    "page": 8,
+                    "filename": "table_p8_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p8_1.txt",
+                    "url": "/assets/tables/table_p8_1.txt",
+                    "rows": 5,
+                    "columns": 3,
+                    "content": [
+                        "Principle\n1 |  | All lifting operations are categorised by the Person in\nCharge to reflect the risk of the lift. This then defines the\nrequired controlling documents and the competence of the\npeople involved.",
+                        "Principle\n2 |  | All persons involved in planning, performing, lifting and\nmaintaining lifting equipment are trained and assessed as\ncompetent for their role. Competence is assured through\nrelevant experience, initial and refresher training, and\nperiodic assessments.",
+                        "Principle\n3 |  | One person in the lift crew is designated as the Person In\nCharge of the lifting operation. All personnel involved in the\nlifting operation have their individual responsibilities clearly\ndefined and communicated prior to commencement of the\nlifting operation.",
+                        "Principle\n4 |  | A risk assessment is required for every lift, regardless of\ncategory. A lift plan is required for every lift, with the level\nof detail required defined by the category of lift. A Permit\nto Work may also be required subject to lift complexity and\ncompany policy.\nNOTE: Category 1 lifts may be addressed through a generic lift\nplan, while Category 2 and 3 lifts require a specific lift plan. All\nCategory 3 lifts require a Permit To Work.",
+                        "Principle\n5 |  | An approved competent person (Lifting Technical Authority,\nAdvisor, Engineer or Subject Matter Expert) is engaged in\nassuring that all lifting operations are correctly planned\nand managed."
+                    ]
+                },
+                {
+                    "id": "table_9_0",
+                    "page": 9,
+                    "filename": "table_p9_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p9_1.txt",
+                    "url": "/assets/tables/table_p9_1.txt",
+                    "rows": 5,
+                    "columns": 3,
+                    "content": [
+                        "Principle\n6 |  | A Red Zone is established. All non-authorised personnel are\nrestricted from entering the Red Zone1, and all personnel are\nkept clear of suspended/travelling loads and lifting equipment\nor between the load and any heavy immovable object.",
+                        "Principle\n7 |  | Lifting Equipment is thoroughly examined on a regular basis\nby an inspector who is sufficiently independent2 from the\non-site lifting crew, and who may be external or an in-house\nappointee. The examination refers to an acknowledged\nStandard for scope, methodology and acceptance/rejection\ncriteria. All safety and monitoring devices installed on lifting\nequipment are operational and not by-passed or disabled.\nNOTE: Periods of inspections can be influenced by the\nnature and robustness of use and application as well as the\nenvironments of use.",
+                        "Principle\n8 |  | All lifting equipment is visually inspected by a competent\nperson before and after use. Equipment integrity is\nmaintained and faulty equipment is removed from serviced\nand tagged as such. Inspection and maintenance activities\nare recorded in an equipment register.",
+                        "Principle\n9 |  | Periodic audits and inspections are conducted by an\nApproved Competent Person.",
+                        "Principle\n10 |  | Any Lifting of personnel is classified to the category requiring\nthe highest level of controls (IOGP Category 3) and a rescue\nplan is included as part of the Lift Plan. Any equipment used\nfor lifting personnel is certified for the specific activity and\nused according to recognised international standards."
+                    ]
+                },
+                {
+                    "id": "table_10_0",
+                    "page": 10,
+                    "filename": "table_p10_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p10_1.txt",
+                    "url": "/assets/tables/table_p10_1.txt",
+                    "rows": 1,
+                    "columns": 3,
+                    "content": [
+                        "Principle\n1 |  | All lifting operations are categorised by the Person\nin Charge to reflect the risk of the lift. This then\ndefines the required controlling documents and the\ncompetence of the people involved."
+                    ]
+                },
+                {
+                    "id": "table_10_1",
+                    "page": 10,
+                    "filename": "table_p10_2.txt",
+                    "filepath": "extracted_assets\\tables\\table_p10_2.txt",
+                    "url": "/assets/tables/table_p10_2.txt",
+                    "rows": 12,
+                    "columns": 3,
+                    "content": [
+                        "Companies can modify the specific criteria listed to reflect their operations and equipment. |  | ",
+                        "Answer the questions starting at the top and not jumping any. Your lift category matches the category of the\nfirst question you answer ‘yes’ to. |  | ",
+                        "CATEGORY 3 | Y | N",
+                        "Is the gross load weight over 90% of the certified load radius curve of the crane? |  | ",
+                        "Does the operation involve the lifting or lowering of personnel? |  | ",
+                        "Will the lift involve tandem lifting using powered lifting appliances? |  | ",
+                        "Could the lift be affected by any proximity hazards, i.e., restricted area, power line, confined space etc. |  | ",
+                        "Will the load be lifted over or in close proximity to live plant? |  | ",
+                        "Will the lift take more than one shift to complete? |  | ",
+                        "Will the lift plan require technical input or calculations from a technical expert (i.e., load distribution in rigging\nand appliances)? |  | ",
+                        "Will the load be transferred from one powered lifting appliance to another? |  | ",
+                        "Will the load be lifted from one marine vessel to another? |  | "
+                    ]
+                },
+                {
+                    "id": "table_11_0",
+                    "page": 11,
+                    "filename": "table_p11_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p11_1.txt",
+                    "url": "/assets/tables/table_p11_1.txt",
+                    "rows": 26,
+                    "columns": 3,
+                    "content": [
+                        "During the lift, will the crane operator’s visibility of the load be restricted/limited (i.e., ‘blind lift’)? |  | ",
+                        "Is the load to be rotated, up-ended/up-righted (roll-up, tailing or special lifting operations) or transferred from\none appliance to another during operation? |  | ",
+                        "Will the lift be subsea? |  | ",
+                        "Will the lift involve proof load testing of appliances or lifting equipment? |  | ",
+                        "If you’ve answered YES to ANY of the above, the lift is CATEGORY 3.\nIf you’ve answered NO to ALL of the above, check the next set of questions |  | ",
+                        "CATEGORY 2 | Y | N",
+                        "Is the gross load weight over 80% of the certified load radius curve of a mobile crane? |  | ",
+                        "Is the lift outside normal operating conditions for the equipment or the asset? |  | ",
+                        "Is the weight distribution uneven, or does it have the potential to shift? |  | ",
+                        "Will environmental conditions place restrictions on lifting operations? |  | ",
+                        "Is the load of an unusual shape? |  | ",
+                        "Is the weight of the load estimated (i.e., not known)? |  | ",
+                        "Does the load have any hazards such as sharp edges? |  | ",
+                        "Is the load subject to permanent deformation? |  | ",
+                        "Absence of designed and tested lifting points? |  | ",
+                        "Does the load have excessive dimension (limited clearance from crane structures, surroundings)? |  | ",
+                        "Is the operation taking place during SIMOPS or interfering with other concurrent activities? |  | ",
+                        "If you’ve answered YES to any of the above, the Lift is CATEGORY 2.\nIf you’ve answered NO to ALL of the above, the lift is likely Category 1. |  | ",
+                        "CATEGORY 1 | Y | N",
+                        "Are all these three conditions present? |  | ",
+                        "1. You have you answered “No” to all questions in Category 3 and Category 2 |  | ",
+                        "AND |  | ",
+                        "2. The personnel involved in the lift are trained, assessed as competent and authorised to perform their\nspecific role |  | ",
+                        "AND |  | ",
+                        "3. The lifting equipment and the load are simple to use and lift |  | ",
+                        "Only if ALL the 3 conditions for Category 1 are present, is the lift classified as CATEGORY 1. |  | "
+                    ]
+                },
+                {
+                    "id": "table_12_0",
+                    "page": 12,
+                    "filename": "table_p12_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p12_1.txt",
+                    "url": "/assets/tables/table_p12_1.txt",
+                    "rows": 6,
+                    "columns": 4,
+                    "content": [
+                        "Type of measure | Category 3 | Category 2 | Category 1",
+                        " | Specific | Specific | Generic for the type of lift",
+                        " | Required | Might be required by\nprocedures or operating\ninstructions\n(e.g., required where\nSIMOPS involved) | Might be required by\nprocedures or operating\ninstructions",
+                        " | Specific | Specific | Generic for the type of lift",
+                        " | Required pre-lift | Required pre-lift | Recommended pre-shift",
+                        " | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nMan-riding (if relevant)\nWork at height\n(if relevant) | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant) | Mechanical Lifting\nWork around mobile\nequipment (if relevant)\nWork at height (if relevant)"
+                    ]
+                },
+                {
+                    "id": "table_12_1",
+                    "page": 12,
+                    "filename": "table_p12_2.txt",
+                    "filepath": "extracted_assets\\tables\\table_p12_2.txt",
+                    "url": "/assets/tables/table_p12_2.txt",
+                    "rows": 7,
+                    "columns": 4,
+                    "content": [
+                        "Type of role | Category 3 | Category 2 | Category 1",
+                        " | ü | ü | ü",
+                        " | ü | ü | ü",
+                        " | ü | ü | As required by operating\ninstructions",
+                        " | ü | ü | As required by operating\ninstructions",
+                        " | ü\n(Site approval of lift plan) | ü\n(Site approval of lift plan) | ü\n(Site approval of lift plan)",
+                        " | ü\n(Technical approval of\nspecific lift plan) | If required by operating\ninstructions | ü*\n(Periodic review approval of\ngeneric lift plans)"
+                    ]
+                },
+                {
+                    "id": "table_13_0",
+                    "page": 13,
+                    "filename": "table_p13_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p13_1.txt",
+                    "url": "/assets/tables/table_p13_1.txt",
+                    "rows": 3,
+                    "columns": 3,
+                    "content": [
+                        "Principle\n2 |  | All persons involved in planning, performing, lifting\nand maintaining lifting equipment are trained and\nassessed as competent for their role. Competence\nis assured through relevant experience, initial and\nrefresher training, and periodic assessments.",
+                        "Principle\n3 |  | One person in the lift crew is designated as the Person\nIn Charge of the lifting operation. All personnel\ninvolved in the lifting operation have their individual\nresponsibilities clearly defined and communicated\nprior to commencement of the lifting operation.",
+                        "Principle\n6 |  | A Red Zone is established. All non-authorised\npersonnel are restricted from entering the Red\nZone, and all personnel are kept clear of suspended/\ntravelling loads and lifting equipment or between the\nload and any heavy immovable object."
+                    ]
+                },
+                {
+                    "id": "table_14_0",
+                    "page": 14,
+                    "filename": "table_p14_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p14_1.txt",
+                    "url": "/assets/tables/table_p14_1.txt",
+                    "rows": 1,
+                    "columns": 2,
+                    "content": [
+                        "Role | Example of job titles"
+                    ]
+                },
+                {
+                    "id": "table_15_0",
+                    "page": 15,
+                    "filename": "table_p15_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p15_1.txt",
+                    "url": "/assets/tables/table_p15_1.txt",
+                    "rows": 2,
+                    "columns": 1,
+                    "content": [
+                        "RED ZONES SAVES LIVES",
+                        "1 Is your red zone defined?\n2 Are physical barriers deployed?\n3 Is access controlled?\n4 Are escape routes identified?"
+                    ]
+                },
+                {
+                    "id": "table_18_0",
+                    "page": 18,
+                    "filename": "table_p18_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p18_1.txt",
+                    "url": "/assets/tables/table_p18_1.txt",
+                    "rows": 2,
+                    "columns": 3,
+                    "content": [
+                        "Principle\n4 |  | A risk assessment is required for every lift, regardless\nof category. A lift plan is required for every lift, with\nthe level of detail required defined by the category of\nlift. A Permit to Work may also be required subject to\nlift complexity and company policy.\nNOTE: Category 1 lifts may be addressed through a generic\nlift plan, while Category 2 and 3 lifts require a specific\nlift plan. All Category 3 lifts require a Permit To Work.",
+                        "Principle\n5 |  | An approved competent person (Lifting Technical\nAuthority, Advisor, Engineer or Subject Matter\nExpert) is engaged in assuring that all lifting\noperations are correctly planned and managed."
+                    ]
+                },
+                {
+                    "id": "table_20_0",
+                    "page": 20,
+                    "filename": "table_p20_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p20_1.txt",
+                    "url": "/assets/tables/table_p20_1.txt",
+                    "rows": 2,
+                    "columns": 3,
+                    "content": [
+                        "Principle\n4 |  | A risk assessment is required for every lift, regardless\nof category. A lift plan is required for every lift, with\nthe level of detail required defined by the category of\nlift. A Permit to Work may also be required subject to\nlift complexity and company policy.\nNOTE: Category 1 lifts may be addressed through a generic\nlift plan, while Category 2 and 3 lifts require a specific\nlift plan. All Category 3 lifts require a Permit To Work.",
+                        "Principle\n10 |  | Any Lifting of personnel is classified to the category\nrequiring the highest level of controls (IOGP Category\n3) and a rescue plan is included as part of the Lift\nPlan. Any equipment used for lifting personnel is\ncertified for the specific activity and used according\nto recognised international standards."
+                    ]
+                },
+                {
+                    "id": "table_20_1",
+                    "page": 20,
+                    "filename": "table_p20_2.txt",
+                    "filepath": "extracted_assets\\tables\\table_p20_2.txt",
+                    "url": "/assets/tables/table_p20_2.txt",
+                    "rows": 13,
+                    "columns": 6,
+                    "content": [
+                        "WHEN TO COMPLETE – Before the start of any MAN-RIDING activities |  |  |  |  | ",
+                        "Csstao afner f tgi i r num gar w eda obc reh kl ocown btreofol/re | Guidance for confirming each control/safeguard |  |  | PPW eeo rrr sfkoornm(si)n g | SVetarrifti-eWr ork",
+                        "I HAVE CONFIRMED: |  |  |  |  | ",
+                        "1 Pwotop ei tep rhs re a ot r ht n fio en or n em m l s a i at nn hr v- ee or i liqr vd u e t in aa d s gl ik fied | • Rreidspeor,n Wsiibniclihti eosperator, and Spotter have all been trained and can describe their |  |  |  | ",
+                        "2 Te••• qh cirn ue a es i t r mp eptmi de a fi c ne f eto -nder rt d i t di h s i: e n g ta sk | •••• WRHFa ia ig l n rl gn c a ih en r e sg rse s e si aqnt r usg eipe pc ea me cr r ,te t ei in f f d it u e ,p s dien i n a rc g slwu , s od in u rin sk it p g- a ae bctc la- e thb e f el d oei r g, himnts a rpe neq -cr u iti der ide n m gfoern wtsear/defects |  |  |  | ",
+                        "3 Aemaur q n l a l e u p n ri ls op- aer tm nc a i n du tei i er nn n de tg gd m co a l t r co oo ts v m ipe evr o i m ettv io ve e i e n s nn g tt | • Haroei sntointg m aonvdin rgo t(aet.ign.g, s eeqtu tihpem bernatk ein f othre t hime mtraevdeialitneg a brleoac ka,n ldo cakt doiuffte traegn to uletv)els |  |  |  | ",
+                        "4 Cmag oer mtehe moddu tsn o ih c baa yvt iet o h nbe e en | • Cfoo -r m Iu mfs m uo esvu d ei n nb mi g c y e a ht nt ha ito en on dw f m so rii rg ed k t ne h c ra o rles d ,w s c ( o e n .g fi . r , m ha c n o d m s m ig o n n a l u s n a d n e d r s ra ta d n io d s in ) g a g o r f e h e a d n t d o s a i n g d n a t l e s s t t e o d b e |  |  |  | ",
+                        "workers\n5 Tbareh eien s tge o uc o uslser / edm d aatt hereiiaglhst | •••N(e o. TMC gt o e. o , ao :v w t l eF es o ro r u r i loa kl s opl es awe d t nu th i as hn e te eg i dh g ss e h a it i tt to g e t hh /l ocoet o s owig l m h eh r a r ep t v galae e in r s ves yt e e e dls r c se r) u o(ce r p ui .p nrge e g .,d d w g i ornir ba estje / itn lo c a gt rn sa p y ,g r a ge e r av db ep so ns /xt ,t e e ieo st tn h,c ep.p) ro r s oo urg c uh rase mes ,d beabgrsis e ntce.ts |  |  |  | ",
+                        "6 Bepxl a acr clrue iesirosn a znodn derso apr/e in | •• EC(e so.g tna .t, br aoli tls t haec n dcd rea osn pst / etoox r c dp lurhos ypi s o/ien cx a zcl o lbun ase risornie rzso)nes during work at height |  |  |  | ",
+                        "7 Raneds cisu er epaldany tios ibne p ulaseced | • • C C o o -- --- n n HL iic ss f f a o i i o r raan cwm mvw a e a t t ax t ti i oo l h h re a e n e e s c b t u o o l w r a e tf efr e o s s tr r t ce p tk h h us e e cece c r u ir r f c e e e i e r c w s e s e ch c w h q ua u :u a ez es i a p p r r d m l e da iss s e n pc n r ou e tns l a s a sn ee te d d d r t e h to s e p t r h o e n i s s d c t e u a r e s s k plan, including: |  |  |  | ",
+                        "Confirm these controlSst/ospa faengdu aserdesk ahreel pin i fp alancyeth ainngd cvherainfigeeds p.rior to starting work. |  |  |  |  | ",
+                        "Printed | Name & Role | Signature | Date |  | ",
+                        "Start-Work Verifier |  |  |  |  | "
+                    ]
+                },
+                {
+                    "id": "table_24_0",
+                    "page": 24,
+                    "filename": "table_p24_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p24_1.txt",
+                    "url": "/assets/tables/table_p24_1.txt",
+                    "rows": 3,
+                    "columns": 3,
+                    "content": [
+                        "Principle\n7 |  | Lifting Equipment is thoroughly examined on a\nregular basis by an inspector who is sufficiently\nindependent2 from the on-site lifting crew, and who\nmay be external or an in-house appointee. The\nexamination refers to an acknowledged Standard\nfor scope, methodology and acceptance/rejection\ncriteria. All safety and monitoring devices installed\non lifting equipment are operational and not by-\npassed or disabled.\nNOTE: Periods of inspections can be influenced by the\nnature and robustness of use and application as well as\nthe environments of use.",
+                        "Principle\n8 |  | All lifting equipment is visually inspected by a\ncompetent person before and after use. Equipment\nintegrity is maintained and faulty equipment\nis removed from serviced and tagged as such.\nInspection and maintenance activities are recorded\nin an equipment register.",
+                        "Principle\n9 |  | Periodic audits and inspections are conducted by an\nApproved Competent Person."
+                    ]
+                },
+                {
+                    "id": "table_31_0",
+                    "page": 31,
+                    "filename": "table_p31_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p31_1.txt",
+                    "url": "/assets/tables/table_p31_1.txt",
+                    "rows": 1,
+                    "columns": 2,
+                    "content": [
+                        "Term | Definition"
+                    ]
+                },
+                {
+                    "id": "table_32_0",
+                    "page": 32,
+                    "filename": "table_p32_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p32_1.txt",
+                    "url": "/assets/tables/table_p32_1.txt",
+                    "rows": 1,
+                    "columns": 2,
+                    "content": [
+                        "Term | Definition"
+                    ]
+                },
+                {
+                    "id": "table_35_0",
+                    "page": 35,
+                    "filename": "table_p35_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p35_1.txt",
+                    "url": "/assets/tables/table_p35_1.txt",
+                    "rows": 2,
+                    "columns": 16,
+                    "content": [
+                        "Height\nabove\nground\n(meters) | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 | 110 | 120 | 130 | 140 | 150",
+                        "Wind\nspeed\nmultiplier | 1.00 | 1.10 | 1.17 | 1.22 | 1.26 | 1.29 | 1.32 | 1.35 | 1.37 | 1.39 | 1.41 | 1.43 | 1.44 | 1.46 | 1.47"
+                    ]
+                },
+                {
+                    "id": "table_37_0",
+                    "page": 37,
+                    "filename": "table_p37_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p37_1.txt",
+                    "url": "/assets/tables/table_p37_1.txt",
+                    "rows": 5,
+                    "columns": 5,
+                    "content": [
+                        "Generic\nJob Title | Main Purpose | Legislation\n[most relevant] | Level of Competency – Offshore | Level of Competency – Onshore",
+                        "SLCP | Approval of lift\nplans & controls\nthe execution\nof site lifting\noperations | LOLER7\napplicable | CPCS Appointed Person\nor\nECITB Level 4 Appointed Person\nMoving Load\nor\nEAL Certificate of Competency\nLevel 2 A+B+C\nor\nOPITO LOLER Competent Person | CPCS Appointed Person\nor\nECITB Level 4 Appointed Person\nMoving Load\nor\nEAL Certificate of Competency\nLevel 2 A+B+C\nor\nOPITO LOLER Competent Person\nor\nNPORS Appointed Person",
+                        " |  | US applicable | API Qualified Offshore Rigger\n(Advanced API RP 2D 2-day\nCourse) | NCCCO – Certified Lift Director\nor\nNCCCO Mobile Crane &\nNCCCO Rigger Level II",
+                        "Rigger | Uses portable\nlifting equipment\nto perform lifting\noperations (e.g.\nchain block,\nhoists, Tirfors) | LOLER\napplicable | SVQ/NVQ Level 3 Moving Loads/\nTechnical Services\nor\nECITB Level 3 Moving Loads /\nTechnical Services\nor\nEAL Certificate of Competency\nLevel 2 A+B\nor\nOPITO Stage 3 Rigger\nor\nNPORS Rigging and Fleeting\nLoads | SVQ/NVQ Level 3 Moving Loads/\nTechnical Services\nor\nECITB Level 3 Moving Loads /\nTechnical Services\nor\nEAL Certificate of Competency\nLevel 2 A+B\nor\nOPITO Stage 3 Rigger\nor\nNPORS Rigging and Fleeting\nLoads",
+                        " |  | US applicable | API Qualified Offshore Rigger\n(Advanced API RP 2D 2-day\nCourse) | NCCCO – Certified Rigger Level II"
+                    ]
+                },
+                {
+                    "id": "table_38_0",
+                    "page": 38,
+                    "filename": "table_p38_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p38_1.txt",
+                    "url": "/assets/tables/table_p38_1.txt",
+                    "rows": 9,
+                    "columns": 5,
+                    "content": [
+                        "Generic\nJob Title | Main Purpose | Legislation\n[most relevant] | Level of Competency – Offshore | Level of Competency – Onshore",
+                        "Banksman | Gives\ninstructions\nto equipment\noperators | LOLER\napplicable | ECITB Level 2 Lifting and Slinging\nEngineering\nor\nEAL Certificate of Competency\nLevel 2 A+C\nor\nOPITO Stage 3 Banksman | ECITB Level 2 Lifting and Slinging\nEngineering\nor\nEAL Certificate of Competency\nLevel 2 A+C\nor\nOPITO Stage 3 Banksman\nor\nNPORS",
+                        " |  | US applicable | API Qualified Offshore Rigger\n(Advanced API RP 2D, 2-day\nCourse) | NCCO Certified Signal Person",
+                        "Slinger & Load\nHandler | Connects the\nload to the lifting\nequipment | LOLER\napplicable | Completed EAL Certificate of\nCompetency Level 1 A+C\nor\nOPITO Stage1 Banksman Slinger,\nworking towards Stage 2.\nor\nECITB Level 2 Lifting and Slinging\nEngineering\nor\nNPORS Slinger Signaller | Completed EAL Certificate of\nCompetency Level 1\nA+C\nor\nOPITO Stage1 Banksman Slinger,\nworking towards Stage 2.\nor\nECITB Level 2 Lifting and Slinging\nEngineering\nor\nNPORS Slinger Signaller",
+                        " |  | US applicable | API Qualified Offshore Rigger\n(API RP 2D, 2-day course) | NCCCO Certified Rigger Level I",
+                        "Powered Lifting\nEquipment\nOperator (e.g.\nwinces, air\nhoists) | Operator of\npowered lifting\nequipment | LOLER\napplicable | Equipment familiarisation\nand\nECITB Level 2 Lifting and Slinging\nEngineering\nor\nEAL Certificate of Competency\nlevel 2+ B\nor\nNPORS Operators Training\n(Note Courses are specific to\nequipment type) | Equipment familiarisation\nand\nECITB Level 2 Lifting and Slinging\nEngineering\nor\nEAL Certificate of Competency\nlevel 2+ B\nor\nNPORS Operators Training\n(Note Courses are specific to\nequipment type)",
+                        " |  | US applicable | Equipment familiarisation\nand\nAPI Qualified Offshore Rigger\n(Advanced API RP 2D 2-day\nCourse) | Equipment familiarisation\nand\nNCCCO Certified OHC Operator",
+                        "Offshore Crane\nOperator\n[Dynamic lifts] | Operator of an\noffshore crane\nin dynamic &\nnon-dynamic\nconditions | LOLER\napplicable | Equipment Familiarisation\nand\nStage 3 Operator (e.g. Sparrow,\nEnermech)\nor\nNorwegian G5 Operator) | Not Applicable",
+                        " |  | US applicable | Seatrax 3-day advanced crane\noperator course completed every\n4 years (stage 2 crane operator)\n1-day crane simulator\nassessment conducted at HOLC\nand completed every 4 years. | Not Applicable"
+                    ]
+                },
+                {
+                    "id": "table_39_0",
+                    "page": 39,
+                    "filename": "table_p39_1.txt",
+                    "filepath": "extracted_assets\\tables\\table_p39_1.txt",
+                    "url": "/assets/tables/table_p39_1.txt",
+                    "rows": 12,
+                    "columns": 5,
+                    "content": [
+                        "Generic\nJob Title | Main Purpose | Legislation\n[most relevant] | Level of Competency – Offshore | Level of Competency – Onshore",
+                        "Onshore Crane\nOperator | Operator of an\nonshore crane | LOLER\napplicable | Not Applicable | Equipment Familiarisation\nand\nLicenced by local authority\n(Government or regulatory board",
+                        " |  | US applicable | Not Applicable | Equipment Familiarisation\nand\nLicenced by local authority\n(Government or regulatory board\nand\nNCCCO Certified Crane Operator",
+                        "Technician\n[Can only work\nunder adequate\nsupervision\nor held to\nappropriate level\nof competency\ndetailed for\nthe role being\nundertaken] | Engineering\ntrade Technician\nthat uses lifting\nequipment to\ninstall, repair\nor maintain\nmechanical\nor process\nequipment | LOLER\napplicable | Completed EAL Certificate of\nCompetency Level 1 A+C\nor\nOPITO Stage1 Banksman Slinger,\nworking towards Stage 2.\nor\nECITB Level 2 Lifting and Slinging\nEngineering | Completed EAL Certificate of\nCompetency Level 1\nA+C\nor\nOPITO Stage1 Banksman Slinger,\nworking towards Stage 2.\nor\nECITB Level 2 Lifting and Slinging\nEngineering",
+                        " |  | US applicable | API Qualified Offshore Rigger\n(API RP 2D 2-day course) | NCCCO\nCertified Rigger Level I",
+                        "Forklift Operator | Operator of a\nforklift [onshore\nor offshore] | LOLER\napplicable | CITB Forklift Operator\nCPCS Forklift Operator\nRITITB Forklift Operator\nNPORS Forklift Operator | CITB Forklift Operator\nCPCS Forklift Operator\nRITITB Forklift Operator\nNPORS Forklift Operator",
+                        " |  | US applicable | OSHA 29 CFR 1910.178 | OSHA 29 CFR 1910.178",
+                        "Forklift\nBanksman | Gives\ninstructions to\nforklift operators | All areas | See Banksman above | See Banksman above",
+                        "Lifting Equipment\nInspector | Person\nresponsible\nto thoroughly\nexamine and test\nlifting equipment | LOLER\napplicable | LEEA Qualified for the class of\nequipment being inspected. | LEEA Qualified for the class of\nequipment being inspected.",
+                        " |  | US applicable | Qualified API lifting equipment\ninspection & maintenance course. | NCCCO Crane Inspector",
+                        " |  | All areas | Classification society certification | ",
+                        "Rigging Loft\nController | Person\nresponsible to\nmanage and\nissue equipment\nfrom the rigging\nloft | All areas | Trained in either\nRigging Loft Management Course\nor\nEquipment Inspection Course | "
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Lift categorization 10",
+            "number": 2,
+            "sections": [],
+            "subsections": [],
+            "content": "",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Roles and Responsibilities 13",
+            "number": 3,
+            "sections": [
+                {
+                    "title": "Lifting crew, roles, and associated competence 13",
+                    "number": "3.1",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Site manager 14",
+                    "number": "3.2",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Site lifting competent person 14",
+                    "number": "3.3",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Approved Competent Person 15",
+                    "number": "3.4",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Person in Charge (PIC) 15",
+                    "number": "3.5",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Appliance Operator 16",
+                    "number": "3.6",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Rigger/Slinger 16",
+                    "number": "3.7",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Banksman/Signaller 17",
+                    "number": "3.8",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Lifting Equipment Inspector 17",
+                    "number": "3.9",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Rigging Loft Controller 17",
+                    "number": "3.10",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                }
+            ],
+            "subsections": [],
+            "content": "",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Lift planning 18",
+            "number": 4,
+            "sections": [],
+            "subsections": [],
+            "content": "",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Specific high-risk lifting considerations 20",
+            "number": 5,
+            "sections": [
+                {
+                    "title": "Lifting personnel for work activities 20",
+                    "number": "5.1",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Personnel transfer by lifting 21",
+                    "number": "5.2",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Lifting over live plant (hydrocarbons) 21",
+                    "number": "5.3",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Tandem lifts 21",
+                    "number": "5.4",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Hands free lifting 22",
+                    "number": "5.5",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Operating/ground conditions 22",
+                    "number": "5.6",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Marine or offshore conditions 22",
+                    "number": "5.7",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Effects of wind on suspended loads 23",
+                    "number": "5.8",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Lifting in close proximity to hazards including overhead power lines 23",
+                    "number": "5.9",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Technological innovations 23",
+                    "number": "5.10",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Dropped objects 23",
+                    "number": "5.11",
+                    "subsections": [],
+                    "content": "4 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                }
+            ],
+            "subsections": [],
+            "content": "",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Equipment 24",
+            "number": 6,
+            "sections": [
+                {
+                    "title": "Definition and marking 24",
+                    "number": "6.1",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Design and certification 25",
+                    "number": "6.2",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Maintenance 25",
+                    "number": "6.3",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Inspection 26",
+                    "number": "6.4",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Thorough examination 26",
+                    "number": "6.5",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Colour coding 27",
+                    "number": "6.6",
+                    "subsections": [],
+                    "content": "",
+                    "images": [],
+                    "tables": []
+                }
+            ],
+            "subsections": [],
+            "content": "",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Leading lifting operations 28",
+            "number": 7,
+            "sections": [],
+            "subsections": [],
+            "content": "Further Reading 30 Glossary 31 Appendix A: Lifting Operations Risk Management 33 Appendix B: Example roles and competence matrix 37 5 Lifting and hoisting recommended practice Introduction In 2006, IOGP published a Recommended Practice for lifting and hoisting operations. Fatal and serious accidents continued to occur in lifting and hoisting operations, and it is clear that more effort is required to eliminate accidents from this activity. The first phase of this renewed effort was to revise the existing document to consider the required competence of people involved in all phases of lift planning and execution, new technologies, new processes, and feedback that IOGP had received from its Member Companies. This recommended practice applies equally to onshore and offshore lifting and hoisting operations, including associated transport and handling. This Report’s recommendations are relevant throughout the entire lifecycle of an oil and gas operation, and can be applied to all offshore and onshore mechanical lifting and hoisting activities in the exploration and production industry, with the exception of: • Drilling crown block, travelling block, and top drive operations • Goods and personnel elevators • Ship anchor handling, marine towing, and routine ship operations not directly associated with Upstream activities (e.g., ship maintenance) • Tree cutting and associated movement of lumber • Mining and earth moving • Helicopter lifting operations • Fall protection and rope access equipment • Manual handling • Jacking • Diving operations • Vehicle maintenance lifts • Piling machines IOGP strongly recommends that all companies conducting lifting activities have a management system that includes specific procedures based on a full assessment of the risks and control measures required. Further guidance on the development and implementation of such systems can be found in IOGP Report 510 - Operating Management System Framework. IOGP recommends that organizations performing marine lifting operations refer to the International Marine Contractors Association (IMCA) Guidelines for Lifting Operations as well. This IMCA guideline provides detailed technical and health and safety information on all matters pertaining to marine and subsea lifting and hoisting operations, much of which can equally be applied in other situations. The IOGP Life-Saving Rules and the supporting Start-Work Checks are consistent with the recommendations in this report. For more on the Rules, see IOGP Report 459 – Life-Saving Rules. 6 Lifting and hoisting recommended practice Safe Mechanical Lifting Bypassing Safety Controls Confined Space Driving Energy Isolation Obtain authorisation Obtain authorisation Follow safe driving Verify isolation and before overriding before entering a rules zero energy before Plan lifting or disabling safety confined space • I always wear a work begins 0 controls • I confirm energy seatbelt • I have identified all operations and • I understand and use safety- sources are isolated • I do not exceed the speed limit, energy sources critical equipment and procedures • I confirm the atmosphere has been and reduce my speed for road • I confirm that hazardous energy control the area which apply to my task tested and is monitored conditions sources have been isolated, • I obtain authorisation before: • I check and use my breathing • I do not use phones or operate locked, and tagged – disabling or overriding safety apparatus when required devices while driving • I have checked there is zero • I confirm that the equipment • I confirm there is an attendant • I am fit, rested and fully alert while energy and tested for residual equipment and load – – d cr e o v s ia s t i i n n g g a fr b o a m rr p ie r r ocedures • s I t c a o n n d fi i r n m g b a y r escue plan is in place • d I f r o iv l i l n o g w journey management or stored energy have been inspected and • I obtain authorisation to enter requirements are fit for purpose Hot Work Line of Fire Work Authorisation Working at Height • I only operate equipment that I am Control flammables Keep yourself and Work with a valid Protect yourself and ignition sources others out of the permit when against a fall when qualified to use • I identify and control line of fire required working at height ignition sources • I position myself to • I have confirmed if • I inspect my fall • I establish and obey barriers and • Before starting any hot work: avoid: a permit is required protection equipment – I confirm flammable material – moving objects • I am authorised to perform before use exclusion zones has been removed or isolated – vehicles the work • I secure tools and work materials – I obtain authorisation – pressure releases • I understand the permit to prevent dropped objects • I never walk under a suspended • B ha e z fo a r r e d o s u ta s r a ti r n e g a h I o c t o w nf o ir r m k i : n a • I – e d s r ta o b p l p is e h d a o n b d je c o t b s ey barriers and • I c o h n a t v r e o l c l o e n d f a ir n m d e i d t i t s h s a a t f h e a t z o a s rd ta s r a t re • I p t o i i e n t o s f f w 1 h 0 i 0 le % o t u o t s a i p d p e r a ov p e r d o t a e n c c t h e o d r load – a gas test has been completed exclusion zones • I stop and reassess if conditions area – gas will be monitored continually • I take action to secure loose objects change and report potential dropped objects Figure 1: Safe Mechanical Lifting and the other Life-Saving Rules Start-Work Check Start-Work Check Mechanical Lifting Mechanical Lifting WHEN TO COMPLETE – Before the start of any MECHANICAL LIFTING activities Confirm each control/ Guidance for confirming each control/safeguard Person(s) Start-Work safeguard below before Performing Verifier starting work Work I HAVE CONFIRMED: 1 The lift has been planned • • T W h h e e l n if t r e m qu et ir h e o d d , , a e n q a u p ip p m ro e v n e t d , a li n ft d p n la u n m o b r e p r r o o f c e p d e u o r p e le i s r e in q u p i l r a e c d e h a a n s d b h e a e s n b a e s e s n e e s v s a e l d u a a t n e d d d b e y t e a r c m om ine p d etent person • The lift has been assessed for: - load weight - load size • Th - e l c i e ft n in te g r e o q f u g ip ra m v e it n y t ( ’ e s . g cu ., r l r if e t n in t g c a p p o a in c t i s ty ) and condition has been assessed 1 • Equipment operator and lifting crew have discussed the written lift plan prior to lifting 2 T an h d e c h o a n z t a r r o d l s le a d re identified • • • C D Id o i e s m n c t u p if s l y e s t o h e v a e a z r a t h a r e s d a k s d r w h is i a t k h z a a t r s h d s e s e w s a s o n m r d k / e o t n e r t a o s m t p h e e p c r r i i f o o ic b r s t t t o o r u t t h h c e e ti o s s n c ta s o r p ( t e e o . g o f . f w , w o o o v r e k rk rhead power lines), making sure to check: 2 - load path - - s o w ve in rh g e r a a d d i h u a s zards 5 - pickup/lay-down zones • Check for simultaneous operations that may introduce any additional hazards • Discuss stop work considerations if work situation changes including change of weather Note: Consider how to apply “hands-free lifting” (e.g., use of push poles and/or taglines) 3 W l t i h f o t e r i a r k r e t e a r q s s u k in al v i o fi l e v d e d t o w p it e h r f t o h r e m • N re o q t L u e i i : f r t e T in o m g b e e e n q t “ s u q i u p a m li e fi n e t d o ” p m e a ra y t r o e r q a u n ir d e l c if e ti r n t g if i c c r a e ti w o n a r a e n q d u /o a r l i a fi s e s d e t s o s m pe e r n fo t r t m o m th e e e ir t c ta o s m k p any or applicable legal 3 4 T s u b t e h n a e e p b n l l l a e i a f n t s a n in s n e e g d d s e p s m q o e u o t d e v ip n e m m tia e e l n n f t t o i r h s a s • • • • L M O L i o u f a - a t t t i r d t n l i i s o g n g a g g h a d e a p h r v s p a s e e l s i a c a b b r u n e e e r e c e i d n e n n e g i a p s a s l s o l s e s y e v e e s e s d s l s e a e d n d d f f o / o r o r r s s t p t a a l b a b i c i l l e i i t t d y y , o t a a n n k d s in t i a s g b l i l e n e v t o g e r l a o f c o u c r n o d t u h n e t : l ifting equipment - workplace conditions - travel path - equipment capacity • Equipment is operated per OEM requirements (e.g., weather, sea state and temperature) 5 T e • • • q h c i r n u e a e s i t r l p e p t i m f i d e f t i i c e f e n t o n d g e r t d a t i h n s: e d l r i i f g t ging • • • • • N ot P S M T T e h h a r : a e e e f I n e - f r r u t u l y i i o f s g g a a a e g g c d n i i t c n n d u c r g g r a h m e n e e a r o q q e r ’s t n u u i i d n i i l t p p o o o s m m a p e r d i s e e e n c n n c g n t h t t o i d o a h i t s e n r a e v t r s x h i a i c i s a b s t e s e t e a s , d e v b a a a n e f s r o i e e l s i r a n n u i b t s n m h c l p e o e p e e m l c l a e i t f p c e q t e l d u e i a t p p e n r m d d io e f r n u t t n o i c s l t i i f n o t o n t in r g ated for the lift; stop work and identify 4 7 alternative lifting equipment that is rated for the load 6 A a a n g c r d o e m r e e d m s p t u o o n n b i s y c i a t b t h i i l o e it n l i i e p f s t l a c a n re r e w • • • C E s T t h q o o e u m p i p p m s e m ig u rs e n n o n a ic n t l s a o i t n b p io e e c n r h u a m a s t r o e e g r d t e h a o o n d f d ( t s h li ) f e t ( i e l n i . f g g t . h c , r a h e s a w n b d h e e a s n v ig e i n d d a e i l s n s c t , i u f r i s a e s d d e i o d a ) s t h h p a e e v r e e m t b h e e e e r l g n if e t a n p g c l r y a e n r e e d o s r t p o p o r n a o n s c e d e , t d i e n u s c r t e l e u d ding what emergency • The members of the lift crew have agreed to their individual roles and responsibilities for the lift • The signaler for the lift has been identified (banksman/flagman/dogman/spotter) 7 T in h s e p e lo c a te d d h p a r s i o b r e e to n lift • • E Lo v - e o r s T y e h l o o e b a l d j o e a c h d t a s s a h n b a d e v e i e t n s b i p e n a e s c n p k e s a c e g t c e in u d g r e f o c d r a o n in r w t r e e it g m h r s i o t t y v a e a n d n d d p t h r s i e o ta r f b o t i r o l c i t l e y if s t ( / e m .g o ., t i c o e n n c te a r u s o e f d g r b a y v i t t h y e ) lift 6 8 • Loose and small objects are well packaged or placed in lifting basket 8 B zo a n r e ri s e a rs re a i n n d p e l x a c c l e usion • Ex - - c lu w m s o i o o r v n k i n i z n g o g n o e u b s n j e h d c a e t v r s e s b u e s e p n e n id d e e n d ti f l i o e a d d a s nd controls are in place to protect people from line of fire hazards, including: - dropped objects • Access to exclusion zones is controlled (e.g., attendant or physical barriers) • Escape routes are unobstructed and known by the work crew Confirm these controls/safeguards are in place and verified prior to starting work. Stop and seek help if anything changes. Printed Name & Role Signature Date Start-Work Verifier Figure 2: Mechanical Lifting Start-Work Check 7 Lifting and hoisting recommended practice",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Ten principles for lifting",
+            "number": 1,
+            "sections": [],
+            "subsections": [],
+            "content": "Table 1: Ten principles for lifting All lifting operations are categorised by the Person in Principle Charge to reflect the risk of the lift. This then defines the 1 required controlling documents and the competence of the people involved. All persons involved in planning, performing, lifting and maintaining lifting equipment are trained and assessed as Principle competent for their role. Competence is assured through 2 relevant experience, initial and refresher training, and periodic assessments. One person in the lift crew is designated as the Person In Charge of the lifting operation. All personnel involved in the Principle lifting operation have their individual responsibilities clearly 3 defined and communicated prior to commencement of the lifting operation. A risk assessment is required for every lift, regardless of category. A lift plan is required for every lift, with the level of detail required defined by the category of lift. A Permit to Work may also be required subject to lift complexity and Principle company policy. 4 NOTE: Category 1 lifts may be addressed through a generic lift plan, while Category 2 and 3 lifts require a specific lift plan. All Category 3 lifts require a Permit To Work. An approved competent person (Lifting Technical Authority, Principle Advisor, Engineer or Subject Matter Expert) is engaged in 5 assuring that all lifting operations are correctly planned and managed. 8 Lifting and hoisting recommended practice A Red Zone is established. All non-authorised personnel are Principle restricted from entering the Red Zone1, and all personnel are 6 kept clear of suspended/travelling loads and lifting equipment or between the load and any heavy immovable object. Lifting Equipment is thoroughly examined on a regular basis by an inspector who is sufficiently independent2 from the on-site lifting crew, and who may be external or an in-house appointee. The examination refers to an acknowledged Standard for scope, methodology and acceptance/rejection Principle criteria. All safety and monitoring devices installed on lifting 7 equipment are operational and not by-passed or disabled. NOTE: Periods of inspections can be influenced by the nature and robustness of use and application as well as the environments of use. All lifting equipment is visually inspected by a competent person before and after use. Equipment integrity is Principle maintained and faulty equipment is removed from serviced 8 and tagged as such. Inspection and maintenance activities are recorded in an equipment register. Principle Periodic audits and inspections are conducted by an 9 Approved Competent Person. Any Lifting of personnel is classified to the category requiring the highest level of controls (IOGP Category 3) and a rescue Principle plan is included as part of the Lift Plan. Any equipment used 10 for lifting personnel is certified for the specific activity and used according to recognised international standards. 1 Red Zones, sometimes also known as Exclusion Zones or No-Go Zones, are areas where access is controlled and no one can enter unless authorized to do so. They should be clearly marked, ideally with physical barriers, so that a person cannot accidently enter one. 2 A sufficiently independent inspector is someone not influenced or controlled in any way by the company or organization executing or responsible for the task. 9 Lifting and hoisting recommended practice",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Lift categorization",
+            "number": 2,
+            "sections": [],
+            "subsections": [],
+            "content": "To ensure adequate planning and safe execution of lifting operations, all lifting operations need to be categorised according to their degree of complexity and associated risks. This section provides a lift categorization example to help organizations apply Lifting Principle 1. All lifting operations are categorised by the Person Principle in Charge to reflect the risk of the lift. This then 1 defines the required controlling documents and the competence of the people involved. Different naming conventions for categorizing are used globally. This document categorizes lifts as a category 1, 2, or 3 lift. If your organization or partners use a different nomenclature, ensure that the controls are appropriate for the complexity and risk of any lift being performed. Some organizations use more or less than three categories; what is most important is that the categorization leads to the definition of controls appropriate for the complexity and risk of the lift being performed. Table 2 provides an example of a simple methodology for categorizing a lift, alternatives may include: • Critical, non-critical • Routine, non-routine simple, non-routine complex • Simple, complicated, critical, complicated/critical Table 2: Example methodology for categorizing a lift Companies can modify the specific criteria listed to reflect their operations and equipment. Answer the questions starting at the top and not jumping any. Your lift category matches the category of the first question you answer ‘yes’ to. CATEGORY 3 Y N Is the gross load weight over 90% of the certified load radius curve of the crane? Does the operation involve the lifting or lowering of personnel? Will the lift involve tandem lifting using powered lifting appliances? Could the lift be affected by any proximity hazards, i.e., restricted area, power line, confined space etc. Will the load be lifted over or in close proximity to live plant? Will the lift take more than one shift to complete? Will the lift plan require technical input or calculations from a technical expert (i.e., load distribution in rigging and appliances)? Will the load be transferred from one powered lifting appliance to another? Will the load be lifted from one marine vessel to another? 10 Lifting and hoisting recommended practice During the lift, will the crane operator’s visibility of the load be restricted/limited (i.e., ‘blind lift’)? Is the load to be rotated, up-ended/up-righted (roll-up, tailing or special lifting operations) or transferred from one appliance to another during operation? Will the lift be subsea? Will the lift involve proof load testing of appliances or lifting equipment? If you’ve answered YES to ANY of the above, the lift is CATEGORY 3. If you’ve answered NO to ALL of the above, check the next set of questions CATEGORY 2 Y N Is the gross load weight over 80% of the certified load radius curve of a mobile crane? Is the lift outside normal operating conditions for the equipment or the asset? Is the weight distribution uneven, or does it have the potential to shift? Will environmental conditions place restrictions on lifting operations? Is the load of an unusual shape? Is the weight of the load estimated (i.e., not known)? Does the load have any hazards such as sharp edges? Is the load subject to permanent deformation? Absence of designed and tested lifting points? Does the load have excessive dimension (limited clearance from crane structures, surroundings)? Is the operation taking place during SIMOPS or interfering with other concurrent activities? If you’ve answered YES to any of the above, the Lift is CATEGORY 2. If you’ve answered NO to ALL of the above, the lift is likely Category 1. CATEGORY 1 Y N Are all these three conditions present?",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "You have you answered “No” to all questions in Category 3 and Category 2",
+            "number": 1,
+            "sections": [],
+            "subsections": [],
+            "content": "AND",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "The personnel involved in the lift are trained, assessed as competent and authorised to perform their",
+            "number": 2,
+            "sections": [],
+            "subsections": [],
+            "content": "specific role AND",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "The lifting equipment and the load are simple to use and lift",
+            "number": 3,
+            "sections": [],
+            "subsections": [],
+            "content": "Only if ALL the 3 conditions for Category 1 are present, is the lift classified as CATEGORY 1. Tables 3 and 4 provide examples of the different control measures and the personnel required depending on the category of lift. For example a lifting operation during ‘SIMOPS’(Simultaneous Operations) would be categorized as a Category 2 at minimum (see Table 1 categorization questions), and therefore have a specific lift plan approved by the Site Lifting Competent Person, a permit to work for the entire SIMOPS scope, a specific risk assessment, and so on. 11 Lifting and hoisting recommended practice Table 3: Example of documentation and control measures for each category of lift Type of measure Category 3 Category 2 Category 1 Lift Plan Specific Specific Generic for the type of lift Permit to Work Required Might be required by Might be required by procedures or operating procedures or operating instructions instructions (e.g., required where SIMOPS involved) Risk Assessment Specific Specific Generic for the type of lift Toolbox Talk1 Required pre-lift Required pre-lift Recommended pre-shift Start Work Checks2 Mechanical Lifting Mechanical Lifting Mechanical Lifting Work around mobile Work around mobile Work around mobile equipment (if relevant) equipment (if relevant) equipment (if relevant) Man-riding (if relevant) Work at height (if relevant) Work at height (if relevant) Work at height (if relevant) Note 1 – a second talk may be conducted post operation to collect lessons learned – e.g. ‘After action review’ Note 2 – more Start Work Checks may apply depending on activity/operation Table 4: Example of personnel involved for lifts of different category (See next section for more details on personnel) Type of role Category 3 Category 2 Category 1 Person In Charge+ ü ü ü Appliance operator# ü ü ü As required by operating Slinger/Rigger ü ü instructions As required by operating Banksman ü ü instructions Site lifting competent ü ü ü person (Site approval of lift plan) (Site approval of lift plan) (Site approval of lift plan) ü ü* Approved Competent If required by operating (Technical approval of (Periodic review approval of Person* instructions specific lift plan) generic lift plans) + Please note that most organizations have different names and different categorizations for who is considered the Person in Charge of a lifting and hoisting operation. # An appliance operator can also be the Person in Charge in some Category 1 operations, for example a forklift truck operator or winch operator. * An Approved Competent Person (e.g., lifting technical authority, advisor, engineer or subject matter expert) is usually involved in the review process of Category 2 and 3 Lift Plans in line with their tasks as described in section 3.3. For Category 1 lifts, an Approved Competent Person vets the generic lift plans and/or operating procedures, usually this is a one-off exercise with a scheduled review frequency. 12 Lifting and hoisting recommended practice",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Roles and Responsibilities",
+            "number": 3,
+            "sections": [
+                {
+                    "title": "Lifting crew, roles, and associated competence",
+                    "number": "3.1",
+                    "subsections": [],
+                    "content": "A lifting crew typically comprises a minimum of three individuals: a Person in Charge (PIC), a banksman/signaller/rigger/slinger, and an appliance operator. However, the number of people required in a lifting crew will vary with the complexity and scale of lifting operations performed. For example, a routine lift involving a mobile or pedestal crane would normally involve a three-person lifting crew, a routine lifting operation in a factory or warehouse environment using an overhead gantry crane may be safe to conduct with a lifting crew of 2 people. The size of the crew must be determined as a result of a detailed risk assessment. IOGP Category 3 lifts would normally require a larger crew to conduct operations safely. Job titles change frequently around the world and depending on the type of site or operation. Table 5 shows examples of this to help illustrate who performs these roles. It is the competence of any individual that matters when deciding if they can perform a certain role, not their job title. IOGP recommends that companies develop a lifting roles and associated competence matrix, an example is given in Appendix C. 13 Lifting and hoisting recommended practice Table 5: Lifting crew roles and example of job titles associated with the role Role Example of job titles Person In Charge Crane supervisor, site supervisor, lifting supervisor Appliance operator Equipment operator, powered lift appliance operator, crane operator Slinger/Rigger Roustabout, roughneck Banksman Signaller, roustabout, roughneck Site lifting competent person Deck foreman, deck pusher Approved Competent Person Lifting engineer, lifting authority, lifting SME",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Site manager",
+                    "number": "3.2",
+                    "subsections": [],
+                    "content": "The Site Manager has accountability for the site and for applying the Lifting Management System requirements including the execution of safe lifting and hoisting operations at the site. Their responsibilities include: • Appointing a Person in Charge of the lift and lifting crew • Ensuring personnel are trained and competent for the task • Ensuring lifts are properly studied, assessed, planned, and conducted safely, ensuring that only suitable, certified, and sound equipment and machinery are provided",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Site lifting competent person",
+                    "number": "3.3",
+                    "subsections": [],
+                    "content": "The Site Lifting Competent Person (SLCP) is generally the person who approves lift plans. SLCP (e.g., deck foreman, site lifting or rigging supervisor) has knowledge and experience to verify that lifting operations are planned and executed safely in conformance with legislation, standards, codes, and company requirements and that the lifting equipment used is in a safe to operate condition and suitable for the task. The SLCP’s responsibilities include the following: • providing lift plan(s) and risk assessment(s) that meet, legal or regulatory requirements and company requirements • confirming that the lifting equipment is only operated within its safe operating limits and OEM operating instructions • advising others on preparation of the lift plan • confirming that the categorization and technical content of the lift plan is correct • approving the lift plan prior to submission for authorisation • confirming that the lifting operations are untaken safely and in conformance the approved lift plan • participating in and deliver toolbox talks • confirming that all personnel involved in a lifting operation are protected at work from the risk to their health or safety by having sufficient training, experience, and appropriate supervision to perform the task competently relative to the categorization of the lift 14 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Approved Competent Person",
+                    "number": "3.4",
+                    "subsections": [],
+                    "content": "An Approved Competent Person (Lifting Technical Authority, Advisor, Engineer or Subject Matter Expert) assists and supports all the stakeholders in the definition of any aspect related to the lifting process. The Approved Competent Person provides technical advice and guidance for the following: • Internal auditing services required for the correct lifting management system implementation • Design and selection of lifting appliances • Developing and/or approving the generic lift plan for Category 1 lifting operations • Developing and/or approving the specific lift plan for Category 2 and 3 lifting operations • Developing and reviewing documented thorough examination schemes for lifting appliances • Developing and reviewing guidelines for the engineering and planning of the operations • Investigating lifting related HSE events and sharing of the lifting operations lessons learnt • Reviewing lifting processes • Conducting capability assessments of contractors and subcontractors for lifting operations • Determining requirements for management of change and deviations in lifting operations • Competence assessment, assurance, and training of lifting personnel",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Person in Charge (PIC)",
+                    "number": "3.5",
+                    "subsections": [],
+                    "content": "The PIC is the only person who has operational control of the lift and has the authorization to give instructions to the lifting crew during the operations. The PIC has the required level RED ZONES SAVES LIVES of competence to plan and supervise the specific lifting and hoisting operation. Their responsibilities include: 1 Is your red zone defined? • Categorizing, risk assessing, and planning 2 Are physical barriers deployed? Category 1 lifting operations 3 Is access controlled? • Creating and approving Category 1 lift plans 4 Are escape routes identified? and ensuring that the required controls are in place. As the PIC is the individual who ensures the lift plan is suitable for the task, they must be competent to make that assessment. For Category 2 and 3 lifts, an approved competent person is required to approve the lift plan, and may also be involved in its development. Figure 3: Red Zones Save Lives poster 15 Lifting and hoisting recommended practice • Defining the lifting appliance set-up/configuration, ensuring the correct equipment is available and safety devices are installed and operational • Ensuring a Red Zone is established. • Ensuring the travel route of the lifting operation is clear and free from hazards and obstructions (e.g., overhead obstacles such as powerlines) to enable the lifting equipment and load to safely travel from the lifting to landing point without being impeded by any obstacles • Ensuring there are good access and egress routes for the lifting team, including putting in place safe alternative routes if walkways are obstructed",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Appliance Operator",
+                    "number": "3.6",
+                    "subsections": [],
+                    "content": "The appliance operator is a person trained and competent to operate the lifting appliance to be used, and the only one allowed to manoeuvre it during the activity, unless a change of planning and control documentation is made. Their responsibilities include: • Carrying out pre- and post-use inspections • Ensuring cranes are properly secured on firm and level foundation on outriggers and set up in accordance with the manufacturer’s instructions • Checking the suitability of the routes for the forklift or mobile appliance to be used (e.g., ground conditions, slope, space) • Not leaving a load unattended or suspended above people • Not leaving a lifting appliance with ignition key in place • Operating the appliance properly, verifying weight of load does not exceed the safe working load (SWL) or Working Load Limit (WLL) of lifting appliances • Communicating with banksman before operation start to establish common understanding, signs, and instructions that will be used • Contributing and participating in Toolbox Talks • Not starting the operation if barriers are not in place",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Rigger/Slinger",
+                    "number": "3.7",
+                    "subsections": [],
+                    "content": "The rigger/slinger is a person trained and competent in attaching slings, lifting appliances, accessories, and shackles onto the load to ensure that it can be lifted and moved safely. Responsibilities include: • Inspecting and selecting lifting equipment correctly, ensuring certification is in place • Inspecting the load and ensuring that any required certification is in place e.g., integral lifting points • Securely connecting and disconnecting lifting accessories to loads and accessories to lifting appliances • Establishing a Red Zone, ensuring task areas are kept clear of non-essential Personnel, and including the deployment of physical barriers where required • Maintaining a safe position during lifting • Contributing and participating in Toolbox Talks 16 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Banksman/Signaller",
+                    "number": "3.8",
+                    "subsections": [],
+                    "content": "The banksman is the only one authorised to give signals to the lifting operator and their responsibilities includes: • Control of the lift area, ensuring all personnel are positioned safely and using physical barriers to prevent access to Red Zones – Members of the team may have their attention focused elsewhere and may react instinctively by moving into a hazardous area when something goes wrong. It is the responsibility of the Banksman to watch for anyone moving towards the ‘line of fire’ during the lift, but all team members can help each other by calling a halt if anything unexpected happens, or if anybody begins to move towards the ‘line of fire’. • Checking for potential dropped objects • Maintaining direct sight of the load and clear communications with the appliance operator and making use of 2-way radios with designated channels • Maintaining an awareness of other ongoing operations that may affect lifting activities • Directing the movement and placing of loads • Not performing any other job while the lift is in progress • Contributing and participating in Toolbox Talks",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Lifting Equipment Inspector",
+                    "number": "3.9",
+                    "subsections": [],
+                    "content": "• Person can be either in-house or external, but must be independent3 • Competent to assess the condition and compliance of lifting equipment",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Rigging Loft Controller",
+                    "number": "3.10",
+                    "subsections": [],
+                    "content": "A designated individual who is responsible for managing all lifting accessories and loose lifting gear at a given site. They are responsible for managing the Rigging Loft where these accessories are stored, and in particular, they keep a record, track and verify the accessories in order to determine the correct flow, disposal, certification availability and proper condition of all the accessories. 3 A sufficiently independent inspector is someone not influenced or controlled in any way by the company or organization executing or responsible for the task. 17 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                }
+            ],
+            "subsections": [],
+            "content": "This section describes the roles and responsibilities of personnel involved in lifting and hoisting operations, reflecting Lifting Principles 2, 3, and 6. All persons involved in planning, performing, lifting and maintaining lifting equipment are trained and Principle assessed as competent for their role. Competence 2 is assured through relevant experience, initial and refresher training, and periodic assessments. One person in the lift crew is designated as the Person In Charge of the lifting operation. All personnel Principle involved in the lifting operation have their individual 3 responsibilities clearly defined and communicated prior to commencement of the lifting operation. A Red Zone is established. All non-authorised personnel are restricted from entering the Red Principle Zone, and all personnel are kept clear of suspended/ 6 travelling loads and lifting equipment or between the load and any heavy immovable object.",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Lift planning",
+            "number": 4,
+            "sections": [],
+            "subsections": [],
+            "content": "This section describes how to plan a lift and provides guidance to complement the lifting principles related to Lift Plan (Principles 4 and 5). A risk assessment is required for every lift, regardless of category. A lift plan is required for every lift, with the level of detail required defined by the category of lift. A Permit to Work may also be required subject to Principle lift complexity and company policy. 4 NOTE: Category 1 lifts may be addressed through a generic lift plan, while Category 2 and 3 lifts require a specific lift plan. All Category 3 lifts require a Permit To Work. An approved competent person (Lifting Technical Principle Authority, Advisor, Engineer or Subject Matter 5 Expert) is engaged in assuring that all lifting operations are correctly planned and managed. When planning the lift, perform a hazard identification and a risk assessment to determine the lift method, equipment to use, and the number and competence of personnel required. As per Principle 4, the detail required in the Lift Plan is related to the complexity of the lift and associated risk: • Category 1 lifts may only require a generic Lift Plan supported by an onsite risk assessment and team briefing. Generic lift plans may be appropriate for multiple occurrences of similar routine lifts within specified limits but must be formally reviewed and re-issued periodically. • Category 2 lift plans are specific to the lift and include technical details and drawings • Category 3 lift plans are specific to the lift, include technical details and drawings, and may also require additional engineering input (e.g., Site Factors and Load Factors) to define load integrity and stability The technical competence of the reviewer of a Lift Plan is determined by the complexity of the lift. Plans for IOGP Category 2 and 3 lifts are reviewed by an Approved Competent Person (Lifting Technical Authority or Subject Matter Expert). Any change to a prepared lift plan is considered and adequately reassessed through a Management of Change/deviation process and modifications approved by a person with the same, or higher, competence level as for the original lift plan. 18 Lifting and hoisting recommended practice All lift plans includes the following: • Lift category • The type and number of personnel required, their specific roles and competences, and how they will be briefed • The nature, the weight, and the Centre of Gravity (CoG) position of the load and lifting points specifications • Pick up and set down points, and constraints such as space and stacking • Application of the correct rigging methods and lifting appliance positioning • Equipment required and certification checks • Requirements to erect/dismantle the Lifting equipment • Step-by-step instructions • Communication methods to be used • Responsibility for pre-lift visual inspection of the lifting equipment and load, including checks for dropped objects • Emergency and rescue plans • Restrictions on the lift such as weather, light, sea state, ground bearing pressure. • Access and egress for slinging and unslinging the load • Simultaneous, conflicting, or nearby operations or work • Whether Permit to Work procedures are applicable • Load integrity check • Load charts for generic lift plans and for heavy or complex lifts • Establishing a Red Zone and identified line of fire hazards In addition, Category 2 and 3 lift plans may also include: • A drawing or sketch with lateral view and top view. Category 3 lifts may also require additional supporting detailed drawings (e.g., 2D or 3D computed aided drawings for complex lifting operations) including crane(s) and load position, operational steps (phases). • Rigging arrangement including a rigging table detailing all lifting accessories (ID, description, type, quantities, expected loads, unity checks and safety factor based on rigging calculation for the worst-case scenario). • IOGP recommends that organizations performing mechanical handling operations carry out risk-based analysis to highlight the type and level of required/additional engineering analysis, technical evaluation or control measures that would be required. The output of such an exercise could, for example, include the need for determining ground bearing capacity, soil analysis, geotechnical study, engineering design, load stability calculations, swept path analysis, sea and weather state or dynamic amplification factors. 19 Lifting and hoisting recommended practice",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Specific high-risk lifting considerations",
+            "number": 5,
+            "sections": [
+                {
+                    "title": "Lifting personnel for work activities",
+                    "number": "5.1",
+                    "subsections": [],
+                    "content": "Lifting personnel in a suspended basket or elevated forklift basket is avoided in preference to dedicated lifting devices such as Mobile Elevated Work Platforms, cherry pickers, and scissor lifts. When personnel lifts, including Start-Work Check Start-Work Check Man-Riding, are unavoidable, Man-riding Man-riding these lifts are subject to WHEN TO COMPLETE – Before the start of any MAN-RIDING activities stringent planning and controls Csstao afner f tgi i r num gar w eda obc reh kl ocown btreofol/re Guidance for confirming each control/safeguard PPW eeo rrr sfkoornm(si)n g SVetarrifti-eWr ork I HAVE CONFIRMED: including regular inspection 1 Pwotop ei tep rhs re a ot r ht n fio en or n em m l s a i at nn hr v- ee or i liqr vd u e t in aa d s gl ik fied • Rreidspeor,n Wsiibniclihti eosperator, and Spotter have all been trained and can describe their requirements, risk assessment, 2 Te••• qh cirn ue a es i t r mp eptmi de a fi c ne f eto -nder rt d i t di h s i: e n g ta sk •••• WRHFa ia ig l n rl gn c a ih en r e sg rse s e si aqnt r usg eipe pc ea me cr r ,te t ei in f f d it u e ,p s dien i n a rc g slwu , s od in u rin sk it p g- a ae bctc la- e thb e f el d oei r g, himnts a rpe neq -cr u iti der ide n m gfoern wtsear/defects 3 4 5 and an approved Permit to Work. 3 Aemaur q n l a l e u p n ri ls op- aer tm nc a i n du tei i er nn n de tg gd m co a l t r co oo ts v m ipe evr o i m ettv io ve e i e n s nn g tt • Haroei sntointg m aonvdin rgo t(aet.ign.g, s eeqtu tihpem bernatk ein f othre t hime mtraevdeialitneg a brleoac ka,n ldo cakt doiuffte traegn to uletv)els 3 6 7 For Man-Riding, IOGP 4 Cmawg o o er m r tek he m e odr du stsn o ih c baa yvt iet o h nbe e en • Cfoo -r m Iu mfs m uo esvu d ei n nb mi g c y e a ht nt ha ito en on dw f m so rii rg ed k t ne h c ra o rles d ,w s c ( o e n .g fi . r , m ha c n o d m s m ig o n n a l u s n a d n e d r s ra ta d n io d s in ) g a g o r f e h e a d n t d o s a i n g d n a t l e s s t t e o d b e h C a h s e c p k r o ( d se u e c e IO d G a P S R ta e r p t- o W rt o 4 r 5 k 9 -1 5 6 Tba Bepx r l eh a a e c ie r c n l r s ue tg i e o es uc i o ros usl n s er a / ed zn m d o d a n a t de t he rso re ap iiag r/e lhs t i n •••N( •• e o. TMC EC( gt e o e. s o o. , ao g : t v n w t a l e . F e t s , b o r r o r aol u r i l i oa tl kl s s t opl h ae es awe c n d t d nu c d t r h i as e hn a o e te s e n g p i d s h g s t / s e e h t a o it o i x tt to g r e c d t hh / p l l oc ur oet h o o s ow s i y g l p m i h s e o h r /i a r e en p c t v x g a a la z e e c in l r o s v l es y bu t n e e e as d e ls r c s ris e r o ) u r o(c ni e r p e u i . r p n z rg so e e g . ) , n d d w g e i orni s r ba e d stje / it u n lo c a r gt r i n s n a p y ,g g r a ge e r w av db e o p so n r s /x k t ,t e e i eo a st tn h t ,c e h p.p) ro e r s oo u ig rg c h uh r t ase mes ,d beabgrsis e ntce.ts – 1 2 2 Start-Work Checks). 7 Raneds cisu er epaldany tios ibne p ulaseced • • C C o o -- --- n n HL iic ss f f a o i i o r raan cwm mvw a e a t t ax t ti i oo l h h re a e n e e s c b t u o o l w r a e tf efr e o s s tr r t ce p tk h h us e e cece c r u ir r f c e e e i e r c w s e s e ch c w h q ua u :u a ez es i a p p r r d m l e da iss s e n pc n r ou e tns l a s a sn ee te d d d r t e h to s e p t r h o e n i s s d c t e u a r e s s k plan, including: 2 Confirm these controlSst/ospa faengdu aserdesk ahreel pin i fp alancyeth ainngd cvherainfigeeds p.rior to starting work. Printed Name & Role Signature Date Start-Work Verifier Figure 4: Man-Riding Start-Work Check 20 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Personnel transfer by lifting",
+                    "number": "5.2",
+                    "subsections": [],
+                    "content": "Transfer of personnel by lifting is avoided where possible and is subject to strict risk assessment criteria. Lifting of personnel is done according to a specific personnel lift plan, or a dedicated lift plan with a rescue plan incorporated. Lifted personnel are secured. Planned personnel transfer by lifting should not be performed in darkness.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Lifting over live plant (hydrocarbons)",
+                    "number": "5.3",
+                    "subsections": [],
+                    "content": "Live plant is defined as equipment containing a hazardous, pressurised, energised or strategic resource. Lifting over or in close proximity to live plant is defined as any lifting operation where there is a process safety risk of the load, lifting appliances and/or lifting accessories impacting, damaging, and/or rupturing a live plant. Lifting over or in close proximity to live plant is not undertaken unless: • No other feasible alternative exists • An operational contingency plan and risk assessment are in place Operational contingency plans define the potential worst-case consequences in the event of a dropped object or catastrophic failure of the lifting equipment, documenting the mitigation measures to be taken prior to the lift and the emergency response actions required. The Red Zone used during the lift is extended to match the requirements of the operational contingency plan.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Tandem lifts",
+                    "number": "5.4",
+                    "subsections": [],
+                    "content": "Lifts involving two or more cranes (including top and tail, load transfer, multiple hooks) are complex operations requiring considerable planning. The Approved Competent Person must be engaged in the process of developing a detailed lift plan. See Appendix B.1 for further information on this. 21 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Hands free lifting",
+                    "number": "5.5",
+                    "subsections": [],
+                    "content": "Hands free lifting is preferred though subject to thorough risk assessment and planning. Push/Pull sticks Injuries to hands and fingers are a leading cause of injuries during lifting activities. Therefore, in order to avoid and/or reduce direct contact of workers with lifted loads while executing lifting operations, push pull sticks can be used to guide loads (creating a buffer zone of safety) and retrieve slings. Tag lines Tag lines are only used in normal operating conditions to adjust the position of a load that is stable and under full control of the crane or powered equipment operator. Please consult Appendix B for more information.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Operating/ground conditions",
+                    "number": "5.6",
+                    "subsections": [],
+                    "content": "A system should be in place that allows the PIC (or approved competent person, such as a lifting engineer) to effectively manage: • Site maximum ground bearing capacity/permissible ground loading factor • Identification of underground services • Identification of underground voids • Effects of environmental/weather conditions where applicable ice, permafrost, rain, lightning • Proximity to excavations • Proximity to other operational equipment including other crane operations with overlapping boom radius • Restricted visibility due to environmental conditions (fog, snow) • Blind lifts, where it is not possible to ensure line of sight communication",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Marine or offshore conditions",
+                    "number": "5.7",
+                    "subsections": [],
+                    "content": "A system should be in place that allows the PIC (or approved competent person, such as a lifting engineer) to effectively manage: • Cane operations within allowable sea state and associated load chart capacities. • Crane operations with simultaneous operations such as vessel operations, diving activities or helicopter movements. 22 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Effects of wind on suspended loads",
+                    "number": "5.8",
+                    "subsections": [],
+                    "content": "Strong winds may swing suspended loads (panels, formworks/shutters, etc.) out of balance and radius, making the lifting appliance unstable. If the appliance operator considers that full control of the load cannot be maintained, it should not be lifted or made safe during a lifting operation. The appliance operator has the primary responsibility for making the decision, in conjunction with the PIC. This should not be overridden by site management under any circumstances. Please see Appendix B for more information on this topic.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Lifting in close proximity to hazards including overhead power",
+                    "number": "5.9",
+                    "subsections": [],
+                    "content": "lines During the planning of any lift, it is important to determine if any part of the equipment, load line, or load (including rigging and lifting accessories) could get close to a power line. Appendix B describes options to consider, starting with de-energising and grounding. A table (Appendix B.4) has been provided to help determine safe clearance distances based on voltage. Note that other overhead hazards, fixed or mobile (e.g., drones), should also be considered in the risk assessment and associated controls included within lift plans. Lifting over trafficable areas (e.g., railways/roads/canals) should be considered in a similar way to the above.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Technological innovations",
+                    "number": "5.10",
+                    "subsections": [],
+                    "content": "Lifting operations represent a critical activity that needs to be constantly and effectively controlled and supervised, both from the safety and technical point of view. There are several new technologies and new devices that can be provide effective support. Current examples include the use of motion detectors, smart helmets and glasses, and radio frequency identification (RFID) tags in lifting accessories to aid with certification/inspection checks. IOGP will continue to search for and share innovative and technical solutions to assist in the safe management of lifting and hoisting operations, and encourages its Members to do the same.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Dropped objects",
+                    "number": "5.11",
+                    "subsections": [],
+                    "content": "Dropped objects represent a high hazard during lifting operations. Dropped objects can include; the load, part of the load, objects falling from the lifting appliance, lifting accessories, loose objects left on loads and occasionally items hidden in loads (for example, rocks / debris left in the fork pockets on a container lift. The organization DROPS has provided a library of information available through their website (https://www.dropsonline.org) on how to prevent dropped objects and is a recommend resource, even if not specific to lifting and hoisting operations. 23 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                }
+            ],
+            "subsections": [],
+            "content": "This section describes particular considerations for different types of operations, including the lifting of personnel which is also addressed by Lifting Principle 10. A risk assessment is required for every lift, regardless of category. A lift plan is required for every lift, with the level of detail required defined by the category of lift. A Permit to Work may also be required subject to Principle lift complexity and company policy. 4 NOTE: Category 1 lifts may be addressed through a generic lift plan, while Category 2 and 3 lifts require a specific lift plan. All Category 3 lifts require a Permit To Work. Any Lifting of personnel is classified to the category requiring the highest level of controls (IOGP Category Principle 3) and a rescue plan is included as part of the Lift 10 Plan. Any equipment used for lifting personnel is certified for the specific activity and used according to recognised international standards.",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Equipment",
+            "number": 6,
+            "sections": [
+                {
+                    "title": "Definition and marking",
+                    "number": "6.1",
+                    "subsections": [],
+                    "content": "Lifting equipment comprises lifting appliances (equipment performing the lifting), lifting accessories (devices that connect the load to the lifting appliance) and lifted items (load including items such as containers, baskets or drums). Lifting appliances should be marked with: • Safe Working Load (SWL) or Working Load Limit (WLL) • Unique ID, mark, or serial number • Certification Mark, CE mark, or equivalent • Date of last certification/inspection 24 Lifting and hoisting recommended practice Lifting accessories should be marked with: • Safe Working Load (SWL) or Working Load Limit (WLL) • Unique ID, mark, or serial number • Certification Mark, CE mark, or equivalent • Tare weight (for lifting beams and/or spreaders and lifted item, as applicable) • Diameter and/or length as deemed necessary (for lifting accessories, as applicable) • Colour Coding • Date of last certification An equipment register and evidence of certification should be available onsite. An example is provided with this Report.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Design and certification",
+                    "number": "6.2",
+                    "subsections": [],
+                    "content": "Equipment is fit for its intended purpose and operating conditions and designed and certified to a recognised standard. Equipment is fitted with appropriate safety devices. Any safety device installed on lifting equipment is operational and not overridden. Retrofit safety devices need to be assessed and managed to avoid introducing additional hazards. Equipment is designed in a way that does not give the operator any health or fatigue problems, and considers: • Ergonomics (operators’ comfort, view, joy sticks, etc.) • Noise and vibration protection • Weather protection (wind, temperature, rain, snow, etc.) • Easy access and egress The potential for an operator to accidently create a dangerous situation or unintended movement of the equipment or load is reduced through the design of the equipment, for example, emergency stop buttons are protected against unintended activation.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Maintenance",
+                    "number": "6.3",
+                    "subsections": [],
+                    "content": "In order to ensure safe operation of the lifting equipment, the proper working and operational conditions must be maintained. Maintenance encompasses activities such as monitoring, inspection, testing, and repair, ensuring that a good housekeeping regime is being practised. The maintenance schedule should be based on manufacturer’s recommendations, business operating experience, international applicable standards and failure modes analysis. The maintenance schedule should integrate preventative and predictive activities. Maintenance schedules take into consideration the effects of age and usage history of the equipment. 25 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Inspection",
+                    "number": "6.4",
+                    "subsections": [],
+                    "content": "All lifting equipment should be inspected in accordance with a written scheme of examination detailing the frequency and types of inspections for lifting equipment4: • A visual inspection of the lifting appliance – including functional tests - is performed by its operator before use and before and after each work shift. • A visual inspection of the accessories is performed by a member of the lifting crew (e.g., slinger/rigger) before use and before and after each work shift. • Frequency: Service routine inspections are carried out following the manufacturer’s instructions at the manufacturer’s or regulator’s recommended frequency.",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Thorough examination",
+                    "number": "6.5",
+                    "subsections": [],
+                    "content": "Lifting equipment should be subject to a thorough examination by a competent person who has sufficient detailed knowledge of its design, operation, and failure modes to recognise significant defects (this is beyond the inspections outlined in section 6.4). The scope, methodology, and standards of the examination, and acceptance/rejection criteria for the equipment, should be specified for all lifting equipment and may include periodic load-testing. All lifting equipment should be thoroughly examined: • Before using a lifting appliance for the first time • If an installed lifting appliances has been assembled on site, it must be examined by an external technical authority (or equivalent – e.g., a certifying authority) to establish the assembly was correct and it is safe to operate. • After events that may have resulted in damage to the appliance or change of significant components • At regular intervals and in accordance with a written scheme of examination that has been drawn up by a competent person: – No longer than 12 months for lifting appliances and equipment (including certified lifting points integral to loads), or more often if required by legislation or actual use – No longer than 12 months for lifting accessories, or more often if required by legislation or actual use • No longer than 6 months for equipment used in personnel lifting 4 Implementing organizations can define level of use and associated inspection time intervals, for example: • Normal service – 6 months • Severe service – Monthly to quarterly • Special service – as recommended by a qualified person. 26 Lifting and hoisting recommended practice • Equipment with serious and significant notified defects must be immediately taken out of service until the defect has been put right. – If a lifting appliance is de-rated by a certifying authority, it must then only be operated within its new rated capacity. • Equipment with defects that need to be rectified within a certain timescale is not to be used until repaired and recertified, or replaced. This must happen within the specified timescale. For the purposes of a thorough examination, the competent person: • should have enough appropriate practical and theoretical knowledge and experience of the lifting equipment so that they can detect defects or weaknesses, and assess how important they are in relation to the safety and continued use of the equipment • should not be the same person who performs routine maintenance as they would be responsible for assessing their own work • should be sufficiently independent and impartial to make objective decisions • May be employed by a separate company, or selected by an employer from members of their own staff • See also Example Competence Matrix in Appendix C",
+                    "images": [],
+                    "tables": []
+                },
+                {
+                    "title": "Colour coding",
+                    "number": "6.6",
+                    "subsections": [],
+                    "content": "Lifting accessories (and lifted items, where applicable) may be colour coded to enable lifting crew and rigging loft controller to easily identify equipment that is within test date. At each thorough examination, the competent person should be instructed to remove the existing colour code and replace it with a new colour. The colour must be applied close to the SWL and cover the old colour code. IOGP encourages organizations (operators and contractors) working in the same operational area to agree and standardize on the colour coding to be used. 27 Lifting and hoisting recommended practice",
+                    "images": [],
+                    "tables": []
+                }
+            ],
+            "subsections": [],
+            "content": "This section provides guidance to complement the lifting principles related to equipment (Principles 7, 8, and 9). Lifting Equipment is thoroughly examined on a regular basis by an inspector who is sufficiently independent2 from the on-site lifting crew, and who may be external or an in-house appointee. The examination refers to an acknowledged Standard for scope, methodology and acceptance/rejection Principle criteria. All safety and monitoring devices installed 7 on lifting equipment are operational and not by- passed or disabled. NOTE: Periods of inspections can be influenced by the nature and robustness of use and application as well as the environments of use. All lifting equipment is visually inspected by a competent person before and after use. Equipment Principle integrity is maintained and faulty equipment 8 is removed from serviced and tagged as such. Inspection and maintenance activities are recorded in an equipment register. Principle Periodic audits and inspections are conducted by an 9 Approved Competent Person.",
+            "images": [],
+            "tables": []
+        },
+        {
+            "title": "Leading lifting operations",
+            "number": 7,
+            "sections": [],
+            "subsections": [],
+            "content": "Understanding human factors and improving the working environment, behaviour, and culture are fundamental to achieving safe and efficient lifting operations. This section provides basic guidance on key human factors aspects to consider for those who plan and lead lifting operations. When scheduling and resourcing a job: • Ensure there are enough people to manage the lifting operation safely • Ensure the team members are competent to fulfil their specific roles and responsibilities • Ensure all required equipment is available and certified as safe for use • Schedule the work to maximise operating in daylight hours, avoid working in the hours of darkness when possible • Schedule the work to take account of any adverse weather and visibility issues • Conduct a pre-start safety meeting (toolbox talk), take the time to review both the risk assessment for the tasks and the lift plan. • Highlight any differences observed between the risk assessment and the lift plan and the current status observed pre-start and where required update the risk assessment and the lift plan accordingly. • Review each of the differences in turn and identify actions to reduce risk • If it is not possible to reduce the risk, then the PIC should escalate to senior management and consider postponing the job • Run through the sequence of work and make sure everyone involved fully understands how the job will be conducted Reinforce, practice and thank people for stopping the job: • During the pre-start safety meeting: – Provide them with the Start-Work Check for Mechanical Lifting – the Check is a tool the lifting crew can use to confirm the controls/safeguards designed to prevent fatalities and serious injuries during lifting operations , the crew should go through the Check not during the meeting, but only once they are at the work site and ready to start the operation. – repeat clearly the need for everyone involved to remain alert at all times and to stop the job if they consider that there may be an unsafe act or condition – remind the team of the Life-Saving Rule for Safe Mechanical Lifting and Work Authorization • Lead by example and use opportunities to stop the job, so that other team members can witness first-hand the importance and positive message/environment • Regardless of the outcome of a ‘stop the job’ intervention, publicly thank the individual and back it up later in a safety meeting 28 Lifting and hoisting recommended practice Fatigue and monotony • Schedule complex lifting operations during the first half of a shift, as the team will be less tired and more focused • For lifting operations that are conducted over a longer duration, monitor the condition and attitude of the team, look for signs of fatigue and, if necessary, call a time out to give everyone a rest and time to refocus • People are more likely to be fatigued: – Towards the end, or after, a long shift – If working in extreme heat/cold, especially for after long periods – If starting work after a long journey – If they have recently changed shifts – from day to night and vice versa – On first days back on shift after days off – When performing repetitive and monotonous tasks • Where work has become repetitive or monotonous, look for signs and symptoms of boredom or a lack of concentration. Build in breaks, rotate job tasks if safe to do so, and take time to reset and refocus the team. • Conduct regular worksite visits with a team comprising of the Approved Competent Person, HSE Representatives from operator and contractor(s) focused solely on lifting and hoisting and mobile heavy equipment operations, with the intent to give recognition for implementation of good practices and adherence to procedures, record and communicate observations regarding improvement opportunities. 29 Lifting and hoisting recommended practice Further Reading These organizations produce standards and other lifting guidance: • American Petroleum Institute (API): https://www.apiwebstore.org/ • ASME B30 (Cranes and Related Equipment-Cableways, Derricks, Hoists, Hooks, Jacks, and Slings) • Australian Petroleum Production and Exploration Association (APPEA): https://www.appea.com.au/news-media/?publications • British Standards: https://shop.bsigroup.com/ • Bridon-Bekaert, The Ropes Group: https://www.bridon-bekaert.com/en-gb • DNV GL: https://www.dnvgl.com/rules-standards • Energy Institute: https://publishing.energyinst.org/ • Energy Safety Canada: http://www.energysafetycanada.com/resources/resourceslist/ resources-list.cfm • International Association of Drilling Contractors (IADC): https://store.iadc.org/ • International Marine Contractors Association (IMCA): https://www.imca-int.com/core/lifting-rigging/publications • International Organization for Standardization (ISO): https://www.iso.org/store.html • Lifting Equipment Engineers Association: https://leeaint.com/leea-library • United States National Commission for the Certification of Crane Operators (NCCCO) • Norwegian Oil & Gas: https://www.norskoljeoggass.no/en • North Sea Lifting (NSL): https://nsl.ascoworld.com/reports-and-publications • United States Occupational Safety and Health Administration: Home | Occupational Safety and Health Administration (osha.gov) guidance such as: US OSHA 29 CFR 1926.753 (Construction Standard) and US OSHA 29 CFR 1910.178 (Powered Industrial Trucks) • Offshore Mechanical Handling Equipment Committee - https://www.omhec.com/guidance-documents • OEUK: https://oilandgasuk.co.uk/publications/ • Standards Norway (NORSOK): https://www.standard.no/en/webshop/ • Step Change in Safety - https://www.stepchangeinsafety.net/ • United Kingdom Maritime and Coastguard Agency: https://www.gov.uk/government/organizations/maritime-and-coastguard-agency • United Kingdom Health and Safety Executive: https://www.hse.gov.uk/guidance/index.htm • United Kingdom Chamber of Shipping: https://www.ukchamberofshipping.com/library/ 30 Lifting and hoisting recommended practice Glossary Term Definition Banksman Title or role used to describe a person who directs crane operations. Blind Lift A lift where, at any point during the lift, the appliance operator cannot directly see the load. CE CE marking is a mandatory conformity marking for certain products sold within the European Economic Area (EEA) since 1985. The CE marking is also found on products sold outside the EEA that are manufactured in, or designed to be sold in, the EEA. Certified Signifies that the equipment has valid certification. Certification Written confirmation that an item of equipment is compliant with defined criteria. Colour Code A method of marking equipment (tagged or painted), to give a visual indication of its certification status. This colour should be changed at each thorough examination. Paint should not cover any structural welds or load bearing locations that will be subject to visual inspection. Competent Person Authorised individual, who has sufficient training and experience or by defined assessment is capable of carrying out a task safely. Defect Fault or weakness in equipment, or any of its components, which could arise during the manufacture, construction, installation, or use. Lifting equipment A person competent to assess the condition and compliance of lifting equipment. inspector See also competence Matrix in appendix C. Ground Bearing Capacity The grounds ability to withstand an applied force. Hands Free Lifting Method of keeping personnel away from lifting hazards when the load is lifted and being landed. Inspection Visual and functionality check by the user. Lifting Accessory Item of lifting equipment that is used or designed to be used directly or indirectly to connect a load to a lifting appliance and which does not form part of the load. Lifting Appliance Item of lifting equipment that is used or designed to be used for lifting or lowering a load and includes any attachments used for anchoring, fixing or supporting it. Lifting Equipment Collective term for lifting appliances and lifting accessories. Lifting equipment comprises lifting appliances (equipment performing the lifting), lifting accessories (devices that connect the load to the lifting appliance) and lifted items (load). Lifting Operation An operation concerned with the Moving, lifting or lowering of a load. Live Plant Equipment, protected or unprotected, having any single or combination of the following characteristics: plant containing hazardous, pressurised, energised, or strategic “fluid”. It also includes primary power generation units and their exhaust systems. Load Anything that is lifted or lowered by lifting equipment, including people and other living organisms, and what they are supported by/contained in (e.g pallets or drums). Load Chart Diagram or table showing the rated capacity relative to the radius, environmental conditions, out of plane influences and type of operation. Load Integrity The loads ability to safely withstand the forces applied during lifting, including under its own weight. 31 Lifting and hoisting recommended practice Term Definition Mechanical Lifting Risk based activity that uses lifting equipment to lift or lower a load. If the lifting Operation equipment parted the load would move. Permit to Work A permit to work system is a formal written system used to control certain types of work that are potentially hazardous. A permit to work is a document which specifies the work to be done and the precautions to be taken. A formal approval process must be defined and implemented before work may commence. Person in Charge Person with the applicable competency level, who is required to take responsibility for a lifting operation. Pre-use Inspection A visual check and, where necessary, a function check of the lifting equipment by a competent person before each use. Red Zone Red Zones, sometimes also known as Exclusion Zones or No-Go Zones, are areas where access is controlled and no one can enter unless authorized to do so. They should be clearly marked, ideally with physical barriers, so that a person cannot accidently enter one. Rescue Plan Documented process that describes the process of retrieving personnel safely in the event of an accident or incident. Rigger Title or role used to describe a person who uses portable lifting equipment to lift, lower and position loads, usually where cranes cannot, and in areas where space and access are limited. Rigging Common term for lifting accessories. Rigging Loft A designated area for the storage of portable mechanical lifting equipment and associated documentation. Signaller Same as Banksman. Slinger Title or role used to describe the person who slings/ rigs loads, working under the Banksman’s direction. Tag Lines Rope attached to loads to aid in their orientation during lifting. Tare Weight of empty/unladen container. Test Procedure to establish the quality, performance or reliability of an item of equipment. Thorough Examination Systematic detailed visual and functionality check, which may be supplemented with non- destructive testing techniques, for the purpose of confirming that the equipment is safe to use at the time of the thorough examination. Uncertified Refers to an item of equipment that does not have valid certification or supporting calculations. Utilization Percentage of capacity used against the maximum capacity. Working Load Limit (WLL) Interchangeable terms used to describe the maximum capacity that an item of lifting and Safe Working Load equipment is designed to raise, lower or suspend under particular service conditions. (SWL) Written Scheme of Documented process, produced by a Competent Person that defines the periodic thorough Examination examinations and testing requirements of lifting equipment. 32 Lifting and hoisting recommended practice Appendix A: Lifting Operations Risk Management A.1 Tandem Lifts Lifts involving two or more cranes (including top and tail, load transfer/multiple hooks) are complex operations requiring considerable planning. The Approved Competent Person must be engaged in the process of developing a detailed lift plan that contains: • Crane positioning • Rigging arrangement for each crane • Lift sequence and applicable steps including load distribution • Load movement (the longest radius of each crane for the complete operation must be measured exactly) • Weight and clearance of obstructions • Load distribution and variation between appliances, as applicable • Clearance between load and crane boom environmental considerations, particularly with regards to large windscreen surface • For tandem lifts where the unity check (ratio between weight of the load – including accessories – and SWL at a given radius) of one (1) of more appliances exceed 75%, a calculation justification is to be provided, including additional extra allowances as required (an example is given in Figure 6). Figure 5: Example schematic for a tandem lift 33 Lifting and hoisting recommended practice Figure 6: Calculating tandem lifts A. 2 Tag lines Tag lines are only used in normal operating conditions to adjust the position of a load that is stable and under full control of the crane or powered equipment operator. Tag lines must be free of knots and fraying. Tag lines can introduce risk and are only to be used after risk assessment. Consider the following before executing the lift: • Personnel being struck by a dropped object when retrieving a tag line that is in close proximity to the load • Tag line becoming tangled around the body, limb, and/or hand of personnel • Tag line becoming snagged on an adjacent fixed structure • Length of tag Line • How tag lines will be recovered without going under suspended load • The proximity of personnel to the load A.3 Wind conditions The Construction Plant-hire Association, together with the UK Health and Safety Executive, has produced Technical Information Note 020, The Effect of Wind on Tower Cranes in Service. Readers are recommended to consult this document in full, available here: https://www.cpa.uk.net/tower-crane-interest-group-tcig-publications/. Summary of key points from TIN 0205: • Strong winds may swing suspended loads out of balance and radius, making a mobile crane unstable: – For large light loads, such as formwork panels/shutters, a mobile crane may become unstable at wind speeds some way below the crane’s design limiting wind speed 5 Construction Plant-hire Association and UK Health and Safety Executive. “Tower Crane Technical Information Note 020: The Effect of Wind on Tower Cranes In Service”. 2014. 34 Lifting and hoisting recommended practice – Where low density loads with a large area in relation to their mass are being lifted the maximum in-service wind speed must be reduced in accordance with the crane manufacturer’s instructions. • Operators should not lift a load if they do not feel that they can maintain full control of it. – An operator’s decision to take a crane out of service should not be overridden by management under any circumstances • Operators should monitor the wind speed constantly, using the anemometer display in the cab, if fitted. – Operators should take the mobile crane out of service before the limiting wind speed is reached. – Putting the crane in the out of service condition should be carried out by following the procedure set out in the manufacturer’s instructions manual. – Note: For offshore cranes, lifting operations should strictly follow the offshore Manual of Permitted Operating (MOPO) wind speed limit for the respective facility/platform. • During the planning of all lifts, take into consideration the anticipated wind speeds from site-specific weather forecasts. • Lifts should not be started in rising winds. – Most weather forecast wind speeds are for a height of 10m above ground and should be corrected for greater heights. – In open countryside, wind speed increases with height as shown in the table below: Height above 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 ground (meters) Wind speed 1.00 1.10 1.17 1.22 1.26 1.29 1.32 1.35 1.37 1.39 1.41 1.43 1.44 1.46 1.47 multiplier – In city centre locations, nearby buildings can have a very significant influence on wind forces, often providing shelter if at the same height as the crane, however local wind loads can be increased in some situations. Where surrounding buildings are significantly taller they will often generate increased wind loading on nearby lower cranes. These points, together with site-specific factors, should be considered when carrying out a risk assessment as part of the lift planning process. There are formulas to calculate the allowable wind speed for a specific lift as per standard practice and manufacturer’s instructions. An engineer should be contacted for this calculation. 35 Lifting and hoisting recommended practice A.4 Overhead powerlines During the planning of any lift, it is important to determine if any part of the equipment, load line, or load (including rigging and lifting accessories) could get close to a power line. If so, consider the following options: • Option 1: De-energize and ground. Confirm from the utility owner/operator that the power line has been deenergised and visibly grounded at the worksite. • Option 2: Ensure sufficient clearance in consultation with the utility owner/operator and in compliance with regional regulations • Option 3: Use Table B4 to determine if any part of the equipment, load line or load (including rigging and lifting accessories), while operating up to the equipment’s maximum working radius in the work zone, could get closer than the minimum approach distance of the power line. If tag lines are used, they must be non- conductive. This table is provided for guidance only; please confirm clearance distances with local legislation to ensure compliance. Table A1: Minimum clearance distances6 Voltage (nominal, kV, alternating current) Minimum clearance distance (meters) up to 50 3 over 50 to 200 4.5 over 200 to 350 6 over 350 to 500 7.5 over 500 to 750 10.5 over 750 to 1,000 13.5 (As established by the utility owner/operator or registered over 1,000 professional engineer who is a qualified person with respect to electrical power transmission and distribution). Note: The value that follows “to” is up to and includes that value. For example, over 50 to 200 means up to and including 200kV. This section has been adapted from Occupational Safety and Health Administration Cranes and Derricks in Construction; Final Rule - Federal Register/Vol. 75, No. 152/Monday, August 9, 2010, which is available from https://www.govinfo.gov/content/pkg/FR-2010-08- 09/pdf/2010-17818.pdf. 6 United States Department of Labor, Occupational Safety and Health Administration. 29 CFR Part 1926 Cranes and Derricks in Construction; Final Rule. 75 CFR § 1926.1408 2010, page 48144. 36 Lifting and hoisting recommended practice Appendix B: Example roles and competence matrix Notes about the competence matrix: 1) Proven experience supplemented with associated certification should be understood as the main factor of competence assurance. 2) Other international standards, certification, and/or experience equivalent to that listed in the table, can be acceptable if approved in writing by the relevant Approved Competent Person. Generic Legislation Main Purpose Level of Competency – Offshore Level of Competency – Onshore Job Title [most relevant] SLCP Approval of lift LOLER7 CPCS Appointed Person CPCS Appointed Person plans & controls applicable or or the execution ECITB Level 4 Appointed Person ECITB Level 4 Appointed Person of site lifting Moving Load Moving Load operations or or EAL Certificate of Competency EAL Certificate of Competency Level 2 A+B+C Level 2 A+B+C or or OPITO LOLER Competent Person OPITO LOLER Competent Person or NPORS Appointed Person US applicable API Qualified Offshore Rigger NCCCO – Certified Lift Director (Advanced API RP 2D 2-day or Course) NCCCO Mobile Crane & NCCCO Rigger Level II Rigger Uses portable LOLER SVQ/NVQ Level 3 Moving Loads/ SVQ/NVQ Level 3 Moving Loads/ lifting equipment applicable Technical Services Technical Services to perform lifting or or operations (e.g. ECITB Level 3 Moving Loads / ECITB Level 3 Moving Loads / chain block, Technical Services Technical Services hoists, Tirfors) or or EAL Certificate of Competency EAL Certificate of Competency Level 2 A+B Level 2 A+B or or OPITO Stage 3 Rigger OPITO Stage 3 Rigger or or NPORS Rigging and Fleeting NPORS Rigging and Fleeting Loads Loads US applicable API Qualified Offshore Rigger NCCCO – Certified Rigger Level II (Advanced API RP 2D 2-day Course) 7 UK HSE Lifting Operations and Lifting Equipment Regulations 1998 (LOLER) 37 Lifting and hoisting recommended practice Generic Legislation Main Purpose Level of Competency – Offshore Level of Competency – Onshore Job Title [most relevant] Banksman Gives LOLER ECITB Level 2 Lifting and Slinging ECITB Level 2 Lifting and Slinging instructions applicable Engineering Engineering to equipment or or operators EAL Certificate of Competency EAL Certificate of Competency Level 2 A+C Level 2 A+C or or OPITO Stage 3 Banksman OPITO Stage 3 Banksman or NPORS US applicable API Qualified Offshore Rigger NCCO Certified Signal Person (Advanced API RP 2D, 2-day Course) Slinger & Load Connects the LOLER Completed EAL Certificate of Completed EAL Certificate of Handler load to the lifting applicable Competency Level 1 A+C Competency Level 1 equipment or A+C OPITO Stage1 Banksman Slinger, or working towards Stage 2. OPITO Stage1 Banksman Slinger, or working towards Stage 2. ECITB Level 2 Lifting and Slinging or Engineering ECITB Level 2 Lifting and Slinging or Engineering NPORS Slinger Signaller or NPORS Slinger Signaller US applicable API Qualified Offshore Rigger NCCCO Certified Rigger Level I (API RP 2D, 2-day course) Powered Lifting Operator of LOLER Equipment familiarisation Equipment familiarisation Equipment powered lifting applicable and and Operator (e.g. equipment ECITB Level 2 Lifting and Slinging ECITB Level 2 Lifting and Slinging winces, air Engineering Engineering hoists) or or EAL Certificate of Competency EAL Certificate of Competency level 2+ B level 2+ B or or NPORS Operators Training NPORS Operators Training (Note Courses are specific to (Note Courses are specific to equipment type) equipment type) US applicable Equipment familiarisation Equipment familiarisation and and API Qualified Offshore Rigger NCCCO Certified OHC Operator (Advanced API RP 2D 2-day Course) Offshore Crane Operator of an LOLER Equipment Familiarisation Not Applicable Operator offshore crane applicable and [Dynamic lifts] in dynamic & Stage 3 Operator (e.g. Sparrow, non-dynamic Enermech) conditions or Norwegian G5 Operator) US applicable Seatrax 3-day advanced crane Not Applicable operator course completed every 4 years (stage 2 crane operator) 1-day crane simulator assessment conducted at HOLC and completed every 4 years. 38 Lifting and hoisting recommended practice Generic Legislation Main Purpose Level of Competency – Offshore Level of Competency – Onshore Job Title [most relevant] Onshore Crane Operator of an LOLER Not Applicable Equipment Familiarisation Operator onshore crane applicable and Licenced by local authority (Government or regulatory board US applicable Not Applicable Equipment Familiarisation and Licenced by local authority (Government or regulatory board and NCCCO Certified Crane Operator Technician Engineering LOLER Completed EAL Certificate of Completed EAL Certificate of [Can only work trade Technician applicable Competency Level 1 A+C Competency Level 1 under adequate that uses lifting or A+C supervision equipment to OPITO Stage1 Banksman Slinger, or or held to install, repair working towards Stage 2. OPITO Stage1 Banksman Slinger, appropriate level or maintain or working towards Stage 2. of competency mechanical detailed for or process ECITB Level 2 Lifting and Slinging or the role being equipment Engineering ECITB Level 2 Lifting and Slinging undertaken] Engineering US applicable API Qualified Offshore Rigger NCCCO (API RP 2D 2-day course) Certified Rigger Level I Forklift Operator Operator of a LOLER CITB Forklift Operator CITB Forklift Operator forklift [onshore applicable CPCS Forklift Operator CPCS Forklift Operator or offshore] RITITB Forklift Operator RITITB Forklift Operator NPORS Forklift Operator NPORS Forklift Operator US applicable OSHA 29 CFR 1910.178 OSHA 29 CFR 1910.178 Forklift Gives All areas See Banksman above See Banksman above Banksman instructions to forklift operators Lifting Equipment Person LOLER LEEA Qualified for the class of LEEA Qualified for the class of Inspector responsible applicable equipment being inspected. equipment being inspected. to thoroughly examine and test US applicable Qualified API lifting equipment NCCCO Crane Inspector lifting equipment inspection & maintenance course. All areas Classification society certification Rigging Loft Person All areas Trained in either Controller responsible to Rigging Loft Management Course manage and or issue equipment Equipment Inspection Course from the rigging loft 39 This Report hopes to enable a significant reduction in lifting incidents among IOGP Member Companies and our contractors by highlighting the essential principles of safe lifting and encouraging their strict application to lifting and hoisting operations. Secondly, this report aims to assist those responsible in planning, managing, and controlling lifting and hoisting operations by providing high level principles and operative questions to check safety and technical compliance at working sites. IOGP Headquarters www.iogp.org City Tower, 40 Basinghall St, London EC2V 5DE, United Kingdom T: +44 (0)20 3763 9700 E: reception@iogp.org IOGP Americas IOGP Asia Pacific IOGP Europe IOGP Middle East & Africa T: +1 713 261 0411 T: +61 4 0910 7921 T: +32 (0)2 790 7762 T: +20 120 882 7784 E: reception-americas@iogp.org E: reception-asiapacific@iogp.org E. reception-europe@iogp.org E: reception-mea@iogp.org",
+            "images": [],
+            "tables": []
+        }
+    ],
+    "images": [],
+    "tables": []
+}

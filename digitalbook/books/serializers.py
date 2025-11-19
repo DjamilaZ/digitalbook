@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.db.models import Count
-from .models import Book, Chapter, Section, Subsection
+from .models import Book, Chapter, Section, Subsection, ReadingProgress
 
 class SubsectionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -21,7 +21,7 @@ class ChapterSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Chapter
-        fields = ['id', 'title', 'order', 'sections']
+        fields = ['id', 'title', 'content', 'order', 'is_intro', 'images', 'tables', 'sections']
         read_only_fields = ['id']
 
 class BookSerializer(serializers.ModelSerializer):
@@ -30,6 +30,7 @@ class BookSerializer(serializers.ModelSerializer):
     pdf_file = serializers.FileField(required=False, allow_null=True, write_only=True)
     json_structure_file = serializers.FileField(required=False, allow_null=True, write_only=True)
     pdf_url = serializers.URLField(required=False, allow_null=True, read_only=True)
+    language = serializers.CharField(read_only=True)
     processing_status = serializers.CharField(read_only=True)
     processing_progress = serializers.IntegerField(read_only=True)
     processing_error = serializers.CharField(read_only=True)
@@ -39,7 +40,7 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = [
-            'id', 'title', 'url', 'created_at', 'created_by', 'chapters',
+            'id', 'title', 'url', 'created_at', 'created_by', 'chapters', 'language', 'published',
             'pdf_file', 'json_structure_file', 'pdf_url',
             'processing_status', 'processing_progress', 'processing_error',
             'processing_started_at', 'processing_finished_at'
@@ -75,6 +76,7 @@ class BookListSerializer(serializers.ModelSerializer):
     chapters_count = serializers.SerializerMethodField()
     sections_count = serializers.SerializerMethodField()
     cover_image = serializers.ImageField(read_only=True, allow_null=True)
+    language = serializers.CharField(read_only=True)
     
     class Meta:
         model = Book
@@ -87,7 +89,9 @@ class BookListSerializer(serializers.ModelSerializer):
             'sections_count', 
             'author', 
             'created_by', 
-            'created_at'
+            'created_at',
+            'language',
+            'published',
         ]
         read_only_fields = ['id', 'created_at', 'created_by']
     
@@ -98,3 +102,23 @@ class BookListSerializer(serializers.ModelSerializer):
     def get_sections_count(self, obj):
         """Retourne le nombre total de sections pour ce livre"""
         return Section.objects.filter(chapter__book=obj).count()
+
+
+class ReadingProgressSerializer(serializers.ModelSerializer):
+    chapter_id = serializers.PrimaryKeyRelatedField(
+        source='chapter', queryset=Chapter.objects.all(), required=False, allow_null=True
+    )
+    section_id = serializers.PrimaryKeyRelatedField(
+        source='section', queryset=Section.objects.all(), required=False, allow_null=True
+    )
+    subsection_id = serializers.PrimaryKeyRelatedField(
+        source='subsection', queryset=Subsection.objects.all(), required=False, allow_null=True
+    )
+
+    class Meta:
+        model = ReadingProgress
+        fields = [
+            'book', 'chapter_id', 'section_id', 'subsection_id',
+            'position_in_text', 'percentage', 'updated_at'
+        ]
+        read_only_fields = ['book', 'updated_at']

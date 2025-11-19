@@ -19,8 +19,8 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
     
     // Si un ordre est fourni, vérifier si le titre commence déjà par la numérotation
     if (order !== null) {
-      const expectedPrefix = `${order + 1}.`;
-      const regex = new RegExp(`^${order + 1}\.\s*`);
+      const expectedPrefix = `${order}.`;
+      const regex = new RegExp(`^${order}\.\s*`);
       
       if (regex.test(title)) {
         // Le titre contient déjà la numérotation, la retirer
@@ -36,6 +36,18 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
     }
     
     return title;
+  };
+
+  const isNoFolderChapter = (chapter) => {
+    if (!chapter) return false;
+    return !!chapter.is_intro;
+  };
+
+  const getDisplayChapterNumber = (chapter) => {
+    if (!bookData?.chapters) return chapter?.order ?? 0;
+    const countIntroBefore = bookData.chapters.filter(c => (c.order < chapter.order) && isNoFolderChapter(c)).length;
+    const n = (chapter?.order ?? 0) - countIntroBefore;
+    return n;
   };
 
   // Regrouper les chapitres par thématique
@@ -265,9 +277,13 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
                             <ChevronRight size={20} className="toggle-icon-collapsed" />
                           )}
                         </button>
-                        <Folder size={18} className="thematique-icon" />
+                        {!isNoFolderChapter(chapter) && (
+                          <Folder size={18} className="thematique-icon" />
+                        )}
                         <span className="thematique-title">
-                          {chapter.order + 1}. {cleanTitle(chapter.title, chapter.order)}
+                          {isNoFolderChapter(chapter)
+                            ? cleanTitle(chapter.title, chapter.order)
+                            : `${getDisplayChapterNumber(chapter)}. ${cleanTitle(chapter.title, chapter.order)}`}
                         </span>
                         <span className="thematique-count">
                           ({chapter.sections.length})
@@ -302,7 +318,9 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
                                         </button>
                                       )}
                                       <span className="chapter-title">
-                                        {chapter.order + 1}.{section.order + 1} {cleanTitle(section.title, section.order)}
+                                        {isNoFolderChapter(chapter)
+                                          ? `${section.order} ${cleanTitle(section.title, section.order)}`
+                                          : `${getDisplayChapterNumber(chapter)}.${section.order} ${cleanTitle(section.title, section.order)}`}
                                       </span>
                                     </div>
                                     
@@ -316,7 +334,9 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
                                               onClick={() => handleItemClick('subsection', originalChapterIndex, sectionIndex, subsectionIndex)}
                                             >
                                               <span className="section-title">
-                                                {chapter.order + 1}.{section.order + 1}.{subsection.order + 1} {cleanTitle(subsection.title, subsection.order)}
+                                                {isNoFolderChapter(chapter)
+                                                  ? `${section.order}.${subsection.order} ${cleanTitle(subsection.title, subsection.order)}`
+                                                  : `${getDisplayChapterNumber(chapter)}.${section.order}.${subsection.order} ${cleanTitle(subsection.title, subsection.order)}`}
                                               </span>
                                             </div>
                                           </div>
@@ -403,7 +423,9 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
                                 </button>
                               )}
                               <span className="chapter-title">
-                                {chapter.order + 1}. {cleanTitle(chapter.title, chapter.order)}
+                                {isNoFolderChapter(chapter.title)
+                                  ? cleanTitle(chapter.title, chapter.order)
+                                  : `${getDisplayChapterNumber(chapter)}. ${cleanTitle(chapter.title, chapter.order)}`}
                               </span>
                             </div>
                             
@@ -431,7 +453,9 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
                                             </button>
                                           )}
                                           <span className="section-title">
-                                            {chapter.order + 1}.{section.order + 1} {cleanTitle(section.title, section.order)}
+                                            {isNoFolderChapter(chapter.title)
+                                              ? `${section.order} ${cleanTitle(section.title, section.order)}`
+                                              : `${getDisplayChapterNumber(chapter)}.${section.order} ${cleanTitle(section.title, section.order)}`}
                                           </span>
                                         </div>
                                         
@@ -444,7 +468,9 @@ const Sidebar = ({ bookData, onSelectContent, selectedItem }) => {
                                                 onClick={() => handleItemClick('subsection', originalChapterIndex, sectionIndex, subsectionIndex)}
                                               >
                                                 <span className="subsection-title">
-                                                  {chapter.order + 1}.{section.order + 1}.{subsection.order + 1} {cleanTitle(subsection.title, subsection.order)}
+                                                  {isNoFolderChapter(chapter.title)
+                                                    ? `${section.order}.${subsection.order} ${cleanTitle(subsection.title, subsection.order)}`
+                                                    : `${getDisplayChapterNumber(chapter)}.${section.order}.${subsection.order} ${cleanTitle(subsection.title, subsection.order)}`}
                                                 </span>
                                               </div>
                                             ))}

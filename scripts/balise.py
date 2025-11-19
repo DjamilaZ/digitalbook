@@ -135,7 +135,14 @@ def extract_images_for_page(doc, page_num: int, images_dir: str, image_hashes: s
     return out
 
 def parse_pdf_to_json(pdf_path, output_json):
-    structure = []
+    # Structure racine compatible backend
+    result = {
+        "thematiques": [],
+        "chapters_sans_thematique": []
+    }
+    # Le conteneur courant de chapitres (bascule vers la thématique active si définie)
+    structure = result["chapters_sans_thematique"]
+    current_thematique = None
     current_chapter = None
     current_section = None
     current_subsection = None
@@ -154,9 +161,10 @@ def parse_pdf_to_json(pdf_path, output_json):
             if not text:
                 continue
             for line in text.split("\n"):
-                line = line.strip()
+                line = normalize_ws(line).strip()
                 if not line:
                     continue
+                marker_line = line.replace('！', '!').replace('﹗', '!').replace('︕', '!')
                 # Skip page numbers (standalone digits)
                 if is_page_number_line(line):
                     continue
@@ -164,10 +172,39 @@ def parse_pdf_to_json(pdf_path, output_json):
                 if "!!" in line:
                     continue
 
-                # Détection des balises (accepte #, ##, ### avec ou sans espace)
+                if re.match(r'^\s*[\-\u2022•▪·»]*\s*!\s*/\s*$', marker_line):
+                    current_thematique = None
+                    structure = result["chapters_sans_thematique"]
+                    current_chapter = None
+                    current_section = None
+                    current_subsection = None
+                    sections_index = {}
+                    continue
+
+                # Détection des balises (accepte !, #, ##, ### avec ou sans espace)
+                m_theme = re.match(r'^\s*[\-\u2022•▪·»]*\s*!\s*(.+)$', marker_line)
                 m_sub = re.match(r'^\s*#{3,}\s*(.+)$', line)
                 m_sec = re.match(r'^\s*##(?!#)\s*(.+)$', line)
                 m_ch = re.match(r'^\s*#(?!#)\s*(.+)$', line)
+
+                if m_theme:  # Thématique
+                    raw = m_theme.group(1).strip()
+                    left, right = split_heading_title_and_content(raw)
+                    theme = {
+                        "title": normalize_heading_title(left),
+                        "description": right or "",
+                        "chapters": []
+                    }
+                    result["thematiques"].append(theme)
+                    current_thematique = theme
+                    # Les prochains chapitres appartiendront à cette thématique
+                    structure = current_thematique["chapters"]
+                    # Réinitialiser le contexte chapitre/section
+                    current_chapter = None
+                    current_section = None
+                    current_subsection = None
+                    sections_index = {}
+                    continue
 
                 if m_sub:  # Sous-section
                     raw = m_sub.group(1).strip()
@@ -360,16 +397,16 @@ def parse_pdf_to_json(pdf_path, output_json):
                     elif current_chapter is not None:
                         current_chapter["content"].append(line)
 
-    # Sauvegarde JSON
+    # Sauvegarde JSON (racine complète)
     with open(output_json, "w", encoding="utf-8") as f:
-        json.dump(structure, f, indent=4, ensure_ascii=False)
+        json.dump(result, f, indent=4, ensure_ascii=False)
 
-    return structure
+    return result
 
 
 # Exemple d'utilisation
 if __name__ == "__main__":
-    pdf_path = "LivretDigitalbalise-1-24.pdf"
+    pdf_path = "Livretdigitalbalise (1).pdf"
     output_json = "structure.json"
     data = parse_pdf_to_json(pdf_path, output_json)
     print(json.dumps(data, indent=4, ensure_ascii=False))

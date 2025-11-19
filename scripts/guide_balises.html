@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guide des balises – DigitalBook</title>
+  <style>
+    :root{
+      --bg:#0b1220;        /* fond général sombre */
+      --panel:#0f1629;     /* panneau */
+      --muted:#9fb0c9;     /* texte secondaire */
+      --text:#e6eefc;      /* texte principal */
+      --accent:#7cbeff;    /* accents */
+      --green:#22c55e;     /* ok */
+      --yellow:#f59e0b;    /* avert */
+      --red:#ef4444;       /* danger */
+      --blue:#60a5fa;      /* info */
+      --purple:#c084fc;    /* special */
+      --teal:#2dd4bf;      /* special */
+      --border: #22304d;
+      --row-odd:#111a30;
+      --row-even:#0e172b;
+      --chip-bg:#0b1529;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--text); font: 14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    }
+    .wrap{max-width:1100px; margin:40px auto; padding:0 20px}
+    header{display:flex; align-items:center; gap:12px; margin-bottom:18px}
+    header h1{font-size:22px; margin:0}
+    header .tag{padding:4px 10px; border-radius:999px; background:var(--chip-bg); color:var(--accent); border:1px solid var(--border); font-weight:600}
+    .card{background:linear-gradient(180deg, var(--panel), #0b1325); border:1px solid var(--border); border-radius:14px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .card .head{display:flex; align-items:center; justify-content:space-between; padding:16px 18px; border-bottom:1px solid var(--border)}
+    .card .head h2{margin:0; font-size:18px}
+    .legend{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:var(--chip-bg); border:1px solid var(--border); color:var(--muted)}
+    .dot{width:10px; height:10px; border-radius:50%}
+    .dot.green{background:var(--green)}
+    .dot.yellow{background:var(--yellow)}
+    .dot.red{background:var(--red)}
+    .dot.blue{background:var(--blue)}
+    .dot.purple{background:var(--purple)}
+    .dot.teal{background:var(--teal)}
+    table{width:100%; border-collapse:separate; border-spacing:0}
+    thead th{position:sticky; top:0; background:#101a33; z-index:1; font-size:13px; letter-spacing:.02em; text-transform:uppercase; color:#a7b6d4}
+    th, td{padding:12px 14px; border-bottom:1px solid var(--border); vertical-align:top}
+    tbody tr:nth-child(odd){background:var(--row-odd)}
+    tbody tr:nth-child(even){background:var(--row-even)}
+    code{background:#0a1326; color:#d1e3ff; padding:2px 6px; border:1px solid var(--border); border-radius:6px}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:4px 8px; border-radius:999px; border:1px solid var(--border)}
+    .pill .dot{width:8px; height:8px}
+    .mono{font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">DigitalBook</span>
+      <h1>Guide des balises</h1>
+    </header>
+
+    <div class="card">
+      <div class="head">
+        <h2>Résumé visuel</h2>
+        <div class="legend">
+          <span class="chip"><span class="dot green"></span>Structure</span>
+          <span class="chip"><span class="dot blue"></span>Capture/Assets</span>
+          <span class="chip"><span class="dot yellow"></span>Ignorer</span>
+          <span class="chip"><span class="dot purple"></span>Typées</span>
+        </div>
+      </div>
+      <div style="overflow:auto">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:200px">Balise</th>
+              <th style="width:260px">Exemple</th>
+              <th>Signification / Effet</th>
+              <th style="width:180px">Catégorie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>! Titre: description</code></td>
+              <td><code>! Sécurité: bonnes pratiques</code></td>
+              <td>
+                Ouvre une thématique. Enregistre <span class="mono">title</span> et <span class="mono">description</span> (si « : » présent). 
+                Démarre <span class="mono">start_page</span>. Les chapitres suivants y seront rattachés.
+              </td>
+              <td><span class="pill"><span class="dot green"></span>Structure</span></td>
+            </tr>
+            <tr>
+              <td><code>!/</code></td>
+              <td><code>!/</code></td>
+              <td>Ferme la thématique et fixe <span class="mono">end_page</span>.</td>
+              <td><span class="pill"><span class="dot green"></span>Structure</span></td>
+            </tr>
+            <tr>
+              <td><code># Titre</code></td>
+              <td><code># Introduction</code></td>
+              <td>Crée un Chapitre. Démarre <span class="mono">start_page</span>. Les sections/sous‑sections ultérieures y sont rattachées.</td>
+              <td><span class="pill"><span class="dot green"></span>Structure</span></td>
+            </tr>
+            <tr>
+              <td><code>## Titre</code></td>
+              <td><code>## Méthodologie</code></td>
+              <td>Crée une Section (ignorée si aucun Chapitre n’est ouvert).</td>
+              <td><span class="pill"><span class="dot green"></span>Structure</span></td>
+            </tr>
+            <tr>
+              <td><code>### Titre</code></td>
+              <td><code>### Introduction</code></td>
+              <td>Crée une Sous‑section. Si aucune Section, création d’une Section par défaut « Section ».</td>
+              <td><span class="pill"><span class="dot green"></span>Structure</span></td>
+            </tr>
+            <tr>
+              <td><code>!!</code></td>
+              <td><code>!!</code></td>
+              <td>Entre en mode ignore: toutes les lignes sont sautées jusqu’à <code>!!/</code>. Tolère « - !! », « • !! », etc.</td>
+              <td><span class="pill"><span class="dot yellow"></span>Ignorer</span></td>
+            </tr>
+            <tr>
+              <td><code>!!/</code></td>
+              <td><code>!!/</code></td>
+              <td>Quitte le mode ignore.</td>
+              <td><span class="pill"><span class="dot yellow"></span>Ignorer</span></td>
+            </tr>
+            <tr>
+              <td><code>&lt;img&gt;</code> / <code>&lt;/img&gt;</code></td>
+              <td><code>&lt;img&gt;</code> ... <code>&lt;/img&gt;</code></td>
+              <td>
+                Délimite une zone verticale correspondant à une image (ou un bloc graphique).
+                La zone peut s’étendre sur plusieurs pages: début après &lt;img&gt;, fin sur la ligne &lt;/img&gt;.
+                Sert à produire des snapshots ou à relier proprement les légendes d’images.
+              </td>
+              <td><span class="pill"><span class="dot purple"></span>Typées</span></td>
+            </tr>
+            <tr>
+              <td><code>&lt;table&gt;</code> / <code>&lt;/table&gt;</code></td>
+              <td><code>&lt;table&gt;</code> ... <code>&lt;/table&gt;</code></td>
+              <td>
+                Délimite une zone verticale de tableau tapé.
+                La zone peut aussi être multi‑pages: début après &lt;table&gt;, fin sur la ligne &lt;/table&gt;.
+                Le contenu de cette zone n’est pas recopié dans <span class="mono">content</span> texte.
+              </td>
+              <td><span class="pill"><span class="dot purple"></span>Typées</span></td>
+            </tr>
+            <tr>
+              <td><code>*légende*</code> ou <code>Figure …</code></td>
+              <td><code>*Schéma des interfaces*</code></td>
+              <td>Détecte une légende d’image. Attribuée au prochain asset image de la page (ou snapshot zoné si besoin).</td>
+              <td><span class="pill"><span class="dot blue"></span>Capture/Assets</span></td>
+            </tr>
+            <tr>
+              <td><code>Tableau …</code> / <code>Table …</code></td>
+              <td><code>Table 1: Ten principles…</code></td>
+              <td>Détecte une légende de tableau. Attribuée au prochain tableau extrait (ou snapshot zoné si besoin).</td>
+              <td><span class="pill"><span class="dot blue"></span>Capture/Assets</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="muted" style="margin-top:14px">Astuce: pour plusieurs tableaux/figures sur une page, encadrez chaque bloc avec sa propre paire <code>&lt;img&gt; … &lt;/img&gt;</code> ou <code>&lt;table&gt; … &lt;/table&gt;</code>.</p>
+  </div>
+</body>
+</html>

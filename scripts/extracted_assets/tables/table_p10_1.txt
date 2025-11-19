@@ -1,0 +1,5 @@
+Principle
+1 |  | All lifting operations are categorised by the Person
+in Charge to reflect the risk of the lift. This then
+defines the required controlling documents and the
+competence of the people involved.

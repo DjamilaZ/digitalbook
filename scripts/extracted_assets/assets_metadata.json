@@ -1,0 +1,442 @@
+{
+  "images": [
+    {
+      "id": "img_1_0",
+      "page": 1,
+      "index": 0,
+      "filename": "img_p1_0_7cda9a4c.png",
+      "filepath": "extracted_assets\\images\\img_p1_0_7cda9a4c.png",
+      "url": "/assets/images/img_p1_0_7cda9a4c.png",
+      "width": 784,
+      "height": 1031,
+      "hash": "7cda9a4c979d430bc03fbc840795e7a1",
+      "context": {
+        "thematique": null,
+        "chapter": null,
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 1",
+      "description": "Image 1 de la page 1"
+    },
+    {
+      "id": "img_2_0",
+      "page": 2,
+      "index": 0,
+      "filename": "img_p2_0_1ed96857.png",
+      "filepath": "extracted_assets\\images\\img_p2_0_1ed96857.png",
+      "url": "/assets/images/img_p2_0_1ed96857.png",
+      "width": 746,
+      "height": 1029,
+      "hash": "1ed96857f1a90f16a6f9118c796f56e9",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "IMPORTANT NOTICE"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 2",
+      "description": "Image 2 de la page 2"
+    },
+    {
+      "id": "img_3_0",
+      "page": 3,
+      "index": 0,
+      "filename": "img_p3_0_7bc65102.png",
+      "filepath": "extracted_assets\\images\\img_p3_0_7bc65102.png",
+      "url": "/assets/images/img_p3_0_7bc65102.png",
+      "width": 712,
+      "height": 1031,
+      "hash": "7bc65102bb4c1c794279811223977bba",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "IMPORTANT NOTICE"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 3",
+      "description": "Image 3 de la page 3"
+    },
+    {
+      "id": "img_4_0",
+      "page": 4,
+      "index": 0,
+      "filename": "img_p4_0_3022ad19.png",
+      "filepath": "extracted_assets\\images\\img_p4_0_3022ad19.png",
+      "url": "/assets/images/img_p4_0_3022ad19.png",
+      "width": 708,
+      "height": 1028,
+      "hash": "3022ad19fdcef53c4ff47157bd69a4aa",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "IMPORTANT NOTICE"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 4",
+      "description": "Image 4 de la page 4"
+    },
+    {
+      "id": "img_5_0",
+      "page": 5,
+      "index": 0,
+      "filename": "img_p5_0_47b99fdc.png",
+      "filepath": "extracted_assets\\images\\img_p5_0_47b99fdc.png",
+      "url": "/assets/images/img_p5_0_47b99fdc.png",
+      "width": 709,
+      "height": 1029,
+      "hash": "47b99fdca5a4b40bd698e8a80b1cc2de",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "IMPORTANT NOTICE"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 5",
+      "description": "Image 5 de la page 5"
+    },
+    {
+      "id": "img_6_0",
+      "page": 6,
+      "index": 0,
+      "filename": "img_p6_0_3edbd2f5.png",
+      "filepath": "extracted_assets\\images\\img_p6_0_3edbd2f5.png",
+      "url": "/assets/images/img_p6_0_3edbd2f5.png",
+      "width": 710,
+      "height": 1029,
+      "hash": "3edbd2f5130e79fcffde948271c02219",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "Introduction"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 6",
+      "description": "Image 6 de la page 6"
+    },
+    {
+      "id": "img_7_0",
+      "page": 7,
+      "index": 0,
+      "filename": "img_p7_0_a439e421.png",
+      "filepath": "extracted_assets\\images\\img_p7_0_a439e421.png",
+      "url": "/assets/images/img_p7_0_a439e421.png",
+      "width": 712,
+      "height": 1031,
+      "hash": "a439e4216efa7bb4fd26fcaff198da84",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "British Standards"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 7",
+      "description": "Image 7 de la page 7"
+    },
+    {
+      "id": "img_8_0",
+      "page": 8,
+      "index": 0,
+      "filename": "img_p8_0_7bcf9d50.png",
+      "filepath": "extracted_assets\\images\\img_p8_0_7bcf9d50.png",
+      "url": "/assets/images/img_p8_0_7bcf9d50.png",
+      "width": 1191,
+      "height": 1719,
+      "hash": "7bcf9d50d897213791f8e5c48bce778e",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "British Standards"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 8",
+      "description": "Image 8 de la page 8"
+    },
+    {
+      "id": "img_9_0",
+      "page": 9,
+      "index": 0,
+      "filename": "img_p9_0_5af47a22.png",
+      "filepath": "extracted_assets\\images\\img_p9_0_5af47a22.png",
+      "url": "/assets/images/img_p9_0_5af47a22.png",
+      "width": 709,
+      "height": 1029,
+      "hash": "5af47a2271cca3322a9b8e4306371429",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "British Standards"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 9",
+      "description": "Image 9 de la page 9"
+    },
+    {
+      "id": "img_10_0",
+      "page": 10,
+      "index": 0,
+      "filename": "img_p10_0_7fbfd4c8.png",
+      "filepath": "extracted_assets\\images\\img_p10_0_7fbfd4c8.png",
+      "url": "/assets/images/img_p10_0_7fbfd4c8.png",
+      "width": 712,
+      "height": 1030,
+      "hash": "7fbfd4c82b78e54bab45d5de0d78b74d",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "British Standards"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 10",
+      "description": "Image 10 de la page 10"
+    },
+    {
+      "id": "img_11_0",
+      "page": 11,
+      "index": 0,
+      "filename": "img_p11_0_e674df62.png",
+      "filepath": "extracted_assets\\images\\img_p11_0_e674df62.png",
+      "url": "/assets/images/img_p11_0_e674df62.png",
+      "width": 712,
+      "height": 1031,
+      "hash": "e674df626fc060c71dbdd24ff5847a57",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "1.0 GLOSSARY OF TERMS"
+        },
+        "section": {
+          "title": "1.5 Colour Code"
+        },
+        "subsection": null
+      },
+      "title": "Figure 11",
+      "description": "Image 11 de la page 11"
+    },
+    {
+      "id": "img_12_0",
+      "page": 12,
+      "index": 0,
+      "filename": "img_p12_0_7d792ec2.png",
+      "filepath": "extracted_assets\\images\\img_p12_0_7d792ec2.png",
+      "url": "/assets/images/img_p12_0_7d792ec2.png",
+      "width": 714,
+      "height": 1031,
+      "hash": "7d792ec2a09fef88a0e276b38308ade7",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "9 Drawn-up Dimension"
+        },
+        "section": {
+          "title": "Thorough Examination"
+        },
+        "subsection": null
+      },
+      "title": "Figure 12",
+      "description": "Image 12 de la page 12"
+    },
+    {
+      "id": "img_13_0",
+      "page": 13,
+      "index": 0,
+      "filename": "img_p13_0_45b42272.png",
+      "filepath": "extracted_assets\\images\\img_p13_0_45b42272.png",
+      "url": "/assets/images/img_p13_0_45b42272.png",
+      "width": 709,
+      "height": 1029,
+      "hash": "45b42272aa1dfc99febaadf20a50d347",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "2.0 REGULATIONS"
+        },
+        "section": {
+          "title": "2.4 SI 1998 No. 2307 The Lifting Operations and Lifting Equipment"
+        },
+        "subsection": null
+      },
+      "title": "Figure 13",
+      "description": "Image 13 de la page 13"
+    },
+    {
+      "id": "img_14_0",
+      "page": 14,
+      "index": 0,
+      "filename": "img_p14_0_efc360a5.png",
+      "filepath": "extracted_assets\\images\\img_p14_0_efc360a5.png",
+      "url": "/assets/images/img_p14_0_efc360a5.png",
+      "width": 714,
+      "height": 1031,
+      "hash": "efc360a51fc25d6e2f152f1fda664c8e",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "2.0 REGULATIONS"
+        },
+        "section": {
+          "title": "2.9 Regulation 8 -Organisation of Lifting Operations:"
+        },
+        "subsection": null
+      },
+      "title": "Figure 14",
+      "description": "Image 14 de la page 14"
+    },
+    {
+      "id": "img_15_0",
+      "page": 15,
+      "index": 0,
+      "filename": "img_p15_0_ecb4e7c9.png",
+      "filepath": "extracted_assets\\images\\img_p15_0_ecb4e7c9.png",
+      "url": "/assets/images/img_p15_0_ecb4e7c9.png",
+      "width": 712,
+      "height": 1031,
+      "hash": "ecb4e7c973ac26c9b39255431cfe06e0",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "2.0 REGULATIONS"
+        },
+        "section": {
+          "title": "2.11 The Manual Handling Operations Regulations 1992"
+        },
+        "subsection": null
+      },
+      "title": "Figure 15",
+      "description": "Image 15 de la page 15"
+    },
+    {
+      "id": "img_16_0",
+      "page": 16,
+      "index": 0,
+      "filename": "img_p16_0_4ec3b34b.png",
+      "filepath": "extracted_assets\\images\\img_p16_0_4ec3b34b.png",
+      "url": "/assets/images/img_p16_0_4ec3b34b.png",
+      "width": 712,
+      "height": 1030,
+      "hash": "4ec3b34b98ab9261bf7daaf89f730e09",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "1 Lifting Equipment"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 16",
+      "description": "Image 16 de la page 16"
+    },
+    {
+      "id": "img_17_0",
+      "page": 17,
+      "index": 0,
+      "filename": "img_p17_0_6bc48bf7.png",
+      "filepath": "extracted_assets\\images\\img_p17_0_6bc48bf7.png",
+      "url": "/assets/images/img_p17_0_6bc48bf7.png",
+      "width": 712,
+      "height": 1031,
+      "hash": "6bc48bf775e8c3f1e6f6d3d96e45e069",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "3 Factor of Safety I Safety Factor"
+        },
+        "section": {
+          "title": "Some lifting equipment (e.g. lifting beams) can be used in a variety of"
+        },
+        "subsection": null
+      },
+      "title": "Figure 17",
+      "description": "Image 17 de la page 17"
+    },
+    {
+      "id": "img_18_0",
+      "page": 18,
+      "index": 0,
+      "filename": "img_p18_0_40170498.png",
+      "filepath": "extracted_assets\\images\\img_p18_0_40170498.png",
+      "url": "/assets/images/img_p18_0_40170498.png",
+      "width": 714,
+      "height": 1031,
+      "hash": "4017049843deb6051dd69b1f38bc65e7",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "2 Pre-use Examination"
+        },
+        "section": {
+          "title": "The three common particulars to check for are:"
+        },
+        "subsection": null
+      },
+      "title": "Figure 18",
+      "description": "Image 18 de la page 18"
+    },
+    {
+      "id": "img_19_0",
+      "page": 19,
+      "index": 0,
+      "filename": "img_p19_0_f5f911ab.png",
+      "filepath": "extracted_assets\\images\\img_p19_0_f5f911ab.png",
+      "url": "/assets/images/img_p19_0_f5f911ab.png",
+      "width": 712,
+      "height": 1030,
+      "hash": "f5f911ab87d3abc957f00c06c3aa4666",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "7 Periodicity of examinations"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "1 Fig 5.2 Fig 5.3",
+      "description": "Image 19 de la page 19"
+    },
+    {
+      "id": "img_20_0",
+      "page": 20,
+      "index": 0,
+      "filename": "img_p20_0_aa26a1a4.png",
+      "filepath": "extracted_assets\\images\\img_p20_0_aa26a1a4.png",
+      "url": "/assets/images/img_p20_0_aa26a1a4.png",
+      "width": 709,
+      "height": 1029,
+      "hash": "aa26a1a4f3a9196c7104916f4d481878",
+      "context": {
+        "thematique": null,
+        "chapter": {
+          "title": "3 below for typical examples) to confirm the weight. As alternatives, you"
+        },
+        "section": null,
+        "subsection": null
+      },
+      "title": "Figure 20",
+      "description": "Image 20 de la page 20"
+    }
+  ],
+  "tables": [],
+  "metadata": {
+    "pdf_path": "D:\\GitHub\\digitalbook\\scripts\\NSL-Rigging-Lifting-Handbook-1-20.pdf",
+    "images_dir": "extracted_assets\\images",
+    "tables_dir": "extracted_assets\\tables"
+  }
+}

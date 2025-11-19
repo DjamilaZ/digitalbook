@@ -43,6 +43,7 @@ const Sidebar = () => {
     .slice(0, 2)
     .toUpperCase();
   const isAdmin = authService.isAdmin();
+  const isManager = authService.isManager && authService.isManager();
 
   const handleProfile = () => {
     setMenuOpen(false);
@@ -87,6 +88,17 @@ const Sidebar = () => {
                 <NavItem 
                   icon={<Upload size={18} />} 
                   label="Télécharger PDF" 
+                  active={isActive} 
+                />
+              )}
+            </NavLink>
+          )}
+          {(isAdmin || isManager) && (
+            <NavLink to="/admin/users" className="no-underline">
+              {({ isActive }) => (
+                <NavItem 
+                  icon={<User size={18} />} 
+                  label="Utilisateurs" 
                   active={isActive} 
                 />
               )}

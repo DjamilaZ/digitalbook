@@ -1,0 +1,14 @@
+Companies can modify the specific criteria listed to reflect their operations and equipment. |  | 
+Answer the questions starting at the top and not jumping any. Your lift category matches the category of the
+first question you answer ‘yes’ to. |  | 
+CATEGORY 3 | Y | N
+Is the gross load weight over 90% of the certified load radius curve of the crane? |  | 
+Does the operation involve the lifting or lowering of personnel? |  | 
+Will the lift involve tandem lifting using powered lifting appliances? |  | 
+Could the lift be affected by any proximity hazards, i.e., restricted area, power line, confined space etc. |  | 
+Will the load be lifted over or in close proximity to live plant? |  | 
+Will the lift take more than one shift to complete? |  | 
+Will the lift plan require technical input or calculations from a technical expert (i.e., load distribution in rigging
+and appliances)? |  | 
+Will the load be transferred from one powered lifting appliance to another? |  | 
+Will the load be lifted from one marine vessel to another? |  | 
